@@ -1,0 +1,20 @@
+locales:
+  valid-verion: 3.11.0
+  de_DE:
+    version: 0
+  en_GB:
+    version: 0
+  es_ES:
+    version: 0
+  fr_FR:
+    version: 0
+  hu_HU:
+    version: 0
+  id_ID:
+    version: 0
+  pl_PL:
+    version: 0
+  vn_VN:
+    version: 0
+  zh_Hans:
+    version: 0
