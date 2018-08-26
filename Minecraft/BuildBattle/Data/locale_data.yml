@@ -1,5 +1,7 @@
 locales:
   valid-version: 4.0.0
+  cs_CZ:
+    version: 0
   de_DE:
     version: 0
   en_GB:
@@ -17,6 +19,8 @@ locales:
   ko_KR:
     version: 0
   pl_PL:
+    version: 0
+  ro_RO:
     version: 0
   ru_RU:
     version: 0
