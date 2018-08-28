@@ -1,5 +1,7 @@
 locales:
   valid-version: 3.11.0
+  cs_CZ:
+    version: 0
   de_DE:
     version: 0
   en_GB:
