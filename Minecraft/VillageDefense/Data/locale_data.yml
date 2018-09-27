@@ -7,18 +7,18 @@ locales:
   en_GB:
     version: 1
   es_ES:
-    version: 2
+    version: 3
   fr_FR:
     version: 1
   hu_HU:
     version: 1
   id_ID:
-    version: 1
+    version: 2
   pl_PL:
     version: 1
   ro_RO:
-    version: 1
+    version: 2
   vn_VN:
     version: 1
   zh_Hans:
-    version: 1
+    version: 2
