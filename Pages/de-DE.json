@@ -67,7 +67,7 @@
     "Wiki.Global.Welcome": "%name% Offizielle Wiki",
     "Translation.Select-Project": "Wähle ein Projekt aus um es zu übersetzen",
     "Translation.Current-Languages": "Derzeitige Sprachen",
-    "Translation.Languages-In-Total": "%num% insgesamt\n",
+    "Translation.Languages-In-Total": "(%num% insgesamt)",
     "Translation.Pending-Languages": "Ausstehende Sprachen",
     "Translation.Pending-Languages.Description": "Warten auf weitere Übersetzungen"
 }
