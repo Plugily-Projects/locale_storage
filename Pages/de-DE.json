@@ -65,9 +65,9 @@
     "Wiki.Battle.Commands-And-Permissions.Create-Command-Description": "Erstellt eine neue Arena mit dem angegebenen Namen",
     "Wiki.Battle.Commands-And-Permissions.Edit-Command-Description": "Bearbeitet die vorhandene Arena",
     "Wiki.Global.Welcome": "%name% Offizielle Wiki",
-    "Translation.Select-Project": "Select project to translate",
-    "Translation.Current-Languages": "Current languages",
-    "Translation.Languages-In-Total": "(%num% in total)",
-    "Translation.Pending-Languages": "Pending languages",
-    "Translation.Pending-Languages.Description": "Awaiting for more translations"
+    "Translation.Select-Project": "Wähle ein Projekt aus um es zu übersetzen",
+    "Translation.Current-Languages": "Derzeitige Sprachen",
+    "Translation.Languages-In-Total": "%num% insgesamt\n",
+    "Translation.Pending-Languages": "Ausstehende Sprachen",
+    "Translation.Pending-Languages.Description": "Warten auf weitere Übersetzungen"
 }
