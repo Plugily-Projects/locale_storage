@@ -1,22 +1,22 @@
 locales:
-  valid-version: 0.0.6b
+  valid-version: 1.0.0-pre-1
   cs_CZ:
-    version: 0
+    version: 1
   de_DE:
-    version: 0
+    version: 1
   en_GB:
-    version: 0
+    version: 1
   fr_FR:
-    version: 0
+    version: 1
   hu_HU:
-    version: 0
+    version: 1
   id_ID:
-    version: 0
+    version: 1
   ko_KR:
-    version: 0
+    version: 1
   pl_PL:
-    version: 0
+    version: 1
   zh_Hans:
-    version: 0
+    version: 1
   zh_HK:
-    version: 0
+    version: 1
