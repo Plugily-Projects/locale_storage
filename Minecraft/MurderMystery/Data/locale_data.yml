@@ -15,7 +15,7 @@ locales:
   it_IT:
     version: 1
   ko_KR:
-    version: 1
+    version: 2
   pl_PL:
     version: 1
   ro_RO:
@@ -25,4 +25,4 @@ locales:
   zh_Hans:
     version: 1
   zh_HK:
-    version: 1
+    version: 2
