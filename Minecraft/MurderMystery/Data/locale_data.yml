@@ -16,6 +16,10 @@ locales:
     version: 1
   pl_PL:
     version: 1
+  ro_RO:
+    version: 1
+  vn_VN:
+    version: 1
   zh_Hans:
     version: 1
   zh_HK:
