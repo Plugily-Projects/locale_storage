@@ -1,24 +1,24 @@
 locales:
   valid-version: 3.11.0
   cs_CZ:
-    version: 1
+    version: 2
   de_DE:
-    version: 1
+    version: 2
   en_GB:
-    version: 1
+    version: 2
   es_ES:
-    version: 3
+    version: 4
   fr_FR:
-    version: 1
+    version: 2
   hu_HU:
-    version: 1
+    version: 2
   id_ID:
-    version: 2
+    version: 3
   pl_PL:
-    version: 1
+    version: 2
   ro_RO:
-    version: 2
+    version: 3
   vn_VN:
-    version: 1
-  zh_Hans:
     version: 2
+  zh_Hans:
+    version: 3
