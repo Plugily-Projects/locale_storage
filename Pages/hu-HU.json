@@ -56,7 +56,7 @@
     "Wiki.Global.Console": "Konzol",
     "Wiki.Global.None": "Nincs",
     "Wiki.Global.Example": "Példa",
-    "Wiki.Global.You-Can-Translate-Here": "Lehetőséged van itt (click) a plugin-t fordítani ingyen.",
+    "Wiki.Global.You-Can-Translate-Here": "Lehetőséged van itt a plugin-t fordítani ingyen.",
     "Wiki.Global.You-Can-Use-Star-For-All-Admin-Permissions": "A <code>%permission%</code> jogosultsággal minden admin-parancst engedélyezel.",
     "Wiki.Global.FAQ.Question.Players-Cant-Join-Through-Signs": "A játékosok nem tudnak táblákon keresztül csatlakozni",
     "Wiki.Global.FAQ.Answer.Players-Cant-Join-Through-Signs": "Ez egy nagyon gyakori probléma minden minigame-pluginban.\n\nEzt a vanilla Minecraft <b>spawn védelmi</b> funkciója okozza.\n\nHogy letiltsd ezt, menj a <b>server.properties</b> fájlba és változtasd meg a <b>spawn-protection</b> értéket <b>0-ra</b>.",
@@ -69,5 +69,10 @@
     "Translation.Current-Languages": "Jelenlegi nyelvek",
     "Translation.Languages-In-Total": "(összesen %num%)",
     "Translation.Pending-Languages": "Függőben lévő nyelvek",
-    "Translation.Pending-Languages.Description": "Több fordításra váró"
+    "Translation.Pending-Languages.Description": "Több fordításra váró",
+    "Beta.Join-Now": "Csatlakozás!",
+    "Beta.Join-Beta-Now": "Csatlakozz a bétaprogramhoz!",
+    "Beta.Join-Beta-Now.Benefits": "Csekkold a vele járó előnyöket",
+    "Youtube.Tutorial.Title": "%plugin name% - Aréna létrehozása",
+    "Youtube.Tutorial.Description": "Egy egyszerű bemutató, hogy hogyan kell egy %plugin name% arénát létrehozni."
 }
