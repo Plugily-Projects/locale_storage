@@ -69,5 +69,10 @@
     "Translation.Current-Languages": "Bieżące języki",
     "Translation.Languages-In-Total": "(w sumie %num%)",
     "Translation.Pending-Languages": "Oczekujące języki",
-    "Translation.Pending-Languages.Description": "Oczekujące na więcej tłumaczeń"
+    "Translation.Pending-Languages.Description": "Oczekujące na więcej tłumaczeń",
+    "Beta.Join-Now": "Dołącz już teraz!",
+    "Beta.Join-Beta-Now": "Dołącz do programu beta!",
+    "Beta.Join-Beta-Now.Benefits": "Zobacz wszystkie korzyści",
+    "Youtube.Tutorial.Title": "%plugin name% - Jak skonfigurować arenę",
+    "Youtube.Tutorial.Description": "Prosty samouczek o tym jak skonfigurować arenę w pluginie %plugin name%."
 }
