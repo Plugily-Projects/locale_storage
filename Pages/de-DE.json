@@ -69,5 +69,10 @@
     "Translation.Current-Languages": "Derzeitige Sprachen",
     "Translation.Languages-In-Total": "(%num% insgesamt)",
     "Translation.Pending-Languages": "Ausstehende Sprachen",
-    "Translation.Pending-Languages.Description": "Warten auf weitere Übersetzungen"
+    "Translation.Pending-Languages.Description": "Warten auf weitere Übersetzungen",
+    "Beta.Join-Now": "Join now!",
+    "Beta.Join-Beta-Now": "Join beta program now!",
+    "Beta.Join-Beta-Now.Benefits": "Check out all the benefits",
+    "Youtube.Tutorial.Title": "%plugin name% - Wie man eine Arena einrichtet",
+    "Youtube.Tutorial.Description": "Einfaches Tutorial, wie man bei %plugin name% die Arena einrichtet."
 }
