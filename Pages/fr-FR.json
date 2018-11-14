@@ -31,7 +31,7 @@
     "Wiki.Alerts.Danger": "Danger !",
     "Wiki.Alerts.Tip.Description": "Bon conseil c'est utile!",
     "Wiki.Alerts.Info.Description": "Quelques bons contenus que vous pourriez lire!",
-    "Wiki.Alerts.Warn.Description": "You can do something wrong!",
+    "Wiki.Alerts.Warn.Description": "Vous ne pouvez pas faire quelques chose de faux!",
     "Wiki.Alerts.Danger.Description": "Lisez ça si vous ne voulez pas de problèmes!",
     "Wiki.Village.Index.Enhancements-Content": "Ajout d'amélioration du contenu",
     "Wiki.Global.List-Of-Placeholders": "Liste de placeholders de PlaceholderAPI",
@@ -44,7 +44,7 @@
     "Wiki.Village.PlaceholderAPI.VDLevel-Description": "Afficher votre niveau actuel",
     "Wiki.Village.PlaceholderAPI.VDExp-Description": "Afficher votre expérience (nombre décimal)",
     "Wiki.Village.PlaceholderAPI.VDNextLevelExp-Description": "Afficher l'expérience nécessaire pour passer au prochaine niveau",
-    "Wiki.Global.Language-Name": "English",
+    "Wiki.Global.Language-Name": "Français",
     "Wiki.Global.Command": "Commande",
     "Wiki.Global.Permission": "Permission",
     "Wiki.Global.Admin-Commands": "Commandes admin",
@@ -69,5 +69,10 @@
     "Translation.Current-Languages": "Langue actuelle",
     "Translation.Languages-In-Total": "(%num% au total)",
     "Translation.Pending-Languages": "Langues en attentes",
-    "Translation.Pending-Languages.Description": "En attente de plus de traductions"
+    "Translation.Pending-Languages.Description": "En attente de plus de traductions",
+    "Beta.Join-Now": "Rejoignez dés maintenant!",
+    "Beta.Join-Beta-Now": "Rejoignez le programme en beta!",
+    "Beta.Join-Beta-Now.Benefits": "Voir tout les avantages",
+    "Youtube.Tutorial.Title": "%plugin name% - Comment configurer une arène",
+    "Youtube.Tutorial.Description": "Simple tutoriel comment configurer l'arène pour le plugin %plugin name%."
 }
