@@ -74,5 +74,11 @@
     "Beta.Join-Beta-Now": "Csatlakozz a bétaprogramhoz!",
     "Beta.Join-Beta-Now.Benefits": "Csekkold a vele járó előnyöket",
     "Youtube.Tutorial.Title": "%plugin name% - Aréna létrehozása",
-    "Youtube.Tutorial.Description": "Egy egyszerű bemutató, hogy hogyan kell egy %plugin name% arénát létrehozni."
+    "Youtube.Tutorial.Description": "Egy egyszerű bemutató, hogy hogyan kell egy %plugin name% arénát létrehozni.",
+    "Beta.Benefit.Squash-Em": "Hibák kijavítása hivatalos kiadás előtt!",
+    "Beta.Benefit.Squash-Em.Description": "Részt vehet a <strong>béta programban</strong>, és segítsen nekünk a hibák és egyéb problémák kijavítására a végleges kiadás előtt!",
+    "Beta.Benefit.Join-Insiders": "Csatlakozz a szuper bennfentesek csoportjához!",
+    "Beta.Benefit.Join-Insiders.Description": "Nyissuk meg a hozzáférést a hűvös betákhoz és a szoftverünk előtelepítési verzióihoz <strong>béta programunk</strong> alatt!",
+    "Beta.Benefit.Be-Heard": "Hallani - az ötleteid fontosak!",
+    "Beta.Benefit.Be-Heard.Description": "A <strong>béta programban</strong> való részvétel lehetővé teszi, hogy hatással legyenek projektjeink fejlesztésére!"
 }
