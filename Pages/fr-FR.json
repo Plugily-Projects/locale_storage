@@ -74,5 +74,11 @@
     "Beta.Join-Beta-Now": "Rejoignez le programme en beta!",
     "Beta.Join-Beta-Now.Benefits": "Voir tout les avantages",
     "Youtube.Tutorial.Title": "%plugin name% - Comment configurer une arène",
-    "Youtube.Tutorial.Description": "Simple tutoriel comment configurer l'arène pour le plugin %plugin name%."
+    "Youtube.Tutorial.Description": "Simple tutoriel comment configurer l'arène pour le plugin %plugin name%.",
+    "Beta.Benefit.Squash-Em": "Squash bugs before official release!",
+    "Beta.Benefit.Squash-Em.Description": "Participate in <strong>beta program</strong> and help us squashing bugs and other problems before final release!",
+    "Beta.Benefit.Join-Insiders": "Join the group of super insiders!",
+    "Beta.Benefit.Join-Insiders.Description": "Unlock access to cool betas and pre release versions of our software while being in <strong>beta program</strong>!",
+    "Beta.Benefit.Be-Heard": "Be heard - your ideas matters!",
+    "Beta.Benefit.Be-Heard.Description": "Participating in <strong>beta program</strong> allows you to impact on the development of our projects!"
 }
