@@ -1,5 +1,7 @@
 locales:
-  valid-version: 3.11.0
+  valid-version: 4.0.0
+
+  #deprecated
   cs_CZ:
     version: 2
   de_DE:
