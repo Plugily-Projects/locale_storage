@@ -75,10 +75,12 @@
     "Beta.Join-Beta-Now.Benefits": "Zobacz wszystkie korzyści",
     "Youtube.Tutorial.Title": "%plugin name% - Jak skonfigurować arenę",
     "Youtube.Tutorial.Description": "Prosty samouczek o tym jak skonfigurować arenę w pluginie %plugin name%.",
-    "Beta.Benefit.Squash-Em": "Squash bugs before official release!",
-    "Beta.Benefit.Squash-Em.Description": "Participate in <strong>beta program</strong> and help us squashing bugs and other problems before final release!",
+    "Beta.Benefit.Squash-Em": "Usuwaj błędy przed oficjalnym wydaniem!",
+    "Beta.Benefit.Squash-Em.Description": "Weź udział w <strong> programie beta </strong> i pomóż nam usunąć błędy i inne problemy przed ostatecznym wydaniem!",
     "Beta.Benefit.Join-Insiders": "Dołącz do grupy super wtajemniczonych osób!",
-    "Beta.Benefit.Join-Insiders.Description": "Unlock access to cool betas and pre release versions of our software while being in <strong>beta program</strong>!",
+    "Beta.Benefit.Join-Insiders.Description": "Odblokuj dostęp do fajnych wersji beta i wersji wstępnych naszego oprogramowania będąc jednocześnie w <strong> programie beta </strong>!",
     "Beta.Benefit.Be-Heard": "Bądź usłyszany - twoje pomysły się liczą!",
-    "Beta.Benefit.Be-Heard.Description": "Participating in <strong>beta program</strong> allows you to impact on the development of our projects!"
+    "Beta.Benefit.Be-Heard.Description": "Udział w <strong> programie beta </strong> pozwala Ci wpływać na rozwój naszych projektów!",
+    "Tutorial.Choose-Tutorial": "Wybierz samouczek",
+    "Tutorial.Project-Tutorial": "Konfiguracja %project%"
 }
