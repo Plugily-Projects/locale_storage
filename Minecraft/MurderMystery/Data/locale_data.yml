@@ -1,28 +1,2 @@
 locales:
   valid-version: 1.0.0
-  cs_CZ:
-    version: 2
-  de_DE:
-    version: 2
-  en_GB:
-    version: 2
-  fr_FR:
-    version: 2
-  hu_HU:
-    version: 2
-  id_ID:
-    version: 2
-  it_IT:
-    version: 2
-  ko_KR:
-    version: 2
-  pl_PL:
-    version: 2
-  ro_RO:
-    version: 2
-  vn_VN:
-    version: 2
-  zh_Hans:
-    version: 2
-  zh_HK:
-    version: 3
