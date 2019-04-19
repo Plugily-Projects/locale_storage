@@ -80,5 +80,7 @@
     "Beta.Benefit.Join-Insiders": "Přidejte se ke skupině super insiderů!",
     "Beta.Benefit.Join-Insiders.Description": "Odemkněte přístup ke cool beta verzím a verzím našeho softwaru před vydáním po dobu co budete v <strong>beta programu</strong>!",
     "Beta.Benefit.Be-Heard": "Buďte slyšet - vaše názory mají smysl!",
-    "Beta.Benefit.Be-Heard.Description": "Účastí v <strong>beta programu</strong> vám dovoluje mít dopad na vývoji našich projektů!"
+    "Beta.Benefit.Be-Heard.Description": "Účastí v <strong>beta programu</strong> vám dovoluje mít dopad na vývoji našich projektů!",
+    "Tutorial.Choose-Tutorial": "Vybrat Tutoriál",
+    "Tutorial.Project-Tutorial": "Tutoriál nastavení %project%"
 }
