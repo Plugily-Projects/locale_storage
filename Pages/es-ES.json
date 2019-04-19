@@ -80,5 +80,7 @@
     "Beta.Benefit.Join-Insiders": "¡Únete al grupo de prueba!",
     "Beta.Benefit.Join-Insiders.Description": "Consigue acceso a increíbles betas y versiones de pre-lanzamiento de nuestro software siendo parte del <strong>programa beta</strong>.",
     "Beta.Benefit.Be-Heard": "Sé escuchado - ¡Tus ideas cuentan!",
-    "Beta.Benefit.Be-Heard.Description": "Participar en el <strong>programa beta</strong> te permite tener un impacto en el desarrollo de nuestros proyectos."
+    "Beta.Benefit.Be-Heard.Description": "Participar en el <strong>programa beta</strong> te permite tener un impacto en el desarrollo de nuestros proyectos.",
+    "Tutorial.Choose-Tutorial": "Elegir tutorial",
+    "Tutorial.Project-Tutorial": "Tutorial de %project%"
 }
