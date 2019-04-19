@@ -80,5 +80,7 @@
     "Beta.Benefit.Join-Insiders": "Werde Teil der Super Insider!",
     "Beta.Benefit.Join-Insiders.Description": "Erhalte Zugang zu coolen Beta und pre release Versionen unserer Software während du im <strong>Betaprogramm</strong> bist!",
     "Beta.Benefit.Be-Heard": "Werde gehört - deine Ideen zählen!",
-    "Beta.Benefit.Be-Heard.Description": "Am <strong>Betaprogramm</strong> teilzunehmen erlaubt es dir Einfluss auf die Entwicklung unserer Projekte zu nehmen!"
+    "Beta.Benefit.Be-Heard.Description": "Am <strong>Betaprogramm</strong> teilzunehmen erlaubt es dir Einfluss auf die Entwicklung unserer Projekte zu nehmen!",
+    "Tutorial.Choose-Tutorial": "Wähle ein Tutorial",
+    "Tutorial.Project-Tutorial": "%project% Anleitungstutorial"
 }
