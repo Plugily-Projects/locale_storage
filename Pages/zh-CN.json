@@ -44,7 +44,7 @@
     "Wiki.Village.PlaceholderAPI.VDLevel-Description": "顯示現在級數",
     "Wiki.Village.PlaceholderAPI.VDExp-Description": "顯示經驗(小數點)",
     "Wiki.Village.PlaceholderAPI.VDNextLevelExp-Description": "顯示升級所需的經驗",
-    "Wiki.Global.Language-Name": "英文",
+    "Wiki.Global.Language-Name": "繁體中文",
     "Wiki.Global.Command": "指令",
     "Wiki.Global.Permission": "權限",
     "Wiki.Global.Admin-Commands": "管理員指令",
@@ -80,5 +80,7 @@
     "Beta.Benefit.Join-Insiders": "加入!",
     "Beta.Benefit.Join-Insiders.Description": "使用未正式發布的插件!",
     "Beta.Benefit.Be-Heard": "你的意見很重要!",
-    "Beta.Benefit.Be-Heard.Description": "加入以幫助我們開發插件!"
+    "Beta.Benefit.Be-Heard.Description": "加入以幫助我們開發插件!",
+    "Tutorial.Choose-Tutorial": "Choose tutorial",
+    "Tutorial.Project-Tutorial": "%project% setup tutorial"
 }
