@@ -9,7 +9,7 @@
     "Wiki.Sidebar.Support": "Támogatás",
     "Wiki.Sidebar.Support.Setup-Tutorial": "Telepítési útmutató",
     "Wiki.Sidebar.Support.FAQ": "GYIK",
-    "Wiki.Sidebar.Support.FAQ.Problems-And-Tips": "Poblémák & tippek",
+    "Wiki.Sidebar.Support.FAQ.Problems-And-Tips": "Problémák ès tippek",
     "Wiki.Sidebar.Support.Files-Explained": "Plugin fájlok magyarázata",
     "Wiki.Sidebar.Development-Space": "Fejlesztési tér",
     "Wiki.Sidebar.Development-Space.Developer-API": "Fejlesztési API",
@@ -80,5 +80,7 @@
     "Beta.Benefit.Join-Insiders": "Csatlakozz a szuper bennfentesek csoportjához!",
     "Beta.Benefit.Join-Insiders.Description": "Nyissuk meg a hozzáférést a hűvös betákhoz és a szoftverünk előtelepítési verzióihoz <strong>béta programunk</strong> alatt!",
     "Beta.Benefit.Be-Heard": "Hallani - az ötleteid fontosak!",
-    "Beta.Benefit.Be-Heard.Description": "A <strong>béta programban</strong> való részvétel lehetővé teszi, hogy hatással legyenek projektjeink fejlesztésére!"
+    "Beta.Benefit.Be-Heard.Description": "A <strong>béta programban</strong> való részvétel lehetővé teszi, hogy hatással legyenek projektjeink fejlesztésére!",
+    "Tutorial.Choose-Tutorial": "Vàlassz tutorial videòt",
+    "Tutorial.Project-Tutorial": "%project% tutorial videò"
 }
