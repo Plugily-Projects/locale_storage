@@ -82,5 +82,19 @@
     "Beta.Benefit.Be-Heard": "Soyez entendus - vos idées comptent!",
     "Beta.Benefit.Be-Heard.Description": "Participer au programme <strong>beta</strong> vous permet d’influer sur le développement de nos projets!",
     "Tutorial.Choose-Tutorial": "Choisissez un tutoriel !",
-    "Tutorial.Project-Tutorial": "%project% tutoriel d'installation"
+    "Tutorial.Project-Tutorial": "%project% tutoriel d'installation",
+    "404.Not-Found": "404 Page Not Found",
+    "404.Back-To-Main": "Back to the main command center",
+    "Command-Center.Projects": "Projects",
+    "Command-Center.About-Me": "About me",
+    "Command-Center.Workflow": "Workflow",
+    "Command-Center.Buttons.Beta-Program": "Beta Program",
+    "Command-Center.Buttons.Translate-Us": "Translate Us",
+    "Command-Center.Buttons.Discord-Server": "Discord Server",
+    "Command-Center.Buttons.Github-Profile": "GitHub Profile",
+    "creating - we, us, the community": {
+        "Command-Center.Motto.Creating-Better-Future": "Creating better future!"
+    },
+    "Wiki.404.Click-To-Redirect": "Click icons below to redirect to the wikis",
+    "Wiki.Footer": "Created by %creator% and maintained by %maintainer%"
 }
