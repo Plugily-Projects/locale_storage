@@ -79,8 +79,22 @@
     "Beta.Benefit.Squash-Em.Description": "Neem deel in <strong>beta program</strong> en help onsbugs en andere problemen eruit te halen voor de officiële uitkomst.",
     "Beta.Benefit.Join-Insiders": "Join de groep van super insiders!",
     "Beta.Benefit.Join-Insiders.Description": "Ontgrendel toegang tot coole beta's en pre-releases van onze software als je in ons beta programma zit.",
-    "Beta.Benefit.Be-Heard": "Be heard - your ideas matters!",
-    "Beta.Benefit.Be-Heard.Description": "Participating in <strong>beta program</strong> allows you to impact on the development of our projects!",
-    "Tutorial.Choose-Tutorial": "Choose tutorial",
-    "Tutorial.Project-Tutorial": "%project% setup tutorial"
+    "Beta.Benefit.Be-Heard": "Wees gehoord - jouw ideeën tellen!",
+    "Beta.Benefit.Be-Heard.Description": "Deelnemen aan <strong>beta programma</strong> geeft je de mogelijkheid om invloed uit te oefenen op de ontwikkeling van onze projecten!",
+    "Tutorial.Choose-Tutorial": "Kies uitleg",
+    "Tutorial.Project-Tutorial": "%project% setup uitleg",
+    "404.Not-Found": "404 Page Not Found",
+    "404.Back-To-Main": "Back to the main command center",
+    "Command-Center.Projects": "Projects",
+    "Command-Center.About-Me": "About me",
+    "Command-Center.Workflow": "Workflow",
+    "Command-Center.Buttons.Beta-Program": "Beta Program",
+    "Command-Center.Buttons.Translate-Us": "Translate Us",
+    "Command-Center.Buttons.Discord-Server": "Discord Server",
+    "Command-Center.Buttons.Github-Profile": "GitHub Profile",
+    "creating - we, us, the community": {
+        "Command-Center.Motto.Creating-Better-Future": "Creating better future!"
+    },
+    "Wiki.404.Click-To-Redirect": "Click icons below to redirect to the wikis",
+    "Wiki.Footer": "Created by %creator% and maintained by %maintainer%"
 }
