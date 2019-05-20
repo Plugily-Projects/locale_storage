@@ -82,5 +82,19 @@
     "Beta.Benefit.Be-Heard": "Bądź usłyszany - twoje pomysły się liczą!",
     "Beta.Benefit.Be-Heard.Description": "Udział w <strong> programie beta </strong> pozwala Ci wpływać na rozwój naszych projektów!",
     "Tutorial.Choose-Tutorial": "Wybierz samouczek",
-    "Tutorial.Project-Tutorial": "Konfiguracja %project%"
+    "Tutorial.Project-Tutorial": "Konfiguracja %project%",
+    "404.Not-Found": "404 Nie znaleziono strony",
+    "404.Back-To-Main": "Powrót do głównego centrum dowodzenia",
+    "Command-Center.Projects": "Projekty",
+    "Command-Center.About-Me": "O mnie",
+    "Command-Center.Workflow": "Organizacja pracy",
+    "Command-Center.Buttons.Beta-Program": "Program Beta",
+    "Command-Center.Buttons.Translate-Us": "Przetłumacz nas",
+    "Command-Center.Buttons.Discord-Server": "Serwer Discord",
+    "Command-Center.Buttons.Github-Profile": "Profil GitHub",
+    "creating - we, us, the community": {
+        "Command-Center.Motto.Creating-Better-Future": "Tworzymy lepszą przyszłość!"
+    },
+    "Wiki.404.Click-To-Redirect": "Kliknij ikony poniżej by przenieść się do danej wiki",
+    "Wiki.Footer": "Created by %creator% and maintained by %maintainer%"
 }
