@@ -80,5 +80,21 @@
     "Beta.Benefit.Join-Insiders": "Join the group of super insiders!",
     "Beta.Benefit.Join-Insiders.Description": "Unlock access to cool betas and pre release versions of our software while being in <strong>beta program</strong>!",
     "Beta.Benefit.Be-Heard": "Be heard - your ideas matters!",
-    "Beta.Benefit.Be-Heard.Description": "Participating in <strong>beta program</strong> allows you to impact on the development of our projects!"
+    "Beta.Benefit.Be-Heard.Description": "Participating in <strong>beta program</strong> allows you to impact on the development of our projects!",
+    "Tutorial.Choose-Tutorial": "Choose tutorial",
+    "Tutorial.Project-Tutorial": "%project% setup tutorial",
+    "404.Not-Found": "404 Page Not Found",
+    "404.Back-To-Main": "Back to the main command center",
+    "Command-Center.Projects": "Projects",
+    "Command-Center.About-Me": "About me",
+    "Command-Center.Workflow": "Workflow",
+    "Command-Center.Buttons.Beta-Program": "Beta Program",
+    "Command-Center.Buttons.Translate-Us": "Translate Us",
+    "Command-Center.Buttons.Discord-Server": "Discord Server",
+    "Command-Center.Buttons.Github-Profile": "GitHub Profile",
+    "creating - we, us, the community": {
+        "Command-Center.Motto.Creating-Better-Future": "Creating better future!"
+    },
+    "Wiki.404.Click-To-Redirect": "Click icons below to redirect to the wikis",
+    "Wiki.Footer": "Created by %creator% and maintained by %maintainer%"
 }
