@@ -44,7 +44,7 @@
     "Wiki.Village.PlaceholderAPI.VDLevel-Description": "Muestra tu nivel actual",
     "Wiki.Village.PlaceholderAPI.VDExp-Description": "Muestra tu exp (numero decimal)",
     "Wiki.Village.PlaceholderAPI.VDNextLevelExp-Description": "Muestra cuanta exp necesitas para subir de nivel",
-    "Wiki.Global.Language-Name": "Ingles",
+    "Wiki.Global.Language-Name": "Español",
     "Wiki.Global.Command": "Comando",
     "Wiki.Global.Permission": "Permiso",
     "Wiki.Global.Admin-Commands": "Comandos de Admin",
@@ -82,5 +82,19 @@
     "Beta.Benefit.Be-Heard": "Sé escuchado - ¡Tus ideas cuentan!",
     "Beta.Benefit.Be-Heard.Description": "Participar en el <strong>programa beta</strong> te permite tener un impacto en el desarrollo de nuestros proyectos.",
     "Tutorial.Choose-Tutorial": "Elegir tutorial",
-    "Tutorial.Project-Tutorial": "Tutorial de %project%"
+    "Tutorial.Project-Tutorial": "Tutorial de %project%",
+    "404.Not-Found": "404 Page Not Found",
+    "404.Back-To-Main": "Back to the main command center",
+    "Command-Center.Projects": "Projects",
+    "Command-Center.About-Me": "About me",
+    "Command-Center.Workflow": "Workflow",
+    "Command-Center.Buttons.Beta-Program": "Beta Program",
+    "Command-Center.Buttons.Translate-Us": "Translate Us",
+    "Command-Center.Buttons.Discord-Server": "Discord Server",
+    "Command-Center.Buttons.Github-Profile": "GitHub Profile",
+    "creating - we, us, the community": {
+        "Command-Center.Motto.Creating-Better-Future": "Creating better future!"
+    },
+    "Wiki.404.Click-To-Redirect": "Click icons below to redirect to the wikis",
+    "Wiki.Footer": "Created by %creator% and maintained by %maintainer%"
 }
