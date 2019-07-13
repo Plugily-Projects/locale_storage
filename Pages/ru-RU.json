@@ -83,18 +83,16 @@
     "Beta.Benefit.Be-Heard.Description": "Участие в <strong>бета программе</strong> позволяет вам влиять на развитие наших проектов!",
     "Tutorial.Choose-Tutorial": "Выберите обучение",
     "Tutorial.Project-Tutorial": "Обучение по настройке %project%",
-    "404.Not-Found": "404 Page Not Found",
-    "404.Back-To-Main": "Back to the main command center",
-    "Command-Center.Projects": "Projects",
-    "Command-Center.About-Me": "About me",
-    "Command-Center.Workflow": "Workflow",
-    "Command-Center.Buttons.Beta-Program": "Beta Program",
-    "Command-Center.Buttons.Translate-Us": "Translate Us",
-    "Command-Center.Buttons.Discord-Server": "Discord Server",
-    "Command-Center.Buttons.Github-Profile": "GitHub Profile",
-    "creating - we, us, the community": {
-        "Command-Center.Motto.Creating-Better-Future": "Creating better future!"
-    },
-    "Wiki.404.Click-To-Redirect": "Click icons below to redirect to the wikis",
-    "Wiki.Footer": "Created by %creator% and maintained by %maintainer%"
+    "404.Not-Found": "404 Страница Не Найдена",
+    "404.Back-To-Main": "Вернуться в главный командный центр",
+    "Command-Center.Projects": "Проекты",
+    "Command-Center.About-Me": "Обо мне",
+    "Command-Center.Workflow": "Рабочий процесс",
+    "Command-Center.Buttons.Beta-Program": "Бета Программа",
+    "Command-Center.Buttons.Translate-Us": "Переведите Нас",
+    "Command-Center.Buttons.Discord-Server": "Дискорд Сервер",
+    "Command-Center.Buttons.Github-Profile": "GitHub Профиль",
+    "Command-Center.Motto.Creating-Better-Future": "Создание лучшего будущего!",
+    "Wiki.404.Click-To-Redirect": "Нажмите на значки ниже, чтобы перейти на вики",
+    "Wiki.Footer": "Создано %creator% и поддерживается %maintainer%"
 }
