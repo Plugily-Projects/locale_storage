@@ -1,0 +1,3 @@
+Replace zh_Hans with zh_TW (Chinese Simplified)
+and replace zh_HK with zh_TW (Chinese Traditional)
+to meet same naming as in our projects
