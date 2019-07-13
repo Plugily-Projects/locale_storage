@@ -83,18 +83,16 @@
     "Beta.Benefit.Be-Heard.Description": "Deelnemen aan <strong>beta programma</strong> geeft je de mogelijkheid om invloed uit te oefenen op de ontwikkeling van onze projecten!",
     "Tutorial.Choose-Tutorial": "Kies uitleg",
     "Tutorial.Project-Tutorial": "%project% setup uitleg",
-    "404.Not-Found": "404 Page Not Found",
-    "404.Back-To-Main": "Back to the main command center",
-    "Command-Center.Projects": "Projects",
-    "Command-Center.About-Me": "About me",
-    "Command-Center.Workflow": "Workflow",
-    "Command-Center.Buttons.Beta-Program": "Beta Program",
-    "Command-Center.Buttons.Translate-Us": "Translate Us",
+    "404.Not-Found": "404 Pagina Niet Gevonden",
+    "404.Back-To-Main": "Terug naar het hoofd commando centrum",
+    "Command-Center.Projects": "Projecten",
+    "Command-Center.About-Me": "Over mij",
+    "Command-Center.Workflow": "Werkflow",
+    "Command-Center.Buttons.Beta-Program": "Beta Programma",
+    "Command-Center.Buttons.Translate-Us": "Vertaal ons",
     "Command-Center.Buttons.Discord-Server": "Discord Server",
-    "Command-Center.Buttons.Github-Profile": "GitHub Profile",
-    "creating - we, us, the community": {
-        "Command-Center.Motto.Creating-Better-Future": "Creating better future!"
-    },
-    "Wiki.404.Click-To-Redirect": "Click icons below to redirect to the wikis",
-    "Wiki.Footer": "Created by %creator% and maintained by %maintainer%"
+    "Command-Center.Buttons.Github-Profile": "GitHub Profiel",
+    "Command-Center.Motto.Creating-Better-Future": "Een betere toekomst maken!",
+    "Wiki.404.Click-To-Redirect": "Klik de iconen hieronder om naar de wiki te gaan.",
+    "Wiki.Footer": "Gemaakt door %creator% en onderhouden door %maintainer%"
 }
