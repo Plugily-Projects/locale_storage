@@ -92,9 +92,7 @@
     "Command-Center.Buttons.Translate-Us": "Übersetzen",
     "Command-Center.Buttons.Discord-Server": "Discord Server",
     "Command-Center.Buttons.Github-Profile": "GitHub Profil",
-    "creating - we, us, the community": {
-        "Command-Center.Motto.Creating-Better-Future": "Eine bessere Zukunft erschaffen!"
-    },
+    "Command-Center.Motto.Creating-Better-Future": "Eine bessere Zukunft erschaffen!",
     "Wiki.404.Click-To-Redirect": "Klick auf die Icons, um zum Wiki zu gelangen.",
     "Wiki.Footer": "Erstellt von %creator% und verwaltet von %maintainer%."
 }
