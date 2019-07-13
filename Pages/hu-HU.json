@@ -83,18 +83,16 @@
     "Beta.Benefit.Be-Heard.Description": "A <strong>béta programban</strong> való részvétel lehetővé teszi, hogy hatással legyenek projektjeink fejlesztésére!",
     "Tutorial.Choose-Tutorial": "Válassz egy útmutatót",
     "Tutorial.Project-Tutorial": "%project% útmutató",
-    "404.Not-Found": "404 Page Not Found",
-    "404.Back-To-Main": "Back to the main command center",
-    "Command-Center.Projects": "Projects",
-    "Command-Center.About-Me": "About me",
-    "Command-Center.Workflow": "Workflow",
-    "Command-Center.Buttons.Beta-Program": "Beta Program",
-    "Command-Center.Buttons.Translate-Us": "Translate Us",
-    "Command-Center.Buttons.Discord-Server": "Discord Server",
-    "Command-Center.Buttons.Github-Profile": "GitHub Profile",
-    "creating - we, us, the community": {
-        "Command-Center.Motto.Creating-Better-Future": "Creating better future!"
-    },
-    "Wiki.404.Click-To-Redirect": "Click icons below to redirect to the wikis",
-    "Wiki.Footer": "Created by %creator% and maintained by %maintainer%"
+    "404.Not-Found": "404 Oldal nem található",
+    "404.Back-To-Main": "Vissza a fő parancs központba",
+    "Command-Center.Projects": "Projektek",
+    "Command-Center.About-Me": "Rólam",
+    "Command-Center.Workflow": "Munkafolyamat",
+    "Command-Center.Buttons.Beta-Program": "Béta program",
+    "Command-Center.Buttons.Translate-Us": "Fordíts minket",
+    "Command-Center.Buttons.Discord-Server": "Discord server",
+    "Command-Center.Buttons.Github-Profile": "GitHub profil",
+    "Command-Center.Motto.Creating-Better-Future": "Jobb jövő létrehozása!",
+    "Wiki.404.Click-To-Redirect": "Kattints a lenti ikonokra, hogy átirányítsa a wiki-re",
+    "Wiki.Footer": "Létrehozta %creator% és fenntartja %maintainer%"
 }
