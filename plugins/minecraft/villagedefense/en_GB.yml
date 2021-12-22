@@ -203,13 +203,13 @@ In-Game:
         - "&c&lTotal coins spent: &7%arena_option_total_orbs_spent%"
         - ""
         - "&a&m--------------------------------------------------"
-        Placeholders:
-          Win: "You won the game"
-          Lose: "You lose the game"
-          Died:
-            Players: "&7All players died!"
-            Villagers: "&7All villagers died!"
-          Survived: "&7You survived all the waves"
+      Placeholders:
+        Win: "You won the game"
+        Lose: "You lose the game"
+        Died:
+          Players: "&7All players died!"
+          Villagers: "&7All villagers died!"
+        Survived: "&7You survived all the waves"
     Admin:
       Set-Starting-In-To-0: "&bAn admin set waiting time to 0. The game starts now!"
       Removed:
