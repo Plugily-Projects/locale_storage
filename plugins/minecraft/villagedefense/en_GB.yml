@@ -539,32 +539,23 @@ Upgrade-Menu:
   Max-Tier: "&3Entity is at max tier of this upgrade!"
   Stats-Item:
     Name: "&3&lCurrent Stats"
-    Description: "&3Movement speed: &8%speed%; &3Attack Damage: &8%damage%; &3Health:
-      &8%current_hp%/%max_hp%"
+    Description: "&3Movement speed: &8%speed%; &3Attack Damage: &8%damage%; &3Health: &8%current_hp%/%max_hp%"
   Upgrades:
     Health:
       Name: "&3&lUpgrade Health"
-      Description: "&3Upgrade max health to tier &8%tier%&3!;&3From &8%from% &3to
-        &8%to%;&3Cost of upgrade: &8%cost%;;&3Click to purchase"
+      Description: "&3Upgrade max health to tier &8%tier%&3!;&3From &8%from% &3to &8%to%;&3Cost of upgrade: &8%cost%;;&3Click to purchase"
     Damage:
       Name: "&3&lUpgrade Damage"
-      Description: "&3Upgrade entity damage to tier &8%tier%&3!;&3From &8%from% &3to
-        &8%to%;&3Cost of upgrade: &8%cost%;;&8Click to purchase"
+      Description: "&3Upgrade entity damage to tier &8%tier%&3!;&3From &8%from% &3to &8%to%;&3Cost of upgrade: &8%cost%;;&8Click to purchase"
     Speed:
       Name: "&3&lUpgrade Speed"
-      Description: "&3Upgrade movement speed to tier &8%tier%&3!;&3From &8%from% &3to
-        &8%to%;&3Cost of upgrade: &8%cost%;;&8Click to purchase"
+      Description: "&3Upgrade movement speed to tier &8%tier%&3!;&3From &8%from% &3to &8%to%;&3Cost of upgrade: &8%cost%;;&8Click to purchase"
     Swarm-Awareness:
       Name: "&3&lSwarm Awareness"
-      Description: "&3Upgrade swarm awareness to tier &8%tier%&3!;&3From &8%from%
-        &8damage multiplier per wolf in radius;&8of 3 blocks &3to %to%;&3The more
-        wolves near attacking wolf;&3the more damage wolf deal;&3Cost of upgrade: &8%cost%;;&8Click
-        to purchase"
+      Description: "&3Upgrade swarm awareness to tier &8%tier%&3!;&3From &8%from% &8damage multiplier per wolf in radius;&8of 3 blocks &3to %to%;&3The more wolves near attacking wolf;&3the more damage wolf deal;&3Cost of upgrade: &8%cost%;;&8Click to purchase"
     Final-Defense:
       Name: "&3&lFinal Defense"
-      Description: "&3Upgrade final defense to tier &8%tier%&3!;&3From &8%from% explosion
-        radius &3to &8%to%;&3Golem will explode after death killing nearby;&3zombies
-        and stun all alive ones;&3Cost of upgrade: &8%cost%;;&8Click to purchase"
+      Description: "&3Upgrade final defense to tier &8%tier%&3!;&3From &8%from% explosion radius &3to &8%to%;&3Golem will explode after death killing nearby;&3zombies and stun all alive ones;&3Cost of upgrade: &8%cost%;;&8Click to purchase"
 #
 # Leaderboard messages
 #
