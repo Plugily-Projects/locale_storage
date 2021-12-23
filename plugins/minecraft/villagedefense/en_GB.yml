@@ -13,7 +13,7 @@
 # Command messages
 #
 Commands:
-  Did-You-Mean: "&6Did you mean &e/%command%&6?"
+  Did-You-Mean: "&6Did you mean &e/%value%&6?"
   Command-Executed: "&aCommand successfully executed!"
   Teleported-To-Lobby: "&aTeleported to lobby!"
   Removed-Game-Instance: "&cSuccessfully removed game instance!"
@@ -259,7 +259,7 @@ In-Game:
       Golem-Item-Name: "Spawn Golem"
       Wolf-Item-Name: "Spawn Wolf"
       Mob-Limit-Reached: "&cYou can't buy mobs! You've reached the limit of %number% mobs!"
-      Not-Enough-Orbs: "&cYou need more orbs to buy this item!"
+      Not-Enough-Currency: "&cYou need more orbs to buy this item!"
       Currency: "orbs"
       Not-Defined: "&cShop wasn't set up! Contact staff!"
 
