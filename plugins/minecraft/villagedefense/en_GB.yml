@@ -186,6 +186,7 @@ In-Game:
       Start-In: "&7The game starts in &b%arena_time%&7 seconds!"
       Waiting-For-Players: "&7Waiting for players... We need at least &b%arena_min_players%&7 players to start."
       Enough-Players-To-Start: "&7We now have enough players. The game is starting soon!"
+      Max-Players: "&7We reached max players for this round. Let's shorten the time!"
       Game-Started: "&7The game has started!"
       Kicked-For-Premium-Slot: "&c%player% got removed from the game to make a place for premium players!"
       You-Were-Kicked-For-Premium-Slot: "&cYou got kicked out of the game to make a place for a premium player!"
@@ -195,8 +196,8 @@ In-Game:
         - "&a&m--------------------------------------------------"
         - "&f&l%plugin_name%"
         - ""
-        - "%value%"
-        - ""
+        - "%arena_summary%"
+        - "%arena_summary_player%"
         - ""
         - "&e&lReached wave: &7%arena_option_wave% &8(best %user_statistic_highest_wave%)"
         - "&6&lTotal zombies killed: &7%arena_option_total_killed_zombies%"
@@ -254,14 +255,14 @@ In-Game:
           Spawn: "&aGolem spawned in the village!"
           Name: "%player%'s Golem"
           Cant-Ride-Other: "&cYou can't ride the golem of somebody else!"
-    Shop:
-      GUI: "&lShop"
-      Golem-Item-Name: "Spawn Golem"
-      Wolf-Item-Name: "Spawn Wolf"
-      Mob-Limit-Reached: "&cYou can't buy mobs! You've reached the limit of %number% mobs!"
-      Not-Enough-Currency: "&cYou need more orbs to buy this item!"
-      Currency: "orbs"
-      Not-Defined: "&cShop wasn't set up! Contact staff!"
+      Shop:
+        GUI: "&lShop"
+        Golem-Item-Name: "Spawn Golem"
+        Wolf-Item-Name: "Spawn Wolf"
+        Mob-Limit-Reached: "&cYou can't buy mobs! You've reached the limit of %number% mobs!"
+        Not-Enough-Currency: "&cYou need more orbs to buy this item!"
+        Currency: "orbs"
+        Not-Defined: "&cShop wasn't set up! Contact staff!"
 
 #
 # Sign messages
