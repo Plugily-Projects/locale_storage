@@ -14,10 +14,10 @@
 #
 Color:
   Placeholder:
-    Value: "&a"
-    Number: "&a"
-    Player: "&b"
-    Other: "&a"
+    Value: "&b"
+    Number: "&b"
+    Player: "&a"
+    Other: "&b"
   Chat:
     Issue: "&c"
     Messages: "&7"
@@ -81,7 +81,7 @@ Scoreboard:
   Theme-Unknown: "&c???"
   Content:
     Waiting:
-      - "■ Mode | %arena_mode%"
+      - "■ Mode | %arena_type%"
       - ""
       - "■ Players | %arena_players_size%"
       - ""
@@ -89,7 +89,7 @@ Scoreboard:
       - ""
       - "   www.plugily.xyz"
     Starting:
-      - "■ Mode | %arena_mode%"
+      - "■ Mode | %arena_type%"
       - ""
       - "■ Starting In | %arena_time%"
       - ""
@@ -103,7 +103,7 @@ Scoreboard:
       Classic:
         - "■ Theme | %arena_theme%"
         - "&f"
-        - "■ Mode | %arena_mode%"
+        - "■ Mode | %arena_type%"
         - "&f"
         - "■ Time Left | %arena_time%"
         - ""
@@ -115,7 +115,7 @@ Scoreboard:
       Teams:
         - "■ Theme | %arena_theme%"
         - "&f"
-        - "■ Mode | %arena_mode%"
+        - "■ Mode | %arena_type%"
         - "&f"
         - "■ Time Left | %arena_time%"
         - ""
@@ -125,7 +125,7 @@ Scoreboard:
         - ""
         - "   www.plugily.xyz"
       Guess-The-Build:
-        - "■ Mode | %arena_mode%"
+        - "■ Mode | %arena_type%"
         - "&f"
         - "■ Builder | %arena_builder%"
         - ""
@@ -140,7 +140,7 @@ Scoreboard:
         - ""
         - "   www.plugily.xyz"
       Guess-The-Build-Waiting:
-        - "■ Mode | %arena_mode%"
+        - "■ Mode | %arena_type%"
         - "&f"
         - "■ Leaders |"
         - "%1% | %1_PTS%"
@@ -153,7 +153,7 @@ Scoreboard:
     # Contents of scoreboard while state is ending
     Ending:
       Classic:
-        - "■ Mode | %arena_mode%"
+        - "■ Mode | %arena_type%"
         - "&f"
         - "&cGAME ENDED"
         - ""
@@ -162,7 +162,7 @@ Scoreboard:
         - ""
         - "   www.plugily.xyz"
       Guess-The-Build:
-        - "■ Mode | %arena_mode%"
+        - "■ Mode | %arena_type%"
         - "&f"
         - "■ 1. %1% | %1_PTS%"
         - "■ 2. %2% | %2_PTS%"
@@ -178,7 +178,7 @@ Scoreboard:
         - "   www.plugily.xyz"
     # Contents of scoreboard while state is restarting
     Restarting:
-      - "■ Mode | %arena_mode%"
+      - "■ Mode | %arena_type%"
       - "&f"
       - "&cRESTARTING GAME"
       - ""
@@ -230,7 +230,7 @@ In-Game:
     # Join cancelled via external plugin that uses the API of our plugin.
     Cancelled-Via-API: "%color_chat_issue%%plugin_prefix% You can't join this game!"
     As-Party-Member: "%color_chat_issue%%plugin_prefix% You joined %arena_name% because the party leader joined it!"
-    Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% Arena is not configured yet! Contact staff!"
+    Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% BaseArena is not configured yet! Contact staff!"
     Title: "20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%"
   Death:
     Tag: "&8Dead"
@@ -266,7 +266,7 @@ In-Game:
       Enough-Players-To-Start: "%plugin_prefix% We now have enough players. The game is starting soon!"
       Reduced-Time: "%plugin_prefix% The time got reduced to %number% seconds"
       Max-Players: "%plugin_prefix% We reached max players for this round. Let's shorten the time!"
-      Game-Started: "%plugin_prefix% The game has started!"
+      Game-Started: "%plugin_prefix% The game has started! Build best you can!"
       Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% %player% got removed from the game to make a place for premium players!"
       You-Were-Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% You got kicked out of the game to make a place for a premium player!"
       Not-Enough-Space-For-Party: "%color_chat_issue%%plugin_prefix% Your party is bigger than free places on the arena %arena_name%"
@@ -277,17 +277,18 @@ In-Game:
         - ""
         - "%arena_summary%"
         - "%arena_summary_player%"
+        - "%arena_summary_place_own%"
         - ""
-        - ""
-        - "%place_list%"
+        - "%arena_summary_place_list%"
         - ""
         - ""
         - "&a&m--------------------------------------------------"
       Placeholders:
+        Winner: "&aPlot with %arena_place_member_1% won!"
         Win: "&aYou won the game"
         Lose: "%color_chat_issue%You lost the game"
-        Players: "&cThere are not enough players anymore. Arena got force stopped!"
-        Place: "%value% Place - %player% (%number% points)"
+        Players: "&cThere are not enough players anymore. BaseArena got force stopped!"
+        Place: "%number% Place - %value%"
         Own: "&aYou became %number%"
     Admin:
       Set-Starting-In-To-0: "%plugin_prefix% An admin set waiting time to 0. The game starts now!"
@@ -302,6 +303,7 @@ In-Game:
         Entities: "%color_chat_issue%%plugin_prefix% You can't spawn more entities!"
         Particles: "%color_chat_issue%%plugin_prefix% You can't spawn more particles!"
       Permission:
+        Head: "%color_chat_issue%%plugin_prefix% You don't have permission for this head!"
         Particle: "%color_chat_issue%%plugin_prefix% You don't have permission for this particle!"
         Biome: "%color_chat_issue%%plugin_prefix% You don't have permission for this biome!"
         Outside: "%color_chat_issue%%plugin_prefix% You can't fly outside your plot!"
@@ -317,21 +319,21 @@ In-Game:
       Voting:
         Name: "%color_chat_issue%Voting"
         Plot-Owner:
-          Chat: "%plugin_prefix% Plot owner: %player%"
-          Title: "5,20,5;;Plot owner: %player%"
-          Next: "%plugin_prefix% Now voting for %player%'s plot!"
-          Was: "%plugin_prefix% The plot owner was %player%!"
+          Chat: "%plugin_prefix% Plot owner: %value%"
+          Title: "5,20,5;;Plot owner: %value%"
+          Next: "%plugin_prefix% Now voting for %value%'s plot!"
+          Was: "%plugin_prefix% The plot owner was %value%!"
           Own: "%color_chat_issue%%plugin_prefix% You can't vote for your plot!"
         Success: "%plugin_prefix% Voted successfully!"
-        Winner: "%plugin_prefix% WINNER: %player%"
+        Winner: "5,20,5;%plugin_prefix% WINNER: %value%"
       Guess-The-Build:
         Builder: "Builder: %BUILDER%"
-        Round: "Round: %ROUND%/%MAXPLAYERS%"
+        Round: "Round: %number%/%arena_max_players%"
         Theme:
           Chars: "%plugin_prefix% The theme is %NUM% characters long"
-          Name: "%plugin_prefix% The theme is %THEME%"
-          Was: "%plugin_prefix% The theme was: %THEME%!"
-          Title: "20,30,20;The theme was;%THEME%!"
+          Name: "%plugin_prefix% The theme is %arena_theme%"
+          Was: "%plugin_prefix% The theme was: %arena_theme%!"
+          Title: "20,30,20;The theme was;%arena_theme%!"
           Guessed: "%plugin_prefix% All players guessed the theme!"
           Being-Selected: "%plugin_prefix% Theme is being selected..."
           Guess:
@@ -352,7 +354,7 @@ In-Game:
 Menu:
   Permission: "%color_chat_issue%%plugin_prefix% You don't have permission to use this menu!"
   Buttons:
-    Back-Button:
+    Back:
       Item:
         Name: "%color_chat_issue%Go Back"
         Lore: "Click to go back."
@@ -368,6 +370,7 @@ Menu:
           Remove:
             Name: "%color_chat_issue%Remove particles"
             Lore: "Right click to open menu"
+        Added: "%color_chat_issue%%plugin_prefix% Particle successfully added!"
         Removed: "%color_chat_issue%%plugin_prefix% Particle successfully removed!"
       Heads:
         Inventory: "&bPlayers heads menu"
@@ -427,7 +430,7 @@ Menu:
   Theme:
     Inventory: "Choose the theme?"
     Item:
-      Name: "%theme%"
+      Name: "%arena_theme%"
       #use ; to move to next line
       Lore: "Vote for theme %theme%;;Time remaining: %time-left%;Current votes: %percent%%!;;Live vote percentages;are shown on the right in;bar form.;;Click to vote %theme%!"
     Vote:
@@ -455,7 +458,7 @@ Menu:
 #
 Signs:
   Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Please type arena name in second line!"
-  Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% Arena with that name doesn't exists!"
+  Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% BaseArena with that name doesn't exists!"
   Created: "%plugin_prefix% Sign created successfully!"
   Removed: "%plugin_prefix% Sign successfully removed!"
   Lines:
@@ -466,10 +469,10 @@ Signs:
 
 
 #
-# Arena Selector messages
+# BaseArena Selector messages
 #
 Arena-Selector:
-  Inventory-Title: "%plugin_short_command% ▸ Arena selector"
+  Inventory-Title: "%plugin_short_command% ▸ BaseArena selector"
   Item:
     Name: "%arena_name%"
     Lore:
@@ -486,8 +489,8 @@ Arena-Selector:
 # Validator messages
 #
 Validator:
-  Invalid-Arena-Configuration: "Arena %arena_name% has invalid configuration! Missing node: %value%"
-  Instance-Started: "Arena %arena_name% instance successfully started!"
+  Invalid-Arena-Configuration: "BaseArena %arena_name% has invalid configuration! Missing node: %value%"
+  Instance-Started: "BaseArena %arena_name% instance successfully started!"
   No-Instances-Created: "There are no arena instances created in configuration!"
 
 
@@ -538,8 +541,8 @@ Leaderboard:
       Format: "&e%number%. %player% (%value%)"
       Empty-Format: "&e%number%. Empty (0)"
     Chat:
-      Header: "&8+-------+ &a&lYOUR STATS &8+-------+"
-      Header-Other: "&8+---------+ &aSTATS FOR &b%player% &8+---------+"
+      Header: "&8+-------+ &b&lYOUR STATS &8+-------+"
+      Header-Other: "&8+---------+ &bSTATS FOR &b%player% &8+---------+"
       Footer: "&8+-----------------------------+"
       Format: "%value% ▸ &a%number%"
       Top:
