@@ -1,0 +1,585 @@
+# Command messages
+Commands:
+  Did-You-Mean: "&6Ý bạn là &e/%value%&6?"
+  Command-Executed: "&aLệnh đã được thực hiện thành công!"
+  Teleported-To-Lobby: "&aDịch chuyển về sảnh!"
+  Removed-Game-Instance: "&cĐã xóa thành công phiên bản trò chơi!"
+  No-Arena-Like-That: "&cKhông có đấu trường với ID đó!"
+  Look-At-Sign: "&cBạn phải nhìn vào một tấm bảng để thực hiện lệnh này!"
+  Type-Arena-Name: "&cVui lòng nhập ID đấu trường!"
+  Hold-Any-Item: "&cBạn phải cầm một vật phẩm!"
+  No-Free-Arenas: "&cKhông còn đấu trường nào trống cả!"
+  Only-By-Player: "&cBạn có thể thực hiện lệnh này khi bạn là người chơi!"
+  Not-Playing: "&cBạn phải chơi để thực hiện lệnh này!"
+  No-Permission: "&cBạn không có quyền dùng lệnh này!"
+  Player-Not-Found: "&cNgười chơi mục tiêu %player% không tồn tại!"
+  Invalid-Location-Teleport: "&cVị trí để dịch chuyển không hợp lệ!"
+  Wrong-Usage: "&cCách dùng sai. Dùng %value%"
+  Admin:
+    Added-Orbs: "&7Đã thêm orbs cho người chơi!"
+    Received-Orbs: "&7Bạn đã nhận &a%number% orbs&7!"
+    Added-Level: "&7Đã thêm cấp cho người chơi!"
+    Reload-Success: "&aĐã tải lại đấu trường!"
+    List:
+      Header: "&6Đấu trường&a %plugin_name%&6:"
+      Format: "&a%arena_name% &e%arena_state_placeholder% &6%arena_players_size%/%arena_max_players%"
+      No-Arenas: "&cKhông có đấu trường!"
+    Spychat:
+      Toggled: "&aGián điệp trò chuyện trò chơi được chỉnh thành &c%value%"
+    Adjust-Statistic: "%plugin_prefix% Thông số %value% của %player% giờ là %number%!"
+  Main:
+    Header: "\n&6----------------{Lệnh %plugin_name%}----------"
+    Description:
+      - "&aLệnh trò chơi:"
+      - "&b/%plugin_short_command% stats: &7Hiện chỉ số của bạn!"
+      - "&b/%plugin_short_command% leave: &7Rời đấu trường hiện tại!"
+      - "&b/%plugin_short_command% join <arena>: &7Tham gia đấu trường được chỉ định!"
+      - "&b/%plugin_short_command% top <statistic>: &7Hiện thị 10 người chơi hàng đầu!"
+      - "&b/%plugin_short_command% randomjoin: &7Tham gia một đấu trường ngẫu nhiên!"
+    Admin-Bonus-Description: "\n&b&7Hiển thị tất cả lệnh của quản trị viên"
+    Footer: "&6-------------------------------------------------"
+# In-Game scoreboard messages
+# 
+# Please do not use more chars than the scoreboard can handle!
+# Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
+# Placeholders:
+# https://wiki.plugily.xyz/villagedefense/placeholders/language
+Scoreboard:
+  Title: "&a&l%plugin_name%"
+  Content:
+    Waiting:
+      - "&fNgười chơi: &e%arena_players_size%"
+      - " "
+      - "&fCần ít nhất: &e%arena_min_players%"
+      - " "
+      - "&ewww.plugily.xyz"
+      - "   www.plugily.xyz"
+    Starting:
+      - "&fBắt đầu trong: &e%arena_time%"
+      - " "
+      - "&fNgười chơi: &e%arena_players_size%"
+      - " "
+      - "&fCần ít nhất: &e%arena_min_players%"
+      - " "
+      - "&ewww.plugily.xyz"
+      - "   www.plugily.xyz"
+    # Contents of scoreboard while ingame
+    In-Game:
+      - "&fDân làng còn lại: &e%arena_villager_size%"
+      - "&fNgười chơi còn lại: &e%arena_players_left_size%"
+      - "&fThây ma còn lại: &e%arena_zombie_size_left%"
+      - " "
+      - "&fThịt thối rữa: &e%arena_rotten_flesh_amount%"
+      - "&fOrb: &e%user_statistic_orbs%"
+      - " "
+      - "&ewww.plugily.xyz"
+      - "   www.plugily.xyz"
+    In-Game-Waiting:
+      - "&fDân làng còn lại: &e%arena_villager_size%"
+      - "&fNgười chơi còn lại: &e%arena_players_left_size%"
+      - "&fThây ma còn lại: &e%arena_zombie_size_left%"
+      - " "
+      - "&fĐợt tiếp theo trong: %arena_time%"
+      - " "
+      - "&fThịt thối rữa: &e%arena_rotten_flesh_amount%"
+      - "&fOrb: &e%user_statistic_orbs%"
+      - " "
+      - "&ewww.plugily.xyz"
+    # Contents of scoreboard while state is ending
+    Ending:
+      - "&f"
+      - "&f"
+      - "&cTRÒ CHƠI KẾT THÚC"
+      - " "
+      - "&f"
+      - "&f"
+      - " "
+      - "&ewww.plugily.xyz"
+    # Contents of scoreboard while state is restarting
+    Restarting:
+      - "&f"
+      - "&f"
+      - "&cKHỞI ĐỘNG LẠI TRÒ CHƠI"
+      - " "
+      - "&f"
+      - "&f"
+      - " "
+      - "&ewww.plugily.xyz"
+# Bossbar messages
+# 
+# Bossbar needs to be enabled on config.yml
+Bossbar:
+  Title: "&a&l%plugin_name% &6- www.plugily.xyz"
+  Content:
+    Waiting:
+      - "&4&lĐang chờ thêm người chơi..."
+    Starting:
+      - "&f&lBắt đầu trong: &e&l%arena_time%"
+    In-Game:
+      - "&e&lĐang chơi &f&l%plugin_name_uppercase% &e&ltrên &b&lPLUGILY.XYZ"
+      - "&e&lXem người sáng lập plugin &e&ltrên &b&lPLUGILY.XYZ"
+      - "Đợt hiện tại %arena_option_wave%"
+    Ending:
+      - "&c&lTrò chơi kết thúc! Bạn đang chơi trên &b&lPLUGILY.XYZ"
+    Restarting:
+      - "&c&lKhởi động lại đấu trường. Bạn sẽ được di chuyển sớm!"
+# In-Game Messages
+In-Game:
+  # Used in most game messages.
+  Plugin-Prefix: "&a[%plugin_name%] "
+  Game-Chat-Format: "&6[&5%user_statistic_level%&6]&6[%user_kit%&6] %player%: &f%message%"
+  You-Leveled-Up: "&7Bạn đã thăng cấp! Bạn đang ở cấp %number%!"
+  Commands-Blocked: "&cBạn phải rời khỏi trò chơi trước để thực hiện lệnh này. Lệnh duy nhất chỉ có thể hoạt động là /%plugin_short_command% leave!"
+  Join:
+    Already-Playing: "&cBạn đã trong phòng chờ cho một trò chơi! Bạn có thể rời trò chơi bằng lệnh /%plugin_short_command% leave."
+    No-Permission: "&cBạn không có quyền &6%value% &cđể tham gia đấu trường này!"
+    Full-Game: "&cBạn không có quyền để tham gia tất cả trò chơi!"
+    No-Slots-For-Premium: "&cPhòng này đã đầy các người chơi cao cấp! Xin lỗi"
+    # Join cancelled via external plugin that uses the API of our plugin.
+    Cancelled-Via-API: "&cBạn không thể tham gia phòng này!"
+    As-Party-Member: "&cBạn đã tham gia %arena_name% bởi vì chủ party tham gia nó!"
+    Arena-Not-Configured: "&cĐấu trường chưa được chỉnh! Liên lạc với quản trị viên!"
+    Title: "20, 30, 20;%arena_name%;%arena_players_size%/%arena_max_players%"
+  Death:
+    Tag: "&8Đã chết"
+    Screen: "&cBạn đã chết!"
+  Spectator:
+    You-Are-Spectator: "&cBạn bây giờ là một khán giả! Bạn có thể bay bây giờ!"
+    Spectator-Menu-Name: "Danh sách người chơi còn sống"
+    Target-Player-Health: "&cMáu: &7%number%"
+    Spectator-Warning: "&cBạn là một khán giả!"
+    Teleport: "&cDịch chuyển đến %player%"
+    Menu:
+      Settings:
+        Status:
+          Enabled: "Kích hoạt"
+          Disabled: "Vô hiệu hóa"
+        Changed-Speed: "Thay đổi Tốc độ đến %number%"
+        Auto-Teleport: "%value% tự động dịch chuyển"
+        Target-Player:
+          Action-Bar: "Khoảng cách %number% | Mục tiêu %player%"
+        Night-Vision: "%value% nhìn trong đêm"
+        First-Person-Mode:
+          Action-Bar: "&eĐI RÓN RÉN &cđể rời! | Mục tiêu %player%"
+          Title: "&eĐI RÓN RÉN&c để rời!"
+        Visibility: "%value% người chơi khán giả khác"
+    Blocked: "%color_chat_issue%%plugin_prefix% Chế độ Khán giả đã tắt ở phòng này"
+  Messages:
+    Join: "&b%player%&7 tham gia trò chơi (%arena_players_size%/%arena_max_players%)!"
+    Leave: "&b%player% &7rời khỏi trò chơi (%arena_players_size%/%arena_max_players%)!"
+    Death: "&b%player% &7đã chết!"
+    Lobby:
+      Start-In: "&7Trò chơi bắt đầu trong &b%arena_time%&7 giây!"
+      Waiting-For-Players: "&7Đang chờ người chơi... Chúng tôi cần ít nhất &b%arena_min_players%&7 người chơi để bắt đầu."
+      Enough-Players-To-Start: "&7Chúng tôi bây giờ đã có đủ người chơi. Trò chơi sẽ bắt đầu sớm!"
+      Game-Started: "&7Trò chơi đã bắt đầu!"
+      Kicked-For-Premium-Slot: "&c%player% đã bị loại bỏ khỏi trò chơi để chia chỗ trống cho người chơi cao cấp!"
+      You-Were-Kicked-For-Premium-Slot: "&cBạn bị đá khỏi trò chơi để chia chỗ trống cho người chơi cao cấp!"
+      Not-Enough-Space-For-Party: "&cParty của bạn lớn hơn số chỗ trống của đấu trường %arena_name%"
+      Max-Players: "&7Chúng tôi đã có đủ người chơi cho vòng này. Hãy rút ngắn thời gian nào!"
+      Reduced-Time: "&7Thời gian đã được rút ngắn thành %number% giây"
+    Game-End:
+      Summary:
+        - "&a&m--------------------------------------------------"
+        - "&f&l%plugin_name%"
+        - " "
+        - "%value%"
+        - "%arena_summary_player%"
+        - " "
+        - "&e&lĐạt đến vòng: &7%arena_option_wave% &8(tốt nhất %user_statistic_highest_wave%)"
+        - "&6&lTổng số thây ma đã giết: &7%arena_option_total_killed_zombies%"
+        - "&c&lTổng số xu đã chi: &7%arena_option_total_orbs_spent%"
+        - " "
+        - "&a&m--------------------------------------------------"
+      Placeholders:
+        Win: "Bạn đã thắng"
+        Lose: "Bạn đã thua"
+        Died:
+          Players: "&7Tất cả người chơi đã chết!"
+          Villagers: "&7Tất cả dân làng đã chết!"
+        Survived: "&7Bạn đã sống sót qua tất cả các vòng"
+        Players: "%color_chat_issue%%plugin_prefix% Không đủ người chơi. Trò chơi tạm ngừng!"
+    Admin:
+      Set-Starting-In-To-0: "&bMột quản trị viên đặt thời gian chờ thành 0. Trò chơi bắt đầu ngay bây giờ!"
+      Removed:
+        Villagers: "&b%player% đã loại bỏ tất cả dân làng!"
+        Golems: "&b%player% đã loại bỏ tất cả người sắt!"
+        Zombies: "&b%player% đã dọn sạch thây ma!"
+        Wolves: "&b%player% đã dọn sạch sói!"
+      Changed:
+        Wave: "&bQuản trị viên thay đổi số vòng thành %number%"
+    Village:
+      Rotten-Flesh-Level-Up: "&bCác vị thàn hạnh phúc với thịt thối rữa! &bVì vậy họ cho bạn thêm một tim!"
+      You-Feel-Refreshed: "&aBạn cảm thấy được làm mới!"
+      # Do not use spaces between villager names. No limit in names size and amount :)
+      Villager:
+        Died: "&cMột dân làng đã thiệt mạng!"
+        Names: "Jagger,Kelsey,Kelton,Haylie,Harlow,Howard,Wulffric,Winfred,Ashley,Bailey,Beckett,Alfredo,Alfred,Adair,Edgar,ED,Eadwig,Edgaras,Buckley,Stanley,Nuffley,Mary,Jeffry,Rosaly,Elliot,Harry,Sam,Rosaline,Tom,Ivan,Kevin,Adam"
+      Wave:
+        Stuck-Zombies: "&cCó vẻ con thây ma cuối đã bị mắc kẹt ở đâu đó. Đừng lo! Các vị thần sẽ giết nó cho bạn!"
+        Spectator-Warning: "&cBạn là một khán giả! Bạn không thể làm được gì cho đến khi bạn hồi sinh khi bắt đầu vòng tiếp theo!"
+        Respawn-On-Next: "&e&lĐỪNG RỜI KHỎI! &aBạn sẽ được hồi sinh khi vòng tiếp theo kết thúc!"
+        Respawned: "&aBạn không còn là một khán giả nữa! Bạn đã trở lại trò chơi!"
+        Next-In: "&7Vòng tiếp theo bắt đầu trong &b%number%&7 giây!"
+        Started: "&7Vòng &b%number%&7 đã bắt đầu!"
+        Title:
+          Start: "20,30,20;Đợt %number%;"
+          End: "20,30,20;Đợt %number% kết thúc;"
+      Orbs:
+        Pickup: "&6+ %number% orb"
+      Entities:
+        Wolf:
+          Spawn: "&aSói đã sinh ra trong làng!"
+          Name: "Sói của %player%"
+          Death: "Một trong những con sói của bạn đã bị giết!"
+        Golem:
+          Spawn: "&aNgười sắt đã sinh ra trong làng!"
+          Name: "Người sắt của %player%"
+          Cant-Ride-Other: "&cBạn không thể cưỡi người sắt của người khác!"
+      Shop:
+        GUI: "&lCửa hàng"
+        Golem-Item-Name: "Sinh ra người sắt"
+        Wolf-Item-Name: "Sinh ra sói"
+        Mob-Limit-Reached: "&cBạn không thể mua mob! Bạn đã đạt giới hạn %number% mob!"
+        Not-Enough-Currency: "&cBạn cần thêm orb dể mua vật phẩm này!"
+        Currency: "orbs"
+        Not-Defined: "&cCửa hàng chưa có! Liên hệ quản trị viên!"
+# Sign messages
+Signs:
+  Please-Type-Arena-Name: "&cVui lòng nhập tên đấu trường ở dòng thứ hai!"
+  Arena-Doesnt-Exists: "&cĐấu trường với tên dó không tồn tại!"
+  Created: "&aĐã thành công tạo tấm biển!"
+  Removed: "&aĐã thành công loại bỏ tấm biển!"
+  Lines:
+    - "&a&l%plugin_name%"
+    - "%arena_state_placeholder%"
+    - "%arena_name%"
+    - "&5[%arena_players_size%/%arena_max_players%]"
+# Arena Selector messages
+Arena-Selector:
+  Inventory-Title: "%plugin_short_command% > Bộ chọn đấu trường"
+  Item:
+    Name: "&f%arena_name%"
+    Lore:
+      - "&a%plugin_name% &f- &e%arena_name%"
+      - " "
+      - " "
+      - "  &fTrực tuyến: %arena_players_size%/%arena_max_players%"
+      - "  &fTrạng thái: %arena_state_placeholder%"
+      - " "
+      - " "
+      - "&eNhấp để tham gia đấu trường này"
+# Validator messages
+Validator:
+  Invalid-Arena-Configuration: "Đấu trường %arena% có cấu hình không hợp lệ! Thiếu nút: %value%"
+  Instance-Started: "Đấu trường %arena% đã bắt đầu thành công!"
+  No-Instances-Created: "Không có đấu trường được tạo trong cấu hình!"
+# Placeholder messages inside plugin
+Placeholders:
+  Game-States:
+    Waiting: "&lĐang chờ..."
+    Starting: "&e&lĐang bắt đầu"
+    Full-Game: "&4&lĐẦY"
+    In-Game: "&lTrong trận"
+    Ending: "&lKết thúc"
+    Restarting: "&c&lKhởi động lại"
+  Motd:
+    Waiting: "&lBạn có thể tham gia ván này..."
+    Starting: "&e&lĐang bắt đầu"
+    Full-Game: "&4&lĐÃ ĐẦY | Dùng máy chủ khác"
+    In-Game: "&lTrong trận | Nhấp để quan sát"
+    Ending: "&lKết thúc | Máy chủ đang đóng"
+    Restarting: "&c&lKhởi động lại"
+# Kit messages
+Kit:
+  Not-Unlocked: "&cBạn chưa mở khóa &b%value%&c!"
+  Choose: "&aBạn đã chọn: &b%value%&a!"
+  Open-Menu: "Mở bảng chọn kit"
+  Cooldown: "&cKĩ năng kit đang trong thời gian chờ (%number%)!"
+  Menu:
+    Title: "Bảng chọn Kit"
+    Lore:
+      Unlocked: "&aĐÃ MỞ KHÓA!"
+      Locked: "&cĐÃ KHÓA!"
+      Unlock-At-Level: "&aMở khóa ở cấp %number%"
+      Unlock-In-Store: "&bMở khóa thứ này trong cửa hàng!"
+  Content:
+    Cleaner:
+      Name: "&bNgười dọn dẹp"
+      Description:
+        - "&7Người dọn dẹp có kĩ năng đặc biệt."
+        - "Với kĩ năng này, anh ấy có thể làm"
+        - "thây ma biến mất. Tuy nhiên, nó tốn"
+        - "rất nhiều nỗ lực để làm điều này!"
+      Game-Item:
+        Name: "&6Gậy dọn dẹp!"
+        Description:
+          - "&7Chuột phải để giết tất cả thây ma!"
+          - "Hồi chiêu: 60 giây"
+      Cleaned:
+        Map: "&b%player% đã dọn sạch bản đồ!"
+        # WARNING: used for admin clean commands too!!!
+        Nothing: "&aBản đồ đã được dọn sạch!"
+    Zombie-Teleporter:
+      Name: "&2Dịch chuyển thây ma"
+      Description:
+        - "&7Dịch chuyển những con thây ma đến bạn!"
+        - "Nhiều người nghĩ đây là kit tệ nhất!"
+        - "Tôi phải thừa nhận rằng họ đã hoàn toàn sai!"
+      Game-Item:
+        GUI: "Dịch chuyển thây ma"
+        Name: "Dịch chuyển thây ma"
+        Description:
+          - "&7Dịch chuyển thây ma đến bạn!"
+    Teleport:
+      Zombie: "&aĐã dịch chuyển thây ma được làm yếu tới bạn!"
+      Not-Found: "&cKhông có thây ma để dịch chuyển!"
+    Knight:
+      Name: "&2Kị sĩ"
+      Description:
+        - "&7Đây là bộ kit kị sĩ độc nhất vô nhị!"
+        - "Nhiều người nghĩ đây là bộ kit tệ!"
+        - "Tôi phải thừa nhận rằng họ đã hoàn toàn sai!"
+    Light-Tank:
+      Name: "&2Xe tăng nhẹ"
+      Description:
+        - "&7Bạn là xe tăng nhỏ!"
+    Archer:
+      Name: "&6Cung thủ"
+      Description:
+        - "&7Bắt đầu với cây cung, giáp da và cây kiếm gỗ."
+        - "Cung thủ được yêu thích bởi các dân làng, nên hiểu điều đó!"
+    Puncher:
+      Name: "&6Người đấm bốc"
+      Description:
+        - "&7Đấm những con thây ma với cây xẻng thần thoại của bạn!"
+        - "Bạn đã quá quen thuộc với Bật Lùi V!"
+    Healer:
+      Name: "&6Người hồi phục"
+      Description:
+        - "&7Là một người chữa bệnh cũng giống như được yêu."
+        - "Bạn có thể chữa lành cho đồng đội và dân làng của mình!"
+        - "Được bổ sung mỗi đợt!"
+    Looter:
+      Name: "&6Kẻ cướp bóc"
+      Description:
+        - "Lấy thêm một thịt thối rữa"
+        - "cho mỗi con thây ma bị giết!"
+    Runner:
+      Name: "&6Người chạy đua"
+      Description:
+        - "Parkour là niềm đam mê của bạn!"
+        - "Bạn có thể chạy nhanh hơn những người khác."
+        - "Bạn cũng có khả năng nhảy cao hơn."
+    Medium-Tank:
+      Name: "&6Xe tăng cỡ trung"
+      Description:
+        - "&7Bắt đầu với 6 trái tim nữa!"
+        - "Đừng sợ!"
+        - "Bạn còn rất nhiều trái tim để mất!"
+    Worker:
+      Name: "&6Thợ xây"
+      Description:
+        - "&7Nhận mỗi vòng một cửa và bắt đầu"
+        - "với 2 cửa phụ. Với cách này bạn"
+        - "có thể thay thế các cánh cửa!"
+      Game-Item:
+        Chat: "&aĐã đặt cửa!"
+    Dog-Friend:
+      Name: "&bBạn của chó"
+      Description:
+        - "&7Bắt đầu với ba con chó và"
+        - "nhận thêm một con chó mỗi đợt!"
+    Hardcore:
+      Name: "&6Hardcore"
+      Description:
+        - "&7Bạn sẽ thấy chính mình"
+        - "tại sao điều này là khó khăn"
+    Golem-Friend:
+      Name: "&6Bạn của Người sắt"
+      Description:
+        - "&7Bắt đầu với một con golem và"
+        - "nhận mới sau mỗi 5 đợt!"
+    Tornado:
+      Name: "&bLốc xoáy"
+      Description:
+        - "&7Sinh ra trong một cơn lốc xoáy tuyệt vời!"
+      Game-Item:
+        Name: "Lốc xoáy"
+        Description:
+          - "&7Chuột phải để sinh ra một"
+          - "cơn lốc xoáy tại vị trí của bạn!"
+    Terminator:
+      Name: "&6Kẻ hủy diệt"
+      Description:
+        - "&7Dễ dàng tiêu diệt những con thây ma"
+        - "với sức mạnh của bạn"
+    Teleporter:
+      Name: "&bNgười dịch chuyển"
+      Description:
+        - "&7Mọi người đều ngạc nhiên về khả năng dịch chuyển của bạn."
+        - "Không ai biết cách làm điều đó ngoại trừ bạn! Vì điều này,"
+        - "bạn có thể dịch chuyển tức thời đến "
+        - "những người dân làng cần giúp đỡ!"
+      Game-Item:
+        Name: "&rBảng chọn Dịch chuyển"
+        Description:
+          - "&7Chuột phải để mở bảng chọn dịch chuyển!"
+        GUI: "Bảng chọn dịch chuyển"
+      Teleport:
+        Villager: "&aĐã dịch chuyển đến dân làng!"
+        Warning: "&4VillageDefense không tìm thấy dân làng đó! Người dân làng đó có lẽ đã chết!"
+        Player: "&aDịch chuyển đến %player%"
+        Not-Found: "&cNgười chơi không tìm thấy! Hãy thử lại!"
+    Heavy-Tank:
+      Name: "&bXe tăng hạng nặng"
+      Description:
+        - "&7Bắt đầu với áo giáp sắt và số lượng gấp đôi"
+        - "trái tim! Đúng vậy, bạn sẽ"
+        - "là người đàn ông cuối cùng sống sót!"
+    Shot-Bow:
+      Name: "&bBậc thầy bắn cung"
+      Description:
+        - "&7Bạn đã phát minh ra một loại cung bắn điên rồ!"
+    Blocker:
+      Name: "&bNgười chặn"
+      Description:
+        - "&7Giữ thây ma lại với"
+        - "những rào cản đặc biệt của bạn. Những"
+        - "rào cản đó tồn tại trong 10 giây"
+      Game-Item:
+        Name: "Hàng rào"
+        Description:
+          - "&7Đặt thứ này để giữ lại"
+          - "những con thây ma! Những rào cản đó tồn tại trong 10 giây"
+      Place:
+        Success: "&aĐã đặt rào cản!"
+        Fail: "&cKhông thể đặt rào cản ở đây"
+    Premium-Hardcore:
+      Name: "&bBậc thầy Hardcore Cao cấp"
+      Description:
+        - "&7Một lần đánh chết hầu hết các thây ma bằng thanh kiếm OP của bạn!"
+        - "Tuy nhiên hãy cẩn thận. bộ này chỉ dành cho"
+        - "dân pro! Đừng sử dụng nó nếu bạn không phải là dân chuyên nghiệp!"
+    Medic:
+      Name: "&6Y Sĩ"
+      Description:
+        - "&7Bộ này kích hoạt sức mạnh thụ động của bạn."
+        - "Mỗi khi bạn đánh một thây ma, bạn có"
+        - "cơ hội 1/10 để chữa lành cho người chơi"
+        - "trong bán kính 5 khối xung quanh bạn."
+    Wild-Naked:
+      # idk but my brain with google translate have the same results
+      Name: "Khỏa thân hoang dã"
+      Description:
+        - "&7Bạn là bậc thầy cuối cùng!"
+        - "Bạn bắt đầu với một thanh kiếm"
+        - "Sắc Bén VI và Hại Thây Ma II!"
+      Cannot-Wear-Armor: "&cBạn không thể mặc áo giáp với bộ Wild Naked!"
+    Wizard:
+      Name: "&bPhù thủy"
+      Description:
+        - "&7Bạn là một nửa dòng máu."
+        - "bạn đã đến làng để bảo vệ"
+        - "dân làng từ đám xác sống."
+        - "Sử dụng sức mạnh bóng tối của bạn để giết tất cả chúng!"
+      Game-Item:
+        Essence:
+          Name: "Bản chất đen tối"
+          Description:
+            - "&7Nhấp để hấp thụ vật chất xung quanh"
+            - "và sử dụng nó như lá chắn gai cá nhân của bạn!"
+            - "Kéo dài trong 5 giây"
+        Wand:
+          # Just an Easter Egg, you can replace it with "Gậy Phép Thuật"
+          Name: "Gậy phép thuật Winx"
+          # Easter Egg, replace with "&7Nhấp chuột phải để truyền vật chất tối"
+          Description: "&7Phép thuật Winx, en chan tít"
+# Upgrade-Menu messages
+# 
+# Upgrade-Menu function need to be enabled on config.yml
+Upgrade-Menu:
+  Title: "&3&lNâng cấp thực thể"
+  Upgraded-Entity: "&3Nâng cấp thực thể thành cấp &8%tier%&3!"
+  Cannot-Afford: "Bạn không có đủ orb để áp dụng nâng cấp đó!"
+  Max-Tier: "&3Thực thể đang ở cấp tối đa của bản nâng cấp này!"
+  Stats-Item:
+    Name: "&3&lChỉ số hiện tại"
+    Description: "&3Tốc độ di chuyển: &8%speed%; &3Sát thương: &8%damage%; &3Máu: &8%current_hp%/%max_hp%"
+  Upgrades:
+    Health:
+      Name: "&3&lNâng cấp máu"
+      Description: "&3Nâng cấp máu tối đa thành cấp &8%tier%&3!;&3Từ&8%from% &3thành &8%to%;&3Nâng cấp tốn: &8%cost%;;&3Nhấp để thanh toán"
+    Damage:
+      Name: "&3&lNâng cấp Sát thương"
+      Description: "&3Nâng cấp sát thương thực thể thành cấp &8%tier%&3!;&3Từ &8%from% &3thành &8%to%;&3Nâng cấp tốn: &8%cost%;;&8Nhấp để thanh toán"
+    Speed:
+      Name: "&3&lNâng cấp Tốc độ"
+      Description: "&3Nâng cấp tốc độ thành cấp &8%tier%&3!;&3Từ &8%from% &3thành &8%to%;&3Nâng cấp tốn: &8%cost%;;&8Nhấp để thanh toán"
+    Swarm-Awareness:
+      Name: "&3&lNhận thức về bầy đàn"
+      Description: "&3Nâng cấp nhận thức bầy đàn lên cấp &8%tier%&3!;&3Từ &8%from% &8hệ số sát thương cho mỗi con sói trong bán kính;&83 khối &3thành %to%;&3Càng có nhiều sói gần tấn công sói;&3sát thương sói càng nhiều;&3Nâng cấp tốn: &8%cost%;;&8Nhấp để thanh toán"
+    Final-Defense:
+      Name: "&3&lPhòng thủ cuối cùng"
+      Description: "&3Nâng cấp phòng thủ cuối cùng lên cấp&8%tier%&3!;&3Từ &8%from% bán kính vụ nổ &3thành &8%to%;&3Golem sẽ phát nổ sau khi giết chết những thây ma xung quanh;&3và làm choáng tất cả những thây ma còn sống;&3Nâng cấp tốn: &8%cost%;;&8Nhấp để thanh toán"
+# Leaderboard messages
+# 
+# Hologram function need to be enabled on config.yml
+Leaderboard:
+  Type:
+    Hologram:
+      Header: "&6&l%number% người chơi hàng đầu trong %value%"
+      Format: "&e%number%. &f%player% (%value%)"
+      Empty-Format: "&e%number%. &fEmpty (0)"
+    Chat:
+      Header: "&l-----CHỈ SỐ CỦA BẠN-----"
+      Header-Other: "&l-----CHÍ SỐ CHO %player%-----"
+      Footer: "&l--------------------"
+      Format: "&a%value%: &e%number%"
+      Top:
+        Type-Name: "&cVui lòng gõ tên thống kê để xem!"
+        Header: "&8&m-------------------[&6 Top 10 &8&m]-------------------"
+        Format: "&e#%number% %player% - %value% &7%user_statistic%"
+  Statistics:
+    Games-Played: "&aSố ván đã chơi"
+    Level: "&aCấp"
+    Exp: "&aKinh nghiệm"
+    Orbs: "&aOrb"
+    Highest-Wave: "&aVòng cao nhất"
+    Kills: "&aThây ma đã giết"
+    Deaths: "&aChết"
+    Next-Level-Exp: "&aKinh nghệm để lên cấp"
+    Wins: "Thắng ▸ %number%"
+    Loses: "Thua ▸ %number%"
+  Invalid-Name: "&cTên thống kê không hợp lệ! Loại: games_played, level"
+  Unknown-Player: "&fNgười chơi không xác định"
+# Don't edit it. But who's stopping you? It's your server!
+# Really, don't edit ;p
+# You edited it, huh? Next time hurt yourself!
+Do-Not-Edit:
+  File-Version: 1
+  Core-Version: 1
+# You can translate Village Defense messages here.
+# Color codes (&) supported.
+# 
+# Use \n to make new line
+# Some messages like item
+# descriptions don't support new lines
+# they are wrapped every 40 characters automatically
+# 
+# Some messages support their own placeholders
+# like %player%, %kit% etc.
+# 
+# Color scheme
+Color:
+  Placeholder:
+    Value: "&a"
+    Number: "&a"
+    Player: "&b"
+    Other: "&a"
+  Chat:
+    Issue: "&c"
+    Messages: "&7"
+    Special-Char:
+      Contains: "[,],(,),{,},■,/,|,▸"
+      Before: "&8"
