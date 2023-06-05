@@ -1,0 +1,582 @@
+# Command messages
+Commands:
+  Did-You-Mean: "&6Bunu mu demek istedin &e/%value%&6?"
+  Command-Executed: "&aKomut başarıyla uygulandı!"
+  Teleported-To-Lobby: "&aLobiye ışınlandın!"
+  Removed-Game-Instance: "&cOyun örneği başarıyla kaldırıldı!"
+  No-Arena-Like-That: "&cBu ID ile bir arena yok!"
+  Look-At-Sign: "&cBu komutu uygulamak için tabelaya bakmalısın!"
+  Type-Arena-Name: "&cLütfen arena ID belirtiniz!"
+  Hold-Any-Item: "&cBir item tutuyor olmalısın!"
+  No-Free-Arenas: "&cMüsait arena yok!"
+  Only-By-Player: "&cBu komutu sadece oyuncu olarak kullanabilirsin!"
+  Not-Playing: "&cBu komutu kullanmak için oynuyor olmalısın!"
+  No-Permission: "&cBu komutu kullanmak için iznin yok!"
+  Player-Not-Found: "&cHedef oyuncu %player% bulunamadı!"
+  Invalid-Location-Teleport: "&cIşınlanılacak konum geçersiz!"
+  Wrong-Usage: "&cYanlış kullanım. Doğrusu %value%"
+  Admin:
+    Added-Orbs: "&7Orblar oyuncuya eklendi!"
+    Received-Orbs: "&a%number% Orb &7Aldın!"
+    Added-Level: "&7Seviye oyuncuya eklendi!"
+    Reload-Success: "&aArenalar yeniden yüklendi!"
+    List:
+      Header: "&a%plugin_name% &6arenalar:"
+      Format: "&a%arena_name% &e%arena_state_placeholder% &6%arena_players_size%/%arena_max_players%"
+      No-Arenas: "&cOyun örneği bulunamadı!"
+    Spychat:
+      Toggled: "&aCasus sohbeti şuna ayarlandı&c %value%"
+    Adjust-Statistic: "%plugin_prefix% %player% in %value% istatistiği artık %number%!"
+  Main:
+    Header: "&6----------------{%plugin_name% komutları}----------"
+    Description:
+      - "&aOyun komutları:"
+      - "&b/%plugin_short_command% stats: &7İstatistiklerinizi gösterir!"
+      - "&b/%plugin_short_command% leave: &7Mevcut arenadan ayrılır!"
+      - "&b/%plugin_short_command% join <arena>: &7Belirli bir arenaya girmenizi sağlar!"
+      - "&b/%plugin_short_command% top <statistic>: &7En iyi 10 oyuncuyu gösterir!"
+      - "&b/%plugin_short_command% randomjoin: &7Rastgele bir arenaya girer!"
+    Admin-Bonus-Description: "&b/%plugin_short_command%a: &7Tüm admin komutlarını gösterir"
+    Footer: "&6-------------------------------------------------"
+# In-Game scoreboard messages
+# 
+# Please do not use more chars than the scoreboard can handle!
+# Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
+# Placeholders:
+# https://wiki.plugily.xyz/villagedefense/placeholders/language
+Scoreboard:
+  Title: "&a&l%plugin_name%"
+  Content:
+    Waiting:
+      - "&fOyuncular: &e%arena_players_size%"
+      - " "
+      - "&fMinimum Oyuncu: &e%arena_min_players%"
+      - " "
+      - "&ewww.plugily.xyz"
+      - "   www.plugily.xyz"
+    Starting:
+      - "&fBaşlamasına: &e%arena_time%"
+      - " "
+      - "&fOyuncular: &e%arena_players_size%"
+      - " "
+      - "&fMinimum Oyuncu: &e%arena_min_players%"
+      - " "
+      - "&ewww.plugily.xyz"
+      - "   www.plugily.xyz"
+    # Contents of scoreboard while ingame
+    In-Game:
+      - "&fKalan Köylüler: &e%arena_villager_size%"
+      - "&fKalan Oyuncular: &e%arena_players_left_size%"
+      - "&fKalan Zombiler: &e%arena_zombie_size_left%"
+      - " "
+      - "&fÇürük Et: &e%arena_rotten_flesh_amount%"
+      - "&fOrblar: &e%user_statistic_orbs%"
+      - " "
+      - "&ewww.plugily.xyz"
+      - "   www.plugily.xyz"
+    In-Game-Waiting:
+      - "&fKalan Köylüler: &e%arena_villager_size%"
+      - "&fKalan Oyuncular: &e%arena_players_left_size%"
+      - "&fKalan Zombiler: &e%arena_zombie_size_left%"
+      - " "
+      - "&fSıradaki Dalgaya: %arena_time%"
+      - " "
+      - "&fÇürük Et: &e%arena_rotten_flesh_amount%"
+      - "&fOrblar: &e%user_statistic_orbs%"
+      - " "
+      - "&ewww.plugily.xyz"
+    # Contents of scoreboard while state is ending
+    Ending:
+      - "&f"
+      - "&f"
+      - "&cOYUN SONA ERDİ"
+      - " "
+      - "&f"
+      - "&f"
+      - " "
+      - "&ewww.plugily.xyz"
+    # Contents of scoreboard while state is restarting
+    Restarting:
+      - "&f"
+      - "&f"
+      - "&cOYUN YENİDEN BAŞLATILIYOR"
+      - " "
+      - "&f"
+      - "&f"
+      - " "
+      - "&ewww.plugily.xyz"
+# Bossbar messages
+# 
+# Bossbar needs to be enabled on config.yml
+Bossbar:
+  Title: "&a&l%plugin_name% &6- www.plugily.xyz"
+  Content:
+    Waiting:
+      - "&4&lDaha fazla oyuncu bekleniyor..."
+    Starting:
+      - "&f&lBaşlamasına: &e&l%arena_time%"
+    In-Game:
+      - "&e&lOynanan Mod &f&l%plugin_name_uppercase% &e&lon &b&lPLUGILY.XYZ"
+      - "&e&lEklenti sahibine göz atmak için &b&lPLUGILY.XYZ"
+      - "Mevcut dalga %arena_option_wave%"
+    Ending:
+      - "&c&lOyun sona erdi! Oynadığın sunucu &b&lPLUGILY.XYZ"
+    Restarting:
+      - "&c&lArena yeniden başlatılıyor. Yakında çekileceksin!"
+# In-Game Messages
+In-Game:
+  # Used in most game messages.
+  Plugin-Prefix: "&a[%plugin_name%] "
+  Game-Chat-Format: "&6[&5%user_statistic_level%&6]&6[%user_kit%&6] %player%: &f%message%"
+  You-Leveled-Up: "&7Seviye atladın! Mevcut seviyen %number%!"
+  Commands-Blocked: "&cKomutları uygulamak için önce oyundan ayrılmalısın. Çalışacak tek komut /%plugin_short_command% leave!"
+  Join:
+    Already-Playing: "&cZaten bir oyun için sıradasın! Oyundan ayrılmak için /%plugin_short_command% leave."
+    No-Permission: "&cBu arenaya girmek için &6%value% &ciznine sahip değilsin!"
+    Full-Game: "&cDolu oyunlara girmek için yetkin yok!"
+    No-Slots-For-Premium: "&cBu oyun tamamen premium kullanıcılarla dolu! Üzgünüz"
+    # Join cancelled via external plugin that uses the API of our plugin.
+    Cancelled-Via-API: "&cBu oyuna giremezsin!"
+    As-Party-Member: "&cParti lideri girdiği için %arena_name% arenasına katıldın!"
+    Arena-Not-Configured: "&cArena yapılandırılmadı! Yetkiliyle iletişime geçin!"
+    Title: "20, 30, 20;%arena_name%;%arena_players_size%/%arena_max_players%"
+  Death:
+    Tag: "&8Ölü"
+    Screen: "&cÖldün!"
+  Spectator:
+    You-Are-Spectator: "&cArtık izleyicisin! Uçabilirsin!"
+    Spectator-Menu-Name: "Canlı oyuncu listesi"
+    Target-Player-Health: "&cSağlık: &7%number%"
+    Spectator-Warning: "&cSen bir izleyicisin!"
+    Teleport: "&cIşınlanılan oyuncu %player%"
+    Menu:
+      Settings:
+        Status:
+          Enabled: "Aktif"
+          Disabled: "Deaktif"
+        Changed-Speed: "Hız %number% olarak değiştirildi"
+        Auto-Teleport: "%value% otomatik ışınlanma"
+        Target-Player:
+          Action-Bar: "%number% blok uzaklıkta | Hedef %player%"
+        Night-Vision: "%value% gece görüşü"
+        First-Person-Mode:
+          Action-Bar: "&cAyrılmak için &eEğil! | Hedef %player%"
+          Title: "&cAyrılmak için &eEğil!"
+        Visibility: "%value% Diğer izleyen oyuncular"
+    Blocked: "%color_chat_issue%%plugin_prefix% İzleyiciler bu arena için devre dışı bırakıldı"
+  Messages:
+    Join: "&b%player%&7 Oyuna katıldı (%arena_players_size%/%arena_max_players%)!"
+    Leave: "&b%player% &7Oyundan ayrıldı (%arena_players_size%/%arena_max_players%)!"
+    Death: "&b%player% &7öldü!"
+    Lobby:
+      Start-In: "&7Oyun &b%arena_time%&7 saniye içinde başlıyor!"
+      Waiting-For-Players: "&7Oyuncular için bekleniliyor.. Oyunun başlaması için en az &b%arena_min_players%&7 oyuncu gerek."
+      Enough-Players-To-Start: "&7Artık yeterli oyuncuya sahibiz. Oyun birazdan başlıyor!"
+      Game-Started: "&7Oyun başladı!"
+      Kicked-For-Premium-Slot: "&c%player% adlı oyuncu premium oyunculara yer açmak için oyundan çıkarıldı!"
+      You-Were-Kicked-For-Premium-Slot: "&cPremium bir oyuncuya yer açılması için oyundan atıldın!"
+      Not-Enough-Space-For-Party: "&cPartin %arena_name% arenasındaki boş alandan daha kalabalık"
+      Max-Players: "&7Bu raund için maksimum oyuncuya ulaştık. Hadi süreyi kısaltalım!"
+      Reduced-Time: "%plugin_prefix% Süre %number% saniyeye düşürüldü"
+    Game-End:
+      Summary:
+        - "&a&m--------------------------------------------------"
+        - "&f&l%plugin_name%"
+        - " "
+        - "%arena_summary%"
+        - "%arena_summary_player%"
+        - " "
+        - "&e&lUlaşılan dalga: &7%arena_option_wave% &8(En iyi %user_statistic_highest_wave%)"
+        - "&6&lÖldürülen toplam zombi: &7%arena_option_total_killed_zombies%"
+        - "&c&lToplam harcanan coin: &7%arena_option_total_orbs_spent%"
+        - " "
+        - "&a&m--------------------------------------------------"
+      Placeholders:
+        Win: "Oyunu kazandın"
+        Lose: "Oyunu kaybettin"
+        Died:
+          Players: "&7Tüm oyuncular öldü!"
+          Villagers: "&7Tüm köylüler öldü!"
+        Survived: "&7Tüm dalgalarda hayatta kaldın"
+        Players: "%color_chat_issue%%plugin_prefix% Artık yeterli oyuncu yok. Arena zorla durduruldu!"
+    Admin:
+      Set-Starting-In-To-0: "&bAdmin bekleme süresini 0 olarak ayarladı. Oyun başlıyor!"
+      Removed:
+        Villagers: "&b%player% tüm köylüleri kaldırdı!"
+        Golems: "&b%player% tüm golemleri kaldırdı!"
+        Zombies: "&b%player% zombileri temizledi!"
+        Wolves: "&b%player% kurtları temizledi!"
+      Changed:
+        Wave: "&bAdmin dalgayı %number% olarak değiştirdi"
+    Village:
+      Rotten-Flesh-Level-Up: "&bBilginler çürük et sayesinde mutlu oldu! &bBundan dolayı sana ekstra kalp verdiler!"
+      You-Feel-Refreshed: "&aYenilenmiş hissediyorsun!"
+      # Do not use spaces between villager names. No limit in names size and amount :)
+      Villager:
+        Died: "&cBir köylü öldü!"
+        Names: "Yemliha,Ayhan,Dursun,İsmet,Muzaffer,Ümit,Özgür,İlhan,Hikmet,Yüksel,Özcan,Fikret,Cihan,Şerif,Deniz,Servet,Yücel,Sefa,Hidayet,Sezer,Olcay,Saffet,Güngör,Durdu,Günay,Ömür,İlkay,Kamuran,Kudret,Satı,Şenel,Elvan"
+      Wave:
+        Stuck-Zombies: "&cGörünen o ki sona kalan zombi bir yerde sıkışmış. Dert etme! Bilginler onu senin yerine öldürdü!"
+        Spectator-Warning: "&cİzleyicisin! Sıradaki dalganın başında tekrar doğana kadar hiçbir şey yapamazsın!"
+        Respawn-On-Next: "&e&lAYRILMA! &aSonraki dalga bitince tekrar doğacaksın!"
+        Respawned: "&aArtık izleyici değilsin! Tekrardan oyundasın!"
+        Next-In: "&7Sıradaki dalganın başlamasına &b%number%&7 saniye kaldı!"
+        Started: "&7Dalga &b%number%&7 başladı!"
+        Title:
+          Start: "20,30,20;Dalga %number%;"
+          End: "20,30,20;Dalga %number% bitti;"
+      Orbs:
+        Pickup: "&6+ %number% orb"
+      Entities:
+        Wolf:
+          Spawn: "&aKöyde bir kurt doğdu!"
+          Name: "%player% Kurdu"
+          Death: "Kurtlarından biri öldürüldü!"
+        Golem:
+          Spawn: "&aKöyde bir golem doğdu!"
+          Name: "%player% Golemi"
+          Cant-Ride-Other: "&cBaşkasının golemini süremezsin!"
+      Shop:
+        GUI: "&lMarket"
+        Golem-Item-Name: "Golem Doğur"
+        Wolf-Item-Name: "Kurt Doğur"
+        Mob-Limit-Reached: "&cYaratık alamazsın!  %number% Yaratık sınırına ulaştın!"
+        Not-Enough-Currency: "&cBu itemi almak için daha fazla orba ihtiyacın var!"
+        Currency: "orblar"
+        Not-Defined: "&cMarket ayarlanmamış! Yetkiliyle iletişime geç!"
+# Sign messages
+Signs:
+  Please-Type-Arena-Name: "&cLütfen ikinci satıra arena ismini yazın!"
+  Arena-Doesnt-Exists: "&cBu isimde bir arena yok!"
+  Created: "&aTabela başarıyla oluşturuldu!"
+  Removed: "&aTabela başarıyla kaldırıldı!"
+  Lines:
+    - "&a&l%plugin_name%"
+    - "%arena_state_placeholder%"
+    - "%arena_name%"
+    - "&5[%arena_players_size%/%arena_max_players%]"
+# Arena Selector messages
+Arena-Selector:
+  Inventory-Title: "%plugin_short_command% > Arena seçici"
+  Item:
+    Name: "&f%arena_name%"
+    Lore:
+      - "&a%plugin_name% &f- &e%arena_name%"
+      - " "
+      - " "
+      - "  &fAktif: %arena_players_size%/%arena_max_players%"
+      - "  &fDurum: %arena_state_placeholder%"
+      - " "
+      - " "
+      - "&eBu arenaya katılmak için tıkla"
+# Validator messages
+Validator:
+  Invalid-Arena-Configuration: "Arena %arena% yanlış yapılandırıldı! Kayıp düğüm: %value%"
+  Instance-Started: "Arena %arena% örneği başarıyla başladı!"
+  No-Instances-Created: "Konfigürasyonda oluşturulmuş bir arena yok!"
+# Placeholder messages inside plugin
+Placeholders:
+  Game-States:
+    Waiting: "&lOyuncular bekleniliyor..."
+    Starting: "&e&lBaşlıyor"
+    Full-Game: "&4&lDOLU"
+    In-Game: "&lOyunda"
+    Ending: "&lBitiyor"
+    Restarting: "&c&lYeniden başlıyor"
+  Motd:
+    Waiting: "&lBu oyuna katılabilirsin..."
+    Starting: "&e&lBaşlıyor"
+    Full-Game: "&4&lDOLU | Başka sunucuyu kullanın"
+    In-Game: "&lOyunda | İzlemek için tıkla"
+    Ending: "&lBitiyor | Sunucu kapanıyor"
+    Restarting: "&c&lYeniden başlatılıyor"
+# Kit messages
+Kit:
+  Not-Unlocked: "&cHenüz şunu açmadın &b%value%&c !"
+  Choose: "&aSeçtin: &b%value%&a!"
+  Open-Menu: "Kit menüsünü aç"
+  Cooldown: "&cKit yeteneği hala dolum süresinde (%number%)!"
+  Menu:
+    Title: "Kit Menü"
+    Lore:
+      Unlocked: "&aAÇILDI!"
+      Locked: "&cKİLİTLİ!"
+      Unlock-At-Level: "&aAçılacağı seviye %number%"
+      Unlock-In-Store: "&bBunu mağazadan aç!"
+  Content:
+    Cleaner:
+      Name: "&bTemizleyici"
+      Description:
+        - "&7Temizleyici özel bir yeteneğe sahip."
+        - "Bu yetenek ile birlikte, tüm"
+        - "zombileri yok edebilirsin. Ancak bunun"
+        - "için çok çaba sarfetmelisin!"
+      Game-Item:
+        Name: "&6Temizleyici Asa!"
+        Description:
+          - "&7Tüm zombileri öldürmek için sağ tıkla!"
+          - "Bekleme süresi: 60 saniye"
+      Cleaned:
+        Map: "&b%player% haritayı temizledi!"
+        # WARNING: used for admin clean commands too!!!
+        Nothing: "&aHarita zaten boş!"
+    Zombie-Teleporter:
+      Name: "&2Zombi ışınlayıcı"
+      Description:
+        - "&7Zombileri sana ışınlar!"
+        - "Çoğu insan bunun en kötü kit olduğunu düşünür!"
+        - "İtiraf etmeliyim ki kesinlikle yanılıyorlar!"
+      Game-Item:
+        GUI: "Zombi Işınlayıcı"
+        Name: "Zombi Işınlayıcı"
+        Description:
+          - "&7Zombileri sana ışınlar!"
+    Teleport:
+      Zombie: "&aZayıflatılmış zombi sana ışınlandı!"
+      Not-Found: "&cIşınlanacak zombi yok!"
+    Knight:
+      Name: "&2Şövalye"
+      Description:
+        - "&7Bu tek şövalye kiti!"
+        - "Çoğu insan bunun en kötü kit olduğunu düşünür!"
+        - "İtiraf etmeliyim ki kesinlikle yanılıyorlar!"
+    Light-Tank:
+      Name: "&2Hafif Tank"
+      Description:
+        - "&7Sen genç bir tanksın!"
+    Archer:
+      Name: "&6Okçu"
+      Description:
+        - "&7Bir yay, deri zırh ve tahta bir kılıç ile başla."
+        - "Şunu bil, okçular köylüler tarafından sevilir!"
+    Puncher:
+      Name: "&6Boksör"
+      Description:
+        - "&7Zombileri Destansı küreğinin tersiyle yumrukla!"
+        - "Savurma 5 senin için bir bilinmeyen değil!"
+    Healer:
+      Name: "&6İyileştirici"
+      Description:
+        - "&7İyileştirici olmak sevilmek ile aynı şey."
+        - "Takım arkadaşlarını ve köylüleri iyileştirebilirsin!"
+        - "Her dalgada yenilenir!"
+    Looter:
+      Name: "&6Yağmacı"
+      Description:
+        - "&7Ekstra bir çürük et al"
+        - "Her zombi öldürdüğünde!"
+    Runner:
+      Name: "&6Koşucu"
+      Description:
+        - "&7Parkur senin için bir tutku!"
+        - "Herkesten daha hızlı koşabilirsin."
+        - "Aynı zamanda daha yükseğe zıplayabilirsin."
+    Medium-Tank:
+      Name: "&6Orta Tank"
+      Description:
+        - "&7Ekstra 6 kalp ile başla!"
+        - "Korkma!"
+        - "Kaybetmek için bir sürü kalbin var!"
+    Worker:
+      Name: "&6İşçi"
+      Description:
+        - "&7Her raund bir kapı al ve başlangıcı"
+        - "2 ekstra kapı ile yap. Bu yol ile"
+        - "kapıları yenileyebilirsin!"
+      Game-Item:
+        Chat: "&aKapı yerleştirildi!"
+    Dog-Friend:
+      Name: "&bKöpek dostu"
+      Description:
+        - "&73 Köpek ile başla ve"
+        - "her dalgada ekstra bir köpek al!"
+    Hardcore:
+      Name: "&6Hardcore"
+      Description:
+        - "&7Neden hardcore olduğunu"
+        - "kendin göreceksin"
+    Golem-Friend:
+      Name: "&6Golem dostu"
+      Description:
+        - "&7Bir golem ile başla ve"
+        - "her 5 dalgada yeni bir tane al!"
+    Tornado:
+      Name: "&bKasırga"
+      Description:
+        - "&7Mükemmel bir kasırganın içinde başla!"
+      Game-Item:
+        Name: "Kasırga Zamanı"
+        Description:
+          - "&7Konumunda bir kasırga oluşturmak için"
+          - "sağ tıkla!"
+    Terminator:
+      Name: "&6Terminatör"
+      Description:
+        - "&7Güçlerin ile o zombileri"
+        - "kolayca öldür!"
+    Teleporter:
+      Name: "&bIşınlayıcı"
+      Description:
+        - "&7Herkes senin ışınlanma yeteneğine şaşa kalıyor."
+        - "Senden başka kimse nasıl yapıldığını bilmiyor! Bu yüzden,"
+        - "Anında yardıma ihtiyacı olan köylüleri"
+        - "ışınlayabiliyorsun!"
+      Game-Item:
+        Name: "&rIşınlanma Menüsü"
+        Description:
+          - "&7Işınlanma menüsünü açmak için sağ tıkla!"
+        GUI: "Işınlanma Menüsü"
+      Teleport:
+        Villager: "&aKöylüye ışınlanıldı!"
+        Warning: "&4Village defense o köylülü bulamadı! Muhtemelen çoktan ölmüştür!"
+        Player: "&aIşınlanılan oyuncu %player%"
+        Not-Found: "&cOyuncu bulunamadı! Tekrar deneyin!"
+    Heavy-Tank:
+      Name: "&bAğır Tank"
+      Description:
+        - "&7Demir zırh ve iki kat kalp"
+        - "ile başlayın! Evet, bu doğru,"
+        - "Son ayakta kalan sen olacaksın!"
+    Shot-Bow:
+      Name: "&bYay Ustası"
+      Description:
+        - "&7Sen çılgın bir saldırı yayı icat ettin!"
+    Blocker:
+      Name: "&bEngelleyici"
+      Description:
+        - "&7Zombileri özel bariyerlerin ile"
+        - "geride tut. Bu"
+        - "bariyerler 10 saniye sürer"
+      Game-Item:
+        Name: "Çit"
+        Description:
+          - "&7Zombileri geri tutmak için"
+          - "bu bariyeri yerleştir! Bu bariyerler 10 saniye sürer"
+      Place:
+        Success: "&aBariyer yerleştirildi!"
+        Fail: "&cBuraya bariyer yerleştirilemez"
+    Premium-Hardcore:
+      Name: "&bPremium Hardcore Ustası"
+      Description:
+        - "&7Çoğu zombiye OP Kılıcın ile tek at!"
+        - "Ancak dikkatli ol. bu kit sadece"
+        - "profesyoneller içindir! Bir profesyonel değilsen kullanma!"
+    Medic:
+      Name: "&6Sağlıkçı"
+      Description:
+        - "&7Bu kit senin pasif güçlerini aktive eder."
+        - "Her bir zombiye vurduğunda, 1/10 şans ile"
+        - "5 blok çevrendeki oyuncuları"
+        - "iyileştirebilirsin."
+    Wild-Naked:
+      Name: "&bVahşi Çıplak"
+      Description:
+        - "&7Sen en büyük ustasın!"
+        - "Keskinlik VI ve Smite II demir kılıç"
+        - "ile oyuna başlarsın!"
+      Cannot-Wear-Armor: "&cVahşi Çıplak kiti ile zırh giyemezsin!"
+    Wizard:
+      Name: "&bBüyücü"
+      Description:
+        - "&7Sen bir melezsin."
+        - "Köylüleri ölümsüzler ordusundan korumak"
+        - "için bu köye geldiniz."
+        - "Karanlık güçlerini kullanarak hepsini öldür!"
+      Game-Item:
+        Essence:
+          Name: "Karanlık Ruh"
+          Description:
+            - "&7Çevrelenmiş maddeyi emmek ve onu kişisel"
+            - "dikenli kalkanın olarak kullanmak için sağ tıkla!"
+            - "5 Saniye sürer"
+        Wand:
+          Name: "Büyülü asa"
+          Description: "&7Karanlık maddeyi yaymak için sağ tıkla"
+# Upgrade-Menu messages
+# 
+# Upgrade-Menu function need to be enabled on config.yml
+Upgrade-Menu:
+  Title: "&3&lVarlığı yükselt"
+  Upgraded-Entity: "&3Varlık şu seviyeye yükseltildi &8%tier%&3!"
+  Cannot-Afford: "&3Bu geliştirme için yeterli orba sahip değilsin!"
+  Max-Tier: "&3Varlık maksimum seviyede!"
+  Stats-Item:
+    Name: "&3&lAnlık İstatistikler"
+    Description: "&3Hareket hızı: &8%speed%; &3Saldırı hasarı: &8%damage%; &3Sağlık: &8%current_hp%/%max_hp%"
+  Upgrades:
+    Health:
+      Name: "&3&lSağlığı yükselt"
+      Description: "&3Maksimum sağlığı şu seviyeye yükselt &8%tier%&3!;&3Önceki &8%from% &3Sonraki &8%to%;&3Ücret: &8%cost%;;&3Satın almak için tıkla"
+    Damage:
+      Name: "&3&lHasarı Yükselt"
+      Description: "&3Varlık hasarını şu seviyeye yükselt &8%tier%&3!;&3Önceki &8%from% &3Sonraki &8%to%;&3Ücret: &8%cost%;;&8Satın almak için tıkla"
+    Speed:
+      Name: "&3&lHızı Yükselt"
+      Description: "&3Hızı şu seviyeye yükselt &8%tier%&3!;&3Önceki &8%from% &3Sonraki &8%to%;&3Ücret: &8%cost%;;&8Satın almak için tıkla"
+    Swarm-Awareness:
+      Name: "&3&lSürü Farkındalığı"
+      Description: "&3Sürü farkındalığını şu seviyeye yükselt &8%tier%&3!;&3Önceki &8%from% &8Her kurt için alandaki hasar çarpanı;&83 bloktan &3%to%;&3Saldıran kurtun yakınında saldıran daha fazla kurtlar;&3Kurtlar daha fazla hasar verir;&3Ücret: &8%cost%;;&8Satın almak için tıkla"
+    Final-Defense:
+      Name: "&3&lSon Savunma"
+      Description: "&3Son savunmayı şu seviyeye yükselt &8%tier%&3!;&3Önceki &8%from% patlama alanı &3sonraki &8%to%;&3Golem öldükten sonra patlar yakındaki ;&3zombileri öldürür ve hayatta kalanları sersemletir;&3Ücret: &8%cost%;;&8Satın almak için tıkla"
+# Leaderboard messages
+# 
+# Hologram function need to be enabled on config.yml
+Leaderboard:
+  Type:
+    Hologram:
+      Header: "&6&lEn iyi %number% Toplam %value%"
+      Format: "&e%number%. &f%player% (%value%)"
+      Empty-Format: "&e%number%. &fBoş (0)"
+    Chat:
+      Header: "&l-----İSTATİSTİKLERİN-----"
+      Header-Other: "&l-----%player% İSTATİSTİKLERİ-----"
+      Footer: "&l--------------------"
+      Format: "&a%value%: &e%number%"
+      Top:
+        Type-Name: "&cLütfen görüntülemek için istatistik ismini yazın!"
+        Header: "&8&m-------------------[&6 En iyi 10 &8&m]-------------------"
+        Format: "&e#%number% %player% - %value% &7%user_statistic%"
+  Statistics:
+    Games-Played: "&aOynanan Oyunlar"
+    Level: "&aSeviye"
+    Exp: "&aTecrübe"
+    Orbs: "&aOrblar"
+    Highest-Wave: "&aEn iyi Dalga"
+    Kills: "&aÖldürülen Zombi"
+    Deaths: "&aÖlümler"
+    Next-Level-Exp: "&aLevel atlamak için gereken tecrübe &e"
+    Wins: "Galibiyetler ▸ %number%"
+    Loses: "Yenilgiler ▸ %number%"
+  Invalid-Name: "&cİstatistiğin ismi yanlış! Yazman gereken: oynanan_oyun, seviye"
+  Unknown-Player: "&fBilinmeyen Oyuncu"
+# Don't edit it. But who's stopping you? It's your server!
+# Really, don't edit ;p
+# You edited it, huh? Next time hurt yourself!
+Do-Not-Edit:
+  File-Version: 1
+  Core-Version: 1
+# You can translate Village Defense messages here.
+# Color codes (&) supported.
+# 
+# Use \n to make new line
+# Some messages like item
+# descriptions don't support new lines
+# they are wrapped every 40 characters automatically
+# 
+# Some messages support their own placeholders
+# like %player%, %kit% etc.
+# 
+# Color scheme
+Color:
+  Placeholder:
+    Value: "&a"
+    Number: "&a"
+    Player: "&b"
+    Other: "&a"
+  Chat:
+    Issue: "&c"
+    Messages: "&7"
+    Special-Char:
+      Contains: "[,],(,),{,},■,/,|,▸"
+      Before: "&8"
