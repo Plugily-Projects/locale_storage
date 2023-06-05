@@ -1,0 +1,582 @@
+# Command messages
+Commands:
+  Did-You-Mean: "%plugin_prefix% 你是指 /%value% 吗？"
+  Command-Executed: "%plugin_prefix% 命令执行成功！"
+  Teleported-To-Lobby: "%plugin_prefix% 已将您传送至大厅！"
+  Removed-Game-Instance: "%color_chat_issue%%plugin_prefix% 成功删除游戏！"
+  No-Arena-Like-That: "%color_chat_issue%%plugin_prefix% 找不到此ID的游戏房间！"
+  Look-At-Sign: "%color_chat_issue%%plugin_prefix% 在执行这个命令时必须看向任意一个告示牌!"
+  Type-Arena-Name: "%color_chat_issue%%plugin_prefix% 请输入游戏房间ID！"
+  Hold-Any-Item: "%color_chat_issue%%plugin_prefix% 你必须手持任意物品！"
+  No-Free-Arenas: "%color_chat_issue%%plugin_prefix% 没有空闲的游戏房间！"
+  Only-By-Player: "%color_chat_issue%%plugin_prefix% 你仅能以玩家视角执行此指令！"
+  Not-Playing: "%color_chat_issue%%plugin_prefix% 你必须在游戏中执行此指令！"
+  No-Permission: "%color_chat_issue%%plugin_prefix% 你没有权限！"
+  Player-Not-Found: "%color_chat_issue%%plugin_prefix% 指定玩家 %player% 并不存在！"
+  Invalid-Location-Teleport: "%color_chat_issue%%plugin_prefix% 错误的传送点！"
+  Wrong-Usage: "%color_chat_issue%%plugin_prefix% 错误的指令使用方式. 请使用%value%"
+  Admin:
+    Added-Orbs: "成功向指定玩家添加金币！"
+    Received-Orbs: "你获得了 %number% 个金币！"
+    Added-Level: "&7成功向指定玩家添加游戏等级！"
+    Reload-Success: "%plugin_prefix% 房间重载！"
+    List:
+      Header: "%plugin_name% 游戏房间：命名状态玩家"
+      Format: "%arena_name% %arena_state_placeholder% %arena_players_size%/%arena_max_players%"
+      No-Arenas: "%color_chat_issue%%plugin_prefix% 没有任何游戏！"
+    Spychat:
+      Toggled: "%plugin_prefix% 游戏聊天监视已切换至 %value%"
+    Adjust-Statistic: "%plugin_prefix% 玩家 %player% 关于 %value% 的统计结果是 %number%!"
+  Main:
+    Header: "&6----------------{%plugin_name% 命令}----------"
+    Description:
+      - "&a游戏命令："
+      - "&b/%plugin_short_command% stats: 统计情况展示!"
+      - "&b/%plugin_short_command% leave: 退出当前竞技场!"
+      - "&b/%plugin_short_command% join <arena>: 加入指定的竞技场!"
+      - "&b/%plugin_short_command% top <statistic>: 显示排名前十的玩家!"
+      - "&b/%plugin_short_command% randomjoin: 随机加入一个竞技场!"
+    Admin-Bonus-Description: "&b/%plugin_short_command%: 列出所有管理员命令"
+    Footer: "&6-------------------------------------------------"
+# In-Game scoreboard messages
+# 
+# Please do not use more chars than the scoreboard can handle!
+# Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
+# Placeholders:
+# https://wiki.plugily.xyz/villagedefense/placeholders/language
+Scoreboard:
+  Title: "&a&l%plugin_name%"
+  Content:
+    Waiting:
+      - "&f玩家数: &e%arena_players_size%"
+      - "■ 玩家数 | %arena_players_size%"
+      - "&f最小玩家数: &e%arena_min_players%"
+      - "■ 最大玩家数 | %arena_min_players%"
+      - "&ewww.plugily.xyz"
+      - "␣␣␣www.plugily.xyz"
+    Starting:
+      - "&f游戏开始倒计时: &e%arena_time%"
+      - "■ 开始 | %arena_time%"
+      - "&f玩家数: &e%arena_players_size%"
+      - "■ 玩家数 | %arena_players_size%"
+      - "&f最小玩家数: &e%arena_min_players%"
+      - "■ 最小玩家数 | %arena_min_players%"
+      - "&ewww.plugily.xyz"
+      - "␣␣␣www.plugily.xyz"
+    # Contents of scoreboard while ingame
+    In-Game:
+      - "&f存活村民数: &e%arena_villager_size%"
+      - "■ 村民数 | %arena_villager_size%"
+      - "■ 玩家数 | %arena_players_left_size%"
+      - "■ 僵尸数 | %arena_zombie_size_left%"
+      - "&f已投掷的腐肉数: &e%arena_rotten_flesh_amount%"
+      - "■ 腐肉数 | %arena_rotten_flesh_amount%"
+      - "■ 硬币 | %user_statistic_orbs%"
+      - "&ewww.plugily.xyz"
+      - "␣␣␣www.plugily.xyz"
+    In-Game-Waiting:
+      - "&f存活村民数: &e%arena_villager_size%"
+      - "■ 村民数 | %arena_villager_size%"
+      - "■ 玩家数 | %arena_players_left_size%"
+      - "␣"
+      - "■ 下一波 | %arena_time%"
+      - "␣"
+      - "■ 腐肉数 | %arena_rotten_flesh_amount%"
+      - "■ 硬币数 | %user_statistic_orbs%"
+      - "␣"
+      - "␣␣␣www.plugily.xyz"
+    # Contents of scoreboard while state is ending
+    Ending:
+      - "&f"
+      - "&f"
+      - "■ &c游戏结束"
+      - "␣"
+      - "&f"
+      - "&f"
+      - "␣"
+      - "␣␣␣www.plugily.xyz"
+    # Contents of scoreboard while state is restarting
+    Restarting:
+      - "&f"
+      - "&f"
+      - "■ &c游戏重启中"
+      - "␣"
+      - "&f"
+      - "&f"
+      - "␣"
+      - "␣␣␣www.plugily.xyz"
+# Bossbar messages
+# 
+# Bossbar needs to be enabled on config.yml
+Bossbar:
+  Title: "&a&l%plugin_name% &6- www.plugily.xyz"
+  Content:
+    Waiting:
+      - "&4&l等待更多玩家..."
+    Starting:
+      - "游戏开始倒计时: %arena_time%"
+    In-Game:
+      - "正在 PLUGILY.XYZ 上 玩 %plugin_name_uppercase%"
+      - "请前往 PLUGILY.XYZ 上查看插件作者"
+      - "当前波数 %arena_option_wave%"
+    Ending:
+      - "游戏结束! 你正在 PLUGILY.XYZ 上游玩"
+    Restarting:
+      - "竞技场重启中. 你即将被踢出!"
+# In-Game Messages
+In-Game:
+  # Used in most game messages.
+  Plugin-Prefix: "(%plugin_name%)"
+  Game-Chat-Format: "[%user_statistic_level%][%kit%] %player% | %message%"
+  You-Leveled-Up: "%plugin_prefix% 你升级了! 你当前的等级是 %number%!"
+  Commands-Blocked: "%color_chat_issue%%plugin_prefix% 请在离开游戏后执行该命令. 现在只能执行 /%plugin_short_command% leave  命令退出游戏!"
+  Join:
+    Already-Playing: "%color_chat_issue%%plugin_prefix% 你已经在一个游戏队列中了! 使用指令 /%plugin_short_command% leave 离开游戏队列."
+    No-Permission: "%color_chat_issue%%plugin_prefix% 你没有加入该竞技场的 %value% 权限!"
+    Full-Game: "%color_chat_issue%%plugin_prefix% 你没有加入人已满游戏的权限!"
+    No-Slots-For-Premium: "%color_chat_issue%%plugin_prefix% 该游戏已达到最大游玩人数! 很抱歉"
+    # Join cancelled via external plugin that uses the API of our plugin.
+    Cancelled-Via-API: "%color_chat_issue%%plugin_prefix% 你不能加入这个游戏!"
+    As-Party-Member: "%color_chat_issue%%plugin_prefix% 由于队长加入，你被迫加入了竞技场 %arena_name% !"
+    Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% 竞技场未配置! 请联系服主或管理员!"
+    Title: "20, 30, 20;%arena_name%;%arena_players_size%/%arena_max_players%"
+  Death:
+    Tag: "&8死亡"
+    Screen: "%color_chat_issue%你牺牲了!"
+  Spectator:
+    You-Are-Spectator: "%plugin_prefix% 你现在是旁观者! 你现在可以飞行了!"
+    Spectator-Menu-Name: "%color_chat_issue%存活玩家名单"
+    Target-Player-Health: "%color_chat_issue%生命值: %number%"
+    Spectator-Warning: "%plugin_prefix% 你现在是一个旁观者!"
+    Teleport: "%plugin_prefix% 已传送到玩家 %player% 身边"
+    Menu:
+      Settings:
+        Status:
+          Enabled: "启用"
+          Disabled: "禁用"
+        Changed-Speed: "改变速度%number%"
+        Auto-Teleport: "%value% 自动传送"
+        Target-Player:
+          Action-Bar: "%number% 格方块距离 | 目标玩家 %player%"
+        Night-Vision: "%value% 夜视"
+        First-Person-Mode:
+          Action-Bar: "&e按Shift键 &c脱离! | 正在查看 %player%"
+          Title: "&e按Shift键 &c脱离!"
+        Visibility: "%value% 其他旁观者"
+    Blocked: "%color_chat_issue%%plugin_prefix% 该竞技场的旁观者模式未开启"
+  Messages:
+    Join: "%plugin_prefix% %player% 加入了游戏(%arena_players_size%/%arena_max_players%)!"
+    Leave: "%plugin_prefix% %player% 离开了游戏(%arena_players_size%/%arena_max_players%)!"
+    Death: "%plugin_prefix% %player% 牺牲了!"
+    Lobby:
+      Start-In: "%plugin_prefix% 游戏将在 %arena_time% 秒后启动!"
+      Waiting-For-Players: "%plugin_prefix% 正在等待更多玩家加入... 至少需要%arena_min_players% 位玩家才能开始游戏."
+      Enough-Players-To-Start: "%plugin_prefix% 人数足够. 游戏即将开始!"
+      Game-Started: "%plugin_prefix% 游戏开始!"
+      Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% %player% 已被移出游戏以便为充值玩家让位置!"
+      You-Were-Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% 因为充值玩家的加入，你被踢出了游戏!"
+      Not-Enough-Space-For-Party: "%color_chat_issue%%plugin_prefix% 竞技场 %arena_name% 人数在你的队伍加入之后已超标，故无法加入该竞技场"
+      Max-Players: "%plugin_prefix% 已达到人数上限. 等待时间将缩短!"
+      Reduced-Time: "%plugin_prefix% 时间已缩短至 %number% 秒"
+    Game-End:
+      Summary:
+        - "&a&m--------------------------------------------------"
+        - "&f&l%plugin_name%"
+        - "␣"
+        - "%arena_summary%"
+        - "%arena_summary_player%"
+        - "␣"
+        - "&e&l当前波数 | %arena_option_wave% (历史最高记录 %user_statistic_highest_wave%)"
+        - "&6&l总僵尸击杀数 | %arena_option_total_killed_zombies%"
+        - "&c&l总硬币花费 | %arena_option_total_orbs_spent%"
+        - "␣"
+        - "&a&m--------------------------------------------------"
+      Placeholders:
+        Win: "胜利"
+        Lose: "%color_chat_issue%你输掉了游戏"
+        Died:
+          Players: "%color_chat_issue%所有玩家都阵亡了!"
+          Villagers: "%color_chat_issue%所有的村民都阵亡了!"
+        Survived: "&a你在僵尸浪潮中幸存了下来"
+        Players: "%color_chat_issue%%plugin_prefix% 人数不足. 游戏强制终止!"
+    Admin:
+      Set-Starting-In-To-0: "%plugin_prefix% 管理员已将等待时间设置为 0. 游戏开始!"
+      Removed:
+        Villagers: "%plugin_prefix% %player% 移除了所有村民!"
+        Golems: "%plugin_prefix% %player% 移除了所有的铁傀儡!"
+        Zombies: "%plugin_prefix% %player% 请出了所有僵尸!"
+        Wolves: "%plugin_prefix% %player% 清除了所有的狼!"
+      Changed:
+        Wave: "%color_chat_issue%%plugin_prefix% 管理员将关卡调整至%number%"
+    Village:
+      Rotten-Flesh-Level-Up: "%plugin_prefix% 上帝对腐肉的馈赠表示感谢! 你将获得&a额外的生命值!"
+      You-Feel-Refreshed: "%plugin_prefix% 你感到神清气爽!"
+      # Do not use spaces between villager names. No limit in names size and amount :)
+      Villager:
+        Died: "%color_chat_issue%%plugin_prefix%&c一个村民死亡了!"
+        Names: "Jagger,Kelsey,Kelton,Haylie,Harlow,Howard,Wulffric,Winfred,Ashley,Bailey,Beckett,Alfredo,Alfred,Adair,Edgar,ED,Eadwig,Edgaras,Buckley,Stanley,Nuffley,Mary,Jeffry,Rosaly,Elliot,Harry,Sam,Rosaline,Tom,Ivan,Kevin,Adam"
+      Wave:
+        Stuck-Zombies: "%color_chat_issue%%plugin_prefix% 最后一个僵尸似乎在某个地方卡住了. 别担心! 上帝会出手帮你消灭它!"
+        Spectator-Warning: "%color_chat_issue%%plugin_prefix% 你现在是一名旁观者! 在下一波重生前你无法做任何事情!"
+        Respawn-On-Next: "&e&l请不要离开! &a你将在下一波重生!"
+        Respawned: "%plugin_prefix% 你不再是旁观者! 你回到了与队友们的共同战斗中!"
+        Next-In: "%plugin_prefix% 下一波将在 %number% 秒后开始!"
+        Started: "%plugin_prefix% 第 %number% 波降临!"
+        Title:
+          Start: "20,30,20;第 %number% 波;"
+          End: "20,30,20;第 %number% 波已结束;"
+      Orbs:
+        Pickup: "+ %number% 硬币"
+      Entities:
+        Wolf:
+          Spawn: "%plugin_prefix% 已在村庄中生成狼!"
+          Name: "%player% 的狼"
+          Death: "%color_chat_issue%%plugin_prefix% 你的一只狼壮烈牺牲了!"
+        Golem:
+          Spawn: "%plugin_prefix% 已在村庄中生成铁傀儡!"
+          Name: "%player% 的铁傀儡"
+          Cant-Ride-Other: "%color_chat_issue%%plugin_prefix% 你不能骑在其他玩家的铁傀儡上!"
+      Shop:
+        GUI: "&l商店"
+        Golem-Item-Name: "生成 铁傀儡"
+        Wolf-Item-Name: "生成 狼"
+        Mob-Limit-Reached: "%color_chat_issue%%plugin_prefix% 你不能购买怪物! 你已经达到了 %number% 的最大数量上线!"
+        Not-Enough-Currency: "%color_chat_issue%%plugin_prefix% 你需要更多的硬币来购买这个物品!"
+        Currency: "硬币"
+        Not-Defined: "%color_chat_issue%%plugin_prefix% 商店未设置! 请联系服主或管理员!"
+# Sign messages
+Signs:
+  Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% 请在第二行输入竞技场名称!"
+  Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% 此名称的竞技场不存在!"
+  Created: "%plugin_prefix% 已创建加入木牌!"
+  Removed: "%plugin_prefix% 加入木牌已移除!"
+  Lines:
+    - "%plugin_prefix%"
+    - "%arena_state_placeholder%"
+    - "%arena_name%"
+    - "[%arena_players_size%/%arena_max_players%]"
+# Arena Selector messages
+Arena-Selector:
+  Inventory-Title: "%plugin_short_command% ▸ 竞技场选择"
+  Item:
+    Name: "&f%arena_name%"
+    Lore:
+      - "&a%plugin_name% &f- &e%arena_name%"
+      - "␣"
+      - "␣"
+      - "  游戏中: %arena_players_size%/%arena_max_players%"
+      - "␣␣状态: %arena_state_placeholder%"
+      - "␣"
+      - "␣"
+      - "&e点击加入此游戏"
+# Validator messages
+Validator:
+  Invalid-Arena-Configuration: "竞技场 %arena_name%有无效的配置! 缺少字符: %value%"
+  Instance-Started: "竞技场 %arena_name% 成功启动!"
+  No-Instances-Created: "未配置或创建任何竞技场!"
+# Placeholder messages inside plugin
+Placeholders:
+  Game-States:
+    Waiting: "&l等待玩家中..."
+    Starting: "&e&l开始游戏"
+    Full-Game: "&4&l玩家已满"
+    In-Game: "&l游戏中"
+    Ending: "&l结束"
+    Restarting: "&c&l重新启动中"
+  Motd:
+    Waiting: "&l你可以加入此游戏..."
+    Starting: "&e&l游戏开始"
+    Full-Game: "&4&l玩家已满 |  请选择其他服务器"
+    In-Game: "&l游戏中 |  请选择观战"
+    Ending: "&l游戏结束 |  服务器关闭中"
+    Restarting: "&c&l重启中"
+# Kit messages
+Kit:
+  Not-Unlocked: "%color_chat_issue%%plugin_prefix% 你还没有解锁 %value% !"
+  Choose: "%plugin_prefix% 你已选择: %value%!"
+  Open-Menu: "打开装备菜单"
+  Cooldown: "%color_chat_issue%%plugin_prefix% 装备技能冷却中(%number%)!"
+  Menu:
+    Title: "装备"
+    Lore:
+      Unlocked: "&a未解锁!"
+      Locked: "&c解锁！"
+      Unlock-At-Level: "%number% 级时解锁"
+      Unlock-In-Store: "&b请在商店中解锁该物品!"
+  Content:
+    Cleaner:
+      Name: "&b清洁工"
+      Description:
+        - "清洁工有特殊的技能."
+        - "在该技能状态下可以使"
+        - "僵尸消失.然后,这通常需要花费"
+        - "花费许多努力!"
+      Game-Item:
+        Name: "&6清洁棒!"
+        Description:
+          - "右击清除所有僵尸!"
+          - "冷却时间: 60秒"
+      Cleaned:
+        Map: "&b%player% 清除了所有僵尸!"
+        # WARNING: used for admin clean commands too!!!
+        Nothing: "&a地图已经是空的了!"
+    Zombie-Teleporter:
+      Name: "&2僵尸诱饵"
+      Description:
+        - "将所有僵尸传送到你身边!"
+        - "许多人认为这是最糟糕的职业!"
+        - "事实证明他们完全错了!"
+      Game-Item:
+        GUI: "僵尸诱饵"
+        Name: "僵尸诱饵"
+        Description:
+          - "把僵尸传送到你身边!"
+    Teleport:
+      Zombie: "&a把虚弱的僵尸传送到你身边!"
+      Not-Found: "&c没有僵尸可传送!"
+    Knight:
+      Name: "&2骑士"
+      Description:
+        - "这是一个且是为唯一一个骑士!"
+        - "许多人认为这是一个最糟糕的职业!"
+        - "事实证明他们完全错了!"
+    Light-Tank:
+      Name: "&2轻型坦克"
+      Description:
+        - "一个初级坦克!"
+    Archer:
+      Name: "&6弓箭手"
+      Description:
+        - "以一把弓，皮革装备和木剑开局."
+        - "村民们可喜欢弓箭手了，请知道这个!"
+    Puncher:
+      Name: "&6击退者"
+      Description:
+        - "使用力大无比的铲子将僵尸们击退!"
+        - "击退V在这个职业前就是个弟弟!"
+    Healer:
+      Name: "&6医生"
+      Description:
+        - "成为一名医生就像是被爱包裹一样."
+        - "可治疗你的队友和村民们!"
+        - "每一波都要重新补给！"
+    Looter:
+      Name: "&6掠夺者"
+      Description:
+        - "每击杀一个僵尸"
+        - "可额外获得一块腐肉!"
+    Runner:
+      Name: "&6疾跑者"
+      Description:
+        - "跑酷是你的强项!"
+        - "你可以跑得比任何人都快."
+        - "你也拥有跳得更高的本领."
+    Medium-Tank:
+      Name: "&6中型坦克"
+      Description:
+        - "开局就有额外6颗心的生命值!"
+        - "不要害怕!"
+        - "根本用不完!"
+    Worker:
+      Name: "&6工作者"
+      Description:
+        - "每一波以额外的"
+        - "两扇门开始.用以替换"
+        - "被僵尸破坏的门!"
+      Game-Item:
+        Chat: "&a门已放置!"
+    Dog-Friend:
+      Name: "&b狗的朋友"
+      Description:
+        - "开局三只狗"
+        - "每波额外附赠一只狗!"
+    Hardcore:
+      Name: "&6硬核"
+      Description:
+        - "玩了之后你就会明白"
+        - "你为什么叫硬核"
+    Golem-Friend:
+      Name: "&6铁傀儡的朋友"
+      Description:
+        - "开局一个铁傀儡"
+        - "每五波额外送一个!"
+    Tornado:
+      Name: "&b龙卷风"
+      Description:
+        - "在一个酷炫的龙卷风中诞生!"
+      Game-Item:
+        Name: "龙卷风时间"
+        Description:
+          - "右击在你的位置"
+          - "生成一个龙卷风!"
+    Terminator:
+      Name: "&6终结者"
+      Description:
+        - "使用强大的力量"
+        - "轻而易举地击杀僵尸!"
+    Teleporter:
+      Name: "&b传送者"
+      Description:
+        - "所有人会对你的传送感到诧异和疑惑."
+        - "除了你没有人知道怎么做!选择它,"
+        - "你将拥有传送到"
+        - "将要被僵尸伤害的村民身边的能力!"
+      Game-Item:
+        Name: "&r传送"
+        Description:
+          - "右击打开传送菜单!"
+        GUI: "传送者"
+      Teleport:
+        Villager: "&a传送到村民身边!"
+        Warning: "&4未找到此村民! 此村民可能已经死亡了!"
+        Player: "&a传送到 %player% 身边"
+        Not-Found: "&c未找到玩家! 请重试!"
+    Heavy-Tank:
+      Name: "&b重型坦克"
+      Description:
+        - "以全套铁甲和两倍数量"
+        - "的生命值开始游戏! 哦,对了,"
+        - "你将会是坚持到最后的一个人!"
+    Shot-Bow:
+      Name: "&b弓箭大师"
+      Description:
+        - "你发明了疯狂的射击弓!"
+    Blocker:
+      Name: "&b阻挡者"
+      Description:
+        - "使用屏障将僵尸"
+        - "挡在屏障后面.这些"
+        - "屏障持续10秒"
+      Game-Item:
+        Name: "围栏"
+        Description:
+          - "放置屏障来阻挡"
+          - "僵尸群的进攻!这些屏障可存在10秒"
+      Place:
+        Success: "&a屏障已放置!"
+        Fail: "&c无法在此放置屏障"
+    Premium-Hardcore:
+      Name: "&b高级硬核大师"
+      Description:
+        - "使用OP剑打击大部分僵尸!"
+        - "然而请注意.这个职业仅仅适用于"
+        - "大佬!如果你不是大佬请不要使用它!"
+    Medic:
+      Name: "&6治愈者"
+      Description:
+        - "这个职业可以激活你的被动技能."
+        - "每一次你击杀一个僵尸,你都有"
+        - "1/10的几率治疗身边"
+        - "五格方块半径内的队友."
+    Wild-Naked:
+      Name: "&b狂野的裸奔者"
+      Description:
+        - "你是终极大师!"
+        - "你将以一把锋利VI 亡灵杀手II"
+        - "的剑开局!"
+      Cannot-Wear-Armor: "&c由于你选择了裸奔者这个职业,所以你不能装任何护甲!"
+    Wizard:
+      Name: "&b巫师"
+      Description:
+        - "你有半条命."
+        - "你将保护村民免受"
+        - "成群的僵尸侵害."
+        - "使用黑暗之力杀死它们!"
+      Game-Item:
+        Essence:
+          Name: "黑暗精华"
+          Description:
+            - "点击可吸收周围的物质"
+            - "然后用它作为你的个人刺盾!"
+            - "持续5秒"
+        Wand:
+          Name: "魔杖"
+          Description: "右击铸造暗物质"
+# Upgrade-Menu messages
+# 
+# Upgrade-Menu function need to be enabled on config.yml
+Upgrade-Menu:
+  Title: "&3&l升级生物"
+  Upgraded-Entity: "%plugin_prefix% &3已将生物等级升级为 &8%tier%&3!"
+  Cannot-Afford: "%plugin_prefix% &3你需要足够的硬币来升级这个生物!"
+  Max-Tier: "%plugin_prefix% &3生物已达到最大等级!"
+  Stats-Item:
+    Name: "&3&l当前状态"
+    Description: "&3移动速度: &8%speed%; &3攻击伤害: &8%damage%; &3生命值: &8%current_hp%/%max_hp%"
+  Upgrades:
+    Health:
+      Name: "&3&l升级生命值上限"
+      Description: "&3将最大生命值升级为 &8%tier%&3!;&3从&8%from% &3到&8%to%;&3升级花费: &8%cost%;;&3点击升级"
+    Damage:
+      Name: "&3&l升级伤害值"
+      Description: "&3生物等级升级为 &8%tier%&3!;&3从 &8%from% &3到 &8%to%;&3预计花费: &8%cost%;;&8点击升级"
+    Speed:
+      Name: "&3&l速度升级"
+      Description: "&3速度等级升级为 &8%tier%&3!;&3从 &8%from% &3到 &8%to%;&3预计花费: &8%cost%;;&8点击升级"
+    Swarm-Awareness:
+      Name: "&3&l群体意识"
+      Description: "&3将群体意识等级升级为 &8%tier%&3!;&3从 &8%from% &8每只狼半径范围伤害;&83格方块 &3到 %to%;&3更多的狼攻击;&3狼拥有更多的伤害;&3预计花费: &8%cost%;;&8点击升级"
+    Final-Defense:
+      Name: "&3&l最终之战"
+      Description: "&3将最后的防御等级升级为 &8%tier%&3!;&3从 &8%from%  爆炸半径 &3到 &8%to%;&3铁傀儡在死亡后将产生爆炸效果;&3僵尸和眩晕所有活着的人;&3预计花费: &8%cost%;;&8点击升级"
+# Leaderboard messages
+# 
+# Hologram function need to be enabled on config.yml
+Leaderboard:
+  Type:
+    Hologram:
+      Header: "&6&l关于 %value% 的排行 %number%"
+      Format: "&e%number%. %player% (%value%)"
+      Empty-Format: "&e%number%. &f无 (0)"
+    Chat:
+      Header: "&8+-------+ &a&l你的战绩 &8+-------+"
+      Header-Other: "&8+---------+ &b%player%&a的战绩&8 +---------+"
+      Footer: "&8+-----------------------------+"
+      Format: "%value% ▸ &a%number%"
+      Top:
+        Type-Name: "%color_chat_issue%请输入统计名称!"
+        Header: "&8&m+----------------+ [&6 排名前十 &8&m] +----------------+"
+        Format: "&e#%number% %player% - %value% %user_statistic%"
+  Statistics:
+    Games-Played: "游玩时间 ▸ %number%"
+    Level: "等级 ▸ %number%"
+    Exp: "经验值 ▸ %number%"
+    Orbs: "硬币 ▸ %number%"
+    Highest-Wave: "最高波数 ▸ %number%"
+    Kills: "僵尸击杀数 ▸ %number%"
+    Deaths: "死亡数 ▸ %number%"
+    Next-Level-Exp: "距升到下一等级所需经验值 ▸ %number%"
+    Wins: "胜利场数 ▸ %number%"
+    Loses: "失败场数 ▸ %number%"
+  Invalid-Name: "%color_chat_issue%统计名称无效! 类型: %value%"
+  Unknown-Player: "%color_chat_issue%未知的玩家"
+# Don't edit it. But who's stopping you? It's your server!
+# Really, don't edit ;p
+# You edited it, huh? Next time hurt yourself!
+Do-Not-Edit:
+  File-Version: 1
+  Core-Version: 1
+# You can translate Village Defense messages here.
+# Color codes (&) supported.
+# 
+# Use \n to make new line
+# Some messages like item
+# descriptions don't support new lines
+# they are wrapped every 40 characters automatically
+# 
+# Some messages support their own placeholders
+# like %player%, %kit% etc.
+# 
+# Color scheme
+Color:
+  Placeholder:
+    Value: "&a"
+    Number: "&a"
+    Player: "&b"
+    Other: "&a"
+  Chat:
+    Issue: "&c"
+    Messages: "&7"
+    Special-Char:
+      Contains: "[,],(,),{,},■,/,|,▸"
+      Before: "&8"
