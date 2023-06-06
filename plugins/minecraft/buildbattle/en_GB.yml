@@ -119,7 +119,8 @@ Scoreboard:
         - "&f"
         - "■ Time Left | %arena_time%"
         - ""
-        - "■ Teammate | %arena_teammates%"
+        - "■ Teammate | "
+        - "%arena_teammates%"
         - "&f"
         - "■ Arena | %arena_name%"
         - ""
@@ -130,9 +131,9 @@ Scoreboard:
         - "■ Builder | %arena_builder%"
         - ""
         - "■ Leaders |"
-        - "%1% | %1_PTS%"
-        - "%2% | %2_PTS%"
-        - "%3% | %3_PTS%"
+        - "%arena_place_member_1% | %arena_place_points_1%"
+        - "%arena_place_member_2% | %arena_place_points_2%"
+        - "%arena_place_member_3% | %arena_place_points_3%"
         - ""
         - "■ Time Left | %arena_time%"
         - ""
@@ -143,9 +144,9 @@ Scoreboard:
         - "■ Mode | %arena_type%"
         - "&f"
         - "■ Leaders |"
-        - "%1% | %1_PTS%"
-        - "%2% | %2_PTS%"
-        - "%3% | %3_PTS%"
+        - "%arena_place_member_1% | %arena_place_points_1%"
+        - "%arena_place_member_2% | %arena_place_points_2%"
+        - "%arena_place_member_3% | %arena_place_points_3%"
         - ""
         - "■ Start in | %arena_time%"
         - ""
@@ -164,16 +165,16 @@ Scoreboard:
       Guess-The-Build:
         - "■ Mode | %arena_type%"
         - "&f"
-        - "■ 1. %1% | %1_PTS%"
-        - "■ 2. %2% | %2_PTS%"
-        - "■ 3. %3% | %3_PTS%"
-        - "■ 4. %4% | %4_PTS%"
-        - "■ 5. %5% | %5_PTS%"
-        - "■ 6. %6% | %6_PTS%"
-        - "■ 7. %7% | %7_PTS%"
-        - "■ 8. %8% | %8_PTS%"
-        - "■ 9. %9% | %9_PTS%"
-        - "■ 10. %10% | %10_PTS%"
+        - "■ 1. %arena_place_member_1% | %arena_place_points_1%"
+        - "■ 2. %arena_place_member_2% | %arena_place_points_2%"
+        - "■ 3. %arena_place_member_3% | %arena_place_points_3%"
+        - "■ 4. %arena_place_member_4% | %arena_place_points_4%"
+        - "■ 5. %arena_place_member_5% | %arena_place_points_5%"
+        - "■ 6. %arena_place_member_6% | %arena_place_points_6%"
+        - "■ 7. %arena_place_member_7% | %arena_place_points_7%"
+        - "■ 8. %arena_place_member_8% | %arena_place_points_8%"
+        - "■ 9. %arena_place_member_9% | %arena_place_points_9%"
+        - "■ 10. %arena_place_member_10% | %arena_place_points_10%"
         - "&f"
         - "   www.plugily.xyz"
     # Contents of scoreboard while state is restarting
@@ -219,7 +220,7 @@ Bossbar:
 In-Game:
   #Used in most game messages.
   Plugin-Prefix: "(%plugin_name%)"
-  Game-Chat-Format: "[%user_statistic_level%][%kit%] %player% | %message%"
+  Game-Chat-Format: "[%user_statistic_level%] %player% | %message%"
   You-Leveled-Up: "%plugin_prefix% You leveled up! You're now level %number%!"
   Commands-Blocked: "%color_chat_issue%%plugin_prefix% You have to leave the game first to perform commands. The only command that works is /%plugin_short_command% leave!"
   Join:
@@ -284,17 +285,16 @@ In-Game:
         - ""
         - "&a&m--------------------------------------------------"
       Placeholders:
-        Winner: "&aPlot with %arena_place_member_1% won!"
+        Winner: "&aPlot with %arena_place_member_1% (%arena_place_points_1%) won!"
         Win: "&aYou won the game"
         Lose: "%color_chat_issue%You lost the game"
         Players: "&cThere are not enough players anymore. BaseArena got force stopped!"
-        Place: "%number% Place - %value%"
-        Own: "&aYou became %number%"
+        Place: "#%number% Place - %value%"
+        Own: "&aYou became #%number%"
     Admin:
       Set-Starting-In-To-0: "%plugin_prefix% An admin set waiting time to 0. The game starts now!"
       Changed-Theme: "%plugin_prefix% Admin has changed theme to %THEME%"
     Plot:
-      Added-Particle: "%plugin_prefix% Particle successfully added!"
       Nobody: "%color_chat_issue%Nobody"
       Time-Left:
         Title: "5,20,5;;%color_chat_issue%%arena_time% seconds left"
@@ -312,10 +312,10 @@ In-Game:
         Full: "Team is full"
         Empty: "You can join this team"
         Inside: "Your team"
-        Name: "Plot - %plot%"
+        Name: "Plot - %number%"
         Menu-Name: "Plot Menu"
-        Plot-Choose: "You are now on plot %plot%"
-        Member: "You are already member of it!"
+        Plot-Choose: "%plugin_prefix% You are now on plot %number%"
+        Member: "%color_chat_issue%%plugin_prefix% You are already member of it!"
       Voting:
         Name: "%color_chat_issue%Voting"
         Plot-Owner:
@@ -324,21 +324,21 @@ In-Game:
           Next: "%plugin_prefix% Now voting for %value%'s plot!"
           Was: "%plugin_prefix% The plot owner was %value%!"
           Own: "%color_chat_issue%%plugin_prefix% You can't vote for your plot!"
-        Success: "%plugin_prefix% Voted successfully!"
+        Success: "%plugin_prefix% Voted %value% successfully!"
         Winner: "5,20,5;%plugin_prefix% WINNER: %value%"
       Guess-The-Build:
-        Builder: "Builder: %BUILDER%"
-        Round: "Round: %number%/%arena_max_players%"
+        Builder: "Builder: %arena_builder%"
+        Round: "Round: %number%/%arena_gtb_rounds%"
         Theme:
-          Chars: "%plugin_prefix% The theme is %NUM% characters long"
+          Chars: "%plugin_prefix% The theme is %number% characters long"
           Name: "%plugin_prefix% The theme is %arena_theme%"
-          Was: "%plugin_prefix% The theme was: %arena_theme%!"
-          Title: "20,30,20;The theme was;%arena_theme%!"
+          Was: "%plugin_prefix% The theme was: %value%!"
+          Title: "20,30,20;The theme was;%value%!"
           Guessed: "%plugin_prefix% All players guessed the theme!"
           Being-Selected: "%plugin_prefix% Theme is being selected..."
           Guess:
             Title: "5,20,5;Start Guessing!"
-            Points: "%plugin_prefix% +%pts% points!"
+            Points: "%plugin_prefix% +%number% points!"
             Guessed: "%plugin_prefix% %player% correctly guessed the theme!"
             Cant-Talk: "%color_chat_issue%%plugin_prefix% You can't talk if you already guessed!"
             Builder: "%color_chat_issue%%plugin_prefix% You can't talk when you're building!"
@@ -357,7 +357,7 @@ Menu:
     Back:
       Item:
         Name: "%color_chat_issue%Go Back"
-        Lore: "Click to go back."
+        Lore: "Click to go back"
   Location: "Location: "
   Option:
     Inventory: "&bOptions menu"
@@ -370,7 +370,7 @@ Menu:
           Remove:
             Name: "%color_chat_issue%Remove particles"
             Lore: "Right click to open menu"
-        Added: "%color_chat_issue%%plugin_prefix% Particle successfully added!"
+        Added: "%plugin_prefix% Particle successfully added!"
         Removed: "%color_chat_issue%%plugin_prefix% Particle successfully removed!"
       Heads:
         Inventory: "&bPlayers heads menu"
@@ -410,7 +410,7 @@ Menu:
         Type:
           Downfall: "Downfall"
           Clear: "Clear"
-        Changed: "%plugin_prefix% Weather has been changed"
+        Changed: "%plugin_prefix% Weather has been changed to %value%"
       Banner:
         Inventory:
           Color: "&bSelect color"
@@ -430,22 +430,22 @@ Menu:
   Theme:
     Inventory: "Choose the theme?"
     Item:
-      Name: "%arena_theme%"
+      Name: "%value% - %number%%"
       #use ; to move to next line
-      Lore: "Vote for theme %theme%;;Time remaining: %time-left%;Current votes: %percent%%!;;Live vote percentages;are shown on the right in;bar form.;;Click to vote %theme%!"
+      Lore: "Vote for theme %value%;;Time remaining: %arena_time%;Current votes: %number%%!;;Live vote percentages;are shown on the right in;bar form.;;Click to vote %value%!"
     Vote:
-      Success: "%plugin_prefix% You vote %theme% successfully!"
+      Success: "%plugin_prefix% You vote %value% successfully!"
       Already: "%color_chat_issue%%plugin_prefix% You've already voted for this theme!"
       Super:
         Item:
           Name: "&bSuper vote"
-          Lore: "You have %owned% super votes;;Click to super vote %theme%!"
-        Used: "%plugin_prefix% Player %player% has used Super vote for theme %theme%! Starting now..."
+          Lore: "You have %user_statistic_super_votes% super votes;;Click to super vote %value%!"
+        Used: "%plugin_prefix% Player %player% has used Super vote for theme %value%! Starting now..."
     Guess-The-Build:
       Inventory: "Select a theme to build!"
       Item:
-        Name: "%theme%"
-        Lore: "%difficulty%;;+%points% points if player's guess it correctly;;Click to select!"
+        Name: "%value%"
+        Lore: "%value%;;+%number% points if player's guess it correctly;;Click to select!"
       Difficulties:
         Easy: "&aEASY"
         Medium: "&eMEDIUM"
