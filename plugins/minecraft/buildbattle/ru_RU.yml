@@ -1,0 +1,535 @@
+# You can translate BuildBattle messages here.
+# Color codes (&) supported.
+# 
+# Use \n to make new line
+# Some messages like item
+# descriptions don't support new lines
+# they are wrapped every 40 characters automatically
+# 
+# Some messages support their own placeholders
+# like %player%, %kit% etc.
+# 
+# Color scheme
+Color:
+  Placeholder:
+    Value: "&a"
+    Number: "&a"
+    Player: "&b"
+    Other: "&a"
+  Chat:
+    Issue: "&c"
+    Messages: "&7"
+    Special-Char:
+      Contains: "[,],(,),{,},■,/,|,▸"
+      Before: "&8"
+# Command messages
+Commands:
+  Did-You-Mean: "%plugin_prefix% Может вы имели ввиду /%value%?"
+  Command-Executed: "%plugin_prefix% Команда успешно выполнена!"
+  Teleported-To-Lobby: "%plugin_prefix% Вы телепортированы в лобби"
+  Removed-Game-Instance: "%color_chat_issue%%plugin_prefix% Успешно удален экземпляр игры!"
+  No-Arena-Like-That: "%color_chat_issue%%plugin_prefix% Нет арены с таким названием!"
+  Look-At-Sign: "%color_chat_issue%%plugin_prefix% Вы должны смотреть на табличку, что бы использовать эту команду!"
+  Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Пожалуйста, напишите название арены"
+  Hold-Any-Item: "%color_chat_issue%%plugin_prefix% Вы должны держать предмет в руке!"
+  No-Free-Arenas: "%color_chat_issue%%plugin_prefix% Свободные арены отсутствуют!"
+  Only-By-Player: "%color_chat_issue%%plugin_prefix% Вы можете использовать эту команду только как игрок"
+  Not-Playing: "%color_chat_issue%%plugin_prefix% Вы должны играть, чтобы выполнить эту команду!"
+  No-Permission: "%color_chat_issue%%plugin_prefix% У вас нет прав на использование этой команды!"
+  Player-Not-Found: "%color_chat_issue%%plugin_prefix% Игрок %player% не доступен! "
+  Invalid-Location-Teleport: "%color_chat_issue%%plugin_prefix% Место для телепортации неверно!"
+  Wrong-Usage: "%color_chat_issue%%plugin_prefix% Неправильное использование. Используй %значение%"
+  Theme-Blacklisted: "%color_chat_issue%%plugin_prefix% Эту тему нельзя использовать в игре!"
+  Admin:
+    Adjust-Statistic: "%plugin_prefix% Статистика %value% %player% теперь равна %number%!"
+    Reload-Success: "%plugin_prefix% Арены перезагруженны!"
+    Added-Plot: "%plugin_prefix% Добавлен плот на арену - %arena_name%"
+    List:
+      Header: "%plugin_name% арены: имена игроков"
+      Format: "%arena_name% %arena_state_placeholder% %arena_players_size%/%arena_max_players%"
+      No-Arenas: "%color_chat_issue%%plugin_prefix% Нет никаких игровых экземпляров!"
+    Spychat:
+      Toggled: "%plugin_prefix% Шпионский чат в игре переключен на %value%"
+  Main:
+    Header: "&6----------------{%plugin_name% команды}----------"
+    Description:
+      - "&aИгровые команды"
+      - "&b/%plugin_short_command% статистика: Показана ваша статистика!"
+      - "&b/%plugin_short_command% leave: покидает текущую арену!"
+      - "&b/%plugin_short_command% join <arena>: присоединяется к арене!"
+      - "&b/%plugin_short_command% top <статистика>: показывает 10 лучших игроков!"
+      - "&b/%plugin_short_command% randomjoin <соло/команда>: присоединился к случайной арене!"
+    Admin-Bonus-Description: "&b/%plugin_short_command%: Показаны все команды администратора"
+    Footer: "&6-------------------------------------------------"
+# In-Game scoreboard messages
+# 
+# Please do not use more chars than the scoreboard can handle!
+# Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
+# Placeholders:
+# https://wiki.plugily.xyz/REPLACEWITHPROJECTNAME/placeholders/language
+Scoreboard:
+  Title: "&a&l%plugin_name%"
+  Theme-Unknown: "&c???"
+  Content:
+    Waiting:
+      - "■ Режим | %arena_mode%"
+      - " "
+      - "■ Игроки | %arena_players_size%"
+      - " "
+      - "■ Минимум игроков | %arena_min_players%\n"
+      - " "
+      - "www.plugily.xyz"
+    Starting:
+      - "■ Режим | %arena_mode%"
+      - " "
+      - "■ Начало с | %arena_time%"
+      - " "
+      - "■ Игроки | %arena_players_size%"
+      - " "
+      - "■ Минимум игроков | %arena_min_players%"
+      - " "
+      - "   www.plugily.xyz"
+    # Contents of scoreboard while ingame
+    In-Game:
+      Classic:
+        - "■ Тема | %arena_theme%"
+        - "&f"
+        - "■ Режим | %arena_type%"
+        - "&f"
+        - "■ Времени осталось | %arena_time%"
+        - " "
+        - "■ Игроки | %arena_players_size%"
+        - "&f"
+        - "■ Арена | %arena_name%"
+        - " "
+        - "   www.plugily.xyz"
+      Teams:
+        - "■ Тема | %arena_theme%"
+        - "&f"
+        - "■ Режим | %arena_type%"
+        - "&f"
+        - "■ Времени осталось | %arena_time%"
+        - " "
+        - "■ Союзник | %arena_teammates%"
+        - "&f"
+        - "■ Арена | %arena_name%"
+        - " "
+        - "   www.plugily.xyz"
+        - "   www.plugily.xyz"
+      Guess-The-Build:
+        - "■ Режим | %arena_type%"
+        - "&f"
+        - "■ Строитель | %arena_builder%"
+        - " "
+        - "■ Лидеры |"
+        - "%arena_place_member_1% | %arena_place_points_1%"
+        - "%arena_place_member_2% | %arena_place_points_2%"
+        - "%arena_place_member_3% | %arena_place_points_3%"
+        - " "
+        - "■ Времени осталось | %arena_time%"
+        - " "
+        - "■ Тема | %arena_theme%"
+        - " "
+        - "   www.plugily.xyz"
+      Guess-The-Build-Waiting:
+        - "■ Режим | %arena_mode%"
+        - "&f"
+        - "■ Лидеры |"
+        - "%arena_place_member_1% | %arena_place_points_1%"
+        - "%arena_place_member_2% | %arena_place_points_2%"
+        - "%arena_place_member_3% | %arena_place_points_3%"
+        - " "
+        - "■ Начало в | %arena_time%"
+        - " "
+        - "   www.plugily.xyz"
+    # Contents of scoreboard while state is ending
+    Ending:
+      Classic:
+        - "■ Режим | %arena_mode%"
+        - "&f"
+        - "&cИгра окончена!"
+        - " "
+        - "&f"
+        - "&f"
+        - " "
+        - "   www.plugily.xyz"
+      Guess-The-Build:
+        - "■ Режим | %arena_mode%"
+        - "&f"
+        - "■ 1. %arena_place_member_1% | %arena_place_points_1%"
+        - "■ 2. %arena_place_member_2% | %arena_place_points_2%"
+        - "■ 3. %arena_place_member_3% | %arena_place_points_3%"
+        - "■ 4. %arena_place_member_4% | %arena_place_points_4%"
+        - "■ 5. %arena_place_member_5% | %arena_place_points_5%"
+        - "■ 6. %arena_place_member_6% | %arena_place_points_6%"
+        - "■ 7. %arena_place_member_7% | %arena_place_points_7%"
+        - "■ 8. %arena_place_member_8% | %arena_place_points_8%"
+        - "■ 9. %arena_place_member_9% | %arena_place_points_9%"
+        - "■ 10. %arena_place_member_10% | %arena_place_points_10%"
+        - "&f"
+        - "   www.plugily.xyz"
+    # Contents of scoreboard while state is restarting
+    Restarting:
+      - "■ Режим | %arena_mode%"
+      - "&f"
+      - "&cРестарт игры!"
+      - " "
+      - "&f"
+      - "&f"
+      - " "
+      - "   www.plugily.xyz"
+# Bossbar messages
+# 
+# Bossbar needs to be enabled on config.yml
+Bossbar:
+  Title: "%plugin_name% - www.plugily.xyz"
+  Content:
+    Waiting:
+      - "Ожидание большего количества игроков.."
+    Starting:
+      - "Начало в: %arena_time%"
+    In-Game:
+      - "Играет %plugin_name_uppercase% на PLUGILY.XYZ"
+      - "Проверьте создателя плагина на PLUGILY.XYZ"
+      - "Оставшееся время - %arena_time%"
+    Guess-The-Build:
+      - "%arena_guess_word%"
+    Guess-The-Build-Waiting:
+      - "Подождите, пока будет выбрано следующее слово!"
+    Voting:
+      - "Осталось время для голосования - %arena_time%"
+    Ending:
+      - "Игра закончилась! Вы играли на PLUGIN.XYZ"
+    Restarting:
+      - "Перезапуск арены. Вас скоро вернут!"
+# In-Game Messages
+In-Game:
+  # Used in most game messages.
+  Plugin-Prefix: "(%plugin_name%)"
+  Game-Chat-Format: "%user_statistic_level%][%kit%] %player% | %message%"
+  You-Leveled-Up: "%plugin_prefix% Вы повысили уровень! Теперь ты на уровне %number%!"
+  Commands-Blocked: "%color_chat_issue%%plugin_prefix% Вы должны сначала выйти из игры, чтобы использовать команды. Единственная команда, которая работает, - это /%plugin_short_command% leave!"
+  Join:
+    Already-Playing: "%color_chat_issue%%plugin_prefix% Вы уже поставлены в очередь на игру! Вы можете выйти из игры с помощью команды /%plugin_short_command% leave."
+    No-Permission: "%color_chat_issue%%plugin_prefix% У вас нет %value% разрешения присоединиться к этой арене!"
+    Full-Game: "%color_chat_issue%%plugin_prefix% У вас нет разрешения на вход в заполненные игры!"
+    No-Slots-For-Premium: "%color_chat_issue%%plugin_prefix% В этой игре уже полно премиум-игроков! Извините"
+    # Join cancelled via external plugin that uses the API of our plugin.
+    Cancelled-Via-API: "%color_chat_issue%%plugin_prefix% Вы не можете присоединиться к этой игре!"
+    As-Party-Member: "%color_chat_issue%%plugin_prefix% Вы присоединились к %arena_name%, потому что к ней присоединился лидер команды!"
+    Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% Арена еще не настроена! Свяжитесь с администрацией!"
+    Title: "20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%"
+  Death:
+    Tag: "&8Смерть"
+    Screen: "%color_chat_issue%Ты умер!"
+  Spectator:
+    Blocked: "%color_chat_issue%%plugin_prefix% Зрители на этой арене отключены"
+    You-Are-Spectator: "%plugin_prefix% Теперь вы зритель! Теперь ты можешь летать!"
+    Spectator-Menu-Name: "%color_chat_issue% Список живых игроков"
+    Target-Player-Health: "%color_chat_issue%Хп: %number%"
+    Spectator-Warning: "%plugin_prefix% теперь вы зритель!"
+    Teleport: "%plugin_prefix% Телепортация к %player%"
+    Menu:
+      Settings:
+        Status:
+          Enabled: "Включено"
+          Disabled: "Выключенно"
+        Changed-Speed: "Скорость изменена на %number%"
+        Auto-Teleport: "%value% автоматический телепорт"
+        Target-Player:
+          Action-Bar: "%number% блоков от | %player%"
+        Night-Vision: "%value% ночное видение"
+        First-Person-Mode:
+          Action-Bar: "&eSNEAK &cчтобы уйти! | Цель %player%"
+          Title: "&eSNEAK &cчтобы уйти!"
+        Visibility: "%value% другие игроки-зрители"
+  Messages:
+    Join: "%plugin_prefix% %player% присоединился к игре (%arena_players_size%/%arena_max_players%)!"
+    Leave: "%plugin_prefix% %player% покинул игру (%arena_players_size%/%arena_max_players"
+    Death: "%plugin_prefix% %player% умер!"
+    Lobby:
+      Start-In: "%plugin_prefix% Игра начнется через %arena_time% секунд!"
+      Waiting-For-Players: "%plugin_prefix% Ожидание игроков... Для начала нам нужно как минимум %arena_min_players% игроков."
+      Enough-Players-To-Start: "%plugin_prefix% Теперь у нас достаточно игроков. Игра скоро начнется!"
+      Reduced-Time: "%plugin_prefix% Время сократилось до %number% секунд"
+      Max-Players: "%plugin_prefix% Мы достигли максимального количества игроков в этом раунде. Время сокращается! "
+      Game-Started: "%plugin_prefix% Игра началась!"
+      Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% %player% удален из игры, чтобы освободить место для премиум-игроков!"
+      You-Were-Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% Вас выгнали из игры, чтобы освободить место для премиум-игрока!"
+      Not-Enough-Space-For-Party: "%color_chat_issue%%plugin_prefix% Ваша команда больше, чем свободных мест на арене %arena_name%"
+    Game-End:
+      Summary:
+        - "&a&m--------------------------------------------------"
+        - "%plugin_name%"
+        - " "
+        - "%arena_summary%"
+        - "%arena_summary_player%"
+        - " "
+        - " "
+        - "%place_list%"
+        - " "
+        - " "
+        - "&a&m--------------------------------------------------"
+      Placeholders:
+        Win: "&aВы выиграли игру"
+        Lose: "%color_chat_issue%Вы проиграли игру"
+        Players: "&cИгроков уже недостаточно. Арена была остановлена!"
+        Place: "%value% Место - %player% (%number% очков)"
+        Own: "&aВы стали %number%"
+        # &aПостройка %arena_place_member_1% победила!
+        # Как-то так наверно? (Somehow so probably?)
+        Winner: "&aPlot with %arena_place_member_1% (%arena_place_points_1%) won!"
+    Admin:
+      Set-Starting-In-To-0: "%plugin_prefix% Администратор пропустил ожидание, игра сейчас начнется!"
+      Changed-Theme: "%plugin_prefix% Администратор изменил тему на %THEME%"
+    Plot:
+      Added-Particle: "%plugin_prefix% Частица успешно добавлена!"
+      Nobody: "%color_chat_issue%Никто"
+      Time-Left:
+        Title: "5,20,5;;%color_chat_issue%%arena_time% секунд осталось"
+        Chat: "%plugin_prefix% %arena_time% осталось до начала строительства!"
+      Limit:
+        Entities: "%color_chat_issue%%plugin_prefix% Вы не можете создавать больше объектов!"
+        Particles: "%color_chat_issue%%plugin_prefix% Вы не можете создавать больше частиц!"
+      Permission:
+        Particle: "%color_chat_issue%%plugin_prefix% У вас нет прав на использование этой частицы!"
+        Biome: "%color_chat_issue%%plugin_prefix% У вас нет прав доступа к этому биому!"
+        Outside: "%color_chat_issue%%plugin_prefix% Вы не можете летать за пределы своего участка!"
+        Floor-Item: "%color_chat_issue%%plugin_prefix% Предмет в вашей руке не может быть установлен в качестве пола!"
+        Head: "%color_chat_issue%%plugin_prefix% У вас нет разрешения на эту голову!"
+      Selector:
+        Full: "Команда заполнена"
+        Empty: "Вы можете присоединиться к этой команде"
+        Inside: "Твоя команда"
+        Name: "Участок - %plot%"
+        Menu-Name: "Меню участка"
+        Plot-Choose: "Вы находитесь на участке %plot%"
+        Member: "Вы уже являетесь его участником!"
+      Voting:
+        Name: "%color_chat_issue%Голосование"
+        Plot-Owner:
+          Chat: "%plugin_prefix% Владелец участка: %player%"
+          Title: "5,20,5;;Владелец участка: %player%"
+          Next: "%plugin_prefix% Сейчас голосование за участок %player%!"
+          Was: "%plugin_prefix% Владельцем участка был %player%!"
+          Own: "%color_chat_issue%%plugin_prefix% Голосовать за свой участок нельзя!"
+        Success: "%plugin_prefix% Вы проголосовали!"
+        Winner: "%plugin_prefix% ПОБЕДИТЕЛЬ: %player%"
+      Guess-The-Build:
+        Builder: "Строитель: %BUILDER%"
+        Round: "Раунд: %ROUND%/%MAXPLAYERS%"
+        Theme:
+          Chars: "%plugin_prefix% Длина темы: %NUM% символов"
+          Name: "%plugin_prefix% Тема %THEME%"
+          Was: "%plugin_prefix% Тема: %THEME%!"
+          Title: "20,30,20;Тема была;%THEME%!"
+          Guessed: "%plugin_prefix% Все игроки угадали тему!"
+          Being-Selected: "%plugin_prefix% Выбирается тема..."
+          Guess:
+            Title: "5,20,5;Начинай угадывать!"
+            Points: "%plugin_prefix% +%pts% очков!"
+            Guessed: "%plugin_prefix% %player% правильно угадал тему!"
+            Cant-Talk: "%color_chat_issue%%plugin_prefix% Вы не можете писать в чат, когда уже угадали тему!"
+            Builder: "%color_chat_issue%%plugin_prefix% Вы не можете говорить когда строите!"
+      NPC:
+        Name: "&aНпс ставящий пол"
+        Created: "%plugin_prefix% Польный нпс создан!"
+        Install-Citizens: "%color_chat_issue%%plugin_prefix% Установите плагин Citizens что бы создать нпс!"
+# Menu messages
+Menu:
+  Permission: "%color_chat_issue%%plugin_prefix% У вас нет прав что бы использовать меню!"
+  Location: "Место: "
+  Option:
+    Inventory: "&bМеню"
+    Content:
+      Particle:
+        Inventory: "&bПартиклы"
+        Item:
+          Name: "&bВыберите частицы"
+          Lore: "Клик что бы установить партиклы"
+          Remove:
+            Name: "%color_chat_issue%Убрать все партиклы"
+            Lore: "Правый клик что бы открыть меню"
+        Removed: "%color_chat_issue%%plugin_prefix% Партиклы удалены!"
+        Added: "%color_chat_issue%%plugin_prefix% Частицы успешно добавлены!"
+      Heads:
+        Inventory: "&bДекоративные головы"
+        Item:
+          Name: "&bПолучить головы"
+          Lore: "Клик что вы выбрать голову"
+      Floor:
+        Item:
+          Name: "&bУстановить материал пола"
+          Lore: "Перетащите блок сюда, чтобы изменить пол"
+        Changed: "%plugin_prefix% Материал пола изменен!"
+      Time:
+        Inventory: "&bУстановить время"
+        Item:
+          Name: "&bУстановить время плота"
+          Lore: "Правой кнопкой что бы открыть меню"
+        Type:
+          World: "&eВремя мира"
+          Day: "День (1000 тиков)"
+          Noon: "Полдень (6000 тиков)"
+          Sunset: "Восход (12000 тиков)"
+          Night: "Ночь (13000 тиков)"
+          MidNight: "Полночь (18000 тиков)"
+          Sunrise: "Закат (23000 тиков)"
+        Changed: "%plugin_prefix% Время установлено на%value%"
+      Biome:
+        Inventory: "&bУстановить биом"
+        Item:
+          Name: "&bУстановить биом на плоту"
+          Lore: "Правой кнопкой что бы открыть меню"
+        Changed: "%plugin_prefix% Биом успешно установлен"
+      Weather:
+        Inventory: "&bУстановить погоду"
+        Item:
+          Name: "&bУстановить погоду только у вас на плоту"
+          Lore: "Правой кнопкой что бы открыть меню"
+        Type:
+          Downfall: "Дождь"
+          Clear: "Ясно"
+        Changed: "%plugin_prefix% Погода установлена. "
+      Banner:
+        Inventory:
+          Color: "&b Выбрать цвет"
+          Layer: "&b Добавить слой"
+          Layer-Color: "&b Добавить слой цвета"
+        Item:
+          Name: "&bМастерская баннеров"
+          Lore: "Клик правой кнопкой что бы открыть меню"
+          Create:
+            Name: "&bСоздать финальный баннер"
+            Lore: "Клик правой кнопкой что бы создать этот баннер"
+      Reset:
+        Item:
+          Name: "&cСтереть все на плоту"
+          Lore: "&7Полное стирание всего на плоту, &c&lнельзя отменить!"
+        Chat: "%color_chat_issue%%plugin_prefix% Все стёрто!"
+  Theme:
+    Inventory: "Выберите тему?"
+    Item:
+      Name: "%arena_theme%"
+      # use ; to move to next line
+      Lore: "Проголосуйте за тему %theme%;; Осталось времени:  %time-left%;Сейчас голосов: %percent%!;;Проценты голосов в реальном времени;отображаются справа в форме панели.;;Нажмите, чтобы проголосовать %theme%!"
+    Vote:
+      Success: "%plugin_prefix% Ты проголосовал за %theme%!"
+      Already: "%color_chat_issue%%plugin_prefix% Вы уже проголосовали за эту тему!"
+      Super:
+        Item:
+          Name: "&bСупер голос"
+          Lore: "У тебя есть %owned% супер голосов;;Нажми что бы использовать супер голос на теме - %theme%!"
+        Used: "%plugin_prefix% Игрок %player% использовал суперголосование за тему %theme%! Игра начинается..."
+    Guess-The-Build:
+      Inventory: "Выберите тему для строительства!"
+      Item:
+        Name: "%theme%"
+        Lore: "%difficulty%;;+%points% очков, если игрок угадал правильно;;Нажмите, чтобы выбрать!"
+      Difficulties:
+        Easy: "&aЛЕГКО"
+        Medium: "&eСРЕДНИЙ"
+        Hard: "&cCЛОЖНЫЙ"
+  Buttons:
+    Back:
+      Item:
+        Name: "%color_chat_issue%Возвращайся"
+        Lore: "Нажмите для возвращения"
+# Sign messages
+Signs:
+  Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Пожалуйста, введите название арены во второй строке!"
+  Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% Арены с таким названием не существует!"
+  Created: "%plugin_prefix% Табличка успешно создана!"
+  Removed: "%plugin_prefix% Табличка успешно удалена!"
+  Lines:
+    - "%plugin_prefix%"
+    - "%arena_state_placeholder%"
+    - "%arena_name%"
+    - "[%arena_players_size%/%arena_max_players%]"
+# BaseArena Selector messages
+Arena-Selector:
+  Inventory-Title: "%plugin_short_command% ▸ Выбор арены"
+  Item:
+    Name: "%arena_name%"
+    Lore:
+      - "%plugin_name% - %arena_name%"
+      - " "
+      - " "
+      - "  Игроков: %arena_players_size%/%arena_max_players%"
+      - "  Состояние: %arena_state_placeholder%"
+      - " "
+      - " "
+      - "&aНажмите, чтобы присоединиться к этой арене"
+# Validator messages
+Validator:
+  Invalid-Arena-Configuration: "Арена %arena_name% имеет неверную конфигурацию! Отсутствует узел: %value%"
+  Instance-Started: "Арена: %arena_name% успешно запущен!"
+  No-Instances-Created: "В конфигурации не созданы экземпляры арены!"
+# Placeholder messages inside plugin
+Placeholders:
+  Game-States:
+    Waiting: "&lЖдем игроков..."
+    Starting: "&e&lЗапуск"
+    Full-Game: "&4&lПОЛНЫЙ"
+    In-Game: "&lВ игре"
+    Ending: "&lКонец"
+    Restarting: "&c&lПерезапуск"
+  Motd:
+    Waiting: "&lВы можете присоединиться к этой игре..."
+    Starting: "&e&lЗапуск"
+    Full-Game: "&4&lПОЛНЫЙ | Использовать другой сервер"
+    In-Game: "&lВ игре | Нажмите, чтобы посмотреть"
+    Ending: "&lКонец | Сервер закрывается"
+    Restarting: "&c&lПерезапуск"
+# Kit messages
+Kit:
+  Not-Unlocked: "%color_chat_issue%%plugin_prefix% Вы еще не разблокировали %value%!"
+  Choose: "%plugin_prefix% Вы выбрали: %value%!"
+  Cooldown: "%color_chat_issue%%plugin_prefix% все еще находится на перезарядке (%number%)!"
+  Menu:
+    Title: "Меню наборов"
+    Lore:
+      Unlocked: "&aРазблокирован! "
+      Locked: "&cЗаблокирован."
+      Unlock-At-Level: "Открывается на уровне %number%"
+      Unlock-In-Store: "&bРазблокируйте это в магазине!"
+# Leaderboard messages
+# 
+# Hologram function need to be enabled on config.yml
+Leaderboard:
+  Type:
+    Hologram:
+      Header: "&6&lНачало %number% в %value%"
+      Format: "&e%number%. %player% (%value%)"
+      Empty-Format: "&e%число%. Пусто (0)"
+    Chat:
+      Header: "&8+-------+ &b&lВАША СТАТИСТИКА &8+-------+"
+      Header-Other: "&8+---------+ &bСТАТИСТИКА ДЛЯ &b%player% &8+---------+"
+      Footer: "&8+--------------------------------------------+"
+      Format: "%value% ▸ &a%number%"
+      Top:
+        Type-Name: "%color_chat_issue%Пожалуйста, введите название статистики для просмотра!"
+        Header: "&8&m+----------------+ [&6 Топ 10 &8&m] +----------------+"
+        Format: "&e#%number% %player% - %value% %user_statistic%"
+  Statistics:
+    Wins: "Побед ▸ %number%"
+    Loses: "Проигрышей ▸ %number%"
+    Games-Played: "Сыграно игр ▸ %number%"
+    Level: "Уровень ▸ %number%"
+    Exp: "Опыт ▸ %number%"
+    Next-Level-Exp: "Опыт для повышения уровня ▸ %number%"
+    Highest-Win: "Наибольший выигрыш (очки) ▸ %number%"
+    Highest-Points: "Самые высокие очки ▸ %number%"
+    Total-Points-Earned: "Всего заработано баллов ▸ %number%"
+    Blocks-Placed: "Блоков поставлено ▸ %number%"
+    Blocks-Broken: "Блоков сломано ▸ %number%"
+    Particles-Placed: "Частиц поставлено ▸ %number%"
+    Super-Votes: "Суперголосов ▸ %number%"
+  Invalid-Name: "%color_chat_issue%Имя статистики недействительно! Тип: %value%"
+  Unknown-Player: "%color_chat_issue%Неизвестный игрок"
+# Don't edit it. But who's stopping you? It's your server!
+# Really, don't edit ;p
+# You edited it, huh? Next time hurt yourself!
+Do-Not-Edit:
+  File-Version: 1
+  Core-Version: 1
