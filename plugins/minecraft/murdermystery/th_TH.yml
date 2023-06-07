@@ -1,0 +1,415 @@
+# You can translate MurderMystery messages here.
+# Color codes (&) supported.
+# 
+# Use \n to make new line
+# Some messages like item
+# descriptions don't support new lines
+# they are wrapped every 40 characters automatically
+# 
+# Some messages support their own placeholders
+# like %player%, %kit% etc.
+# 
+# Color scheme
+Color:
+  Placeholder:
+    Value: "&4"
+    Number: "&4"
+    Player: "&b"
+    Other: "&4"
+  Chat:
+    Issue: "&c"
+    Messages: "&7"
+    Special-Char:
+      Contains: "[,],(,),{,},■,/,|,▸"
+      Before: "&8"
+# Command messages
+Commands:
+  Did-You-Mean: "%plugin_prefix% หรือคุณหมายถึง /%value%?"
+  Command-Executed: "%plugin_prefix% ใช้งานคำสั่งเรียบร้อยแล้ว!"
+  Teleported-To-Lobby: "%plugin_prefix% ไปยังล็อบบี้!"
+  Removed-Game-Instance: "%color_chat_issue%%plugin_prefix% นำตัวอย่างเกมออกเรียบร้อยแล้ว!"
+  No-Arena-Like-That: "%color_chat_issue%%plugin_prefix% ไม่มี arena ชื่อนั้น!"
+  Look-At-Sign: "%color_chat_issue%%plugin_prefix% คุณต้องมองที่ป้ายเพื่อใช้คำสั่งนี้!"
+  Type-Arena-Name: "%color_chat_issue%%plugin_prefix% โปรดใส่หมายเลขของ arena ด้วย!"
+  Hold-Any-Item: "%color_chat_issue%%plugin_prefix% คุณต้องถือไอเท็มไว้ด้วย!"
+  No-Free-Arenas: "%color_chat_issue%%plugin_prefix% ไม่มี arena ที่ว่าง!"
+  Only-By-Player: "%color_chat_issue%%plugin_prefix% คุณสามารถใช้คำสั่งนี้ได้เฉพาะเมื่อเป็นผู้เล่น!"
+  Not-Playing: "%color_chat_issue%%plugin_prefix% คุณจะต้องเล่นอยู่เพื่อใช้คำสั่งนี้!"
+  No-Permission: "%color_chat_issue%%plugin_prefix% คุณไม่ได้รับอนุญาตให้ใช้คำสั่งนี้"
+  Player-Not-Found: "%color_chat_issue%%plugin_prefix% ผู้เล่น %player% ไม่มีอยู่!"
+  Invalid-Location-Teleport: "%color_chat_issue%%plugin_prefix% ตำแหน่งที่ต้องการไปไม่ถูกต้อง!"
+  Wrong-Usage: "%color_chat_issue%%plugin_prefix% ใช้งานผิดพลาด. ลองใช้ %value%"
+  Admin:
+    Adjust-Statistic: "%plugin_prefix% สถาณะ %value% ของ %player% คือ %number%!"
+    Reload-Success: "%plugin_prefix% รีโหลด Arenas แล้ว!"
+    List:
+      Header: "%plugin_name% arenas: Name State Players"
+      Format: "%arena_name% %arena_state_placeholder% %arena_players_size%/%arena_max_players%"
+      No-Arenas: "%color_chat_issue%%plugin_prefix% ไม่มีตัวอย่างเกม!"
+    Spychat:
+      Toggled: "%plugin_prefix% เปลี่ยน Game spy chat เป็น %value%"
+  Main:
+    Header: "&6----------------{%plugin_name% คำสั่ง}----------"
+    Description:
+      - "&aคำสั่งของเกม:"
+      - "&b/%plugin_short_command% stats: ดูสถิติของคุณ!"
+      - "&b/%plugin_short_command% leave: ออกจาก Arena!"
+      - "&b/%plugin_short_command% join <arena>: เข้าร่วม arena ที่เฉพาะเจาะจง!"
+      - "&b/%plugin_short_command% top <statistic>: แสดง 10 อันดับผู้เล่น!"
+      - "&b/%plugin_short_command% randomjoin: เข้าร่วม Arena แบบสุ่ม!"
+    Admin-Bonus-Description: "&b/%plugin_short_command%: แสดงคำสั่งแอดมินทั้งหมด"
+    Footer: "&6-------------------------------------------------"
+# In-Game scoreboard messages
+# 
+# Please do not use more chars than the scoreboard can handle!
+# Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
+# Placeholders:
+# https://wiki.plugily.xyz/REPLACEWITHPROJECTNAME/placeholders/language
+Scoreboard:
+  Title: "&a&l%plugin_name%"
+  Roles:
+    Detective: "&bนักสืบ"
+    Murderer: "&cฆาตรกร"
+    Innocent: "&eผู้บริสุทธิ์"
+    Dead: "ตาย"
+  Detective:
+    Alive: "นักสืบ: &aยังมีชีวิต"
+    Bow:
+      Dropped: "%color_chat_issue%ธนูตก"
+      Picked: "ธนูยังไม่ตก"
+  Content:
+    Waiting:
+      - " "
+      - "■ ผู้เล่น | %arena_players_size%"
+      - " "
+      - "■ ผู้เล่นต่ำสุด | %arena_min_players%"
+      - " "
+      - "   www.plugily.xyz"
+    Starting:
+      - " "
+      - "■ จะเริ่มใน | %arena_time%"
+      - " "
+      - "■ ผู้เล่น | %arena_players_size%"
+      - " "
+      - "■ ผู้เล่นต่ำสุด | %arena_min_players%"
+      - " "
+      - "   www.plugily.xyz"
+    # Contents of scoreboard while ingame
+    In-Game:
+      - " "
+      - "■ บทบาท | %arena_player_role%"
+      - "&f"
+      - "■ ผู้บริสุทธิ์ | %arena_innocents%"
+      - "&f"
+      - "■ เวลา | %arena_time%"
+      - " "
+      - "■ %arena_detective_status%"
+      - " "
+      - "■ คะแนน | %USERSTATISTC SCORE%"
+      - " "
+      - "   www.plugily.xyz"
+    In-Game-Murderer:
+      - " "
+      - "■ บทบาท | %arena_player_role%"
+      - "&f"
+      - "■ ผู้บริสุทธิ์ | %arena_innocents%"
+      - "&f"
+      - "■ เวลา | %arena_time%"
+      - " "
+      - "■ %arena_detective_status%"
+      - " "
+      - "■ ฆ่า | %USER STATISTIC LOCAL KILLS%"
+      - " "
+      - "■ คะแนน | %USERSTATISTC SCORE%"
+      - " "
+      - "   www.plugily.xyz"
+    # Contents of scoreboard while state is ending
+    Ending:
+      - "&f"
+      - "&f"
+      - "&cเกมจบแล้ว"
+      - " "
+      - "&f"
+      - "&f"
+      - " "
+      - "   www.plugily.xyz"
+    # Contents of scoreboard while state is restarting
+    Restarting:
+      - "&f"
+      - "&f"
+      - "&cกำลังเริ่มเกมใหม่"
+      - " "
+      - "&f"
+      - "&f"
+      - " "
+      - "   www.plugily.xyz"
+# Bossbar messages
+# 
+# Bossbar needs to be enabled on config.yml
+Bossbar:
+  Title: "%plugin_name% - www.plugily.xyz"
+  Content:
+    Waiting:
+      - "กำลังรอผู้เล่น..."
+    Starting:
+      - "จะเรอ่มเกมในอีก: %arena_time%"
+    In-Game:
+      - "กำลังเล่น %plugin_name_uppercase% บน PLUGILY.XYZ"
+      - "ตรวจสอบผู้สร้างปลั๊กอินบน PLUGILY.XYZ"
+      - "บทบาทของคุณคือ %arena_player_role%"
+    Ending:
+      - "เกมจบแล้ว! คุณกำลังเล่นเกมบน PLUGILY.XYZ"
+    Restarting:
+      - "กำลังเริ่ม arena ใหม่. คุณจะเคลื่อนย้ายในอีกไม่ช้า!"
+# In-Game Messages
+In-Game:
+  # Used in most game messages.
+  Plugin-Prefix: "(%plugin_name%)"
+  Game-Chat-Format: "[%user_statistic_level%][%kit%] %player% | %message%"
+  You-Leveled-Up: "%plugin_prefix% คุณเลเวลอัพ! ตอนนี้คุณเลเวล %number%!"
+  Commands-Blocked: "%color_chat_issue%%plugin_prefix% คุณต้องออกเกมก่อนเพื่อใช้คำสั่งนี้. คำสั่งที่ใช้งานได้คือ /%plugin_short_command% leave!"
+  Join:
+    Already-Playing: "%color_chat_issue%%plugin_prefix% คุณกำลังรอคิวเล่นเกม! คุณสามารถออกเกมได้ด้วยคำสั่ง /%plugin_short_command% leave."
+    No-Permission: "%color_chat_issue%%plugin_prefix% คุณไม่ได้รับอนุญาต %value% เพื่อเข้าร่วม arena!"
+    Full-Game: "%color_chat_issue%%plugin_prefix% คุณไม่ได้รับอนุญาตให้เข้าร่วมเกม!"
+    No-Slots-For-Premium: "%color_chat_issue%%plugin_prefix% ขออภัย. ตอนนี้มีผู้เล่น Premium ครบแล้ว!"
+    # Join cancelled via external plugin that uses the API of our plugin.
+    Cancelled-Via-API: "%color_chat_issue%%plugin_prefix% คุณเข้าร่วมเกมนี้ไม่ได้!"
+    As-Party-Member: "%color_chat_issue%%plugin_prefix% คุณได้เข้าร่วม %arena_name% เพราะหัวหน้าปาร์ตี้เข้าร่วม!"
+    Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% Arena ยังไม่ได้ตั้งค่า! โปรดติดต่อผู้ดูแล!"
+    Title: "20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%"
+  Death:
+    Tag: "&8ตาย"
+    Screen: "%color_chat_issue%คุณตายแล้ว!"
+  Spectator:
+    Blocked: "%color_chat_issue%%plugin_prefix% Spectators ถูกปิดไว้ใน arena นี้"
+    You-Are-Spectator: "%plugin_prefix% คุณเป็น spectator แล้ว! คุณสามารถบินได้!"
+    Spectator-Menu-Name: "%color_chat_issue%รายชื่อผู้เล่นที่ยังมีชีวิต"
+    Target-Player-Health: "%color_chat_issue%เลือด: %number% | บทบาท: %arena_role%"
+    Spectator-Warning: "%plugin_prefix% คุณเป็น spectator!"
+    Teleport: "%plugin_prefix% ไปยังผู้เล่น %player%"
+    Menu:
+      Settings:
+        Status:
+          Enabled: "เปิด"
+          Disabled: "ปิด"
+        Changed-Speed: "เปลี่ยนความเร็วเป็น %number%"
+        Auto-Teleport: "%value% เคลื่อนย้ายอัตโนมัติ"
+        Target-Player:
+          Action-Bar: "%number% บล็อคข้างหน้า | เป้าหมาย %player%"
+        Night-Vision: "%value% ไนท์วิชั่น"
+        First-Person-Mode:
+          Action-Bar: "&eย่อ &cเพื่อออก! | เป้าหมาย %player%"
+          Title: "&eย่อ &cเพื่อออก!"
+        Visibility: "%value% ผู้เล่น spectator"
+  Messages:
+    Join: "%plugin_prefix% %player% เข้าร่วมเกม (%arena_players_size%/%arena_max_players%)!"
+    Leave: "%plugin_prefix% %player% ออกจากเกม (%arena_players_size%/%arena_max_players%)!"
+    Death: "%plugin_prefix% %player% ตายแล้ว!"
+    Lobby:
+      Start-In: "%plugin_prefix% เกมจะเริ่มในอีก %arena_time% วินาที!"
+      Waiting-For-Players: "%plugin_prefix% กำลังรอผู้เล่น. ต้องการผู้เล่นอีก %arena_min_players% คนเพื่อเริ่มเกม"
+      Enough-Players-To-Start: "%plugin_prefix% มีผู้เล่นมากพอแล้ว. เกมกำลังจะเริ่มขึ้น!"
+      Reduced-Time: "%plugin_prefix% เวลาถูกลดลง %number% วินาที"
+      Max-Players: "%plugin_prefix% ผู้เล่นในรอบนี้เต็มแล้ว. ลดเวลาลงหน่อย!"
+      Game-Started: "%plugin_prefix% เกมเริ่มแล้ว!"
+      Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% %player% ถูกลบออกจากเกม เพื่อเพิ่มพื้นที่ให้ผู้เล่น Premium!"
+      You-Were-Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% คุณถูกเตะออกจากเกม เพื่อเพิ่มพื้นที่ให้ผู้เล่น Premium!"
+      Not-Enough-Space-For-Party: "%color_chat_issue%%plugin_prefix% ปาร์ตี้ของคุณใหญ่กว่าพื้นที่ว่างของ arena %arena_name%"
+    Game-End:
+      Summary:
+        - "&a&m--------------------------------------------------"
+        - "%plugin_name%"
+        - " "
+        - "%arena_summary%"
+        - "%arena_summary_player%"
+        - " "
+        - "&7นักสืบ: %detective%"
+        - "&7ฆาตรกร: %murderer% (%murderer_kills%)"
+        - "&7ฮีโร่: %hero%"
+        - " "
+        - "&a&m--------------------------------------------------"
+      Placeholders:
+        Win: "&aคุณชนะเกม"
+        Lose: "%color_chat_issue%คุณแพ้"
+        Players: "&cผู้เล่นไม่พอ. Arena จะถูกปิดตัวลง!"
+        Murderer:
+          Stopped: "ฆาตรกรถูกกำจัดแล้ว!"
+          Killed:
+            You: "ฆาตรกรฆ่าคุณ!"
+            All: "ฆาตรกรฆ่าทุกคนแล้ว."
+        Innocent:
+          Killed:
+            You: "มีผู้เล่นฆ่าคุณด้วยธนู!"
+            Wrongly: "คุณฆ่าผู้บริสุทธิ์!"
+        Nobody: "ไม่มีใคร"
+    Admin:
+      Set-Starting-In-To-0: "%plugin_prefix%แอดมินตั้งเวลารอเป็น 0. เกมกำลังจะเริ่มแล้ว!"
+    Arena:
+      Chances:
+        Action-Bar: "&cโอกาสได้เป็นฆาตรกร: %murderer_chance% &a- &bโอกาสได้เป็นนักสืบ: %detective_chance%"
+      Cooldown: "&8&l[%progress%&8&l] &6%time% วินาที"
+      Locator:
+        Bow: "ที่อยู่ของธนู"
+        Innocent: "ที่อยู่ของผู้บริสุทธิ์"
+        Watch-Out: "5,20,5;ระวัง!;ฆาตรกรสามารถหาผู้บริสุทธิ์ได้ง่ายขึ้นแล้ว"
+      Pass:
+        Name: "เมนู Role pass"
+        Role:
+          Murderer:
+            Name: "เป็นฆาตรกร"
+            Lore:
+              - "ราคา 1 Murderer pass"
+              - "คุณมี %amount%"
+          Detective:
+            Name: "เป็นนักสืบ"
+            Lore:
+              - "ราคา 1 Detective pass"
+              - "คุณมี %amount%"
+        Fail: "คุณมี pass ไม่พอสำหรับบทบาท %arena_role%"
+        Success: "คุณจะได้เป็น%arena_role% ในรอบต่อไป!"
+        Change: "ตอนนี้คุณมี %number% %value% passes!"
+      Playing:
+        Time-Left: "5,20,5;%arena_time% วินาที!;อีก %arena_time%s ฆาตรกรจะแพ้"
+        Role:
+          Change: "5,20,5;%arena_role% คนก่อนออกไปแล้ว!"
+          Murderer: "5,20,5;บทบาท | ฆาตรกร; ฆ่าผู้เล่นทุกคน!"
+          Detective: "5,20,5;บทบาท | นักสืบ;ตามหาและฆ่าฆาตรกร!"
+          Innocent: "5,20,5;บทบาท | ผู้บริสุทธิ์;มีชีวิตรอดให้นานที่สุด!"
+        Score:
+          Bonus: "+%score% คะแนน (%action%)"
+          Gold: "เก็บทอง!"
+          Action:
+            Kill:
+              Player: "สำหรับการฆ่าผู้เล่น"
+              Murderer: "สำหรับการฆ่าฆาตรกร"
+              Innocent: "สำหรับการฆ่าผู้บริสุทธิ์"
+            Pickup:
+              Gold: "สำหรับการเก็บทอง"
+            Surviving:
+              Time: "สำหรับการมีชีวิตรอด 30 วินาที"
+              End: "สำหรับการมีชีวิตรอดจนจบ"
+            Win: "สำหรับการชนะเกม"
+            Detective: "สำหรับการมีผู้บริสุทธิ์รอด %number% คน"
+        Sword:
+          Soon: "ฆาตรกรจะได้รับดาบในอีก %time% วินาที!"
+        Special-Blocks:
+          Cauldron:
+            Potion: "กรุณาดื่มยาก่อน!"
+            Hologram: "ขวดยาปริศนา - &e1 ทองคำ"
+          Not-Enough-Gold: "คุณต้องการ %amount% ทองเพื่อสิ่งนี้!"
+          Pray:
+            Hologram: "คลิ้กเพื่อให้ของขวัญ;สับคันโยกเพื่ออธิษฐาน"
+            Chat: "คุณอธิษฐานไปยังผู้พัฒนา! หวังว่าเขาจะได้ยินนะ!"
+            Pay: "%color_chat_issue%จ่ายเพื่ออธิษฐาน!"
+            Praise:
+              Heard:
+                - " "
+                - "&7ผู้พัฒนาได้ยินคำอธิษฐานแล้ว."
+                - "%feeling%"
+                - "%praise%"
+              Feeling:
+                Blessed: "&aคุณรู้สึกได้รับพร."
+                Cursed: "&cคุณรู้สึกต้องคำสาป."
+              Gifts:
+                Detective-Revelation: "&aคุณรู้แล้วว่า &bนักสืบ &aคือ %detective%"
+                Gold-Rush: "&aคุณได้รับพลังโบราณ. สำหรับการเก็บทองคำ 1 ก้อน, คุณจะได้รับ 3 ก้อน."
+                Single-Compensation: "&aผู้พัฒนาภูมิใจในตัวคุณ! เขาให้รางวัลคุณเป็นทองคำ 5 ก้อน!"
+                Bow: "&aคุณได้รับธนูจากผู้พัฒนา!"
+              Curses:
+                Slowness: "%color_chat_issue%ขาของคุณหนักกว่าแต่ก่อนมากขึ้น."
+                Blindness: "%color_chat_issue%สายตาของคุณมองได้ไม่ชัดอีกแล้ว."
+                Gold: "%color_chat_issue%ผู้พัฒนาได้สาปคุณด้วยคำสาปทองคำ! คุณจะไม่สามารถเก็บทองคำได้อีก!"
+                Death: "%color_chat_issue%คุณได้ก้าวข้ามขีดจำกัดความตาย แม้คุณจะรู้ว่าคุณจะตายในอีกสักพัก!"
+        Bow:
+          Dropped: "5,20,5;ธนูตกแล้ว!;หาธนูเพื่อคว้าโอกาสกำจัดฆาตรกร"
+          Pickup: "มีผู้เล่นเก็บธนูแล้ว!"
+          Shot:
+            Gold: "&a+1 ยิงธนู!"
+            Title: "5,20,5;;คุณเก็บทองคำได้ 10 ก้อนแล้ว และได้รับลูกธนู!"
+# Sign messages
+Signs:
+  Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% กรุณาพิมพ์ชื่อ arena ในบรรทัดที่ 2!"
+  Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% ไม่มี arena ชื่อนั้น!"
+  Created: "%plugin_prefix% สร้างป้ายสำเร็จแล้ว!"
+  Removed: "%plugin_prefix% ลบป้ายสำเร็จแล้ว!"
+  Lines:
+    - "%plugin_prefix%"
+    - "%arena_state_placeholder%"
+    - "%arena_name%"
+    - "[%arena_players_size%/%arena_max_players%]"
+# Arena Selector messages
+Arena-Selector:
+  Inventory-Title: "%plugin_short_command% ▸ เลือก Arena"
+  Item:
+    Name: "%arena_name%"
+    Lore:
+      - "%plugin_name% - %arena_name%"
+      - " "
+      - " "
+      - "ออนไลน์: %arena_players_size%/%arena_max_players%"
+      - "สถานะ: %arena_state_placeholder%"
+      - " "
+      - " "
+      - "&aคลิ้กเพื่อเข้าร่วม arena"
+# Validator messages
+Validator:
+  Invalid-Arena-Configuration: "Arena %arena_name% ถูกตั้งค่าผิดพลาด! Missing node: %value%"
+  Instance-Started: "ตัวอย่าง Arena %arena_name% เริ่มสำเร็จแล้ว!"
+  No-Instances-Created: "ไม่มีตัวอย่าง arena ที่สร้างในการตั้งค่า!"
+# Placeholder messages inside plugin
+Placeholders:
+  Game-States:
+    Waiting: "&lกำลังรอผู้เล่น..."
+    Starting: "&e&lกำลังเริ่ม"
+    Full-Game: "&4&lเต็ม"
+    In-Game: "&lอยู่ในเกม"
+    Ending: "&lจบ"
+    Restarting: "&c&lเริ่มต้นใหม่"
+  Motd:
+    Waiting: "&lคุณเข้าร่วมเกมนี้ได้..."
+    Starting: "&e&lกำลังเริ่ม"
+    Full-Game: "&4&lเต็ม| ใช้เซิฟเวอร์อื่น"
+    In-Game: "&lกำลังเล่น | คลิ้กเพื่อรับชม"
+    Ending: "&lกำลังจบ| เซิฟเวอร์กำลังปิด"
+    Restarting: "&c&lกำลังเริ่มใหม่"
+# Leaderboard messages
+# 
+# Hologram function need to be enabled on config.yml
+Leaderboard:
+  Type:
+    Hologram:
+      Header: "&6&lTop %number% ใน %value%"
+      Format: "&e%number%. %player% (%value%)"
+      Empty-Format: "&e%number%. ว่าง (0)"
+    Chat:
+      Header: "&8+-------+ &a&lสถิติของคุณ &8+-------+"
+      Header-Other: "&8+---------+ &aสถิติของ &b%player% &8+---------+"
+      Footer: "&8+-----------------------------+"
+      Format: "%value% ▸ &a%number%"
+      Top:
+        Type-Name: "%color_chat_issue%โปรดพิมพ์ชื่อสถานะเพื่อดู!"
+        Header: "&8&m+----------------+ [&6 Top 10 &8&m] +----------------+"
+        Format: "&e#%number% %player% - %value% %user_statistic%"
+  Statistics:
+    Wins: "ชนะ ▸ %number%"
+    Loses: "แพ้ ▸ %number%"
+    Games-Played: "เกมที่เล่น ▸ %number%"
+    Level: "เลเวล ▸ %number%"
+    Exp: "ค่าประสบการณ์ ▸ %number%"
+    Next-Level-Exp: "XP เพื่อเลเวลอัพ ▸ %number%"
+    Kills: "ฆ่า ▸ %number%"
+    Deaths: "ตาย ▸ %number%"
+    Highest-Score: "คะแนนสูงสุด ▸ %number%"
+    Murderer-Pass: "ฆาตกรผ่าน ▸ %number%"
+    Detective-Pass: "นักสืบผ่าน ▸ %number%"
+    Murderer-Contribution: "ผลงานฆาตกร ▸ %number%"
+    Detective-Contribution: "ผลงานนักสืบ ▸ %number%"
+  Invalid-Name: "%color_chat_issue%ชื่อสถิติไม่ถูกต้อง! พิมพ์: %value%"
+  Unknown-Player: "%color_chat_issue%ไม่รู้จักผู้เล่นคนนี้"
+# Don't edit it. But who's stopping you? It's your server!
+# Really, don't edit ;p
+# You edited it, huh? Next time hurt yourself!
+Do-Not-Edit:
+  File-Version: 1
+  Core-Version: 1
