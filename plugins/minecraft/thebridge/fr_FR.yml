@@ -1,0 +1,415 @@
+# You can translate TheBridge messages here.
+# Color codes (&) supported.
+# 
+# Use \n to make new line
+# Some messages like item
+# descriptions don't support new lines
+# they are wrapped every 40 characters automatically
+# 
+# Some messages support their own placeholders
+# like %player%, %kit% etc.
+# 
+# Color scheme
+Color:
+  Placeholder:
+    Value: "&e"
+    Number: "&e"
+    Player: "&b"
+    Other: "&e"
+  Chat:
+    Issue: "&c"
+    Messages: "&7"
+    Special-Char:
+      Contains: "[,],(,),{,},■,/,|,▸"
+      Before: "&8"
+# Command messages
+Commands:
+  Did-You-Mean: "%plugin_prefix% Vouliez vous dire /%value% ?"
+  Command-Executed: "%plugin_prefix% Commande exécutée avec succès !"
+  Teleported-To-Lobby: "%plugin_prefix% Téléporté au lobby !"
+  Removed-Game-Instance: "%color_chat_issue%%plugin_prefix% Instance de jeu supprimée avec succès !"
+  No-Arena-Like-That: "%color_chat_issue%%plugin_prefix% Pas d'arène avec cette ID !"
+  Look-At-Sign: "%color_chat_issue%%plugin_prefix% Vous devez regarder un panneau pour exécuter cette commande !"
+  Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Veuillez saisir l'identifiant de l'arène !"
+  Hold-Any-Item: "%color_chat_issue%%plugin_prefix% Vous devez tenir un item !"
+  No-Free-Arenas: "%color_chat_issue%%plugin_prefix% Il n'y a pas d'arènes de libre !"
+  Only-By-Player: "%color_chat_issue%%plugin_prefix% Vous ne pouvez exécuter cette commande qu'en tant que joueur !"
+  Not-Playing: "%color_chat_issue%%plugin_prefix% Vous devez jouer pour exécuter cette commande !"
+  No-Permission: "%color_chat_issue%%plugin_prefix% Vous n'avez pas la permission d'exécutez cette commande ! "
+  Player-Not-Found: "\n%color_chat_issue%%plugin_prefix% Le joueur %player% n'existe pas !"
+  Invalid-Location-Teleport: "%color_chat_issue%%plugin_prefix% L'emplacement de téléportation n'est pas valide !"
+  Wrong-Usage: "%color_chat_issue%%plugin_prefix% Mouvais usage. Faite %value%"
+  Admin:
+    Adjust-Statistic: "%plugin_prefix% La statistique %value% de %player% est maintenant %number% !"
+    Reload-Success: "%plugin_prefix% Arènes rechargées !"
+    List:
+      Header: "%plugin_name% arènes : Nom État Joueurs"
+      Format: "%arena_name% %arena_state_placeholder% %arena_players_size%/%arena_max_players%"
+      No-Arenas: "%color_chat_issue%%plugin_prefix% Il n'y a pas d'instances de jeu!"
+    Spychat:
+      Toggled: "%plugin_prefix% Le chat d'espionnage du jeu est passé à %value%"
+  Main:
+    Header: "&6----------------{%plugin_name% commandes}----------"
+    Description:
+      - "&aCommandes de jeu:"
+      - "&b/%plugin_short_command% stats: Montre vos statistiques!"
+      - "&b/%plugin_short_command% leave: Quitter l’arène actuelle!"
+      - "&b/%plugin_short_command% join <arena> : Rejoint l'arène spécifiée !"
+      - "&b/%plugin_short_command% top <statistic> : Affiche les 10 meilleurs joueurs !"
+      - "&b/%plugin_short_command% selectkit : Sélectionnez un nouveau kit de jeu !"
+      - "&b/%plugin_short_command% selectbase : Sélectionnez votre base dans le jeu !"
+      - "&b/%plugin_short_command% randomjoin : Rejoint une arène aléatoire !"
+    Admin-Bonus-Description: "&b/%plugin_short_command% : Affiche toutes les commandes d'administration"
+    Footer: "&6-------------------------------------------------"
+# In-Game scoreboard messages
+# 
+# Please do not use more chars than the scoreboard can handle!
+# Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
+# Placeholders:
+# https://wiki.plugily.xyz/REPLACEWITHPROJECTNAME/placeholders/language
+Scoreboard:
+  Title: "&a&l%plugin_name%"
+  Bases:
+    Format: "%scoreboard_base_color_formatted% (%scoreboard_base_players_size%) &e%scoreboard_base_yourself% %scoreboard_base_points_formatted%"
+    Not-Inside: "--"
+    Inside: "(Toi)"
+  Mode:
+    POINTS:
+      Got: "&a●"
+      Missing: "&7●"
+    HEARTS:
+      Got: "&c♥"
+      Missing: "&7♥"
+  Content:
+    Waiting:
+      - "␣"
+      - "■ Joueurs | %arena_players_size%"
+      - "␣"
+      - "■ Joueurs Minimums | %arena_min_players%"
+      - "␣"
+      - "␣␣␣www.plugily.xyz"
+    Starting:
+      - "␣"
+      - "■ Démarrage dans | %arena_time%"
+      - "␣"
+      - "■ Joueurs | %arena_players_size%"
+      - "␣"
+      - "■ Joueurs minimums | %arena_min_players%"
+      - "␣"
+      - "␣␣␣www.plugily.xyz"
+    # Contents of scoreboard while ingame
+    In-Game:
+      - "&f"
+      - "■ Temps | &e%arena_time_formatted%"
+      - "■ Bases |␣"
+      - "■ %scoreboard_bases_list%"
+      - "␣"
+      - "■ Kills | &e%user_statistic_local_kills%"
+      - "■ Morts| &e%user_statistic_local_deaths%"
+      - "■ Score | &e%user_statistic_local_scored_points%"
+      - "␣"
+      - "■ Mode | &e%arena_option_mode%"
+      - "Les blocks vont se réinitialiser dans %arena_option_reset_blocks_in% tours"
+      - "&f"
+      - "␣"
+      - "␣␣␣www.plugily.xyz"
+    # Contents of scoreboard while state is ending
+    Ending:
+      - "&f"
+      - "&f"
+      - "&cJEU TERMINÉ"
+      - "␣"
+      - "&f"
+      - "&f"
+      - "␣"
+      - "␣␣␣www.plugily.xyz"
+    # Contents of scoreboard while state is restarting
+    Restarting:
+      - "&f"
+      - "&f"
+      - "&cREDÉMARRAGE DU JEU"
+      - "␣"
+      - "&f"
+      - "&f"
+      - "␣"
+      - "␣␣␣www.plugily.xyz"
+# Bossbar messages
+# 
+# Bossbar needs to be enabled on config.yml
+Bossbar:
+  Title: "%plugin_name% - www.plugily.xyz"
+  Content:
+    Waiting:
+      - "En attendant d'autres joueurs..."
+    Starting:
+      - "Démarrage dans : %arena_time%"
+    In-Game:
+      - "En train de jouer %plugin_name_uppercase% sur PLUGILY.XYZ"
+      - "Consultez le créateur du plugin sur PLUGILY.XYZ."
+      - "Points de base actuels %base_points%"
+      - "Votre base %arena_base%"
+    Ending:
+      - "Fin de la partie ! Tu étais en train de jouer sur PLUGILY.XYZ"
+    Restarting:
+      - "Redémarrage de l'arène. Vous serez bientôt déplacé !"
+# In-Game Messages
+In-Game:
+  # Used in most game messages.
+  Plugin-Prefix: "(%plugin_name%)"
+  Game-Chat-Format: "[%user_statistic_level%][%kit%] %player% | %message%"
+  You-Leveled-Up: "%plugin_prefix% Vous êtes passé au niveau ! Vous êtes maintenant au niveau %number%!"
+  Commands-Blocked: "%color_chat_issue%%plugin_prefix% Tu dois quitter ta partie en premier pour faire ces commandes. La seule commande qui fonctionne est /%plugin_short_command% leave!"
+  Join:
+    Already-Playing: "%color_chat_issue%%plugin_prefix% Vous êtes déjà dans la file d'attente pour une partie. Vous pouvez quitter la partie avec /%plugin_short_command% leave."
+    No-Permission: "%color_chat_issue%%plugin_prefix% Vous avez pas %value% la permission de rejoindre cette arène!"
+    Full-Game: "%color_chat_issue%%plugin_prefix% Tu n’as pas la permission de rejoindre les parties rempli!"
+    No-Slots-For-Premium: "%color_chat_issue%%plugin_prefix% Cette partie est déjà remplie de joueurs premium! Désolé"
+    # Join cancelled via external plugin that uses the API of our plugin.
+    Cancelled-Via-API: "%color_chat_issue%%plugin_prefix% Tu ne peux pas rejoindre cette partie!"
+    # je ne sais plus si c'est rejoins ou rejoint
+    As-Party-Member: "%color_chat_issue%%plugin_prefix% Tu as rejoins %arena_name% parce que le chef du groupe l'a rejoint!"
+    Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% Cette arène n'est pas encore configuré! Contacter le staff!"
+    Title: "20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%"
+  Death:
+    Tag: "&8Mort"
+    Screen: "%color_chat_issue%Tu est mort!"
+  Spectator:
+    Blocked: "%color_chat_issue%%plugin_prefix% le mode spectateur est désactiver dans cette arène"
+    You-Are-Spectator: "%plugin_prefix% Vous êtes maintenant spectateur ! Vous pouvez voler maintenant !"
+    Spectator-Menu-Name: "%color_chat_issue%Liste des joueurs vivants"
+    Target-Player-Health: "%color_chat_issue%Vie: %number%"
+    Spectator-Warning: "%plugin_prefix% Tu est spectateur!"
+    Teleport: "%plugin_prefix% Téléporté à %player%"
+    Menu:
+      Settings:
+        Status:
+          Enabled: "Activée"
+          Disabled: "Désactivé"
+        Changed-Speed: "Vitesse changée en %number%"
+        Auto-Teleport: "%value% téléportation automatique"
+        Target-Player:
+          Action-Bar: "%number% blocks au loin | Cible %player%"
+        Night-Vision: "%value% Vue nocturne"
+        First-Person-Mode:
+          Action-Bar: "&eS'accroupir &cpour quitter! | Cible %player%"
+          Title: "&eS’accroupir &cpour quitter!"
+        Visibility: "%value% autre joueurs spectateurs"
+  Messages:
+    # soit partie soit jeu
+    Join: "%plugin_prefix% %player% à rejoins le jeu (%arena_players_size%/%arena_max_players%)!"
+    # soit partie soit jeu
+    Leave: "%plugin_prefix% %player% à quitter le jeu (%arena_players_size%/%arena_max_players%)!"
+    Death: "%plugin_prefix% %player% Mort!"
+    Lobby:
+      Start-In: "%plugin_prefix% La partie commence dans %arena_time% secondes!"
+      Waiting-For-Players: "%plugin_prefix% Attente de joueurs... Nous avons besion de %arena_min_players% joueurs pour commencer."
+      Enough-Players-To-Start: "%plugin_prefix% Nous avons assez de joueurs. La partie peut bientôt commencer!"
+      Reduced-Time: "%plugin_prefix% Le temps a été réduit à %number% secondes"
+      Max-Players: "%plugin_prefix% Nous avons atteint le nombre de joueurs maximum pour ce tour. Raccourcissons le temps!"
+      Game-Started: "%plugin_prefix% La jeu a commencé!"
+      Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% %player% a été retiré de la partie pour faire un place qu joueurs premium!"
+      You-Were-Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% Tu as été kicker de la partie pour faire de la place au joueurs premuim!"
+      Not-Enough-Space-For-Party: "%color_chat_issue%%plugin_prefix% Votre groupe est plus grande que les places dans l'arène %arena_name%"
+    Game-End:
+      Summary:
+        - "&a&m--------------------------------------------------"
+        - "%plugin_name%"
+        - "␣"
+        - "%arena_summary%"
+        - "%arena_summary_player%"
+        - "␣"
+        - "␣"
+        - "Base des membres"
+        - "%arena_summary_winner_base_players% (%arena_summary_base_scored%)"
+        - "␣"
+        - "&a&m--------------------------------------------------"
+      Placeholders:
+        Win: "&aVous avez gagné la partie"
+        Lose: "%color_chat_issue%Vous avez perdu la partie"
+        Players: "&cIl n'y a plus assez de joueurs. Arena a forcé arrêté  !"
+        Base:
+          HEARTS: "%arena_summary_winner_base% a survécu avec succès !"
+          POINTS: "%arena_summary_winner_base% a eu le plus de points!"
+    Admin:
+      Set-Starting-In-To-0: "%plugin_prefix% Un admin a mis le temps d'attente à 0. La partie commence maintenant!"
+    Arena:
+      Cooldown: "[%value%&8&l] &6%number% seconds"
+      Death: "%plugin_prefix% &b%player% est mort de %value% par achul !"
+      Death-Own: "&b%player% &7mort!"
+      Killed: "&aVous avez tué %player%"
+      Build-Break: "&7Vous ne pouvez pas construire et casser ici"
+      Time-Left: "5,20,5;Le temps est compté ;%arena_time% secondes restantes"
+      Portal:
+        Own: "&7C'est votre propre portail"
+        Opponent: "&7%arena_base_color_formatted% %player% a sauté dans %value%!"
+        Scored:
+          Title: "5,20,5;&7%arena_base_color_formatted% %player%;a sauté dans %value%"
+        Hologram: "%arena_base_color_formatted%;Saute dans ce portail!"
+        # je n'ai pas vraiment compris j'ai utiliser deepl pour savoir
+        Out: "Cette base est déjà sortie !"
+      Blocked:
+        Reset: "Les mouvements sont désactiver pendant que le tour ce réinitialise"
+        Run: "&7Obtiens des points"
+        Title: "5,20,5;Réinitialisation du tour - Tu ne peux pas bouger;%number%"
+      Damage: "%player%  &c♥ %value%"
+# Sign messages
+Signs:
+  Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% S'il vous plait, écrivez le nom de l'arène dans la seconde ligne"
+  Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% L'arène avec ce nom n'existe pas!"
+  Created: "%plugin_prefix% Signe créé avec succès !"
+  Removed: "%plugin_prefix% Signe supprimé avec succès !"
+  Lines:
+    - "%plugin_prefix%"
+    - "%arena_state_placeholder%"
+    - "%arena_name%"
+    - "[%arena_players_size%/%arena_max_players%]"
+# Arena Selector messages
+Arena-Selector:
+  Inventory-Title: "%plugin_short_command% ▸ Sélecteur d'arène"
+  Item:
+    Name: "%arena_name%"
+    Lore:
+      - "%plugin_name% - %arena_name%"
+      - "␣"
+      - "␣"
+      - "␣␣En ligne: %arena_players_size%/%arena_max_players%"
+      - "␣␣État : %arena_state_placeholder%"
+      - "␣"
+      - "␣"
+      - "&aCliquez pour rejoindre cette arène"
+# Validator messages
+Validator:
+  Invalid-Arena-Configuration: "L'arène %arena_name% a une configuration invalide ! Nœud manquant : %value%"
+  Instance-Started: "L'instance Arena %arena_name% a démarré avec succès !"
+  No-Instances-Created: "Il n'y a pas d'instances d'arène créées dans la configuration !"
+# Placeholder messages inside plugin
+Placeholders:
+  Game-States:
+    Waiting: "&lEn attente de joueurs..."
+    Starting: "&e&lDémarrage"
+    Full-Game: "&4&lCOMPLET"
+    In-Game: "&lEn jeu"
+    Ending: "&lFin"
+    Restarting: "&c&lRedémarrage"
+  Motd:
+    Waiting: "&lVous pouvez rejoindre ce jeu..."
+    Starting: "&e&lDémarrage"
+    Full-Game: "&4&lCOMPLET | Utiliser un autre serveur"
+    In-Game: "&lEn jeu | Cliquez pour voir"
+    Ending: "&lFin | Le serveur ferme"
+    Restarting: "&c&lRedémarrage"
+# Kit messages
+Kit:
+  Not-Unlocked: "%color_chat_issue%%plugin_prefix% Vous n'avez pas encore débloqué %value% !"
+  Choose: "%plugin_prefix% Vous avez choisi : %value% !"
+  Cooldown: "%color_chat_issue%%plugin_prefix% La capacité du kit est toujours en cours de recharge (%number%) !"
+  Menu:
+    Title: "Menu de Kit"
+    Lore:
+      Unlocked: "&aDÉVERROUILLÉ !"
+      Locked: "&cVERROUILLÉ !"
+      Unlock-At-Level: "Se débloque au niveau %number%"
+      Unlock-In-Store: "&bDéverrouillez-le dans le magasin !"
+  Content:
+    Bridge:
+      Name: "&2Bridge"
+      Description: "&7Kit bridge de base comme celui que vous connaissez !"
+    Knight:
+      Name: "&2Chevalier"
+      Description: "&7C'est le seul et unique kit de chevalier ! Beaucoup de gens pensent que c'est le pire kit ! Je dois admettre qu'ils ont totalement tort !"
+    Light-Tank:
+      Name: "&2Char léger"
+      Description: "&7Vous êtes char léger !"
+    Archer:
+      Name: "&6Archée"
+      Description: "&7Commencez avec une quantité supplémentaire de flèches, une armure de cuir et une épée en bois. Les archers sont aimés des villageois, sachez-le !"
+    Hardcore:
+      Name: "&6Hardcore"
+      Description: "&7Tu verras par toi-même pourquoi c'est hardcore"
+    Healer:
+      Name: "&6Guérisseur"
+      Description: "&7Être un guérisseur équivaut à être aimé. Vous êtes capable de soigner vos coéquipiers."
+    Medium-Tank:
+      # tank work as well
+      Name: "&6Char moyen"
+      Description: "&7Commencez avec 6 cœurs de plus ! N'ayez pas peur ! Il vous reste plein de coeurs à perdre !"
+    Terminator:
+      Name: "&6Terminateur"
+      Description: "&7Tuez facilement d'autres joueurs avec vos pouvoirs de force !"
+    Heavy-Tank:
+      Name: "&bChar lourd"
+      Description: "&7Commencez avec une armure de fer et un double nombre de cœurs ! Oui, c'est vrai, vous serez le dernier homme debout !"
+    Wild-Naked:
+      Name: "&bSauvage Nu"
+      Description: "&7Tu est L'ULTIME maitre! Tu commence avec un meilleur épée en fer!"
+      Cannot-Wear-Armor: "&cYTu ne peux pas porter d'armure le kit \"Sauvage Nu\"!"
+    Premium-Hardcore:
+      Name: "&maitre Hardcore Premium"
+      Description: "&7One shoot la plupart des joueurs avec ton épée cheater! Cependant soyez prudent. Ce kit est seulement pour les pros! Ne l'utiliser pas si vous n’êtes pas un pro!"
+# Bases
+Bases:
+  Team:
+    Full: "L'équipe est complète"
+    Empty: "Vous pouvez rejoindre cette équipe"
+    Inside: "Votre équipe"
+    Name: "Base - %base%"
+    Menu: "Base Menu"
+    Choose: "Vous êtes maintenant sur la base %base%"
+    Member: "Vous déjà membre de ça"
+  Colors:
+    BLACK: "&0NOIR"
+    DARK_BLUE: "&1BLEU_FONCÉE"
+    DARK_GREEN: "&2VERT_FONCÉE"
+    DARK_AQUA: "&3CYAN_FONCÉ"
+    DARK_RED: "&4ROUGE_FONCÉE"
+    DARK_PURPLE: "&5VIOLET_FONCÉE"
+    GOLD: "&6OR"
+    LIGHT_GRAY: "&7GRIS_CLAIR"
+    DARK_GRAY: "&8GRIS_FONCÉE"
+    BLUE: "&9BLEU"
+    GREEN: "&aVERT_CLAIR"
+    AQUA: "&bBLEU CIEL"
+    RED: "&cROUGE"
+    PINK: "&dROSE"
+    YELLOW: "&eJAUNE"
+    WHITE: "&fBLANC"
+    BOLD: "&lGRAS"
+    STRIKETHROUGH: "&mBARRÉ"
+    UNDERLINED: "&nSOULIGNÉ"
+    ITALIC: "&oITALIC"
+# Leaderboard messages
+# 
+# Hologram function need to be enabled on config.yml
+Leaderboard:
+  Type:
+    Hologram:
+      Header: "&6&lTop %number% dans %value%"
+      Format: "&e%number%. %player% (%value%)"
+      Empty-Format: "&e%number%. Vide (0)"
+    Chat:
+      Header: "&8+-------+ &a&lVOS STATISTIQUES &8+-------+"
+      Header-Other: "&8+---------+ &aSTATS POUR &b%player% &8+---------+"
+      Footer: "&8+-----------------------------+"
+      Format: "%value% ▸ &a%number%"
+      Top:
+        Type-Name: "%color_chat_issue%Veuillez saisir le nom de la statistique à afficher !"
+        Header: "&8&m+----------------+ [&6 Top 10 &8&m] +----------------+"
+        Format: "&e#%number% %player% - %value% %user_statistic%"
+  Statistics:
+    Wins: "Victoires ▸ %number%"
+    Loses: "Perdus ▸ %number%"
+    Games-Played: "Parties jouées ▸ %number%"
+    Level: "Niveau ▸ %number%"
+    Exp: "Expérience ▸ %number%"
+    Next-Level-Exp: "Exp au niveau supérieur▸ %number%"
+    Score: "Score ▸ %number%"
+    Kills: "Kills ▸ %number%"
+    Deaths: "Morts ▸ %number%"
+  Invalid-Name: "%color_chat_issue%Le nom de la statistique n'est pas valide ! Saisissez : %value%"
+  Unknown-Player: "%color_chat_issue%Joueur inconnu"
+# Don't edit it. But who's stopping you? It's your server!
+# Really, don't edit ;p
+# You edited it, huh? Next time hurt yourself!
+Do-Not-Edit:
+  File-Version: 1
+  Core-Version: 1
