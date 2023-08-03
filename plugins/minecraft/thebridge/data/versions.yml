@@ -1,2 +1,24 @@
 locales:
   valid-version: 2.0.0
+  register:
+    'cs_CZ':
+      name: "Czech"
+      original_name: "Český"
+    'en_GB':
+      name: "English"
+      original_name: "English"
+    'fr_FR':
+      name: "French"
+      original_name: "Français"
+    'de_DE':
+      name: "German"
+      original_name: "Deutsch"
+    'pt_BR':
+      name: "Portuguese (BR)"
+      original_name: "Português Brasileiro"
+    'ru_RU':
+      name: "Russian"
+      original_name: "Pусский"
+    'tr_TR':
+      name: "Turkish"
+      original_name: "Türk"
