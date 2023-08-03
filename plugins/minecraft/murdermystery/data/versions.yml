@@ -1,2 +1,39 @@
 locales:
   valid-version: 2.0.0
+  register:
+    'zh_HANS':
+      name: "Chinese"
+      original_name: "简体中文"
+    'zh_CN':
+      name: "Chinese (Simplified)"
+      original_name: "简体中文"
+    'zh_TW':
+      name: "Chinese (TW)"
+      original_name: "简体中文"
+    'cs_CZ':
+      name: "Czech"
+      original_name: "Český"
+    'en_GB':
+      name: "English"
+      original_name: "English"
+    'fr_FR':
+      name: "French"
+      original_name: "Français"
+    'de_DE':
+      name: "German"
+      original_name: "Deutsch"
+    'pt_BR':
+      name: "Portuguese (BR)"
+      original_name: "Português Brasileiro"
+    'ru_RU':
+      name: "Russian"
+      original_name: "Pусский"
+    'es_ES':
+      name: "Spanish"
+      original_name: "Español"
+    'th_TH':
+      name: "Thai"
+      original_name: "Thai"
+    'tr_TR':
+      name: "Turkish"
+      original_name: "Türk"
