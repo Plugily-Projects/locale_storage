@@ -73,7 +73,7 @@ Scoreboard:
     Innocent: "&eUnschuldig"
     Dead: "Tot"
   Detective:
-    Alive: "Detektiv: &aLebend"
+    Alive: "Detektiv &aAlive"
     Bow:
       Dropped: "%color_chat_issue%Bogen gedroppt"
       Picked: "Bogen nicht gedroppt"
@@ -99,28 +99,28 @@ Scoreboard:
       - " "
       - "■ Rolle | %arena_player_role%"
       - "&f"
-      - "■ Unschuldige | %arena_innocents%"
+      - "■ Unschuldige | %arena_innocent_size%"
       - "&f"
       - "■ Zeit | %arena_time%"
       - " "
       - "■ %arena_detective_status%"
       - " "
-      - "■ Ergebnis | %USERSTATISTC SCORE%"
+      - "■ Ergebnis | %user_statistic_local_score%"
       - " "
       - "   www.plugily.xyz"
     In-Game-Murderer:
       - " "
       - "■ Rolle | %arena_player_role%"
       - "&f"
-      - "■ Unschuldige | %arena_innocents%"
+      - "■ Unschuldige | %arena_innocent_size%"
       - "&f"
       - "■ Zeit | %arena_time%"
       - " "
       - "■ %arena_detective_status%"
       - " "
-      - "■ Eliminierungen | %USER STATISTIC LOCAL KILLS%"
+      - "■ Eliminierungen | %user_statistic_local_kills%"
       - " "
-      - "■ Ergebnis | %USERSTATISTC SCORE%"
+      - "■ Ergebnis | %user_statistic_local_score%"
       - " "
       - "   www.plugily.xyz"
     # Contents of scoreboard while state is ending
@@ -165,7 +165,7 @@ Bossbar:
 In-Game:
   # Used in most game messages.
   Plugin-Prefix: "(%plugin_name%)"
-  Game-Chat-Format: "[%user_statistic_level%][%kit%] %player% | %message%"
+  Game-Chat-Format: "[%user_statistic_level%] %player% | %message%"
   You-Leveled-Up: "%plugin_prefix% Du bist aufgelevelt! Du bist nun Level %number%!"
   Commands-Blocked: "%color_chat_issue%%plugin_prefix% Du musst das Spiel erst verlassen, um Befehle auszuführen. Der einzige Befehl, der funktioniert, ist /%plugin_short_command% leave!"
   Join:
@@ -185,7 +185,7 @@ In-Game:
     Blocked: "%color_chat_issue%%plugin_prefix% Zuschauer sind für diese Arena deaktiviert"
     You-Are-Spectator: "%plugin_prefix% Du bist nun ein Zuschauer! Du kannst jetzt fliegen!"
     Spectator-Menu-Name: "%color_chat_issue%Liste der lebenden Spieler"
-    Target-Player-Health: "%color_chat_issue%Leben: %number% | Rolle: %arena_role%"
+    Target-Player-Health: "%color_chat_issue%Leben: %number% | Rolle: %arena_player_role%"
     Spectator-Warning: "%plugin_prefix% Du bist ein Zuschauer!"
     Teleport: "%plugin_prefix% Teleportiert zu %player%"
     Menu:
@@ -224,9 +224,9 @@ In-Game:
         - "%arena_summary%"
         - "%arena_summary_player%"
         - " "
-        - "&7Detektiv: %detective%"
-        - "&7Mörderer: %murderer% (%murderer_kills%)"
-        - "&7Held: %hero%"
+        - "&7Detektiv: %arena_detective_list%"
+        - "&7Mörderer: %arena_murderer_list% (%arena_murderer_kills%)"
+        - "&7Held: %arena_hero%"
         - " "
         - "&a&m--------------------------------------------------"
       Placeholders:
@@ -247,8 +247,8 @@ In-Game:
       Set-Starting-In-To-0: "%plugin_prefix% Ein Admin hat die Wartezeit auf 0 gesetzt. Das Spiel startet jetzt!"
     Arena:
       Chances:
-        Action-Bar: "&cMörder Chance: %murderer_chance% &a- &bDetektiv Chance: %detective_chance%"
-      Cooldown: "&8&l[%progress%&8&l] &6%time% Sekunden"
+        Action-Bar: "&cMörder Chance: %arena_murderer_chance% &a- &bDetektiv Chance: %arena_detective_chance%"
+      Cooldown: "&8&l[%value%&8&l] &6%number% Sekunden"
       Locator:
         Bow: "Bogen Lokalisierer"
         Innocent: "Unschuldiger Kompass"
@@ -260,24 +260,24 @@ In-Game:
             Name: "Sei Mörderer"
             Lore:
               - "Kostet 1 Mörderpass"
-              - "Du hast %amount%"
+              - "Du hast %number%"
           Detective:
             Name: "Sei Detektiv"
             Lore:
               - "Kostet 1 Detektivpass"
-              - "Du hast %amount%"
-        Fail: "Du hast nicht genug Pässe für die %arena_role% Rolle"
-        Success: "Du wirst in der nächsten Runde %arena_role% sein!"
+              - "Du hast %number%"
+        Fail: "Du hast nicht genug Pässe für die %value% Rolle"
+        Success: "Du wirst in der nächsten Runde %value% sein!"
         Change: "Du hast %number% %value% Pässe erhalten!"
       Playing:
         Time-Left: "5,20,5;%arena_time% Sekunden verbleibend!;Nach %arena_time%s hat der Mörder verloren"
         Role:
-          Change: "5,20,5;Letzter %arena_role% hat verlassen!"
+          Change: "5,20,5;Letzter %arena_player_role% hat verlassen!"
           Murderer: "5,20,5;ROLLE | MÖRDER; Töte alle Spieler!"
           Detective: "5,20,5;ROLLE | DETEKTIV;Finde und töte den Mörder!"
           Innocent: "5,20,5;ROLLE | UNSCHULDIGER;Bleibe so lange am Leben, wie es geht!"
         Score:
-          Bonus: "+%score% Ergebnis (%action%)"
+          Bonus: "+%number% Ergebnis (%value%)"
           Gold: "Gold aufgehoben!"
           Action:
             Kill:
@@ -292,12 +292,12 @@ In-Game:
             Win: "für das Gewinnen des Spiels"
             Detective: "für %number% Unschuldige überlebt"
         Sword:
-          Soon: "Der Mörder bekommt sein Schwert in %time% Sekunden!"
+          Soon: "Der Mörder bekommt sein Schwert in %number% Sekunden!"
         Special-Blocks:
           Cauldron:
             Potion: "Bitte trinke deinen aktuellen Trank!"
             Hologram: "Geheimnisvoller Trank - &e1 Gold"
-          Not-Enough-Gold: "Du brauchst %amount% Gold dafür!"
+          Not-Enough-Gold: "Du brauchst %number% Gold dafür!"
           Pray:
             Hologram: "Zum Schenken anklicken; zum Beten Hebel ziehen"
             Chat: "Du hast zum Entwickler gebetet! Hoffentlich hört er das!"
