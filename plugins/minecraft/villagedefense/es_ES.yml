@@ -49,14 +49,14 @@ Scoreboard:
   Title: "&a&l%plugin_name%"
   Content:
     Waiting:
-      - "&fJugadores: &e%arena_players_size%"
+      - "   www.plugily.xyz"
       - " "
       - "&fJugadores necesarios: &e%arena_min_players%"
       - " "
       - "&ewww.plugily.xyz"
       - "   www.plugily.xyz"
     Starting:
-      - "&fComenzando en: &e%arena_time%"
+      - "   www.plugily.xyz"
       - " "
       - "&fJugadores: &e%arena_players_size%"
       - " "
@@ -66,7 +66,7 @@ Scoreboard:
       - "   www.plugily.xyz"
     # Contents of scoreboard while ingame
     In-Game:
-      - "&fAldeanos restantes: &e%arena_villager_size%"
+      - "   www.plugily.xyz"
       - "&fJugadores restantes: &e%arena_players_left_size%"
       - "&fZombis restantes: &e%arena_zombie_size_left%"
       - " "
@@ -117,9 +117,9 @@ Bossbar:
     Starting:
       - "&f&lComenzando en: &e&l%arena_time%"
     In-Game:
-      - "&e&lJugando &f&l%plugin_name_uppercase% &e&len &b&lPLUGILY.XYZ"
+      - "Oleada actual: &b%arena_option_wave%"
       - "&e&lHecha un vistazo al creador del juego &e&len &b&lPLUGILY.XYZ"
-      - "Current wave %arena_option_wave%"
+      - "&fActual Oleada: &b%arena_option_wave%"
     Ending:
       - "&c&l¡Partida finalizada! Estás jugando en &b&lPLUGILY.XYZ"
     Restarting:
@@ -164,7 +164,7 @@ In-Game:
           Action-Bar: "&c¡&eAGACHATE &Cpara salir! | Objetivo %player%"
           Title: "&c¡&eAGACHATE &Cpara salir!"
         Visibility: "Otros espectadores %value%"
-    Blocked: "%color_chat_issue%%plugin_prefix% Spectators are disabled for this arena"
+    Blocked: "%color_chat_issue%%plugin_prefix% Espectadores desactivados en esta arena"
   Messages:
     Join: "&7¡&b%player%&7 se ha unido a la partida (%arena_players_size%/%arena_max_players%)!"
     Leave: "&7¡&b%player% &7se ha ido de la partida (%arena_players_size%/%arena_max_players%)!"
@@ -178,7 +178,7 @@ In-Game:
       You-Were-Kicked-For-Premium-Slot: "&c¡Has sido expulsado de la partida para dejarle el lugar a un jugador premium!"
       Not-Enough-Space-For-Party: "&cLa arena %arena_name% no tiene espacio suficiente para todo tu grupo."
       Max-Players: "&7Llegamos al máximo de jugadores para esta ronda. ¡Vamos a acortar el tiempo!"
-      Reduced-Time: "%plugin_prefix% The time got reduced to %number% seconds"
+      Reduced-Time: "%plugin_prefix% El tiempo se redujo a %number% seconds"
     Game-End:
       Summary:
         - "&a&m--------------------------------------------------"
@@ -199,7 +199,7 @@ In-Game:
           Players: "&7¡Todos los jugadores murieron!"
           Villagers: "&7¡Todos los aldeanos murieron!"
         Survived: "&7Sobreviviste a todas las oleadas!"
-        Players: "%color_chat_issue%%plugin_prefix% There are not enough players anymore. Arena got force stopped!"
+        Players: "%color_chat_issue%%plugin_prefix% Ya no hay jugadores minimos requeridos! Cancelando partida!"
     Admin:
       Set-Starting-In-To-0: "&b¡Un administrador comenzado la partida!"
       Removed:
@@ -328,13 +328,13 @@ Kit:
         - "Algunas personas piensan que es el "
         - "Admito que está totalmente mal!"
       Game-Item:
-        GUI: "Zombie Teleporter"
-        Name: "Zombie Teleporter"
+        GUI: "Telentransportador Zombie"
+        Name: "Telentransportador Zombie"
         Description:
-          - "Teleport zombies to you!"
+          - "Telentransporta Zombies hacia ti!"
     Teleport:
-      Zombie: "&aTeleported weakened zombie to you!"
-      Not-Found: "&cThere are no zombies to teleport!"
+      Zombie: "&aLleva hacia ti zombies debiles!"
+      Not-Found: "&cNo hay zombies cerca!"
     Knight:
       Name: "&2Caballero"
       Description:
@@ -353,7 +353,7 @@ Kit:
     Puncher:
       Name: "&6Golpeador"
       Description:
-        - "&7¡Golpea a esos zombis con tu pala épica!"
+        - "Te gusta empujar muchooo!"
         - "Knockback V is not unknown to you!"
     Healer:
       Name: "&6Curador"
@@ -389,86 +389,86 @@ Kit:
     Dog-Friend:
       Name: "Amigo del Perro"
       Description:
-        - "Start off with three dogs and"
-        - "get one extra dog every wave!"
+        - "Empieza con 3 amigos perrunos"
+        - "y obten uno cada oleada!"
     Hardcore:
       Name: "&6Hardcore"
       Description:
         - "&7Observa tu mismo porque"
         - "esto es hardcore :)"
     Golem-Friend:
-      Name: "&6Golem Friend"
+      Name: "&6Amigo Golem"
       Description:
-        - "Start with a golem and"
-        - "get new every 5 waves!"
+        - "Empieza con un Golem"
+        - "y obten 1 cada 5 oleadas!"
     Tornado:
       Name: "&bTornado"
       Description:
-        - "Spawn in an awesome tornado!"
+        - "Provoca un tornado!"
       Game-Item:
-        Name: "Tornado Time"
+        Name: "Tiempo de Tornado"
         Description:
-          - "Right click to spawn a"
-          - "tornado at your location!"
+          - "Click para generar un"
+          - "tornado en tu posicion!"
     Terminator:
       Name: "&6Terminator"
       Description:
-        - "Easily kill those zombies"
-        - "with your strength powers!"
+        - "Mata zombies facil con"
+        - "tu gran poder!"
     Teleporter:
       Name: "&bTeleporter"
       Description:
-        - "Everybody is astonished about your teleportation."
-        - "Nobody knows how to do it except you! Due to this,"
+        - "Salva aldeanos de forma rapida "
+        - "telentransportandote a ellos!"
         - "you are able to teleport to villagers"
         - "that need help in no time!"
       Game-Item:
-        Name: "&rTeleportation Menu"
+        Name: "&rMenu Rapido"
         Description:
-          - "Right click to open teleportation menu!"
-        GUI: "Teleporter Menu"
+          - "Abre el menu de tp!"
+        GUI: "Telentransportacion"
       Teleport:
-        Villager: "&aTeleported to the villager!"
-        Warning: "&4Village defense didn't found that villager! That villager is probably already dead!"
-        Player: "&aTeleported to %player%"
-        Not-Found: "&cPlayer not found! Try again!"
+        Villager: "&aLlevandote con el aldeano!"
+        Warning: "&4Es probable que ese aldeano ya este muerto ;(!"
+        Player: "&aLlevandote con %player%"
+        Not-Found: "&cJugador no encontrado"
     Heavy-Tank:
-      Name: "&bHeavy Tank"
+      Name: "&bTanque Pesado"
       Description:
-        - "Start off with iron armor and a double"
-        - "amount of hearts! Yup, that's right,"
+        - "Empieza con armadura pesada y "
+        - "el doble de corazones."
         - "you'll be the last man standing!"
     Shot-Bow:
-      Name: "&bShotbow Master"
+      Name: "&bArquero Maestro"
       Description:
-        - "You invented a crazy shotbow!"
+        - "Inventaste un arco increible!"
     Blocker:
-      Name: "&bBlocker"
+      Name: "&bBloqueador"
       Description:
-        - "Hold the zombies back with"
-        - "your special barriers. These"
-        - "barriers last for 10 seconds"
+        - "Crea barreras invisibles por"
+        - "10 segundos para evitar que los"
+        - "zombies pasen!!"
       Game-Item:
-        Name: "Fence"
+        Name: "Barrera"
         Description:
-          - "Place this barrier to hold back"
-          - "zombies! These barriers last for 10 seconds"
+          - "Pon esta barrera para evitar el"
+          - "paso de los zombies por 10 segs"
       Place:
-        Success: "&aBarrier placed!"
-        Fail: "&cUnable to place barrier here"
+        Success: "&aBarrera Puesra!"
+        Fail: "&cNo puedes poner eso aqui"
     Premium-Hardcore:
-      Name: "&bPremium Hardcore Master"
+      Name: "&bPremium Master Hardcore"
       Description:
-        - "One hit most zombies with your OP sword!"
+        - "Solo para Hardcores!"
         - "However be careful. this kit is only for"
         - "the pros! Do not use it if you aren't a pro!"
     Medic:
-      Name: "&6Medic"
+      Name: "&6Medico"
       Description:
-        - "This kit activates your passive powers."
-        - "Every time you hit a zombie, you have"
-        - "a 1/10 chance to heal the players"
-        - "in a 5 block radius around you."
+        - "Activa tus poderes de medico."
+        - "Cada vez que le pegues a un zombie tienes"
+        - "tienes una probabilidad de 1/10 de curar"
+        - "a tus compañeros en un radio de 5 bloques."
     Wild-Naked:
       Name: "&bDesnudo y Salvaje"
       Description:
@@ -515,7 +515,7 @@ Upgrade-Menu:
       Name: "&3&lMejorar Velocidad"
       Description: "&3¡Mejorar velocidad de movimiento a nivel &8%tier%&3!;&3De &8%from% &3a &8%to%;&3Costo de mejora: &8%cost%;;&3Clic para comprar"
     Swarm-Awareness:
-      Name: "&3&lSwarm Awareness"
+      Name: "&3&lAlerta Swarm"
       Description: "&3Upgrade swarm awareness to tier &8%tier%&3!;&3From &8%from% &8damage multiplier per wolf in radius;&8of 3 blocks &3to %to%;&3The more wolves near attacking wolf;&3the more damage wolf deal;&3Cost of upgrade: &8%cost%;;&8Click to purchase"
     Final-Defense:
       Name: "&3&lDefensa Final"
@@ -547,8 +547,8 @@ Leaderboard:
     Kills: "&aZombis Asesinados"
     Deaths: "&aMuertes"
     Next-Level-Exp: "&aExp sig. nivel &e"
-    Wins: "Wins ▸ %number%"
-    Loses: "Loses ▸ %number%"
+    Wins: "Partidas Ganadas ▸ %number%"
+    Loses: "Partidas perdidas ▸ %number%"
   Invalid-Name: "&c¡Nombre de la estadística inválido! Escribe: games_played, level"
   Unknown-Player: "&fJugador Desconocido"
 # Don't edit it. But who's stopping you? It's your server!
