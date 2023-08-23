@@ -115,7 +115,7 @@ Scoreboard:
         - "&f"
         - "■ Arena | %arena_name%"
         - "   www.plugily.xyz"
-        - "   www.plugily.xyz"
+        - "␣␣␣www.plugily.xyz"
       Guess-The-Build:
         - "■ Modus | %arena_type%"
         - "&f"
@@ -276,7 +276,7 @@ In-Game:
         Players: "&cEs gibt nicht mehr genug Spieler. Die Arena wurde Zwangsgestoppt!"
         Place: "%value% Platz - %player% (%number% Punkte)"
         Own: "&aDu wurdest %number%"
-        Winner: "&aPlot with %arena_place_member_1% (%arena_place_points_1%) won!"
+        Winner: "&aPlot mit %arena_place_member_1% (%arena_place_points_1%) hat gewonnen!"
     Admin:
       Set-Starting-In-To-0: "%plugin_prefix% Ein Admin hat die Wartezeit auf 0 gesetzt. Das Spiel startet jetzt!"
       Changed-Theme: "%plugin_prefix% Ein Admin hat das Thema zu %THEME% gewechselt"
@@ -294,7 +294,7 @@ In-Game:
         Biome: "%color_chat_issue%%plugin_prefix% Du hast keine Berechtigung für dieses Biom!"
         Outside: "%color_chat_issue%%plugin_prefix% Du kannst nicht außerhalb deines Bereiches fliegen!"
         Floor-Item: "%color_chat_issue%%plugin_prefix% Das Item in deiner Hand ist als Boden nicht erlaubt!"
-        Head: "%color_chat_issue%%plugin_prefix% You don't have permission for this head!"
+        Head: "%color_chat_issue%%plugin_prefix% Du hast keine Rechte für diesen Hut!"
       Selector:
         Full: "Team ist voll"
         Empty: "Du kannst diesem Team beitreten"
@@ -349,7 +349,7 @@ Menu:
             Name: "%color_chat_issue%Entferne Partikel"
             Lore: "Rechtsklicke um das Menü zu öffnen"
         Removed: "%color_chat_issue%%plugin_prefix% Partikel erfolgreich entfernt!"
-        Added: "%plugin_prefix% Particle successfully added!"
+        Added: "%plugin_prefix% Partikel erfolgreich erschaffen!"
       Heads:
         Inventory: "&bSpielerkopf Menü"
         Item:
@@ -431,8 +431,8 @@ Menu:
   Buttons:
     Back:
       Item:
-        Name: "%color_chat_issue%Go Back"
-        Lore: "Click to go back"
+        Name: "%color_chat_issue%Gehe zurück"
+        Lore: "Klicke, um zurück zu gehen"
 # Sign messages
 Signs:
   Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Bitte schreibe den Namen der Arena in die zweite Zeile!"
