@@ -116,7 +116,7 @@ Scoreboard:
         - "■ Arène | %arena_name%"
         - "␣"
         - "␣␣␣www.plugily.xyz"
-        - "   www.plugily.xyz"
+        - "␣␣␣www.plugily.xyz"
       Guess-The-Build:
         - "■ Mode | %arena_type%"
         - "&f"
