@@ -225,8 +225,8 @@ In-Game:
   Spectator:
     Blocked: "%color_chat_issue%%plugin_prefix% Gli spettatori sono disabilitati"
     You-Are-Spectator: "%plugin_prefix% Ora sei uno spettatore! Puoi volare!"
-    Spectator-Menu-Name: "%color_chat_issue%Alive players list"
-    Target-Player-Health: "%color_chat_issue%Health: %number%"
+    Spectator-Menu-Name: "%color_chat_issue%Giocatori in vita"
+    Target-Player-Health: "%color_chat_issue%Vita: %number%"
     Spectator-Warning: "%plugin_prefix% Sei uno spettatore!"
     Teleport: "%plugin_prefix% Teletrasportato a %player%"
     Menu:
@@ -240,17 +240,17 @@ In-Game:
           Action-Bar: "%number% blocks away | Target %player%"
         Night-Vision: "%value% visione notturna"
         First-Person-Mode:
-          Action-Bar: "&eSNEAK &cto leave! | Target %player%"
-          Title: "&eSNEAK &cto leave!"
-        Visibility: "%value% other spectator players"
+          Action-Bar: "&eSNEAK &cper uscire! | Giocatore %player%"
+          Title: "&eSNEAK &cper uscire!"
+        Visibility: "%value% altri spettatori"
   Messages:
-    Join: "%plugin_prefix% %player% joined the game (%arena_players_size%/%arena_max_players%)!"
-    Leave: "%plugin_prefix% %player% left the game (%arena_players_size%/%arena_max_players%)!"
+    Join: "%plugin_prefix% %player% è entrato (%arena_players_size%/%arena_max_players%)!"
+    Leave: "%plugin_prefix% %player% è uscito (%arena_players_size%/%arena_max_players%)!"
     Death: "%plugin_prefix% %player% died!"
     Lobby:
-      Start-In: "%plugin_prefix% The game starts in %arena_time% seconds!"
-      Waiting-For-Players: "%plugin_prefix% Waiting for players... We need at least %arena_min_players% players to start."
-      Enough-Players-To-Start: "%plugin_prefix% We now have enough players. The game is starting soon!"
+      Start-In: "%plugin_prefix% La partita inizia %arena_time% secondi!"
+      Waiting-For-Players: "%plugin_prefix% Attendo giocatori... Servono ancora %arena_min_players% giocatori."
+      Enough-Players-To-Start: "%plugin_prefix% Ci sono abbastanza giocatori. La partita sta iniziando!"
       Reduced-Time: "%plugin_prefix% The time got reduced to %number% seconds"
       Max-Players: "%plugin_prefix% We reached max players for this round. Let's shorten the time!"
       Game-Started: "%plugin_prefix% The game has started! Build best you can!"
