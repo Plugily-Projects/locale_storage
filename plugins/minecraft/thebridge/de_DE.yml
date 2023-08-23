@@ -85,7 +85,7 @@ Scoreboard:
       - " "
       - "■ Spieler | %arena_players_size%"
       - " "
-      - "■ Mindeste Spieleranzahl | %arena_min_players%"
+      - "■ Min. Spieler | %arena_min_players%"
       - " "
       - "   www.plugily.xyz"
     Starting:
