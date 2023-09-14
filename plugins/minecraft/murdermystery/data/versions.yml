@@ -22,6 +22,9 @@ locales:
     'de_DE':
       name: "German"
       original_name: "Deutsch"
+    'it_IT':
+      name: "Italian"
+      original_name: "Italiano"
     'pt_BR':
       name: "Portuguese (BR)"
       original_name: "Português Brasileiro"
