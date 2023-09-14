@@ -19,6 +19,9 @@ locales:
     'ru_RU':
       name: "Russian"
       original_name: "Pусский"
+    'es_ES':
+      name: "Spanish"
+      original_name: "Español"
     'tr_TR':
       name: "Turkish"
       original_name: "Türk"
