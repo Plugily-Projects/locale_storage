@@ -25,3 +25,6 @@ locales:
     'tr_TR':
       name: "Turkish"
       original_name: "Türk"
+    'vn_VN':
+      name: "Vietnamese"
+      original_name: "Việt"
