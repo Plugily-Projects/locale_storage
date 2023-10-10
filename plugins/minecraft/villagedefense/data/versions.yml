@@ -46,3 +46,6 @@ locales:
     'vn_VN':
       name: "Vietnamese"
       original_name: "Việt"
+    'uk_UA':
+      name: "Ukraine"
+      original_name: "Ukrainian"
