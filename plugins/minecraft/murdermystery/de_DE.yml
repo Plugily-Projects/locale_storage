@@ -277,7 +277,7 @@ In-Game:
           Detective: "5,20,5;ROLLE | DETEKTIV; Finde den Mörder und töte ihn"
           Innocent: "5,20,5;ROLLE | UNSCHULDIGER; Bleibe am leben!"
         Score:
-          Bonus: "+%number% Punktzahl (%value%)"
+          Bonus: "+%number% Punkte (%value%)"
           Gold: "Gold aufgehoben!"
           Action:
             Kill:
