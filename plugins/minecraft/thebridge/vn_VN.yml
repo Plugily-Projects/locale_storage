@@ -29,13 +29,13 @@ Commands:
   Teleported-To-Lobby: "%plugin_prefix% Đã dịch chuyển về sảnh chính!"
   Removed-Game-Instance: "%color_chat_issue%%plugin_prefix% Đã xoá phiên bản trò chơi!"
   No-Arena-Like-That: "%color_chat_issue%%plugin_prefix% Chưa có đấu trường nào có ID đó!"
-  Look-At-Sign: "%color_chat_issue%%plugin_prefix% Bạn phải nhìn vào một dấu hiệu để thực hiện lệnh này!"
+  Look-At-Sign: "%color_chat_issue%%plugin_prefix% Bạn phải nhìn vào một cái bảng để thi hiện lệnh này!"
   Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Vui lòng nhập ID của đấu trường!"
   Hold-Any-Item: "%color_chat_issue%%plugin_prefix% Bạn phải giữ một item!"
   No-Free-Arenas: "%color_chat_issue%%plugin_prefix% Không còn đấu trường trống!"
-  Only-By-Player: "%color_chat_issue%%plugin_prefix% Bạn chỉ có thể thực hiện lệnh này khi là một người chơi!"
-  Not-Playing: "%color_chat_issue%%plugin_prefix% Bạn cần chơi để thực hiện lệnh này!"
-  No-Permission: "%color_chat_issue%%plugin_prefix% Bạn không có quyền để thực hiện lệnh này!"
+  Only-By-Player: "%color_chat_issue%%plugin_prefix% Bạn chỉ có thể thực thi lệnh này khi là một người chơi!"
+  Not-Playing: "%color_chat_issue%%plugin_prefix% Bạn cần chơi để thực thi lệnh này!"
+  No-Permission: "%color_chat_issue%%plugin_prefix% Bạn không có quyền để thực thi lệnh này!"
   Player-Not-Found: "%color_chat_issue%%plugin_prefix% Người chơi %player% không tồn tại!"
   Invalid-Location-Teleport: "%color_chat_issue%%plugin_prefix% Vị trí để dịch chuyển không hợp lệ!"
   Wrong-Usage: "%color_chat_issue%%plugin_prefix% Sử dụng sai. Thực hiện %value%"
@@ -53,11 +53,11 @@ Commands:
     Description:
       - "&aLệnh trong game:"
       - "&b/%plugin_short_command% số liệu thống kê: Hiển thị số liệu thống kê của bạn!"
-      - "&b/%plugin_short_command% Rời khỏi: Thoát khỏi đấu trường hiện tại!"
+      - "&b/%plugin_short_command% rời khỏi: Thoát khỏi đấu trường hiện tại!"
       - "&b/%plugin_short_command% tham gia <arena>: Tham gia đấu trường được chỉ định!"
       - "&b/%plugin_short_command% top <statistic>: Hiển thị 10 người chơi hàng đầu!"
-      - "&b/%plugin_short_command% selectkit: Chọn kit mới!"
-      - "&b/%plugin_short_command% selectbase: Chọn cơ sở trong trò chơi của bạn!"
+      - "&b/%plugin_short_command% chọn kit: Chọn kit mới!"
+      - "&b/%plugin_short_command% selectbase: Chọn base trong trò chơi của bạn!"
       - "&b/%plugin_short_command% randomjoin: Tham gia một đấu trường bất kì!"
     Admin-Bonus-Description: "&b/%plugin_short_command%: Hiển thị tất cả các lệnh của admin"
     Footer: "&6-------------------------------------------------"
@@ -76,10 +76,10 @@ Scoreboard:
   Mode:
     POINTS:
       Got: "&a●"
-      Missing: "&a●"
+      Missing: "&7●"
     HEARTS:
-      Got: "&a●"
-      Missing: "&a●"
+      Got: "&c❤️"
+      Missing: "&7❤️"
   Content:
     Waiting:
       - " "
@@ -147,7 +147,7 @@ Bossbar:
       - "Đang chơi %plugin_name_uppercase% trên PLUGILY.XYZ"
       - "Kiểm tra người plugin trên PLUGILY.XYZ"
       - "Điểm cơ sở hiện tại %base_color_formatted%"
-      - "Cơ sở của bạn %arena_base_color_formatted%"
+      - "Base của bạn %arena_base_color_formatted%"
     Ending:
       - "Trò chơi đã kết thúc! Bạn đang chơi trên PLUGILY.XYZ"
     Restarting:
@@ -158,7 +158,7 @@ In-Game:
   Plugin-Prefix: "(%plugin_name%)"
   Game-Chat-Format: "[%user_statistic_level%][%kit%] %player% | %message%"
   You-Leveled-Up: "%plugin_prefix% Bạn đã được lên cấp! Bây giờ bạn đã ở cấp %number%!"
-  Commands-Blocked: "%color_chat_issue%%plugin_prefix% Bạn phải thoát khỏi trò chơi trước để thực hiện lệnh. Lệnh duy nhất hoạt động là /%plugin_short_command%!"
+  Commands-Blocked: "%color_chat_issue%%plugin_prefix% Bạn phải thoát khỏi trò chơi trước để thực thi lệnh. Lệnh duy nhất hoạt động là /%plugin_short_command%!"
   Join:
     Already-Playing: "%color_chat_issue%%plugin_prefix% Bạn đã xếp hàng chờ chơi trò chơi! Bạn có thể rời khỏi trò chơi với /%plugin_short_command%."
     No-Permission: "%color_chat_issue%%plugin_prefix% Bạn không có quyền %value% để tham gia đấu trường này!"
@@ -167,7 +167,7 @@ In-Game:
     # Join cancelled via external plugin that uses the API of our plugin.
     Cancelled-Via-API: "%color_chat_issue%%plugin_prefix% Bạn không thể tham gia trò chơi này!"
     As-Party-Member: "%color_chat_issue%%plugin_prefix% Bạn đã tham gia %arena_name% vì người lãnh đạo nhóm đã tham gia!"
-    Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% Đấu trường chưa được định cấu hình! Hãy lên hệ admin!"
+    Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% Đấu trường chưa được định cấu hình! Hãy liên hệ admin!"
     Title: "20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%"
   Death:
     Tag: "&8Chết"
@@ -177,7 +177,7 @@ In-Game:
     You-Are-Spectator: "%plugin_prefix% Bây giờ bạn là khán giả! Bạn có thể bay ngay bây giờ!"
     Spectator-Menu-Name: "%color_chat_issue%Danh sách người chơi còn sống"
     Target-Player-Health: "%color_chat_issue%Số máu: %number%"
-    Spectator-Warning: "%plugin_prefix% Bạn là khán giả!"
+    Spectator-Warning: "%plugin_prefix% Bạn đang là khán giả!"
     Teleport: "%plugin_prefix% Đã dịch chuyển đến %player%"
     Menu:
       Settings:
@@ -216,7 +216,7 @@ In-Game:
         - "%arena_summary_player%"
         - " "
         - " "
-        - "Thành viên cơ sở"
+        - "Thành viên của base"
         - "%arena_summary_winner_base_players% (%arena_summary_base_scored%)"
         - " "
         - "&a&m--------------------------------------------------"
@@ -237,7 +237,7 @@ In-Game:
       Build-Break: "%color_chat_issue%%plugin_prefix% Bạn không thể đặt và phá block tại đây"
       Time-Left: "5,20,5;%color_chat_issue%Thời gian đang dần hết; còn %arena_time% giây nữa"
       Portal:
-        Own: "%color_chat_issue%%plugin_prefix% Đây là cổng của chính bạn, tận hưởng cái chết nhé"
+        Own: "%color_chat_issue%%plugin_prefix% Đây là cổng của chính bạn, tận hưởng cái chết nhé lêu lêu"
         Opponent: "%plugin_prefix% %arena_base_color_formatted% %player% đã nhảy vào %value%!"
         Scored:
           Title: "5,20,5;%arena_base_color_formatted% %player%;đã nhảy vào %value%"
@@ -252,8 +252,8 @@ In-Game:
 Signs:
   Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Vui lòng nhập tên đấu trường vào dòng thứ hai!"
   Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% Đấu trường có tên đó không tồn tại!"
-  Created: "%plugin_prefix% Sign được tạo thành công!"
-  Removed: "%plugin_prefix% Sign đã được xóa thành công!"
+  Created: "%plugin_prefix% Bảng được tạo thành công!"
+  Removed: "%plugin_prefix% Bảng đã được xóa thành công!"
   Lines:
     - "%plugin_prefix%"
     - "%arena_state_placeholder%"
@@ -272,7 +272,7 @@ Arena-Selector:
       - "  Tình trạng: %arena_state_placeholder%"
       - " "
       - " "
-      - "&aNhấp để tham gia đấu trường này"
+      - "&âNháy để tham gia đấu trường này"
 # Validator messages
 Validator:
   Invalid-Arena-Configuration: "Đấu trường %arena_name% có cấu hình không hợp lệ! Nút bị thiếu: %value%"
@@ -312,25 +312,25 @@ Kit:
       Description: "&7Kit basic bridge giống như kit bạn biết!"
     Knight:
       Name: "&2Knight"
-      Description: "&7Đây là kit hiệp sĩ duy nhất! Nhiều người cho rằng đây là kit tồi tệ nhất! Tôi phải thừa nhận họ hoàn toàn sai lầm!"
+      Description: "&7Đây là kit hiệp sĩ! Nhiều người cho rằng đây là kit tồi tệ nhất! Tôi thừa nhận họ hoàn toàn sai lầm!"
     Light-Tank:
       Name: "&2Light Tank"
       Description: "&7Bạn là xe tăng Junior!"
     Archer:
       Name: "&6Archer"
-      Description: "&7Bắt đầu với số lượng mũi tên bổ sung, áo giáp da và kiếm gỗ. Cung thủ được dân làng yêu mến, biết điều đó!"
+      Description: "&7Bắt đầu với số lượng mũi tên bổ sung, áo giáp da và kiếm gỗ. Cung thủ được dân làng yêu mến, biết điều đó chứ!"
     Hardcore:
       Name: "&6Hardcore"
       Description: "&7Bạn sẽ tự hiểu tại sao điều này lại hardcore đến thế"
     Healer:
       Name: "&6Healer"
-      Description: "&7Trở thành healer cũng giống như được yêu thương. Bạn có thể chữa lành vết thương cho đồng đội của mình."
+      Description: "&7Trở thành healer cũng giống như được yêu thương. Bạn có thể hồi máu cho đồng đội của mình."
     Medium-Tank:
       Name: "&6Medium Tank"
       Description: "&7Bắt đầu với 6 trái tim nữa! Đừng sợ! Bạn còn rất nhiều trái tim để mất!"
     Terminator:
       Name: "&6Terminator"
-      Description: "&7Dễ dàng tiêu diệt người chơi khác bằng sức mạnh sức mạnh của bạn!"
+      Description: "&7Dễ dàng tiêu diệt người chơi khác bằng sức mạnh của bạn!"
     Heavy-Tank:
       Name: "&bHeavy Tank"
       Description: "&7Bắt đầu với áo giáp sắt và số lượng trái tim gấp đôi! Đúng vậy, bạn sẽ là người cuối cùng đứng vững!"
@@ -352,22 +352,22 @@ Bases:
     Choose: "Bây giờ bạn đang ở trên base %base%"
     Member: "Bạn đã là thành viên của nó!"
   Colors:
-    BLACK: "&0BLACK"
-    DARK_BLUE: "&1DARK_BLUE"
-    DARK_GREEN: "&2DARK_GREEN"
-    DARK_AQUA: "&3DARK_CYAN"
-    DARK_RED: "&4DARK_RED"
-    DARK_PURPLE: "&5DARK_PURPLE"
-    GOLD: "&6GOLD"
-    LIGHT_GRAY: "&6GOLD"
-    DARK_GRAY: "&8DARK_GRAY"
-    BLUE: "&9BLUE"
-    GREEN: "&aLIME_GREEN"
+    BLACK: "&0ĐEN"
+    DARK_BLUE: "&1XANH_DƯƠNG_ĐẬM"
+    DARK_GREEN: "&2XANH_LÁ_ĐẬM"
+    DARK_AQUA: "&3LỤC_LAM_ĐẬM"
+    DARK_RED: "&4ĐỎ_ĐẬM"
+    DARK_PURPLE: "&5TÍM_ĐẬM"
+    GOLD: "&6VÀNG"
+    LIGHT_GRAY: "&6XÁM_NHẠT"
+    DARK_GRAY: "&8XÁM_ĐẬM"
+    BLUE: "&9XANH_DƯƠNG"
+    GREEN: "&aCHANH"
     AQUA: "&bAQUA"
-    RED: "&cRED"
-    PINK: "&dPINK"
-    YELLOW: "&eYELLOW"
-    WHITE: "&fWHITE"
+    RED: "&cĐỎ"
+    PINK: "&dHỒNG"
+    YELLOW: "&eVÀNG"
+    WHITE: "&fTRẮNG"
     BOLD: "&lIN ĐẬM"
     STRIKETHROUGH: "&mGẠCH NGANG"
     UNDERLINED: "&nGẠCH CHÂN"
@@ -383,7 +383,7 @@ Leaderboard:
       Empty-Format: "&e%number%. Trống (0)"
     Chat:
       Header: "&8+-------+ &a&lTHỐNG KÊ CỦA BẠN &8+-------+"
-      Header-Other: "&8+----------+ &aSTATS CỦA &b%player% &8+----------+"
+      Header-Other: "&8+----------+ &THỐNG KÊ CỦA &b%player% &8+----------+"
       Footer: "&8+-----------------------------+"
       Format: "%value% ▸ &a%number%"
       Top:
@@ -396,7 +396,7 @@ Leaderboard:
     Games-Played: "Trò chơi đã chơi ▸ %number%"
     Level: "Level ▸ %number%"
     Exp: "Kinh nghiệm ▸ %number%"
-    Next-Level-Exp: "Kinh nghiệm để tăng cấp ▸ %number%"
+    Next-Level-Exp: "Kinh nghiệm để tăng level ▸ %number%"
     Score: "Ghi điểm ▸ %number%"
     Kills: "Kills ▸ %number%"
     Deaths: "Chết  ▸ %number%"
