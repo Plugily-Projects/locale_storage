@@ -66,10 +66,11 @@ Commands:
 # Please do not use more chars than the scoreboard can handle!
 # Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
 # Placeholders:
-# https://wiki.plugily.xyz/REPLACEWITHPROJECTNAME/placeholders/language
+# https://wiki.plugily.xyz/minigame/placeholders/
 Scoreboard:
   Title: "&a&l%plugin_name%"
   Bases:
+    # Alternative format with numbers instead of symbols would be %scoreboard_base_color_formatted% (%scoreboard_base_players_size%) &e%scoreboard_base_yourself% %scoreboard_base_points%
     Format: "%scoreboard_base_color_formatted% (%scoreboard_base_players_size%) &e%scoreboard_base_yourself% %scoreboard_base_points_formatted%"
     Not-Inside: "--"
     Inside: "(Toi)"
@@ -251,6 +252,7 @@ In-Game:
         Reset: "Les mouvements sont désactiver pendant que le tour ce réinitialise"
         Run: "&7Obtiens des points"
         Title: "5,20,5;Réinitialisation du tour - Tu ne peux pas bouger;%number%"
+        Start: "%plugin_prefix% Prepare to jump into the opponents portal"
       Damage: "%player%  &c♥ %value%"
 # Sign messages
 Signs:
@@ -310,42 +312,43 @@ Kit:
       Locked: "&cVERROUILLÉ !"
       Unlock-At-Level: "Se débloque au niveau %number%"
       Unlock-In-Store: "&bDéverrouillez-le dans le magasin !"
-  Content:
-    Bridge:
+  Content: 
+    Bridge: 
       Name: "&2Bridge"
       Description: "&7Kit bridge de base comme celui que vous connaissez !"
-    Knight:
+    Knight: 
       Name: "&2Chevalier"
       Description: "&7C'est le seul et unique kit de chevalier ! Beaucoup de gens pensent que c'est le pire kit ! Je dois admettre qu'ils ont totalement tort !"
-    Light-Tank:
+    Light-Tank: 
       Name: "&2Char léger"
       Description: "&7Vous êtes char léger !"
-    Archer:
+    Archer: 
       Name: "&6Archée"
       Description: "&7Commencez avec une quantité supplémentaire de flèches, une armure de cuir et une épée en bois. Les archers sont aimés des villageois, sachez-le !"
-    Hardcore:
+    Hardcore: 
       Name: "&6Hardcore"
       Description: "&7Tu verras par toi-même pourquoi c'est hardcore"
-    Healer:
+    Healer: 
       Name: "&6Guérisseur"
       Description: "&7Être un guérisseur équivaut à être aimé. Vous êtes capable de soigner vos coéquipiers."
-    Medium-Tank:
+    Medium-Tank: 
       # tank work as well
       Name: "&6Char moyen"
       Description: "&7Commencez avec 6 cœurs de plus ! N'ayez pas peur ! Il vous reste plein de coeurs à perdre !"
-    Terminator:
+    Terminator: 
       Name: "&6Terminateur"
       Description: "&7Tuez facilement d'autres joueurs avec vos pouvoirs de force !"
-    Heavy-Tank:
+    Heavy-Tank: 
       Name: "&bChar lourd"
       Description: "&7Commencez avec une armure de fer et un double nombre de cœurs ! Oui, c'est vrai, vous serez le dernier homme debout !"
-    Wild-Naked:
+    Wild-Naked: 
       Name: "&bSauvage Nu"
       Description: "&7Tu est L'ULTIME maitre! Tu commence avec un meilleur épée en fer!"
       Cannot-Wear-Armor: "&cYTu ne peux pas porter d'armure le kit \"Sauvage Nu\"!"
-    Premium-Hardcore:
+    Premium-Hardcore: 
       Name: "&maitre Hardcore Premium"
       Description: "&7One shoot la plupart des joueurs avec ton épée cheater! Cependant soyez prudent. Ce kit est seulement pour les pros! Ne l'utiliser pas si vous n’êtes pas un pro!"
+  No-Armor: "%color_chat_issue%%plugin_prefix% You can't wear armor with your kit!"
 # Bases
 Bases:
   Team:
