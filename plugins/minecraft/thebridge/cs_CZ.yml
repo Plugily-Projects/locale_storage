@@ -66,10 +66,11 @@ Commands:
 # Please do not use more chars than the scoreboard can handle!
 # Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
 # Placeholders:
-# https://wiki.plugily.xyz/REPLACEWITHPROJECTNAME/placeholders/language
+# https://wiki.plugily.xyz/minigame/placeholders/
 Scoreboard:
   Title: "&a&l%plugin_name%"
   Bases:
+    # Alternative format with numbers instead of symbols would be %scoreboard_base_color_formatted% (%scoreboard_base_players_size%) &e%scoreboard_base_yourself% %scoreboard_base_points%
     Format: "%scoreboard_base_color_formatted% (%scoreboard_base_players_size%) &e%scoreboard_base_yourself% %scoreboard_base_points_formatted%"
     Not-Inside: "--"
     Inside: "(Ty)"
@@ -247,6 +248,7 @@ In-Game:
         Reset: "Pohyb je do obnovení kola zakázán"
         Run: "&7Získej nějaké body"
         Title: "5,20,5;Reset kola - Nemůžeš se hýbat;%number%"
+        Start: "%plugin_prefix% Prepare to jump into the opponents portal"
       Damage: "%player%  &c♥ %value%"
 # Sign messages
 Signs:
@@ -306,41 +308,42 @@ Kit:
       Locked: "&cZAMČENO!"
       Unlock-At-Level: "Odemkne se na úrovni %number%"
       Unlock-In-Store: "&bOdemkni v obchodě!"
-  Content:
-    Bridge:
+  Content: 
+    Bridge: 
       Name: "&2Most"
       Description: "&7Klasický kit, který znáš!"
-    Knight:
+    Knight: 
       Name: "&2Rytíř"
       Description: "&7Toto je ten jediný a pravý rytířský kit! Spousta lidí tvrdí, že horší kit neexistuje! Musíš uznat, že jsou totálně vedle!"
-    Light-Tank:
+    Light-Tank: 
       Name: "&2Lehký Tank"
       Description: "&7Jsi tank junior!"
-    Archer:
+    Archer: 
       Name: "&6Lučištník"
       Description: "&7Začni s extra šípy, koženou zbrojí a dřevěným mečem. Všichni vesničané milují lučištníky, to je známý fakt!"
-    Hardcore:
+    Hardcore: 
       Name: "&6Hardcore"
       Description: "&7Však uvidíš sám, proč je to hardcore"
-    Healer:
+    Healer: 
       Name: "&6Léčitel"
       Description: "&7Být léčitelem je stejné, jako být milován. Máš schopnost uzdravit své blízké."
-    Medium-Tank:
+    Medium-Tank: 
       Name: "&6Střední Tank"
       Description: "&7Začni s 6ti extra srdíčky! Neboj se! Máš spousta srdíček, které můžeš ztratit!"
-    Terminator:
+    Terminator: 
       Name: "&6Terminator"
       Description: "&7Snadno zabij ostatní hráče svoji ohromnou silou!"
-    Heavy-Tank:
+    Heavy-Tank: 
       Name: "&bTěžký  Tank"
       Description: "&7Vyzbroj se železnou zbrojí a dvojnásobkem srdíček! Jop, slyšíš dobře, budeš ten poslední kdo bude stát na nohou!"
-    Wild-Naked:
+    Wild-Naked: 
       Name: "&bDivoká Nahota"
       Description: "&7Jsi ultimátní mistr! Začni s lepším železným mečem!"
       Cannot-Wear-Armor: "&cS kitem divoké nahoty nemůžeš nosit oblečení!"
-    Premium-Hardcore:
+    Premium-Hardcore: 
       Name: "&bPremium Hardcore Master"
       Description: "&7Dej většinu hráčů na jednu ránu svým OP mečem! Ale buď opatrný. Tento kit je jen pro profesionály! Nepoužívej pokud nejsi profík!"
+  No-Armor: "%color_chat_issue%%plugin_prefix% You can't wear armor with your kit!"
 # Bases
 Bases:
   Team:
