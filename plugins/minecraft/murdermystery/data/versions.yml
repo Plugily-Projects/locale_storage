@@ -25,6 +25,9 @@ locales:
     'it_IT':
       name: "Italian"
       original_name: "Italiano"
+    'pl_PL':
+      name: "Polish"
+      original_name: "język polski"
     'pt_BR':
       name: "Portuguese (BR)"
       original_name: "Português Brasileiro"
