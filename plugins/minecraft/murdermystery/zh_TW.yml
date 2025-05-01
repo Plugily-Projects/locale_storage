@@ -1,29 +1,16 @@
-# You can translate MurderMystery messages here.
-# Color codes (&) supported.
-# 
-# Use \n to make new line
-# Some messages like item
-# descriptions don't support new lines
-# they are wrapped every 40 characters automatically
-# 
-# Some messages support their own placeholders
-# like %player%, %kit% etc.
-# 
-# Color scheme
-Color:
-  Placeholder:
+Color: 
+  Placeholder: 
     Value: "&4"
     Number: "&4"
     Player: "&b"
     Other: "&4"
-  Chat:
-    Issue: "＆C"
+  Chat: 
+    Issue: ＆C
     Messages: "&7"
-    Special-Char:
+    Special-Char: 
       Contains: "[,],(,),{,},■,/,|,▸"
       Before: "&8"
-# Command messages
-Commands:
+Commands: 
   Did-You-Mean: "%plugin_prefix% 你指的是不是 /%value%？"
   Command-Executed: "%plugin_prefix% 指令執行成功！"
   Teleported-To-Lobby: "%plugin_prefix% 已傳送到大廳！"
@@ -39,136 +26,123 @@ Commands:
   Player-Not-Found: "%color_chat_issue%%plugin_prefix% 目標玩家 %player% 不存在！"
   Invalid-Location-Teleport: "%color_chat_issue%%plugin_prefix% 傳送位置無效！"
   Wrong-Usage: "%color_chat_issue%%plugin_prefix% 用法錯誤。做%value%"
-  Admin:
+  Admin: 
     Adjust-Statistic: "%plugin_prefix% %player% 的數據 %value% 現已修改為 %number%！"
     Reload-Success: "%plugin_prefix% 競技場重新加載！"
-    List:
+    List: 
       Header: "%plugin_name% 競技場: 名稱狀態玩家"
       Format: "%arena_name% %arena_state_placeholder% %arena_players_size%/%arena_max_players%"
       No-Arenas: "%color_chat_issue%%plugin_prefix% 當之前沒有遊戲實例！"
-    Spychat:
+    Spychat: 
       Toggled: "%plugin_prefix% 遊戲聊天聊天狀態切換至 %value%"
-  Main:
+  Main: 
     Header: "&6----------------{%plugin_name% 命令}----------"
-    Description:
-      - "&a遊戲指令:"
-      - "&b/%plugin_short_command% stats: 查看你的數據！"
-      - "&b/%plugin_short_command% leave：退出當前競技場！"
-      - "&b/%plugin_short_command% join <arena>: 加入指定的競技場！"
-      - "&b/%plugin_short_command% top <statistic>: 顯示前 10 名玩家！"
-      - "&b/%plugin_short_command% randomjoin：加入隨機競技場！"
+    Description: 
+      0: "&a遊戲指令:"
+      1: "&b/%plugin_short_command% stats: 查看你的數據！"
+      2: "&b/%plugin_short_command% leave：退出當前競技場！"
+      3: "&b/%plugin_short_command% join <arena>: 加入指定的競技場！"
+      4: "&b/%plugin_short_command% top <statistic>: 顯示前 10 名玩家！"
+      5: "&b/%plugin_short_command% randomjoin：加入隨機競技場！"
     Admin-Bonus-Description: "&b/%plugin_short_command%: 查看管理員指令"
     Footer: "&6--------------------------------------------"
-# In-Game scoreboard messages
-# 
-# Please do not use more chars than the scoreboard can handle!
-# Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
-# Placeholders:
-# https://wiki.plugily.xyz/REPLACEWITHPROJECTNAME/placeholders/language
-Scoreboard:
+Scoreboard: 
   Title: "&a&l%plugin_name%"
-  Roles:
+  Roles: 
     Detective: "&b偵探"
     Murderer: "&c殺手"
     Innocent: "&e平民"
-    Dead: "已死亡"
-  Detective:
-    Alive: "偵探&a還活著"
-    Bow:
+    Dead: 已死亡
+  Detective: 
+    Alive: 偵探&a還活著
+    Bow: 
       Dropped: "%color_chat_issue%弓已掉落"
-      Picked: "弓沒有掉落"
-  Content:
-    Waiting:
-      - "␣"
-      - "■ 玩家數 | %arena_players_size%"
-      - "␣"
-      - "■ 最少玩家人數 | %arena_min_players%"
-      - "␣"
-      - "␣ ␣ ␣ www.plugily.xyz"
-    Starting:
-      - "␣"
-      - "開始倒計時| %arena_time%"
-      - "␣"
-      - "■ 玩家數 | %arena_players_size%"
-      - "␣"
-      - "■ 最低玩家數 | %arena_min_players%"
-      - "␣"
-      - "␣ ␣ ␣ www.plugily.xyz"
-    # Contents of scoreboard while ingame
-    In-Game:
-      - "␣"
-      - "■ 身分 | %arena_player_role%"
-      - "＆F"
-      - "■ 平均人數 | %arena_innocent_size%"
-      - "＆F"
-      - "■ 遊戲時間 | %arena_time%"
-      - "␣"
-      - "■ %arena_detective_status%"
-      - "␣"
-      - "■ 分數| %user_statistic_local_score%"
-      - "␣"
-      - "␣ ␣ ␣ www.plugily.xyz"
-    In-Game-Murderer:
-      - "␣"
-      - "■ 身份 | %arena_player_role%"
-      - "＆F"
-      - "■ 平均人數 | %arena_innocent_size%"
-      - "＆F"
-      - "■ 時間 | %arena_time%"
-      - "␣"
-      - "■ %arena_detective_status%"
-      - "␣"
-      - "■ 擊殺數 | %user_statistic_local_kills%"
-      - "␣"
-      - "■ Score | %user_statistic_local_score%"
-      - "␣"
-      - "␣␣␣www.plugily.xyz"
-    # Contents of scoreboard while state is ending
-    Ending:
-      - "&f"
-      - "&f"
-      - "&c遊戲結束"
-      - "␣"
-      - "＆F"
-      - "＆F"
-      - "␣"
-      - "␣ ␣ ␣ www.plugily.xyz"
-    # Contents of scoreboard while state is restarting
-    Restarting:
-      - "＆F"
-      - "＆F"
-      - "&c重新開始遊戲中"
-      - "␣"
-      - "＆F"
-      - "＆F"
-      - "␣"
-      - "␣ ␣ ␣ www.plugily.xyz"
-# Bossbar messages
-# 
-# Bossbar needs to be enabled on config.yml
-Bossbar:
+      Picked: 弓沒有掉落
+  Content: 
+    Waiting: 
+      0: ␣
+      1: ■ 玩家數 | %arena_players_size%
+      2: ␣
+      3: ■ 最少玩家人數 | %arena_min_players%
+      4: ␣
+      5: ␣ ␣ ␣ www.plugily.xyz
+    Starting: 
+      0: ␣
+      1: 開始倒計時| %arena_time%
+      2: ␣
+      3: ■ 玩家數 | %arena_players_size%
+      4: ␣
+      5: ■ 最低玩家數 | %arena_min_players%
+      6: ␣
+      7: ␣ ␣ ␣ www.plugily.xyz
+    In-Game: 
+      0: ␣
+      1: ■ 身分 | %arena_player_role%
+      2: ＆F
+      3: ■ 平均人數 | %arena_innocent_size%
+      4: ＆F
+      5: ■ 遊戲時間 | %arena_time%
+      6: ␣
+      7: ■ %arena_detective_status%
+      8: ␣
+      9: ■ 分數| %user_statistic_local_score%
+      10: ␣
+      11: ␣ ␣ ␣ www.plugily.xyz
+    In-Game-Murderer: 
+      0: ␣
+      1: ■ 身份 | %arena_player_role%
+      2: ＆F
+      3: ■ 平均人數 | %arena_innocent_size%
+      4: ＆F
+      5: ■ 時間 | %arena_time%
+      6: ␣
+      7: ■ %arena_detective_status%
+      8: ␣
+      9: ■ 擊殺數 | %user_statistic_local_kills%
+      10: ␣
+      11: ■ Score | %user_statistic_local_score%
+      12: ␣
+      13: ␣␣␣www.plugily.xyz
+    Ending: 
+      0: "&f"
+      1: "&f"
+      2: "&c遊戲結束"
+      3: ␣
+      4: ＆F
+      5: ＆F
+      6: ␣
+      7: ␣ ␣ ␣ www.plugily.xyz
+    Restarting: 
+      0: ＆F
+      1: ＆F
+      2: "&c重新開始遊戲中"
+      3: ␣
+      4: ＆F
+      5: ＆F
+      6: ␣
+      7: ␣ ␣ ␣ www.plugily.xyz
+Bossbar: 
   Title: "%plugin_name% - www.plugily.xyz"
-  Content:
-    Waiting:
-      - "正在等待更多玩家..."
-    Starting:
-      - "開始倒計時：%arena_time%"
-    In-Game:
-      - "在 PLUGILY.XYZ 上玩 %plugin_name_uppercase%"
-      - "在PLUGILY.XYZ上關注插件作者"
-      - "你的身份 %arena_player_role%"
-    Ending:
-      - "遊戲已結束！你正在PLUGILY.XYZ上游玩"
-    Restarting:
-      - "重新開啟競技場中。你很快就會傳送到競技場中！"
-# In-Game Messages
-In-Game:
+  Content: 
+    Waiting: 
+      0: 正在等待更多玩家...
+    Starting: 
+      0: 開始倒計時：%arena_time%
+    In-Game: 
+      0: 在 PLUGILY.XYZ 上玩 %plugin_name_uppercase%
+      1: 在PLUGILY.XYZ上關注插件作者
+      2: 你的身份 %arena_player_role%
+    Ending: 
+      0: 遊戲已結束！你正在PLUGILY.XYZ上游玩
+    Restarting: 
+      0: 重新開啟競技場中。你很快就會傳送到競技場中！
+In-Game: 
   # Used in most game messages.
-  Plugin-Prefix: "(%plugin_name%)"
+  Plugin-Prefix: (%plugin_name%)
   Game-Chat-Format: "[%user_statistic_level%][%kit%] %player% | %message%"
   You-Leveled-Up: "%plugin_prefix% 你升級了！你現在 %number% 級了！"
   Commands-Blocked: "%color_chat_issue%%plugin_prefix% 你需要先退出遊戲才能執行指令，輸入指令 /%plugin_short_command% 來退出遊戲！"
-  Join:
+  Join: 
     Already-Playing: "%color_chat_issue%%plugin_prefix% 你已經在遊戲團隊中了！你可以使用 /%plugin_short_command% 離開遊戲。"
     No-Permission: "%color_chat_issue%%plugin_prefix% 你沒有 %value% 權限來加入這個競技場！"
     Full-Game: "%color_chat_issue%%plugin_prefix% 你沒有權利加入已經滿的遊戲！"
@@ -177,36 +151,36 @@ In-Game:
     Cancelled-Via-API: "%color_chat_issue%%plugin_prefix% 你不能加入這個遊戲！"
     As-Party-Member: "%color_chat_issue%%plugin_prefix% 你加入了 %arena_name% 因為你的隊長加入了遊戲!"
     Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% 競技場尚未配置！請聯繫管理員！"
-    Title: "20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%"
-  Death:
+    Title: 20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%
+  Death: 
     Tag: "&8死亡"
     Screen: "%color_chat_issue%你死了！"
-  Spectator:
+  Spectator: 
     Blocked: "%color_chat_issue%%plugin_prefix% 該競技場已禁止使用觀察者"
     You-Are-Spectator: "%plugin_prefix% 你現在是觀察者！你現在可以飛了！"
     Spectator-Menu-Name: "%color_chat_issue%存活玩家列表"
     Target-Player-Health: "%color_chat_issue%生命值: %number% | 角色: %arena_player_role%"
     Spectator-Warning: "%plugin_prefix% 你是觀察者！"
     Teleport: "%plugin_prefix% 傳送到 %player%"
-    Menu:
-      Settings:
-        Status:
-          Enabled: "已啟用"
-          Disabled: "已禁用"
-        Changed-Speed: "將速度更改為%number%"
+    Menu: 
+      Settings: 
+        Status: 
+          Enabled: 已啟用
+          Disabled: 已禁用
+        Changed-Speed: 將速度更改為%number%
         Auto-Teleport: "%value%自動傳送"
-        Target-Player:
-          Action-Bar: "距離 %number% 方塊 | 目標 %player%"
+        Target-Player: 
+          Action-Bar: 距離 %number% 方塊 | 目標 %player%
         Night-Vision: "%value%夜視"
-        First-Person-Mode:
+        First-Person-Mode: 
           Action-Bar: "&e潛行&c以離開！| 目標 %player%"
           Title: "&e潛行&c以離開！"
         Visibility: "%value% 其他觀戰玩家"
-  Messages:
+  Messages: 
     Join: "%plugin_prefix% %player%加入了遊戲（%arena_players_size%/%arena_max_players%）！"
     Leave: "%plugin_prefix% %player%離開遊戲（%arena_players_size%/%arena_max_players% ！"
     Death: "%plugin_prefix% %player%死了！"
-    Lobby:
+    Lobby: 
       Start-In: "%plugin_prefix%遊戲將在%arena_time%秒內開始！"
       Waiting-For-Players: "%plugin_prefix%等待玩家... 我們至少需要%arena_min_players%的玩家才能開始。"
       Enough-Players-To-Start: "%plugin_prefix% 玩家數已滿足要求。遊戲即將開始！"
@@ -216,200 +190,190 @@ In-Game:
       Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% %player% 由於優先玩家所需要的位置從遊戲中移除！"
       You-Were-Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% 由於優先玩家所需要的位置你已經被從遊戲中移出！"
       Not-Enough-Space-For-Party: "%color_chat_issue%%plugin_prefix% 你的隊伍大小大於房間剩餘空间 %arena_name%"
-    Game-End:
-      Summary:
-        - "&a&m--------------------------------------------------"
-        - "%plugin_name%"
-        - "␣"
-        - "%arena_summary%"
-        - "%arena_summary_player%"
-        - "␣"
-        - "&7偵探：%arena_detective_list%"
-        - "&7殺手：%arena_murderer_list%（%arena_murderer_kills%）"
-        - "&7英雄：%arena_hero%"
-        - "␣"
-        - "&a&m--------------------------------------------------"
-      Placeholders:
+    Game-End: 
+      Summary: 
+        0: "&a&m--------------------------------------------------"
+        1: "%plugin_name%"
+        2: ␣
+        3: "%arena_summary%"
+        4: "%arena_summary_player%"
+        5: ␣
+        6: "&7偵探：%arena_detective_list%"
+        7: "&7殺手：%arena_murderer_list%（%arena_murderer_kills%）"
+        8: "&7英雄：%arena_hero%"
+        9: ␣
+        10: "&a&m--------------------------------------------------"
+      Placeholders: 
         Win: "&a你獲得遊戲勝利"
         Lose: "%color_chat_issue%你輸了遊戲"
         Players: "&c當前没有足夠的玩家. 競技場強制停止!"
-        Murderer:
-          Stopped: "殺手已被終結！"
-          Killed:
-            You: "殺手擊殺了你！"
-            All: "殺手殺了所有人。"
-        Innocent:
-          Killed:
-            You: "一個玩家用弓殺了你！"
-            Wrongly: "你殺掉了一個平民！"
-        Nobody: "沒有人"
-    Admin:
+        Murderer: 
+          Stopped: 殺手已被終結！
+          Killed: 
+            You: 殺手擊殺了你！
+            All: 殺手殺了所有人。
+        Innocent: 
+          Killed: 
+            You: 一個玩家用弓殺了你！
+            Wrongly: 你殺掉了一個平民！
+        Nobody: 沒有人
+    Admin: 
       Set-Starting-In-To-0: "%plugin_prefix% 一位管理員已將等候時間設置位0。遊戲現在開始！"
-    Arena:
-      Chances:
+    Arena: 
+      Chances: 
         Action-Bar: "&c殺手概率: %arena_murderer_chance% &a- &b偵探概率: %arena_detective_chance%"
       Cooldown: "&8&l[%value%&8&l] &6%number% 秒"
-      Locator:
-        Bow: "弓 定位器"
-        Innocent: "平民 定位器"
-        Watch-Out: "5,20,5;當心!;殺手現在可以更容易地找到倖存者"
-      Pass:
-        Name: "角色傳菜單"
-        Role:
-          Murderer:
-            Name: "變成殺手"
-            Lore:
-              - "花費1個殺手通行證"
-              - "你獲得 %amount%"
-          Detective:
-            Name: "變成偵探"
-            Lore:
-              - "花費 1 個偵探通行證"
-              - "你獲得 %amount%"
-        Fail: "您沒有獲得所需要的%value%個角色通行證"
-        Success: "下一回合你將會是 %value%!"
-        Change: "你獲得了 %number% %value% 通行證！"
-      Playing:
-        Time-Left: "5,20,5;%arena_time% 剩餘!;再過 %arena_time%s 之後,殺手將會失敗"
-        Role:
-          Change: "5,20,5;曾經 %arena_player_role% 已經離開!"
-          Murderer: "5,20,5;角色 | 殺手; 殺死所有人!"
-          Detective: "5,20,5;角色 | 偵探;找出並殺死殺手!"
-          Innocent: "5,20,5;角色| 平民;盡可能活得久一點！"
-        Score:
-          Bonus: "+%score% score (%action%)"
-          Gold: "撿到黃金了！"
-          Action:
-            Kill:
-              Player: "因擊殺玩家"
-              Murderer: "因擊殺殺手"
-              Innocent: "因擊殺平民"
-            Pickup:
-              Gold: "因拾取黃金"
-            Surviving:
-              Time: "因存活30秒"
-              End: "因存活到最後"
-            Win: "因獲得遊戲勝利"
-            Detective: "因 %number% 平民存活"
-        Sword:
-          Soon: "兇手將在 %time% 秒內拿到他的劍！"
-        Special-Blocks:
-          Cauldron:
-            Potion: "請喝下你現在有的藥水！"
-            Hologram: "神秘藥水 - &e1 黃金"
-          Not-Enough-Gold: "要使用這個你需要 %amount% 金子！"
-          Pray:
-            Hologram: "點擊送禮;拉桿祈福"
-            Chat: "你向開發者祈禱！希望他能聽到！"
+      Locator: 
+        Bow: 弓 定位器
+        Innocent: 平民 定位器
+        Watch-Out: 5,20,5;當心!;殺手現在可以更容易地找到倖存者
+      Pass: 
+        Name: 角色傳菜單
+        Role: 
+          Murderer: 
+            Name: 變成殺手
+            Lore: 
+              0: 花費1個殺手通行證
+              1: 你獲得 %amount%
+          Detective: 
+            Name: 變成偵探
+            Lore: 
+              0: 花費 1 個偵探通行證
+              1: 你獲得 %amount%
+        Fail: 您沒有獲得所需要的%value%個角色通行證
+        Success: 下一回合你將會是 %value%!
+        Change: 你獲得了 %number% %value% 通行證！
+      Playing: 
+        Time-Left: 5,20,5;%arena_time% 剩餘!;再過 %arena_time%s 之後,殺手將會失敗
+        Role: 
+          Change: 5,20,5;曾經 %arena_player_role% 已經離開!
+          Murderer: 5,20,5;角色 | 殺手; 殺死所有人!
+          Detective: 5,20,5;角色 | 偵探;找出並殺死殺手!
+          Innocent: 5,20,5;角色| 平民;盡可能活得久一點！
+        Score: 
+          Bonus: +%score% score (%action%)
+          Gold: 撿到黃金了！
+          Action: 
+            Kill: 
+              Player: 因擊殺玩家
+              Murderer: 因擊殺殺手
+              Innocent: 因擊殺平民
+            Pickup: 
+              Gold: 因拾取黃金
+            Surviving: 
+              Time: 因存活30秒
+              End: 因存活到最後
+            Win: 因獲得遊戲勝利
+            Detective: 因 %number% 平民存活
+        Sword: 
+          Soon: 兇手將在 %time% 秒內拿到他的劍！
+        Special-Blocks: 
+          Cauldron: 
+            Potion: 請喝下你現在有的藥水！
+            Hologram: 神秘藥水 - &e1 黃金
+          Not-Enough-Gold: 要使用這個你需要 %amount% 金子！
+          Pray: 
+            Hologram: 點擊送禮;拉桿祈福
+            Chat: 你向開發者祈禱！希望他能聽到！
             Pay: "%color_chat_issue%付費以祈願！"
-            Praise:
-              Heard:
-                - "␣"
-                - "&7 開發者會聽到你的祈禱。"
-                - "%feeling%"
-                - "%praise%"
-              Feeling:
+            Praise: 
+              Heard: 
+                0: ␣
+                1: "&7 開發者會聽到你的祈禱。"
+                2: "%feeling%"
+                3: "%praise%"
+              Feeling: 
                 Blessed: "&a你感覺到了祝福。"
                 Cursed: "&你感覺被詛咒了。"
-              Gifts:
+              Gifts: 
                 Detective-Revelation: "&a你知道&b當前偵探是&a%detective%"
                 Gold-Rush: "&a你獲得了遠古力量。接下來每集收1個金錠，將會收到3個金錠。"
                 Single-Compensation: "&a開發者為你感到驕傲！他獎勵了你5個金錠！"
                 Bow: "&a你收到了來自開發者的鞠躬！"
-              Curses:
+              Curses: 
                 Slowness: "%color_chat_issue%你感覺雙腿比往更沉重了。"
                 Blindness: "%color_chat_issue%你的眼睛不再清晰。"
                 Gold: "%color_chat_issue%開發者給了禁止金錠的詛咒！你現在不能再取金錠了！"
                 Death: "%color_chat_issue%你感受到了死亡的壓倒性. 你知道你將會在數分鐘後死亡!"
-        Bow:
-          Dropped: "5,20,5;弓現在已經掉落！;找到弓以獲得殺死殺手的機會."
-          Pickup: "一位玩家已經撿起了弓！"
-          Shot:
+        Bow: 
+          Dropped: 5,20,5;弓現在已經掉落！;找到弓以獲得殺死殺手的機會.
+          Pickup: 一位玩家已經撿起了弓！
+          Shot: 
             Gold: "&a+1 弓箭！"
-            Title: "5,20,5;;你收集了 10 个金锭獲得了一把弓以及一只箭!"
-# Sign messages
-Signs:
+            Title: 5,20,5;;你收集了 10 个金锭獲得了一把弓以及一只箭!
+Signs: 
   Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% 請在第二行輸入競技場名稱！"
   Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% 該稱呼的競技場不存在！"
   Created: "%plugin_prefix% 告示牌已成功創建！"
   Removed: "%plugin_prefix% 告示牌已成功移除!"
-  Lines:
-    - "%plugin_prefix%"
-    - "%arena_state_placeholder%"
-    - "%arena_name%"
-    - "[%arena_players_size%/%arena_max_players%]"
-# Arena Selector messages
-Arena-Selector:
+  Lines: 
+    0: "%plugin_prefix%"
+    1: "%arena_state_placeholder%"
+    2: "%arena_name%"
+    3: "[%arena_players_size%/%arena_max_players%]"
+Arena-Selector: 
   Inventory-Title: "%plugin_short_command% ▸ 競技場選擇器"
-  Item:
+  Item: 
     Name: "%arena_name%"
-    Lore:
-      - "%plugin_name% - %arena_name%"
-      - "␣"
-      - "␣"
-      - "␣␣在線：%arena_players_size%/%arena_max_players%"
-      - "␣␣狀態：%arena_state_placeholder%"
-      - "␣"
-      - "␣"
-      - "&a點擊加入這個競技場"
-# Validator messages
-Validator:
-  Invalid-Arena-Configuration: "競技場 %arena_name% 配置無效! 缺失節點: %value%"
-  Instance-Started: "競技場 %arena_name% 實例成功啟動！"
-  No-Instances-Created: "當前配置文件沒有競技場實例！"
-# Placeholder messages inside plugin
-Placeholders:
-  Game-States:
+    Lore: 
+      0: "%plugin_name% - %arena_name%"
+      1: ␣
+      2: ␣
+      3: ␣␣在線：%arena_players_size%/%arena_max_players%
+      4: ␣␣狀態：%arena_state_placeholder%
+      5: ␣
+      6: ␣
+      7: "&a點擊加入這個競技場"
+Validator: 
+  Invalid-Arena-Configuration: '競技場 %arena_name% 配置無效! 缺失節點: %value%'
+  Instance-Started: 競技場 %arena_name% 實例成功啟動！
+  No-Instances-Created: 當前配置文件沒有競技場實例！
+Placeholders: 
+  Game-States: 
     Waiting: "&l等待玩家..."
     Starting: "&e&l開始中"
     Full-Game: "&$&l已滿"
     In-Game: "&l遊戲中"
     Ending: "&l結束中"
     Restarting: "&c&l重啟中"
-  Motd:
+  Motd: 
     Waiting: "&l你可以加入這個遊戲..."
     Starting: "&e&l啟動中"
     Full-Game: "&4&l已滿 | 使用其他服務器"
     In-Game: "&l遊戲中 | 點擊觀戰"
     Ending: "&l結束中 | 服務器關閉中"
     Restarting: "&c&l重啟中"
-# Leaderboard messages
-# 
-# Hologram function need to be enabled on config.yml
-Leaderboard:
-  Type:
-    Hologram:
+Leaderboard: 
+  Type: 
+    Hologram: 
       Header: "&6&l 前 %number% 於 %value%"
       Format: "&e%number%. %player% (%value%)"
       Empty-Format: "&e%number%. 空 (0)"
-    Chat:
+    Chat: 
       Header: "&8+------+ &a&l你的數據 &8+------+"
       Header-Other: "&8+--------+ &a數據 &b%player% &8+--------+"
       Footer: "&8+----------------------------+"
       Format: "%value% ▸ &a%number%"
-      Top:
+      Top: 
         Type-Name: "%color_chat_issue%請輸入數據名稱以查看！"
         Header: "&8&m+----------------+ [&6 前 10 &8&m] +----------------+"
         Format: "&e#%number% %player% - %value% %user_statistic%"
-  Statistics:
-    Wins: "勝利 ▸ %number%"
-    Loses: "失敗 ▸ %number%"
-    Games-Played: "遊玩次數 ▸ %number%"
-    Level: "等級 ▸ %number%"
-    Exp: "等級 ▸ %number%"
-    Next-Level-Exp: "升級經驗 ▸ %number%"
-    Kills: "擊殺 ▸ %number%"
-    Deaths: "死亡 ▸ %number%"
-    Highest-Score: "最高分數 ▸ %number%"
-    Murderer-Pass: "殺手通行證 ▸ %number%"
-    Detective-Pass: "偵探通行證 ▸ %number%"
-    Murderer-Contribution: "殺手貢獻 ▸ %number%"
-    Detective-Contribution: "偵探貢獻 ▸ %number%"
+  Statistics: 
+    Wins: 勝利 ▸ %number%
+    Loses: 失敗 ▸ %number%
+    Games-Played: 遊玩次數 ▸ %number%
+    Level: 等級 ▸ %number%
+    Exp: 等級 ▸ %number%
+    Next-Level-Exp: 升級經驗 ▸ %number%
+    Kills: 擊殺 ▸ %number%
+    Deaths: 死亡 ▸ %number%
+    Highest-Score: 最高分數 ▸ %number%
+    Murderer-Pass: 殺手通行證 ▸ %number%
+    Detective-Pass: 偵探通行證 ▸ %number%
+    Murderer-Contribution: 殺手貢獻 ▸ %number%
+    Detective-Contribution: 偵探貢獻 ▸ %number%
   Invalid-Name: "%color_chat_issue%數據信息的名稱無效！類型: %value%"
   Unknown-Player: "%color_chat_issue%未知玩家"
-# Don't edit it. But who's stopping you? It's your server!
-# Really, don't edit ;p
-# You edited it, huh? Next time hurt yourself!
-Do-Not-Edit:
+Do-Not-Edit: 
   File-Version: 1
   Core-Version: 1
