@@ -1,29 +1,16 @@
-# You can translate MurderMystery messages here.
-# Color codes (&) supported.
-# 
-# Use \n to make new line
-# Some messages like item
-# descriptions don't support new lines
-# they are wrapped every 40 characters automatically
-# 
-# Some messages support their own placeholders
-# like %player%, %kit% etc.
-# 
-# Color scheme
-Color:
-  Placeholder:
+Color: 
+  Placeholder: 
     Value: "&4"
     Number: "&4"
     Player: "&b"
     Other: "&4"
-  Chat:
+  Chat: 
     Issue: "&c"
     Messages: "&7"
-    Special-Char:
+    Special-Char: 
       Contains: "[,],(,),{,},■,/,|,▸"
       Before: "&8"
-# Command messages
-Commands:
+Commands: 
   Did-You-Mean: "%plugin_prefix% Did you mean /%value%?"
   Command-Executed: "%plugin_prefix% Command successfully executed!"
   Teleported-To-Lobby: "%plugin_prefix% Teleported to lobby!"
@@ -39,136 +26,123 @@ Commands:
   Player-Not-Found: "%color_chat_issue%%plugin_prefix% Target player %player% doesn't exist!"
   Invalid-Location-Teleport: "%color_chat_issue%%plugin_prefix% Location to teleport is invalid!"
   Wrong-Usage: "%color_chat_issue%%plugin_prefix% Wrong usage. Do %value%"
-  Admin:
+  Admin: 
     Adjust-Statistic: "%plugin_prefix% Statistic %value% of %player% is now %number%!"
     Reload-Success: "%plugin_prefix% Arenas reloaded!"
-    List:
+    List: 
       Header: "%plugin_name% arenas: Name State Players"
       Format: "%arena_name% %arena_state_placeholder% %arena_players_size%/%arena_max_players%"
       No-Arenas: "%color_chat_issue%%plugin_prefix% There are no game instances!"
-    Spychat:
+    Spychat: 
       Toggled: "%plugin_prefix% Game spy chat toggled to %value%"
-  Main:
+  Main: 
     Header: "&6----------------{%plugin_name% commands}----------"
-    Description:
-      - "&aGame commands:"
-      - "&b/%plugin_short_command% stats: Shows your stats!"
-      - "&b/%plugin_short_command% leave: Quits current arena!"
-      - "&b/%plugin_short_command% join <arena>: Joins specified arena!"
-      - "&b/%plugin_short_command% top <statistic>: Shows top 10 players!"
-      - "&b/%plugin_short_command% randomjoin: Join random arena!"
+    Description: 
+      0: "&aGame commands:"
+      1: "&b/%plugin_short_command% stats: Shows your stats!"
+      2: "&b/%plugin_short_command% leave: Quits current arena!"
+      3: "&b/%plugin_short_command% join <arena>: Joins specified arena!"
+      4: "&b/%plugin_short_command% top <statistic>: Shows top 10 players!"
+      5: "&b/%plugin_short_command% randomjoin: Join random arena!"
     Admin-Bonus-Description: "&b/%plugin_short_command%: Shows all the admin commands"
     Footer: "&6-------------------------------------------------"
-# In-Game scoreboard messages
-# 
-# Please do not use more chars than the scoreboard can handle!
-# Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
-# Placeholders:
-# https://wiki.plugily.xyz/REPLACEWITHPROJECTNAME/placeholders/language
-Scoreboard:
+Scoreboard: 
   Title: "&a&l%plugin_name%"
-  Roles:
+  Roles: 
     Detective: "&bDetective"
     Murderer: "&cMurderer"
     Innocent: "&eInnocent"
-    Dead: "Dead"
-  Detective:
-    Alive: "Detective &aAlive"
-    Bow:
+    Dead: Dead
+  Detective: 
+    Alive: Detective &aAlive
+    Bow: 
       Dropped: "%color_chat_issue%Bow Dropped"
-      Picked: "Bow Not Dropped"
-  Content:
-    Waiting:
-      - " "
-      - "■ Players | %arena_players_size%"
-      - " "
-      - "■ Minimum Players | %arena_min_players%"
-      - " "
-      - "   www.plugily.xyz"
-    Starting:
-      - " "
-      - "■ Starting In | %arena_time%"
-      - " "
-      - "■ Players | %arena_players_size%"
-      - " "
-      - "■ Minimum Players | %arena_min_players%"
-      - " "
-      - "   www.plugily.xyz"
-    # Contents of scoreboard while ingame
-    In-Game:
-      - " "
-      - "■ Role | %arena_player_role%"
-      - "&f"
-      - "■ Innocents | %arena_innocent_size%"
-      - "&f"
-      - "■ Time | %arena_time%"
-      - " "
-      - "■ %arena_detective_status%"
-      - " "
-      - "■ Score | %user_statistic_local_score%"
-      - " "
-      - "   www.plugily.xyz"
-    In-Game-Murderer:
-      - " "
-      - "■ Role | %arena_player_role%"
-      - "&f"
-      - "■ Innocents | %arena_innocent_size%"
-      - "&f"
-      - "■ Time | %arena_time%"
-      - " "
-      - "■ %arena_detective_status%"
-      - " "
-      - "■ Kills | %user_statistic_local_kills%"
-      - " "
-      - "■ Score | %user_statistic_local_score%"
-      - " "
-      - "   www.plugily.xyz"
-    # Contents of scoreboard while state is ending
-    Ending:
-      - "&f"
-      - "&f"
-      - "&cGAME ENDED"
-      - " "
-      - "&f"
-      - "&f"
-      - " "
-      - "   www.plugily.xyz"
-    # Contents of scoreboard while state is restarting
-    Restarting:
-      - "&f"
-      - "&f"
-      - "&cRESTARTING GAME"
-      - " "
-      - "&f"
-      - "&f"
-      - " "
-      - "   www.plugily.xyz"
-# Bossbar messages
-# 
-# Bossbar needs to be enabled on config.yml
-Bossbar:
+      Picked: Bow Not Dropped
+  Content: 
+    Waiting: 
+      0: " "
+      1: ■ Players | %arena_players_size%
+      2: " "
+      3: ■ Minimum Players | %arena_min_players%
+      4: " "
+      5: "   www.plugily.xyz"
+    Starting: 
+      0: " "
+      1: ■ Starting In | %arena_time%
+      2: " "
+      3: ■ Players | %arena_players_size%
+      4: " "
+      5: ■ Minimum Players | %arena_min_players%
+      6: " "
+      7: "   www.plugily.xyz"
+    In-Game: 
+      0: " "
+      1: ■ Role | %arena_player_role%
+      2: "&f"
+      3: ■ Innocents | %arena_innocent_size%
+      4: "&f"
+      5: ■ Time | %arena_time%
+      6: " "
+      7: ■ %arena_detective_status%
+      8: " "
+      9: ■ Score | %user_statistic_local_score%
+      10: " "
+      11: "   www.plugily.xyz"
+    In-Game-Murderer: 
+      0: " "
+      1: ■ Role | %arena_player_role%
+      2: "&f"
+      3: ■ Innocents | %arena_innocent_size%
+      4: "&f"
+      5: ■ Time | %arena_time%
+      6: " "
+      7: ■ %arena_detective_status%
+      8: " "
+      9: ■ Kills | %user_statistic_local_kills%
+      10: " "
+      11: ■ Score | %user_statistic_local_score%
+      12: " "
+      13: "   www.plugily.xyz"
+    Ending: 
+      0: "&f"
+      1: "&f"
+      2: "&cGAME ENDED"
+      3: " "
+      4: "&f"
+      5: "&f"
+      6: " "
+      7: "   www.plugily.xyz"
+    Restarting: 
+      0: "&f"
+      1: "&f"
+      2: "&cRESTARTING GAME"
+      3: " "
+      4: "&f"
+      5: "&f"
+      6: " "
+      7: "   www.plugily.xyz"
+Bossbar: 
   Title: "%plugin_name% - www.plugily.xyz"
-  Content:
-    Waiting:
-      - "Waiting for more players..."
-    Starting:
-      - "Starting in: %arena_time%"
-    In-Game:
-      - "Playing %plugin_name_uppercase% on PLUGILY.XYZ"
-      - "Check the plugin creator out on PLUGILY.XYZ"
-      - "Your role %arena_player_role%"
-    Ending:
-      - "Game has ended! You were playing on PLUGILY.XYZ"
-    Restarting:
-      - "Restarting the arena. You will be moved soon!"
-# In-Game Messages
-In-Game:
+  Content: 
+    Waiting: 
+      0: Waiting for more players...
+    Starting: 
+      0: 'Starting in: %arena_time%'
+    In-Game: 
+      0: Playing %plugin_name_uppercase% on PLUGILY.XYZ
+      1: Check the plugin creator out on PLUGILY.XYZ
+      2: Your role %arena_player_role%
+    Ending: 
+      0: Game has ended! You were playing on PLUGILY.XYZ
+    Restarting: 
+      0: Restarting the arena. You will be moved soon!
+In-Game: 
   # Used in most game messages.
-  Plugin-Prefix: "(%plugin_name%)"
+  Plugin-Prefix: (%plugin_name%)
   Game-Chat-Format: "[%user_statistic_level%] %player% | %message%"
   You-Leveled-Up: "%plugin_prefix% You leveled up! You're now level %number%!"
   Commands-Blocked: "%color_chat_issue%%plugin_prefix% You have to leave the game first to perform commands. The only command that works is /%plugin_short_command% leave!"
-  Join:
+  Join: 
     Already-Playing: "%color_chat_issue%%plugin_prefix% You are already queued for a game! You can leave a game with /%plugin_short_command% leave."
     No-Permission: "%color_chat_issue%%plugin_prefix% You don't have %value% permission to join this arena!"
     Full-Game: "%color_chat_issue%%plugin_prefix% You don't have the permission to join full games!"
@@ -176,37 +150,37 @@ In-Game:
     # Join cancelled via external plugin that uses the API of our plugin.
     Cancelled-Via-API: "%color_chat_issue%%plugin_prefix% You can't join this game!"
     As-Party-Member: "%color_chat_issue%%plugin_prefix% You joined %arena_name% because the party leader joined it!"
-    Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% Arena is not configured yet! Contact staff!"
-    Title: "20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%"
-  Death:
+    Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% Arena is not configured yet! Contact your server's staff!"
+    Title: 20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%
+  Death: 
     Tag: "&8Dead"
     Screen: "%color_chat_issue%You died!"
-  Spectator:
+  Spectator: 
     Blocked: "%color_chat_issue%%plugin_prefix% Spectators are disabled for this arena"
     You-Are-Spectator: "%plugin_prefix% You're now a spectator! You can fly now!"
     Spectator-Menu-Name: "%color_chat_issue%Alive players list"
     Target-Player-Health: "%color_chat_issue%Health: %number% | Role: %arena_player_role%"
     Spectator-Warning: "%plugin_prefix% You are a spectator!"
     Teleport: "%plugin_prefix% Teleported to %player%"
-    Menu:
-      Settings:
-        Status:
-          Enabled: "Enabled"
-          Disabled: "Disabled"
-        Changed-Speed: "Changed Speed to %number%"
+    Menu: 
+      Settings: 
+        Status: 
+          Enabled: Enabled
+          Disabled: Disabled
+        Changed-Speed: Changed Speed to %number%
         Auto-Teleport: "%value% auto teleport"
-        Target-Player:
+        Target-Player: 
           Action-Bar: "%number% blocks away | Target %player%"
         Night-Vision: "%value% night vision"
-        First-Person-Mode:
+        First-Person-Mode: 
           Action-Bar: "&eSNEAK &cto leave! | Target %player%"
           Title: "&eSNEAK &cto leave!"
         Visibility: "%value% other spectator players"
-  Messages:
+  Messages: 
     Join: "%plugin_prefix% %player% joined the game (%arena_players_size%/%arena_max_players%)!"
     Leave: "%plugin_prefix% %player% left the game (%arena_players_size%/%arena_max_players%)!"
     Death: "%plugin_prefix% %player% died!"
-    Lobby:
+    Lobby: 
       Start-In: "%plugin_prefix% The game starts in %arena_time% seconds!"
       Waiting-For-Players: "%plugin_prefix% Waiting for players... We need at least %arena_min_players% players to start."
       Enough-Players-To-Start: "%plugin_prefix% We now have enough players. The game is starting soon!"
@@ -216,200 +190,190 @@ In-Game:
       Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% %player% got removed from the game to make a place for premium players!"
       You-Were-Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% You got kicked out of the game to make a place for a premium player!"
       Not-Enough-Space-For-Party: "%color_chat_issue%%plugin_prefix% Your party is bigger than free places on the arena %arena_name%"
-    Game-End:
-      Summary:
-        - "&a&m--------------------------------------------------"
-        - "%plugin_name%"
-        - " "
-        - "%arena_summary%"
-        - "%arena_summary_player%"
-        - " "
-        - "&7Detective: %arena_detective_list%"
-        - "&7Murderer: %arena_murderer_list% (%arena_murderer_kills%)"
-        - "&7Hero: %arena_hero%"
-        - " "
-        - "&a&m--------------------------------------------------"
-      Placeholders:
+    Game-End: 
+      Summary: 
+        0: "&a&m--------------------------------------------------"
+        1: "%plugin_name%"
+        2: " "
+        3: "%arena_summary%"
+        4: "%arena_summary_player%"
+        5: " "
+        6: "&7Detective: %arena_detective_list%"
+        7: "&7Murderer: %arena_murderer_list% (%arena_murderer_kills%)"
+        8: "&7Hero: %arena_hero%"
+        9: " "
+        10: "&a&m--------------------------------------------------"
+      Placeholders: 
         Win: "&aYou won the game"
         Lose: "%color_chat_issue%You lost the game"
         Players: "&cThere are not enough players anymore. Arena got force stopped!"
-        Murderer:
-          Stopped: "The Murderer has been stopped!"
-          Killed:
-            You: "The murderer killed you!"
-            All: "The Murderer has killed everyone."
-        Innocent:
-          Killed:
-            You: "A player killed you with a Bow!"
-            Wrongly: "You killed an innocent player!"
-        Nobody: "Nobody"
-    Admin:
+        Murderer: 
+          Stopped: The Murderer has been stopped!
+          Killed: 
+            You: The murderer killed you!
+            All: The Murderer has killed everyone.
+        Innocent: 
+          Killed: 
+            You: A player killed you with a Bow!
+            Wrongly: You killed an innocent player!
+        Nobody: Nobody
+    Admin: 
       Set-Starting-In-To-0: "%plugin_prefix% An admin set waiting time to 0. The game starts now!"
-    Arena:
-      Chances:
+    Arena: 
+      Chances: 
         Action-Bar: "&cMurderer Chance: %arena_murderer_chance% &a- &bDetective Chance: %arena_detective_chance%"
       Cooldown: "&8&l[%value%&8&l] &6%number% seconds"
-      Locator:
-        Bow: "Bow locator"
-        Innocent: "Innocent locator"
-        Watch-Out: "5,20,5;Watch out!;The Murderer can now find survivors easily"
-      Pass:
-        Name: "Role pass menu"
-        Role:
-          Murderer:
+      Locator: 
+        Bow: Bow locator
+        Innocent: Innocent locator
+        Watch-Out: 5,20,5;Watch out!;The Murderer can now find survivors easily
+      Pass: 
+        Name: Role pass menu
+        Role: 
+          Murderer: 
             Name: "&cBe murderer"
-            Lore:
-              - "Cost 1 murderer pass"
-              - "You got %number%"
-          Detective:
+            Lore: 
+              0: Cost 1 murderer pass
+              1: You got %number%
+          Detective: 
             Name: "&bBe detective"
-            Lore:
-              - "Cost 1 detective pass"
-              - "You got %number%"
-        Fail: "You do not got enough passes for %value% role"
-        Success: "You will be %value% next round!"
-        Change: "You now got %number% %value% passes!"
-      Playing:
-        Time-Left: "5,20,5;%arena_time% seconds left!;After %arena_time%s the Murderer will lose"
-        Role:
-          Change: "5,20,5;Previous %arena_player_role% has left!"
-          Murderer: "5,20,5;ROLE | MURDERER; Kill all players!"
-          Detective: "5,20,5;ROLE | DETECTIVE;Find and kill the murderer!"
-          Innocent: "5,20,5;ROLE | INNOCENT;Stay alive as long as possible!"
-        Score:
-          Bonus: "+%number% score (%value%)"
-          Gold: "Picked up gold!"
-          Action:
-            Kill:
-              Player: "for killing players"
-              Murderer: "for killing murderer"
-              Innocent: "for killing innocent"
-            Pickup:
-              Gold: "for gold pickup"
-            Surviving:
-              Time: "for surviving 30 seconds"
-              End: "for surviving till end"
-            Win: "for winning the game"
-            Detective: "for %number% innocents survived"
-        Sword:
-          Soon: "The Murderer gets their sword in %number% seconds!"
-        Special-Blocks:
-          Cauldron:
-            Potion: "Please drink your current potion!"
-            Hologram: "Mystery Potion - &e1 Gold"
-          Not-Enough-Gold: "You need %number% gold for this!"
-          Pray:
-            Hologram: "Click to give gift;Pull lever to pray"
-            Chat: "You prayed to the developer! Hope he will hear that!"
+            Lore: 
+              0: Cost 1 detective pass
+              1: You got %number%
+        Fail: You do not got enough passes for %value% role
+        Success: You will be %value% next round!
+        Change: You now got %number% %value% passes!
+      Playing: 
+        Time-Left: 5,20,5;%arena_time% seconds left!;After %arena_time%s the Murderer will lose
+        Role: 
+          Change: 5,20,5;Previous %arena_player_role% has left!
+          Murderer: 5,20,5;ROLE | MURDERER; Kill all players!
+          Detective: 5,20,5;ROLE | DETECTIVE;Find and kill the murderer!
+          Innocent: 5,20,5;ROLE | INNOCENT;Stay alive as long as possible!
+        Score: 
+          Bonus: +%number% score (%value%)
+          Gold: Picked up gold!
+          Action: 
+            Kill: 
+              Player: for killing players
+              Murderer: for killing murderer
+              Innocent: for killing innocent
+            Pickup: 
+              Gold: for gold pickup
+            Surviving: 
+              Time: for surviving 30 seconds
+              End: for surviving till end
+            Win: for winning the game
+            Detective: for %number% innocents survived
+        Sword: 
+          Soon: The Murderer gets their sword in %number% seconds!
+        Special-Blocks: 
+          Cauldron: 
+            Potion: Please drink your current potion!
+            Hologram: Mystery Potion - &e1 Gold
+          Not-Enough-Gold: You need %number% gold for this!
+          Pray: 
+            Hologram: Click to give gift;Pull lever to pray
+            Chat: You prayed to the developer! Hope he will hear that!
             Pay: "%color_chat_issue%Pay to pray!"
-            Praise:
-              Heard:
-                - " "
-                - "&7Developer hears your prayer."
-                - "%feeling%"
-                - "%praise%"
-              Feeling:
+            Praise: 
+              Heard: 
+                0: " "
+                1: "&7Developer hears your prayer."
+                2: "%feeling%"
+                3: "%praise%"
+              Feeling: 
                 Blessed: "&aYou feel blessed."
                 Cursed: "&cYou feel cursed."
-              Gifts:
+              Gifts: 
                 Detective-Revelation: "&aYou know that &bCurrent detective &ais %detective%"
                 Gold-Rush: "&aYou received power of ancients. For each gold you collect, you will receive 3 gold now."
                 Single-Compensation: "&aDeveloper is proud of you! He rewarded you with 5 gold ingots!"
                 Bow: "&aYou received bow from pleased developer!"
-              Curses:
+              Curses: 
                 Slowness: "%color_chat_issue%Your legs are much heavier than before."
                 Blindness: "%color_chat_issue%Your eyes can't see that well anymore."
                 Gold: "%color_chat_issue%Developer cursed you with gold ban! You cannot longer pickup any gold!"
                 Death: "%color_chat_issue%You feel overpowering force of death. You know that you'll be dead in a minute!"
-        Bow:
-          Dropped: "5,20,5;The Bow has been dropped!;Find the Bow for a chance to kill the Murderer."
-          Pickup: "A player has picked up the Bow!"
-          Shot:
+        Bow: 
+          Dropped: 5,20,5;The Bow has been dropped!;Find the Bow for a chance to kill the Murderer.
+          Pickup: A player has picked up the Bow!
+          Shot: 
             Gold: "&a+1 Bow Shot!"
-            Title: "5,20,5;;You collected 10 gold and got an arrow!"
-# Sign messages
-Signs:
+            Title: 5,20,5;;You collected 10 gold and got an arrow!
+Signs: 
   Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Please type arena name in second line!"
   Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% Arena with that name doesn't exists!"
   Created: "%plugin_prefix% Sign created successfully!"
   Removed: "%plugin_prefix% Sign successfully removed!"
-  Lines:
-    - "%plugin_prefix%"
-    - "%arena_state_placeholder%"
-    - "%arena_name%"
-    - "[%arena_players_size%/%arena_max_players%]"
-# Arena Selector messages
-Arena-Selector:
+  Lines: 
+    0: "%plugin_prefix%"
+    1: "%arena_state_placeholder%"
+    2: "%arena_name%"
+    3: "[%arena_players_size%/%arena_max_players%]"
+Arena-Selector: 
   Inventory-Title: "%plugin_short_command% ▸ Arena selector"
-  Item:
+  Item: 
     Name: "%arena_name%"
-    Lore:
-      - "%plugin_name% - %arena_name%"
-      - " "
-      - " "
-      - "  Online: %arena_players_size%/%arena_max_players%"
-      - "  State: %arena_state_placeholder%"
-      - " "
-      - " "
-      - "&aClick to join this arena"
-# Validator messages
-Validator:
-  Invalid-Arena-Configuration: "Arena %arena_name% has invalid configuration! Missing node: %value%"
-  Instance-Started: "Arena %arena_name% instance successfully started!"
-  No-Instances-Created: "There are no arena instances created in configuration!"
-# Placeholder messages inside plugin
-Placeholders:
-  Game-States:
+    Lore: 
+      0: "%plugin_name% - %arena_name%"
+      1: " "
+      2: " "
+      3: "  Online: %arena_players_size%/%arena_max_players%"
+      4: "  State: %arena_state_placeholder%"
+      5: " "
+      6: " "
+      7: "&aClick to join this arena"
+Validator: 
+  Invalid-Arena-Configuration: 'Arena %arena_name% has invalid configuration! Missing node: %value%'
+  Instance-Started: Arena %arena_name% instance successfully started!
+  No-Instances-Created: There are no arena instances created in configuration!
+Placeholders: 
+  Game-States: 
     Waiting: "&lWaiting for players..."
     Starting: "&e&lStarting"
     Full-Game: "&4&lFULL"
     In-Game: "&lIn-game"
     Ending: "&lEnding"
     Restarting: "&c&lRestarting"
-  Motd:
+  Motd: 
     Waiting: "&lYou can join this game..."
     Starting: "&e&lStarting"
     Full-Game: "&4&lFULL | Use another Server"
     In-Game: "&lIn-game | Click to spectate"
     Ending: "&lEnding | Server is closing"
     Restarting: "&c&lRestarting"
-# Leaderboard messages
-# 
-# Hologram function need to be enabled on config.yml
-Leaderboard:
-  Type:
-    Hologram:
+Leaderboard: 
+  Type: 
+    Hologram: 
       Header: "&6&lTop %number% in %value%"
       Format: "&e%number%. %player% (%value%)"
       Empty-Format: "&e%number%. Empty (0)"
-    Chat:
+    Chat: 
       Header: "&8+-------+ &a&lYOUR STATS &8+-------+"
       Header-Other: "&8+---------+ &aSTATS FOR &b%player% &8+---------+"
       Footer: "&8+-----------------------------+"
       Format: "%value% ▸ &a%number%"
-      Top:
+      Top: 
         Type-Name: "%color_chat_issue%Please type statistic name to view!"
         Header: "&8&m+----------------+ [&6 Top 10 &8&m] +----------------+"
         Format: "&e#%number% %player% - %value% %user_statistic%"
-  Statistics:
-    Wins: "Wins ▸ %number%"
-    Loses: "Loses ▸ %number%"
-    Games-Played: "Games Played ▸ %number%"
-    Level: "Level ▸ %number%"
-    Exp: "Experience ▸ %number%"
-    Next-Level-Exp: "Exp to Level Up ▸ %number%"
-    Kills: "Kills ▸ %number%"
-    Deaths: "Deaths ▸ %number%"
-    Highest-Score: "Highest score ▸ %number%"
-    Murderer-Pass: "Murderer passes ▸ %number%"
-    Detective-Pass: "Detective passes ▸ %number%"
-    Murderer-Contribution: "Murderer contribution ▸ %number%"
-    Detective-Contribution: "Detective contribution ▸ %number%"
+  Statistics: 
+    Wins: Wins ▸ %number%
+    Loses: Loses ▸ %number%
+    Games-Played: Games Played ▸ %number%
+    Level: Level ▸ %number%
+    Exp: Experience ▸ %number%
+    Next-Level-Exp: Exp to Level Up ▸ %number%
+    Kills: Kills ▸ %number%
+    Deaths: Deaths ▸ %number%
+    Highest-Score: Highest score ▸ %number%
+    Murderer-Pass: Murderer passes ▸ %number%
+    Detective-Pass: Detective passes ▸ %number%
+    Murderer-Contribution: Murderer contribution ▸ %number%
+    Detective-Contribution: Detective contribution ▸ %number%
   Invalid-Name: "%color_chat_issue%Name of statistic is invalid! Type: %value%"
   Unknown-Player: "%color_chat_issue%Unknown Player"
-# Don't edit it. But who's stopping you? It's your server!
-# Really, don't edit ;p
-# You edited it, huh? Next time hurt yourself!
-Do-Not-Edit:
+Do-Not-Edit: 
   File-Version: 1
   Core-Version: 1
