@@ -1,5 +1,4 @@
-# Command messages
-Commands:
+Commands: 
   Did-You-Mean: "%plugin_prefix% Вы имеете ввиду /%value%?"
   Command-Executed: "%plugin_prefix% Команда успешно выполнена!"
   Teleported-To-Lobby: "%plugin_prefix% Вы телепортированы в лобби!"
@@ -15,122 +14,109 @@ Commands:
   Player-Not-Found: "%color_chat_issue%%plugin_prefix% Игрок %player% не существует!"
   Invalid-Location-Teleport: "%color_chat_issue%%plugin_prefix% Несуществующая локация для телепорта!"
   Wrong-Usage: "%color_chat_issue%%plugin_prefix% Неправильное использование. Используйте %value%"
-  Admin:
-    Added-Orbs: "Монеты выданы игроку!"
-    Received-Orbs: "Вы получили %number% монет!"
+  Admin: 
+    Added-Orbs: Монеты выданы игроку!
+    Received-Orbs: Вы получили %number% монет!
     Added-Level: "&7Уровень игрока повышен!"
     Reload-Success: "%plugin_prefix% Арены перезагружены!"
-    List:
+    List: 
       Header: "%plugin_name% арены: Имя Состояние Игроки"
       Format: "%arena_name% %arena_state_placeholder% %arena_players_size%/%arena_max_players%"
       No-Arenas: "%color_chat_issue%%plugin_prefix% Не найдено игр!"
-    Spychat:
+    Spychat: 
       Toggled: "%plugin_prefix% Режим слежения в чате изменен на %value%"
     Adjust-Statistic: "%plugin_prefix% Статистика %value% %player% теперь %number%!"
-  Main:
+  Main: 
     Header: "&6----------------{%plugin_name% команды}----------"
-    Description:
-      - "&aИгровые команды:"
-      - "&b/%plugin_short_command% stats: Показать вашу статистику!"
-      - "&b/%plugin_short_command% leave: Покинуть текущую арену!"
-      - "&b/%plugin_short_command% join <арена>: Подключится к арене!"
-      - "&b/%plugin_short_command% top <статистика>: Показать ТОП-10 игроков!"
-      - "&b/%plugin_short_command% randomjoin: Подключиться к случайной арене!"
+    Description: 
+      0: "&aИгровые команды:"
+      1: "&b/%plugin_short_command% stats: Показать вашу статистику!"
+      2: "&b/%plugin_short_command% leave: Покинуть текущую арену!"
+      3: "&b/%plugin_short_command% join <арена>: Подключится к арене!"
+      4: "&b/%plugin_short_command% top <статистика>: Показать ТОП-10 игроков!"
+      5: "&b/%plugin_short_command% randomjoin: Подключиться к случайной арене!"
     Admin-Bonus-Description: "&b/%plugin_short_command%: Отобразить все команды администратора"
     Footer: "&6-------------------------------------------------"
-# In-Game scoreboard messages
-# 
-# Please do not use more chars than the scoreboard can handle!
-# Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
-# Placeholders:
-# https://wiki.plugily.xyz/villagedefense/placeholders/language
-Scoreboard:
+Scoreboard: 
   Title: "&a&l%plugin_name%"
-  Content:
-    Waiting:
-      - "&fИгроков: &e%arena_players_size%"
-      - "■ Игроков | %arena_players_size%"
-      - "&fМинимум игроков: &e%arena_min_players%"
-      - "■ Минимум Игроков | %arena_min_players%"
-      - "&ewww.plugily.xyz"
-      - "   www.plugily.xyz"
-    Starting:
-      - "&fНачало через: &e%arena_time%"
-      - "■ Начало через | %arena_time%"
-      - "&fИгроков: &e%arena_players_size%"
-      - "■ Игроков | %arena_players_size%"
-      - "&fМинимум игроков: &e%arena_min_players%"
-      - "■ Минимум Игроков | %arena_min_players%"
-      - "&ewww.plugily.xyz"
-      - "   www.plugily.xyz"
-    # Contents of scoreboard while ingame
-    In-Game:
-      - "&fЖителей осталось: &e%arena_villager_size%"
-      - "■ Жителей | %arena_villager_size%"
-      - "■ Игроков | %arena_players_left_size%"
-      - "■ Зомби | %arena_zombie_size_left%"
-      - "&fГнилой плоти: &e%arena_rotten_flesh_amount%"
-      - "■ Гнилой Плоти | %arena_rotten_flesh_amount%"
-      - "■ Монет | %user_statistic_orbs%"
-      - "&ewww.plugily.xyz"
-      - "   www.plugily.xyz"
-    In-Game-Waiting:
-      - "&fОсталось жителей: &e%arena_villager_size%"
-      - "■ Жителей | %arena_villager_size%"
-      - "■ Игроков | %arena_players_left_size%"
-      - " "
-      - "■ До следующей волны | %arena_time%"
-      - " "
-      - "■ Гнилой Плоти | %arena_rotten_flesh_amount%"
-      - "■ Монет | %user_statistic_orbs%"
-      - " "
-      - "   www.plugily.xyz"
-    # Contents of scoreboard while state is ending
-    Ending:
-      - "&f"
-      - "&f"
-      - "■ &cИГРА ОКОНЧЕНА"
-      - " "
-      - "&f"
-      - "&f"
-      - " "
-      - "   www.plugily.xyz"
-    # Contents of scoreboard while state is restarting
-    Restarting:
-      - "&f"
-      - "&f"
-      - "■ &cПЕРЕЗАПУСК ИГРЫ"
-      - " "
-      - "&f"
-      - "&f"
-      - " "
-      - "   www.plugily.xyz"
-# Bossbar messages
-# 
-# Bossbar needs to be enabled on config.yml
-Bossbar:
+  Content: 
+    Waiting: 
+      0: "&fИгроков: &e%arena_players_size%"
+      1: ■ Игроков | %arena_players_size%
+      2: "&fМинимум игроков: &e%arena_min_players%"
+      3: ■ Минимум Игроков | %arena_min_players%
+      4: "&ewww.plugily.xyz"
+      5: "   www.plugily.xyz"
+    Starting: 
+      0: "&fНачало через: &e%arena_time%"
+      1: ■ Начало через | %arena_time%
+      2: "&fИгроков: &e%arena_players_size%"
+      3: ■ Игроков | %arena_players_size%
+      4: "&fМинимум игроков: &e%arena_min_players%"
+      5: ■ Минимум Игроков | %arena_min_players%
+      6: "&ewww.plugily.xyz"
+      7: "   www.plugily.xyz"
+    In-Game: 
+      0: "&fЖителей осталось: &e%arena_villager_size%"
+      1: ■ Жителей | %arena_villager_size%
+      2: ■ Игроков | %arena_players_left_size%
+      3: ■ Зомби | %arena_zombie_size_left%
+      4: "&fГнилой плоти: &e%arena_rotten_flesh_amount%"
+      5: ■ Гнилой Плоти | %arena_rotten_flesh_amount%
+      6: ■ Монет | %user_statistic_orbs%
+      7: "&ewww.plugily.xyz"
+      8: "   www.plugily.xyz"
+    In-Game-Waiting: 
+      0: "&fОсталось жителей: &e%arena_villager_size%"
+      1: ■ Жителей | %arena_villager_size%
+      2: ■ Игроков | %arena_players_left_size%
+      3: " "
+      4: ■ До следующей волны | %arena_time%
+      5: " "
+      6: ■ Гнилой Плоти | %arena_rotten_flesh_amount%
+      7: ■ Монет | %user_statistic_orbs%
+      8: " "
+      9: "   www.plugily.xyz"
+    Ending: 
+      0: "&f"
+      1: "&f"
+      2: ■ &cИГРА ОКОНЧЕНА
+      3: " "
+      4: "&f"
+      5: "&f"
+      6: " "
+      7: "   www.plugily.xyz"
+    Restarting: 
+      0: "&f"
+      1: "&f"
+      2: ■ &cПЕРЕЗАПУСК ИГРЫ
+      3: " "
+      4: "&f"
+      5: "&f"
+      6: " "
+      7: "   www.plugily.xyz"
+Bossbar: 
   Title: "&a&l%plugin_name% &6- www.plugily.xyz"
-  Content:
-    Waiting:
-      - "Ожидание игроков..."
-    Starting:
-      - "До начала: %arena_time%"
-    In-Game:
-      - "Вы играете в %plugin_name_uppercase% на PLUGILY.XYZ"
-      - "Навестите создателя плагина на сайте PLUGILY.XYZ"
-      - "Текущая волна %arena_option_wave%"
-    Ending:
-      - "Игра окончена! Вы играли на PLUGILY.XYZ"
-    Restarting:
-      - "Перезапуск арены. Вы будете перемещены!"
-# In-Game Messages
-In-Game:
+  Content: 
+    Waiting: 
+      0: Ожидание игроков...
+    Starting: 
+      0: 'До начала: %arena_time%'
+    In-Game: 
+      0: Вы играете в %plugin_name_uppercase% на PLUGILY.XYZ
+      1: Навестите создателя плагина на сайте PLUGILY.XYZ
+      2: Текущая волна %arena_option_wave%
+    Ending: 
+      0: Игра окончена! Вы играли на PLUGILY.XYZ
+    Restarting: 
+      0: Перезапуск арены. Вы будете перемещены!
+In-Game: 
   # Used in most game messages.
-  Plugin-Prefix: "(%plugin_name%)"
+  Plugin-Prefix: (%plugin_name%)
   Game-Chat-Format: "[%user_statistic_level%][%kit%] %player% | %message%"
   You-Leveled-Up: "%plugin_prefix% Ваш уровень повышен! Вы теперь на %number% уровне!"
   Commands-Blocked: "%color_chat_issue%%plugin_prefix% Вы должны выйти из игры чтобы исполнять команды. Сейчас вам доступна только команда /%plugin_short_command% leave!"
-  Join:
+  Join: 
     Already-Playing: "%color_chat_issue%%plugin_prefix% Вы уже в очереди игры! Вы можете покинуть игру с помощью /%plugin_short_command% leave."
     No-Permission: "%color_chat_issue%%plugin_prefix% У вас нет права %value% чтобы присоединиться к этой арене!"
     Full-Game: "%color_chat_issue%%plugin_prefix% Вы не можете присоединяться к переполненым играм!"
@@ -139,36 +125,36 @@ In-Game:
     Cancelled-Via-API: "%color_chat_issue%%plugin_prefix% Вы не можете присоединиться к этой игре!"
     As-Party-Member: "%color_chat_issue%%plugin_prefix% Вы присоединились к %arena_name% так как создатель группы присоединился к ней!"
     Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% Арена ещё не настроена! Свяжитесь с администрацией сервера!"
-    Title: "20, 30, 20;%arena_name%;%arena_players_size%/%arena_max_players%"
-  Death:
+    Title: 20, 30, 20;%arena_name%;%arena_players_size%/%arena_max_players%
+  Death: 
     Tag: "&8Мёртвый"
     Screen: "%color_chat_issue%Вы умерли!"
-  Spectator:
+  Spectator: 
     You-Are-Spectator: "%plugin_prefix% Теперь вы наблюдатель! Можно летать!"
     Spectator-Menu-Name: "%color_chat_issue%Живые игроки"
     Target-Player-Health: "%color_chat_issue%Здоровье: %number%"
     Spectator-Warning: "%plugin_prefix% Вы наблюдатель!"
     Teleport: "%plugin_prefix% Телепортация к %player%"
-    Menu:
-      Settings:
-        Status:
-          Enabled: "Включено"
-          Disabled: "Выключено"
-        Changed-Speed: "Скорость изменена на %number%"
-        Auto-Teleport: "автоматическая телепортация через %value%"
-        Target-Player:
+    Menu: 
+      Settings: 
+        Status: 
+          Enabled: Включено
+          Disabled: Выключено
+        Changed-Speed: Скорость изменена на %number%
+        Auto-Teleport: автоматическая телепортация через %value%
+        Target-Player: 
           Action-Bar: "%number% блоков от вас | Цель %player%"
         Night-Vision: "%value% ночное зрение"
-        First-Person-Mode:
+        First-Person-Mode: 
           Action-Bar: "&eКРАСТЬСЯ &cдля выхода! | Цель %player%"
           Title: "&eКРАСТЬСЯ &cдля выхода!"
         Visibility: "%value% других наблюдателей"
     Blocked: "%color_chat_issue%%plugin_prefix% Режим наблюдателя недоступен на этой арене"
-  Messages:
+  Messages: 
     Join: "%plugin_prefix% %player% присоединился к игре (%arena_players_size%/%arena_max_players%)!"
     Leave: "%plugin_prefix% %player% вышел из игры (%arena_players_size%/%arena_max_players%)!"
     Death: "%plugin_prefix% %player% умер!"
-    Lobby:
+    Lobby: 
       Start-In: "%plugin_prefix% Игра начнётся через %arena_time% секунд!"
       Waiting-For-Players: "%plugin_prefix% Ожидание игроков... Нужно как минимум %arena_min_players% игроков для начала."
       Enough-Players-To-Start: "%plugin_prefix% Набралось достаточное количество игроков. Скоро начало!"
@@ -178,405 +164,378 @@ In-Game:
       Not-Enough-Space-For-Party: "%color_chat_issue%%plugin_prefix% Ваша группа больше чем количество свободных мест на арене %arena_name%"
       Max-Players: "%plugin_prefix% Достигнут максимум игроков на этом уровне. Сокращаем время!"
       Reduced-Time: "%plugin_prefix% Время было сокращено до %number% секунд"
-    Game-End:
-      Summary:
-        - "&a&m--------------------------------------------------"
-        - "%plugin_name%"
-        - " "
-        - "%arena_summary%"
-        - "%arena_summary_player%"
-        - " "
-        - "&e&lДостигнута волна | %arena_option_wave% (лучший результат %user_statistic_highest_wave%)"
-        - "&6&lВсего зомби убито | %arena_option_total_killed_zombies%"
-        - "&c&lВсего потрачено монет | %arena_option_total_orbs_spent%"
-        - " "
-        - "&a&m--------------------------------------------------"
-      Placeholders:
+    Game-End: 
+      Summary: 
+        0: "&a&m--------------------------------------------------"
+        1: "%plugin_name%"
+        2: " "
+        3: "%arena_summary%"
+        4: "%arena_summary_player%"
+        5: " "
+        6: "&e&lДостигнута волна | %arena_option_wave% (лучший результат %user_statistic_highest_wave%)"
+        7: "&6&lВсего зомби убито | %arena_option_total_killed_zombies%"
+        8: "&c&lВсего потрачено монет | %arena_option_total_orbs_spent%"
+        9: " "
+        10: "&a&m--------------------------------------------------"
+      Placeholders: 
         Win: "&aВы выиграли"
         Lose: "%color_chat_issue%Вы проиграли"
-        Died:
+        Died: 
           Players: "%color_chat_issue%Все игроки мертвы!"
           Villagers: "%color_chat_issue%Все жители мертвы!"
         Survived: "&aВы пережили все волны"
         Players: "%color_chat_issue%%plugin_prefix% Больше не хватает игроков для старта. Арена принудительно остановлена!"
-    Admin:
+    Admin: 
       Set-Starting-In-To-0: "%plugin_prefix% Администратор обнулил время ожидания. Игра начнётся прямо сейчас!"
-      Removed:
+      Removed: 
         Villagers: "%plugin_prefix% %player% убрал всех жителей!"
         Golems: "%plugin_prefix% %player% убрал всех големов!"
         Zombies: "%plugin_prefix% %player% убрал зомби!"
         Wolves: "%plugin_prefix% %player% убрал волков!"
-      Changed:
+      Changed: 
         Wave: "%color_chat_issue%%plugin_prefix% Администратор поменял волну на %number%-ую"
-    Village:
+    Village: 
       Rotten-Flesh-Level-Up: "%plugin_prefix% Боги были обольщены гнилой плотью! За этот подарок они дали вам &aдополнительное сердце!"
       You-Feel-Refreshed: "%plugin_prefix% Вы чувствуете себя отдохнувшим!"
-      # Do not use spaces between villager names. No limit in names size and amount :)
-      Villager:
+      Villager: 
         Died: "%color_chat_issue%%plugin_prefix% Житель погиб!"
-        Names: "Егор,Кирилл,Константин,Екатерина,Кристина,Геннадий,Вениамин,Вадим,Алина,Борис,Богдан,Артём,Альфред,Эльдар,Эдгар,Глеб,Матвей,Василий,Алексей,Александр,Наталья,Мария,Ярослав,Рая,Роман,Гарри,Семён,Раиса,Томас,Иван,Вячеслав,Адам"
-      Wave:
+        Names: Егор,Кирилл,Константин,Екатерина,Кристина,Геннадий,Вениамин,Вадим,Алина,Борис,Богдан,Артём,Альфред,Эльдар,Эдгар,Глеб,Матвей,Василий,Алексей,Александр,Наталья,Мария,Ярослав,Рая,Роман,Гарри,Семён,Раиса,Томас,Иван,Вячеслав,Адам
+      Wave: 
         Stuck-Zombies: "%color_chat_issue%%plugin_prefix% Похоже последний зомби где-то застрял. Без проблем! Боги убили его за вас!"
         Spectator-Warning: "%color_chat_issue%%plugin_prefix% Вы - наблюдатель! Вы не можете ничего делать пока не возродитесь в начале следующей волны!"
         Respawn-On-Next: "&e&lНЕ ПОКИДАЙТЕ ИГРУ! &aВы возродитесь когда закончится следующая волна!"
         Respawned: "%plugin_prefix% Вы больше не наблюдатель! Вы снова в игре!"
         Next-In: "%plugin_prefix% Следующая волна через %number% секунд!"
         Started: "%plugin_prefix% Началась %number%-ая волна!"
-        Title:
-          Start: "20,30,20;%number%-ая Волна;"
-          End: "20,30,20;%number%-ая Волна Окончена;"
-      Orbs:
-        Pickup: "+ %number% монет"
-      Entities:
-        Wolf:
+        Title: 
+          Start: 20,30,20;%number%-ая Волна;
+          End: 20,30,20;%number%-ая Волна Окончена;
+      Orbs: 
+        Pickup: + %number% монет
+      Entities: 
+        Wolf: 
           Spawn: "%plugin_prefix% В деревне появился волк!"
-          Name: "Волк %player%"
+          Name: Волк %player%
           Death: "%color_chat_issue%%plugin_prefix% Один из ваших волков убит!"
-        Golem:
+        Golem: 
           Spawn: "%plugin_prefix% В деревне появился голем!"
-          Name: "Голем %player%"
+          Name: Голем %player%
           Cant-Ride-Other: "%color_chat_issue%%plugin_prefix% Вы не можете ездить на чужом големе!"
-      Shop:
+      Shop: 
         GUI: "&lМагазин"
-        Golem-Item-Name: "Призвать Голема"
-        Wolf-Item-Name: "Призвать Волка"
+        Golem-Item-Name: Призвать Голема
+        Wolf-Item-Name: Призвать Волка
         Mob-Limit-Reached: "%color_chat_issue%%plugin_prefix% Вы не можете покупать мобов! Лимит %number% мобов достигнут!"
         Not-Enough-Currency: "%color_chat_issue%%plugin_prefix% Вам нужно больше монет чтобы это купить!"
-        Currency: "монеты"
+        Currency: монеты
         Not-Defined: "%color_chat_issue%%plugin_prefix% Магазин не был настроен! Свяжитесь с администрацией сервера!"
-# Sign messages
-Signs:
+Signs: 
   Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Пожалуйста, впишите название арены во второй строке!"
   Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% Такой арены не существует!"
   Created: "%plugin_prefix% Табличка успешно создана!"
   Removed: "%plugin_prefix% Табличка успешно убрана!"
-  Lines:
-    - "%plugin_prefix%"
-    - "%arena_state_placeholder%"
-    - "%arena_name%"
-    - "[%arena_players_size%/%arena_max_players%]"
-# Arena Selector messages
-Arena-Selector:
+  Lines: 
+    0: "%plugin_prefix%"
+    1: "%arena_state_placeholder%"
+    2: "%arena_name%"
+    3: "[%arena_players_size%/%arena_max_players%]"
+Arena-Selector: 
   Inventory-Title: "%plugin_short_command% ▸ Меню арен"
-  Item:
+  Item: 
     Name: "%arena_name%"
-    Lore:
-      - "%plugin_name% - %arena_name%"
-      - " "
-      - " "
-      - "  Игроков: %arena_players_size%/%arena_max_players%"
-      - "  Состояние: %arena_state_placeholder%"
-      - " "
-      - " "
-      - "&aНажмте чтобы присоединиться к этой арене"
-# Validator messages
-Validator:
-  Invalid-Arena-Configuration: "Арена %arena_name% настроена неправильно! Отсутствует узел: %value%"
-  Instance-Started: "Арена %arena_name% успешно запущена!"
-  No-Instances-Created: "В конфигурации отсутствуют арены!"
-# Placeholder messages inside plugin
-Placeholders:
-  Game-States:
+    Lore: 
+      0: "%plugin_name% - %arena_name%"
+      1: " "
+      2: " "
+      3: "  Игроков: %arena_players_size%/%arena_max_players%"
+      4: "  Состояние: %arena_state_placeholder%"
+      5: " "
+      6: " "
+      7: "&aНажмте чтобы присоединиться к этой арене"
+Validator: 
+  Invalid-Arena-Configuration: 'Арена %arena_name% настроена неправильно! Отсутствует узел: %value%'
+  Instance-Started: Арена %arena_name% успешно запущена!
+  No-Instances-Created: В конфигурации отсутствуют арены!
+Placeholders: 
+  Game-States: 
     Waiting: "&lОжидание игроков..."
     Starting: "&eНачало игры"
     Full-Game: "&4&lИГРА ЗАПОЛНЕНА"
     In-Game: "&lИгра идёт"
     Ending: "&lКонец игры"
     Restarting: "&c&lПерезапуск"
-  Motd:
+  Motd: 
     Waiting: "&lВы можете присоединиться к этой игре..."
     Starting: "&e&lНачало игры"
     Full-Game: "&4&lИГРА ЗАПОЛНЕНА | Попробуйте другой сервер"
     In-Game: "&lИгра идёт | Нажмите для наблюдения"
     Ending: "&lОкончание игры | Сервер закрывается"
     Restarting: "&c&lПерезапуск"
-# Kit messages
-Kit:
+Kit: 
   Not-Unlocked: "%color_chat_issue%%plugin_prefix% Вы ещё не разблокировали %value%!"
   Choose: "%plugin_prefix% Вы выбрали: %value%!"
-  Open-Menu: "Открыть меню наборов"
+  Open-Menu: Открыть меню наборов
   Cooldown: "%color_chat_issue%%plugin_prefix% Способность набора перезарядится через (%number%) секунд!"
-  Menu:
-    Title: "Меню наборов"
-    Lore:
+  Menu: 
+    Title: Меню наборов
+    Lore: 
       Unlocked: "&aРАЗБЛОКИРОВАНО!"
       Locked: "&cЗАБЛОКИРОВАНО!"
-      Unlock-At-Level: "Доступно с %number% уровня"
+      Unlock-At-Level: Доступно с %number% уровня
       Unlock-In-Store: "&bРазблокируйте это в магазине!"
-  Content:
-    Cleaner:
+  Content: 
+    Cleaner: 
       Name: "&bУборщик"
-      Description:
-        - "Уборщик имеет уникальную способность."
-        - "способность заставлять всех"
-        - "зомби исчезли. однако"
-        - "это требует больших усилий!"
-      Game-Item:
+      Description: 
+        0: Уборщик имеет уникальную способность.
+        1: способность заставлять всех
+        2: зомби исчезли. однако
+        3: это требует больших усилий!
+      Game-Item: 
         Name: "&6Щётка уборщика!"
-        Description:
-          - "Правая кнопка мыши убьёт всех зомби!"
-          - "Перезарядка: 60 секунд"
-      Cleaned:
+        Description: 
+          0: Правая кнопка мыши убьёт всех зомби!
+          1: 'Перезарядка: 60 секунд'
+      Cleaned: 
         Map: "&b%player% очистил карту!"
         # WARNING: used for admin clean commands too!!!
         Nothing: "&aКарта уже пуста!"
-    Zombie-Teleporter:
+    Zombie-Teleporter: 
       Name: "&2Телепортатор Зомби"
-      Description:
-        - "Телепортируйте этих зомби к себе!"
-        - "Многие думают, что это худший набор!"
-        - "Должен признаться, они совсем не правы!"
-      Game-Item:
-        GUI: "Телепортатор Зомби"
-        Name: "Телепортатор Зомби"
-        Description:
-          - "Телепортируйте зомби к себе!"
-    Teleport:
+      Description: 
+        0: Телепортируйте этих зомби к себе!
+        1: Многие думают, что это худший набор!
+        2: Должен признаться, они совсем не правы!
+      Game-Item: 
+        GUI: Телепортатор Зомби
+        Name: Телепортатор Зомби
+        Description: 
+          0: Телепортируйте зомби к себе!
+    Teleport: 
       Zombie: "&aОслабевшие зомби телепортированы к вам!"
       Not-Found: "&cНету зомби для телепортации!"
-    Knight:
+    Knight: 
       Name: "&2Рыцарь"
-      Description:
-        - "Единственный и неповторимый набор рыцаря!"
-        - "Многие думают, что это худший набор!"
-        - "Должен признаться, они совсем не правы!"
-    Light-Tank:
+      Description: 
+        0: Единственный и неповторимый набор рыцаря!
+        1: Многие думают, что это худший набор!
+        2: Должен признаться, они совсем не правы!
+    Light-Tank: 
       Name: "&2Лёгкий Танк"
-      Description:
-        - "Вы маленький танчик!"
-    Archer:
+      Description: 
+        0: Вы маленький танчик!
+    Archer: 
       Name: "&6Лучник"
-      Description:
-        - "Начните с луком, деревянным мечом и в кожаной броне."
-        - "Знайте, жители обожают лучников!"
-    Puncher:
+      Description: 
+        0: Начните с луком, деревянным мечом и в кожаной броне.
+        1: Знайте, жители обожают лучников!
+    Puncher: 
       Name: "&6Боксёр"
-      Description:
-        - "Отправляйте зомби в нокаут вашей эпичной лопатой!"
-        - "Вы ещё не изучили отбрасывание V!"
-    Healer:
+      Description: 
+        0: Отправляйте зомби в нокаут вашей эпичной лопатой!
+        1: Вы ещё не изучили отбрасывание V!
+    Healer: 
       Name: "&6Целитель"
-      Description:
-        - "Быть целителем равнозначно быть любимым."
-        - "Вы можете лечить ваших друзей и жителей!"
-        - "Перезарядка каждую волну!"
-    Looter:
+      Description: 
+        0: Быть целителем равнозначно быть любимым.
+        1: Вы можете лечить ваших друзей и жителей!
+        2: Перезарядка каждую волну!
+    Looter: 
       Name: "&6Добытчик"
-      Description:
-        - "Получайте дополнительную гнилую"
-        - "плоть с каждым убийством зомби!"
-    Runner:
+      Description: 
+        0: Получайте дополнительную гнилую
+        1: плоть с каждым убийством зомби!
+    Runner: 
       Name: "&6Бегун"
-      Description:
-        - "Ваша страсть - паркур!"
-        - "Вы бегаете быстрее всех."
-        - "да и прыгаете выше."
-    Medium-Tank:
+      Description: 
+        0: Ваша страсть - паркур!
+        1: Вы бегаете быстрее всех.
+        2: да и прыгаете выше.
+    Medium-Tank: 
       Name: "&6Средний Танк"
-      Description:
-        - "Начните игру с 6-ю доп. сердцами!"
-        - "Не стоит бояться!"
-        - "Сердец хватит на всё!"
-    Worker:
+      Description: 
+        0: Начните игру с 6-ю доп. сердцами!
+        1: Не стоит бояться!
+        2: Сердец хватит на всё!
+    Worker: 
       Name: "&6Рабочий"
-      Description:
-        - "Получайте дверь каждый раунд"
-        - "и начинайте игру с 2-мя доп. дверями."
-        - "Так вы можете чинить сломанные двери!"
-      Game-Item:
+      Description: 
+        0: Получайте дверь каждый раунд
+        1: и начинайте игру с 2-мя доп. дверями.
+        2: Так вы можете чинить сломанные двери!
+      Game-Item: 
         Chat: "&aДверь установлена!"
-    Dog-Friend:
+    Dog-Friend: 
       Name: "&bЛюбитель собак"
-      Description:
-        - "Начните игру с 3-мя собаками"
-        - "и получайте ещё одну каждую волну!"
-    Hardcore:
+      Description: 
+        0: Начните игру с 3-мя собаками
+        1: и получайте ещё одну каждую волну!
+    Hardcore: 
       Name: "&6Хардкорщик"
-      Description:
-        - "Прочувствуйте сами"
-        - "всю жесть хардкора"
-    Golem-Friend:
+      Description: 
+        0: Прочувствуйте сами
+        1: всю жесть хардкора
+    Golem-Friend: 
       Name: "&6Покровитель Големов"
-      Description:
-        - "С самого начала у вас будет голем"
-        - "и вы будете получать нового каждые 5 волн!"
-    Tornado:
+      Description: 
+        0: С самого начала у вас будет голем
+        1: и вы будете получать нового каждые 5 волн!
+    Tornado: 
       Name: "&bТорнадо"
-      Description:
-        - "Вызывайте наикрутейшие торнадо!"
-      Game-Item:
-        Name: "Время Торнадо"
-        Description:
-          - "Призовите торнадо к вашим"
-          - "ногам правым кликом мыши!"
-    Terminator:
+      Description: 
+        0: Вызывайте наикрутейшие торнадо!
+      Game-Item: 
+        Name: Время Торнадо
+        Description: 
+          0: Призовите торнадо к вашим
+          1: ногам правым кликом мыши!
+    Terminator: 
       Name: "&6Терминатор"
-      Description:
-        - "Зомби? Легкотня!"
-        - "Когда вы киборг-убийца!"
-    Teleporter:
+      Description: 
+        0: Зомби? Легкотня!
+        1: Когда вы киборг-убийца!
+    Teleporter: 
       Name: "&bТелепортатор"
-      Description:
-        - "Все восхищены вашей способностью к телепортации."
-        - "Никто так больше не умеет!"
-        - "Поэтому вы можете телепортироваться к жителям"
-        - "чтобы помочь как можно скорее!"
-      Game-Item:
+      Description: 
+        0: Все восхищены вашей способностью к телепортации.
+        1: Никто так больше не умеет!
+        2: Поэтому вы можете телепортироваться к жителям
+        3: чтобы помочь как можно скорее!
+      Game-Item: 
         Name: "&rМеню Телепортации"
-        Description:
-          - "Правая кнопка мыши откроет меню телепортации!"
-        GUI: "Меню Телепортации"
-      Teleport:
+        Description: 
+          0: Правая кнопка мыши откроет меню телепортации!
+        GUI: Меню Телепортации
+      Teleport: 
         Villager: "&aВы телепортировались к жителю!"
         Warning: "&4Данный житель не найден! Наверное он уже мёртв!"
         Player: "&aВы телепортировались к %player%"
         Not-Found: "&cИгрок не найден! Попробуйте снова!"
-    Heavy-Tank:
+    Heavy-Tank: 
       Name: "&bТяжёлый Танк"
-      Description:
-        - "С самого начала в вашем распоряжении"
-        - "броня и двойной набор сердец!"
-        - "Вы точно будете последним выжившим!"
-    Shot-Bow:
+      Description: 
+        0: С самого начала в вашем распоряжении
+        1: броня и двойной набор сердец!
+        2: Вы точно будете последним выжившим!
+    Shot-Bow: 
       Name: "&bМастер-Арбалетчик"
-      Description:
-        - "Вы изобрели чумовой арбалет!"
-    Blocker:
+      Description: 
+        0: Вы изобрели чумовой арбалет!
+    Blocker: 
       Name: "&bЗащитник"
-      Description:
-        - "Не дайте зомби пройти"
-        - "с помощью ваших барьеров."
-        - "Они выдержат натиск в течение 10 секунд"
-      Game-Item:
-        Name: "Забор"
-        Description:
-          - "Установите этот барьер"
-          - "чтобы задержать зомби на 10 секунд!"
-      Place:
+      Description: 
+        0: Не дайте зомби пройти
+        1: с помощью ваших барьеров.
+        2: Они выдержат натиск в течение 10 секунд
+      Game-Item: 
+        Name: Забор
+        Description: 
+          0: Установите этот барьер
+          1: чтобы задержать зомби на 10 секунд!
+      Place: 
         Success: "&aБарьер установлен!"
         Fail: "&cНеподходящее место для барьера"
-    Premium-Hardcore:
+    Premium-Hardcore: 
       Name: "&bПремиальный Хардкор-Мастер"
-      Description:
-        - "Ваш OP меч убивает зомби с одного удара!"
-        - "Так что будьте осторожны. Этот кит только"
-        - "для профи! Если вы не профи, не стоит рисковать!"
-    Medic:
+      Description: 
+        0: Ваш OP меч убивает зомби с одного удара!
+        1: Так что будьте осторожны. Этот кит только
+        2: для профи! Если вы не профи, не стоит рисковать!
+    Medic: 
       Name: "&6Медик"
-      Description:
-        - "Этот набор активирует ваши суперсилы."
-        - "Каждый раз когда вы ударяете зомби,"
-        - "у вас есть шанс 1 из 10 исцелить"
-        - "игроков в радиусе 5 блоков вокруг вас."
-    Wild-Naked:
+      Description: 
+        0: Этот набор активирует ваши суперсилы.
+        1: Каждый раз когда вы ударяете зомби,
+        2: у вас есть шанс 1 из 10 исцелить
+        3: игроков в радиусе 5 блоков вокруг вас.
+    Wild-Naked: 
       Name: "&bВ чём мать родила"
-      Description:
-        - "Вы наикрутейший мастер!"
-        - "У вас есть меч, зачарованный на"
-        - "Остроту VI и Небесную Кару II!"
+      Description: 
+        0: Вы наикрутейший мастер!
+        1: У вас есть меч, зачарованный на
+        2: Остроту VI и Небесную Кару II!
       Cannot-Wear-Armor: "&cОднако вы не можете носить броню!"
-    Wizard:
+    Wizard: 
       Name: "&bЧародей"
-      Description:
-        - "Вы полукровка."
-        - "Вы пришли в деревню, чтобы"
-        - "защитить жителей от орд нежити."
-        - "Используйте чёрную магию чтобы истреблять!"
-      Game-Item:
-        Essence:
-          Name: "Тёмная эссенция"
-          Description:
-            - "Нажмите чтобы поглотить окружающую материю"
-            - "и использовать её как ваш собственный щит"
-            - "с шипами, который прослужит 5 секунд"
-        Wand:
-          Name: "Волшебная палочка"
-          Description: "Правая кнопка мыши выпустит тёмную материю"
-# Upgrade-Menu messages
-# 
-# Upgrade-Menu function need to be enabled on config.yml
-Upgrade-Menu:
+      Description: 
+        0: Вы полукровка.
+        1: Вы пришли в деревню, чтобы
+        2: защитить жителей от орд нежити.
+        3: Используйте чёрную магию чтобы истреблять!
+      Game-Item: 
+        Essence: 
+          Name: Тёмная эссенция
+          Description: 
+            0: Нажмите чтобы поглотить окружающую материю
+            1: и использовать её как ваш собственный щит
+            2: с шипами, который прослужит 5 секунд
+        Wand: 
+          Name: Волшебная палочка
+          Description: Правая кнопка мыши выпустит тёмную материю
+Upgrade-Menu: 
   Title: "&3&lУлучшить Существо"
   Upgraded-Entity: "%plugin_prefix% &3Существо улучшено до уровня &8%tier%&3!"
   Cannot-Afford: "%plugin_prefix% &3У вас не хватает монет чтобы приобрести это улучшение!"
   Max-Tier: "%plugin_prefix% &3Существо уже на максимальном уровне этого улучшения!"
-  Stats-Item:
+  Stats-Item: 
     Name: "&3&lТекущая статистика"
     Description: "&3Скорость движения: &8%speed%; &3Наносимый урон: &8%damage%; &3Здоровье: &8%current_hp%/%max_hp%"
-  Upgrades:
-    Health:
+  Upgrades: 
+    Health: 
       Name: "&3&lУлучшить Здоровье"
       Description: "&3Улучшить максимальное здоровье до уровня &8%tier%&3!;&3Было &8%from%, &3станет &8%to%;&3Стоимость улучшения: &8%cost%;;&3Нажмите для покупки"
-    Damage:
+    Damage: 
       Name: "&3&lУлучшить Урон"
       Description: "&3Улучшить наносимый урон до уровня &8%tier%&3!;&3Было &8%from%, &3станет &8%to%;&3Стоимость улучшения: &8%cost%;;&8Нажмите для покупки"
-    Speed:
+    Speed: 
       Name: "&3&lУлучшить Скорость"
       Description: "&3Улучшить скорость передвижения до уровня &8%tier%&3!;&3Было &8%from%, &3станет &8%to%;&3Стоимость улучшения: &8%cost%;;&8Нажмите для покупки"
-    Swarm-Awareness:
+    Swarm-Awareness: 
       Name: "&3&lЧувство Стаи"
       Description: "&3Улучшить чувство стаи до уровня &8%tier%&3!;&3От умножения урона на &8%from% &8за каждого волка в радиусе;&83-ёх блоков &3до умножения урона на %to%;&3Чем больше волков находится рядом с атакующим волком,;&3тем больше урона наносит волк;&3Стоимость улучшения: &8%cost%;;&8Нажмите для покупки"
-    Final-Defense:
+    Final-Defense: 
       Name: "&3&lКрайняя Мера"
       Description: "&3Улучшить крайнюю меру до уровня &8%tier%&3!;&3От радиуса взрыва &8%from%, &3до &8%to%;&3Голем взорвётся после смерти убивая;&3зомби вокруг себя и оглушая живых;&3Стоимость улучшения: &8%cost%;;&8Нажмите для покупки"
-# Leaderboard messages
-# 
-# Hologram function need to be enabled on config.yml
-Leaderboard:
-  Type:
-    Hologram:
+Leaderboard: 
+  Type: 
+    Hologram: 
       Header: "&6&lТоп-%number% в %value%"
       Format: "&e%number%. %player% (%value%)"
       Empty-Format: "&e%number%. &fПусто (0)"
-    Chat:
+    Chat: 
       Header: "&8+-------+ &a&lВАША СТАТИСТИКА &8+-------+"
       Header-Other: "&8+---------+ &aСТАТИСТИКА &b%player% &8+---------+"
       Footer: "&8+-----------------------------+"
       Format: "%value% ▸ &a%number%"
-      Top:
+      Top: 
         Type-Name: "%color_chat_issue%Пожалуйста, введите название статистики для отображения!"
         Header: "&8&m+----------------+ [&6 Топ-10 &8&m] +----------------+"
         Format: "&e#%number% %player% - %value% %user_statistic%"
-  Statistics:
-    Games-Played: "Сыграно Раз ▸ %number%"
-    Level: "Уровень ▸ %number%"
-    Exp: "Опыта ▸ %number%"
-    Orbs: "Монет ▸ %number%"
-    Highest-Wave: "Максимальная Волна ▸ %number%"
-    Kills: "Зомби Убито ▸ %number%"
-    Deaths: "Смертей ▸ %number%"
-    Next-Level-Exp: "Опыта до Повышения Уровня ▸ %number%"
-    Wins: "Побед ▸ %number%"
-    Loses: "Поражений ▸ %number%"
+  Statistics: 
+    Games-Played: Сыграно Раз ▸ %number%
+    Level: Уровень ▸ %number%
+    Exp: Опыта ▸ %number%
+    Orbs: Монет ▸ %number%
+    Highest-Wave: Максимальная Волна ▸ %number%
+    Kills: Зомби Убито ▸ %number%
+    Deaths: Смертей ▸ %number%
+    Next-Level-Exp: Опыта до Повышения Уровня ▸ %number%
+    Wins: Побед ▸ %number%
+    Loses: Поражений ▸ %number%
   Invalid-Name: "%color_chat_issue%Название статистики не верно! Введите: %value%"
   Unknown-Player: "%color_chat_issue%Неизвестный игрок"
-# Don't edit it. But who's stopping you? It's your server!
-# Really, don't edit ;p
-# You edited it, huh? Next time hurt yourself!
-Do-Not-Edit:
+Do-Not-Edit: 
   File-Version: 1
   Core-Version: 1
-# You can translate Village Defense messages here.
-# Color codes (&) supported.
-# 
-# Use \n to make new line
-# Some messages like item
-# descriptions don't support new lines
-# they are wrapped every 40 characters automatically
-# 
-# Some messages support their own placeholders
-# like %player%, %kit% etc.
-# 
-# Color scheme
-Color:
-  Placeholder:
+Color: 
+  Placeholder: 
     Value: "&a"
     Number: "&a"
     Player: "&b"
     Other: "&a"
-  Chat:
+  Chat: 
     Issue: "&c"
     Messages: "&7"
-    Special-Char:
+    Special-Char: 
       Contains: "[,],(,),{,},■,/,|,▸"
       Before: "&8"
