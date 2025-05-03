@@ -1,16 +1,26 @@
-Color: 
-  Placeholder: 
+# Leave this file as it is!
+# 
+### !!!Do not change anything here!!!
+# 
+### THIS FILE AUTOMATICALLY REGENERATES ON SERVER RESTART
+# 
+# Needed as it can be possible that the api is not working
+# 
+# Color scheme
+Color:
+  Placeholder:
     Value: "&b"
     Number: "&b"
     Player: "&a"
     Other: "&b"
-  Chat: 
+  Chat:
     Issue: "&c"
     Messages: "&7"
-    Special-Char: 
+    Special-Char:
       Contains: "[,],(,),{,},■,/,|,▸"
       Before: "&8"
-Commands: 
+# Command messages
+Commands:
   Did-You-Mean: "%plugin_prefix% Manzoretoon /%value% Bood?"
   Command-Executed: "%plugin_prefix% Dastoor ba movafaghiat ejra shod!"
   Teleported-To-Lobby: "%plugin_prefix% Be Lobby Teleport Shodid!"
@@ -27,163 +37,176 @@ Commands:
   Invalid-Location-Teleport: "%color_chat_issue%%plugin_prefix% Location Teleport Invalid Hast!"
   Wrong-Usage: "%color_chat_issue%%plugin_prefix% Eshtebah Estefade Kardid. Az %value% Estefade Konid"
   Theme-Blacklisted: "%color_chat_issue%%plugin_prefix% In Theme Dakhele Game Nemishe Use Beshe!"
-  Admin: 
+  Admin:
     Adjust-Statistic: "%plugin_prefix% Amare %value% Player %player% Dar Halate %number% Gharar Dare!"
     Reload-Success: "%plugin_prefix% Arenas Reload Shodand!"
     Added-Plot: "%plugin_prefix% Plot Baraye %arena_name% Add Shod"
-    List: 
+    List:
       Header: "%plugin_name% Arena Ha: Nameshon Vaziat Players"
       Format: "%arena_name% %arena_state_placeholder% %arena_players_size%/%arena_max_players%"
       No-Arenas: "%color_chat_issue%%plugin_prefix% Hich Game Ei Vojod Nadare!"
-    Spychat: 
+    Spychat:
       Toggled: "%plugin_prefix% Game Spy Ro Halate %value% Toggle Shod"
-  Main: 
+  Main:
     Header: "&6----------------{%plugin_name% commands}----------"
-    Description: 
-      0: "&aGame commands:"
-      1: "&b/%plugin_short_command% stats: Shows your stats!"
-      2: "&b/%plugin_short_command% leave: Quits current arena!"
-      3: "&b/%plugin_short_command% join <arena>: Joins specified arena!"
-      4: "&b/%plugin_short_command% top <statistic>: Shows top 10 players!"
-      5: "&b/%plugin_short_command% randomjoin <solo/team>: Join random arena!"
+    Description:
+      - "&aGame commands:"
+      - "&b/%plugin_short_command% stats: Shows your stats!"
+      - "&b/%plugin_short_command% leave: Quits current arena!"
+      - "&b/%plugin_short_command% join <arena>: Joins specified arena!"
+      - "&b/%plugin_short_command% top <statistic>: Shows top 10 players!"
+      - "&b/%plugin_short_command% randomjoin <solo/team>: Join random arena!"
     Admin-Bonus-Description: "&b/%plugin_short_command%: Shows all the admin commands"
     Footer: "&6-------------------------------------------------"
-Scoreboard: 
+# In-Game scoreboard messages
+# 
+# Please do not use more chars than the scoreboard can handle!
+# Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
+# Placeholders:
+# https://wiki.plugily.xyz/REPLACEWITHPROJECTNAME/placeholders/language
+Scoreboard:
   Title: "&a&l%plugin_name%"
   Theme-Unknown: "&c???"
-  Content: 
-    Waiting: 
-      0: ■ Halat | %arena_type%
-      1: ␣
-      2: ■ Player Ha | %arena_players_size%
-      3: ␣
-      4: ■ Hadaaghal Players | %arena_min_players%
-      5: ␣
-      6: ␣␣␣www.plugily.xyz
-    Starting: 
-      0: ■ Halat | %arena_type%
-      1: ␣
-      2: ■ Shoro Mishe Dar | %arena_time%
-      3: ␣
-      4: ■ Players | %arena_players_size%
-      5: ␣
-      6: ■ Hadaaghal Players | %arena_min_players%
-      7: ␣
-      8: ␣␣␣www.plugily.xyz
-    In-Game: 
-      Classic: 
-        0: ■ Theme | %arena_theme%
-        1: "&f"
-        2: ■ Halat | %arena_type%
-        3: "&f"
-        4: ■ Zamane Baghimonde | %arena_time%
-        5: ␣
-        6: ■ Player Ha | %arena_players_size%
-        7: "&f"
-        8: ■ Arena | %arena_name%
-        9: ␣
-        10: ␣␣␣www.plugily.xyz
-      Teams: 
-        0: ■ Theme | %arena_theme%
-        1: "&f"
-        2: ■ Halat | %arena_type%
-        3: "&f"
-        4: ■ Zamane Baghimonde | %arena_time%
-        5: ␣
-        6: ■ Ham Teami |␣
-        7: "%arena_teammates%"
-        8: "&f"
-        9: ■ Arena | %arena_name%
-        10: ␣␣␣www.plugily.xyz
-        11: ␣␣␣www.plugily.xyz
-      Guess-The-Build: 
-        0: ■ Halat | %arena_type%
-        1: "&f"
-        2: ■ Sazande | %arena_builder%
-        3: ␣
-        4: ■ SadrNeshinan |
-        5: "%arena_place_member_1% | %arena_place_points_1%"
-        6: "%arena_place_member_2% | %arena_place_points_2%"
-        7: "%arena_place_member_3% | %arena_place_points_3%"
-        8: ␣
-        9: ■ Zamane Baghimonde | %arena_time%
-        10: ␣
-        11: ■ Theme | %arena_theme%
-        12: ␣
-        13: ␣␣␣www.plugily.xyz
-      Guess-The-Build-Waiting: 
-        0: ■ Mode | %arena_type%
-        1: "&f"
-        2: ■ SadrNeshinan |
-        3: "%arena_place_member_1% | %arena_place_points_1%"
-        4: "%arena_place_member_2% | %arena_place_points_2%"
-        5: "%arena_place_member_3% | %arena_place_points_3%"
-        6: ␣
-        7: ■ Shoro Dar | %arena_time%
-        8: ␣
-        9: ␣␣␣www.plugily.xyz
-    Ending: 
-      Classic: 
-        0: ■ Halat | %arena_type%
-        1: "&f"
-        2: "&cBazi Tamom Shod"
-        3: ␣
-        4: "&f"
-        5: "&f"
-        6: ␣
-        7: ␣␣␣www.plugily.xyz
-      Guess-The-Build: 
-        0: ■ Halat | %arena_type%
-        1: "&f"
-        2: ■ 1. %arena_place_member_1% | %arena_place_points_1%
-        3: ■ 2. %arena_place_member_2% | %arena_place_points_2%
-        4: ■ 3. %arena_place_member_3% | %arena_place_points_3%
-        5: ■ 4. %arena_place_member_4% | %arena_place_points_4%
-        6: ■ 5. %arena_place_member_5% | %arena_place_points_5%
-        7: ■ 6. %arena_place_member_6% | %arena_place_points_6%
-        8: ■ 7. %arena_place_member_7% | %arena_place_points_7%
-        9: ■ 8. %arena_place_member_8% | %arena_place_points_8%
-        10: ■ 9. %arena_place_member_9% | %arena_place_points_9%
-        11: ■ 10. %arena_place_member_10% | %arena_place_points_10%
-        12: "&f"
-        13: ␣␣␣www.plugily.xyz
-    Restarting: 
-      0: ■ Halat | %arena_type%
-      1: "&f"
-      2: "&cRestart Shodane Bazi"
-      3: ␣
-      4: "&f"
-      5: "&f"
-      6: ␣
-      7: ␣␣␣www.plugily.xyz
-Bossbar: 
+  Content:
+    Waiting:
+      - "■ Halat | %arena_type%"
+      - "␣"
+      - "■ Player Ha | %arena_players_size%"
+      - "␣"
+      - "■ Hadaaghal Players | %arena_min_players%"
+      - "␣"
+      - "␣␣␣www.plugily.xyz"
+    Starting:
+      - "■ Halat | %arena_type%"
+      - "␣"
+      - "■ Shoro Mishe Dar | %arena_time%"
+      - "␣"
+      - "■ Players | %arena_players_size%"
+      - "␣"
+      - "■ Hadaaghal Players | %arena_min_players%"
+      - "␣"
+      - "␣␣␣www.plugily.xyz"
+    # Contents of scoreboard while ingame
+    In-Game:
+      Classic:
+        - "■ Theme | %arena_theme%"
+        - "&f"
+        - "■ Halat | %arena_type%"
+        - "&f"
+        - "■ Zamane Baghimonde | %arena_time%"
+        - "␣"
+        - "■ Player Ha | %arena_players_size%"
+        - "&f"
+        - "■ Arena | %arena_name%"
+        - "␣"
+        - "␣␣␣www.plugily.xyz"
+      Teams:
+        - "■ Theme | %arena_theme%"
+        - "&f"
+        - "■ Halat | %arena_type%"
+        - "&f"
+        - "■ Zamane Baghimonde | %arena_time%"
+        - "␣"
+        - "■ Ham Teami |␣"
+        - "%arena_teammates%"
+        - "&f"
+        - "■ Arena | %arena_name%"
+        - "␣␣␣www.plugily.xyz"
+        - "␣␣␣www.plugily.xyz"
+      Guess-The-Build:
+        - "■ Halat | %arena_type%"
+        - "&f"
+        - "■ Sazande | %arena_builder%"
+        - "␣"
+        - "■ SadrNeshinan |"
+        - "%arena_place_member_1% | %arena_place_points_1%"
+        - "%arena_place_member_2% | %arena_place_points_2%"
+        - "%arena_place_member_3% | %arena_place_points_3%"
+        - "␣"
+        - "■ Zamane Baghimonde | %arena_time%"
+        - "␣"
+        - "■ Theme | %arena_theme%"
+        - "␣"
+        - "␣␣␣www.plugily.xyz"
+      Guess-The-Build-Waiting:
+        - "■ Mode | %arena_type%"
+        - "&f"
+        - "■ SadrNeshinan |"
+        - "%arena_place_member_1% | %arena_place_points_1%"
+        - "%arena_place_member_2% | %arena_place_points_2%"
+        - "%arena_place_member_3% | %arena_place_points_3%"
+        - "␣"
+        - "■ Shoro Dar | %arena_time%"
+        - "␣"
+        - "␣␣␣www.plugily.xyz"
+    # Contents of scoreboard while state is ending
+    Ending:
+      Classic:
+        - "■ Halat | %arena_type%"
+        - "&f"
+        - "&cBazi Tamom Shod"
+        - "␣"
+        - "&f"
+        - "&f"
+        - "␣"
+        - "␣␣␣www.plugily.xyz"
+      Guess-The-Build:
+        - "■ Halat | %arena_type%"
+        - "&f"
+        - "■ 1. %arena_place_member_1% | %arena_place_points_1%"
+        - "■ 2. %arena_place_member_2% | %arena_place_points_2%"
+        - "■ 3. %arena_place_member_3% | %arena_place_points_3%"
+        - "■ 4. %arena_place_member_4% | %arena_place_points_4%"
+        - "■ 5. %arena_place_member_5% | %arena_place_points_5%"
+        - "■ 6. %arena_place_member_6% | %arena_place_points_6%"
+        - "■ 7. %arena_place_member_7% | %arena_place_points_7%"
+        - "■ 8. %arena_place_member_8% | %arena_place_points_8%"
+        - "■ 9. %arena_place_member_9% | %arena_place_points_9%"
+        - "■ 10. %arena_place_member_10% | %arena_place_points_10%"
+        - "&f"
+        - "␣␣␣www.plugily.xyz"
+    # Contents of scoreboard while state is restarting
+    Restarting:
+      - "■ Halat | %arena_type%"
+      - "&f"
+      - "&cRestart Shodane Bazi"
+      - "␣"
+      - "&f"
+      - "&f"
+      - "␣"
+      - "␣␣␣www.plugily.xyz"
+# Bossbar messages
+# 
+# Bossbar needs to be enabled on config.yml
+Bossbar:
   Title: "%plugin_name% - www.plugily.xyz"
-  Content: 
-    Waiting: 
-      0: Montazer Baraye Player Bishtar...
-    Starting: 
-      0: 'Shoro Dar: %arena_time%'
-    In-Game: 
-      0: Playing %plugin_name_uppercase% on PLUGILY.XYZ
-      1: Check the plugin creator out on PLUGILY.XYZ
-      2: Zamane Baghimonde - %arena_time%
-    Guess-The-Build: 
-      0: "%arena_guess_word%"
-    Guess-The-Build-Waiting: 
-      0: Sabr Konid Ta Kalame Badi!
-    Voting: 
-      0: Zamane Vote - %arena_time%
-    Ending: 
-      0: Bazi Tamom Shod! Dar Hale Play Dar PLUGILY.XYZ Hastid
-    Restarting: 
-      0: Dar Hale Restart Arena. Move Mishid Bezoodi!
-In-Game: 
+  Content:
+    Waiting:
+      - "Montazer Baraye Player Bishtar..."
+    Starting:
+      - "Shoro Dar: %arena_time%"
+    In-Game:
+      - "Playing %plugin_name_uppercase% on PLUGILY.XYZ"
+      - "Check the plugin creator out on PLUGILY.XYZ"
+      - "Zamane Baghimonde - %arena_time%"
+    Guess-The-Build:
+      - "%arena_guess_word%"
+    Guess-The-Build-Waiting:
+      - "Sabr Konid Ta Kalame Badi!"
+    Voting:
+      - "Zamane Vote - %arena_time%"
+    Ending:
+      - "Bazi Tamom Shod! Dar Hale Play Dar PLUGILY.XYZ Hastid"
+    Restarting:
+      - "Dar Hale Restart Arena. Move Mishid Bezoodi!"
+# In-Game Messages
+In-Game:
   # Used in most game messages.
-  Plugin-Prefix: (%plugin_name%)
+  Plugin-Prefix: "(%plugin_name%)"
   Game-Chat-Format: "[%user_statistic_level%] %player% | %message%"
   You-Leveled-Up: "%plugin_prefix% Level UP Shodid! Level Jadideton %number%!"
   Commands-Blocked: "%color_chat_issue%%plugin_prefix% Shoma Bayad Aval Gamero Leave Bedid. Az /%plugin_short_command% Baraye Leave Estefade Konid!"
-  Join: 
+  Join:
     Already-Playing: "%color_chat_issue%%plugin_prefix% Shoma Dar Safe Yek Game Hastid! Baraye Khoroj Az /%plugin_short_command% Estefade Konid."
     No-Permission: "%color_chat_issue%%plugin_prefix% Shoma %value% permission Ro Baraye Join Be Game Nadarid!"
     Full-Game: "%color_chat_issue%%plugin_prefix% Permission Join Shodan Be Game Full Ro Nadarid!"
@@ -192,36 +215,36 @@ In-Game:
     Cancelled-Via-API: "%color_chat_issue%%plugin_prefix% Nemitonid Join In Game Beshod!"
     As-Party-Member: "%color_chat_issue%%plugin_prefix% Shoma Join %arena_name% Shod Chon Leader Party Join Shod!"
     Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% Base Arena Hanoz Config Nashode!"
-    Title: 20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%
-  Death: 
+    Title: "20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%"
+  Death:
     Tag: "&8Mordid"
     Screen: "%color_chat_issue%Shoma Mordid!"
-  Spectator: 
+  Spectator:
     Blocked: "%color_chat_issue%%plugin_prefix% Spectators Baraye In Arena Off Shode"
     You-Are-Spectator: "%plugin_prefix% Shoma Alan Spectatorid! Mitonid Fly Konid!"
     Spectator-Menu-Name: "%color_chat_issue%Afrade Zende"
     Target-Player-Health: "%color_chat_issue%Joon: %number%"
     Spectator-Warning: "%plugin_prefix% Shoma Spectatorid!"
     Teleport: "%plugin_prefix% Teleport Shodid Be %player%"
-    Menu: 
-      Settings: 
-        Status: 
-          Enabled: Enabled
-          Disabled: Disabled
-        Changed-Speed: Sorat Be %number% Taghir Yaft
+    Menu:
+      Settings:
+        Status:
+          Enabled: "Enabled"
+          Disabled: "Disabled"
+        Changed-Speed: "Sorat Be %number% Taghir Yaft"
         Auto-Teleport: "%value% teleport khodkar"
-        Target-Player: 
+        Target-Player:
           Action-Bar: "%number% Blocks Doorid | Target %player%"
         Night-Vision: "%value% night vision"
-        First-Person-Mode: 
+        First-Person-Mode:
           Action-Bar: "&eSNEAK &cto leave! | Target %player%"
           Title: "&eSNEAK &cto leave!"
         Visibility: "%value% other spectator players"
-  Messages: 
+  Messages:
     Join: "%plugin_prefix% %player% Varede Bazi Shod (%arena_players_size%/%arena_max_players%)!"
     Leave: "%plugin_prefix% %player% Az Game Left Dad (%arena_players_size%/%arena_max_players%)!"
     Death: "%plugin_prefix% %player% mord!"
-    Lobby: 
+    Lobby:
       Start-In: "%plugin_prefix% Game Dar %arena_time% Sanie Shoro Mishe!"
       Waiting-For-Players: "%plugin_prefix% Darhale Entezar Baraye Player... %arena_min_players% Niaz Hast Baraye Shoro."
       Enough-Players-To-Start: "%plugin_prefix% Player Kafi Darim. Dar Hale Shoro Game!"
@@ -231,265 +254,277 @@ In-Game:
       Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% %player% Be Dalile Kamboode Ja Baraye Premium Players Kick Shod!"
       You-Were-Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% Be Dalile Kamboode Ja Baraye Premium Player Kick Shodid!"
       Not-Enough-Space-For-Party: "%color_chat_issue%%plugin_prefix% Party Shoma Bozorg Tar Az %arena_name% Hast"
-    Game-End: 
-      Summary: 
-        0: "&a&m--------------------------------------------------"
-        1: "%plugin_name%"
-        2: ␣
-        3: "%arena_summary%"
-        4: "%arena_summary_player%"
-        5: "%arena_summary_place_own%"
-        6: ␣
-        7: "%arena_summary_place_list%"
-        8: ␣
-        9: ␣
-        10: "&a&m--------------------------------------------------"
-      Placeholders: 
+    Game-End:
+      Summary:
+        - "&a&m--------------------------------------------------"
+        - "%plugin_name%"
+        - "␣"
+        - "%arena_summary%"
+        - "%arena_summary_player%"
+        - "%arena_summary_place_own%"
+        - "␣"
+        - "%arena_summary_place_list%"
+        - "␣"
+        - "␣"
+        - "&a&m--------------------------------------------------"
+      Placeholders:
         Win: "&aShoma Bazi Ro Bordid"
         Lose: "%color_chat_issue%Shoma Bazi Ro Bakhtid"
         Players: "&cPlayer Kafi Nist. Base Arena Stop Shod!"
         Place: "#%number% Place - %value%"
         Own: "&aShoma #%number% Shodid"
         Winner: "&aPlot with %arena_place_member_1% (%arena_place_points_1%) won!"
-    Admin: 
+    Admin:
       Set-Starting-In-To-0: "%plugin_prefix% Admin Time Ro 0 Kard. Game Alan Shoro Mishe!"
       Changed-Theme: "%plugin_prefix% Admin Theme Ro Be %THEME% Change Kard"
     Plot: 
       Added-Particle: "%plugin_prefix% Particle Add Shod!"
       Nobody: "%color_chat_issue%Hichkas"
-      Time-Left: 
-        Title: 5,20,5;;%color_chat_issue%%arena_time% Sanie Monde
+      Time-Left:
+        Title: "5,20,5;;%color_chat_issue%%arena_time% Sanie Monde"
         Chat: "%plugin_prefix% %arena_time% Time Baraye Build Monde!"
-      Limit: 
+      Limit:
         Entities: "%color_chat_issue%%plugin_prefix% Nemitonid Entity Bishtar Spawn Bedid!"
         Particles: "%color_chat_issue%%plugin_prefix% Nemitonid Particle Bishtar Spawn Bedid!"
-      Permission: 
+      Permission:
         Particle: "%color_chat_issue%%plugin_prefix% Permission In Particle Ro Nadarid!"
         Biome: "%color_chat_issue%%plugin_prefix% Permission In Biome Ro Nadarid!"
         Outside: "%color_chat_issue%%plugin_prefix% Khareje Plot Khodeton Nemitonid Parvaz Konid!"
         Floor-Item: "%color_chat_issue%%plugin_prefix% Item Toye Dasteton Nemitone Kaf Beshe!"
         Head: "%color_chat_issue%%plugin_prefix% You don't have permission for this head!"
-      Selector: 
-        Full: Team Pore
-        Empty: Shoma Mitonid Join In Team Beshid
-        Inside: Team Shoma
-        Name: Plot - %number%
-        Menu-Name: Plot Menu
+      Selector:
+        Full: "Team Pore"
+        Empty: "Shoma Mitonid Join In Team Beshid"
+        Inside: "Team Shoma"
+        Name: "Plot - %number%"
+        Menu-Name: "Plot Menu"
         Plot-Choose: "%plugin_prefix% Shoma Plote %number% Hastid"
         Member: "%color_chat_issue%%plugin_prefix% Shoma Alan Memberesh Hastid!"
-      Voting: 
+      Voting:
         Name: "%color_chat_issue%Voting"
-        Plot-Owner: 
+        Plot-Owner:
           Chat: "%plugin_prefix% Plot owner: %value%"
-          Title: '5,20,5;;Plot owner: %value%'
+          Title: "5,20,5;;Plot owner: %value%"
           Next: "%plugin_prefix% Vote Alan Baraye Plote %value%!"
           Was: "%plugin_prefix% Sahebe Plot %value% Bod!"
           Own: "%color_chat_issue%%plugin_prefix% Nemitonid Be Plote Khodeton Vote Bedid!"
         Success: "%plugin_prefix% Vote %value% Sabt Shod!"
-        Winner: '5,20,5;%plugin_prefix% Barande: %value%'
-      Guess-The-Build: 
-        Builder: 'Builder: %arena_builder%'
-        Round: 'Round: %number%/%arena_gtb_rounds%'
-        Theme: 
+        Winner: "5,20,5;%plugin_prefix% Barande: %value%"
+      Guess-The-Build:
+        Builder: "Builder: %arena_builder%"
+        Round: "Round: %number%/%arena_gtb_rounds%"
+        Theme:
           Chars: "%plugin_prefix% The theme is %number% characters long"
           Name: "%plugin_prefix% Theme %arena_theme% Hast"
           Was: "%plugin_prefix% Theme Bod: %value%!"
-          Title: 20,30,20;Theme Bood;%value%!
+          Title: "20,30,20;Theme Bood;%value%!"
           Guessed: "%plugin_prefix% Hame Playera Theme Ro Goftan!"
           Being-Selected: "%plugin_prefix% Theme Dar Hale Select Hast..."
-          Guess: 
-            Title: 5,20,5;Shoro Konid!
+          Guess:
+            Title: "5,20,5;Shoro Konid!"
             Points: "%plugin_prefix% +%number% points!"
             Guessed: "%plugin_prefix% %player% Dorost Hads Zad!"
             Cant-Talk: "%color_chat_issue%%plugin_prefix% Nemitonid Harf Bezanid Age Hads Zadid!"
             Builder: "%color_chat_issue%%plugin_prefix% Vaghti Build Mikonid Nemitonid Harf Bezanid!"
-      NPC: 
+      NPC:
         Name: "&aChange floor NPC"
         Created: "%plugin_prefix% Floor NPC created successfully!"
         Install-Citizens: "%color_chat_issue%%plugin_prefix% Please install Citizens plugin first to create NPC's!"
-Menu: 
+# Menu messages
+Menu:
   Permission: "%color_chat_issue%%plugin_prefix% You don't have permission to use this menu!"
-  Location: 'Location:␣'
-  Option: 
+  Location: "Location:␣"
+  Option:
     Inventory: "&bOptions menu"
-    Content: 
-      Particle: 
+    Content:
+      Particle:
         Inventory: "&bParticles menu"
-        Item: 
+        Item:
           Name: "&bChoose particles"
-          Lore: Click to get particles
-          Remove: 
+          Lore: "Click to get particles"
+          Remove:
             Name: "%color_chat_issue%Remove particles"
-            Lore: Right click to open menu
+            Lore: "Right click to open menu"
         Removed: "%color_chat_issue%%plugin_prefix% Particle Remove Shod!"
         Added: "%plugin_prefix% Particle successfully added!"
-      Heads: 
+      Heads:
         Inventory: "&bPlayers heads menu"
-        Item: 
+        Item:
           Name: "&bGet player heads"
-          Lore: Click to get heads
-      Floor: 
-        Item: 
+          Lore: "Click to get heads"
+      Floor:
+        Item:
           Name: "&bChange floor material"
-          Lore: Drag block here to change floor
+          Lore: "Drag block here to change floor"
         Changed: "%plugin_prefix% Floor material changed!"
-      Time: 
+      Time:
         Inventory: "&bSet time"
-        Item: 
+        Item:
           Name: "&bChange plot time"
-          Lore: Right click to open menu
-        Type: 
+          Lore: "Right click to open menu"
+        Type:
           World: "&eWorld time"
-          Day: Day (1000 ticks)
-          Noon: Noon (6000 ticks)
-          Sunset: Sunset (12000 ticks)
-          Night: Night (13000 ticks)
-          MidNight: MidNight (18000 ticks)
-          Sunrise: Sunrise (23000 ticks)
+          Day: "Day (1000 ticks)"
+          Noon: "Noon (6000 ticks)"
+          Sunset: "Sunset (12000 ticks)"
+          Night: "Night (13000 ticks)"
+          MidNight: "MidNight (18000 ticks)"
+          Sunrise: "Sunrise (23000 ticks)"
         Changed: "%plugin_prefix% Time Be %value% Change Shod"
-      Biome: 
+      Biome:
         Inventory: "&bSet biome"
-        Item: 
+        Item:
           Name: "&bChange plot biome"
-          Lore: Right click to open menu
+          Lore: "Right click to open menu"
         Changed: "%plugin_prefix% Biome Change Shod"
-      Weather: 
+      Weather:
         Inventory: "&bSet weather"
-        Item: 
+        Item:
           Name: "&bChange plot weather"
-          Lore: Right click to open menu
-        Type: 
-          Downfall: Downfall
-          Clear: Clear
+          Lore: "Right click to open menu"
+        Type:
+          Downfall: "Downfall"
+          Clear: "Clear"
         Changed: "%plugin_prefix% Weather Be %value% Change Shod"
-      Banner: 
-        Inventory: 
+      Banner:
+        Inventory:
           Color: "&bSelect color"
           Layer: "&bAdd layer"
           Layer-Color: "&bAdd layer color"
-        Item: 
+        Item:
           Name: "&bBanner creator"
-          Lore: Right click to open menu
-          Create: 
+          Lore: "Right click to open menu"
+          Create:
             Name: "&bCreate final banner"
-            Lore: Right click to create this banner
-      Reset: 
-        Item: 
+            Lore: "Right click to create this banner"
+      Reset:
+        Item:
           Name: "&cReset plot"
           Lore: "&7Fully reset plot, &c&lcan't be undone!"
         Chat: "%color_chat_issue%%plugin_prefix% Plot Kamel Reset Shod!"
-  Theme: 
-    Inventory: Theme Chi Bashe?
-    Item: 
+  Theme:
+    Inventory: "Theme Chi Bashe?"
+    Item:
       Name: "%value% - %number%%"
       # use ; to move to next line
-      Lore: 'Vote for theme %value%;;Time remaining: %arena_time%;Current votes: %number%%!;;Live vote percentages;are shown on the right in;bar form.;;Click to vote %value%!'
-    Vote: 
+      Lore: "Vote for theme %value%;;Time remaining: %arena_time%;Current votes: %number%%!;;Live vote percentages;are shown on the right in;bar form.;;Click to vote %value%!"
+    Vote:
       Success: "%plugin_prefix% Shoma be %value% Vote Dadid!"
       Already: "%color_chat_issue%%plugin_prefix% You've already voted for this theme!"
-      Super: 
-        Item: 
+      Super:
+        Item:
           Name: "&bSuper vote"
-          Lore: You have %user_statistic_super_votes% super votes;;Click to super vote %value%!
+          Lore: "You have %user_statistic_super_votes% super votes;;Click to super vote %value%!"
         Used: "%plugin_prefix% Player %player% Super Vote Baraye%value% Estefade Kard! Starting now..."
-    Guess-The-Build: 
-      Inventory: Ye Theme Ro Entekhab Konid!
-      Item: 
+    Guess-The-Build:
+      Inventory: "Ye Theme Ro Entekhab Konid!"
+      Item:
         Name: "%value%"
         Lore: "%value%;;+%number% points if player's guess it correctly;;Click to select!"
-      Difficulties: 
+      Difficulties:
         Easy: "&aAsoon"
         Medium: "&eMotevaset"
         Hard: "&cSakht"
-  Buttons: 
-    Back: 
-      Item: 
+  Buttons:
+    Back:
+      Item:
         Name: "%color_chat_issue%Go Back"
-        Lore: Click to go back
-Signs: 
+        Lore: "Click to go back"
+# Sign messages
+Signs:
   Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Please type arena name in second line!"
   Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% BaseArena with that name doesn't exists!"
   Created: "%plugin_prefix% Sign created successfully!"
   Removed: "%plugin_prefix% Sign successfully removed!"
-  Lines: 
-    0: "%plugin_prefix%"
-    1: "%arena_state_placeholder%"
-    2: "%arena_name%"
-    3: "[%arena_players_size%/%arena_max_players%]"
-Arena-Selector: 
+  Lines:
+    - "%plugin_prefix%"
+    - "%arena_state_placeholder%"
+    - "%arena_name%"
+    - "[%arena_players_size%/%arena_max_players%]"
+# BaseArena Selector messages
+Arena-Selector:
   Inventory-Title: "%plugin_short_command% ▸ BaseArena selector"
-  Item: 
+  Item:
     Name: "%arena_name%"
-    Lore: 
-      0: "%plugin_name% - %arena_name%"
-      1: ␣
-      2: ␣
-      3: '␣␣Online: %arena_players_size%/%arena_max_players%'
-      4: '␣␣Vaziat: %arena_state_placeholder%'
-      5: ␣
-      6: ␣
-      7: "&aBaraye Join Click Konid\n"
-Validator: 
-  Invalid-Arena-Configuration: 'BaseArena %arena_name% has invalid configuration! Missing node: %value%'
-  Instance-Started: BaseArena %arena_name% instance successfully started!
-  No-Instances-Created: There are no arena instances created in configuration!
-Placeholders: 
-  Game-States: 
+    Lore:
+      - "%plugin_name% - %arena_name%"
+      - "␣"
+      - "␣"
+      - "␣␣Online: %arena_players_size%/%arena_max_players%"
+      - "␣␣Vaziat: %arena_state_placeholder%"
+      - "␣"
+      - "␣"
+      - "&aBaraye Join Click Konid\n"
+# Validator messages
+Validator:
+  Invalid-Arena-Configuration: "BaseArena %arena_name% has invalid configuration! Missing node: %value%"
+  Instance-Started: "BaseArena %arena_name% instance successfully started!"
+  No-Instances-Created: "There are no arena instances created in configuration!"
+# Placeholder messages inside plugin
+Placeholders:
+  Game-States:
     Waiting: "&lSabr Baraye Player..."
     Starting: "&e&lStarting"
     Full-Game: "&4&lFULL"
     In-Game: "&lIn-game"
     Ending: "&lEnding"
     Restarting: "&c&lRestarting"
-  Motd: 
+  Motd:
     Waiting: "&lYou can join this game..."
     Starting: "&e&lStarting"
     Full-Game: "&4&lFULL | Use another Server"
     In-Game: "&lIn-game | Click to spectate"
     Ending: "&lEnding | Server is closing"
     Restarting: "&c&lRestarting"
-Kit: 
+# Kit messages
+Kit:
   Not-Unlocked: "%color_chat_issue%%plugin_prefix% You haven't unlocked %value% yet!"
   Choose: "%plugin_prefix% You have chosen: %value%!"
   Cooldown: "%color_chat_issue%%plugin_prefix% Kit ability still on cooldown (%number%)!"
-  Menu: 
-    Title: Kit Menu
-    Lore: 
+  Menu:
+    Title: "Kit Menu"
+    Lore:
       Unlocked: "&aUNLOCKED!"
       Locked: "&cLOCKED!"
-      Unlock-At-Level: Unlocks at level %number%
+      Unlock-At-Level: "Unlocks at level %number%"
       Unlock-In-Store: "&bUnlock this in the store!"
-Leaderboard: 
-  Type: 
-    Hologram: 
+# Leaderboard messages
+# 
+# Hologram function need to be enabled on config.yml
+Leaderboard:
+  Type:
+    Hologram:
       Header: "&6&lTop %number% in %value%"
       Format: "&e%number%. %player% (%value%)"
       Empty-Format: "&e%number%. Empty (0)"
-    Chat: 
+    Chat:
       Header: "&8+-------+ &b&lYOUR STATS &8+-------+"
       Header-Other: "&8+---------+ &bSTATS FOR &b%player% &8+---------+"
       Footer: "&8+-----------------------------+"
       Format: "%value% ▸ &a%number%"
-      Top: 
+      Top:
         Type-Name: "%color_chat_issue%Please type statistic name to view!"
         Header: "&8&m+----------------+ [&6 Top 10 &8&m] +----------------+"
         Format: "&e#%number% %player% - %value% %user_statistic%"
-  Statistics: 
-    Wins: Bord Ha ▸ %number%
-    Loses: Bakht Ha ▸ %number%
-    Games-Played: Bazi Haye Karde ▸ %number%
-    Level: Level ▸ %number%
-    Exp: Experience ▸ %number%
-    Next-Level-Exp: Exp to Level Up ▸ %number%
-    Highest-Win: Highest win (points) ▸ %number%
-    Highest-Points: Highest points ▸ %number%
-    Total-Points-Earned: Total points earned ▸ %number%
-    Blocks-Placed: Blocks placed ▸ %number%
-    Blocks-Broken: Blocks broken ▸ %number%
-    Particles-Placed: Particles placed ▸ %number%
-    Super-Votes: Super votes ▸ %number%
+  Statistics:
+    Wins: "Bord Ha ▸ %number%"
+    Loses: "Bakht Ha ▸ %number%"
+    Games-Played: "Bazi Haye Karde ▸ %number%"
+    Level: "Level ▸ %number%"
+    Exp: "Experience ▸ %number%"
+    Next-Level-Exp: "Exp to Level Up ▸ %number%"
+    Highest-Win: "Highest win (points) ▸ %number%"
+    Highest-Points: "Highest points ▸ %number%"
+    Total-Points-Earned: "Total points earned ▸ %number%"
+    Blocks-Placed: "Blocks placed ▸ %number%"
+    Blocks-Broken: "Blocks broken ▸ %number%"
+    Particles-Placed: "Particles placed ▸ %number%"
+    Super-Votes: "Super votes ▸ %number%"
   Invalid-Name: "%color_chat_issue%Name of statistic is invalid! Type: %value%"
   Unknown-Player: "%color_chat_issue%Unknown Player"
-Do-Not-Edit: 
+# Don't edit it. But who's stopping you? It's your server!
+# Really, don't edit ;p
+# You edited it, huh? Next time hurt yourself!
+Do-Not-Edit:
   File-Version: 1
   Core-Version: 1
