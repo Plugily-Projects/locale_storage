@@ -1,29 +1,16 @@
-# You can translate BuildBattle messages here.
-# Color codes (&) supported.
-# 
-# Use \n to make new line
-# Some messages like item
-# descriptions don't support new lines
-# they are wrapped every 40 characters automatically
-# 
-# Some messages support their own placeholders
-# like %player%, %kit% etc.
-# 
-# Color scheme
-Color:
-  Placeholder:
+Color: 
+  Placeholder: 
     Value: "&b"
     Number: "&b"
     Player: "&a"
     Other: "&b"
-  Chat:
+  Chat: 
     Issue: "&c"
     Messages: "&7"
-    Special-Char:
+    Special-Char: 
       Contains: "[,],(,),{,},■,/,|,▸"
       Before: "&8"
-# Command messages
-Commands:
+Commands: 
   Did-You-Mean: "%plugin_prefix% Mysleli jste /%value%?"
   Command-Executed: "%plugin_prefix% Příkaz úspěšně vykonán!"
   Teleported-To-Lobby: "%plugin_prefix% Přemístěn do lobby!"
@@ -40,176 +27,163 @@ Commands:
   Invalid-Location-Teleport: "%color_chat_issue%%plugin_prefix% Neplatná lokace pro přemístění!"
   Wrong-Usage: "%color_chat_issue%%plugin_prefix% Chybné použití. Použíjte %value%"
   Theme-Blacklisted: "%color_chat_issue%%plugin_prefix% Tohle téma nemůže být ve hře použito!"
-  Admin:
+  Admin: 
     Adjust-Statistic: "%plugin_prefix% Statistika %value% hráče %player% je nyní %number%!"
     Reload-Success: "%plugin_prefix% Arény obnoveny!"
     Added-Plot: "%plugin_prefix% Přidán pozemek pro arénu %arena_name%"
-    List:
+    List: 
       Header: "%plugin_name% arény: Name State Players"
       Format: "%arena_name% %arena_state_placeholder% %arena_players_size%/%arena_max_players%"
       No-Arenas: "%color_chat_issue%%plugin_prefix% Neběží žádná hra!"
-    Spychat:
+    Spychat: 
       Toggled: "%plugin_prefix% Špehování chatu nastaveno na %value%"
-  Main:
+  Main: 
     Header: "&6----------------{%plugin_name% příkazy}----------"
-    Description:
-      - "&aHerní příkazy:"
-      - "&b/%plugin_short_command% stats: Zobrazí tvoje statistiky!"
-      - "&b/%plugin_short_command% leave: Odchod z arény!"
-      - "&b/%plugin_short_command% join <arena>: Připojení do konkrétní arény!"
-      - "&b/%plugin_short_command% top <statistic>: Ukáže top 10 hráčů!"
-      - "&b/%plugin_short_command% randomjoin <solo/team>: Připojení do náhodné arény!"
+    Description: 
+      0: "&aHerní příkazy:"
+      1: "&b/%plugin_short_command% stats: Zobrazí tvoje statistiky!"
+      2: "&b/%plugin_short_command% leave: Odchod z arény!"
+      3: "&b/%plugin_short_command% join <arena>: Připojení do konkrétní arény!"
+      4: "&b/%plugin_short_command% top <statistic>: Ukáže top 10 hráčů!"
+      5: "&b/%plugin_short_command% randomjoin <solo/team>: Připojení do náhodné arény!"
     Admin-Bonus-Description: "&b/%plugin_short_command%: Zobrazí všechny admin příkazy"
     Footer: "&6-------------------------------------------------"
-# In-Game scoreboard messages
-# 
-# Please do not use more chars than the scoreboard can handle!
-# Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
-# Placeholders:
-# https://wiki.plugily.xyz/REPLACEWITHPROJECTNAME/placeholders/language
-Scoreboard:
+Scoreboard: 
   Title: "&a&l%plugin_name%"
   Theme-Unknown: "&c???"
-  Content:
-    Waiting:
-      - "■ Mód | %arena_type%"
-      - " "
-      - "■ Hráčů | %arena_players_size%"
-      - " "
-      - "■ Minimum Hráčů | %arena_min_players%"
-      - " "
-      - "   www.plugily.xyz"
-    Starting:
-      - "■ Mód | %arena_type%"
-      - " "
-      - "■ Začíná za | %arena_time%"
-      - " "
-      - "■ Hráčů | %arena_players_size%"
-      - " "
-      - "■ Minimum Hráčů | %arena_min_players%"
-      - " "
-      - "   www.plugily.xyz"
-    # Contents of scoreboard while ingame
-    In-Game:
-      Classic:
-        - "■ Téma | %arena_theme%"
-        - "&f"
-        - "■ Mód | %arena_type%"
-        - "&f"
-        - "■ Zbývá  | %arena_time%"
-        - " "
-        - "■ Hráčů | %arena_players_size%"
-        - "&f"
-        - "■ Aréna | %arena_name%"
-        - " "
-        - "   www.plugily.xyz"
-      Teams:
-        - "■ Téma | %arena_theme%"
-        - "&f"
-        - "■ Mód | %arena_type%"
-        - "&f"
-        - "■ Zbývá | %arena_time%"
-        - " "
-        - "■ Spoluhráč | %arena_teammates%"
-        - "&f"
-        - "■ Aréna | %arena_name%"
-        - " "
-        - "   www.plugily.xyz"
-        - "   www.plugily.xyz"
-      Guess-The-Build:
-        - "■ Mód | %arena_type%"
-        - "&f"
-        - "■ Stavitel | %arena_builder%"
-        - " "
-        - "■ Vedou |"
-        - "%arena_place_member_1% | %arena_place_points_1%"
-        - "%arena_place_member_2% | %arena_place_points_2%"
-        - "%arena_place_member_3% | %arena_place_points_3%"
-        - " "
-        - "■ Zbývá | %arena_time%"
-        - " "
-        - "■ Téma | %arena_theme%"
-        - " "
-        - "   www.plugily.xyz"
-      Guess-The-Build-Waiting:
-        - "■ Mód | %arena_type%"
-        - "&f"
-        - "■ Vedou |"
-        - "%arena_place_member_1% | %arena_place_points_1%"
-        - "%arena_place_member_2% | %arena_place_points_2%"
-        - "%arena_place_member_3% | %arena_place_points_3%"
-        - " "
-        - "■ Začátek za | %arena_time%"
-        - " "
-        - "   www.plugily.xyz"
-    # Contents of scoreboard while state is ending
-    Ending:
-      Classic:
-        - "■ Mód | %arena_type%"
-        - "&f"
-        - "&cHRA SKONČILA"
-        - " "
-        - "&f"
-        - "&f"
-        - " "
-        - "   www.plugily.xyz"
-      Guess-The-Build:
-        - "■ Mód | %arena_type%"
-        - "&f"
-        - "■ 1. %arena_place_member_1% | %arena_place_points_1%"
-        - "■ 2. %arena_place_member_2% | %arena_place_points_2%"
-        - "■ 3. %arena_place_member_3% | %arena_place_points_3%"
-        - "■ 4. %arena_place_member_4% | %arena_place_points_4%"
-        - "■ 5. %arena_place_member_5% | %arena_place_points_5%"
-        - "■ 6. %arena_place_member_6% | %arena_place_points_6%"
-        - "■ 7. %arena_place_member_7% | %arena_place_points_7%"
-        - "■ 8. %arena_place_member_8% | %arena_place_points_8%"
-        - "■ 9. %arena_place_member_9% | %arena_place_points_9%"
-        - "■ 10. %arena_place_member_10% | %arena_place_points_10%"
-        - "&f"
-        - "   www.plugily.xyz"
-    # Contents of scoreboard while state is restarting
-    Restarting:
-      - "■ Mód | %arena_type%"
-      - "&f"
-      - "&cRESTARUJI HRU"
-      - " "
-      - "&f"
-      - "&f"
-      - " "
-      - "   www.plugily.xyz"
-# Bossbar messages
-# 
-# Bossbar needs to be enabled on config.yml
-Bossbar:
+  Content: 
+    Waiting: 
+      0: ■ Mód | %arena_type%
+      1: " "
+      2: ■ Hráčů | %arena_players_size%
+      3: " "
+      4: ■ Minimum Hráčů | %arena_min_players%
+      5: " "
+      6: "   www.plugily.xyz"
+    Starting: 
+      0: ■ Mód | %arena_type%
+      1: " "
+      2: ■ Začíná za | %arena_time%
+      3: " "
+      4: ■ Hráčů | %arena_players_size%
+      5: " "
+      6: ■ Minimum Hráčů | %arena_min_players%
+      7: " "
+      8: "   www.plugily.xyz"
+    In-Game: 
+      Classic: 
+        0: ■ Téma | %arena_theme%
+        1: "&f"
+        2: ■ Mód | %arena_type%
+        3: "&f"
+        4: ■ Zbývá  | %arena_time%
+        5: " "
+        6: ■ Hráčů | %arena_players_size%
+        7: "&f"
+        8: ■ Aréna | %arena_name%
+        9: " "
+        10: "   www.plugily.xyz"
+      Teams: 
+        0: ■ Téma | %arena_theme%
+        1: "&f"
+        2: ■ Mód | %arena_type%
+        3: "&f"
+        4: ■ Zbývá | %arena_time%
+        5: " "
+        6: ■ Spoluhráč | %arena_teammates%
+        7: "&f"
+        8: ■ Aréna | %arena_name%
+        9: " "
+        10: "   www.plugily.xyz"
+        11: "   www.plugily.xyz"
+      Guess-The-Build: 
+        0: ■ Mód | %arena_type%
+        1: "&f"
+        2: ■ Stavitel | %arena_builder%
+        3: " "
+        4: ■ Vedou |
+        5: "%arena_place_member_1% | %arena_place_points_1%"
+        6: "%arena_place_member_2% | %arena_place_points_2%"
+        7: "%arena_place_member_3% | %arena_place_points_3%"
+        8: " "
+        9: ■ Zbývá | %arena_time%
+        10: " "
+        11: ■ Téma | %arena_theme%
+        12: " "
+        13: "   www.plugily.xyz"
+      Guess-The-Build-Waiting: 
+        0: ■ Mód | %arena_type%
+        1: "&f"
+        2: ■ Vedou |
+        3: "%arena_place_member_1% | %arena_place_points_1%"
+        4: "%arena_place_member_2% | %arena_place_points_2%"
+        5: "%arena_place_member_3% | %arena_place_points_3%"
+        6: " "
+        7: ■ Začátek za | %arena_time%
+        8: " "
+        9: "   www.plugily.xyz"
+    Ending: 
+      Classic: 
+        0: ■ Mód | %arena_type%
+        1: "&f"
+        2: "&cHRA SKONČILA"
+        3: " "
+        4: "&f"
+        5: "&f"
+        6: " "
+        7: "   www.plugily.xyz"
+      Guess-The-Build: 
+        0: ■ Mód | %arena_type%
+        1: "&f"
+        2: ■ 1. %arena_place_member_1% | %arena_place_points_1%
+        3: ■ 2. %arena_place_member_2% | %arena_place_points_2%
+        4: ■ 3. %arena_place_member_3% | %arena_place_points_3%
+        5: ■ 4. %arena_place_member_4% | %arena_place_points_4%
+        6: ■ 5. %arena_place_member_5% | %arena_place_points_5%
+        7: ■ 6. %arena_place_member_6% | %arena_place_points_6%
+        8: ■ 7. %arena_place_member_7% | %arena_place_points_7%
+        9: ■ 8. %arena_place_member_8% | %arena_place_points_8%
+        10: ■ 9. %arena_place_member_9% | %arena_place_points_9%
+        11: ■ 10. %arena_place_member_10% | %arena_place_points_10%
+        12: "&f"
+        13: "   www.plugily.xyz"
+    Restarting: 
+      0: ■ Mód | %arena_type%
+      1: "&f"
+      2: "&cRESTARUJI HRU"
+      3: " "
+      4: "&f"
+      5: "&f"
+      6: " "
+      7: "   www.plugily.xyz"
+Bossbar: 
   Title: "%plugin_name% - www.plugily.xyz"
-  Content:
-    Waiting:
-      - "Čekám na více hráčů..."
-    Starting:
-      - "Začátek za: %arena_time%"
-    In-Game:
-      - "Hrajete %plugin_name_uppercase% na PLUGILY.XYZ"
-      - "Mrkněte na autora pluginu na PLUGILY.XYZ"
-      - "Zbývajíc čas - %arena_time%"
-    Guess-The-Build:
-      - "%arena_guess_word%"
-    Guess-The-Build-Waiting:
-      - "Čekej, než bude vybráno další slovo!"
-    Voting:
-      - "Zbývající čas hlasování - %arena_time%"
-    Ending:
-      - "Konec hry! Hráli jste na PLUGILY.XYZ"
-    Restarting:
-      - "Restartuji arénu. Brzo vás přesuneme!"
-# In-Game Messages
-In-Game:
+  Content: 
+    Waiting: 
+      0: Čekám na více hráčů...
+    Starting: 
+      0: 'Začátek za: %arena_time%'
+    In-Game: 
+      0: Hrajete %plugin_name_uppercase% na PLUGILY.XYZ
+      1: Mrkněte na autora pluginu na PLUGILY.XYZ
+      2: Zbývajíc čas - %arena_time%
+    Guess-The-Build: 
+      0: "%arena_guess_word%"
+    Guess-The-Build-Waiting: 
+      0: Čekej, než bude vybráno další slovo!
+    Voting: 
+      0: Zbývající čas hlasování - %arena_time%
+    Ending: 
+      0: Konec hry! Hráli jste na PLUGILY.XYZ
+    Restarting: 
+      0: Restartuji arénu. Brzo vás přesuneme!
+In-Game: 
   # Used in most game messages.
-  Plugin-Prefix: "(%plugin_name%)"
+  Plugin-Prefix: (%plugin_name%)
   Game-Chat-Format: "[%user_statistic_level%][%kit%] %player% | %message%"
   You-Leveled-Up: "%plugin_prefix% Nová úroveň! Vaše aktuální úroveň je %number%!"
   Commands-Blocked: "%color_chat_issue%%plugin_prefix% První musíte odejít z arény, aby jste mohli používat ostatní příkazy. /%plugin_short_command% leave!"
-  Join:
+  Join: 
     Already-Playing: "%color_chat_issue%%plugin_prefix% Již čekáte ve frontě do hry! Můžete opustit hru s pomocí /%plugin_short_command% leave."
     No-Permission: "%color_chat_issue%%plugin_prefix% Nemáte %value% oprávnění na připojení se do této arény!"
     Full-Game: "%color_chat_issue%%plugin_prefix% Nemůžete se připojit do plné hry!"
@@ -218,36 +192,36 @@ In-Game:
     Cancelled-Via-API: "%color_chat_issue%%plugin_prefix% Nemůžete se připojit do této hry!"
     As-Party-Member: "%color_chat_issue%%plugin_prefix% Vůdce vaší party vás připojil do arény %arena_name%!"
     Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% Základní aréna není zatím nastavena! Kontaktuje správce!"
-    Title: "20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%"
-  Death:
+    Title: 20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%
+  Death: 
     Tag: "&8Smrt"
     Screen: "%color_chat_issue%Zemřel jsi!"
-  Spectator:
+  Spectator: 
     Blocked: "%color_chat_issue%%plugin_prefix% Diváci jsou zakázaní v této aréně"
     You-Are-Spectator: "%plugin_prefix% Jsi divák! Nyní můžeš létat!"
     Spectator-Menu-Name: "%color_chat_issue%Seznam živých hráčů"
     Target-Player-Health: "%color_chat_issue%Životy: %number%"
     Spectator-Warning: "%plugin_prefix% Jsi divák!"
     Teleport: "%plugin_prefix% Přenesen k hráči %player%"
-    Menu:
-      Settings:
-        Status:
-          Enabled: "Povoleno"
-          Disabled: "Zakázáno"
-        Changed-Speed: "Rychlost nastavena na %number%"
+    Menu: 
+      Settings: 
+        Status: 
+          Enabled: Povoleno
+          Disabled: Zakázáno
+        Changed-Speed: Rychlost nastavena na %number%
         Auto-Teleport: "%value% auto teleport"
-        Target-Player:
+        Target-Player: 
           Action-Bar: "%number% bloků daleko | Cíl %player%"
         Night-Vision: "%value% noční vidění"
-        First-Person-Mode:
+        First-Person-Mode: 
           Action-Bar: "&ePŘIKRČ SE &cpro odchod! | Cíl %player%"
           Title: "&ePŘIKRČ SE &cpro odchod!"
         Visibility: "%value% ostatních diváků"
-  Messages:
+  Messages: 
     Join: "%plugin_prefix% %player% se připojil do hry (%arena_players_size%/%arena_max_players%)!"
     Leave: "%plugin_prefix% %player% opustil hru (%arena_players_size%/%arena_max_players%)!"
     Death: "%plugin_prefix% %player% zemřel!"
-    Lobby:
+    Lobby: 
       Start-In: "%plugin_prefix% Hra začne za %arena_time% sekund!"
       Waiting-For-Players: "%plugin_prefix% Čekám na hráče... Potřebujeme alespoň %arena_min_players% hráčů."
       Enough-Players-To-Start: "%plugin_prefix% Máme dostatek hráčů. Hra za chvíli začne!"
@@ -257,277 +231,265 @@ In-Game:
       Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% %player% byl vyhozen ze hry aby udělal místo pro prémiové hráče!"
       You-Were-Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% Byl jsi vyhozen ze hry aby se udělalo místo pro pemium hráče!"
       Not-Enough-Space-For-Party: "%color_chat_issue%%plugin_prefix% Tvoje parta je větší, než je volných míst v aréně %arena_name%"
-    Game-End:
-      Summary:
-        - "&a&m--------------------------------------------------"
-        - "%plugin_name%"
-        - " "
-        - "%arena_summary%"
-        - "%arena_summary_player%"
-        - "%arena_summary_place_own%"
-        - " "
-        - "%arena_summary_place_list%"
-        - " "
-        - " "
-        - "&a&m--------------------------------------------------"
-      Placeholders:
+    Game-End: 
+      Summary: 
+        0: "&a&m--------------------------------------------------"
+        1: "%plugin_name%"
+        2: " "
+        3: "%arena_summary%"
+        4: "%arena_summary_player%"
+        5: "%arena_summary_place_own%"
+        6: " "
+        7: "%arena_summary_place_list%"
+        8: " "
+        9: " "
+        10: "&a&m--------------------------------------------------"
+      Placeholders: 
         Win: "&aVyhrál jsi hru"
         Lose: "%color_chat_issue%Prohrál jsi"
         Players: "&cJiž nemáme dostatečný počet hráčů. Aréna byla zastavena!"
         Place: "%number% místo - %value%"
         Own: "&aJsi na %number% místě"
         Winner: "&aStavba hráče %arena_place_member_1% vyhrála!"
-    Admin:
+    Admin: 
       Set-Starting-In-To-0: "%plugin_prefix% Admin přeskočil čekání. Hra začíná teď!"
       Changed-Theme: "%plugin_prefix% Admin změnil téma na %THEME%"
-    Plot:
+    Plot: 
       Added-Particle: "%plugin_prefix% Particle byl přidán úspěšně!"
       Nobody: "%color_chat_issue%Nikdo"
-      Time-Left:
-        Title: "5,20,5;;%color_chat_issue%Zbývá %arena_time% sekund"
+      Time-Left: 
+        Title: 5,20,5;;%color_chat_issue%Zbývá %arena_time% sekund
         Chat: "%plugin_prefix% %arena_time% Čas stavět!"
-      Limit:
+      Limit: 
         Entities: "%color_chat_issue%%plugin_prefix% Nemůžeš přidat více entit!"
         Particles: "%color_chat_issue%%plugin_prefix% Nemůžeš přidat více particlů!"
-      Permission:
+      Permission: 
         Particle: "%color_chat_issue%%plugin_prefix% Nemáš práva na použití tohoto particle!"
         Biome: "%color_chat_issue%%plugin_prefix% Nemáš práva k použití tohoto biomu!"
         Outside: "%color_chat_issue%%plugin_prefix% Nemůžeš opustit svůj prostor na stavění!"
         Floor-Item: "%color_chat_issue%%plugin_prefix% Tento item nelze nastavit jako podlahu!"
         Head: "%color_chat_issue%%plugin_prefix% Pro tuto hlavu nemáte oprávnění!"
-      Selector:
-        Full: "Tým je plný"
-        Empty: "Můžeš se připojit k tomuto týmu"
-        Inside: "Tvůj tým"
-        Name: "Pozemek - %plot%"
-        Menu-Name: "Možnosti pozemku"
-        Plot-Choose: "Jsi na pozemku %plot%"
-        Member: "Již jsi členem!"
-      Voting:
+      Selector: 
+        Full: Tým je plný
+        Empty: Můžeš se připojit k tomuto týmu
+        Inside: Tvůj tým
+        Name: Pozemek - %plot%
+        Menu-Name: Možnosti pozemku
+        Plot-Choose: Jsi na pozemku %plot%
+        Member: Již jsi členem!
+      Voting: 
         Name: "%color_chat_issue%Hlasování"
-        Plot-Owner:
+        Plot-Owner: 
           Chat: "%plugin_prefix% Postavil: %value%"
-          Title: "5,20,5;;Postavil: %value%"
+          Title: '5,20,5;;Postavil: %value%'
           Next: "%plugin_prefix% Nyní se hlasuje pro %value%!"
           Was: "%plugin_prefix% Stavba patřila %value%!"
           Own: "%color_chat_issue%%plugin_prefix% Nemůžeš hlasovat sám pro sebe!"
         Success: "%plugin_prefix% Hlas započítán!"
-        Winner: "5,20,5;%plugin_prefix% VÍTĚZ: %value%"
-      Guess-The-Build:
-        Builder: "Stavitel: %BUILDER%"
-        Round: "Kolo: %number%/%arena_max_players%"
-        Theme:
+        Winner: '5,20,5;%plugin_prefix% VÍTĚZ: %value%'
+      Guess-The-Build: 
+        Builder: 'Stavitel: %BUILDER%'
+        Round: 'Kolo: %number%/%arena_max_players%'
+        Theme: 
           Chars: "%plugin_prefix% Téma má %NUM% znaků"
           Name: "%plugin_prefix% Téma je %arena_theme%"
           Was: "%plugin_prefix% Téma bylo: %arena_theme%!"
-          Title: "20,30,20;Téma bylo;%arena_theme%!"
+          Title: 20,30,20;Téma bylo;%arena_theme%!
           Guessed: "%plugin_prefix% Všichni hráči uhádli téma!"
           Being-Selected: "%plugin_prefix% Vybírá se téma..."
-          Guess:
-            Title: "5,20,5;Začněte hádat!"
+          Guess: 
+            Title: 5,20,5;Začněte hádat!
             Points: "%plugin_prefix% +%pts% bodů!"
             Guessed: "%plugin_prefix% %player% uhodl téma!"
             Cant-Talk: "%color_chat_issue%%plugin_prefix% Nemůžeš mluvit, když už jsi uhodl téma!"
             Builder: "%color_chat_issue%%plugin_prefix% Nemůžeš mluvit, když stavíš!"
-      NPC:
+      NPC: 
         Name: "&aZměnit NPC"
         Created: "%plugin_prefix% NPC úspěšně přidáno!"
         Install-Citizens: "%color_chat_issue%%plugin_prefix% Pro přidání NPC prosím přidejte Citizens plugin!"
-# Menu messages
-Menu:
+Menu: 
   Permission: "%color_chat_issue%%plugin_prefix% Nemáš práva k použití tohoto menu!"
   Location: "Lokace: "
-  Option:
+  Option: 
     Inventory: "&bMožnosti"
-    Content:
-      Particle:
+    Content: 
+      Particle: 
         Inventory: "&bParticles"
-        Item:
+        Item: 
           Name: "&bVyberte particles"
-          Lore: "Klikni pro získání particlů"
-          Remove:
+          Lore: Klikni pro získání particlů
+          Remove: 
             Name: "%color_chat_issue%Odstranit particles"
-            Lore: "Klikni pravým pro otevření menu"
+            Lore: Klikni pravým pro otevření menu
         Removed: "%color_chat_issue%%plugin_prefix% Particly byli odstraněny!"
         Added: "%color_chat_issue%%plugin_prefix% Particle byl přidán!"
-      Heads:
+      Heads: 
         Inventory: "&bHlavy hráčů"
-        Item:
+        Item: 
           Name: "&bZískat hlavy hráčů"
-          Lore: "Klikni pro získání hlav"
-      Floor:
-        Item:
+          Lore: Klikni pro získání hlav
+      Floor: 
+        Item: 
           Name: "&bZměnit podlahu"
-          Lore: "Pro změnu podlahy zde přetáhni blok"
+          Lore: Pro změnu podlahy zde přetáhni blok
         Changed: "%plugin_prefix% Podlaha změněna!"
-      Time:
+      Time: 
         Inventory: "&bNastavit čas"
-        Item:
+        Item: 
           Name: "&vZměnit denní dobu"
-          Lore: "Klikni pravým pro otevření menu"
-        Type:
+          Lore: Klikni pravým pro otevření menu
+        Type: 
           World: "&eSvětový čas"
-          Day: "Den (1000 tiků)"
-          Noon: "Poledne (6000 tiků)"
-          Sunset: "Západ slunce (12000 ticků)"
-          Night: "Noc (12000 ticků)"
-          MidNight: "Půlnoc (18000 ticků)"
-          Sunrise: "Východ slunce (23000 ticků)"
+          Day: Den (1000 tiků)
+          Noon: Poledne (6000 tiků)
+          Sunset: Západ slunce (12000 ticků)
+          Night: Noc (12000 ticků)
+          MidNight: Půlnoc (18000 ticků)
+          Sunrise: Východ slunce (23000 ticků)
         Changed: "%plugin_prefix% Čas byl nastaven na %value%"
-      Biome:
+      Biome: 
         Inventory: "&bNastavit biom"
-        Item:
+        Item: 
           Name: "&bZměnit biom"
-          Lore: "Klikni pravým pro otevření menu"
+          Lore: Klikni pravým pro otevření menu
         Changed: "%plugin_prefix% Biom byl nastaven"
-      Weather:
+      Weather: 
         Inventory: "&bNastavit počasí"
-        Item:
+        Item: 
           Name: "&bZměnit počasí"
-          Lore: "Klikni pravým pro otevření menu"
-        Type:
-          Downfall: "Déšť"
-          Clear: "Slunečno"
+          Lore: Klikni pravým pro otevření menu
+        Type: 
+          Downfall: Déšť
+          Clear: Slunečno
         Changed: "%plugin_prefix% Počasí změneno"
-      Banner:
-        Inventory:
+      Banner: 
+        Inventory: 
           Color: "&bNastavit barvu"
           Layer: "&bPřidat vrstvu"
           Layer-Color: "&bPřidat barvu vrstvy"
-        Item:
+        Item: 
           Name: "&bTvůrce bannerů"
-          Lore: "Klikni pravým pro otevření menu"
-          Create:
+          Lore: Klikni pravým pro otevření menu
+          Create: 
             Name: "&bVytvořit banner"
-            Lore: "Klikni pravým pro vytvoření tohoto banneru"
-      Reset:
-        Item:
+            Lore: Klikni pravým pro vytvoření tohoto banneru
+      Reset: 
+        Item: 
           Name: "&bVymazat pozemek"
           Lore: "&7Zcela vymazat pozemek, &c&lnezle vrátit!"
         Chat: "%color_chat_issue%%plugin_prefix% Pozemek obnoven!"
-  Theme:
-    Inventory: "Vybrat téma?"
-    Item:
+  Theme: 
+    Inventory: Vybrat téma?
+    Item: 
       Name: "%arena_theme%"
       # use ; to move to next line
-      Lore: "Hlasuj pro téma %theme%;;Zbývá: %time-left%;Hlasů: %percent%%!;;Živý náhled výsledkůs;je zobrazen v pravo;v podobě baru.;;Klikni pro hlasování %theme%!"
-    Vote:
+      Lore: 'Hlasuj pro téma %theme%;;Zbývá: %time-left%;Hlasů: %percent%%!;;Živý náhled výsledkůs;je zobrazen v pravo;v podobě baru.;;Klikni pro hlasování %theme%!'
+    Vote: 
       Success: "%plugin_prefix% Hlasoval jsi pro %theme%!"
       Already: "%color_chat_issue%%plugin_prefix% Pro toto téma už jsi hlasoval!"
-      Super:
-        Item:
+      Super: 
+        Item: 
           Name: "&bSuper hlas"
-          Lore: "Máš %owned% super hlasů;;Kliknutím hlasuj pro %theme%!"
+          Lore: Máš %owned% super hlasů;;Kliknutím hlasuj pro %theme%!
         Used: "%plugin_prefix% Hráš %player% použil super hlas na téma %theme%! Hra začíná..."
-    Guess-The-Build:
-      Inventory: "Vyberte téma ke svavění!"
-      Item:
+    Guess-The-Build: 
+      Inventory: Vyberte téma ke svavění!
+      Item: 
         Name: "%theme%"
         Lore: "%difficulty%;;+%points% bodů když hráči uhodnou téma;;Klikni pro výběr!\n"
-      Difficulties:
+      Difficulties: 
         Easy: "&aLEHKÁ"
         Medium: "&eSTŘEDNÍ"
         Hard: "&cTĚŽKÁ"
-  Buttons:
-    Back:
-      Item:
+  Buttons: 
+    Back: 
+      Item: 
         Name: "%color_chat_issue%Zpět"
-        Lore: "Jdi zpět kliknutím."
-# Sign messages
-Signs:
+        Lore: Jdi zpět kliknutím.
+Signs: 
   Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Prosím, napšite jméno arény na druhý řádek!"
   Arena-Doesnt-Exists: "'%color_chat_issue%%plugin_prefix% Aréna s tímto názvem neexistuje!"
   Created: "%plugin_prefix% Cedule úspěšně vytvořena!"
   Removed: "%plugin_prefix% Cedule úspěšně odstraněna!"
-  Lines:
-    - "%plugin_prefix%"
-    - "%arena_state_placeholder%"
-    - "%arena_name%"
-    - "[%arena_players_size%/%arena_max_players%]"
-# BaseArena Selector messages
-Arena-Selector:
+  Lines: 
+    0: "%plugin_prefix%"
+    1: "%arena_state_placeholder%"
+    2: "%arena_name%"
+    3: "[%arena_players_size%/%arena_max_players%]"
+Arena-Selector: 
   Inventory-Title: "%plugin_short_command% ▸ Výběr arény"
-  Item:
+  Item: 
     Name: "%arena_name%"
-    Lore:
-      - "%plugin_name% - %arena_name%"
-      - " "
-      - " "
-      - "  Online: %arena_players_size%/%arena_max_players%"
-      - "  Stav: %arena_state_placeholder%"
-      - " "
-      - " "
-      - "&aKlikni pro připojení do arény"
-# Validator messages
-Validator:
-  Invalid-Arena-Configuration: "Aréna %arena_name% má chybnou konfiguraci! Chybí: %value%"
-  Instance-Started: "Aréna %arena_name% úspěšně začala!"
-  No-Instances-Created: "V konfiguraci nejsou nastaveny žádné arény!"
-# Placeholder messages inside plugin
-Placeholders:
-  Game-States:
+    Lore: 
+      0: "%plugin_name% - %arena_name%"
+      1: " "
+      2: " "
+      3: "  Online: %arena_players_size%/%arena_max_players%"
+      4: "  Stav: %arena_state_placeholder%"
+      5: " "
+      6: " "
+      7: "&aKlikni pro připojení do arény"
+Validator: 
+  Invalid-Arena-Configuration: 'Aréna %arena_name% má chybnou konfiguraci! Chybí: %value%'
+  Instance-Started: Aréna %arena_name% úspěšně začala!
+  No-Instances-Created: V konfiguraci nejsou nastaveny žádné arény!
+Placeholders: 
+  Game-States: 
     Waiting: "&lČekám na hráče..."
     Starting: "&e&lStartuje"
     Full-Game: "&4&lPLNÁ"
     In-Game: "&lVe hře"
     Ending: "&lKončí"
     Restarting: "&c&lRestaruje se"
-  Motd:
+  Motd: 
     Waiting: "&lMůžeš se připojit do hry..."
     Starting: "&e&lStartuje"
     Full-Game: "&4&lPLNÁ | Použijte jiný server"
     In-Game: "&lVe hře | Klikni pro sledování"
     Ending: "&lKonec hry | Server se zavírá"
     Restarting: "&c&lRestartování"
-# Kit messages
-Kit:
+Kit: 
   Not-Unlocked: "%color_chat_issue%%plugin_prefix% %value% jsi ještě neodemkl!"
   Choose: "%plugin_prefix% Vybral jsi: %value%!"
   Cooldown: "%color_chat_issue%%plugin_prefix% Schopnost se ještě nabíjí (%number%)!"
-  Menu:
-    Title: "Kity"
-    Lore:
+  Menu: 
+    Title: Kity
+    Lore: 
       Unlocked: "&aODEMČENO!"
       Locked: "&cZAMČENO!"
-      Unlock-At-Level: "Odemkne se na úrovni %number%"
+      Unlock-At-Level: Odemkne se na úrovni %number%
       Unlock-In-Store: "&bOdemkni v obchodě!"
-# Leaderboard messages
-# 
-# Hologram function need to be enabled on config.yml
-Leaderboard:
-  Type:
-    Hologram:
+Leaderboard: 
+  Type: 
+    Hologram: 
       Header: "&6&lTop %number% ve %value%"
       Format: "&e%number%. %player% (%value%)"
       Empty-Format: "&e%number%. Prázdné (0)"
-    Chat:
+    Chat: 
       Header: "&8+-------+ &b&lTVÉ STATISTIKY &8+-------+"
       Header-Other: "&8+---------+ &STATISTIKY HRÁČE &b%player% &8+---------+"
       Footer: "&8+-----------------------------+"
       Format: "%value% ▸ &a%number%"
-      Top:
+      Top: 
         Type-Name: "%color_chat_issue%Napište jméno statistiky pro zobrazení!"
         Header: "&8&m+----------------+ [&6 Top 10 &8&m] +----------------+"
         Format: "&e#%number% %player% - %value% %user_statistic%"
-  Statistics:
-    Wins: "Výhry ▸ %number%"
-    Loses: "Prohry ▸ %number%"
-    Games-Played: "Odehrané hry ▸ %number%"
-    Level: "Úroveň ▸ %number%"
-    Exp: "Zkušenosti ▸ %number%"
-    Next-Level-Exp: "XP do nové úrovně ▸ %number%"
-    Highest-Win: "Nejvyšší výhra (body)  ▸ %number%"
-    Highest-Points: "Nejvíce bodů ▸ %number%"
-    Total-Points-Earned: "Celkem bodů ▸ %number%"
-    Blocks-Placed: "Bloků položeno ▸ %number%"
-    Blocks-Broken: "Bloků rozbito ▸ %number%"
-    Particles-Placed: "Particlů použito ▸ %number%"
-    Super-Votes: "Super hlasů ▸ %number%"
+  Statistics: 
+    Wins: Výhry ▸ %number%
+    Loses: Prohry ▸ %number%
+    Games-Played: Odehrané hry ▸ %number%
+    Level: Úroveň ▸ %number%
+    Exp: Zkušenosti ▸ %number%
+    Next-Level-Exp: XP do nové úrovně ▸ %number%
+    Highest-Win: Nejvyšší výhra (body)  ▸ %number%
+    Highest-Points: Nejvíce bodů ▸ %number%
+    Total-Points-Earned: Celkem bodů ▸ %number%
+    Blocks-Placed: Bloků položeno ▸ %number%
+    Blocks-Broken: Bloků rozbito ▸ %number%
+    Particles-Placed: Particlů použito ▸ %number%
+    Super-Votes: Super hlasů ▸ %number%
   Invalid-Name: "%color_chat_issue%Jméno statistiky je neplatné! Použíjte: %value%"
   Unknown-Player: "%color_chat_issue%Neznámý hráč"
-# Don't edit it. But who's stopping you? It's your server!
-# Really, don't edit ;p
-# You edited it, huh? Next time hurt yourself!
-Do-Not-Edit:
+Do-Not-Edit: 
   File-Version: 1
   Core-Version: 1
