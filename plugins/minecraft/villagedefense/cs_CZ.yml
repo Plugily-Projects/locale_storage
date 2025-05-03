@@ -1,5 +1,4 @@
-# Command messages
-Commands:
+Commands: 
   Did-You-Mean: "%plugin_prefix% Měli jste na mysli /%value%?"
   Command-Executed: "%plugin_prefix% Příkaz byl úspěšně proveden!"
   Teleported-To-Lobby: "%plugin_prefix% Teleportován/a na lobby!"
@@ -15,122 +14,109 @@ Commands:
   Player-Not-Found: "%color_chat_issue%%plugin_prefix% Cílový hráč %player% neexistuje!"
   Invalid-Location-Teleport: "%color_chat_issue%%plugin_prefix% Lokace k teleportu je neplatná!"
   Wrong-Usage: "%color_chat_issue%%plugin_prefix% Špatné užití. Použijte %value%"
-  Admin:
-    Added-Orbs: "Hráči byly přidány orby!"
-    Received-Orbs: "Odbržel/a jste %number% orbů!"
+  Admin: 
+    Added-Orbs: Hráči byly přidány orby!
+    Received-Orbs: Odbržel/a jste %number% orbů!
     Added-Level: "&7Hráči byla přidána úroveň!"
     Reload-Success: "%plugin_prefix% Arény se znovu načetly!"
-    List:
+    List: 
       Header: "%plugin_name% arény: Jméno Stav Hráči"
       Format: "%arena_name% %arena_state_placeholder% %arena_players_size%/%arena_max_players%"
       No-Arenas: "%color_chat_issue%%plugin_prefix% Žádné instance nenalezeny!"
-    Spychat:
+    Spychat: 
       Toggled: "%plugin_prefix% Sledování chatu nastaveno na %value%"
     Adjust-Statistic: "%plugin_prefix% Statistika %value% hráče %player% změněna na %number%!"
-  Main:
+  Main: 
     Header: "&6----------------{%plugin_name% příkazy}----------"
-    Description:
-      - "&aHerní příkazy:"
-      - "&b/%plugin_short_command% stats: Zobrazí tvé statistiky!"
-      - "&b/%plugin_short_command% leave: Odpojí tě z arény!"
-      - "&b/%plugin_short_command% join <arena>: Připojí tě do specifické arény!"
-      - "&b/%plugin_short_command% top <statistic>: Zobrazí nejlepších 10 hráčů!"
-      - "&b/%plugin_short_command% randomjoin: Připojí tě do náhodné arény!"
+    Description: 
+      0: "&aHerní příkazy:"
+      1: "&b/%plugin_short_command% stats: Zobrazí tvé statistiky!"
+      2: "&b/%plugin_short_command% leave: Odpojí tě z arény!"
+      3: "&b/%plugin_short_command% join <arena>: Připojí tě do specifické arény!"
+      4: "&b/%plugin_short_command% top <statistic>: Zobrazí nejlepších 10 hráčů!"
+      5: "&b/%plugin_short_command% randomjoin: Připojí tě do náhodné arény!"
     Admin-Bonus-Description: "&b/%plugin_short_command%: Zobrazí příkazy pro adminy"
     Footer: "&6-------------------------------------------------"
-# In-Game scoreboard messages
-# 
-# Please do not use more chars than the scoreboard can handle!
-# Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
-# Placeholders:
-# https://wiki.plugily.xyz/villagedefense/placeholders/language
-Scoreboard:
+Scoreboard: 
   Title: "&a&l%plugin_name%"
-  Content:
-    Waiting:
-      - "&fHráčů: &e%arena_players_size%"
-      - "■ Hráčů | %arena_players_size%"
-      - "&fMinimum Hráčů: &e%arena_min_players%"
-      - "■ Minimum Hráčů | %arena_min_players%"
-      - "&ewww.plugily.xyz"
-      - "   www.plugily.xyz"
-    Starting:
-      - "&fZačínáme za: &e%arena_time%"
-      - "■ Začínáme za | %arena_time%"
-      - "&fHráčů: &e%arena_players_size%"
-      - "■ Hráčů | %arena_players_size%"
-      - "&fMinimum Hráčů: &e%arena_min_players%"
-      - "■ Minimum Hráčů | %arena_min_players%"
-      - "&ewww.plugily.xyz"
-      - "   www.plugily.xyz"
-    # Contents of scoreboard while ingame
-    In-Game:
-      - "&fZbývajících Vesničanů: &e%arena_villager_size%"
-      - "■ Vesničanů | %arena_villager_size%"
-      - "■ Hráčů | %arena_players_left_size%"
-      - "■ Zombie | %arena_zombie_size_left%"
-      - "&fShnilého Masa: &e%arena_rotten_flesh_amount%"
-      - "■ Shnilého Masa | %arena_rotten_flesh_amount%"
-      - "■ Kuliček | %user_statistic_orbs%"
-      - "&ewww.plugily.xyz"
-      - "   www.plugily.xyz"
-    In-Game-Waiting:
-      - "&fZbývajících Vesničanů: &e%arena_villager_size%"
-      - "■  Vesničanů | %arena_villager_size%"
-      - "■ Hráčů | %arena_players_left_size%"
-      - " "
-      - "■ Další Vlna | %arena_time%"
-      - " "
-      - "■ Shnilého Masa | %arena_rotten_flesh_amount%"
-      - "Orby | %user_statistic_orbs%"
-      - " "
-      - "   www.plugily.xyz"
-    # Contents of scoreboard while state is ending
-    Ending:
-      - "&f"
-      - "&f"
-      - "&cHRA SKONČILA"
-      - " "
-      - "&f"
-      - "&f"
-      - " "
-      - "   www.plugily.xyz"
-    # Contents of scoreboard while state is restarting
-    Restarting:
-      - "&f"
-      - "&f"
-      - "&cHRA SE RESTARTUJE"
-      - " "
-      - "&f"
-      - "&f"
-      - " "
-      - "   www.plugily.xyz"
-# Bossbar messages
-# 
-# Bossbar needs to be enabled on config.yml
-Bossbar:
+  Content: 
+    Waiting: 
+      0: "&fHráčů: &e%arena_players_size%"
+      1: ■ Hráčů | %arena_players_size%
+      2: "&fMinimum Hráčů: &e%arena_min_players%"
+      3: ■ Minimum Hráčů | %arena_min_players%
+      4: "&ewww.plugily.xyz"
+      5: "   www.plugily.xyz"
+    Starting: 
+      0: "&fZačínáme za: &e%arena_time%"
+      1: ■ Začínáme za | %arena_time%
+      2: "&fHráčů: &e%arena_players_size%"
+      3: ■ Hráčů | %arena_players_size%
+      4: "&fMinimum Hráčů: &e%arena_min_players%"
+      5: ■ Minimum Hráčů | %arena_min_players%
+      6: "&ewww.plugily.xyz"
+      7: "   www.plugily.xyz"
+    In-Game: 
+      0: "&fZbývajících Vesničanů: &e%arena_villager_size%"
+      1: ■ Vesničanů | %arena_villager_size%
+      2: ■ Hráčů | %arena_players_left_size%
+      3: ■ Zombie | %arena_zombie_size_left%
+      4: "&fShnilého Masa: &e%arena_rotten_flesh_amount%"
+      5: ■ Shnilého Masa | %arena_rotten_flesh_amount%
+      6: ■ Kuliček | %user_statistic_orbs%
+      7: "&ewww.plugily.xyz"
+      8: "   www.plugily.xyz"
+    In-Game-Waiting: 
+      0: "&fZbývajících Vesničanů: &e%arena_villager_size%"
+      1: ■  Vesničanů | %arena_villager_size%
+      2: ■ Hráčů | %arena_players_left_size%
+      3: " "
+      4: ■ Další Vlna | %arena_time%
+      5: " "
+      6: ■ Shnilého Masa | %arena_rotten_flesh_amount%
+      7: Orby | %user_statistic_orbs%
+      8: " "
+      9: "   www.plugily.xyz"
+    Ending: 
+      0: "&f"
+      1: "&f"
+      2: "&cHRA SKONČILA"
+      3: " "
+      4: "&f"
+      5: "&f"
+      6: " "
+      7: "   www.plugily.xyz"
+    Restarting: 
+      0: "&f"
+      1: "&f"
+      2: "&cHRA SE RESTARTUJE"
+      3: " "
+      4: "&f"
+      5: "&f"
+      6: " "
+      7: "   www.plugily.xyz"
+Bossbar: 
   Title: "\n&a&l%plugin_name% &6- www.plugily.xyz"
-  Content:
-    Waiting:
-      - "Čekáme na další hráče..."
-    Starting:
-      - "Začínáme za: %arena_time%"
-    In-Game:
-      - "Hraješ %plugin_name_uppercase% na PLUGILY.XYZ"
-      - "Navštiv autora pluginu na PLUGILY.XYZ"
-      - "Aktuální vlna %arena_option_wave%"
-    Ending:
-      - "Hra skončila! Hrál jsi na PLUGILY.XYZ"
-    Restarting:
-      - "Restartuju arénu. Budeš teleportován!"
-# In-Game Messages
-In-Game:
+  Content: 
+    Waiting: 
+      0: Čekáme na další hráče...
+    Starting: 
+      0: 'Začínáme za: %arena_time%'
+    In-Game: 
+      0: Hraješ %plugin_name_uppercase% na PLUGILY.XYZ
+      1: Navštiv autora pluginu na PLUGILY.XYZ
+      2: Aktuální vlna %arena_option_wave%
+    Ending: 
+      0: Hra skončila! Hrál jsi na PLUGILY.XYZ
+    Restarting: 
+      0: Restartuju arénu. Budeš teleportován!
+In-Game: 
   # Used in most game messages.
-  Plugin-Prefix: "(%plugin_name%)"
+  Plugin-Prefix: (%plugin_name%)
   Game-Chat-Format: "[%user_statistic_level%][%kit%] %player% | %message%"
   You-Leveled-Up: "%plugin_prefix% Nová úroveň! Nyní jsi na úrovni %number%!"
   Commands-Blocked: "%color_chat_issue%%plugin_prefix% Pro provádění příkazů se musís nejdřív odpojit. Jediný funkční příkaz je /%plugin_short_command% leave!"
-  Join:
+  Join: 
     Already-Playing: "%color_chat_issue%%plugin_prefix% Již jsi ve frontě na hru! Můžeš z ní odejít pomocí příkazu /%plugin_short_command% leave."
     No-Permission: "%color_chat_issue%%plugin_prefix% Nemáš oprávnění %value% nutné pro připojení do této arény!"
     Full-Game: "%color_chat_issue%%plugin_prefix% Nemáš oprávnění připojovat se do plných her!"
@@ -139,36 +125,36 @@ In-Game:
     Cancelled-Via-API: "%color_chat_issue%%plugin_prefix% Do této hry se nemůžeš připojit!"
     As-Party-Member: "%color_chat_issue%%plugin_prefix% Byl jsi připojen do arény %arena_name%, protože se do ní připojil vedoucí party!"
     Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% Tato aréna není nastavená! Kontaktuj vedení!"
-    Title: "20, 30, 20;%arena_name%;%arena_players_size%/%arena_max_players%"
-  Death:
+    Title: 20, 30, 20;%arena_name%;%arena_players_size%/%arena_max_players%
+  Death: 
     Tag: "&8Mrtvý"
     Screen: "%color_chat_issue%Zemřel jsi!"
-  Spectator:
+  Spectator: 
     You-Are-Spectator: "%plugin_prefix% Nyní jsi pozorovatel! Můžeš létat!"
     Spectator-Menu-Name: "%color_chat_issue%Seznam živých hráčů"
     Target-Player-Health: "%color_chat_issue%Životy: %number%"
     Spectator-Warning: "%plugin_prefix% Jsi divák!"
     Teleport: "%plugin_prefix% Teleportován k %player%"
-    Menu:
-      Settings:
-        Status:
-          Enabled: "Povolen"
-          Disabled: "Zakázán"
-        Changed-Speed: "Rychlost nastavena na %number%"
+    Menu: 
+      Settings: 
+        Status: 
+          Enabled: Povolen
+          Disabled: Zakázán
+        Changed-Speed: Rychlost nastavena na %number%
         Auto-Teleport: "%value% auto teleport"
-        Target-Player:
+        Target-Player: 
           Action-Bar: "%number% bloků daleko | Cíl %player%"
         Night-Vision: "%value% noční vidění"
-        First-Person-Mode:
+        First-Person-Mode: 
           Action-Bar: "&ePŘIKRČ SE &cpro odchod! | Cíl %player%"
           Title: "&ePŘIKRČ SE &cpro odchod!"
         Visibility: "%value% ostatních diváků"
     Blocked: "%color_chat_issue%%plugin_prefix% Pozorovatelé jsou zakázaní v této aréně"
-  Messages:
+  Messages: 
     Join: "%plugin_prefix% %player% se připojil do hry (%arena_players_size%/%arena_max_players%)!"
     Leave: "%plugin_prefix% %player% se odpojil ze hry (%arena_players_size%/%arena_max_players%)!"
     Death: "%plugin_prefix% %player% zemřel!"
-    Lobby:
+    Lobby: 
       Start-In: "%plugin_prefix% Hra začne za %arena_time% sekund!"
       Waiting-For-Players: "%plugin_prefix% Čekám na hráče... Potřebujeme alespoň %arena_min_players% hráčů pro začátek hry."
       Enough-Players-To-Start: "%plugin_prefix% Máme dostatek hráčů. Hra brzy začne!"
@@ -178,405 +164,378 @@ In-Game:
       Not-Enough-Space-For-Party: "%color_chat_issue%%plugin_prefix% Tvoje parta je větší než maximum hráčů v aréně %arena_name%"
       Max-Players: "%plugin_prefix% Dosáhli jsme maximálního limitu hráčů pro toto kolo. Pojďme zkrátit čas!"
       Reduced-Time: "%plugin_prefix% Čas se snížil na %number% sekund"
-    Game-End:
-      Summary:
-        - "&a&m--------------------------------------------------"
-        - "%plugin_name%"
-        - " "
-        - "%arena_summary%"
-        - "%arena_summary_player%"
-        - " "
-        - "&e&lDosažena vlna | %arena_option_wave% (nejlepší %user_statistic_highest_wave%)"
-        - "&6&lZabito zombie dohromady | %arena_option_total_killed_zombies%"
-        - "&c&lUtracených kuliček | %arena_option_total_orbs_spent%"
-        - " "
-        - "&a&m--------------------------------------------------"
-      Placeholders:
+    Game-End: 
+      Summary: 
+        0: "&a&m--------------------------------------------------"
+        1: "%plugin_name%"
+        2: " "
+        3: "%arena_summary%"
+        4: "%arena_summary_player%"
+        5: " "
+        6: "&e&lDosažena vlna | %arena_option_wave% (nejlepší %user_statistic_highest_wave%)"
+        7: "&6&lZabito zombie dohromady | %arena_option_total_killed_zombies%"
+        8: "&c&lUtracených kuliček | %arena_option_total_orbs_spent%"
+        9: " "
+        10: "&a&m--------------------------------------------------"
+      Placeholders: 
         Win: "&aZvítězil jsi"
         Lose: "%color_chat_issue%Prohrál jsi"
-        Died:
+        Died: 
           Players: "%color_chat_issue%Všichni hráči zemřeli!"
           Villagers: "%color_chat_issue%Všichni vesničané zemřeli!"
         Survived: "&aPřežil jsi všechny vlny"
         Players: "%color_chat_issue%%plugin_prefix% Již není dostatek hráčů v aréně. Aréna bude zastavena!"
-    Admin:
+    Admin: 
       Set-Starting-In-To-0: "%plugin_prefix% Admin nastavil čas čekání na 0. Hra nyní začne!"
-      Removed:
+      Removed: 
         Villagers: "%plugin_prefix% %player% odstranil všechny vesničany!"
         Golems: "%plugin_prefix% %player% odstranil všechny golemy!"
         Zombies: "%plugin_prefix% %player% vyčistil zombíky!"
         Wolves: "%plugin_prefix% %player% vyčistil vlky!"
-      Changed:
+      Changed: 
         Wave: "%color_chat_issue%%plugin_prefix% Admin změnil vlnu na %number%"
-    Village:
+    Village: 
       Rotten-Flesh-Level-Up: "%plugin_prefix% Bohové byli potěšeni obětí shnilého masa! Jako svůj vděk ji dávají &abonusové srdce!"
       You-Feel-Refreshed: "%plugin_prefix% Cítíš se svěže!"
-      # Do not use spaces between villager names. No limit in names size and amount :)
-      Villager:
+      Villager: 
         Died: "%color_chat_issue%%plugin_prefix% Vesničan zemřel!"
-        Names: "Jagger,Kelsey,Kelton,Haylie,Harlow,Howard,Wulffric,Winfred,Ashley,Bailey,Beckett,Alfredo,Alfred,Adair,Edgar,ED,Eadwig,Edgaras,Buckley,Stanley,Nuffley,Mary,Jeffry,Rosaly,Elliot,Harry,Sam,Rosaline,Tom,Ivan,Kevin,Adam"
-      Wave:
+        Names: Jagger,Kelsey,Kelton,Haylie,Harlow,Howard,Wulffric,Winfred,Ashley,Bailey,Beckett,Alfredo,Alfred,Adair,Edgar,ED,Eadwig,Edgaras,Buckley,Stanley,Nuffley,Mary,Jeffry,Rosaly,Elliot,Harry,Sam,Rosaline,Tom,Ivan,Kevin,Adam
+      Wave: 
         Stuck-Zombies: "%color_chat_issue%%plugin_prefix% Vypadá to, že poslední zombík se někde zasekl. Žádný strach! Bohové ho zabili za tebe!"
         Spectator-Warning: "%color_chat_issue%%plugin_prefix% Jsi divák! Nemůžeš dělat nic, dokud se neoživíš se začátkem další vlny!"
         Respawn-On-Next: "&e&lNEODCHÁZEJ! &aNa začátku další vlny budeš oživen!"
         Respawned: "%plugin_prefix% Už nejsi jen divák! Vítej zpět ve hře!"
         Next-In: "%plugin_prefix% Další vlna začne za %number% sekund!"
         Started: "%plugin_prefix% Řítí se na tebe %number% vlna!"
-        Title:
-          Start: "20,30,20;Vlna %number%;"
-          End: "20,30,20;Vlna %number% skončila;"
-      Orbs:
-        Pickup: "+ %number% kuliček"
-      Entities:
-        Wolf:
+        Title: 
+          Start: 20,30,20;Vlna %number%;
+          End: 20,30,20;Vlna %number% skončila;
+      Orbs: 
+        Pickup: + %number% kuliček
+      Entities: 
+        Wolf: 
           Spawn: "%plugin_prefix% Ve vesnici se objevil Vlk!"
-          Name: "Vlk hráče %player%"
+          Name: Vlk hráče %player%
           Death: "%color_chat_issue%%plugin_prefix% Jeden z tvých vlků byl zabit!"
-        Golem:
+        Golem: 
           Spawn: "%plugin_prefix% Ve vesnici se objevil Golem!"
-          Name: "Golem hráče %player%"
+          Name: Golem hráče %player%
           Cant-Ride-Other: "%color_chat_issue%%plugin_prefix% Nemůžeš řídit cizího golema!"
-      Shop:
+      Shop: 
         GUI: "&lObchod"
-        Golem-Item-Name: "Přivolat golema"
-        Wolf-Item-Name: "Přivolat vlka"
+        Golem-Item-Name: Přivolat golema
+        Wolf-Item-Name: Přivolat vlka
         Mob-Limit-Reached: "%color_chat_issue%%plugin_prefix% Nemůžeš si koupit další moby! Dosáhl jsi limitu %number% mobů!"
         Not-Enough-Currency: "%color_chat_issue%%plugin_prefix% Pro nákup této položky potřebuješ více orbů!"
-        Currency: "kuliček"
+        Currency: kuliček
         Not-Defined: "%color_chat_issue%%plugin_prefix% Obchod nebyl nastaven! Kontaktujte správce!"
-# Sign messages
-Signs:
+Signs: 
   Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Prosím zadej název arény na druhý řádek!"
   Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% Aréna s tímto názvem neexistuje!"
   Created: "%plugin_prefix% Cedule úspěšně vytvořena!"
   Removed: "%plugin_prefix% Cedule úspěšně odstraněna!"
-  Lines:
-    - "%plugin_prefix%"
-    - "%arena_state_placeholder%"
-    - "%arena_name%"
-    - "[%arena_players_size%/%arena_max_players%]"
-# Arena Selector messages
-Arena-Selector:
+  Lines: 
+    0: "%plugin_prefix%"
+    1: "%arena_state_placeholder%"
+    2: "%arena_name%"
+    3: "[%arena_players_size%/%arena_max_players%]"
+Arena-Selector: 
   Inventory-Title: "%plugin_short_command% ▸ Výběr arén"
-  Item:
+  Item: 
     Name: "%arena_name%"
-    Lore:
-      - "%plugin_name% - %arena_name%"
-      - " "
-      - " "
-      - "  Online: %arena_players_size%/%arena_max_players%"
-      - "  Stav: %arena_state_placeholder%"
-      - " "
-      - " "
-      - "&aKlikni pro připojení"
-# Validator messages
-Validator:
-  Invalid-Arena-Configuration: "Aréna %arena_name% má neplatné nastavení! Chybí: %value%"
-  Instance-Started: "Instance arény %arena_name% úspěšně spuštěna!"
-  No-Instances-Created: "V konfiguraci nejsou nastaveny žádné arény!"
-# Placeholder messages inside plugin
-Placeholders:
-  Game-States:
+    Lore: 
+      0: "%plugin_name% - %arena_name%"
+      1: " "
+      2: " "
+      3: "  Online: %arena_players_size%/%arena_max_players%"
+      4: "  Stav: %arena_state_placeholder%"
+      5: " "
+      6: " "
+      7: "&aKlikni pro připojení"
+Validator: 
+  Invalid-Arena-Configuration: 'Aréna %arena_name% má neplatné nastavení! Chybí: %value%'
+  Instance-Started: Instance arény %arena_name% úspěšně spuštěna!
+  No-Instances-Created: V konfiguraci nejsou nastaveny žádné arény!
+Placeholders: 
+  Game-States: 
     Waiting: "&lČekám na hráče..."
     Starting: "&e&lStartuje"
     Full-Game: "&4&lPLNO"
     In-Game: "&lVe hře"
     Ending: "&lU konce"
     Restarting: "&c&lRestartování"
-  Motd:
+  Motd: 
     Waiting: "&lMůžeš se připojit do hry..."
     Starting: "&e&Startuje"
     Full-Game: "&4&lPLNO | Použijte jiný server"
     In-Game: "&lVe hře | Klikněte pro sledování"
     Ending: "&lU konce | Server se uzavírá"
     Restarting: "&c&lRestartuji"
-# Kit messages
-Kit:
+Kit: 
   Not-Unlocked: "%color_chat_issue%%plugin_prefix% Ještě nemáš %value% odemknutý!"
   Choose: "%plugin_prefix% Zvolil sis: %value%!"
-  Open-Menu: "Otevřít Menu Výbavy"
+  Open-Menu: Otevřít Menu Výbavy
   Cooldown: "%color_chat_issue%%plugin_prefix% Tvoje schopnost se ještě nenabila (%number%)!"
-  Menu:
-    Title: "Menu Výbavy"
-    Lore:
+  Menu: 
+    Title: Menu Výbavy
+    Lore: 
       Unlocked: "&aODEMKNUTO!"
       Locked: "&cZAMKNUTO!"
-      Unlock-At-Level: "Odemkne se na úrovni %number%"
+      Unlock-At-Level: Odemkne se na úrovni %number%
       Unlock-In-Store: "&bOdemkneš v obchodě!"
-  Content:
-    Cleaner:
+  Content: 
+    Cleaner: 
       Name: "&bČistič"
-      Description:
-        - "Čistič má speciální schopnost."
-        - "Díky ní může nechat všechny"
-        - "zombie zmizet. Avšak zabere to"
-        - "hodně úsilí!"
-      Game-Item:
+      Description: 
+        0: Čistič má speciální schopnost.
+        1: Díky ní může nechat všechny
+        2: zombie zmizet. Avšak zabere to
+        3: hodně úsilí!
+      Game-Item: 
         Name: "&6Čistící Hůlka!"
-        Description:
-          - "Klikni pravým pro vyčištění všech zombie!"
-          - "Nabití: 60 sekund"
-      Cleaned:
+        Description: 
+          0: Klikni pravým pro vyčištění všech zombie!
+          1: 'Nabití: 60 sekund'
+      Cleaned: 
         Map: "&b%player% vyčistil mapu!"
         # WARNING: used for admin clean commands too!!!
         Nothing: "&aMapa už je prázdná!"
-    Zombie-Teleporter:
+    Zombie-Teleporter: 
       Name: "&2Zombie Teleporter"
-      Description:
-        - "Teleportuj zombíky k sobě!"
-        - "Spousta lidí si myslí, že horší  kit nenajdeš!"
-        - "Musíš uznat, že se úplně mýlí!"
-      Game-Item:
-        GUI: "Zombie Teleporter"
-        Name: "Zombie Teleporter"
-        Description:
-          - "Teleportuj k sobě zombíky!"
-    Teleport:
+      Description: 
+        0: Teleportuj zombíky k sobě!
+        1: Spousta lidí si myslí, že horší  kit nenajdeš!
+        2: Musíš uznat, že se úplně mýlí!
+      Game-Item: 
+        GUI: Zombie Teleporter
+        Name: Zombie Teleporter
+        Description: 
+          0: Teleportuj k sobě zombíky!
+    Teleport: 
       Zombie: "&aByl k tobě teleportován oslabený zombie!"
       Not-Found: "&cNejsou zde žádní zombíci pro teleport!"
-    Knight:
+    Knight: 
       Name: "&2Rytíř"
-      Description:
-        - "Toto je ten jediný, pravý rytířský kit!"
-        - "Spousta lidí si myslí, že horší  kit nenajdeš!"
-        - "Musíš uznat, že se úplně mýlí!"
-    Light-Tank:
+      Description: 
+        0: Toto je ten jediný, pravý rytířský kit!
+        1: Spousta lidí si myslí, že horší  kit nenajdeš!
+        2: Musíš uznat, že se úplně mýlí!
+    Light-Tank: 
       Name: "&2Lehký Tank"
-      Description:
-        - "Jsi Junior tank!"
-    Archer:
+      Description: 
+        0: Jsi Junior tank!
+    Archer: 
       Name: "&6Lučištník"
-      Description:
-        - "Začni s lukem, koženou zbrojí a dřevěným mečem."
-        - "Vesničané milují lučištníky, to si piš!"
-    Puncher:
+      Description: 
+        0: Začni s lukem, koženou zbrojí a dřevěným mečem.
+        1: Vesničané milují lučištníky, to si piš!
+    Puncher: 
       Name: "&6Mlátič"
-      Description:
-        - "Dej zombíkům po hlavě svojí úžasnou lopatou!"
-        - "Knockback V je tvůj dobrý známý!"
-    Healer:
+      Description: 
+        0: Dej zombíkům po hlavě svojí úžasnou lopatou!
+        1: Knockback V je tvůj dobrý známý!
+    Healer: 
       Name: "&6Lékař"
-      Description:
-        - "Být lékař se neliší od toho být milován."
-        - "Můžeš léčit své spoluhráče a vesničany!"
-        - "Každou vlnu se ti doplní výbava!"
-    Looter:
+      Description: 
+        0: Být lékař se neliší od toho být milován.
+        1: Můžeš léčit své spoluhráče a vesničany!
+        2: Každou vlnu se ti doplní výbava!
+    Looter: 
       Name: "&6Otesánek"
-      Description:
-        - "Za každé zabití zombie dostaneš"
-        - "jedno maso navíc!"
-    Runner:
+      Description: 
+        0: Za každé zabití zombie dostaneš
+        1: jedno maso navíc!
+    Runner: 
       Name: "&6Běžec"
-      Description:
-        - "Parkour je tvoje vášeň!"
-        - "Běžíš rychleji než ostatní hráči"
-        - "a můžeš skákat výš."
-    Medium-Tank:
+      Description: 
+        0: Parkour je tvoje vášeň!
+        1: Běžíš rychleji než ostatní hráči
+        2: a můžeš skákat výš.
+    Medium-Tank: 
       Name: "&6Střední Tank"
-      Description:
-        - "Začni s 6 srdíčky!"
-        - "Není se čeho bát!"
-        - "Máš srdíček na rozdávání!"
-    Worker:
+      Description: 
+        0: Začni s 6 srdíčky!
+        1: Není se čeho bát!
+        2: Máš srdíček na rozdávání!
+    Worker: 
       Name: "&6Pracant"
-      Description:
-        - "Každé kolo dostaneš dveře"
-        - "a začínáš se 2 extra dveřmi. Takto"
-        - "můžeš opravovat dveře!"
-      Game-Item:
+      Description: 
+        0: Každé kolo dostaneš dveře
+        1: a začínáš se 2 extra dveřmi. Takto
+        2: můžeš opravovat dveře!
+      Game-Item: 
         Chat: "&aDveře položeny!"
-    Dog-Friend:
+    Dog-Friend: 
       Name: "&bPsí přítel"
-      Description:
-        - "Začni se třemi psy a"
-        - "v každé vlně zístej jednoho extra psa!"
-    Hardcore:
+      Description: 
+        0: Začni se třemi psy a
+        1: v každé vlně zístej jednoho extra psa!
+    Hardcore: 
       Name: "&6Hardcore"
-      Description:
-        - "Uvidíš sám"
-        - "proč je to tak těžké"
-    Golem-Friend:
+      Description: 
+        0: Uvidíš sám
+        1: proč je to tak těžké
+    Golem-Friend: 
       Name: "&6Přítel Golemů"
-      Description:
-        - "Začni s golemem a"
-        - "získej nového každých 5 vln!"
-    Tornado:
+      Description: 
+        0: Začni s golemem a
+        1: získej nového každých 5 vln!
+    Tornado: 
       Name: "&bTornado"
-      Description:
-        - "Zjev se v úžasném tornádu!"
-      Game-Item:
-        Name: "Čas na tornádo"
-        Description:
-          - "Klikni pravým pro spawnutí"
-          - "tornádo ve tvé lokalitě!"
-    Terminator:
+      Description: 
+        0: Zjev se v úžasném tornádu!
+      Game-Item: 
+        Name: Čas na tornádo
+        Description: 
+          0: Klikni pravým pro spawnutí
+          1: tornádo ve tvé lokalitě!
+    Terminator: 
       Name: "&6Terminator"
-      Description:
-        - "Jednoduše zabij tyto zombíky"
-        - "se svými silnými schopnostmi!"
-    Teleporter:
+      Description: 
+        0: Jednoduše zabij tyto zombíky
+        1: se svými silnými schopnostmi!
+    Teleporter: 
       Name: "&bTeleporter"
-      Description:
-        - "Všichni jsou ohromeni tvojí teleportací."
-        - "Nikdo neví, jak to děláš! Díky tomu"
-        - "můžeš teleportovat vesničany,"
-        - "kteří potřebují pomoct!"
-      Game-Item:
+      Description: 
+        0: Všichni jsou ohromeni tvojí teleportací.
+        1: Nikdo neví, jak to děláš! Díky tomu
+        2: můžeš teleportovat vesničany,
+        3: kteří potřebují pomoct!
+      Game-Item: 
         Name: "&rMenu Teleportace"
-        Description:
-          - "Klikni pravým pro otevření teleportačního menu!"
-        GUI: "Teleportační Menu"
-      Teleport:
+        Description: 
+          0: Klikni pravým pro otevření teleportačního menu!
+        GUI: Teleportační Menu
+      Teleport: 
         Villager: "&aVesničan přenesen!"
         Warning: "&4Village defense nenašel tohoto vesničana! Nejspíš je již mrtvý!"
         Player: "&aPřenesen ke hráči %player%"
         Not-Found: "&cHráč nenalezen! Zkus to znovu!"
-    Heavy-Tank:
+    Heavy-Tank: 
       Name: "&bTěžký Tank"
-      Description:
-        - "Začni s železným brněním"
-        - "a dvakrát tolik srdíčky! Přesně tak,"
-        - "budeš poslední člověk naživu!"
-    Shot-Bow:
+      Description: 
+        0: Začni s železným brněním
+        1: a dvakrát tolik srdíčky! Přesně tak,
+        2: budeš poslední člověk naživu!
+    Shot-Bow: 
       Name: "&bMistr Shotbow"
-      Description:
-        - "Vyvinul jsi šílený shotbow!"
-    Blocker:
+      Description: 
+        0: Vyvinul jsi šílený shotbow!
+    Blocker: 
       Name: "&bZdržovač"
-      Description:
-        - "Zdrž zombie díky"
-        - "tvým speciálním bariérám. Tyto"
-        - "bariéry vydrží 10 sekund"
-      Game-Item:
-        Name: "Plot"
-        Description:
-          - "Polož bariéru aby jsi udržel zpět"
-          - "zombíky! Tyto bariéry vydrží 10 sekund"
-      Place:
+      Description: 
+        0: Zdrž zombie díky
+        1: tvým speciálním bariérám. Tyto
+        2: bariéry vydrží 10 sekund
+      Game-Item: 
+        Name: Plot
+        Description: 
+          0: Polož bariéru aby jsi udržel zpět
+          1: zombíky! Tyto bariéry vydrží 10 sekund
+      Place: 
         Success: "&aBarriera položena!"
         Fail: "&cTady nejde položit bariéra"
-    Premium-Hardcore:
+    Premium-Hardcore: 
       Name: "&bPremium Hardcore Master"
-      Description:
-        - "Dej zombíky na jednu ránu svým OP mečem!"
-        - "Ale buď opatrný. Tento kit je jen pro"
-        - "profesionály! Nepoužívej pokud nejsi profík!"
-    Medic:
+      Description: 
+        0: Dej zombíky na jednu ránu svým OP mečem!
+        1: Ale buď opatrný. Tento kit je jen pro
+        2: profesionály! Nepoužívej pokud nejsi profík!
+    Medic: 
       Name: "&6Medik"
-      Description:
-        - "Tento kit aktivuje tvé pasivní schopnosti."
-        - "Pokaždé když praštíš zombíka, dostaneš"
-        - "šance 1/10 na vyléčení hráčů"
-        - "v dosahu 5ti bloků kolem tebe."
-    Wild-Naked:
+      Description: 
+        0: Tento kit aktivuje tvé pasivní schopnosti.
+        1: Pokaždé když praštíš zombíka, dostaneš
+        2: šance 1/10 na vyléčení hráčů
+        3: v dosahu 5ti bloků kolem tebe.
+    Wild-Naked: 
       Name: "&bDivoká Nahota"
-      Description:
-        - "Jsi ultimátní mistr!"
-        - "Začni s železným Sharpness"
-        - "VI a Smite II meč!"
+      Description: 
+        0: Jsi ultimátní mistr!
+        1: Začni s železným Sharpness
+        2: VI a Smite II meč!
       Cannot-Wear-Armor: "&cS kitem divoké nahoty nemůžeš nosit oblečení!"
-    Wizard:
+    Wizard: 
       Name: "&bKouzelník"
-      Description:
-        - "Jsi poloviční krve."
-        - "Přišel jsi do vesnice aby jsi chránil"
-        - "vesničany před hordami nemrtvých."
-        - "Použij své temné síly aby jsi je všechny porazil!"
-      Game-Item:
-        Essence:
-          Name: "Temná esence"
-          Description:
-            - "Klikni pro absorbování okolní hmoty"
-            - "a použijte jí jako svůj štít!"
-            - "Trvá 5 sekund"
-        Wand:
-          Name: "Kouzelná hůlka"
+      Description: 
+        0: Jsi poloviční krve.
+        1: Přišel jsi do vesnice aby jsi chránil
+        2: vesničany před hordami nemrtvých.
+        3: Použij své temné síly aby jsi je všechny porazil!
+      Game-Item: 
+        Essence: 
+          Name: Temná esence
+          Description: 
+            0: Klikni pro absorbování okolní hmoty
+            1: a použijte jí jako svůj štít!
+            2: Trvá 5 sekund
+        Wand: 
+          Name: Kouzelná hůlka
           Description: "Pravým kliknutím vypusť temnou hmotu "
-# Upgrade-Menu messages
-# 
-# Upgrade-Menu function need to be enabled on config.yml
-Upgrade-Menu:
+Upgrade-Menu: 
   Title: "&3&lVylepšit entitu"
   Upgraded-Entity: "%plugin_prefix% &3Entita vylepšena na úroveň &8%tier%&3!"
   Cannot-Afford: "%plugin_prefix% &3Na toto vylepšení nemáš dostatek kuliček!"
   Max-Tier: "%plugin_prefix% &3Entita je na maximální možné úrovni tohoto vylepšení!"
-  Stats-Item:
+  Stats-Item: 
     Name: "&3&lAktuální Statistiky"
     Description: "&3Rychlost pohybu: &8%speed%; &3Poškození: &8%damage%; &3Zdraví: &8%current_hp%/%max_hp%"
-  Upgrades:
-    Health:
+  Upgrades: 
+    Health: 
       Name: "&3&lVylepšit Zdraví"
       Description: "&3Vylepšit max zdraví na úroveň &8%tier%&3!;&3Z &8%from% &3na &8%to%;&3Cena: &8%cost%;;&3Klikni pro zakoupení"
-    Damage:
+    Damage: 
       Name: "&3&lVylepšit Poškození"
       Description: "&3Vylepšit poškození entity &8%tier%&3!;&3Z &8%from% &3na &8%to%;&3Cena: &8%cost%;;&8Klikni pro zakoupení"
-    Speed:
+    Speed: 
       Name: "&3&lVylepšit rychlost"
       Description: "&3Vylepšení rychlosti pohybu na úrověň &8%tier%&3!;&3Z &8%from% &3na &8%to%;&3Cena vylepšení: &8%cost%;;&8Klikni pro zakoupení"
-    Swarm-Awareness:
+    Swarm-Awareness: 
       Name: "&3&lVědomí smečky"
       Description: "&3Vylepšení vědomí smečky na úroveň &8%tier%&3!;&3Násobič poškození za vlka v dosahu 3 bloků; se zvýší z &8%from% &8dna %to%;&3%Čím více vlků je ve smečce;&3tím jsou vlci silnější;&3Cena: &8%cost%;;&8Klikni pro zakoupení"
-    Final-Defense:
+    Final-Defense: 
       Name: "&3&lKonečná obrana"
       Description: "&3Vylepšení konečné obrany na úroveň &8%tier%&3!;&3Dosah exploze z &8%from% na &3to &8%to%;&3Golem po své smrti exploduje a zabije nejbližší ;&3zombíky a omráčí vše živé;&3Cena: &8%cost%;;&8Klikni pro zakoupení"
-# Leaderboard messages
-# 
-# Hologram function need to be enabled on config.yml
-Leaderboard:
-  Type:
-    Hologram:
+Leaderboard: 
+  Type: 
+    Hologram: 
       Header: "&6&lTop %number% v %value%"
       Format: "&e%number%. %player% (%value%)"
       Empty-Format: "&e%number%. &fPrázdno (0)"
-    Chat:
+    Chat: 
       Header: "&8+-------+ &a&lTVOJE STATISTIKY&8+-------+"
       Header-Other: "&8+---------+ &aSTATISTIKY&b%player% &8+---------+"
       Footer: "&8+-----------------------------+"
       Format: "%value% ▸ &a%number%"
-      Top:
+      Top: 
         Type-Name: "%color_chat_issue%Napište prosím název statistiky pro zobrazení!"
         Header: "&8&m+----------------+ [&6 Top 10 &8&m] +----------------+"
         Format: "&e#%number% %player% - %value% %user_statistic%"
-  Statistics:
-    Games-Played: "Odehráno her ▸ %number%"
-    Level: "Úroveň ▸ %number%"
-    Exp: "Zkušenosti ▸ %number%"
-    Orbs: "Orby ▸ %number%"
-    Highest-Wave: "Nejvyšší vlna ▸ %number%"
-    Kills: "Zabito zombíků ▸ %number%"
-    Deaths: "Smrti ▸ %number%"
-    Next-Level-Exp: "XP do další úrovně ▸ %number%"
-    Wins: "Výher ▸ %number%"
-    Loses: "Proher ▸ %number%"
+  Statistics: 
+    Games-Played: Odehráno her ▸ %number%
+    Level: Úroveň ▸ %number%
+    Exp: Zkušenosti ▸ %number%
+    Orbs: Orby ▸ %number%
+    Highest-Wave: Nejvyšší vlna ▸ %number%
+    Kills: Zabito zombíků ▸ %number%
+    Deaths: Smrti ▸ %number%
+    Next-Level-Exp: XP do další úrovně ▸ %number%
+    Wins: Výher ▸ %number%
+    Loses: Proher ▸ %number%
   Invalid-Name: "%color_chat_issue%Název statistiky je neplatný! Type: %value%"
   Unknown-Player: "%color_chat_issue%Neznámý hráč"
-# Don't edit it. But who's stopping you? It's your server!
-# Really, don't edit ;p
-# You edited it, huh? Next time hurt yourself!
-Do-Not-Edit:
+Do-Not-Edit: 
   File-Version: 1
   Core-Version: 1
-# You can translate Village Defense messages here.
-# Color codes (&) supported.
-# 
-# Use \n to make new line
-# Some messages like item
-# descriptions don't support new lines
-# they are wrapped every 40 characters automatically
-# 
-# Some messages support their own placeholders
-# like %player%, %kit% etc.
-# 
-# Color scheme
-Color:
-  Placeholder:
+Color: 
+  Placeholder: 
     Value: "&a"
     Number: "&a"
     Player: "&b"
     Other: "&a"
-  Chat:
+  Chat: 
     Issue: "&c"
     Messages: "&7"
-    Special-Char:
+    Special-Char: 
       Contains: "[,],(,),{,},■,/,|,▸"
       Before: "&8"
