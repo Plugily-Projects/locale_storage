@@ -1,137 +1,123 @@
-# Command messages
-Commands:
-  Did-You-Mean: "%plugin_prefix% Did you mean /%value%?"
-  Command-Executed: "%plugin_prefix% Command successfully executed!"
-  Teleported-To-Lobby: "%plugin_prefix% Teleported to lobby!"
-  Removed-Game-Instance: "%color_chat_issue%%plugin_prefix% Successfully removed game instance!"
-  No-Arena-Like-That: "%color_chat_issue%%plugin_prefix% No arena with that ID!"
-  Look-At-Sign: "%color_chat_issue%%plugin_prefix% You have to look at a sign to perform this command!"
-  Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Please type arena ID!"
-  Hold-Any-Item: "%color_chat_issue%%plugin_prefix% You must hold any item!"
-  No-Free-Arenas: "%color_chat_issue%%plugin_prefix% There are no free arenas!"
-  Only-By-Player: "%color_chat_issue%%plugin_prefix% You can execute this command only as player!"
-  Not-Playing: "%color_chat_issue%%plugin_prefix% You must play to execute this command!"
-  No-Permission: "%color_chat_issue%%plugin_prefix% You don't have permission to use this command!"
-  Player-Not-Found: "%color_chat_issue%%plugin_prefix% Target player %player% doesn't exist!"
-  Invalid-Location-Teleport: "%color_chat_issue%%plugin_prefix% Location to teleport is invalid!"
-  Wrong-Usage: "%color_chat_issue%%plugin_prefix% Wrong usage. Do %value%"
-  Admin:
-    Added-Orbs: "Added orbs to the player!"
-    Received-Orbs: "You received %number% orbs!"
-    Added-Level: "&7Added level to the player!"
-    Reload-Success: "%plugin_prefix% Arenas reloaded!"
-    List:
-      Header: "%plugin_name% arenas: Name State Players"
+Commands: 
+  Did-You-Mean: "%plugin_prefix% Quisiste decir /%value%?"
+  Command-Executed: "%plugin_prefix% ¡Comando ejecutado con éxito!"
+  Teleported-To-Lobby: "%plugin_prefix%¡Teletransportado al lobby!"
+  Removed-Game-Instance: "%color_chat_issue%%plugin_prefix% Se a removido con éxito la instancia de juego."
+  No-Arena-Like-That: "%color_chat_issue%%plugin_prefix% sin arena con ese ID"
+  Look-At-Sign: "%color_chat_issue%%plugin_prefix% Debes estar viendo un letrero para ejecutar este comando!"
+  Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Por favor escribe el ID de la arena!"
+  Hold-Any-Item: "%color_chat_issue%%plugin_prefix% Debes sostener cualquier objeto!"
+  No-Free-Arenas: "%color_chat_issue%%plugin_prefix% No hay arenas libres!"
+  Only-By-Player: "%color_chat_issue%%plugin_prefix% Solo puedes ejecutar este comando como jugador!"
+  Not-Playing: "%color_chat_issue%%plugin_prefix% Debes jugar para ejecutar este comando"
+  No-Permission: "%color_chat_issue%%plugin_prefix% no tienes permiso para usar este comadno"
+  Player-Not-Found: "%color_chat_issue%%plugin_prefix% El jugador %player% no existe!"
+  Invalid-Location-Teleport: "%color_chat_issue%%plugin_prefix% Locacion de teletransporte no valida!"
+  Wrong-Usage: "%color_chat_issue%%plugin_prefix% mal uso. Usa: %value%"
+  Admin: 
+    Added-Orbs: Se añadio orbes al jugador!
+    Received-Orbs: Haz recibido %number% orbes!
+    Added-Level: "&7Se añadio un nivel al jugador!"
+    Reload-Success: Arenas recargadas!
+    List: 
+      Header: 'arenas: nombre estado jugadores'
       Format: "&a%arena_name% &e%arena_state_placeholder% &6%arena_players_size%/%arena_max_players%"
       No-Arenas: "&c¡No hay instancias de juego!"
-    Spychat:
+    Spychat: 
       Toggled: "&aMensajes de las partidas alternado a&c %value%"
     Adjust-Statistic: "%plugin_prefix% Statistic %value% of %player% is now %number%!"
-  Main:
+  Main: 
     Header: "&6----------------{Comandos de %plugin_name%}----------"
-    Description:
-      - "&aComandos del juego:"
-      - "&b/%plugin_short_command% stats: &7¡Muestra tus estadisticas!"
-      - "&b/%plugin_short_command% leave: &7¡Salir de la arena!"
-      - "&b/%plugin_short_command% join <arena>: &7¡Unirse a una arena!"
-      - "&b/%plugin_short_command% top <statistic>: &7¡Muestra el top 10!"
-      - "&b/%plugin_short_command% randomjoin: &7¡Unirse a una arena aleatoria!"
+    Description: 
+      0: "&aComandos del juego:"
+      1: "&b/%plugin_short_command% stats: &7¡Muestra tus estadisticas!"
+      2: "&b/%plugin_short_command% leave: &7¡Salir de la arena!"
+      3: "&b/%plugin_short_command% join <arena>: &7¡Unirse a una arena!"
+      4: "&b/%plugin_short_command% top <statistic>: &7¡Muestra el top 10!"
+      5: "&b/%plugin_short_command% randomjoin: &7¡Unirse a una arena aleatoria!"
     # &b and &7?
     Admin-Bonus-Description: "&b/%plugin_short_command%a: &7Muestra todos los comandos de admin"
     Footer: "&6-------------------------------------------------"
-# In-Game scoreboard messages
-# 
-# Please do not use more chars than the scoreboard can handle!
-# Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
-# Placeholders:
-# https://wiki.plugily.xyz/villagedefense/placeholders/language
-Scoreboard:
+Scoreboard: 
   Title: "&a&l%plugin_name%"
-  Content:
-    Waiting:
-      - "   www.plugily.xyz"
-      - " "
-      - "&fJugadores necesarios: &e%arena_min_players%"
-      - " "
-      - "&ewww.plugily.xyz"
-      - "   www.plugily.xyz"
-    Starting:
-      - "   www.plugily.xyz"
-      - " "
-      - "&fJugadores: &e%arena_players_size%"
-      - " "
-      - "&fJugadores necesarios: &e%arena_min_players%"
-      - " "
-      - "&ewww.plugily.xyz"
-      - "   www.plugily.xyz"
-    # Contents of scoreboard while ingame
-    In-Game:
-      - "   www.plugily.xyz"
-      - "&fJugadores restantes: &e%arena_players_left_size%"
-      - "&fZombis restantes: &e%arena_zombie_size_left%"
-      - " "
-      - "&fCarne podrida: &e%arena_rotten_flesh_amount%"
-      - "&fOrbes: &e%user_statistic_orbs%"
-      - " "
-      - "&ewww.plugily.xyz"
-      - "   www.plugily.xyz"
-    In-Game-Waiting:
-      - "&fAldeanos restantes: &e%arena_villager_size%"
-      - "&fJugadores restantes: &e%arena_players_left_size%"
-      - "&fZombis restantes: &e%arena_zombie_size_left%"
-      - " "
-      - "&fSiguiente oleada en: %arena_time%"
-      - " "
-      - "&fCarne podrida: &e%arena_rotten_flesh_amount%"
-      - "&fOrbes: &e%user_statistic_orbs%"
-      - " "
-      - "&ewww.plugily.xyz"
-    # Contents of scoreboard while state is ending
-    Ending:
-      - "&f"
-      - "&f"
-      - "&cPARTIDA FINALIZADA"
-      - " "
-      - "&f"
-      - "&f"
-      - " "
-      - "&ewww.plugily.xyz"
-    # Contents of scoreboard while state is restarting
-    Restarting:
-      - "&f"
-      - "&f"
-      - "&cREINICIANDO PARTIDA"
-      - " "
-      - "&f"
-      - "&f"
-      - " "
-      - "&ewww.plugily.xyz"
-# Bossbar messages
-# 
-# Bossbar needs to be enabled on config.yml
-Bossbar:
-  Title: "&a&l%plugin_name% &6- www.plugily.xyz"
-  Content:
-    Waiting:
-      - "&4&lEsperando a más jugadores..."
-    Starting:
-      - "&f&lComenzando en: &e&l%arena_time%"
-    In-Game:
-      - "Oleada actual: &b%arena_option_wave%"
-      - "&e&lHecha un vistazo al creador del juego &e&len &b&lPLUGILY.XYZ"
-      - "&fActual Oleada: &b%arena_option_wave%"
-    Ending:
-      - "&c&l¡Partida finalizada! Estás jugando en &b&lPLUGILY.XYZ"
-    Restarting:
-      - "&c&lReiniciando partida. ¡Pronto serás movido!"
-# In-Game Messages
-In-Game:
+  Content: 
+    Waiting: 
+      0: "&fJugadores; &e%arena_players_size%\n"
+      1: "■ Jugadores| %arena_players_size%\n"
+      2: "&fJugadores necesarios: &e%arena_min_players%"
+      3: '■ Jugadores necesarios: &e%arena_min_players%'
+      4: "&3&lManco&5&lStudios"
+      5: "&3&lManco&5&lStudios"
+    Starting: 
+      0: "&fEmpezando en: &e%arena_time%\n"
+      1: "■ Empezando en: | %arena_time%\n"
+      2: "&fJugadores: &e%arena_players_size%"
+      3: ■ Jugadores| %arena_players_size%
+      4: "&fJugadores necesarios: &e%arena_min_players%"
+      5: '■  Jugadores necesarios: &e%arena_min_players%'
+      6: "&3&lManco&5&lStudios"
+      7: "&3&lManco&5&lStudios"
+    In-Game: 
+      0: "&fAldeanos restantes: &e%arena_villager_size%"
+      1: '■Aldeanos: %arena_villager_size%'
+      2: '■&fJugadores restantes: &e%arena_zombie_size_left%'
+      3: ■ Zombies | %arena_zombie_size_left%
+      4: "&fCarne podrida: &e%arena_rotten_flesh_amount%"
+      5: '■Carne podrida: &e%arena_rotten_flesh_amount%'
+      6: "■Orbes | %user_statistic_orbs% "
+      7: "&3&lManco&5&lStudios"
+      8: "&3&lManco&5&lStudios"
+    In-Game-Waiting: 
+      0: "&fAldeanos restantes: &e%arena_villager_size%"
+      1: ■ Aldeanos | %arena_villager_size%
+      2: ■ Jugadores | %arena_players_left_size%
+      3: " "
+      4: "&fSiguiente oleada en: %arena_time%"
+      5: " "
+      6: '■ Carne podrida: &e%arena_rotten_flesh_amount%'
+      7: "&fOrbes: &e%user_statistic_orbs%"
+      8: " "
+      9: "&3&lManco&5&lStudios"
+    Ending: 
+      0: "&f"
+      1: "&f"
+      2: "&cPARTIDA FINALIZADA"
+      3: " "
+      4: "&f"
+      5: "&f"
+      6: " "
+      7: "&3&lManco&5&lStudios"
+    Restarting: 
+      0: "&f"
+      1: "&f"
+      2: "&cREINICIANDO PARTIDA"
+      3: " "
+      4: "&f"
+      5: "&f"
+      6: " "
+      7: "&3&lManco&5&lStudios"
+Bossbar: 
+  Title: "&3&lManco&5&lStudios&a&l%plugin_name% &3&lManco&5&lStudios"
+  Content: 
+    Waiting: 
+      0: "&4&lEsperando a más jugadores..."
+    Starting: 
+      0: "&f&lComenzando en: &e&l%arena_time%"
+    In-Game: 
+      0: 'Oleada actual: &b%arena_option_wave%'
+      1: "&e&lHecha un vistazo al creador del juego &e&len &b&lPLUGILY.XYZ"
+      2: "&fActual Oleada: &b%arena_option_wave%"
+    Ending: 
+      0: "&c&l¡Partida finalizada! Estás jugando en &b&lMancoStudios"
+    Restarting: 
+      0: "&c&lReiniciando partida. ¡Pronto serás movido!"
+In-Game: 
   # Used in most game messages.
   Plugin-Prefix: "&a[%plugin_name%] "
   Game-Chat-Format: "&6[&5%user_statistic_level%&6]&6[%user_kit%&6] %player%: &f%message%"
   You-Leveled-Up: "&7¡Subiste de nivel! Ahora eres nivel %number%."
   Commands-Blocked: "&c¡Debes salir de la partida para poder usar este comando! Utiliza /%plugin_short_command% leave para salir."
-  Join:
+  Join: 
     Already-Playing: "&c¡Ya estás en la cola de una partida! Puedes salir de la cola con /%plugin_short_command% leave."
     No-Permission: "&c¡Necesitas el permiso &6%value% &cpara unirte a esta arena!"
     Full-Game: "&c¡No tienes permiso para unirte a partidas llenas!"
@@ -140,36 +126,36 @@ In-Game:
     Cancelled-Via-API: "&c¡No puedes unirte a esta partida!"
     As-Party-Member: "&c¡Te has unido a la arena %arena_name% porque el lider del grupo se ha unido!"
     Arena-Not-Configured: "&c¡Esta arena aún no ha sido configurada! Por favor, contacta con un administrador."
-    Title: "20, 30, 20;%arena_name%;%arena_players_size%/%arena_max_players%"
-  Death:
+    Title: 20, 30, 20;%arena_name%;%arena_players_size%/%arena_max_players%
+  Death: 
     Tag: "&8Muerto"
     Screen: "&c¡Has muerto!"
-  Spectator:
+  Spectator: 
     You-Are-Spectator: "&c¡Ahora eres un espectador, puedes volar!"
-    Spectator-Menu-Name: "Lista de jugadores vivos"
+    Spectator-Menu-Name: Lista de jugadores vivos
     Target-Player-Health: "&cVida: &7%number%"
     Spectator-Warning: "&c¡Eres un espectador!"
     Teleport: "&cTeletransportado a %player%"
-    Menu:
-      Settings:
-        Status:
-          Enabled: "Activado"
-          Disabled: "Desactivado"
-        Changed-Speed: "Velocidad modificada a %number%"
-        Auto-Teleport: "Teletransporte automático %value%"
-        Target-Player:
+    Menu: 
+      Settings: 
+        Status: 
+          Enabled: Activado
+          Disabled: Desactivado
+        Changed-Speed: Velocidad modificada a %number%
+        Auto-Teleport: Teletransporte automático %value%
+        Target-Player: 
           Action-Bar: "%number% bloques | Objetivo %player%"
-        Night-Vision: "Visión nocturna %value%"
-        First-Person-Mode:
+        Night-Vision: Visión nocturna %value%
+        First-Person-Mode: 
           Action-Bar: "&c¡&eAGACHATE &Cpara salir! | Objetivo %player%"
           Title: "&c¡&eAGACHATE &Cpara salir!"
-        Visibility: "Otros espectadores %value%"
+        Visibility: Otros espectadores %value%
     Blocked: "%color_chat_issue%%plugin_prefix% Espectadores desactivados en esta arena"
-  Messages:
+  Messages: 
     Join: "&7¡&b%player%&7 se ha unido a la partida (%arena_players_size%/%arena_max_players%)!"
     Leave: "&7¡&b%player% &7se ha ido de la partida (%arena_players_size%/%arena_max_players%)!"
     Death: "&7¡&b%player% &7ha muerto!"
-    Lobby:
+    Lobby: 
       Start-In: "&7¡La partida comenzara en &b%arena_time%&7 segundos!"
       Waiting-For-Players: "&7Esperando a más jugadores... Se necesitan al menos &b%arena_min_players%&7 jugadores para comenzar."
       Enough-Players-To-Start: "&7Ya hay suficientes jugador. ¡La partida comenzara pronto!"
@@ -179,405 +165,378 @@ In-Game:
       Not-Enough-Space-For-Party: "&cLa arena %arena_name% no tiene espacio suficiente para todo tu grupo."
       Max-Players: "&7Llegamos al máximo de jugadores para esta ronda. ¡Vamos a acortar el tiempo!"
       Reduced-Time: "%plugin_prefix% El tiempo se redujo a %number% seconds"
-    Game-End:
-      Summary:
-        - "&a&m--------------------------------------------------"
-        - "&f&l%plugin_name%"
-        - " "
-        - "%arena_summary%"
-        - "%arena_summary_player% "
-        - " "
-        - "&e&lOleada alcanzada: &7%arena_option_wave% &8(mejor %user_statistic_highest_wave%)"
-        - "&6&lTotal de zombis asesinados: &7%arena_option_total_killed_zombies%"
-        - "&c&lTotal de orbes gastadas: &7%arena_option_total_orbs_spent%"
-        - " "
-        - "&a&m--------------------------------------------------"
-      Placeholders:
-        Win: "Has ganado"
-        Lose: "Has perdido"
-        Died:
+    Game-End: 
+      Summary: 
+        0: "&a&m--------------------------------------------------"
+        1: "&f&l%plugin_name%"
+        2: " "
+        3: "%arena_summary%"
+        4: "%arena_summary_player% "
+        5: " "
+        6: "&e&lOleada alcanzada: &7%arena_option_wave% &8(mejor %user_statistic_highest_wave%)"
+        7: "&6&lTotal de zombis asesinados: &7%arena_option_total_killed_zombies%"
+        8: "&c&lTotal de orbes gastadas: &7%arena_option_total_orbs_spent%"
+        9: " "
+        10: "&a&m--------------------------------------------------"
+      Placeholders: 
+        Win: Has ganado
+        Lose: Has perdido
+        Died: 
           Players: "&7¡Todos los jugadores murieron!"
           Villagers: "&7¡Todos los aldeanos murieron!"
         Survived: "&7Sobreviviste a todas las oleadas!"
         Players: "%color_chat_issue%%plugin_prefix% Ya no hay jugadores minimos requeridos! Cancelando partida!"
-    Admin:
+    Admin: 
       Set-Starting-In-To-0: "&b¡Un administrador comenzado la partida!"
-      Removed:
+      Removed: 
         Villagers: "&b¡%player% ha eliminado a todos los aldeanos!"
         Golems: "&b¡%player% ha eliminado a todos los golems de hierro!"
         Zombies: "&b¡%player% ha eliminado a todos los zombis!"
         Wolves: "&b¡%player% ha eliminado a todos los lobos!"
-      Changed:
+      Changed: 
         Wave: "&bUn administrador modificó la oleada a la %number%"
-    Village:
+    Village: 
       Rotten-Flesh-Level-Up: "&b¡Los dioses están felices con la carne podrida! Has recibido un corazón extra en agradecimiento."
       You-Feel-Refreshed: "&a¡Te sientes renovado!"
-      # Do not use spaces between villager names. No limit in names size and amount :)
-      Villager:
+      Villager: 
         Died: "&c¡Un aldeano ha muerto!"
-        Names: "Daniel,Pablo,Martín,Mateo,Alejandro,Manuel,Álvaro,Hugo,Lucas,Martina,María,Daniela,Lucía,Adrían,Gonzalo,Pedro,Erick,Edgar,Alfredo,Paola,Isaac,Cristina,Zoe,Alberto,Joel,Natalia,Aaron,Diana,Gabriel,Abril,Irene,Chloe"
-      Wave:
+        Names: Daniel,Pablo,Martín,Mateo,Alejandro,Manuel,Álvaro,Hugo,Lucas,Martina,María,Daniela,Lucía,Adrían,Gonzalo,Pedro,Erick,Edgar,Alfredo,Paola,Isaac,Cristina,Zoe,Alberto,Joel,Natalia,Aaron,Diana,Gabriel,Abril,Irene,Anzuh
+      Wave: 
         Stuck-Zombies: "&cParece que el último zombi se atasco en algún lugar, ¡no te preocupes! Los dioses lo han matado por ti."
         Spectator-Warning: "&c¡Eres un espectador! No puedes hacer nada hasta que reaparezcas al finalizar la oleada actual."
         Respawn-On-Next: "&e&l¡NO SALGAS! &aReapareceras cuando la oleada finalice."
         Respawned: "&a¡Ya no eres un espectador!"
         Next-In: "&7¡La siguiente oleada comienza en &b%number%&7 segundos!"
         Started: "&7¡La oleada &b%number%&7 ha comenzado!"
-        Title:
-          Start: "20,30,20;Wave %number%;"
-          End: "20,30,20;Wave %number% ended;"
-      Orbs:
+        Title: 
+          Start: 20,30,20;Wave %number%;
+          End: 20,30,20;Wave %number% ended;
+      Orbs: 
         Pickup: "&6+ %number% orbes"
-      Entities:
-        Wolf:
+      Entities: 
+        Wolf: 
           Spawn: "&a¡Un lobo ha aparecido en la aldea!"
-          Name: "Lobo de %player%"
-          Death: "¡Uno de tus lobos ha muerto!"
-        Golem:
+          Name: Lobo de %player%
+          Death: ¡Uno de tus lobos ha muerto!
+        Golem: 
           Spawn: "&a¡Un golem ha aparecido en la aldea!"
-          Name: "Golem de %player%"
+          Name: Golem de %player%
           Cant-Ride-Other: "&c¡No puedes montar los golems de los demas!"
-      Shop:
+      Shop: 
         GUI: "&lTienda"
-        Golem-Item-Name: "Aparecer Golem"
-        Wolf-Item-Name: "Aparecer Lobo"
+        Golem-Item-Name: Aparecer Golem
+        Wolf-Item-Name: Aparecer Lobo
         Mob-Limit-Reached: "&c¡No puedes comprar más mobs! ¡Ya posees %number% mobs!"
         Not-Enough-Currency: "&c¡Necesitas más orbes para comprar esto!"
-        Currency: "orbes"
+        Currency: orbes
         Not-Defined: "&c¡La tienda no esta configurada! Por favor, contacta a un administrador."
-# Sign messages
-Signs:
+Signs: 
   Please-Type-Arena-Name: "&c¡Por favor escribe el nombre de la arena en la segunda línea!"
   Arena-Doesnt-Exists: "&c¡No existe una arena con ese nombre!"
   Created: "&a¡Cartel creado correctamente!"
   Removed: "&c¡Cartel eliminado correctamente"
-  Lines:
-    - "&a&l%plugin_name%"
-    - "%arena_state_placeholder%"
-    - "%arena_name%"
-    - "&5[%arena_players_size%/%arena_max_players%]"
-# Arena Selector messages
-Arena-Selector:
+  Lines: 
+    0: "&a&l%plugin_name%"
+    1: "%arena_state_placeholder%"
+    2: "%arena_name%"
+    3: "&5[%arena_players_size%/%arena_max_players%]"
+Arena-Selector: 
   Inventory-Title: "%plugin_short_command% > Selector de arenas"
-  Item:
+  Item: 
     Name: "&f%arena_name%"
-    Lore:
-      - "&a%plugin_name% &f- &e%arena_name%"
-      - " "
-      - " "
-      - "  &fConectados: %arena_players_size%/%arena_max_players%"
-      - "  &fEstado: %arena_state_placeholder%"
-      - " "
-      - " "
-      - "&eClic para unirte"
-# Validator messages
-Validator:
-  Invalid-Arena-Configuration: "¡Configuración inválida de la arena %arena%! Nodo faltante: %value%"
-  Instance-Started: "¡Instancia de la arena %arena% iniciada correctamente!"
-  No-Instances-Created: "¡No hay instancias de arenas creadas en la configuración!"
-# Placeholder messages inside plugin
-Placeholders:
-  Game-States:
+    Lore: 
+      0: "&a%plugin_name% &f- &e%arena_name%"
+      1: " "
+      2: " "
+      3: "  &fConectados: %arena_players_size%/%arena_max_players%"
+      4: "  &fEstado: %arena_state_placeholder%"
+      5: " "
+      6: " "
+      7: "&eClic para unirte"
+Validator: 
+  Invalid-Arena-Configuration: '¡Configuración inválida de la arena %arena%! Nodo faltante: %value%'
+  Instance-Started: ¡Instancia de la arena %arena% iniciada correctamente!
+  No-Instances-Created: ¡No hay instancias de arenas creadas en la configuración!
+Placeholders: 
+  Game-States: 
     Waiting: "&lEsperando a más jugadores..."
     Starting: "&e&lComenzando"
     Full-Game: "&4&lLLENA"
     In-Game: "&lEn juego"
     Ending: "&lFinalizando"
     Restarting: "&c&lReiniciando"
-  Motd:
+  Motd: 
     Waiting: "&lPuedes unirte a esta partida..."
     Starting: "&e&lComenzando"
     Full-Game: "&4&lLLENA | Usa otro servidor"
     In-Game: "&lEn juego | Clic para espectar"
     Ending: "&lFinalizando | Cerrando servidor"
     Restarting: "&c&lReiniciando"
-# Kit messages
-Kit:
+Kit: 
   Not-Unlocked: "&c¡Aún no has desbloqueado &b%value%&c!"
   Choose: "&a¡Has escogido: &b%value%&a!"
-  Open-Menu: "Abrir menú de kits"
+  Open-Menu: Abrir menú de kits
   Cooldown: "&c¡La habilidad del kit aún está en cooldown (%number%)!"
-  Menu:
-    Title: "Menu de kits"
-    Lore:
+  Menu: 
+    Title: Menu de kits
+    Lore: 
       Unlocked: "&a¡DESBLOQUEADO!"
       Locked: "&c¡BLOQUEADO!"
       Unlock-At-Level: "&cSe desbloquea al nivel %number%"
       Unlock-In-Store: "&b¡Desbloquea esto en la tienda!"
-  Content:
-    Cleaner:
+  Content: 
+    Cleaner: 
       Name: "&bLimpiador"
-      Description:
-        - "&7El limpiador tiene una habilidad especial."
-        - "Con esta habilidad puedes desaparecer"
-        - "a todos los zombis. ¡Pero ten en cuenta"
-        - "que requiere un gran esfuerzo!"
-      Game-Item:
+      Description: 
+        0: "&7El limpiador tiene una habilidad especial."
+        1: Con esta habilidad puedes desaparecer
+        2: a todos los zombis. ¡Pero ten en cuenta
+        3: que requiere un gran esfuerzo!
+      Game-Item: 
         Name: "&6¡Varita de limpieza!"
-        Description:
-          - "&7¡Clic derecho para matar a todos los zombis!"
-          - "Cooldown: 60 segundos"
-      Cleaned:
+        Description: 
+          0: "&7¡Clic derecho para matar a todos los zombis!"
+          1: 'Cooldown: 60 segundos'
+      Cleaned: 
         Map: "&b¡%player% ha limpiado el mapa!"
         # WARNING: used for admin clean commands too!!!
         Nothing: "&a¡El mapa ya está limpio!"
-    Zombie-Teleporter:
+    Zombie-Teleporter: 
       Name: "&2Zombie Tpeado"
-      Description:
-        - "&7Tp los zombies hacía tí"
-        - "Algunas personas piensan que es el "
-        - "Admito que está totalmente mal!"
-      Game-Item:
-        GUI: "Telentransportador Zombie"
-        Name: "Telentransportador Zombie"
-        Description:
-          - "Telentransporta Zombies hacia ti!"
-    Teleport:
+      Description: 
+        0: "&7Tp los zombies hacía tí"
+        1: "Algunas personas piensan que es el "
+        2: Admito que está totalmente mal!
+      Game-Item: 
+        GUI: Telentransportador Zombie
+        Name: Telentransportador Zombie
+        Description: 
+          0: Telentransporta Zombies hacia ti!
+    Teleport: 
       Zombie: "&aLleva hacia ti zombies debiles!"
       Not-Found: "&cNo hay zombies cerca!"
-    Knight:
+    Knight: 
       Name: "&2Caballero"
-      Description:
-        - "&7¡Este es el único y definitivo kit de caballero!"
-        - "¡Muchos piensan que es el kit más debil,"
-        - "pero debo admitir que están equivocados!"
-    Light-Tank:
+      Description: 
+        0: "&7¡Este es el único y definitivo kit de caballero!"
+        1: ¡Muchos piensan que es el kit más debil,
+        2: pero debo admitir que están equivocados!
+    Light-Tank: 
       Name: "&2Tanque ligero"
-      Description:
-        - "&7¡Eres un tanque junior!"
-    Archer:
+      Description: 
+        0: "&7¡Eres un tanque junior!"
+    Archer: 
       Name: "&6Arquero"
-      Description:
-        - "&7Comienzas con un arco, armadura de cuero y una espada de madera."
-        - "Los arqueros son amados por los aldeanos, ¡tenlo en cuenta!"
-    Puncher:
+      Description: 
+        0: "&7Comienzas con un arco, armadura de cuero y una espada de madera."
+        1: Los arqueros son amados por los aldeanos, ¡tenlo en cuenta!
+    Puncher: 
       Name: "&6Golpeador"
-      Description:
-        - "Te gusta empujar muchooo!"
-        - "Knockback V No es desconocido!"
-    Healer:
+      Description: 
+        0: Te gusta empujar muchooo!
+        1: Knockback V No es desconocido!
+    Healer: 
       Name: "&6Curador"
-      Description:
-        - "&7Ser curador es lo mismo que ser amado."
-        - "¡Puedes curar a tus compañeros y a los aldeanos!"
-        - "¡Eres reabastecido cada oleada!"
-    Looter:
+      Description: 
+        0: "&7Ser curador es lo mismo que ser amado."
+        1: ¡Puedes curar a tus compañeros y a los aldeanos!
+        2: ¡Eres reabastecido cada oleada!
+    Looter: 
       Name: "&6Saqueador"
-      Description:
-        - "&7¡Consigue 1 de carne de zombi adicional"
-        - "por cada zombi que mates!"
-    Runner:
+      Description: 
+        0: "&7¡Consigue 1 de carne de zombi adicional"
+        1: por cada zombi que mates!
+    Runner: 
       Name: "&6Corredor"
-      Description:
-        - "&7¡El parkour es tu pasión!"
-        - "Puedes correr más rápido que cualquier otro."
-        - "Tambíen puedes saltar más alto."
-    Medium-Tank:
+      Description: 
+        0: "&7¡El parkour es tu pasión!"
+        1: Puedes correr más rápido que cualquier otro.
+        2: Tambíen puedes saltar más alto.
+    Medium-Tank: 
       Name: "&6Tanque mediano"
-      Description:
-        - "&7¡Comienzas con 6 corazones más!"
-        - "¡No tengas miedo!"
-        - "¡Tienes muchos corazones que perder!"
-    Worker:
+      Description: 
+        0: "&7¡Comienzas con 6 corazones más!"
+        1: ¡No tengas miedo!
+        2: ¡Tienes muchos corazones que perder!
+    Worker: 
       Name: "&6Trabajador"
-      Description:
-        - "&7Comienzas con 2 puertas y cada ronda"
-        - "consigues 1 más. ¡De está manera"
-        - "puedes reemplazar las puertas!"
-      Game-Item:
+      Description: 
+        0: "&7Comienzas con 2 puertas y cada ronda"
+        1: consigues 1 más. ¡De está manera
+        2: puedes reemplazar las puertas!
+      Game-Item: 
         Chat: "&a¡Puerta colocada!"
-    Dog-Friend:
-      Name: "Amigo del Perro"
-      Description:
-        - "Empieza con 3 amigos perrunos"
-        - "y obten uno cada oleada!"
-    Hardcore:
+    Dog-Friend: 
+      Name: Amigo del Perro
+      Description: 
+        0: Empieza con 3 amigos perrunos
+        1: y obten uno cada oleada!
+    Hardcore: 
       Name: "&6Hardcore"
-      Description:
-        - "&7Observa tu mismo porque"
-        - "esto es hardcore :)"
-    Golem-Friend:
+      Description: 
+        0: "&7Observa tu mismo porque"
+        1: 'esto es hardcore :)'
+    Golem-Friend: 
       Name: "&6Amigo Golem"
-      Description:
-        - "Empieza con un Golem"
-        - "y obten 1 cada 5 oleadas!"
-    Tornado:
+      Description: 
+        0: Empieza con un Golem
+        1: y obten 1 cada 5 oleadas!
+    Tornado: 
       Name: "&bTornado"
-      Description:
-        - "Provoca un tornado!"
-      Game-Item:
-        Name: "Tiempo de Tornado"
-        Description:
-          - "Click para generar un"
-          - "tornado en tu posicion!"
-    Terminator:
+      Description: 
+        0: Provoca un tornado!
+      Game-Item: 
+        Name: Tiempo de Tornado
+        Description: 
+          0: Click para generar un
+          1: tornado en tu posicion!
+    Terminator: 
       Name: "&6Terminator"
-      Description:
-        - "Mata zombies facil con"
-        - "tu gran poder!"
-    Teleporter:
+      Description: 
+        0: Mata zombies facil con
+        1: tu gran poder!
+    Teleporter: 
       Name: "&bTeleporter"
-      Description:
-        - "Salva aldeanos de forma rapida "
-        - "telentransportandote a ellos!"
-        - "you are able to teleport to villagers"
-        - "that need help in no time!"
-      Game-Item:
+      Description: 
+        0: "Salva aldeanos de forma rapida "
+        1: telentransportandote a ellos!
+        2: you are able to teleport to villagers
+        3: that need help in no time!
+      Game-Item: 
         Name: "&rMenu Rapido"
-        Description:
-          - "Abre el menu de tp!"
-        GUI: "Telentransportacion"
-      Teleport:
+        Description: 
+          0: Abre el menu de tp!
+        GUI: Telentransportacion
+      Teleport: 
         Villager: "&aLlevandote con el aldeano!"
         Warning: "&4Es probable que ese aldeano ya este muerto ;(!"
         Player: "&aLlevandote con %player%"
         Not-Found: "&cJugador no encontrado"
-    Heavy-Tank:
+    Heavy-Tank: 
       Name: "&bTanque Pesado"
-      Description:
-        - "Empieza con armadura pesada y "
-        - "el doble de corazones."
-        - "you'll be the last man standing!"
-    Shot-Bow:
+      Description: 
+        0: "Empieza con armadura pesada y "
+        1: el doble de corazones.
+        2: you'll be the last man standing!
+    Shot-Bow: 
       Name: "&bArquero Maestro"
-      Description:
-        - "Inventaste un arco increible!"
-    Blocker:
+      Description: 
+        0: Inventaste un arco increible!
+    Blocker: 
       Name: "&bBloqueador"
-      Description:
-        - "Crea barreras invisibles por"
-        - "10 segundos para evitar que los"
-        - "zombies pasen!!"
-      Game-Item:
-        Name: "Barrera"
-        Description:
-          - "Pon esta barrera para evitar el"
-          - "paso de los zombies por 10 segs"
-      Place:
+      Description: 
+        0: Crea barreras invisibles por
+        1: 10 segundos para evitar que los
+        2: zombies pasen!!
+      Game-Item: 
+        Name: Barrera
+        Description: 
+          0: Pon esta barrera para evitar el
+          1: paso de los zombies por 10 segs
+      Place: 
         Success: "&aBarrera Puesra!"
         Fail: "&cNo puedes poner eso aqui"
-    Premium-Hardcore:
+    Premium-Hardcore: 
       Name: "&bPremium Master Hardcore"
-      Description:
-        - "Solo para Hardcores!"
-        - "However be careful. this kit is only for"
-        - "the pros! Do not use it if you aren't a pro!"
-    Medic:
+      Description: 
+        0: Solo para Hardcores!
+        1: 'De todos modos ten cuidado este kit es solo para:'
+        2: 'los pros no lo uses si no eres pro :)'
+    Medic: 
       Name: "&6Medico"
-      Description:
-        - "Activa tus poderes de medico."
-        - "Cada vez que le pegues a un zombie tienes"
-        - "tienes una probabilidad de 1/10 de curar"
-        - "a tus compañeros en un radio de 5 bloques."
-    Wild-Naked:
+      Description: 
+        0: Activa tus poderes de medico.
+        1: Cada vez que le pegues a un zombie tienes
+        2: tienes una probabilidad de 1/10 de curar
+        3: a tus compañeros en un radio de 5 bloques.
+    Wild-Naked: 
       Name: "&bDesnudo y Salvaje"
-      Description:
-        - "&7¡Eres el maestro supremo!"
-        - "¡Comienzas con una espada de hierro"
-        - "con Filo VI y Castigo II!"
+      Description: 
+        0: "&7¡Eres el maestro supremo!"
+        1: ¡Comienzas con una espada de hierro
+        2: con Filo VI y Castigo II!
       Cannot-Wear-Armor: "&c¡No puedes usar armaduras con este kit!"
-    Wizard:
+    Wizard: 
       Name: "&bHechicero"
-      Description:
-        - "&7Mitad aldeano mitad hechicero."
-        - "Vienes a la aldea para proteger a los aldeanos"
-        - "de las oleadas de no muertos."
-        - "¡Usa tus poderes oscuros para matarlos a todos!"
-      Game-Item:
-        Essence:
-          Name: "Esencia negra"
-          Description:
-            - "&7¡Clic para absorber materia cercana"
-            - "y usarla como escudo personal!"
-            - "Dura 5 segundos"
-        Wand:
-          Name: "Varita mágica"
+      Description: 
+        0: "&7Mitad aldeano mitad hechicero."
+        1: Vienes a la aldea para proteger a los aldeanos
+        2: de las oleadas de no muertos.
+        3: ¡Usa tus poderes oscuros para matarlos a todos!
+      Game-Item: 
+        Essence: 
+          Name: Esencia negra
+          Description: 
+            0: "&7¡Clic para absorber materia cercana"
+            1: y usarla como escudo personal!
+            2: Dura 5 segundos
+        Wand: 
+          Name: Varita mágica
           Description: "&7Clic derecho para lanzar materia negra"
-# Upgrade-Menu messages
-# 
-# Upgrade-Menu function need to be enabled on config.yml
-Upgrade-Menu:
+Upgrade-Menu: 
   Title: "&3&lMejorar entidad"
   Upgraded-Entity: "&3¡Mejorar entidad a nivel &8%tier%&3!"
   Cannot-Afford: "&c¡No tienes suficientes orbes para comprar esta mejora!"
   Max-Tier: "&3¡La entidad ya posee el nivel máximo de esto!"
-  Stats-Item:
+  Stats-Item: 
     Name: "&3&lEstadísticas Actuales"
     Description: "&3Velocidad de movimiento: &8%speed%; &3Daño de ataque: &8%damage%; &3Vida: &8%current_hp%/%max_hp%"
-  Upgrades:
-    Health:
+  Upgrades: 
+    Health: 
       Name: "&3&lMejorar Vida"
       Description: "&3¡Mejorar vida máxima a nivel &8%tier%&3!;&3De &8%from% &3a &8%to%;&3Costo de mejora: &8%cost%;;&3Clic para comprar"
-    Damage:
+    Damage: 
       Name: "&3&lMejorar Daño"
       Description: "&3¡Mejorar daño de ataque a nivel &8%tier%&3!;&3De &8%from% &3a &8%to%;&3Costo de mejora: &8%cost%;;&3Clic para comprar"
-    Speed:
+    Speed: 
       Name: "&3&lMejorar Velocidad"
       Description: "&3¡Mejorar velocidad de movimiento a nivel &8%tier%&3!;&3De &8%from% &3a &8%to%;&3Costo de mejora: &8%cost%;;&3Clic para comprar"
-    Swarm-Awareness:
+    Swarm-Awareness: 
       Name: "&3&lAlerta Swarm"
       Description: "&3Upgrade swarm awareness to tier &8%tier%&3!;&3From &8%from% &8damage multiplier per wolf in radius;&8of 3 blocks &3to %to%;&3The more wolves near attacking wolf;&3the more damage wolf deal;&3Cost of upgrade: &8%cost%;;&8Click to purchase"
-    Final-Defense:
+    Final-Defense: 
       Name: "&3&lDefensa Final"
       Description: "&3¡Mejorar defensa final a nivel &8%tier%&3!;&3De &8%from% radio de explosión &3a &8%to%;&3El golem explotara al morir, asesinando a todos;&3los zombis cercanos y aturdira a los que queden;&3Costo de mejora: &8%cost%;;&8Clic para comprar"
-# Leaderboard messages
-# 
-# Hologram function need to be enabled on config.yml
-Leaderboard:
-  Type:
-    Hologram:
+Leaderboard: 
+  Type: 
+    Hologram: 
       Header: "&6&lTop %number% en %value%"
       Format: "&e%number%. &f%player% (%value%)"
       Empty-Format: "&e%number%. &fVacío (0)"
-    Chat:
+    Chat: 
       Header: "&l-----TUS ESTADISTICAS-----"
       Header-Other: "&l-----ESTADISTICAS DE %player%-----"
       Footer: "&l--------------------"
       Format: "&a%value%: &e%number%"
-      Top:
+      Top: 
         Type-Name: "&c¡Por favor escribe el nombre de la estadística que quieras ver!"
         Header: "&8&m-------------------[&6 Top 10 &8&m]-------------------"
         Format: "&e#%number% %player% - %value% &7%user_statistic%"
-  Statistics:
-    Games-Played: "&aPartidas Jugadas"
-    Level: "&aNivel"
-    Exp: "&aExperiencia"
-    Orbs: "&aOrbes"
-    Highest-Wave: "&aMáxima Oleada"
-    Kills: "&aZombis Asesinados"
-    Deaths: "&aMuertes"
-    Next-Level-Exp: "&aExp sig. nivel &e"
-    Wins: "Partidas Ganadas ▸ %number%"
-    Loses: "Partidas perdidas ▸ %number%"
+  Statistics: 
+    Games-Played: "&aPartidas Jugadas ▸ %number%"
+    Level: "&aNivel ▸ %number%"
+    Exp: "&aExperiencia ▸ %number%"
+    Orbs: "&aOrbes ▸ %number%"
+    Highest-Wave: "&aMáxima Oleada ▸ %number%"
+    Kills: "&aZombis Asesinados ▸ %number%"
+    Deaths: "&aMuertes ▸ %number%"
+    Next-Level-Exp: "&aExp sig. nivel &e ▸ %number%"
+    Wins: Partidas Ganadas ▸ %number%
+    Loses: Partidas perdidas ▸ %number%
   Invalid-Name: "&c¡Nombre de la estadística inválido! Escribe: games_played, level"
   Unknown-Player: "&fJugador Desconocido"
-# Don't edit it. But who's stopping you? It's your server!
-# Really, don't edit ;p
-# You edited it, huh? Next time hurt yourself!
-Do-Not-Edit:
+Do-Not-Edit: 
   File-Version: 1
   Core-Version: 1
-# You can translate Village Defense messages here.
-# Color codes (&) supported.
-# 
-# Use \n to make new line
-# Some messages like item
-# descriptions don't support new lines
-# they are wrapped every 40 characters automatically
-# 
-# Some messages support their own placeholders
-# like %player%, %kit% etc.
-# 
-# Color scheme
-Color:
-  Placeholder:
+Color: 
+  Placeholder: 
     Value: "&a"
     Number: "&a"
     Player: "&b"
     Other: "&a"
-  Chat:
+  Chat: 
     Issue: "&c"
     Messages: "&7"
-    Special-Char:
+    Special-Char: 
       Contains: "[,],(,),{,},■,/,|,▸"
       Before: "&8"
