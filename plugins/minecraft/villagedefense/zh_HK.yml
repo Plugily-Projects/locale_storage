@@ -1,5 +1,4 @@
-# Command messages
-Commands:
+Commands: 
   Did-You-Mean: "%plugin_prefix% 你指的是 /%value%?"
   Command-Executed: "%plugin_prefix% 指令成功執行!"
   Teleported-To-Lobby: "%plugin_prefix% 已傳送至大廳!"
@@ -15,122 +14,109 @@ Commands:
   Player-Not-Found: "%color_chat_issue%%plugin_prefix% 目標玩家 %player% 不存在!"
   Invalid-Location-Teleport: "%color_chat_issue%%plugin_prefix% 傳送位置無效!"
   Wrong-Usage: "%color_chat_issue%%plugin_prefix% 指令用法錯誤. 正確用法為 %value%"
-  Admin:
-    Added-Orbs: "成功為該玩家增加了代幣!"
-    Received-Orbs: "你收到了 %number% 個代幣!"
+  Admin: 
+    Added-Orbs: 成功為該玩家增加了代幣!
+    Received-Orbs: 你收到了 %number% 個代幣!
     Added-Level: "&7成功為該玩家增加了等級!"
     Reload-Success: "%plugin_prefix% 成功將場地重新載入!"
-    List:
+    List: 
       Header: "%plugin_name% 場次: 名稱 狀態 玩家數"
       Format: "%arena_name% %arena_state_placeholder% %arena_players_size%/%arena_max_players%"
       No-Arenas: "%color_chat_issue%%plugin_prefix% 目前沒有可用的副本!"
-    Spychat:
+    Spychat: 
       Toggled: "%plugin_prefix% 遊戲聊天室監看已切換至 %value%"
     Adjust-Statistic: "%plugin_prefix% %player% 的數據 %value% 已被更新為 %number%!"
-  Main:
+  Main: 
     Header: "&6----------------{%plugin_name% 指令}----------"
-    Description:
-      - "&a遊戲相關指令:"
-      - "&b/%plugin_short_command% stats: 顯示你的遊戲資料!"
-      - "&b/%plugin_short_command% leave: 退出當前的遊戲!"
-      - "&b/%plugin_short_command% join <arena>: 加入指定的場次!"
-      - "&b/%plugin_short_command% top <statistic>: 顯示排行榜前 10 的玩家!"
-      - "&b/%plugin_short_command% randomjoin: 隨機加入任一場次!"
+    Description: 
+      0: "&a遊戲相關指令:"
+      1: "&b/%plugin_short_command% stats: 顯示你的遊戲資料!"
+      2: "&b/%plugin_short_command% leave: 退出當前的遊戲!"
+      3: "&b/%plugin_short_command% join <arena>: 加入指定的場次!"
+      4: "&b/%plugin_short_command% top <statistic>: 顯示排行榜前 10 的玩家!"
+      5: "&b/%plugin_short_command% randomjoin: 隨機加入任一場次!"
     Admin-Bonus-Description: "&b/%plugin_short_command%: 顯示所有管理員指令"
     Footer: "&6-------------------------------------------------"
-# In-Game scoreboard messages
-# 
-# Please do not use more chars than the scoreboard can handle!
-# Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
-# Placeholders:
-# https://wiki.plugily.xyz/villagedefense/placeholders/language
-Scoreboard:
+Scoreboard: 
   Title: "&a&l%plugin_name%"
-  Content:
-    Waiting:
-      - "&f目前玩家數: &e%arena_players_size%"
-      - "■ 目前玩家數 | %arena_players_size%"
-      - "&f所需玩家數: &e%arena_min_players%"
-      - "■ 所需玩家數 | %arena_min_players%"
-      - "&ewww.plugily.xyz"
-      - "   www.plugily.xyz"
-    Starting:
-      - "&f等待時間: &e%arena_time%"
-      - "■ 開始中 | %arena_time%"
-      - "&f目前玩家數: &e%arena_players_size%"
-      - "■ 目前玩家數 | %arena_players_size%"
-      - "&f所需玩家: &e%arena_min_players%"
-      - "■ 所需玩家 | %arena_min_players%"
-      - "&ewww.plugily.xyz"
-      - "   www.plugily.xyz"
-    # Contents of scoreboard while ingame
-    In-Game:
-      - "&f剩餘村民: &e%arena_villager_size%"
-      - "■ 剩餘村民 | &e%arena_villager_size%"
-      - "■ 剩餘玩家 | %arena_players_left_size%"
-      - "■ 剩餘殭屍 | %arena_zombie_size_left%"
-      - "&f腐肉數量: &e%arena_rotten_flesh_amount%"
-      - "■ 腐肉數量 | %arena_rotten_flesh_amount%"
-      - "■ 代幣 | %user_statistic_orbs%"
-      - "&ewww.plugily.xyz"
-      - "   www.plugily.xyz"
-    In-Game-Waiting:
-      - "&f剩餘村民: &e%arena_villager_size%"
-      - "■ 剩餘村民 | %arena_villager_size%"
-      - "■ 剩餘玩家 | %arena_players_left_size%"
-      - " "
-      - "■ 回合開始時間 | %arena_time%"
-      - " "
-      - "■ 腐肉數量 | %arena_rotten_flesh_amount%"
-      - "■ 代幣 | %user_statistic_orbs%"
-      - " "
-      - "   www.plugily.xyz"
-    # Contents of scoreboard while state is ending
-    Ending:
-      - "&f"
-      - "&f"
-      - "■ &c遊戲結束"
-      - " "
-      - "&f"
-      - "&f"
-      - " "
-      - "   www.plugily.xyz"
-    # Contents of scoreboard while state is restarting
-    Restarting:
-      - "&f"
-      - "&f"
-      - "■ &c重啟遊戲中"
-      - " "
-      - "&f"
-      - "&f"
-      - " "
-      - "   www.plugily.xyz"
-# Bossbar messages
-# 
-# Bossbar needs to be enabled on config.yml
-Bossbar:
+  Content: 
+    Waiting: 
+      0: "&f目前玩家數: &e%arena_players_size%"
+      1: ■ 目前玩家數 | %arena_players_size%
+      2: "&f所需玩家數: &e%arena_min_players%"
+      3: ■ 所需玩家數 | %arena_min_players%
+      4: "&ewww.plugily.xyz"
+      5: "   www.plugily.xyz"
+    Starting: 
+      0: "&f等待時間: &e%arena_time%"
+      1: ■ 開始中 | %arena_time%
+      2: "&f目前玩家數: &e%arena_players_size%"
+      3: ■ 目前玩家數 | %arena_players_size%
+      4: "&f所需玩家: &e%arena_min_players%"
+      5: ■ 所需玩家 | %arena_min_players%
+      6: "&ewww.plugily.xyz"
+      7: "   www.plugily.xyz"
+    In-Game: 
+      0: "&f剩餘村民: &e%arena_villager_size%"
+      1: ■ 剩餘村民 | &e%arena_villager_size%
+      2: ■ 剩餘玩家 | %arena_players_left_size%
+      3: ■ 剩餘殭屍 | %arena_zombie_size_left%
+      4: "&f腐肉數量: &e%arena_rotten_flesh_amount%"
+      5: ■ 腐肉數量 | %arena_rotten_flesh_amount%
+      6: ■ 代幣 | %user_statistic_orbs%
+      7: "&ewww.plugily.xyz"
+      8: "   www.plugily.xyz"
+    In-Game-Waiting: 
+      0: "&f剩餘村民: &e%arena_villager_size%"
+      1: ■ 剩餘村民 | %arena_villager_size%
+      2: ■ 剩餘玩家 | %arena_players_left_size%
+      3: " "
+      4: ■ 回合開始時間 | %arena_time%
+      5: " "
+      6: ■ 腐肉數量 | %arena_rotten_flesh_amount%
+      7: ■ 代幣 | %user_statistic_orbs%
+      8: " "
+      9: "   www.plugily.xyz"
+    Ending: 
+      0: "&f"
+      1: "&f"
+      2: ■ &c遊戲結束
+      3: " "
+      4: "&f"
+      5: "&f"
+      6: " "
+      7: "   www.plugily.xyz"
+    Restarting: 
+      0: "&f"
+      1: "&f"
+      2: ■ &c重啟遊戲中
+      3: " "
+      4: "&f"
+      5: "&f"
+      6: " "
+      7: "   www.plugily.xyz"
+Bossbar: 
   Title: "&a&l%plugin_name% &6- www.plugily.xyz"
-  Content:
-    Waiting:
-      - "等待更多玩家..."
-    Starting:
-      - "等待時間: %arena_time%"
-    In-Game:
-      - "正在 PLUGILY.XYZ 遊玩 %plugin_name_uppercase%"
-      - "在 PLUGILY.XYZ 查看有關插件創作者的資訊"
-      - "目前波次 %arena_option_wave%"
-    Ending:
-      - "遊戲結束了! 正在 PLUGILY.XYZ 上遊玩"
-    Restarting:
-      - "正在重啟場次. 稍後將會為你傳送!"
-# In-Game Messages
-In-Game:
+  Content: 
+    Waiting: 
+      0: 等待更多玩家...
+    Starting: 
+      0: '等待時間: %arena_time%'
+    In-Game: 
+      0: 正在 PLUGILY.XYZ 遊玩 %plugin_name_uppercase%
+      1: 在 PLUGILY.XYZ 查看有關插件創作者的資訊
+      2: 目前波次 %arena_option_wave%
+    Ending: 
+      0: 遊戲結束了! 正在 PLUGILY.XYZ 上遊玩
+    Restarting: 
+      0: 正在重啟場次. 稍後將會為你傳送!
+In-Game: 
   # Used in most game messages.
-  Plugin-Prefix: "(%plugin_name%)"
+  Plugin-Prefix: (%plugin_name%)
   Game-Chat-Format: "[%user_statistic_level%][%kit%] %player% | %message%"
   You-Leveled-Up: "%plugin_prefix% 你升級了! 你到達了等級 %number%!"
   Commands-Blocked: "%color_chat_issue%%plugin_prefix% 你必須離開遊戲才能執行此指令. 目前唯一可用的指令是 /%plugin_short_command% leave!"
-  Join:
+  Join: 
     Already-Playing: "%color_chat_issue%%plugin_prefix% 你已經在其他場次內等候! 你可以使用 /%plugin_short_command% leave 離開."
     No-Permission: "%color_chat_issue%%plugin_prefix% 你沒有 %value% 權限以加入該場次!"
     Full-Game: "%color_chat_issue%%plugin_prefix% 你沒有可加入已滿人遊戲的權限!"
@@ -139,36 +125,36 @@ In-Game:
     Cancelled-Via-API: "%color_chat_issue%%plugin_prefix% 你無法加入此場遊戲!"
     As-Party-Member: "%color_chat_issue%%plugin_prefix% 由於隊長加入 %arena_name%, 因此你也進入該場次了!"
     Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% 場次尚未設定完成! 請聯繫員工!"
-    Title: "20, 30, 20;%arena_name%;%arena_players_size%/%arena_max_players%"
-  Death:
+    Title: 20, 30, 20;%arena_name%;%arena_players_size%/%arena_max_players%
+  Death: 
     Tag: "&8死亡"
     Screen: "%color_chat_issue%你死了!"
-  Spectator:
+  Spectator: 
     You-Are-Spectator: "%plugin_prefix% 你成為了觀察者! 可以飛行了!"
     Spectator-Menu-Name: "%color_chat_issue%存活玩家列表"
     Target-Player-Health: "%color_chat_issue%生命值: %number%"
     Spectator-Warning: "%plugin_prefix% 你成為了觀察者!"
     Teleport: "%plugin_prefix% 傳送至 %player%"
-    Menu:
-      Settings:
-        Status:
-          Enabled: "啟用"
-          Disabled: "禁用"
-        Changed-Speed: "將速度變更至 %number%"
+    Menu: 
+      Settings: 
+        Status: 
+          Enabled: 啟用
+          Disabled: 禁用
+        Changed-Speed: 將速度變更至 %number%
         Auto-Teleport: "%value% auto teleport"
-        Target-Player:
+        Target-Player: 
           Action-Bar: "%number% 格遠 | 目標 %player%"
         Night-Vision: "%value% night vision"
-        First-Person-Mode:
+        First-Person-Mode: 
           Action-Bar: "&e潛行 &c以離開! | 目標 %player%"
           Title: "&e潛行 &c以離開!"
         Visibility: "%value% other spectator players"
     Blocked: "%color_chat_issue%%plugin_prefix% 該場地已禁用觀察者."
-  Messages:
+  Messages: 
     Join: "%plugin_prefix% %player% 加入了遊戲 (%arena_players_size%/%arena_max_players%)!"
     Leave: "%plugin_prefix% %player% 離開了遊戲 (%arena_players_size%/%arena_max_players%)!"
     Death: "%plugin_prefix% %player% 死亡了!"
-    Lobby:
+    Lobby: 
       Start-In: "%plugin_prefix% 遊戲將於 %arena_time% 秒後開始!"
       Waiting-For-Players: "%plugin_prefix% 等待玩家中... 需要 %arena_min_players% 位玩家才能開始."
       Enough-Players-To-Start: "%plugin_prefix% 我們有了足夠的玩家. 遊戲將會於稍後開始!"
@@ -178,405 +164,378 @@ In-Game:
       Not-Enough-Space-For-Party: "%color_chat_issue%%plugin_prefix% 你的團隊成員數量已經超過 %arena_name% 所剩的空間"
       Max-Players: "%plugin_prefix% 該場次已達到最大玩家限制. 因此縮短等待時間!"
       Reduced-Time: "%plugin_prefix% 等待時間已縮短至 %number% 秒"
-    Game-End:
-      Summary:
-        - "&a&m--------------------------------------------------"
-        - "%plugin_name%"
-        - " "
-        - "%arena_summary%"
-        - "%arena_summary_player%"
-        - " "
-        - "&e&l達成波次 | %arena_option_wave% (best %user_statistic_highest_wave%)"
-        - "&6&l總擊殺數 | %arena_option_total_killed_zombies%"
-        - "&c&l總消費代幣 | %arena_option_total_orbs_spent%"
-        - " "
-        - "&a&m--------------------------------------------------"
-      Placeholders:
+    Game-End: 
+      Summary: 
+        0: "&a&m--------------------------------------------------"
+        1: "%plugin_name%"
+        2: " "
+        3: "%arena_summary%"
+        4: "%arena_summary_player%"
+        5: " "
+        6: "&e&l達成波次 | %arena_option_wave% (best %user_statistic_highest_wave%)"
+        7: "&6&l總擊殺數 | %arena_option_total_killed_zombies%"
+        8: "&c&l總消費代幣 | %arena_option_total_orbs_spent%"
+        9: " "
+        10: "&a&m--------------------------------------------------"
+      Placeholders: 
         Win: "&a你贏了"
         Lose: "%color_chat_issue%你輸了"
-        Died:
+        Died: 
           Players: "%color_chat_issue%所有玩家皆已死亡!"
           Villagers: "%color_chat_issue%所有村民皆已死亡!"
         Survived: "&a你活過了所有回合"
         Players: "%color_chat_issue%%plugin_prefix% 由於所剩玩家數量不足. 該場次已被強制結束!"
-    Admin:
+    Admin: 
       Set-Starting-In-To-0: "%plugin_prefix% 管理員將等待時間設置為 0. 因此遊戲將會開始!"
-      Removed:
+      Removed: 
         Villagers: "%plugin_prefix% %player% 移除了村民!"
         Golems: "%plugin_prefix% %player% 移除了所有鐵魔像!"
         Zombies: "%plugin_prefix% %player% 移除了所有殭屍!"
         Wolves: "%plugin_prefix% %player% 移除了所有狼!"
-      Changed:
+      Changed: 
         Wave: "%color_chat_issue%%plugin_prefix% 管理員將回合數更改為 %number%"
-    Village:
+    Village: 
       Rotten-Flesh-Level-Up: "%plugin_prefix% 神明喜歡這些腐肉! 因此祂給了你額外的 &a生命值!"
       You-Feel-Refreshed: "%plugin_prefix% 你感到神清氣爽!"
-      # Do not use spaces between villager names. No limit in names size and amount :)
-      Villager:
+      Villager: 
         Died: "%color_chat_issue%%plugin_prefix% 一位村民死亡了!"
-        Names: "Jagger,Kelsey,Kelton,Haylie,Harlow,Howard,Wulffric,Winfred,Ashley,Bailey,Beckett,Alfredo,Alfred,Adair,Edgar,ED,Eadwig,Edgaras,Buckley,Stanley,Nuffley,Mary,Jeffry,Rosaly,Elliot,Harry,Sam,Rosaline,Tom,Ivan,Kevin,Adam"
-      Wave:
+        Names: Jagger,Kelsey,Kelton,Haylie,Harlow,Howard,Wulffric,Winfred,Ashley,Bailey,Beckett,Alfredo,Alfred,Adair,Edgar,ED,Eadwig,Edgaras,Buckley,Stanley,Nuffley,Mary,Jeffry,Rosaly,Elliot,Harry,Sam,Rosaline,Tom,Ivan,Kevin,Adam
+      Wave: 
         Stuck-Zombies: "%color_chat_issue%%plugin_prefix% 看起來最後活著的殭屍卡住了. 別擔心! 神明已經為你處裡掉了!"
         Spectator-Warning: "%color_chat_issue%%plugin_prefix% 你現在成為了觀察者! 你無法執行任何操作, 直到下回合開始時重生為止!"
         Respawn-On-Next: "&e&l別離開! &a當本回合結束時, 您將會重生!"
         Respawned: "%plugin_prefix% 你已回到遊戲中!"
         Next-In: "%plugin_prefix% 下一回合將於 %number% 秒後開始!"
         Started: "%plugin_prefix% 第 %number% 回合開始!"
-        Title:
-          Start: "20,30,20;第 %number% 回合;"
-          End: "20,30,20;第 %number% 回合結束;"
-      Orbs:
-        Pickup: "+ %number% 點代幣"
-      Entities:
-        Wolf:
+        Title: 
+          Start: 20,30,20;第 %number% 回合;
+          End: 20,30,20;第 %number% 回合結束;
+      Orbs: 
+        Pickup: + %number% 點代幣
+      Entities: 
+        Wolf: 
           Spawn: "%plugin_prefix% 狼被召喚至村莊內!"
           Name: "%player% 的狼"
           Death: "%color_chat_issue%%plugin_prefix% 你的其中一隻狼被殺害了!"
-        Golem:
+        Golem: 
           Spawn: "%plugin_prefix% 鐵魔像被召喚到村莊內!"
           Name: "%player% 的鐵魔像"
           Cant-Ride-Other: "%color_chat_issue%%plugin_prefix% 你無法騎乘他人的鐵魔像!"
-      Shop:
+      Shop: 
         GUI: "&l商店"
-        Golem-Item-Name: "召喚鐵魔像"
-        Wolf-Item-Name: "召喚狼"
+        Golem-Item-Name: 召喚鐵魔像
+        Wolf-Item-Name: 召喚狼
         Mob-Limit-Reached: "%color_chat_issue%%plugin_prefix% 你無法繼續購買生物! 你已經達到 %number% 生物的限制!"
         Not-Enough-Currency: "%color_chat_issue%%plugin_prefix% 你需要更多代幣才能購買該物品!"
-        Currency: "代幣"
+        Currency: 代幣
         Not-Defined: "%color_chat_issue%%plugin_prefix% 商店並未設置完成! 請聯繫員工!"
-# Sign messages
-Signs:
+Signs: 
   Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% 請在第二行輸入場次名稱!"
   Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% 找不到與名稱相符的場次!"
   Created: "%plugin_prefix% 成功創建告示牌!"
   Removed: "%plugin_prefix% 成功移除告示牌!"
-  Lines:
-    - "%plugin_prefix%"
-    - "%arena_state_placeholder%"
-    - "%arena_name%"
-    - "[%arena_players_size%/%arena_max_players%]"
-# Arena Selector messages
-Arena-Selector:
+  Lines: 
+    0: "%plugin_prefix%"
+    1: "%arena_state_placeholder%"
+    2: "%arena_name%"
+    3: "[%arena_players_size%/%arena_max_players%]"
+Arena-Selector: 
   Inventory-Title: "%plugin_short_command% ▸ 場次選擇器"
-  Item:
+  Item: 
     Name: "%arena_name%"
-    Lore:
-      - "%plugin_name% - %arena_name%"
-      - " "
-      - " "
-      - "  在線: %arena_players_size%/%arena_max_players%"
-      - "  狀態: %arena_state_placeholder%"
-      - " "
-      - " "
-      - "&a點擊以加入該場次"
-# Validator messages
-Validator:
-  Invalid-Arena-Configuration: "場次 %arena_name% 中有無效配置! 遺失的節點: %value%"
-  Instance-Started: "場次 %arena_name% 成功開啟!"
-  No-Instances-Created: "找不到任何以創建的遊戲場次!"
-# Placeholder messages inside plugin
-Placeholders:
-  Game-States:
+    Lore: 
+      0: "%plugin_name% - %arena_name%"
+      1: " "
+      2: " "
+      3: "  在線: %arena_players_size%/%arena_max_players%"
+      4: "  狀態: %arena_state_placeholder%"
+      5: " "
+      6: " "
+      7: "&a點擊以加入該場次"
+Validator: 
+  Invalid-Arena-Configuration: '場次 %arena_name% 中有無效配置! 遺失的節點: %value%'
+  Instance-Started: 場次 %arena_name% 成功開啟!
+  No-Instances-Created: 找不到任何以創建的遊戲場次!
+Placeholders: 
+  Game-States: 
     Waiting: "&l等待更多玩家..."
     Starting: "&e&l開始中"
     Full-Game: "&4&l已滿人"
     In-Game: "&l遊戲中"
     Ending: "&l結束中"
     Restarting: "&c&l重啟中"
-  Motd:
+  Motd: 
     Waiting: "&l你可以加入此局遊戲..."
     Starting: "&e&l開始中"
     Full-Game: "&4&l已滿人 | 看一下其他伺服器"
     In-Game: "&l遊戲中 | 加入以觀戰"
     Ending: "&l結束中 | 伺服器正在關閉"
     Restarting: "&c&l重啟中"
-# Kit messages
-Kit:
+Kit: 
   Not-Unlocked: "%color_chat_issue%%plugin_prefix% 你尚未解鎖 %value%!"
   Choose: "%plugin_prefix% 你選擇了: %value%!"
-  Open-Menu: "打開職業選單"
+  Open-Menu: 打開職業選單
   Cooldown: "%color_chat_issue%%plugin_prefix% 職業技能仍在冷卻中 (%number%)!"
-  Menu:
-    Title: "職業選單"
-    Lore:
+  Menu: 
+    Title: 職業選單
+    Lore: 
       Unlocked: "&a已解鎖!"
       Locked: "&c未解鎖!"
-      Unlock-At-Level: "到達等級 %number% 後解鎖"
+      Unlock-At-Level: 到達等級 %number% 後解鎖
       Unlock-In-Store: "&b在商店中解鎖!"
-  Content:
-    Cleaner:
+  Content: 
+    Cleaner: 
       Name: "&b清掃者"
-      Description:
-        - "該職業有個特殊技能."
-        - "有了這個能力, 他可以讓"
-        - "所有殭屍消失. 然而, 這需耗費"
-        - "許多精力!"
-      Game-Item:
+      Description: 
+        0: 該職業有個特殊技能.
+        1: 有了這個能力, 他可以讓
+        2: 所有殭屍消失. 然而, 這需耗費
+        3: 許多精力!
+      Game-Item: 
         Name: "&6清掃魔杖!"
-        Description:
-          - "右鍵點擊可擊殺所有殭屍!"
-          - "冷卻時間: 60 秒"
-      Cleaned:
+        Description: 
+          0: 右鍵點擊可擊殺所有殭屍!
+          1: '冷卻時間: 60 秒'
+      Cleaned: 
         Map: "&b%player% 清空了地圖!"
         # WARNING: used for admin clean commands too!!!
         Nothing: "&a地圖已經是淨空狀態!"
-    Zombie-Teleporter:
+    Zombie-Teleporter: 
       Name: "&2殭屍傳送者"
-      Description:
-        - "將那些殭屍傳送到你身旁!"
-        - "許多人認為這是最糟糕的職業!"
-        - "我必須要說他們錯的很離譜!"
-      Game-Item:
-        GUI: "殭屍傳送器"
-        Name: "殭屍傳送器"
-        Description:
-          - "將殭屍傳送到你身旁!"
-    Teleport:
+      Description: 
+        0: 將那些殭屍傳送到你身旁!
+        1: 許多人認為這是最糟糕的職業!
+        2: 我必須要說他們錯的很離譜!
+      Game-Item: 
+        GUI: 殭屍傳送器
+        Name: 殭屍傳送器
+        Description: 
+          0: 將殭屍傳送到你身旁!
+    Teleport: 
       Zombie: "&aTeleported weakened zombie to you!"
       Not-Found: "&c找不到可傳送的殭屍!"
-    Knight:
+    Knight: 
       Name: "&2騎士"
-      Description:
-        - "這是獨一無二的騎士職業!"
-        - "許多人認為這是最糟糕的職業!"
-        - "我必須要說他們錯的很離譜!"
-    Light-Tank:
+      Description: 
+        0: 這是獨一無二的騎士職業!
+        1: 許多人認為這是最糟糕的職業!
+        2: 我必須要說他們錯的很離譜!
+    Light-Tank: 
       Name: "&2輕型坦克"
-      Description:
-        - "你是一台小型坦克!"
-    Archer:
+      Description: 
+        0: 你是一台小型坦克!
+    Archer: 
       Name: "&6弓箭手"
-      Description:
-        - "開局獲得一把弓, 皮革套裝和一把木劍."
-        - "弓箭手很受村民崇拜的!"
-    Puncher:
+      Description: 
+        0: 開局獲得一把弓, 皮革套裝和一把木劍.
+        1: 弓箭手很受村民崇拜的!
+    Puncher: 
       Name: "&6打擊者"
-      Description:
-        - "用你的小鏟鏟將那些殭屍擊退到千里之外!"
-        - "擊退 V 對你來說並不陌生!"
-    Healer:
+      Description: 
+        0: 用你的小鏟鏟將那些殭屍擊退到千里之外!
+        1: 擊退 V 對你來說並不陌生!
+    Healer: 
       Name: "&6治癒者"
-      Description:
-        - "當一個治療者正如同被愛依樣."
-        - "你可以治療你的隊友以及村民!"
-        - "每回合刷新一次!"
-    Looter:
+      Description: 
+        0: 當一個治療者正如同被愛依樣.
+        1: 你可以治療你的隊友以及村民!
+        2: 每回合刷新一次!
+    Looter: 
       Name: "&6掠奪者"
-      Description:
-        - "獲得額外的腐肉"
-        - "當每擊殺一個僵屍時!"
-    Runner:
+      Description: 
+        0: 獲得額外的腐肉
+        1: 當每擊殺一個僵屍時!
+    Runner: 
       Name: "&6跑者"
-      Description:
-        - "跑酷是你的熱情所在!"
-        - "你能夠跑得比他人還快."
-        - "同時你也能跳得更高."
-    Medium-Tank:
+      Description: 
+        0: 跑酷是你的熱情所在!
+        1: 你能夠跑得比他人還快.
+        2: 同時你也能跳得更高.
+    Medium-Tank: 
       Name: "&6中型坦克"
-      Description:
-        - "開局獲得額外 6 顆心!"
-        - "不要害怕!"
-        - "你沒什麼好失去的!"
-    Worker:
+      Description: 
+        0: 開局獲得額外 6 顆心!
+        1: 不要害怕!
+        2: 你沒什麼好失去的!
+    Worker: 
       Name: "&6修繕工"
-      Description:
-        - "每一輪獲得一扇門, 開局"
-        - "可獲得額外 2 扇門. 這樣子"
-        - "你就可以替換掉損壞的門!"
-      Game-Item:
+      Description: 
+        0: 每一輪獲得一扇門, 開局
+        1: 可獲得額外 2 扇門. 這樣子
+        2: 你就可以替換掉損壞的門!
+      Game-Item: 
         Chat: "&a成功放置門!"
-    Dog-Friend:
+    Dog-Friend: 
       Name: "&b狗狗好朋友"
-      Description:
-        - "開局獲得 3 隻狼"
-        - "並且每回合可額外獲得 1 只!"
-    Hardcore:
+      Description: 
+        0: 開局獲得 3 隻狼
+        1: 並且每回合可額外獲得 1 只!
+    Hardcore: 
       Name: "&6硬核"
-      Description:
-        - "用了之後就會知道"
-        - "為什麼這個職業要叫硬核了"
-    Golem-Friend:
+      Description: 
+        0: 用了之後就會知道
+        1: 為什麼這個職業要叫硬核了
+    Golem-Friend: 
       Name: "&6鐵魔像好朋友"
-      Description:
-        - "開局獲得一只鐵魔像"
-        - "且每五回合還會獲得一隻!"
-    Tornado:
+      Description: 
+        0: 開局獲得一只鐵魔像
+        1: 且每五回合還會獲得一隻!
+    Tornado: 
       Name: "&b龍捲風"
-      Description:
-        - "召喚一個很讚的龍捲風!"
-      Game-Item:
-        Name: "龍捲風時間"
-        Description:
-          - "右鍵點擊以"
-          - "在原地生成一個龍捲風!"
-    Terminator:
+      Description: 
+        0: 召喚一個很讚的龍捲風!
+      Game-Item: 
+        Name: 龍捲風時間
+        Description: 
+          0: 右鍵點擊以
+          1: 在原地生成一個龍捲風!
+    Terminator: 
       Name: "&6終結者"
-      Description:
-        - "輕鬆的擊殺那些襲來的殭屍"
-        - "並展現那強大的力量!"
-    Teleporter:
+      Description: 
+        0: 輕鬆的擊殺那些襲來的殭屍
+        1: 並展現那強大的力量!
+    Teleporter: 
       Name: "&b傳送者"
-      Description:
-        - "所有人皆對你的傳送能力感到吃驚."
-        - "除了你以外沒人知道如何傳送!"
-        - "因此你可以傳送至那些"
-        - "需要及時幫助的村民!"
-      Game-Item:
+      Description: 
+        0: 所有人皆對你的傳送能力感到吃驚.
+        1: 除了你以外沒人知道如何傳送!
+        2: 因此你可以傳送至那些
+        3: 需要及時幫助的村民!
+      Game-Item: 
         Name: "&r傳送選單"
-        Description:
-          - "右鍵點擊以開啟傳送選單!"
-        GUI: "傳送選單"
-      Teleport:
+        Description: 
+          0: 右鍵點擊以開啟傳送選單!
+        GUI: 傳送選單
+      Teleport: 
         Villager: "&a成功傳送至村民!"
         Warning: "&4在地圖內找不到指定的村民! 該村民很有可能已死亡!"
         Player: "&a傳送至 %player%"
         Not-Found: "&c找不到此玩家! 請再試一次!"
-    Heavy-Tank:
+    Heavy-Tank: 
       Name: "&5重型坦克"
-      Description:
-        - "開局獲得一套鐵裝"
-        - "並獲得雙倍生命值! 沒錯,"
-        - "你將會是最後一個活下來的人!"
-    Shot-Bow:
+      Description: 
+        0: 開局獲得一套鐵裝
+        1: 並獲得雙倍生命值! 沒錯,
+        2: 你將會是最後一個活下來的人!
+    Shot-Bow: 
       Name: "&b連弩大師"
-      Description:
-        - "你發明了一個瘋狂的十字弩!"
-    Blocker:
+      Description: 
+        0: 你發明了一個瘋狂的十字弩!
+    Blocker: 
       Name: "&b阻擋者"
-      Description:
-        - "讓殭屍被你的"
-        - "特殊屏障格擋在外. 這些"
-        - "屏障持續至少 10 秒"
-      Game-Item:
-        Name: "柵欄"
-        Description:
-          - "放置這個屏障以阻隔"
-          - "殭屍! 屏障可持續 10 秒."
-      Place:
+      Description: 
+        0: 讓殭屍被你的
+        1: 特殊屏障格擋在外. 這些
+        2: 屏障持續至少 10 秒
+      Game-Item: 
+        Name: 柵欄
+        Description: 
+          0: 放置這個屏障以阻隔
+          1: 殭屍! 屏障可持續 10 秒.
+      Place: 
         Success: "&a成功放置屏障!"
         Fail: "&c無法在此處放置屏障!"
-    Premium-Hardcore:
+    Premium-Hardcore: 
       Name: "&b硬核大師"
-      Description:
-        - "用你手上的 OP 劍可以一擊殺死大多數殭屍!"
-        - "然而請注意. 該職業只適合"
-        - "高手! 倘若不是的話你會輸的一蹋糊塗!"
-    Medic:
+      Description: 
+        0: 用你手上的 OP 劍可以一擊殺死大多數殭屍!
+        1: 然而請注意. 該職業只適合
+        2: 高手! 倘若不是的話你會輸的一蹋糊塗!
+    Medic: 
       Name: "&6軍醫"
-      Description:
-        - "此職業擁有一個被動屬性."
-        - "每當你擊殺一隻殭屍, 將會"
-        - "有 10% 的機率治癒"
-        - "在 5 格半徑內的玩家."
-    Wild-Naked:
+      Description: 
+        0: 此職業擁有一個被動屬性.
+        1: 每當你擊殺一隻殭屍, 將會
+        2: 有 10% 的機率治癒
+        3: 在 5 格半徑內的玩家.
+    Wild-Naked: 
       Name: "&b輕裝上陣"
-      Description:
-        - "你自認為你是最強的高手!"
-        - "開局獲得一把鋒利"
-        - "VI 加不死剋星 II 的鐵劍!"
+      Description: 
+        0: 你自認為你是最強的高手!
+        1: 開局獲得一把鋒利
+        2: VI 加不死剋星 II 的鐵劍!
       Cannot-Wear-Armor: "&c當使用職業 輕裝上陣 時無法裝備盔甲!"
-    Wizard:
+    Wizard: 
       Name: "&b巫師"
-      Description:
-        - "你是混血兒."
-        - "你來到了村莊並保護"
-        - "村民以承受數以萬計殭屍的入侵."
-        - "使用你的黑暗力量殺死他們!"
-      Game-Item:
-        Essence:
-          Name: "暗黑精華"
-          Description:
-            - "點擊以吸收周遭的物質"
-            - "並將其當作你的利盾!"
-            - "持續 5 秒"
-        Wand:
-          Name: "魔杖"
-          Description: "點擊以釋放暗物質"
-# Upgrade-Menu messages
-# 
-# Upgrade-Menu function need to be enabled on config.yml
-Upgrade-Menu:
+      Description: 
+        0: 你是混血兒.
+        1: 你來到了村莊並保護
+        2: 村民以承受數以萬計殭屍的入侵.
+        3: 使用你的黑暗力量殺死他們!
+      Game-Item: 
+        Essence: 
+          Name: 暗黑精華
+          Description: 
+            0: 點擊以吸收周遭的物質
+            1: 並將其當作你的利盾!
+            2: 持續 5 秒
+        Wand: 
+          Name: 魔杖
+          Description: 點擊以釋放暗物質
+Upgrade-Menu: 
   Title: "&3&l升級生物"
   Upgraded-Entity: "%plugin_prefix% &3成功升級生物至等級 &8%tier%&3!"
   Cannot-Afford: "%plugin_prefix% &3你沒有足夠的代幣購買此升級!"
   Max-Tier: "%plugin_prefix% &3此生物以到達該類別的最高等級限制!"
-  Stats-Item:
+  Stats-Item: 
     Name: "&3&l目前數據"
     Description: "&3移動速度: &8%speed%; &3攻擊傷害: &8%damage%; &3血量: &8%current_hp%/%max_hp%"
-  Upgrades:
-    Health:
+  Upgrades: 
+    Health: 
       Name: "&3&l升級生命"
       Description: "&3升級最大血量至等級 &8%tier%&3!;&3最大生命值 從 &8%from% &3到 &8%to%;&3升級花費: &8%cost%;;&3點擊以購買"
-    Damage:
+    Damage: 
       Name: "&3&l升級傷害"
       Description: "&3升級傷害至等級 &8%tier%&3!;&3傷害值 從 &8%from% &3到 &8%to%;&3升級花費: &8%cost%;;&8點擊以購買"
-    Speed:
+    Speed: 
       Name: "&3&l升級移速"
       Description: "&3Upgrade movement speed to tier &8%tier%&3!;&3From &8%from% &3to &8%to%;&3Cost of upgrade: &8%cost%;;&8Click to purchase"
-    Swarm-Awareness:
+    Swarm-Awareness: 
       Name: "&3&l群體意識"
       Description: "&3Upgrade swarm awareness to tier &8%tier%&3!;&3From &8%from% &8damage multiplier per wolf in radius;&8of 3 blocks &3to %to%;&3The more wolves near attacking wolf;&3the more damage wolf deal;&3Cost of upgrade: &8%cost%;;&8Click to purchase"
-    Final-Defense:
+    Final-Defense: 
       Name: "&3&l最終手段"
       Description: "&3Upgrade final defense to tier &8%tier%&3!;&3From &8%from% explosion radius &3to &8%to%;&3Golem will explode after death killing nearby;&3zombies and stun all alive ones;&3Cost of upgrade: &8%cost%;;&8Click to purchase"
-# Leaderboard messages
-# 
-# Hologram function need to be enabled on config.yml
-Leaderboard:
-  Type:
-    Hologram:
+Leaderboard: 
+  Type: 
+    Hologram: 
       Header: "&6&l%value% 前 %number% 名"
       Format: "&e%number%. %player% (%value%)"
       Empty-Format: "&e%number%. &f從缺 (0)"
-    Chat:
+    Chat: 
       Header: "&8+-------+ &a&l你的戰績 &8+-------+"
       Header-Other: "&8+---------+ &b%player% &a的戰績 &8+---------+"
       Footer: "&8+-----------------------------+"
       Format: "%value% ▸ &a%number%"
-      Top:
+      Top: 
         Type-Name: "%color_chat_issue%請輸入要查詢的數據名稱!"
         Header: "&8&m+----------------+ [&6 前 10 &8&m] +----------------+"
         Format: "&e#%number% %player% - %value% %user_statistic%"
-  Statistics:
-    Games-Played: "遊玩次數 ▸ %number%"
-    Level: "等級 ▸ %number%"
-    Exp: "經驗 ▸ %number%"
-    Orbs: "代幣 ▸ %number%"
-    Highest-Wave: "最高回合 ▸ %number%"
-    Kills: "總擊殺數 ▸ %number%"
-    Deaths: "死亡次數 ▸ %number%"
-    Next-Level-Exp: "距離升級還剩 ▸ %number%"
-    Wins: "勝場數 ▸ %number%"
-    Loses: "敗場數 ▸ %number%"
+  Statistics: 
+    Games-Played: 遊玩次數 ▸ %number%
+    Level: 等級 ▸ %number%
+    Exp: 經驗 ▸ %number%
+    Orbs: 代幣 ▸ %number%
+    Highest-Wave: 最高回合 ▸ %number%
+    Kills: 總擊殺數 ▸ %number%
+    Deaths: 死亡次數 ▸ %number%
+    Next-Level-Exp: 距離升級還剩 ▸ %number%
+    Wins: 勝場數 ▸ %number%
+    Loses: 敗場數 ▸ %number%
   Invalid-Name: "%color_chat_issue%統計數據名稱無效! 請輸入: %value%"
   Unknown-Player: "%color_chat_issue%未知的玩家"
-# Don't edit it. But who's stopping you? It's your server!
-# Really, don't edit ;p
-# You edited it, huh? Next time hurt yourself!
-Do-Not-Edit:
+Do-Not-Edit: 
   File-Version: 1
   Core-Version: 1
-# You can translate Village Defense messages here.
-# Color codes (&) supported.
-# 
-# Use \n to make new line
-# Some messages like item
-# descriptions don't support new lines
-# they are wrapped every 40 characters automatically
-# 
-# Some messages support their own placeholders
-# like %player%, %kit% etc.
-# 
-# Color scheme
-Color:
-  Placeholder:
+Color: 
+  Placeholder: 
     Value: "&a"
     Number: "&a"
     Player: "&b"
     Other: "&a"
-  Chat:
+  Chat: 
     Issue: "&c"
     Messages: "&7"
-    Special-Char:
+    Special-Char: 
       Contains: "[,],(,),{,},■,/,|,▸"
       Before: "&8"
