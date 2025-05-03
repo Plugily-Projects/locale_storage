@@ -1,16 +1,29 @@
-Color: 
-  Placeholder: 
+# You can translate MurderMystery messages here.
+# Color codes (&) supported.
+# 
+# Use \n to make new line
+# Some messages like item
+# descriptions don't support new lines
+# they are wrapped every 40 characters automatically
+# 
+# Some messages support their own placeholders
+# like %player%, %kit% etc.
+# 
+# Color scheme
+Color:
+  Placeholder:
     Value: "&4"
     Number: "&4"
     Player: "&b"
     Other: "&4"
-  Chat: 
+  Chat:
     Issue: "&c"
     Messages: "&7"
-    Special-Char: 
+    Special-Char:
       Contains: "[,],(,),{,},■,/,|,▸"
       Before: "&8"
-Commands: 
+# Command messages
+Commands:
   Did-You-Mean: "%plugin_prefix% Měli jste na mysli /%value%?"
   Command-Executed: "%plugin_prefix% Příkaz byl úspěšně použit!"
   Teleported-To-Lobby: "%plugin_prefix% Teleport na lobby!"
@@ -26,123 +39,136 @@ Commands:
   Player-Not-Found: "%color_chat_issue%%plugin_prefix% Hráš %player% neexistuje!"
   Invalid-Location-Teleport: "%color_chat_issue%%plugin_prefix% Poloha na teleportování není k dispozici!"
   Wrong-Usage: "%color_chat_issue%%plugin_prefix% Špatné použití. Použijte %value%"
-  Admin: 
+  Admin:
     Adjust-Statistic: "%plugin_prefix% Statistiky %value% %player% jsou právě %number%!"
     Reload-Success: "%plugin_prefix% Arény byly obnoveny!"
-    List: 
+    List:
       Header: "%plugin_name% arény: Jméno Status Hráči"
       Format: "%arena_name% %arena_state_placeholder% %arena_players_size%/%arena_max_players%"
       No-Arenas: "%color_chat_issue%%plugin_prefix% Nejsou zde žádné hry!"
-    Spychat: 
+    Spychat:
       Toggled: "%plugin_prefix% Herní špiónský chat byl přepnut na %value%"
-  Main: 
+  Main:
     Header: "&6----------------{%plugin_name% příkazy}----------"
-    Description: 
-      0: "&aHerní příkazy:"
-      1: "&b/%plugin_short_command% staty: Zobraz svoje staty!"
-      2: "&b/%plugin_short_command% leave: Odchod z arény!"
-      3: "&b/%plugin_short_command% join <arena>: Připojení do konkrétní arény!"
-      4: "&b/%plugin_short_command% top <statistic>: Ukáže top 10 hráčů!"
-      5: "&b/%plugin_short_command% randomjoin: Připojení do náhodné arény!"
+    Description:
+      - "&aHerní příkazy:"
+      - "&b/%plugin_short_command% staty: Zobraz svoje staty!"
+      - "&b/%plugin_short_command% leave: Odchod z arény!"
+      - "&b/%plugin_short_command% join <arena>: Připojení do konkrétní arény!"
+      - "&b/%plugin_short_command% top <statistic>: Ukáže top 10 hráčů!"
+      - "&b/%plugin_short_command% randomjoin: Připojení do náhodné arény!"
     Admin-Bonus-Description: "&b/%plugin_short_command%: Zobrazí všechny administrátorské příkazy"
     Footer: "&6-------------------------------------------------"
-Scoreboard: 
+# In-Game scoreboard messages
+# 
+# Please do not use more chars than the scoreboard can handle!
+# Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
+# Placeholders:
+# https://wiki.plugily.xyz/REPLACEWITHPROJECTNAME/placeholders/language
+Scoreboard:
   Title: "&a&l%plugin_name%"
-  Roles: 
+  Roles:
     Detective: "&bDetektiv"
     Murderer: "&cVrah"
     Innocent: "&eNevinný"
-    Dead: Mrtví
-  Detective: 
-    Alive: Detektiv &aNaživu
-    Bow: 
+    Dead: "Mrtví"
+  Detective:
+    Alive: "Detektiv &aNaživu"
+    Bow:
       Dropped: "%color_chat_issue%Luk Upuštěný"
-      Picked: Luk Není Upuštěný
-  Content: 
-    Waiting: 
-      0: " "
-      1: ■ Hráči | %arena_players_size%
-      2: " "
-      3: ■ Minimum Hráčů | %arena_min_players%
-      4: " "
-      5: "   www.plugily.xyz"
-    Starting: 
-      0: " "
-      1: ■ Startuje Za | %arena_time%
-      2: " "
-      3: ■ Hráči | %arena_players_size%
-      4: " "
-      5: ■ Minimum Hráčů | %arena_min_players%
-      6: " "
-      7: "   www.plugily.xyz"
-    In-Game: 
-      0: " "
-      1: ■ Role | %arena_player_role%
-      2: "&f"
-      3: ■ Nevinní | %arena_innocent_size%
-      4: "&f"
-      5: ■ Čas | %arena_time%
-      6: " "
-      7: ■ %arena_detective_status%
-      8: " "
-      9: ■ Skóre | %user_statistic_local_score%
-      10: " "
-      11: "   www.plugily.xyz"
-    In-Game-Murderer: 
-      0: " "
-      1: ■ Role | %arena_player_role%
-      2: "&f"
-      3: ■ Nevinní | %arena_innocent_size%
-      4: "&f"
-      5: ■ Čas | %arena_time%
-      6: " "
-      7: ■ %arena_detective_status%
-      8: " "
-      9: ■ Zabití | %user_statistic_local_kills%
-      10: " "
-      11: ■ Skóre | %user_statistic_local_score%
-      12: " "
-      13: "   www.plugily.xyz"
-    Ending: 
-      0: "&f"
-      1: "&f"
-      2: "&cHRA SKONČILA"
-      3: " "
-      4: "&f"
-      5: "&f"
-      6: " "
-      7: "   www.plugily.xyz"
-    Restarting: 
-      0: "&f"
-      1: "&f"
-      2: "&cRESTARTUJI HRU"
-      3: " "
-      4: "&f"
-      5: "&f"
-      6: " "
-      7: "   www.plugily.xyz"
-Bossbar: 
+      Picked: "Luk Není Upuštěný"
+  Content:
+    Waiting:
+      - " "
+      - "■ Hráči | %arena_players_size%"
+      - " "
+      - "■ Minimum Hráčů | %arena_min_players%"
+      - " "
+      - "   www.plugily.xyz"
+    Starting:
+      - " "
+      - "■ Startuje Za | %arena_time%"
+      - " "
+      - "■ Hráči | %arena_players_size%"
+      - " "
+      - "■ Minimum Hráčů | %arena_min_players%"
+      - " "
+      - "   www.plugily.xyz"
+    # Contents of scoreboard while ingame
+    In-Game:
+      - " "
+      - "■ Role | %arena_player_role%"
+      - "&f"
+      - "■ Nevinní | %arena_innocent_size%"
+      - "&f"
+      - "■ Čas | %arena_time%"
+      - " "
+      - "■ %arena_detective_status%"
+      - " "
+      - "■ Skóre | %user_statistic_local_score%"
+      - " "
+      - "   www.plugily.xyz"
+    In-Game-Murderer:
+      - " "
+      - "■ Role | %arena_player_role%"
+      - "&f"
+      - "■ Nevinní | %arena_innocent_size%"
+      - "&f"
+      - "■ Čas | %arena_time%"
+      - " "
+      - "■ %arena_detective_status%"
+      - " "
+      - "■ Zabití | %user_statistic_local_kills%"
+      - " "
+      - "■ Skóre | %user_statistic_local_score%"
+      - " "
+      - "   www.plugily.xyz"
+    # Contents of scoreboard while state is ending
+    Ending:
+      - "&f"
+      - "&f"
+      - "&cHRA SKONČILA"
+      - " "
+      - "&f"
+      - "&f"
+      - " "
+      - "   www.plugily.xyz"
+    # Contents of scoreboard while state is restarting
+    Restarting:
+      - "&f"
+      - "&f"
+      - "&cRESTARTUJI HRU"
+      - " "
+      - "&f"
+      - "&f"
+      - " "
+      - "   www.plugily.xyz"
+# Bossbar messages
+# 
+# Bossbar needs to be enabled on config.yml
+Bossbar:
   Title: "%plugin_name% - www.plugily.xyz"
-  Content: 
-    Waiting: 
-      0: Čekání na více hráčů...
-    Starting: 
-      0: 'Startuje za: %arena_time%'
-    In-Game: 
-      0: Hraješ %plugin_name_uppercase% na PLUGILY.XYZ
-      1: Koukněte vývojáře pluginu na PLUGILY.XYZ
-      2: Tvoje role %arena_player_role%
-    Ending: 
-      0: Hra skončila! Hraješ na PLUGILY.XYZ
-    Restarting: 
-      0: Restartování arény. Budeš brzy přeunut!
-In-Game: 
+  Content:
+    Waiting:
+      - "Čekání na více hráčů..."
+    Starting:
+      - "Startuje za: %arena_time%"
+    In-Game:
+      - "Hraješ %plugin_name_uppercase% na PLUGILY.XYZ"
+      - "Koukněte vývojáře pluginu na PLUGILY.XYZ"
+      - "Tvoje role %arena_player_role%"
+    Ending:
+      - "Hra skončila! Hraješ na PLUGILY.XYZ"
+    Restarting:
+      - "Restartování arény. Budeš brzy přeunut!"
+# In-Game Messages
+In-Game:
   # Used in most game messages.
-  Plugin-Prefix: (%plugin_name%)
+  Plugin-Prefix: "(%plugin_name%)"
   Game-Chat-Format: "[%user_statistic_level%][%kit%] %player% | %message%"
   You-Leveled-Up: "%plugin_prefix% Level Up! Právě máš level %number%!"
   Commands-Blocked: "%color_chat_issue%%plugin_prefix% Pro použití příkazů musíš nejdříve opustit arénu. Jediný funkční příkaz je /%plugin_short_command% leave!"
-  Join: 
+  Join:
     Already-Playing: "%color_chat_issue%%plugin_prefix% Již jsi ve frontě do hry! Pro odchod použij /%plugin_short_command% leave."
     No-Permission: "%color_chat_issue%%plugin_prefix% Nemáš %value% práva na připojení do této arény!"
     Full-Game: "%color_chat_issue%%plugin_prefix% Nemáš práva na připojení se do plné hry!"
@@ -152,35 +178,35 @@ In-Game:
     As-Party-Member: "%color_chat_issue%%plugin_prefix% Vůdce vaší party vás připojil do arény %arena_name%!"
     Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% Aréna není ještě nastavená! Kontaktuje správce!"
     Title: "\n20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%"
-  Death: 
+  Death:
     Tag: "&8Smrt"
     Screen: "%color_chat_issue%Zemřel jsi!"
-  Spectator: 
+  Spectator:
     Blocked: "%color_chat_issue%%plugin_prefix% Diváci nejsou v této aréně povoleni"
     You-Are-Spectator: "%plugin_prefix% Nyní jsi spectator! Můžes nyní létat!"
     Spectator-Menu-Name: "%color_chat_issue%Seznam živých hráčů"
     Target-Player-Health: "%color_chat_issue%Zdraví: %number% | Role: %arena_player_role%"
     Spectator-Warning: "%plugin_prefix% Jsi spectator!"
     Teleport: "%plugin_prefix% Přemístěn k %player%"
-    Menu: 
-      Settings: 
-        Status: 
-          Enabled: Povoleno
-          Disabled: Zakázáno
-        Changed-Speed: Rychlost nastavena na %number%
+    Menu:
+      Settings:
+        Status:
+          Enabled: "Povoleno"
+          Disabled: "Zakázáno"
+        Changed-Speed: "Rychlost nastavena na %number%"
         Auto-Teleport: "%value% auto teleport"
-        Target-Player: 
+        Target-Player:
           Action-Bar: "%number% bloků daleko | Cíl%player%"
         Night-Vision: "%value% noční vidění"
-        First-Person-Mode: 
+        First-Person-Mode:
           Action-Bar: "&ePŘIKRČ SE &cpro odchod! | Cíl %player%"
           Title: "&ePŘIKRČ SE &cpro odchod!"
         Visibility: "%value% ostatních diváků"
-  Messages: 
+  Messages:
     Join: "%plugin_prefix% %player% se připojil do hry (%arena_players_size%/%arena_max_players%)!"
     Leave: "%plugin_prefix% %player% opustil hru (%arena_players_size%/%arena_max_players%)!"
     Death: "%plugin_prefix% %player% zemřel!"
-    Lobby: 
+    Lobby:
       Start-In: "%plugin_prefix% Hra začne za %arena_time% sekund!"
       Waiting-For-Players: "%plugin_prefix% Čekám na hráče... Potřebujeme alespoň %arena_min_players% hráčů."
       Enough-Players-To-Start: "%plugin_prefix% Máme dostatek hráčů. Hra brzy začne!"
@@ -190,190 +216,200 @@ In-Game:
       Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% %player% byl vyhozen ze hry aby udělal místo pro prémiové hráče!"
       You-Were-Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% Byl jsi vyhozen ze hry aby se udělalo místo pro pemium hráče!"
       Not-Enough-Space-For-Party: "%color_chat_issue%%plugin_prefix% Tvoje parta je větší, než je volných míst v aréně %arena_name%"
-    Game-End: 
-      Summary: 
-        0: "&a&m--------------------------------------------------"
-        1: "%plugin_name%"
-        2: " "
-        3: "%arena_summary%"
-        4: "%arena_summary_player%"
-        5: " "
-        6: "&7Detektiv: %arena_detective_list%"
-        7: "&7Vrah: %arena_murderer_list% (%arena_murderer_kills%)"
-        8: "&7Hrdina: %arena_hero%"
-        9: " "
-        10: "&a&m--------------------------------------------------"
-      Placeholders: 
+    Game-End:
+      Summary:
+        - "&a&m--------------------------------------------------"
+        - "%plugin_name%"
+        - " "
+        - "%arena_summary%"
+        - "%arena_summary_player%"
+        - " "
+        - "&7Detektiv: %arena_detective_list%"
+        - "&7Vrah: %arena_murderer_list% (%arena_murderer_kills%)"
+        - "&7Hrdina: %arena_hero%"
+        - " "
+        - "&a&m--------------------------------------------------"
+      Placeholders:
         Win: "&aVyhrál jsi"
         Lose: "%color_chat_issue%Prohrál jsi"
         Players: "&cJiž nemáme dostatečný počet hráčů. Aréna byla zastavena!"
-        Murderer: 
-          Stopped: Vrah byl zastaven!
-          Killed: 
-            You: Vrah tě zabil!
-            All: Vrah včechny zabil.
-        Innocent: 
-          Killed: 
-            You: Hráč tě zabil lukem!
-            Wrongly: Zabil jsi nevinného hráče!
-        Nobody: Nikdo
-    Admin: 
+        Murderer:
+          Stopped: "Vrah byl zastaven!"
+          Killed:
+            You: "Vrah tě zabil!"
+            All: "Vrah včechny zabil."
+        Innocent:
+          Killed:
+            You: "Hráč tě zabil lukem!"
+            Wrongly: "Zabil jsi nevinného hráče!"
+        Nobody: "Nikdo"
+    Admin:
       Set-Starting-In-To-0: "%plugin_prefix% Admin přeskočil čekání. Hra začíná!"
-    Arena: 
-      Chances: 
+    Arena:
+      Chances:
         Action-Bar: "&cŠance vraha: %arena_murderer_chance% &a- &bŠance detektiva: %arena_detective_chance%"
       Cooldown: "&8&l[%value%&8&l] &6%number% seconds"
-      Locator: 
-        Bow: Lokátor luku
-        Innocent: Lokátor nevinných
-        Watch-Out: 5,20,5;Dávej pozor!;Vrah teď může najít přeživší snadno
-      Pass: 
-        Name: Výběr role
-        Role: 
-          Murderer: 
-            Name: Být vrah
-            Lore: 
-              0: Stojí 1 krvavý lístek
-              1: Máte %amount%
-          Detective: 
-            Name: Být detektiv
-            Lore: 
-              0: Stojí 1
-              1: Máte %amount%
-        Fail: Nemáš dostatek lístků pro roli %value%
-        Success: Další kolo budeš %value%!
-        Change: Máš %number% %value% lístků!
-      Playing: 
-        Time-Left: 5,20,5;Zbývá %arena_time% sekund!;Za %arena_time%s vrah prohraje
-        Role: 
-          Change: 5,20,5;Předchozí %arena_player_role% se odpojil!
-          Murderer: 5,20,5;ROLE | VRAH; Zabij všechny hráče!
-          Detective: 5,20,5;ROLE | DETEKTIV;Najdi a zabij vraha!
-          Innocent: 5,20,5;ROLE | NEVINNÝ;Zůstaň naživu co nejdéle to jde!
-        Score: 
-          Bonus: +%score% score (%action%)
-          Gold: Sebral jsi zlato!
-          Action: 
-            Kill: 
-              Player: za zabití hráčů
-              Murderer: za zabití vraha
-              Innocent: za zabití nevinného
-            Pickup: 
-              Gold: za sebrání zlata
-            Surviving: 
-              Time: za přežití 30 sekund
-              End: za přežití do konce
-            Win: za výhru
-            Detective: za %number% přeživších
-        Sword: 
-          Soon: Vrah dostane svůj meč za %time% sekund!
-        Special-Blocks: 
-          Cauldron: 
-            Potion: Prosím vypij svůj aktuální lektvar!
-            Hologram: Záhadný lektvar - &e1 Gold
-          Not-Enough-Gold: Potřebuješ %amount% zlata!
-          Pray: 
-            Hologram: Kliknutím dej dárek;Zatáhni za páku a modli se
-            Chat: Pomodlil jsi se k vývojáři! Doufej, že tě vyslyšel!
+      Locator:
+        Bow: "Lokátor luku"
+        Innocent: "Lokátor nevinných"
+        Watch-Out: "5,20,5;Dávej pozor!;Vrah teď může najít přeživší snadno"
+      Pass:
+        Name: "Výběr role"
+        Role:
+          Murderer:
+            Name: "Být vrah"
+            Lore:
+              - "Stojí 1 krvavý lístek"
+              - "Máte %amount%"
+          Detective:
+            Name: "Být detektiv"
+            Lore:
+              - "Stojí 1"
+              - "Máte %amount%"
+        Fail: "Nemáš dostatek lístků pro roli %value%"
+        Success: "Další kolo budeš %value%!"
+        Change: "Máš %number% %value% lístků!"
+      Playing:
+        Time-Left: "5,20,5;Zbývá %arena_time% sekund!;Za %arena_time%s vrah prohraje"
+        Role:
+          Change: "5,20,5;Předchozí %arena_player_role% se odpojil!"
+          Murderer: "5,20,5;ROLE | VRAH; Zabij všechny hráče!"
+          Detective: "5,20,5;ROLE | DETEKTIV;Najdi a zabij vraha!"
+          Innocent: "5,20,5;ROLE | NEVINNÝ;Zůstaň naživu co nejdéle to jde!"
+        Score:
+          Bonus: "+%score% score (%action%)"
+          Gold: "Sebral jsi zlato!"
+          Action:
+            Kill:
+              Player: "za zabití hráčů"
+              Murderer: "za zabití vraha"
+              Innocent: "za zabití nevinného"
+            Pickup:
+              Gold: "za sebrání zlata"
+            Surviving:
+              Time: "za přežití 30 sekund"
+              End: "za přežití do konce"
+            Win: "za výhru"
+            Detective: "za %number% přeživších"
+        Sword:
+          Soon: "Vrah dostane svůj meč za %time% sekund!"
+        Special-Blocks:
+          Cauldron:
+            Potion: "Prosím vypij svůj aktuální lektvar!"
+            Hologram: "Záhadný lektvar - &e1 Gold"
+          Not-Enough-Gold: "Potřebuješ %amount% zlata!"
+          Pray:
+            Hologram: "Kliknutím dej dárek;Zatáhni za páku a modli se"
+            Chat: "Pomodlil jsi se k vývojáři! Doufej, že tě vyslyšel!"
             Pay: "%color_chat_issue%Zaplať pro modlitbu!"
-            Praise: 
-              Heard: 
-                0: " "
-                1: "&7Vývojář vyslyšel tvé modlitby."
-                2: "%feeling%"
-                3: "%praise%"
-              Feeling: 
+            Praise:
+              Heard:
+                - " "
+                - "&7Vývojář vyslyšel tvé modlitby."
+                - "%feeling%"
+                - "%praise%"
+              Feeling:
                 Blessed: "&aCítíš se požehnaně."
                 Cursed: "&cCítíš se prokletý."
-              Gifts: 
+              Gifts:
                 Detective-Revelation: "&aVíš, že &bdetektivem &aprávě je %detective%"
                 Gold-Rush: "&aObdržel jsi antickou moc. Za každé sebrané zlato teď obdržíš trojnásobek."
                 Single-Compensation: "&aVývojář je na tebe hrdý! Dostal jsi 5 zlatých nugetů jako odměnu!"
                 Bow: "&aObdržel jsi luk od potěšeného vývojáře!"
-              Curses: 
+              Curses:
                 Slowness: "%color_chat_issue%Tvé nohy jsou mnohem těžší než předtím."
                 Blindness: "%color_chat_issue%Tvé oči již nedokáží dobře vidět."
                 Gold: "%color_chat_issue%Vývojář tě proklel alergií na zlato! Nemůžeš sbírat žádné další zlato!"
                 Death: "%color_chat_issue%Pocituješ ukrutnou sílu smrti na vlastí kůži. Už cítíš, že do minuty zemřeš!"
-        Bow: 
-          Dropped: 5,20,5;Luk byl upuštěn!;Najdi luk pro zvýšení šance zabití vraha.
-          Pickup: Hráč sebral luk!
-          Shot: 
+        Bow:
+          Dropped: "5,20,5;Luk byl upuštěn!;Najdi luk pro zvýšení šance zabití vraha."
+          Pickup: "Hráč sebral luk!"
+          Shot:
             Gold: "&a+1 Vystřelení z luku!"
-            Title: 5,20,5;;Nasbíral jsi 10 zlat a dostal jsi šíp!
-Signs: 
+            Title: "5,20,5;;Nasbíral jsi 10 zlat a dostal jsi šíp!"
+# Sign messages
+Signs:
   Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Prosím, napište název arény na druhý řádek!"
   Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% Aréna s tímto názvem neexistuje!"
   Created: "%plugin_prefix% Cedule úspěšně vytvořena!"
   Removed: "%plugin_prefix% Cedule byla odstraněna!"
-  Lines: 
-    0: "%plugin_prefix%"
-    1: "%arena_state_placeholder%"
-    2: "%arena_name%"
-    3: "[%arena_players_size%/%arena_max_players%]"
-Arena-Selector: 
+  Lines:
+    - "%plugin_prefix%"
+    - "%arena_state_placeholder%"
+    - "%arena_name%"
+    - "[%arena_players_size%/%arena_max_players%]"
+# Arena Selector messages
+Arena-Selector:
   Inventory-Title: "%plugin_short_command% ▸ Výběr arény"
-  Item: 
+  Item:
     Name: "%arena_name%"
-    Lore: 
-      0: "%plugin_name% - %arena_name%"
-      1: " "
-      2: " "
-      3: "  Online: %arena_players_size%/%arena_max_players%"
-      4: "  Stav: %arena_state_placeholder%"
-      5: " "
-      6: " "
-      7: "&aKlikni pro připojení se do arény"
-Validator: 
-  Invalid-Arena-Configuration: 'Aréna %arena_name% má neplatnou konfiguraci! Chybí: %value%'
-  Instance-Started: Aréna %arena_name% úspěšně odstartovala!
-  No-Instances-Created: V konfiguraci nejsou nastaveny žádné arény!
-Placeholders: 
-  Game-States: 
+    Lore:
+      - "%plugin_name% - %arena_name%"
+      - " "
+      - " "
+      - "  Online: %arena_players_size%/%arena_max_players%"
+      - "  Stav: %arena_state_placeholder%"
+      - " "
+      - " "
+      - "&aKlikni pro připojení se do arény"
+# Validator messages
+Validator:
+  Invalid-Arena-Configuration: "Aréna %arena_name% má neplatnou konfiguraci! Chybí: %value%"
+  Instance-Started: "Aréna %arena_name% úspěšně odstartovala!"
+  No-Instances-Created: "V konfiguraci nejsou nastaveny žádné arény!"
+# Placeholder messages inside plugin
+Placeholders:
+  Game-States:
     Waiting: "&lČekám na hráče..."
     Starting: "&e&lZačíná"
     Full-Game: "&4&lPLNÁ"
     In-Game: "&lVe hře"
     Ending: "&lKončí"
     Restarting: "&v&lRestartuje se"
-  Motd: 
+  Motd:
     Waiting: "&lMůžeš se připojit do hry..."
     Starting: "&e&lZačíná"
     Full-Game: "&4&lPLNÁ | Použijte jiný server"
     In-Game: "&lVe hře | Klikni pro sledování"
     Ending: "&lKončí | Server se uzavírá"
     Restarting: "&c&lRestartování"
-Leaderboard: 
-  Type: 
-    Hologram: 
+# Leaderboard messages
+# 
+# Hologram function need to be enabled on config.yml
+Leaderboard:
+  Type:
+    Hologram:
       Header: "&6&lTop %number% ve %value%"
       Format: "&e%number%. %player% (%value%)"
       Empty-Format: "&e%number%. Prázdno (0)"
-    Chat: 
+    Chat:
       Header: "&8+-------+ &a&lTVOJE STATISTIKY &8+-------+"
       Header-Other: "&8+---------+ &aSTATISTIKY HRÁČE &b%player% &8+---------+"
       Footer: "&8+-----------------------------+"
       Format: "%value% ▸ &a%number%"
-      Top: 
+      Top:
         Type-Name: "%color_chat_issue%Napište název statistiky k zobrazení!"
         Header: "&8&m+----------------+ [&6 Top 10 &8&m] +----------------+"
         Format: "&e#%number% %player% - %value% %user_statistic%"
-  Statistics: 
-    Wins: Výhry  %number%
-    Loses: Prohry ▸ %number%
-    Games-Played: Odehráno her ▸ %number%
-    Level: Úroveň ▸ %number%
-    Exp: Zkušenosti ▸ %number%
-    Next-Level-Exp: XP do další úrovně ▸ %number%
-    Kills: Zabití ▸ %number%
-    Deaths: Smrti▸ %number%
-    Highest-Score: Nejvyšší score ▸ %number%
-    Murderer-Pass: Krvavé lístky ▸ %number%
-    Detective-Pass: Detektivní lístek ▸ %number%
-    Murderer-Contribution: Příspěvky vraha ▸ %number%
-    Detective-Contribution: Detektivní příspěvky ▸ %number%
+  Statistics:
+    Wins: "Výhry  %number%"
+    Loses: "Prohry ▸ %number%"
+    Games-Played: "Odehráno her ▸ %number%"
+    Level: "Úroveň ▸ %number%"
+    Exp: "Zkušenosti ▸ %number%"
+    Next-Level-Exp: "XP do další úrovně ▸ %number%"
+    Kills: "Zabití ▸ %number%"
+    Deaths: "Smrti▸ %number%"
+    Highest-Score: "Nejvyšší score ▸ %number%"
+    Murderer-Pass: "Krvavé lístky ▸ %number%"
+    Detective-Pass: "Detektivní lístek ▸ %number%"
+    Murderer-Contribution: "Příspěvky vraha ▸ %number%"
+    Detective-Contribution: "Detektivní příspěvky ▸ %number%"
   Invalid-Name: "%color_chat_issue%Neplatný název statistiky! Použij: %value%"
   Unknown-Player: "%color_chat_issue%Neznámý hráč"
-Do-Not-Edit: 
+# Don't edit it. But who's stopping you? It's your server!
+# Really, don't edit ;p
+# You edited it, huh? Next time hurt yourself!
+Do-Not-Edit:
   File-Version: 1
   Core-Version: 1
