@@ -16,6 +16,9 @@ locales:
     'pt_BR':
       name: "Portuguese (BR)"
       original_name: "Português Brasileiro"
+    'pl_PL':
+      name: "Polish"
+      original_name: "język polski"
     'ru_RU':
       name: "Russian"
       original_name: "Pусский"
