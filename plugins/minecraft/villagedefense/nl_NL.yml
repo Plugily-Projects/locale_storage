@@ -1,5 +1,4 @@
-# Command messages
-Commands:
+Commands: 
   Did-You-Mean: "&6Bedoelde je &e/%value%&6?"
   Command-Executed: "&aCommando succesvol uitgevoerd!"
   Teleported-To-Lobby: "&aGeteleporteerd naar de lobby!"
@@ -15,122 +14,109 @@ Commands:
   Player-Not-Found: "&cGekozen speler %player% bestaat niet!"
   Invalid-Location-Teleport: "&cTeleporteerlocatie bestaat niet!"
   Wrong-Usage: "&cVerkeerd gebruikt. Doe: %value%"
-  Admin:
+  Admin: 
     Added-Orbs: "&7Lichtbollen aan de speler gegeven!"
     Received-Orbs: "&7Je hebt &a%number% lichtbollen &7ontvangen!"
     Added-Level: "&7Level toegevoegd aan de speler!"
     Reload-Success: "&aDe arena's zijn herladen!"
-    List:
+    List: 
       Header: "&a%plugin_name% &6Arena's:"
       Format: "&a%arena_name% &e%arena_state_placeholder% &6%arena_players_size%/%arena_max_players%"
       No-Arenas: "&cEr zijn geen spelinstanties!"
-    Spychat:
+    Spychat: 
       Toggled: "&cSpel spionage-chat uitgeschakeld bij&c %value%"
     Adjust-Statistic: "%plugin_prefix% Statistiek %value% van %player% is nu%number%!"
-  Main:
+  Main: 
     Header: "&6----------------{%plugin_name% commando's}----------"
-    Description:
-      - "&aSpel commando's:"
-      - "&b/%plugin_short_command% stats: &7Laat je statistieken zien!"
-      - "&b/%plugin_short_command% leave: &7Verlaat huidige arena!"
-      - "&b/%plugin_short_command% join <arena>: &7Doet mee aan specifieke arena!"
-      - "&b/%plugin_short_command% top <statistic>: &7Laat de top 10 spelers zien!"
-      - "&b/%plugin_short_command% randomjoin: &7Doet mee aan random arena!"
+    Description: 
+      0: "&aSpel commando's:"
+      1: "&b/%plugin_short_command% stats: &7Laat je statistieken zien!"
+      2: "&b/%plugin_short_command% leave: &7Verlaat huidige arena!"
+      3: "&b/%plugin_short_command% join <arena>: &7Doet mee aan specifieke arena!"
+      4: "&b/%plugin_short_command% top <statistic>: &7Laat de top 10 spelers zien!"
+      5: "&b/%plugin_short_command% randomjoin: &7Doet mee aan random arena!"
     Admin-Bonus-Description: "&b&7Laat alle admin commando's zien"
     Footer: "&6-------------------------------------------------"
-# In-Game scoreboard messages
-# 
-# Please do not use more chars than the scoreboard can handle!
-# Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
-# Placeholders:
-# https://wiki.plugily.xyz/villagedefense/placeholders/language
-Scoreboard:
+Scoreboard: 
   Title: "&a&l%plugin_name%"
-  Content:
-    Waiting:
-      - "&fSpelers: &e%arena_players_size%"
-      - " "
-      - "&fMinimaal aantal Spelers: &e%arena_min_players%"
-      - " "
-      - "&ewww.plugily.xyz"
-      - "   www.plugily.xyz"
-    Starting:
-      - "&fBegint In: &e%arena_time%"
-      - " "
-      - "&fSpelers: &e%arena_players_size%"
-      - " "
-      - "&fMinimaal aantal spelers: &e%arena_min_players%"
-      - " "
-      - "&ewww.plugily.xyz"
-      - "   www.plugily.xyz"
-    # Contents of scoreboard while ingame
-    In-Game:
-      - "&fVillagers Over: &e%arena_villager_size%"
-      - "&fSpelers Verlaten: &e%arena_players_left_size%"
-      - "&fZombies Verlaten: &e%arena_zombie_size_left%"
-      - " "
-      - "&fVerrot vlees: &e%arena_rotten_flesh_amount%"
-      - "&fLichtbollen: &e%user_statistic_orbs%"
-      - " "
-      - "&ewww.plugily.xyz"
-      - "   www.plugily.xyz"
-    In-Game-Waiting:
-      - "&fVillagers Over: &e%arena_villager_size%"
-      - "&fSpelers Over: &e%arena_players_left_size%"
-      - "&fZombies Over: &e%arena_zombie_size_left%"
-      - " "
-      - "&fVolgende golf over: %arena_time%"
-      - " "
-      - "&fVerrot vlees: &e%arena_rotten_flesh_amount%"
-      - "&fLichtbollen: &e%user_statistic_orbs%"
-      - " "
-      - "&ewww.plugily.xyz"
-    # Contents of scoreboard while state is ending
-    Ending:
-      - "&f"
-      - "&f"
-      - "&cSPEL IS AFGELOPEN"
-      - " "
-      - "&f"
-      - "&f"
-      - " "
-      - "&ewww.plugily.xyz"
-    # Contents of scoreboard while state is restarting
-    Restarting:
-      - "&f"
-      - "&f"
-      - "&cSPEL WORDT HERSTART"
-      - " "
-      - "&f"
-      - "&f"
-      - " "
-      - "&ewww.plugily.xyz"
-# Bossbar messages
-# 
-# Bossbar needs to be enabled on config.yml
-Bossbar:
+  Content: 
+    Waiting: 
+      0: "&fSpelers: &e%arena_players_size%"
+      1: " "
+      2: "&fMinimaal aantal Spelers: &e%arena_min_players%"
+      3: " "
+      4: "&ewww.plugily.xyz"
+      5: "   www.plugily.xyz"
+    Starting: 
+      0: "&fBegint In: &e%arena_time%"
+      1: " "
+      2: "&fSpelers: &e%arena_players_size%"
+      3: " "
+      4: "&fMinimaal aantal spelers: &e%arena_min_players%"
+      5: " "
+      6: "&ewww.plugily.xyz"
+      7: "   www.plugily.xyz"
+    In-Game: 
+      0: "&fVillagers Over: &e%arena_villager_size%"
+      1: "&fSpelers Verlaten: &e%arena_players_left_size%"
+      2: "&fZombies Verlaten: &e%arena_zombie_size_left%"
+      3: " "
+      4: "&fVerrot vlees: &e%arena_rotten_flesh_amount%"
+      5: "&fLichtbollen: &e%user_statistic_orbs%"
+      6: " "
+      7: "&ewww.plugily.xyz"
+      8: "   www.plugily.xyz"
+    In-Game-Waiting: 
+      0: "&fVillagers Over: &e%arena_villager_size%"
+      1: "&fSpelers Over: &e%arena_players_left_size%"
+      2: "&fZombies Over: &e%arena_zombie_size_left%"
+      3: " "
+      4: "&fVolgende golf over: %arena_time%"
+      5: " "
+      6: "&fVerrot vlees: &e%arena_rotten_flesh_amount%"
+      7: "&fLichtbollen: &e%user_statistic_orbs%"
+      8: " "
+      9: "&ewww.plugily.xyz"
+    Ending: 
+      0: "&f"
+      1: "&f"
+      2: "&cSPEL IS AFGELOPEN"
+      3: " "
+      4: "&f"
+      5: "&f"
+      6: " "
+      7: "&ewww.plugily.xyz"
+    Restarting: 
+      0: "&f"
+      1: "&f"
+      2: "&cSPEL WORDT HERSTART"
+      3: " "
+      4: "&f"
+      5: "&f"
+      6: " "
+      7: "&ewww.plugily.xyz"
+Bossbar: 
   Title: "&a&l%plugin_name% &6- www.plugily.xyz"
-  Content:
-    Waiting:
-      - "&4&lWachtend op meer spelers..."
-    Starting:
-      - "&f&lBegint in: &e&l%arena_time%"
-    In-Game:
-      - "&e&lSpeel &f&l%plugin_name_uppercase% &e&lop &b&lPLUGILY.XYZ"
-      - "&e&lCheck de plugin maker &e&lop &b&lPLUGILY.XYZ"
-      - "Huidige golf%arena_option_wave%"
-    Ending:
-      - "&c&lSpel is afgelopen! Je speelde op &b&lPLUGILY.XYZ"
-    Restarting:
-      - "&c&lDe arena wordt herstart. Je wordt snel verplaatst!"
-# In-Game Messages
-In-Game:
+  Content: 
+    Waiting: 
+      0: "&4&lWachtend op meer spelers..."
+    Starting: 
+      0: "&f&lBegint in: &e&l%arena_time%"
+    In-Game: 
+      0: "&e&lSpeel &f&l%plugin_name_uppercase% &e&lop &b&lPLUGILY.XYZ"
+      1: "&e&lCheck de plugin maker &e&lop &b&lPLUGILY.XYZ"
+      2: Huidige golf%arena_option_wave%
+    Ending: 
+      0: "&c&lSpel is afgelopen! Je speelde op &b&lPLUGILY.XYZ"
+    Restarting: 
+      0: "&c&lDe arena wordt herstart. Je wordt snel verplaatst!"
+In-Game: 
   # Used in most game messages.
   Plugin-Prefix: "&a[%plugin_name%] "
   Game-Chat-Format: "&6[&5%user_statistic_level%&6]&6[%user_kit%&6] %player%: &f%message%"
   You-Leveled-Up: "&7Je bent een level omhoog gegaan! Je bent nu level %number%!"
   Commands-Blocked: "&cJe moet het spel eerst verlaten om dit uit te voeren. Je kan alleen het commando /%plugin_short_command% leave gebruiken!"
-  Join:
+  Join: 
     Already-Playing: "&cJe bent al aan het wachten voor een spel! Je kan een spel verlaten met /%plugin_short_command% leave."
     No-Permission: "&cJe hebt niet de &6%value% &cpermissie om in deze arena mee te doen!"
     Full-Game: "&cJe hebt niet de permissie om mee te doen met volle spellen!"
@@ -139,36 +125,36 @@ In-Game:
     Cancelled-Via-API: "&cJe kan niet meedoen met dit spel!"
     As-Party-Member: "&cJe doet mee met %arena_name% naar de keuze van de partyleider!"
     Arena-Not-Configured: "&cArena is nog niet geconfigureerd. Contacteer staff!"
-    Title: "20, 30, 20;%arena_name%;%arena_players_size%/%arena_max_players%"
-  Death:
+    Title: 20, 30, 20;%arena_name%;%arena_players_size%/%arena_max_players%
+  Death: 
     Tag: "&8Dood"
     Screen: "&cJe bent overleden!"
-  Spectator:
+  Spectator: 
     You-Are-Spectator: "&cJe bent nu een toeschouwer! Je kunt nu vliegen!"
-    Spectator-Menu-Name: "Levende spelerlijst"
+    Spectator-Menu-Name: Levende spelerlijst
     Target-Player-Health: "&cGezondheid: &7%number%"
     Spectator-Warning: "&cJe bent een toeschouwer!"
     Teleport: "&cGeteleporteerd naar %player%"
-    Menu:
-      Settings:
-        Status:
-          Enabled: "Ingeschakeld"
-          Disabled: "Uitgeschakeld"
-        Changed-Speed: "Snelheid veranderd naar %number%"
+    Menu: 
+      Settings: 
+        Status: 
+          Enabled: Ingeschakeld
+          Disabled: Uitgeschakeld
+        Changed-Speed: Snelheid veranderd naar %number%
         Auto-Teleport: "%value% automatische teleport"
-        Target-Player:
+        Target-Player: 
           Action-Bar: "%number% blokken verwijderd | Doel %player%"
         Night-Vision: "%value% nachtzicht"
-        First-Person-Mode:
+        First-Person-Mode: 
           Action-Bar: "&eBUK &com het spel te verlaten! | Doel %player%"
           Title: "&eBUK &com het spel te verlaten!"
         Visibility: "%value% andere toeschouwende spelers"
     Blocked: "%color_chat_issue%%plugin_prefix% Toeschouwers zijn uitgeschakeld voor deze arena"
-  Messages:
+  Messages: 
     Join: "&b%player%&7  wilt doet mee (%arena_players_size%/%arena_max_players%)!"
     Leave: "&b%player% &7doet niet meer mee (%arena_players_size%/%arena_max_players%)!"
     Death: "&b%player% &7is dood gegaan!"
-    Lobby:
+    Lobby: 
       Start-In: "&7Het spel begint in &b%arena_time%&7 seconden!"
       Waiting-For-Players: "&7Wachtend op spelers... We hebben minimaal &b%arena_min_players%&7 spelers nodig om te beginnen."
       Enough-Players-To-Start: "&7We hebben genoeg spelers! Het spel begint binnenkort!"
@@ -178,366 +164,354 @@ In-Game:
       Not-Enough-Space-For-Party: "&cJouw party is groter dan het aantal vrije plekken in de arena %arena_name%"
       Max-Players: "&7We hebben het maximaal aantal spelers voor deze ronde behaald. Laten we de tijd verkorten!"
       Reduced-Time: "&7De tijd is verminderd naar %number% seconden"
-    Game-End:
-      Summary:
-        - "&a&m--------------------------------------------------"
-        - "&f&l%plugin_name%"
-        - " "
-        - "%arena_summary%"
-        - "%arena_summary_player%"
-        - " "
-        - "&e&lGolf bereikt: &7%arena_option_wave% &8(hoogst %user_statistic_highest_wave%)"
-        - "&6&lTotaal aantal zombies vermoord: &7%arena_option_total_killed_zombies%"
-        - "&c&lTotaal aantal coins uitgegeven: &7%arena_option_total_orbs_spent%"
-        - " "
-        - "&a&m--------------------------------------------------"
-      Placeholders:
-        Win: "Je hebt het spel gewonnen"
-        Lose: "Je hebt het spel verloren"
-        Died:
+    Game-End: 
+      Summary: 
+        0: "&a&m--------------------------------------------------"
+        1: "&f&l%plugin_name%"
+        2: " "
+        3: "%arena_summary%"
+        4: "%arena_summary_player%"
+        5: " "
+        6: "&e&lGolf bereikt: &7%arena_option_wave% &8(hoogst %user_statistic_highest_wave%)"
+        7: "&6&lTotaal aantal zombies vermoord: &7%arena_option_total_killed_zombies%"
+        8: "&c&lTotaal aantal coins uitgegeven: &7%arena_option_total_orbs_spent%"
+        9: " "
+        10: "&a&m--------------------------------------------------"
+      Placeholders: 
+        Win: Je hebt het spel gewonnen
+        Lose: Je hebt het spel verloren
+        Died: 
           Players: "&7Alle spelers zijn dood!"
           Villagers: "&7Alle villagers zijn dood!"
         Survived: "&7Je hebt alle golven overleefd"
         Players: "%color_chat_issue%%plugin_prefix% Er zijn niet genoeg spelers meer. Arena is geforceerd gestopt!"
-    Admin:
+    Admin: 
       Set-Starting-In-To-0: "&bEen admin heeft de wachttijd geskipt. Het spel begint nu!"
-      Removed:
+      Removed: 
         Villagers: "&b%player% heeft alle villagers verwijderd!"
         Golems: "&b%player% heeft alle golems verwijderd!"
         Zombies: "&b%player% heeft alle zombies gewist!"
         Wolves: "&b%player% heeft alle wolven gewist!"
-      Changed:
+      Changed: 
         Wave: "&bEen admin heeft het golfnummer aangepast naar %number%"
-    Village:
+    Village: 
       Rotten-Flesh-Level-Up: "&bDe goden waren blij met je verrotte vlees! &bDaarom krijg je een extra hartje!"
       You-Feel-Refreshed: "&aJe voelt je verfrist!"
-      # Do not use spaces between villager names. No limit in names size and amount :)
-      Villager:
+      Villager: 
         Died: "&cEen villager is dood gegaan!"
-        Names: "Jason,Kelsey,Kees,Haylie,Harold,Howard,Wolf,Winfred,Ashley,Bailey,Betsy,Alfred,Alberto,Adair,Ed,Evan,Sam,Edgaras,Buckley,Stanley,Nuffley,Marie,Jeffrey,Rosa,Elliot,Harry,Sam,Rosalie,Tom,Ivar,Kevin,Adam"
-      Wave:
+        Names: Jason,Kelsey,Kees,Haylie,Harold,Howard,Wolf,Winfred,Ashley,Bailey,Betsy,Alfred,Alberto,Adair,Ed,Evan,Sam,Edgaras,Buckley,Stanley,Nuffley,Marie,Jeffrey,Rosa,Elliot,Harry,Sam,Rosalie,Tom,Ivar,Kevin,Adam
+      Wave: 
         Stuck-Zombies: "&cHet lijkt dat de laatste zombie ergens vast zit. Geen probleem! De goden hebben hem vermoord!"
         Spectator-Warning: "&cJe bent een toeschouwer! Je kan niets doen tot je weer mee kan doen als de volgende golf begint!"
         Respawn-On-Next: "&e&lVERLAAT NIET! &aJe kunt weer bij het eind van de volgende golf weer mee doen!"
         Respawned: "&aJe bent geen toeschouwer meer! Je doet terug mee!"
         Next-In: "&7De volgende golf begint in &b%number%&7 seconden!"
         Started: "&7Golf &b%number%&7is begonnen!"
-        Title:
-          Start: "20,30,20;Golf %number%;"
-          End: "20,30,20;Golf %number% afgelopen;"
-      Orbs:
+        Title: 
+          Start: 20,30,20;Golf %number%;
+          End: 20,30,20;Golf %number% afgelopen;
+      Orbs: 
         Pickup: "&6+ %number% lichtbollen"
-      Entities:
-        Wolf:
+      Entities: 
+        Wolf: 
           Spawn: "&aEr is een wolf is in het dorp gekomen!"
           Name: "%player%'s Wolf"
-          Death: "Een van je wolven is vermoord!"
-        Golem:
+          Death: Een van je wolven is vermoord!
+        Golem: 
           Spawn: "&aEen golem is in het dorp gekomen!"
           Name: "%player%'s Golem"
           Cant-Ride-Other: "&cJe kunt niet een golem van iemand anders besturen!"
-      Shop:
+      Shop: 
         GUI: "&lWinkel"
-        Golem-Item-Name: "Spawn Golem"
-        Wolf-Item-Name: "Spawn Wolf"
+        Golem-Item-Name: Spawn Golem
+        Wolf-Item-Name: Spawn Wolf
         Mob-Limit-Reached: "&cJe kunt geen mobs kopen! Je hebt het limiet behaald van %number% mobs!"
         Not-Enough-Currency: "&cJe hebt meer lichtbollen nodig om dit te kopen!"
-        Currency: "lichtbollen"
+        Currency: lichtbollen
         Not-Defined: "&cWinkel is niet ingesteld! Contacteer staff!"
-# Sign messages
-Signs:
+Signs: 
   Please-Type-Arena-Name: "&cTyp aub de arena op de tweede regel!"
   Arena-Doesnt-Exists: "&cArena met die naam bestaat niet!"
   Created: "&aSign succesvol aangemaakt!"
   Removed: "&cSign succesvol verwijderd!"
-  Lines:
-    - "&a&l%plugin_name%"
-    - "%arena_state_placeholder%"
-    - "%arena_name%"
-    - "&5[%arena_players_size%/%arena_max_players%]"
-# Arena Selector messages
-Arena-Selector:
+  Lines: 
+    0: "&a&l%plugin_name%"
+    1: "%arena_state_placeholder%"
+    2: "%arena_name%"
+    3: "&5[%arena_players_size%/%arena_max_players%]"
+Arena-Selector: 
   Inventory-Title: "%plugin_short_command% > Arena selecteerder"
-  Item:
+  Item: 
     Name: "&f%arena_name%"
-    Lore:
-      - "&a%plugin_name% &f- &e%arena_name%"
-      - " "
-      - " "
-      - "  &fOnline: %arena_players_size%/%arena_max_players%"
-      - "  &fStatus: %arena_state_placeholder%"
-      - " "
-      - " "
-      - "&eKlik om mee te doen in deze arena"
-# Validator messages
-Validator:
-  Invalid-Arena-Configuration: "Arena %arena% heeft een ongeldige configuratie! Missende node: %value%"
-  Instance-Started: "Arena %arena% instantie succesvol gestart!"
-  No-Instances-Created: "Er zijn geen arena instanties gemaakt in de configuratie!"
-# Placeholder messages inside plugin
-Placeholders:
-  Game-States:
+    Lore: 
+      0: "&a%plugin_name% &f- &e%arena_name%"
+      1: " "
+      2: " "
+      3: "  &fOnline: %arena_players_size%/%arena_max_players%"
+      4: "  &fStatus: %arena_state_placeholder%"
+      5: " "
+      6: " "
+      7: "&eKlik om mee te doen in deze arena"
+Validator: 
+  Invalid-Arena-Configuration: 'Arena %arena% heeft een ongeldige configuratie! Missende node: %value%'
+  Instance-Started: Arena %arena% instantie succesvol gestart!
+  No-Instances-Created: Er zijn geen arena instanties gemaakt in de configuratie!
+Placeholders: 
+  Game-States: 
     Waiting: "&lWachtende op spelers..."
     Starting: "&e&lBeginnend"
     Full-Game: "&4&lFULL"
     In-Game: "&lIn het spel"
     Ending: "&lAfronding"
     Restarting: "&c&lHerstarten"
-  Motd:
+  Motd: 
     Waiting: "&lJe kan niet meedoen met dit spel..."
     Starting: "&e&lBeginnend"
     Full-Game: "&4&lVOL | Gebruik een andere Server"
     In-Game: "&lBezig | Klik om te kijken"
     Ending: "&lAfronding | Server is aan het sluiten"
     Restarting: "&c&lHerstarten"
-# Kit messages
-Kit:
+Kit: 
   Not-Unlocked: "&cJe hebt nog niet &b%value% &contgrendeld!"
   Choose: "&aJe hebt gekozen voor: &b%value%&a!"
-  Open-Menu: "Open Kit Menu"
+  Open-Menu: Open Kit Menu
   Cooldown: "&cKit vermogen nog op cooldown (%number%)!"
-  Menu:
-    Title: "Kit Menu"
-    Lore:
+  Menu: 
+    Title: Kit Menu
+    Lore: 
       Unlocked: "&aONTGRENDELD!"
       Locked: "&cVERGRENDELD!"
       Unlock-At-Level: "&aWordt ontgrendeld op level %number%"
       Unlock-In-Store: "&bOntgrendel dit in de winkel!"
-  Content:
-    Cleaner:
+  Content: 
+    Cleaner: 
       Name: "&bSchoonmaker"
-      Description:
-        - "&7De schoonmaker heeft een speciale bevoegdheid."
-        - "Met deze bevoegdheid, kan hij alle"
-        - "zombies laten verdwijnen. Ondanks dat, kost het"
-        - "veel inspanning om dat te doen!"
-      Game-Item:
+      Description: 
+        0: "&7De schoonmaker heeft een speciale bevoegdheid."
+        1: Met deze bevoegdheid, kan hij alle
+        2: zombies laten verdwijnen. Ondanks dat, kost het
+        3: veel inspanning om dat te doen!
+      Game-Item: 
         Name: "&6Schoonmaak stok!"
-        Description:
-          - "&7Rechtermuisklik om alle zombies te doden!"
-          - "Cooldown: 60 seconden"
-      Cleaned:
+        Description: 
+          0: "&7Rechtermuisklik om alle zombies te doden!"
+          1: 'Cooldown: 60 seconden'
+      Cleaned: 
         Map: "&b%player% heeft de map schoongemaakt!"
         # WARNING: used for admin clean commands too!!!
         Nothing: "&aDe map is al leeg!"
-    Zombie-Teleporter:
+    Zombie-Teleporter: 
       Name: "&2Zombies Teleporteerder"
-      Description:
-        - "&7Teleporteerd die zombies naar jou!"
-        - "Veel mensen denken dat dit de slechtste kit is!"
-        - "Ik moet toegeven dat ze het helemaal mis hebben!"
-      Game-Item:
-        GUI: "Zombie Teleporteerder"
-        Name: "Zombie Teleporteerder"
-        Description:
-          - "&7Teleporteert de zombies naar jou!"
-    Teleport:
+      Description: 
+        0: "&7Teleporteerd die zombies naar jou!"
+        1: Veel mensen denken dat dit de slechtste kit is!
+        2: Ik moet toegeven dat ze het helemaal mis hebben!
+      Game-Item: 
+        GUI: Zombie Teleporteerder
+        Name: Zombie Teleporteerder
+        Description: 
+          0: "&7Teleporteert de zombies naar jou!"
+    Teleport: 
       Zombie: "&aTeleporteerde een zwakke zombie naar jou!"
       Not-Found: "&cEr zijn geen zombies om te teleporteren!"
-    Knight:
+    Knight: 
       Name: "&2Ridder"
-      Description:
-        - "&7Dit is de enige echte ridder kit!"
-        - "Veel mensen denken dat dit de slechtste kit is!"
-        - "Maar ze zijn volledig verkeerd!"
-    Light-Tank:
+      Description: 
+        0: "&7Dit is de enige echte ridder kit!"
+        1: Veel mensen denken dat dit de slechtste kit is!
+        2: Maar ze zijn volledig verkeerd!
+    Light-Tank: 
       Name: "&2Lichte Tank"
-      Description:
-        - "&7Jij bent een Junior tank!"
-    Archer:
+      Description: 
+        0: "&7Jij bent een Junior tank!"
+    Archer: 
       Name: "&6Schutter"
-      Description:
-        - "&7Begin met een boog, leren armor en een houten zwaard."
-        - "Schutters zijn geliefd bij de villagers, weet dat!"
-    Puncher:
+      Description: 
+        0: "&7Begin met een boog, leren armor en een houten zwaard."
+        1: Schutters zijn geliefd bij de villagers, weet dat!
+    Puncher: 
       Name: "&6Duwer"
-      Description:
-        - "&7Duw die zombies terug met jouw epische schep!"
-        - "Knockback V is niet onbekend voor jou!"
-    Healer:
+      Description: 
+        0: "&7Duw die zombies terug met jouw epische schep!"
+        1: Knockback V is niet onbekend voor jou!
+    Healer: 
       Name: "&6Genezer"
-      Description:
-        - "&7Als je een genezer bent is hetzelfde als mensen van je houden"
-        - "Je bent in staat om je teamleden en villagers te genezen!"
-        - "Je krijgt een hervulling bij elke golf!"
-    Looter:
+      Description: 
+        0: "&7Als je een genezer bent is hetzelfde als mensen van je houden"
+        1: Je bent in staat om je teamleden en villagers te genezen!
+        2: Je krijgt een hervulling bij elke golf!
+    Looter: 
       Name: "&6Plunderaar"
-      Description:
-        - "&7Krijg een aanvullende verrotte vlees"
-        - "bij elke keer dat je een zombie vermoord!"
-    Runner:
+      Description: 
+        0: "&7Krijg een aanvullende verrotte vlees"
+        1: bij elke keer dat je een zombie vermoord!
+    Runner: 
       Name: "&rSprinter"
-      Description:
-        - "&7Parkouren is jouw passie!"
-        - "Je hebt de kwaliteit om sneller te rennen dan de rest."
-        - "Je kunt ook hoger springen."
-    Medium-Tank:
+      Description: 
+        0: "&7Parkouren is jouw passie!"
+        1: Je hebt de kwaliteit om sneller te rennen dan de rest.
+        2: Je kunt ook hoger springen.
+    Medium-Tank: 
       Name: "&6Gemiddelde Tank"
-      Description:
-        - "&7Begin met 6 meer hartjes!"
-        - "Wees niet bang!"
-        - "Je hebt genoeg harten om te verliezen!"
-    Worker:
+      Description: 
+        0: "&7Begin met 6 meer hartjes!"
+        1: Wees niet bang!
+        2: Je hebt genoeg harten om te verliezen!
+    Worker: 
       Name: "&6Werker"
-      Description:
-        - "&7Krijg bij iedere ronde een deur om mee te beginnen"
-        - "met twee aanvullende deuren. Via deze weg"
-        - "kun je deuren herplaatsen!"
-      Game-Item:
+      Description: 
+        0: "&7Krijg bij iedere ronde een deur om mee te beginnen"
+        1: met twee aanvullende deuren. Via deze weg
+        2: kun je deuren herplaatsen!
+      Game-Item: 
         Chat: "&aDeur geplaatst!"
-    Dog-Friend:
+    Dog-Friend: 
       Name: "&bHonden Vriend"
-      Description:
-        - "&7Begin met drie honden en"
-        - "krijg een extra hond elke golf!"
-    Hardcore:
+      Description: 
+        0: "&7Begin met drie honden en"
+        1: krijg een extra hond elke golf!
+    Hardcore: 
       Name: "&6Hardcore"
-      Description:
-        - "&7Je zult het zelf merken"
-        - "waarom het zo heet"
-    Golem-Friend:
+      Description: 
+        0: "&7Je zult het zelf merken"
+        1: waarom het zo heet
+    Golem-Friend: 
       Name: "&6Golem Vriend"
-      Description:
-        - "&7Begin met een Golem en"
-        - "krijg een nieuwe na elke 5 golven!"
-    Tornado:
+      Description: 
+        0: "&7Begin met een Golem en"
+        1: krijg een nieuwe na elke 5 golven!
+    Tornado: 
       Name: "&bTornado"
-      Description:
-        - "&7Kom terecht in een awesome tornado!"
-      Game-Item:
-        Name: "Tornado Tijd"
-        Description:
-          - "&7Rechtermuisklik om een"
-          - "tornado te laten komen op jouw locatie!"
-    Terminator:
+      Description: 
+        0: "&7Kom terecht in een awesome tornado!"
+      Game-Item: 
+        Name: Tornado Tijd
+        Description: 
+          0: "&7Rechtermuisklik om een"
+          1: tornado te laten komen op jouw locatie!
+    Terminator: 
       Name: "&6Terminator"
-      Description:
-        - "&7Doodt makkelijk de zombies"
-        - "met jouw krachten!"
-    Teleporter:
+      Description: 
+        0: "&7Doodt makkelijk de zombies"
+        1: met jouw krachten!
+    Teleporter: 
       Name: "&bTeleporteerder"
-      Description:
-        - "&7Iedereen is verbaasd over je teleportatie."
-        - "Niemand weet hoe je dit moet doen, behalve jij! Daarom,"
-        - "kan jij villagers teleporteren"
-        - "die hulp nodig hebben in no time!"
-      Game-Item:
+      Description: 
+        0: "&7Iedereen is verbaasd over je teleportatie."
+        1: Niemand weet hoe je dit moet doen, behalve jij! Daarom,
+        2: kan jij villagers teleporteren
+        3: die hulp nodig hebben in no time!
+      Game-Item: 
         Name: "&rTeleportatie Menu"
-        Description:
-          - "Rechtermuisklik om het teleportatie menu te openen!"
-        GUI: "Teleportatie Menu"
-      Teleport:
+        Description: 
+          0: Rechtermuisklik om het teleportatie menu te openen!
+        GUI: Teleportatie Menu
+      Teleport: 
         Villager: "&aGeteleporteerd naar de villager!"
         Warning: "&4Village defense heeft die villager niet gevonden! Waarschijnlijk is die villager al overleden!"
         Player: "&aGeteleporteerd naar %player%"
         Not-Found: "&cSpeler niet gevonden! Probeer opnieuw!"
-    Heavy-Tank:
+    Heavy-Tank: 
       Name: "&bZware Tank"
-      Description:
-        - "&7Begin met iron armor en een dubbel"
-        - "aantal van hartjes! Jupp, dat klopt,"
-        - "je zult als laatste overblijven!"
-    Shot-Bow:
+      Description: 
+        0: "&7Begin met iron armor en een dubbel"
+        1: aantal van hartjes! Jupp, dat klopt,
+        2: je zult als laatste overblijven!
+    Shot-Bow: 
       Name: "&bShotbow meester"
-      Description:
-        - "&7Je hebt een geweldige shotbow uitgevonden!"
-    Blocker:
+      Description: 
+        0: "&7Je hebt een geweldige shotbow uitgevonden!"
+    Blocker: 
       Name: "&bBlokkeerder"
-      Description:
-        - "&7Hou de zombies weg met"
-        - "je speciale barrières. Deze "
-        - "zijn er voor minimaal 10 seconden"
-      Game-Item:
-        Name: "Hekje"
-        Description:
-          - "&7Plaats deze barrière om  "
-          - "zombies tegen te houden. Voor minstens 10 seconden"
-      Place:
+      Description: 
+        0: "&7Hou de zombies weg met"
+        1: "je speciale barrières. Deze "
+        2: zijn er voor minimaal 10 seconden
+      Game-Item: 
+        Name: Hekje
+        Description: 
+          0: "&7Plaats deze barrière om  "
+          1: zombies tegen te houden. Voor minstens 10 seconden
+      Place: 
         Success: "&aBarrière geplaatst!"
         Fail: "&cJe kunt hier geen barrière plaatsen"
-    Premium-Hardcore:
+    Premium-Hardcore: 
       Name: "&bPremium Hardcore Meester"
-      Description:
-        - "&7Sla met 1 slag alle zombies dood met je OP zwaard!"
-        - "Wees echter voorzichtig. Deze kit is alleen"
-        - "voor de pro's! Gebruik dit niet als je dat niet bent."
-    Medic:
+      Description: 
+        0: "&7Sla met 1 slag alle zombies dood met je OP zwaard!"
+        1: Wees echter voorzichtig. Deze kit is alleen
+        2: voor de pro's! Gebruik dit niet als je dat niet bent.
+    Medic: 
       Name: "&6Medici"
-      Description:
-        - "&7Deze kit activeert jouw passieve krachten."
-        - "Elke keer als je een zombie slaat, je hebt"
-        - "een 1/10 kans om spelers te genezen"
-        - "in een straal van 5 blokken om je heen."
-    Wild-Naked:
+      Description: 
+        0: "&7Deze kit activeert jouw passieve krachten."
+        1: Elke keer als je een zombie slaat, je hebt
+        2: een 1/10 kans om spelers te genezen
+        3: in een straal van 5 blokken om je heen.
+    Wild-Naked: 
       Name: "&bWild naakt"
-      Description:
-        - "&7Je bent de ultieme meester!"
-        - "Je begint met een iron Sharpness"
-        - "VI en Smite II zwaard!"
+      Description: 
+        0: "&7Je bent de ultieme meester!"
+        1: Je begint met een iron Sharpness
+        2: VI en Smite II zwaard!
       Cannot-Wear-Armor: "&cJe kan geen armor dragen met deze kit!"
-    Wizard:
+    Wizard: 
       Name: "&bHeks"
-      Description:
-        - "&7Je bent halfbloed"
-        - "Je bent gekomen naar het dorp om"
-        - "de villagers te beschermen tegen hordes van de ondoden."
-        - "Gebruik je donkere krachten om ze allemaal te vermoorden!"
-      Game-Item:
-        Essence:
-          Name: "Donkere essentie"
-          Description:
-            - "&7Klik om omgeven materie te absorberen"
-            - "en te gebruiken als persoonlijk schild!"
-            - "Gedurende 5 seconden"
-        Wand:
-          Name: "Magische stok"
+      Description: 
+        0: "&7Je bent halfbloed"
+        1: Je bent gekomen naar het dorp om
+        2: de villagers te beschermen tegen hordes van de ondoden.
+        3: Gebruik je donkere krachten om ze allemaal te vermoorden!
+      Game-Item: 
+        Essence: 
+          Name: Donkere essentie
+          Description: 
+            0: "&7Klik om omgeven materie te absorberen"
+            1: en te gebruiken als persoonlijk schild!
+            2: Gedurende 5 seconden
+        Wand: 
+          Name: Magische stok
           Description: "&7Rechtermuisklik om het donkere uit te spreken"
-# Upgrade-Menu messages
-# 
-# Upgrade-Menu function need to be enabled on config.yml
-Upgrade-Menu:
+Upgrade-Menu: 
   Title: "&3&lUpgrade wezen"
   Upgraded-Entity: "&3Wezen geupgraded naar tier &8%tier%&3!"
   Cannot-Afford: "&3Je hebt niet genoeg lichtbollen om te upgraden!"
   Max-Tier: "&3Het wezen is tot zijn maximale geüpgraded "
-  Stats-Item:
+  Stats-Item: 
     Name: "&3&lHuidige statistieken"
     Description: "&3Bewegingssnelheid: &8%speed%; &3Aanval Schade: &8%damage%; &3Gezondheid: &8%current_hp%/%max_hp%"
-  Upgrades:
-    Health:
+  Upgrades: 
+    Health: 
       Name: "&3&lUpgrade gezondheid"
       Description: "&3Upgrade maximale gezondheid tot tier &8%tier%&3!;&3Van &8%from% &3tot &8%to%;&3Kosten: &8%cost%;;&3Klik om te kopen"
-    Damage:
+    Damage: 
       Name: "&3&lUpgrade schade"
       Description: "&3Upgrade hoeveelheid schade tot tier &8%tier%&3!;&3Van &8%from% &3tot &8%to%;&3Kosten: &8%cost%;;&8Klik om te kopen"
-    Speed:
+    Speed: 
       Name: "&3&lUpgrade Snelheid"
       Description: "&3Upgrade bewegingssnelheid naar tier &8%tier%&3!;&3Van &8%from% &3naar &8%to%;&3Kost: &8%cost%;;&8Klik om te kopen"
-    Swarm-Awareness:
+    Swarm-Awareness: 
       Name: "&3&lZwermbewustheid"
       Description: "&3Upgrade zwermbewustheid naar tier &8%tier%&3!;&3Van &8%from% &8beschadig vermedigvuldiger per wolf in radius;&8van 3 blokken &3naar %to%;&3Hoe meer wolven de aanvallende wolf naderen;&3hoe meer schade de wolf krijgt;&3Kosten: &8%cost%;;&8Klik om te kopen"
-    Final-Defense:
+    Final-Defense: 
       Name: "&3&lLaatste bescherming"
       Description: "&3Upgrade de laatste bescherming naar tier &8%tier%&3!;&3Van &8%from% explosie radius &3naar &8%to%;&3Een Golem zal na de dood exploderen;&3en nabije zombies doden en alle levende verdoven;&3Kosten: &8%cost%;;&8Klik om te kopen\n"
-# Leaderboard messages
-# 
-# Hologram function need to be enabled on config.yml
-Leaderboard:
-  Type:
-    Hologram:
+Leaderboard: 
+  Type: 
+    Hologram: 
       Header: "&6&lTop %number% in %value%"
       Format: "&e%number%. &f%player% (%value%)"
       Empty-Format: "&e%number%. &fLeeg (0)"
-    Chat:
+    Chat: 
       Header: "&l-----JOUW STATISTIEKEN-----"
       Header-Other: "&l-----STATISTIEKEN VOOR %player%-----"
       Footer: "&l--------------------"
       Format: "&a%value%: &e%number%"
-      Top:
+      Top: 
         Type-Name: "&cTyp de naam van de statistiek om te bekijken!"
         Header: "&8&m-------------------[&6 Top 10 &8&m]-------------------"
         Format: "&e#%number% %player% - %value% &7%user_statistic%"
-  Statistics:
+  Statistics: 
     Games-Played: "&aSpellen Gespeeld"
     Level: "&aLevel"
     Exp: "&aExperience"
@@ -546,37 +520,22 @@ Leaderboard:
     Kills: "&aZombies vermoord"
     Deaths: "&aDood gegaan"
     Next-Level-Exp: "&aExp om level omhoog te gaan &e"
-    Wins: "Gewonnen ▸ %number%"
-    Loses: "Verloren▸ %number%"
+    Wins: Gewonnen ▸ %number%
+    Loses: Verloren▸ %number%
   Invalid-Name: "&cNaam van deze statistiek is onbekend! Typ: games_played, level"
   Unknown-Player: "&fOnbekende Speler"
-# Don't edit it. But who's stopping you? It's your server!
-# Really, don't edit ;p
-# You edited it, huh? Next time hurt yourself!
-Do-Not-Edit:
+Do-Not-Edit: 
   File-Version: 1
   Core-Version: 1
-# You can translate Village Defense messages here.
-# Color codes (&) supported.
-# 
-# Use \n to make new line
-# Some messages like item
-# descriptions don't support new lines
-# they are wrapped every 40 characters automatically
-# 
-# Some messages support their own placeholders
-# like %player%, %kit% etc.
-# 
-# Color scheme
-Color:
-  Placeholder:
+Color: 
+  Placeholder: 
     Value: "&a"
     Number: "&a"
     Player: "&b"
     Other: "&a"
-  Chat:
+  Chat: 
     Issue: "&c"
     Messages: "&7"
-    Special-Char:
+    Special-Char: 
       Contains: "[,],(,),{,},■,/,|,▸"
       Before: "&8"
