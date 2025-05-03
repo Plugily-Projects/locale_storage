@@ -1,16 +1,26 @@
-Color: 
-  Placeholder: 
+# Leave this file as it is!
+# 
+### !!!Do not change anything here!!!
+# 
+### THIS FILE AUTOMATICALLY REGENERATES ON SERVER RESTART
+# 
+# Needed as it can be possible that the api is not working
+# 
+# Color scheme
+Color:
+  Placeholder:
     Value: "&a"
     Number: "&a"
     Player: "&b"
     Other: "&a"
-  Chat: 
+  Chat:
     Issue: "&c"
     Messages: "&7"
-    Special-Char: 
+    Special-Char:
       Contains: "[,],(,),{,},■,/,|,▸"
       Before: "&8"
-Commands: 
+# Command messages
+Commands:
   Did-You-Mean: "%plugin_prefix% 你的意思是 /%value%?"
   Command-Executed: "%plugin_prefix% 命令成功执行!"
   Teleported-To-Lobby: "%plugin_prefix% 传送到大厅!"
@@ -27,163 +37,176 @@ Commands:
   Invalid-Location-Teleport: "%color_chat_issue%%plugin_prefix% 传送的位置无效!"
   Wrong-Usage: "%color_chat_issue%%plugin_prefix% 错误用法. 应使用 %value%"
   Theme-Blacklisted: "%color_chat_issue%%plugin_prefix% 该主题无法在游戏中使用!"
-  Admin: 
+  Admin:
     Adjust-Statistic: "%plugin_prefix% %player% 的数据 %value%  现已达到 %number%!"
     Reload-Success: "%plugin_prefix% 场地已重载!"
     Added-Plot: "%plugin_prefix% 为场地 %arena_name% 添加了地皮"
-    List: 
+    List:
       Header: "%plugin_name% 场地: 名称 状态 玩家"
       Format: "%arena_name% %arena_state_placeholder% %arena_players_size%/%arena_max_players%"
       No-Arenas: "%color_chat_issue%%plugin_prefix% 当前没有游戏实例!"
-    Spychat: 
+    Spychat:
       Toggled: "%plugin_prefix% 游戏聊天监听切换至 %value%"
-  Main: 
+  Main:
     Header: "&6----------------{%plugin_name% 指令}----------"
-    Description: 
-      0: "&a游戏指令:"
-      1: "&b/%plugin_short_command% stats: 显示你的统计!"
-      2: "&b/%plugin_short_command% leave: 离开当前场地!"
-      3: "&b/%plugin_short_command% join <arena>: 加入指定场地!"
-      4: "&b/%plugin_short_command% top <statistic>: 查看前 10 名玩家!"
-      5: "&b/%plugin_short_command% randomjoin <solo/team>: 加入随机场地!"
+    Description:
+      - "&a游戏指令:"
+      - "&b/%plugin_short_command% stats: 显示你的统计!"
+      - "&b/%plugin_short_command% leave: 离开当前场地!"
+      - "&b/%plugin_short_command% join <arena>: 加入指定场地!"
+      - "&b/%plugin_short_command% top <statistic>: 查看前 10 名玩家!"
+      - "&b/%plugin_short_command% randomjoin <solo/team>: 加入随机场地!"
     Admin-Bonus-Description: "&b/%plugin_short_command%: 查看所有管理员指令"
     Footer: "&6-------------------------------------------------"
-Scoreboard: 
+# In-Game scoreboard messages
+# 
+# Please do not use more chars than the scoreboard can handle!
+# Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
+# Placeholders:
+# https://wiki.plugily.xyz/REPLACEWITHPROJECTNAME/placeholders/language
+Scoreboard:
   Title: "&a&l%plugin_name%"
   Theme-Unknown: "&c???"
-  Content: 
-    Waiting: 
-      0: ■ 模式 | %arena_mode%
-      1: " "
-      2: ■ 玩家 | %arena_players_size%
-      3: " "
-      4: ■ 最少玩家 | %arena_min_players%
-      5: " "
-      6: "   www.plugily.xyz"
-    Starting: 
-      0: ■ 模式 | %arena_mode%
-      1: " "
-      2: ■ 即将开始 | %arena_time%
-      3: " "
-      4: ■ 玩家 | %arena_players_size%
-      5: " "
-      6: ■ 最少玩家 | %arena_min_players%
-      7: " "
-      8: "   www.plugily.xyz"
-    In-Game: 
-      Classic: 
-        0: ■ 主题 | %arena_theme%
-        1: "&f"
-        2: ■ 模式 | %arena_type%
-        3: "&f"
-        4: ■ 剩余时间 | %arena_time%
-        5: " "
-        6: ■ 玩家 | %arena_players_size%
-        7: "&f"
-        8: ■ 场地 | %arena_name%
-        9: " "
-        10: "   www.plugily.xyz"
-      Teams: 
-        0: ■ 主题 | %arena_theme%
-        1: "&f"
-        2: ■ 模式 | %arena_type%
-        3: "&f"
-        4: ■ 剩余时间 | %arena_time%
-        5: " "
-        6: ■ 队友 | %arena_teammates%
-        7: "&f"
-        8: ■ 场地 | %arena_name%
-        9: " "
-        10: "   www.plugily.xyz"
-        11: "   www.plugily.xyz"
-      Guess-The-Build: 
-        0: ■ 模式 | %arena_type%
-        1: "&f"
-        2: ■ 建筑师 | %arena_builder%
-        3: " "
-        4: ■ 领先者 |
-        5: "%arena_place_member_1% | %arena_place_points_1%"
-        6: "%arena_place_member_2% | %arena_place_points_2%"
-        7: "%arena_place_member_3% | %arena_place_points_3%"
-        8: " "
-        9: ■ 剩余时间 | %arena_time%
-        10: " "
-        11: ■ 主题 | %arena_theme%
-        12: " "
-        13: "   www.plugily.xyz"
-      Guess-The-Build-Waiting: 
-        0: ■ 模式 | %arena_mode%
-        1: "&f"
-        2: ■ 领先者 |
-        3: "%arena_place_member_1% | %arena_place_points_1%"
-        4: "%arena_place_member_2% | %arena_place_points_2%"
-        5: "%arena_place_member_3% | %arena_place_points_3%"
-        6: " "
-        7: ■ 即将开始 | %arena_time%
-        8: " "
-        9: "   www.plugily.xyz"
-    Ending: 
-      Classic: 
-        0: ■ 模式 | %arena_mode%
-        1: "&f"
-        2: "&c游戏结束"
-        3: " "
-        4: "&f"
-        5: "&f"
-        6: " "
-        7: "   www.plugily.xyz"
-      Guess-The-Build: 
-        0: ■ 模式 | %arena_mode%
-        1: "&f"
-        2: ■ 1. %arena_place_member_1% | %arena_place_points_1%
-        3: ■ 2. %arena_place_member_2% | %arena_place_points_2%
-        4: ■ 3. %arena_place_member_3% | %arena_place_points_3%
-        5: ■ 4. %arena_place_member_4% | %arena_place_points_4%
-        6: ■ 5. %arena_place_member_5% | %arena_place_points_5%
-        7: ■ 6. %arena_place_member_6% | %arena_place_points_6%
-        8: ■ 7. %arena_place_member_7% | %arena_place_points_7%
-        9: ■ 8. %arena_place_member_8% | %arena_place_points_8%
-        10: ■ 9. %arena_place_member_9% | %arena_place_points_9%
-        11: ■ 10. %arena_place_member_10% | %arena_place_points_10%
-        12: "&f"
-        13: "   www.plugily.xyz"
-    Restarting: 
-      0: ■ 模式 | %arena_mode%
-      1: "&f"
-      2: "&c游戏重启中"
-      3: " "
-      4: "&f"
-      5: "&f"
-      6: " "
-      7: "   www.plugily.xyz"
-Bossbar: 
+  Content:
+    Waiting:
+      - "■ 模式 | %arena_mode%"
+      - " "
+      - "■ 玩家 | %arena_players_size%"
+      - " "
+      - "■ 最少玩家 | %arena_min_players%"
+      - " "
+      - "   www.plugily.xyz"
+    Starting:
+      - "■ 模式 | %arena_mode%"
+      - " "
+      - "■ 即将开始 | %arena_time%"
+      - " "
+      - "■ 玩家 | %arena_players_size%"
+      - " "
+      - "■ 最少玩家 | %arena_min_players%"
+      - " "
+      - "   www.plugily.xyz"
+    # Contents of scoreboard while ingame
+    In-Game:
+      Classic:
+        - "■ 主题 | %arena_theme%"
+        - "&f"
+        - "■ 模式 | %arena_type%"
+        - "&f"
+        - "■ 剩余时间 | %arena_time%"
+        - " "
+        - "■ 玩家 | %arena_players_size%"
+        - "&f"
+        - "■ 场地 | %arena_name%"
+        - " "
+        - "   www.plugily.xyz"
+      Teams:
+        - "■ 主题 | %arena_theme%"
+        - "&f"
+        - "■ 模式 | %arena_type%"
+        - "&f"
+        - "■ 剩余时间 | %arena_time%"
+        - " "
+        - "■ 队友 | %arena_teammates%"
+        - "&f"
+        - "■ 场地 | %arena_name%"
+        - " "
+        - "   www.plugily.xyz"
+        - "   www.plugily.xyz"
+      Guess-The-Build:
+        - "■ 模式 | %arena_type%"
+        - "&f"
+        - "■ 建筑师 | %arena_builder%"
+        - " "
+        - "■ 领先者 |"
+        - "%arena_place_member_1% | %arena_place_points_1%"
+        - "%arena_place_member_2% | %arena_place_points_2%"
+        - "%arena_place_member_3% | %arena_place_points_3%"
+        - " "
+        - "■ 剩余时间 | %arena_time%"
+        - " "
+        - "■ 主题 | %arena_theme%"
+        - " "
+        - "   www.plugily.xyz"
+      Guess-The-Build-Waiting:
+        - "■ 模式 | %arena_mode%"
+        - "&f"
+        - "■ 领先者 |"
+        - "%arena_place_member_1% | %arena_place_points_1%"
+        - "%arena_place_member_2% | %arena_place_points_2%"
+        - "%arena_place_member_3% | %arena_place_points_3%"
+        - " "
+        - "■ 即将开始 | %arena_time%"
+        - " "
+        - "   www.plugily.xyz"
+    # Contents of scoreboard while state is ending
+    Ending:
+      Classic:
+        - "■ 模式 | %arena_mode%"
+        - "&f"
+        - "&c游戏结束"
+        - " "
+        - "&f"
+        - "&f"
+        - " "
+        - "   www.plugily.xyz"
+      Guess-The-Build:
+        - "■ 模式 | %arena_mode%"
+        - "&f"
+        - "■ 1. %arena_place_member_1% | %arena_place_points_1%"
+        - "■ 2. %arena_place_member_2% | %arena_place_points_2%"
+        - "■ 3. %arena_place_member_3% | %arena_place_points_3%"
+        - "■ 4. %arena_place_member_4% | %arena_place_points_4%"
+        - "■ 5. %arena_place_member_5% | %arena_place_points_5%"
+        - "■ 6. %arena_place_member_6% | %arena_place_points_6%"
+        - "■ 7. %arena_place_member_7% | %arena_place_points_7%"
+        - "■ 8. %arena_place_member_8% | %arena_place_points_8%"
+        - "■ 9. %arena_place_member_9% | %arena_place_points_9%"
+        - "■ 10. %arena_place_member_10% | %arena_place_points_10%"
+        - "&f"
+        - "   www.plugily.xyz"
+    # Contents of scoreboard while state is restarting
+    Restarting:
+      - "■ 模式 | %arena_mode%"
+      - "&f"
+      - "&c游戏重启中"
+      - " "
+      - "&f"
+      - "&f"
+      - " "
+      - "   www.plugily.xyz"
+# Bossbar messages
+# 
+# Bossbar needs to be enabled on config.yml
+Bossbar:
   Title: "%plugin_name% - www.plugily.xyz"
-  Content: 
-    Waiting: 
-      0: 等待更多玩家...
-    Starting: 
-      0: '即将开始: %arena_time%'
-    In-Game: 
-      0: 在 PLUGILY.XYZ 上游玩 %plugin_name_uppercase%
-      1: 在 PLUGILY.XYZ 上查看插件创作者信息
-      2: 剩余时间 - %arena_time%
-    Guess-The-Build: 
-      0: "%arena_guess_word%"
-    Guess-The-Build-Waiting: 
-      0: 等待选择下一个单词!
-    Voting: 
-      0: 投票时间剩余 - %arena_time%
-    Ending: 
-      0: 游戏结束! 你正在 PLUGILY.XYZ 上游玩
-    Restarting: 
-      0: 场地重新启动中. 很快你将会被移动!
-In-Game: 
+  Content:
+    Waiting:
+      - "等待更多玩家..."
+    Starting:
+      - "即将开始: %arena_time%"
+    In-Game:
+      - "在 PLUGILY.XYZ 上游玩 %plugin_name_uppercase%"
+      - "在 PLUGILY.XYZ 上查看插件创作者信息"
+      - "剩余时间 - %arena_time%"
+    Guess-The-Build:
+      - "%arena_guess_word%"
+    Guess-The-Build-Waiting:
+      - "等待选择下一个单词!"
+    Voting:
+      - "投票时间剩余 - %arena_time%"
+    Ending:
+      - "游戏结束! 你正在 PLUGILY.XYZ 上游玩"
+    Restarting:
+      - "场地重新启动中. 很快你将会被移动!"
+# In-Game Messages
+In-Game:
   # Used in most game messages.
-  Plugin-Prefix: (%plugin_name%)
+  Plugin-Prefix: "(%plugin_name%)"
   Game-Chat-Format: "[%user_statistic_level%][%kit%] %player% | %message%"
   You-Leveled-Up: "%plugin_prefix% 升级! 你现在的等级是 %number%!"
   Commands-Blocked: "%color_chat_issue%%plugin_prefix% 你需要先离开游戏才能执行这个指令. 唯一有用的指令是 /%plugin_short_command% leave!"
-  Join: 
+  Join:
     Already-Playing: "%color_chat_issue%%plugin_prefix% 你已经在游戏队列中! 你可以使用指令  /%plugin_short_command% leave 离开游戏."
     No-Permission: "%color_chat_issue%%plugin_prefix% 你没有 %value% 权限加入这个场地!"
     Full-Game: "%color_chat_issue%%plugin_prefix% 你没有权限加入已满的游戏!"
@@ -192,36 +215,36 @@ In-Game:
     Cancelled-Via-API: "%color_chat_issue%%plugin_prefix% 你不能加入这个游戏!"
     As-Party-Member: "%color_chat_issue%%plugin_prefix% 你加入了 %arena_name% 由于你的队长加入了这个游戏!"
     Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% 场地尚未配置! 请联系管理员!"
-    Title: 20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%
-  Death: 
+    Title: "20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%"
+  Death:
     Tag: "&8死亡"
     Screen: "%color_chat_issue%你死了!"
-  Spectator: 
+  Spectator:
     Blocked: "%color_chat_issue%%plugin_prefix% 该场地已禁用观察者"
     You-Are-Spectator: "%plugin_prefix% 你现在是观察者! 现在可以飞行!"
     Spectator-Menu-Name: "%color_chat_issue%存活玩家列表"
     Target-Player-Health: "%color_chat_issue%生命值: %number%"
     Spectator-Warning: "%plugin_prefix% 你现在是观察者!"
     Teleport: "%plugin_prefix% 传送到 %player%"
-    Menu: 
-      Settings: 
-        Status: 
-          Enabled: 启用
-          Disabled: 禁用
-        Changed-Speed: 速度已更改至 %number%
+    Menu:
+      Settings:
+        Status:
+          Enabled: "启用"
+          Disabled: "禁用"
+        Changed-Speed: "速度已更改至 %number%"
         Auto-Teleport: "%value% 自动传送"
-        Target-Player: 
+        Target-Player:
           Action-Bar: "%number% 方块远 | 目标 %player%"
         Night-Vision: "%value% 夜视"
-        First-Person-Mode: 
+        First-Person-Mode:
           Action-Bar: "&e蹲下 &c以离开! | 目标 %player%"
           Title: "&e蹲下 &c以离开!"
         Visibility: "%value% 其他观战玩家"
-  Messages: 
+  Messages:
     Join: "%plugin_prefix% %player% 加入了游戏 (%arena_players_size%/%arena_max_players%)!"
     Leave: "%plugin_prefix% %player% 离开了游戏 (%arena_players_size%/%arena_max_players%)!"
     Death: "%plugin_prefix% %player% 死了!"
-    Lobby: 
+    Lobby:
       Start-In: "%plugin_prefix% 游戏将在 %arena_time% 秒后开始!"
       Waiting-For-Players: "%plugin_prefix% 等待玩家... 需要至少 %arena_min_players% 以开始."
       Enough-Players-To-Start: "%plugin_prefix% 玩家数满足要求. 游戏即将开始!"
@@ -231,265 +254,277 @@ In-Game:
       Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% %player% 从游戏中请出给特权玩家留出位置!"
       You-Were-Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% 你被从游戏中请出由于需要给特权玩家留出位置!"
       Not-Enough-Space-For-Party: "%color_chat_issue%%plugin_prefix% 你的队伍人数大于场地 %arena_name% 所空余的位置"
-    Game-End: 
-      Summary: 
-        0: "&a&m--------------------------------------------------"
-        1: "%plugin_name%"
-        2: " "
-        3: "%arena_summary%"
-        4: "%arena_summary_player%"
-        5: " "
-        6: " "
-        7: "%place_list%"
-        8: " "
-        9: " "
-        10: "&a&m--------------------------------------------------"
-      Placeholders: 
+    Game-End:
+      Summary:
+        - "&a&m--------------------------------------------------"
+        - "%plugin_name%"
+        - " "
+        - "%arena_summary%"
+        - "%arena_summary_player%"
+        - " "
+        - " "
+        - "%place_list%"
+        - " "
+        - " "
+        - "&a&m--------------------------------------------------"
+      Placeholders:
         Win: "&a你赢得了游戏胜利"
         Lose: "%color_chat_issue%你输掉了游戏"
         Players: "&c这里现在没有足够的玩家. 场地强制停止!"
         Place: "%value% 名次 - %player% (%number% 点数)"
         Own: "&a你变成了 %number%"
         Winner: "&aPlot with %arena_place_member_1% 获胜！"
-    Admin: 
+    Admin:
       Set-Starting-In-To-0: "%plugin_prefix% 一位管理员将等待时间设置为 0. 游戏现在开始!"
       Changed-Theme: "%plugin_prefix% 管理员将主题更改为 %THEME%"
     Plot: 
       Added-Particle: "%plugin_prefix% 成功添加粒子特效!"
       Nobody: "%color_chat_issue%没有人"
-      Time-Left: 
-        Title: 5,20,5;;%color_chat_issue%%arena_time% 秒剩余
+      Time-Left:
+        Title: "5,20,5;;%color_chat_issue%%arena_time% 秒剩余"
         Chat: "%plugin_prefix% 剩余 %arena_time% 秒建筑!"
-      Limit: 
+      Limit:
         Entities: "%color_chat_issue%%plugin_prefix% 你不能生成更多实体!"
         Particles: "%color_chat_issue%%plugin_prefix% 你不能生成更多粒子特效!"
-      Permission: 
+      Permission:
         Particle: "%color_chat_issue%%plugin_prefix% 你没有权限使用这个粒子特效!"
         Biome: "%color_chat_issue%%plugin_prefix% 你没有权限使用这个生物群系!"
         Outside: "%color_chat_issue%%plugin_prefix% 你不能飞出你的地皮!"
         Floor-Item: "%color_chat_issue%%plugin_prefix% 你手持的物品不能设置为地板!"
         Head: "%color_chat_issue%%plugin_prefix%你没有这个头的权限！"
-      Selector: 
-        Full: 队伍已满
-        Empty: 你可以加入这个队伍
-        Inside: 你的队伍
-        Name: 地皮 - %plot%
-        Menu-Name: 地皮菜单
-        Plot-Choose: 你现在在地皮 %plot% 上
-        Member: 你已经是它的成员了!
-      Voting: 
+      Selector:
+        Full: "队伍已满"
+        Empty: "你可以加入这个队伍"
+        Inside: "你的队伍"
+        Name: "地皮 - %plot%"
+        Menu-Name: "地皮菜单"
+        Plot-Choose: "你现在在地皮 %plot% 上"
+        Member: "你已经是它的成员了!"
+      Voting:
         Name: "%color_chat_issue%投票"
-        Plot-Owner: 
+        Plot-Owner:
           Chat: "%plugin_prefix% 地皮所有者: %player%"
-          Title: '5,20,5;;地皮所有者: %player%'
+          Title: "5,20,5;;地皮所有者: %player%"
           Next: "%plugin_prefix% 现在对 %player% 的地皮做出投票!"
           Was: "%plugin_prefix% 该地皮的所有者是 %player%!"
           Own: "%color_chat_issue%%plugin_prefix% 你不能给自己的地皮投票!"
         Success: "%plugin_prefix% 投票成功!"
         Winner: "%plugin_prefix% 胜者: %player%"
-      Guess-The-Build: 
-        Builder: '建筑师: %BUILDER%'
-        Round: '回合: %ROUND%/%MAXPLAYERS%'
-        Theme: 
+      Guess-The-Build:
+        Builder: "建筑师: %BUILDER%"
+        Round: "回合: %ROUND%/%MAXPLAYERS%"
+        Theme:
           Chars: "%plugin_prefix% 该主题有 %NUM% 字符长度"
           Name: "%plugin_prefix% 主题是 %THEME%"
           Was: "%plugin_prefix% 主题是: %THEME%!"
-          Title: 20,30,20;主题是;%THEME%!
+          Title: "20,30,20;主题是;%THEME%!"
           Guessed: "%plugin_prefix% 所有玩家都猜测了主题!"
           Being-Selected: "%plugin_prefix% 主题已被选择..."
-          Guess: 
-            Title: 5,20,5;开始猜测!
+          Guess:
+            Title: "5,20,5;开始猜测!"
             Points: "%plugin_prefix% +%pts% 点数!"
             Guessed: "%plugin_prefix% %player% 猜对了主题!"
             Cant-Talk: "%color_chat_issue%%plugin_prefix% 你不能在已经猜到了情况下说话!"
             Builder: "%color_chat_issue%%plugin_prefix% 你不能在建筑过程中说话!"
-      NPC: 
+      NPC:
         Name: "&a更改地板NPC"
         Created: "%plugin_prefix% 地板NPC已成功创建!"
         Install-Citizens: "%color_chat_issue%%plugin_prefix% 请先安装 Citizens 插件以创建NPC!"
-Menu: 
+# Menu messages
+Menu:
   Permission: "%color_chat_issue%%plugin_prefix% 你没有权限使用这个菜单!"
   Location: "位置: "
-  Option: 
+  Option:
     Inventory: "&b选项菜单"
-    Content: 
-      Particle: 
+    Content:
+      Particle:
         Inventory: "&b粒子特效菜单"
-        Item: 
+        Item:
           Name: "&b选择粒子"
-          Lore: 点击获取粒子
-          Remove: 
+          Lore: "点击获取粒子"
+          Remove:
             Name: "%color_chat_issue%移除粒子"
-            Lore: 右键点击打开菜单
+            Lore: "右键点击打开菜单"
         Removed: "%color_chat_issue%%plugin_prefix% 粒子成功移除!"
         Added: "%color_chat_issue%%plugin_prefix%粒子添加成功！"
-      Heads: 
+      Heads:
         Inventory: "&b玩家头颅菜单"
-        Item: 
+        Item:
           Name: "&b获取玩家头颅"
-          Lore: 点击获取头颅
-      Floor: 
-        Item: 
+          Lore: "点击获取头颅"
+      Floor:
+        Item:
           Name: "&b更改地板材质"
-          Lore: 将方块拖到此处以更换地板
+          Lore: "将方块拖到此处以更换地板"
         Changed: "%plugin_prefix% 地板材质已更换!"
-      Time: 
+      Time:
         Inventory: "&b设置时间"
-        Item: 
+        Item:
           Name: "&b设置地皮时间"
-          Lore: 右键点击打开菜单
-        Type: 
+          Lore: "右键点击打开菜单"
+        Type:
           World: "&e世界时间"
-          Day: 白天 (1000 刻)
-          Noon: 中午 (6000 刻)
-          Sunset: 傍晚 (12000 刻)
-          Night: 夜晚 (13000 刻)
-          MidNight: 午夜 (18000 刻)
-          Sunrise: 日出 (23000刻)
+          Day: "白天 (1000 刻)"
+          Noon: "中午 (6000 刻)"
+          Sunset: "傍晚 (12000 刻)"
+          Night: "夜晚 (13000 刻)"
+          MidNight: "午夜 (18000 刻)"
+          Sunrise: "日出 (23000刻)"
         Changed: "%plugin_prefix% 时间已更改到 %value%"
-      Biome: 
+      Biome:
         Inventory: "&b设置生物群系"
-        Item: 
+        Item:
           Name: "&b更改地皮生物群系"
-          Lore: 右键点击打开菜单
+          Lore: "右键点击打开菜单"
         Changed: "%plugin_prefix% 生物群系已成功修改"
-      Weather: 
+      Weather:
         Inventory: "&b设置天气"
-        Item: 
+        Item:
           Name: "&b更改地皮天气"
-          Lore: 右键点击打开菜单
-        Type: 
-          Downfall: 下雨
-          Clear: 清除
+          Lore: "右键点击打开菜单"
+        Type:
+          Downfall: "下雨"
+          Clear: "清除"
         Changed: "%plugin_prefix% 天气已更改"
-      Banner: 
-        Inventory: 
+      Banner:
+        Inventory:
           Color: "&b选择颜色"
           Layer: "&b添加层次"
           Layer-Color: "&b添加层次颜色"
-        Item: 
+        Item:
           Name: "&b旗帜创建器"
-          Lore: 右键点击菜单
-          Create: 
+          Lore: "右键点击菜单"
+          Create:
             Name: "&b创建最终旗帜"
-            Lore: 右键点击创建旗帜
-      Reset: 
-        Item: 
+            Lore: "右键点击创建旗帜"
+      Reset:
+        Item:
           Name: "&c重置地皮"
           Lore: "&7完全重置地皮, &c&l无法取消!"
         Chat: "%color_chat_issue%%plugin_prefix% 地皮完全重置!"
-  Theme: 
-    Inventory: 选择主题?
-    Item: 
+  Theme:
+    Inventory: "选择主题?"
+    Item:
       Name: "%arena_theme%"
       # use ; to move to next line
-      Lore: '投票主题 %theme%;;剩余时间: %time-left%;当前票数: %percent%%!;;实时投票比例;显示在右边的;条形表格内.;;点击投票给 %theme%!'
-    Vote: 
+      Lore: "投票主题 %theme%;;剩余时间: %time-left%;当前票数: %percent%%!;;实时投票比例;显示在右边的;条形表格内.;;点击投票给 %theme%!"
+    Vote:
       Success: "%plugin_prefix% 你投票给 %theme% 成功!"
       Already: "%color_chat_issue%%plugin_prefix% 你已经为该主题投票了!"
-      Super: 
-        Item: 
+      Super:
+        Item:
           Name: "&b超级投票"
-          Lore: 你拥有 %owned% 超级票;;点击投给 %theme%!
+          Lore: "你拥有 %owned% 超级票;;点击投给 %theme%!"
         Used: "%plugin_prefix% 玩家 %player% 拥有超级票并投给了 %theme%! 即将开始..."
-    Guess-The-Build: 
-      Inventory: 选择要建筑的主题!
-      Item: 
+    Guess-The-Build:
+      Inventory: "选择要建筑的主题!"
+      Item:
         Name: "%theme%"
         Lore: "%difficulty%;;如果成功猜对 +%points% 点数;;点击选择!"
-      Difficulties: 
+      Difficulties:
         Easy: "&a简单"
         Medium: "&e中等"
         Hard: "&c困难"
-  Buttons: 
-    Back: 
-      Item: 
+  Buttons:
+    Back:
+      Item:
         Name: "%color_chat_issue%返回"
-        Lore: 点击返回
-Signs: 
+        Lore: "点击返回"
+# Sign messages
+Signs:
   Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% 请在第二行输入场地名称!"
   Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% 给定名称的场地不存在!"
   Created: "%plugin_prefix% 告示牌创建成功!"
   Removed: "%plugin_prefix% 成功移除告示牌!"
-  Lines: 
-    0: "%plugin_prefix%"
-    1: "%arena_state_placeholder%"
-    2: "%arena_name%"
-    3: "[%arena_players_size%/%arena_max_players%]"
-Arena-Selector: 
+  Lines:
+    - "%plugin_prefix%"
+    - "%arena_state_placeholder%"
+    - "%arena_name%"
+    - "[%arena_players_size%/%arena_max_players%]"
+# BaseArena Selector messages
+Arena-Selector:
   Inventory-Title: "%plugin_short_command% ▸ 场地选择器"
-  Item: 
+  Item:
     Name: "%arena_name%"
-    Lore: 
-      0: "%plugin_name% - %arena_name%"
-      1: " "
-      2: " "
-      3: "  在线: %arena_players_size%/%arena_max_players%"
-      4: "  状态: %arena_state_placeholder%"
-      5: " "
-      6: " "
-      7: "&a点击加入这个场地"
-Validator: 
-  Invalid-Arena-Configuration: '场地 %arena_name% 含有无效的配置! 缺失节点: %value%'
-  Instance-Started: 场地 %arena_name% 实例成功启动!
-  No-Instances-Created: 配置中没有创建竞技场实例！
-Placeholders: 
-  Game-States: 
+    Lore:
+      - "%plugin_name% - %arena_name%"
+      - " "
+      - " "
+      - "  在线: %arena_players_size%/%arena_max_players%"
+      - "  状态: %arena_state_placeholder%"
+      - " "
+      - " "
+      - "&a点击加入这个场地"
+# Validator messages
+Validator:
+  Invalid-Arena-Configuration: "场地 %arena_name% 含有无效的配置! 缺失节点: %value%"
+  Instance-Started: "场地 %arena_name% 实例成功启动!"
+  No-Instances-Created: "配置中没有创建竞技场实例！"
+# Placeholder messages inside plugin
+Placeholders:
+  Game-States:
     Waiting: "&l等待玩家..."
     Starting: "&e&l启动中"
     Full-Game: "&4&L满员"
     In-Game: "&l游戏中"
     Ending: "&l结束"
     Restarting: "&c&l重新启动中"
-  Motd: 
+  Motd:
     Waiting: "&l你可以加入这个游戏..."
     Starting: "&e&l启动中"
     Full-Game: "&4&l满员 | 使用其他服务器"
     In-Game: "&l游戏中 | 点击观战"
     Ending: "&l结束 | 服务器正在关闭"
     Restarting: "&c&l重启中"
-Kit: 
+# Kit messages
+Kit:
   Not-Unlocked: "%color_chat_issue%%plugin_prefix% 你还没有解锁 %value%!"
   Choose: "%plugin_prefix% 你选择了: %value%!"
   Cooldown: "%color_chat_issue%%plugin_prefix% 职业技能仍在冷却 (%number%)!"
-  Menu: 
-    Title: 职业菜单
-    Lore: 
+  Menu:
+    Title: "职业菜单"
+    Lore:
       Unlocked: "&a已解锁!"
       Locked: "&c锁定!"
-      Unlock-At-Level: 在 %number% 等级时解锁
+      Unlock-At-Level: "在 %number% 等级时解锁"
       Unlock-In-Store: "&b在商店中解锁这个!"
-Leaderboard: 
-  Type: 
-    Hologram: 
+# Leaderboard messages
+# 
+# Hologram function need to be enabled on config.yml
+Leaderboard:
+  Type:
+    Hologram:
       Header: "&6&l前 %number% 于 %value%"
       Format: "&e%number%. %player% (%value%)"
       Empty-Format: "&e%number%. 空 (0)"
-    Chat: 
+    Chat:
       Header: "&8+-------+ &b&l你的数据 &8+-------+"
       Header-Other: "&8+---------+ &b数据 &b%player% &8+---------+"
       Footer: "&8+-----------------------------+"
       Format: "%value% ▸ &a%number%"
-      Top: 
+      Top:
         Type-Name: "%color_chat_issue%请输入数据的名称以查看!"
         Header: "&8&m+----------------+ [&6 前 10 &8&m] +----------------+"
         Format: "&e#%number% %player% - %value% %user_statistic%"
-  Statistics: 
-    Wins: 胜利 ▸ %number%
-    Loses: 失败 ▸ %number%
-    Games-Played: 游玩次数 ▸ %number%
-    Level: 等级 ▸ %number%
-    Exp: 经验 ▸ %number%
-    Next-Level-Exp: 升级所需经验 ▸ %number%
-    Highest-Win: 最多胜利 (点数) ▸ %number%
-    Highest-Points: 最高点数 ▸ %number%
-    Total-Points-Earned: 总共获得点数 ▸ %number%
-    Blocks-Placed: 放置方块 ▸ %number%
-    Blocks-Broken: 破坏方块 ▸ %number%
-    Particles-Placed: 粒子特效放置数 ▸ %number%
-    Super-Votes: 超级票 ▸ %number%
+  Statistics:
+    Wins: "胜利 ▸ %number%"
+    Loses: "失败 ▸ %number%"
+    Games-Played: "游玩次数 ▸ %number%"
+    Level: "等级 ▸ %number%"
+    Exp: "经验 ▸ %number%"
+    Next-Level-Exp: "升级所需经验 ▸ %number%"
+    Highest-Win: "最多胜利 (点数) ▸ %number%"
+    Highest-Points: "最高点数 ▸ %number%"
+    Total-Points-Earned: "总共获得点数 ▸ %number%"
+    Blocks-Placed: "放置方块 ▸ %number%"
+    Blocks-Broken: "破坏方块 ▸ %number%"
+    Particles-Placed: "粒子特效放置数 ▸ %number%"
+    Super-Votes: "超级票 ▸ %number%"
   Invalid-Name: "%color_chat_issue%统计名称无效! 输入: %value%"
   Unknown-Player: "%color_chat_issue%未知玩家"
-Do-Not-Edit: 
+# Don't edit it. But who's stopping you? It's your server!
+# Really, don't edit ;p
+# You edited it, huh? Next time hurt yourself!
+Do-Not-Edit:
   File-Version: 1
   Core-Version: 1
