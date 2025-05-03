@@ -1,17 +1,15 @@
-#    You can translate MurderMystery messages here.
-#             Color codes (&) supported.
-#
-#             Use \n to make new line
-#             Some messages like item
-#        descriptions don't support new lines
+# You can translate MurderMystery messages here.
+# Color codes (&) supported.
+# 
+# Use \n to make new line
+# Some messages like item
+# descriptions don't support new lines
 # they are wrapped every 40 characters automatically
-#
-#     Some messages support their own placeholders
-#            like %player%, %kit% etc.
-
-#
+# 
+# Some messages support their own placeholders
+# like %player%, %kit% etc.
+# 
 # Color scheme
-#
 Color:
   Placeholder:
     Value: "&4"
@@ -24,11 +22,7 @@ Color:
     Special-Char:
       Contains: "[,],(,),{,},■,/,|,▸"
       Before: "&8"
-
-
-#
 # Command messages
-#
 Commands:
   Did-You-Mean: "%plugin_prefix% Did you mean /%value%?"
   Command-Executed: "%plugin_prefix% Command successfully executed!"
@@ -65,11 +59,8 @@ Commands:
       - "&b/%plugin_short_command% randomjoin: Join random arena!"
     Admin-Bonus-Description: "&b/%plugin_short_command%: Shows all the admin commands"
     Footer: "&6-------------------------------------------------"
-
-
-#
 # In-Game scoreboard messages
-#
+# 
 # Please do not use more chars than the scoreboard can handle!
 # Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
 # Placeholders:
@@ -88,74 +79,72 @@ Scoreboard:
       Picked: "Bow Not Dropped"
   Content:
     Waiting:
-      - ""
+      - " "
       - "■ Players | %arena_players_size%"
-      - ""
+      - " "
       - "■ Minimum Players | %arena_min_players%"
-      - ""
+      - " "
       - "   www.plugily.xyz"
     Starting:
-      - ""
+      - " "
       - "■ Starting In | %arena_time%"
-      - ""
+      - " "
       - "■ Players | %arena_players_size%"
-      - ""
+      - " "
       - "■ Minimum Players | %arena_min_players%"
-      - ""
+      - " "
       - "   www.plugily.xyz"
     # Contents of scoreboard while ingame
     In-Game:
-      - ""
+      - " "
       - "■ Role | %arena_player_role%"
       - "&f"
       - "■ Innocents | %arena_innocent_size%"
       - "&f"
       - "■ Time | %arena_time%"
-      - ""
+      - " "
       - "■ %arena_detective_status%"
-      - ""
+      - " "
       - "■ Score | %user_statistic_local_score%"
-      - ""
+      - " "
       - "   www.plugily.xyz"
     In-Game-Murderer:
-      - ""
+      - " "
       - "■ Role | %arena_player_role%"
       - "&f"
       - "■ Innocents | %arena_innocent_size%"
       - "&f"
       - "■ Time | %arena_time%"
-      - ""
+      - " "
       - "■ %arena_detective_status%"
-      - ""
+      - " "
       - "■ Kills | %user_statistic_local_kills%"
-      - ""
+      - " "
       - "■ Score | %user_statistic_local_score%"
-      - ""
+      - " "
       - "   www.plugily.xyz"
     # Contents of scoreboard while state is ending
     Ending:
       - "&f"
       - "&f"
       - "&cGAME ENDED"
-      - ""
+      - " "
       - "&f"
       - "&f"
-      - ""
+      - " "
       - "   www.plugily.xyz"
     # Contents of scoreboard while state is restarting
     Restarting:
       - "&f"
       - "&f"
       - "&cRESTARTING GAME"
-      - ""
+      - " "
       - "&f"
       - "&f"
-      - ""
+      - " "
       - "   www.plugily.xyz"
-
-#
 # Bossbar messages
-#
+# 
 # Bossbar needs to be enabled on config.yml
 Bossbar:
   Title: "%plugin_name% - www.plugily.xyz"
@@ -172,12 +161,9 @@ Bossbar:
       - "Game has ended! You were playing on PLUGILY.XYZ"
     Restarting:
       - "Restarting the arena. You will be moved soon!"
-
-#
 # In-Game Messages
-#
 In-Game:
-  #Used in most game messages.
+  # Used in most game messages.
   Plugin-Prefix: "(%plugin_name%)"
   Game-Chat-Format: "[%user_statistic_level%] %player% | %message%"
   You-Leveled-Up: "%plugin_prefix% You leveled up! You're now level %number%!"
@@ -234,14 +220,14 @@ In-Game:
       Summary:
         - "&a&m--------------------------------------------------"
         - "%plugin_name%"
-        - ""
+        - " "
         - "%arena_summary%"
         - "%arena_summary_player%"
-        - ""
+        - " "
         - "&7Detective: %arena_detective_list%"
         - "&7Murderer: %arena_murderer_list% (%arena_murderer_kills%)"
         - "&7Hero: %arena_hero%"
-        - ""
+        - " "
         - "&a&m--------------------------------------------------"
       Placeholders:
         Win: "&aYou won the game"
@@ -318,7 +304,7 @@ In-Game:
             Pay: "%color_chat_issue%Pay to pray!"
             Praise:
               Heard:
-                - ""
+                - " "
                 - "&7Developer hears your prayer."
                 - "%feeling%"
                 - "%praise%"
@@ -341,16 +327,7 @@ In-Game:
           Shot:
             Gold: "&a+1 Bow Shot!"
             Title: "5,20,5;;You collected 10 gold and got an arrow!"
-
-
-
-
-
-
-
-#
 # Sign messages
-#
 Signs:
   Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Please type arena name in second line!"
   Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% Arena with that name doesn't exists!"
@@ -361,11 +338,7 @@ Signs:
     - "%arena_state_placeholder%"
     - "%arena_name%"
     - "[%arena_players_size%/%arena_max_players%]"
-
-
-#
 # Arena Selector messages
-#
 Arena-Selector:
   Inventory-Title: "%plugin_short_command% ▸ Arena selector"
   Item:
@@ -379,19 +352,12 @@ Arena-Selector:
       - " "
       - " "
       - "&aClick to join this arena"
-
-#
 # Validator messages
-#
 Validator:
   Invalid-Arena-Configuration: "Arena %arena_name% has invalid configuration! Missing node: %value%"
   Instance-Started: "Arena %arena_name% instance successfully started!"
   No-Instances-Created: "There are no arena instances created in configuration!"
-
-
-#
 # Placeholder messages inside plugin
-#
 Placeholders:
   Game-States:
     Waiting: "&lWaiting for players..."
@@ -407,11 +373,8 @@ Placeholders:
     In-Game: "&lIn-game | Click to spectate"
     Ending: "&lEnding | Server is closing"
     Restarting: "&c&lRestarting"
-
-
-#
 # Leaderboard messages
-#
+# 
 # Hologram function need to be enabled on config.yml
 Leaderboard:
   Type:
@@ -444,8 +407,6 @@ Leaderboard:
     Detective-Contribution: "Detective contribution ▸ %number%"
   Invalid-Name: "%color_chat_issue%Name of statistic is invalid! Type: %value%"
   Unknown-Player: "%color_chat_issue%Unknown Player"
-
-
 # Don't edit it. But who's stopping you? It's your server!
 # Really, don't edit ;p
 # You edited it, huh? Next time hurt yourself!
