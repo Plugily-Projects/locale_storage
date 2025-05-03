@@ -1,1 +1,389 @@
-
+###############################[IMPORTANT]###############################
+# 
+# Leave this file as it is! It is kinda an internal backup file!
+# 
+### !!!Do not change anything here!!!
+# 
+### THIS FILE AUTOMATICALLY REGENERATES ON SERVER RESTART
+# 
+# Needed when the external api isn't working
+# 
+###############################[IMPORTANT]###############################
+# You can translate TheBridge messages here.
+# Color codes (&) supported.
+# 
+# Use \n to make new line
+# Some messages like item
+# descriptions don't support new lines
+# they are wrapped every 40 characters automatically
+# 
+# Some messages support their own placeholders
+# like %player%, %kit% etc.
+# 
+# Color scheme
+Color:
+  Placeholder:
+    Value: "&e"
+    Number: "&e"
+    Player: "&b"
+    Other: "&e"
+  Chat:
+    Issue: "&c"
+    Messages: "&7"
+    Special-Char:
+      Contains: "[,],(,),{,},■,/,|,▸"
+      Before: "&8"
+# Command messages
+Commands:
+  Did-You-Mean: "%plugin_prefix% 你是指 /%value%?"
+  Command-Executed: "%plugin_prefix% 命令成功执行!"
+  Teleported-To-Lobby: "%plugin_prefix% 传送到大厅!"
+  Removed-Game-Instance: "%color_chat_issue%%plugin_prefix% 成功删除游戏!"
+  No-Arena-Like-That: "%color_chat_issue%%plugin_prefix% 没有找到此ID的竞技场!"
+  Look-At-Sign: "%color_chat_issue%%plugin_prefix% 请在执行此命令时面朝一个告示牌！"
+  Type-Arena-Name: "%color_chat_issue%%plugin_prefix% 请输入竞技场 ID!"
+  Hold-Any-Item: "%color_chat_issue%%plugin_prefix% 你必须手持物品!"
+  No-Free-Arenas: "%color_chat_issue%%plugin_prefix% 没有空闲的竞技场!"
+  Only-By-Player: "%color_chat_issue%%plugin_prefix% 只有玩家能执行此命令!"
+  Not-Playing: "%color_chat_issue%%plugin_prefix% 你必须在一个游戏中才能执行此命令!"
+  No-Permission: "%color_chat_issue%%plugin_prefix% 您没有使用此命令的权限!"
+  Player-Not-Found: "%color_chat_issue%%plugin_prefix% 目标玩家 %player% 不存在！"
+  Invalid-Location-Teleport: "%color_chat_issue%%plugin_prefix% 传送位置无效!"
+  Wrong-Usage: "%color_chat_issue%%plugin_prefix% 无效命令用法. 请输入 %value%"
+  Admin:
+    Adjust-Statistic: "%plugin_prefix% 玩家 %player% 的数据 %value% 现在为 %number%！"
+    Reload-Success: "%plugin_prefix% 竞技场重置！"
+    List:
+      Header: "%plugin_name% 竞技场: 玩家名称状态"
+      Format: "%arena_name% %arena_state_placeholder% %arena_players_size%/%arena_max_players%"
+      No-Arenas: "%color_chat_issue%%plugin_prefix% 暂无进行中的游戏！"
+    Spychat:
+      Toggled: "%plugin_prefix% 显示全局游戏聊天已切换为 %value%"
+  Main:
+    Header: "&6----------------{%plugin_name% 命令列表}----------"
+    Description:
+      - "&a游戏命令:"
+      - "&b/%plugin_short_command% stats: 显示你的数据!"
+      - "&b/%plugin_short_command% leave: 退出当前游戏!"
+      - "&b/%plugin_short_command% join <arena>: 加入特定竞技场!"
+      - "&b/%plugin_short_command% top <statistic>: 显示排行榜前十的玩家!"
+      - "&b/%plugin_short_command% selectkit: 选择新的游戏套装!"
+      - "&b/%plugin_short_command% selectbase: 选择你的游戏基地!"
+      - "&b/%plugin_short_command% randomjoin: 加入随机的竞技场!"
+    Admin-Bonus-Description: "&b/%plugin_short_command%: 显示所有管理员命令"
+    Footer: "&6-------------------------------------------------"
+# In-Game scoreboard messages
+# 
+# Please do not use more chars than the scoreboard can handle!
+# Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
+# Placeholders:
+# https://wiki.plugily.xyz/minigame/placeholders/
+Scoreboard:
+  Title: "&a&l%plugin_name%"
+  Bases:
+    # Alternative format with numbers instead of symbols would be %scoreboard_base_color_formatted% (%scoreboard_base_players_size%) &e%scoreboard_base_yourself% %scoreboard_base_points%
+    Format: "%scoreboard_base_color_formatted% (%scoreboard_base_players_size%) &e%scoreboard_base_yourself% %scoreboard_base_points_formatted%"
+    Not-Inside: "--"
+    Inside: "(你)"
+  Mode:
+    POINTS:
+      Got: "&a●"
+      Missing: "&7●"
+    HEARTS:
+      Got: "&c♥"
+      Missing: "&7♥"
+  Content:
+    Waiting:
+      - "␣"
+      - "■ 玩家 | %arena_players_size%"
+      - "␣"
+      - "■ 最低玩家数量 | %arena_min_players%"
+      - "␣"
+      - "␣␣␣www.plugily.xyz"
+    Starting:
+      - "␣"
+      - "■ 开始时间 | %arena_time%"
+      - "␣"
+      - "■ 玩家数量 | %arena_players_size%"
+      - "␣"
+      - "■ 最小玩家数量 | %arena_min_players%"
+      - "␣"
+      - "␣␣␣www.plugily.xyz"
+    # Contents of scoreboard while ingame
+    In-Game:
+      - "&f"
+      - "■ 剩余时间 | &e%arena_time_formatted%"
+      - "■ 基地 |␣"
+      - "■ %scoreboard_bases_list%"
+      - "␣"
+      - "■ 击杀数 | &e%user_statistic_local_kills%"
+      - "■ 死亡数 | &e%user_statistic_local_deaths%"
+      - "■ 总得分 | &e%user_statistic_local_scored_points%"
+      - "␣"
+      - "■ 游戏模式 | &e%arena_option_mode%"
+      - "■ 将会在 %arena_option_reset_blocks_in% 回合内重置方块"
+      - "&f"
+      - "␣"
+      - "␣␣␣www.plugily.xyz"
+    # Contents of scoreboard while state is ending
+    Ending:
+      - "&f"
+      - "&f"
+      - "&c游戏已结束"
+      - " "
+      - "&f"
+      - "&f"
+      - " "
+      - "   www.plugily.xyz"
+    # Contents of scoreboard while state is restarting
+    Restarting:
+      - "&f"
+      - "&f"
+      - "&c重新启动游戏"
+      - " "
+      - "&f"
+      - "&f"
+      - " "
+      - "   www.plugily.xyz"
+# Bossbar messages
+# 
+# Bossbar needs to be enabled on config.yml
+Bossbar:
+  Title: "%plugin_name% - www.plugily.xyz"
+  Content:
+    Waiting:
+      - "等待更多玩家..."
+    Starting:
+      - "开始时间: %arena_time%"
+    In-Game:
+      - "正在 PLUGILY.XYZ 上 游玩 %plugin_name_uppercase%"
+      - "在 PLUGILY.XYZ 上查看插件"
+      - "当前队伍点 %base_color_formatted%"
+      - "你的队伍 %arena_base_color_formatted%"
+    Ending:
+      - "游戏结束！你在 PLUGILY.XYZ 游玩"
+    Restarting:
+      - "正在清理游戏区域，你稍后将会被传送！"
+# In-Game Messages
+In-Game:
+  # Used in most game messages.
+  Plugin-Prefix: "(%plugin_name%)"
+  Game-Chat-Format: "[%user_statistic_level%][%kit%] %player% | %message%"
+  You-Leveled-Up: "%plugin_prefix% 你升级了！你现在是 %number% 级！"
+  Commands-Blocked: "%color_chat_issue%%plugin_prefix% 若要执行命令你需要先离开游戏. 输入命令 /%plugin_short_command% leave 可离开当前游戏!"
+  Join:
+    Already-Playing: "%color_chat_issue%%plugin_prefix% 你已在排队了! 若要离开排队队伍，可输入命令 /%plugin_short_command% leave."
+    No-Permission: "%color_chat_issue%%plugin_prefix% 你需要权限 %value% 来加入该竞技场!"
+    Full-Game: "%color_chat_issue%%plugin_prefix% 你没有权限加入满人的游戏!"
+    No-Slots-For-Premium: "%color_chat_issue%%plugin_prefix% 该竞技场已经爆满，贵宾玩家也无法加入! 抱歉。"
+    # Join cancelled via external plugin that uses the API of our plugin.
+    Cancelled-Via-API: "\n%color_chat_issue%%plugin_prefix% 你不能加入此场游戏!"
+    As-Party-Member: "%color_chat_issue%%plugin_prefix% 你跟随小队领袖加入了 %arena_name%!"
+    Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% 竞技场无效! 请联系管理员!"
+    Title: "20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%"
+  Death:
+    Tag: "&8已死亡"
+    Screen: "%color_chat_issue%你死了!"
+  Spectator:
+    Blocked: "%color_chat_issue%%plugin_prefix% 本竞技场内禁止观战模式"
+    You-Are-Spectator: "%plugin_prefix% 你已进入观战模式！可无限制飞行！"
+    Spectator-Menu-Name: "%color_chat_issue%存活玩家"
+    Target-Player-Health: "%color_chat_issue%生命值: %number%"
+    Spectator-Warning: "%plugin_prefix% 你已进入观战模式!"
+    Teleport: "%plugin_prefix% 传送到玩家 %player%"
+    Menu:
+      Settings:
+        Status:
+          Enabled: "启用"
+          Disabled: "禁用"
+        Changed-Speed: "更改速度到 %number%"
+        Auto-Teleport: "%value% 自动传送"
+        Target-Player:
+          Action-Bar: "%number% 格方块远 | 目标玩家 %player%"
+        Night-Vision: "%value% 夜视等级"
+        First-Person-Mode:
+          Action-Bar: "&e偷偷 &c离开! | 目标玩家t %player%"
+          Title: "&e偷偷 &c离开!"
+        Visibility: "%value% 其他旁观玩家"
+  Messages:
+    Join: "%plugin_prefix% %player% 加入这个游戏 (%arena_players_size%/%arena_max_players%)!"
+    Leave: "%plugin_prefix% %player% 离开这个游戏 (%arena_players_size%/%arena_max_players%)!"
+    Death: "%plugin_prefix% %player% 死亡!"
+    Lobby:
+      Start-In: "%plugin_prefix% 这个游戏将在 %arena_time% 秒后开始!"
+      Waiting-For-Players: "%plugin_prefix% 等待更多玩家... 我们至少需要 %arena_min_players% 个玩家来开始游戏"
+      Enough-Players-To-Start: "%plugin_prefix% 我们有足够的玩家了. 游戏即将开始!"
+      Reduced-Time: "%plugin_prefix% 时间减少到 %number% 秒"
+      Max-Players: "%plugin_prefix% 达到最大玩家数. 等待时间缩短到最短!"
+      Game-Started: "%plugin_prefix% 这个游戏已经开始！"
+      Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% %player% 被从游戏中移除，为高级玩家腾出一席之地!"
+      You-Were-Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% 你被踢出游戏，为高级玩家腾出一席之地!"
+      Not-Enough-Space-For-Party: "%color_chat_issue%%plugin_prefix% 你的队伍人数比竞技场 %arena_name% 可容纳人数大"
+    Game-End:
+      Summary:
+        - "&a&m--------------------------------------------------"
+        - "%plugin_name%"
+        - " "
+        - "%arena_summary%"
+        - "%arena_summary_player%"
+        - " "
+        - " "
+        - "队伍数量"
+        - "%arena_summary_winner_base_players% (%arena_summary_base_scored%)"
+        - " "
+        - "&a&m--------------------------------------------------"
+      Placeholders:
+        Win: "&a你赢了"
+        Lose: "%color_chat_issue%你输了"
+        Players: "&c没有足够的玩家，本场游戏被强制停止!"
+        Base:
+          HEARTS: "%arena_summary_winner_base% 成功存活!"
+          POINTS: "队伍 %arena_summary_winner_base% 获得最多积分!"
+    Admin:
+      Set-Starting-In-To-0: "%plugin_prefix% 管理员将等待时间设置为 0。游戏现在开始！"
+    Arena:
+      Cooldown: "[%value%&8&l] &6%number% 秒"
+      Death: "%plugin_prefix% %player% 被 %value% 杀死!"
+      Death-Own: "&b%player% &7死了！"
+      Killed: "%plugin_prefix% &a你击杀了 %player%"
+      Build-Break: "%color_chat_issue%%plugin_prefix% 你不能在这里建造和破坏"
+      Time-Left: "5,20,5;%color_chat_issue%时间不多了;还剩%arena_time%秒"
+      Portal:
+        Own: "%color_chat_issue%%plugin_prefix% 那是您自己的洞"
+        Opponent: "%plugin_prefix% %arena_base_color_formatted% %player% 跳进 %value%!"
+        Scored:
+          Title: "5,20,5;%arena_base_color_formatted% %player%;跳进 %value%"
+        Hologram: "%arena_base_color_formatted%;跳进这个洞!\n"
+        Out: "%color_chat_issue%%plugin_prefix% 这个队伍早已经出局了!"
+      Blocked:
+        Reset: "%plugin_prefix% 本轮重时是禁止移动"
+        Run: "%plugin_prefix% &aGO! &7让我们跳进洞里!!"
+        Title: "5,20,5;你不能移动 - 几秒后开始...;%number%"
+        Start: "%plugin_prefix% Prepare to jump into the opponents portal"
+      Damage: "%player%  &c♥ %value%"
+# Sign messages
+Signs:
+  Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% 请在第二行输入竞技场名称!"
+  Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% 具有该名称的竞技场不存在！"
+  Created: "%plugin_prefix% 牌子成功创建！"
+  Removed: "%plugin_prefix% 牌子成功移除！"
+  Lines:
+    - "%plugin_prefix%"
+    - "%arena_state_placeholder%"
+    - "%arena_name%"
+    - "[%arena_players_size%/%arena_max_players%]"
+# Arena Selector messages
+Arena-Selector:
+  Inventory-Title: "%plugin_short_command% ▸ 竞技场选择"
+  Item:
+    Name: "%arena_name%"
+    Lore:
+      - "%plugin_name% - %arena_name%"
+      - " "
+      - " "
+      - "  在线: %arena_players_size%/%arena_max_players%"
+      - "  状态: %arena_state_placeholder%"
+      - " "
+      - " "
+      - "&a点击进入这个竞技场"
+# Validator messages
+Validator:
+  Invalid-Arena-Configuration: "竞技场 %arena_name% 缺失配置! 缺失内容: %value%"
+  Instance-Started: "竞技场 %arena_name% 已成功启动!"
+  No-Instances-Created: "配置中没有创建这个竞技场实例！"
+# Placeholder messages inside plugin
+Placeholders:
+  Game-States:
+    Waiting: "&l等待玩家加入..."
+    Starting: "&e&l开始中"
+    Full-Game: "&4&l已满"
+    In-Game: "&l游戏中"
+    Ending: "&l已结束"
+    Restarting: "&c&l重启中"
+  Motd:
+    Waiting: "&l你可以加入这个游戏..."
+    Starting: "&e&l开始中"
+    Full-Game: "&4&l已满 | 选择其它服务器"
+    In-Game: "&l游戏中 | 点击旁观"
+    Ending: "&l已结束 | 服务器已关闭"
+    Restarting: "&c&l重启中"
+# Kit messages
+Kit:
+  Not-Unlocked: "%color_chat_issue%%plugin_prefix% 你还没有解锁 %value% !"
+  Choose: "%plugin_prefix% 你已经选择: %value%!"
+  Cooldown: "%color_chat_issue%%plugin_prefix% 套装还在冷却 (%number%)!"
+  Menu:
+    Title: "套装菜单"
+    Lore:
+      Unlocked: "&a已解锁！"
+      Locked: "&c已锁！"
+      Unlock-At-Level: "当等级达到 %number% 时解锁"
+      Unlock-In-Store: "&b在商店中解锁!"
+  No-Armor: "%color_chat_issue%%plugin_prefix% You can't wear armor with your kit!"
+# Bases
+Bases:
+  Team:
+    Full: "队伍已满"
+    Empty: "你可以加入这个队伍"
+    Inside: "你的队伍"
+    Name: "队伍 - %base%"
+    Menu: "队伍菜单"
+    Choose: "你在 %base% 队中"
+    Member: "你已经是其中的一员了！"
+  Colors:
+    BLACK: "&0黑色"
+    DARK_BLUE: "&1深蓝色"
+    DARK_GREEN: "&2深绿色"
+    DARK_AQUA: "&3暗青色"
+    DARK_RED: "&4深红色"
+    DARK_PURPLE: "&5深紫色"
+    GOLD: "&6金色"
+    LIGHT_GRAY: "&7浅灰色"
+    DARK_GRAY: "&8深灰色"
+    BLUE: "&9蓝色"
+    GREEN: "&a亮绿色"
+    AQUA: "&b天蓝色"
+    RED: "&c红色"
+    PINK: "&d粉色"
+    YELLOW: "&e黄色"
+    WHITE: "&f白色"
+    BOLD: "&l粗体"
+    STRIKETHROUGH: "&m删除线"
+    UNDERLINED: "&n下划线"
+    ITALIC: "&o斜体"
+# Leaderboard messages
+# 
+# Hologram function need to be enabled on config.yml
+Leaderboard:
+  Type:
+    Hologram:
+      Header: "&6&l前 %number% 在 %value% 中"
+      Format: "&e%number%. %player% (%value%)"
+      Empty-Format: "&e%number%. 空的 (0)"
+    Chat:
+      Header: "&8+-------+ &a&l你的数据 &8+-------+"
+      Header-Other: "&8+---------+ &a统计数据 &b%player% &8+---------+"
+      Footer: "&8+-----------------------------+"
+      Format: "%value% ▸ &a%number%"
+      Top:
+        Type-Name: "%color_chat_issue%请输入统计类型以查看!"
+        Header: "&8&m+----------------+ [&6 前 10 &8&m] +----------------+"
+        Format: "&e#%number% %player% - %value% %user_statistic%"
+  Statistics:
+    Wins: "胜场 ▸ %number%"
+    Loses: "败场 ▸ %number%"
+    Games-Played: "游戏开始 ▸ %number%"
+    Level: "等级▸ %number%"
+    Exp: "Experience ▸ %number%"
+    Next-Level-Exp: "Exp to Level Up ▸ %number%"
+    Score: "得分▸ %number%"
+    Kills: "击杀数▸ %number%"
+    Deaths: "死亡数▸ %number%"
+  Invalid-Name: "%color_chat_issue% 统计数据名称无效! 类型: %value%"
+  Unknown-Player: "%color_chat_issue% 未知玩家"
+# Don't edit it. But who's stopping you? It's your server!
+# Really, don't edit ;p
+# You edited it, huh? Next time hurt yourself!
+Do-Not-Edit:
+  File-Version: 1
+  Core-Version: 1
