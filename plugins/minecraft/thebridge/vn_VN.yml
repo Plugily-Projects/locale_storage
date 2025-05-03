@@ -1,3 +1,14 @@
+###############################[IMPORTANT]###############################
+# 
+# Leave this file as it is! It is kinda an internal backup file!
+# 
+### !!!Do not change anything here!!!
+# 
+### THIS FILE AUTOMATICALLY REGENERATES ON SERVER RESTART
+# 
+# Needed when the external api isn't working
+# 
+###############################[IMPORTANT]###############################
 # You can translate TheBridge messages here.
 # Color codes (&) supported.
 # 
@@ -308,41 +319,6 @@ Kit:
       Locked: "&cKHÓA!"
       Unlock-At-Level: "Mở khóa ở cấp %number%"
       Unlock-In-Store: "&bMở khóa cái này trong cửa hàng!"
-  Content: 
-    Bridge: 
-      Name: "&2Bridge"
-      Description: "&7Kit basic bridge giống như kit bạn biết!"
-    Knight: 
-      Name: "&2Knight"
-      Description: "&7Đây là kit hiệp sĩ! Nhiều người cho rằng đây là kit tồi tệ nhất! Tôi thừa nhận họ hoàn toàn sai lầm!"
-    Light-Tank: 
-      Name: "&2Light Tank"
-      Description: "&7Bạn là xe tăng Junior!"
-    Archer: 
-      Name: "&6Archer"
-      Description: "&7Bắt đầu với số lượng mũi tên bổ sung, áo giáp da và kiếm gỗ. Cung thủ được dân làng yêu mến, biết điều đó chứ!"
-    Hardcore: 
-      Name: "&6Hardcore"
-      Description: "&7Bạn sẽ tự hiểu tại sao điều này lại hardcore đến thế"
-    Healer: 
-      Name: "&6Healer"
-      Description: "&7Trở thành healer cũng giống như được yêu thương. Bạn có thể hồi máu cho đồng đội của mình."
-    Medium-Tank: 
-      Name: "&6Medium Tank"
-      Description: "&7Bắt đầu với 6 trái tim nữa! Đừng sợ! Bạn còn rất nhiều trái tim để mất!"
-    Terminator: 
-      Name: "&6Terminator"
-      Description: "&7Dễ dàng tiêu diệt người chơi khác bằng sức mạnh của bạn!"
-    Heavy-Tank: 
-      Name: "&bHeavy Tank"
-      Description: "&7Bắt đầu với áo giáp sắt và số lượng trái tim gấp đôi! Đúng vậy, bạn sẽ là người cuối cùng đứng vững!"
-    Wild-Naked: 
-      Name: "&bWild Naked"
-      Description: "&7Bạn là bậc thầy tối cao! Bạn bắt đầu với một thanh kiếm sắt tốt hơn!"
-      Cannot-Wear-Armor: "&cBạn không thể mặc áo giáp với kit Wild Naked!"
-    Premium-Hardcore: 
-      Name: "&bPremium Hardcore Master"
-      Description: "&7Một đòn tấn công hầu hết người chơi bằng thanh kiếm OP của bạn! Tuy nhiên hãy cẩn thận. Kit này chỉ dành cho những người chuyên nghiệp! Đừng sử dụng nó nếu bạn không phải là người chuyên nghiệp!"
   No-Armor: "%color_chat_issue%%plugin_prefix% You can't wear armor with your kit!"
 # Bases
 Bases:
