@@ -1,3 +1,14 @@
+###############################[IMPORTANT]###############################
+# 
+# Leave this file as it is! It is kinda an internal backup file!
+# 
+### !!!Do not change anything here!!!
+# 
+### THIS FILE AUTOMATICALLY REGENERATES ON SERVER RESTART
+# 
+# Needed when the external api isn't working
+# 
+###############################[IMPORTANT]###############################
 # You can translate TheBridge messages here.
 # Color codes (&) supported.
 # 
@@ -308,41 +319,6 @@ Kit:
       Locked: "&cGESPERRT!"
       Unlock-At-Level: "Wird ab Level %number% freigeschaltet"
       Unlock-In-Store: "&bSchalte dies im Laden frei!"
-  Content: 
-    Bridge: 
-      Name: "&2Brücke"
-      Description: "&7Simpeles Brücken-Kit, wie du es kennst!"
-    Knight: 
-      Name: "&2Ritter"
-      Description: "&7Dies ist das einzigwahre Ritter-Kit! Viele denken dies ist das schlechteste Kit! I muss zugeben, dass sie komplett falsch liegen!"
-    Light-Tank: 
-      Name: "&2Leichter Panzer"
-      Description: "&7Du bist ein Junior-Panzer!"
-    Archer: 
-      Name: "&6Bogenschütze"
-      Description: "&7Starte mit einem Zuschuss an Pfeilen, Lederrüstung und einem Holzschwert. Bogenschützen werden von den Dorfbewohnern geliebt, das weiß ich!"
-    Hardcore: 
-      Name: "&6Hardcore"
-      Description: "&7Du wirst selbst sehen, warum das Hardcore ist"
-    Healer: 
-      Name: "&6Heiler"
-      Description: "&7Ein Heiler zu sein ist das selbe wie geliebt zu sein. Du bist in der Lage, deine Teamkollegen zu heilen."
-    Medium-Tank: 
-      Name: "&6Mittlerer Panzer"
-      Description: "&7Starte mit 6 extra Herzen! Hab keine Angst! Du hast einen Überschuss an Herzen, die du verlieren kannst!"
-    Terminator: 
-      Name: "&6Terminator"
-      Description: "&7Töte einfach deine Gegner mit deiner Kraft!"
-    Heavy-Tank: 
-      Name: "&bSchwerer Panzer"
-      Description: "&7Starte mit Eisenrüstung und doppelt so vielen Herzen! Yep, das ist Richtig, du wirst der letzte Lebendige sein!"
-    Wild-Naked: 
-      Name: "&bWilder Nackter"
-      Description: "&7Du bist der Ultimative Meister! Du startest mit einem besseren Eisenschwert!"
-      Cannot-Wear-Armor: "&cDu kannst keine Rüstung als Wilder Nackter tragen!"
-    Premium-Hardcore: 
-      Name: "&bPremium Hardocre Meister"
-      Description: "&7Töte fast alle Spieler mit einem Schlag! Aber sei vorsichtig. Dieses Kit ist nur für Profies! Verwende dieses Kit nicht, wenn du kein Profi bist!"
   No-Armor: "%color_chat_issue%%plugin_prefix% You can't wear armor with your kit!"
 # Bases
 Bases:
