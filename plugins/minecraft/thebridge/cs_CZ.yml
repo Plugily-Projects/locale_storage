@@ -1,3 +1,14 @@
+###############################[IMPORTANT]###############################
+# 
+# Leave this file as it is! It is kinda an internal backup file!
+# 
+### !!!Do not change anything here!!!
+# 
+### THIS FILE AUTOMATICALLY REGENERATES ON SERVER RESTART
+# 
+# Needed when the external api isn't working
+# 
+###############################[IMPORTANT]###############################
 # You can translate TheBridge messages here.
 # Color codes (&) supported.
 # 
@@ -308,41 +319,6 @@ Kit:
       Locked: "&cZAMČENO!"
       Unlock-At-Level: "Odemkne se na úrovni %number%"
       Unlock-In-Store: "&bOdemkni v obchodě!"
-  Content: 
-    Bridge: 
-      Name: "&2Most"
-      Description: "&7Klasický kit, který znáš!"
-    Knight: 
-      Name: "&2Rytíř"
-      Description: "&7Toto je ten jediný a pravý rytířský kit! Spousta lidí tvrdí, že horší kit neexistuje! Musíš uznat, že jsou totálně vedle!"
-    Light-Tank: 
-      Name: "&2Lehký Tank"
-      Description: "&7Jsi tank junior!"
-    Archer: 
-      Name: "&6Lučištník"
-      Description: "&7Začni s extra šípy, koženou zbrojí a dřevěným mečem. Všichni vesničané milují lučištníky, to je známý fakt!"
-    Hardcore: 
-      Name: "&6Hardcore"
-      Description: "&7Však uvidíš sám, proč je to hardcore"
-    Healer: 
-      Name: "&6Léčitel"
-      Description: "&7Být léčitelem je stejné, jako být milován. Máš schopnost uzdravit své blízké."
-    Medium-Tank: 
-      Name: "&6Střední Tank"
-      Description: "&7Začni s 6ti extra srdíčky! Neboj se! Máš spousta srdíček, které můžeš ztratit!"
-    Terminator: 
-      Name: "&6Terminator"
-      Description: "&7Snadno zabij ostatní hráče svoji ohromnou silou!"
-    Heavy-Tank: 
-      Name: "&bTěžký  Tank"
-      Description: "&7Vyzbroj se železnou zbrojí a dvojnásobkem srdíček! Jop, slyšíš dobře, budeš ten poslední kdo bude stát na nohou!"
-    Wild-Naked: 
-      Name: "&bDivoká Nahota"
-      Description: "&7Jsi ultimátní mistr! Začni s lepším železným mečem!"
-      Cannot-Wear-Armor: "&cS kitem divoké nahoty nemůžeš nosit oblečení!"
-    Premium-Hardcore: 
-      Name: "&bPremium Hardcore Master"
-      Description: "&7Dej většinu hráčů na jednu ránu svým OP mečem! Ale buď opatrný. Tento kit je jen pro profesionály! Nepoužívej pokud nejsi profík!"
   No-Armor: "%color_chat_issue%%plugin_prefix% You can't wear armor with your kit!"
 # Bases
 Bases:
