@@ -1,29 +1,16 @@
-# You can translate BuildBattle messages here.
-# Color codes (&) supported.
-# 
-# Use \n to make new line
-# Some messages like item
-# descriptions don't support new lines
-# they are wrapped every 40 characters automatically
-# 
-# Some messages support their own placeholders
-# like %player%, %kit% etc.
-# 
-# Color scheme
-Color:
-  Placeholder:
+Color: 
+  Placeholder: 
     Value: "&b"
     Number: "&b"
     Player: "&a"
     Other: "&b"
-  Chat:
+  Chat: 
     Issue: "&c"
     Messages: "&7"
-    Special-Char:
+    Special-Char: 
       Contains: "[,],(,),{,},■,/,|,▸"
       Before: "&8"
-# Command messages
-Commands:
+Commands: 
   Did-You-Mean: "%plugin_prefix% Bunu mu demek istedin /%value%?"
   Command-Executed: "%plugin_prefix% Komut başarıyla uygulandı!"
   Teleported-To-Lobby: "%plugin_prefix% Lobiye ışınlandın!"
@@ -40,176 +27,163 @@ Commands:
   Invalid-Location-Teleport: "%color_chat_issue%%plugin_prefix% Işınlanılacak lokasyon geçersiz!"
   Wrong-Usage: "%color_chat_issue%%plugin_prefix% Yanlış kullanım. Doğrusu %value%"
   Theme-Blacklisted: "%color_chat_issue%%plugin_prefix% Bu tema oyunda kullanılamaz!"
-  Admin:
+  Admin: 
     Adjust-Statistic: "%plugin_prefix% %player% oyuncusunun %value% istatistiği artık %number%!"
     Reload-Success: "%plugin_prefix% Arenalar yeniden yüklendi!"
     Added-Plot: "%plugin_prefix% Şu arena için arsa eklendi %arena_name%"
-    List:
+    List: 
       Header: "%plugin_name% arenalar: İsim Durum Oyuncular"
       Format: "%arena_name% %arena_state_placeholder% %arena_players_size%/%arena_max_players%"
       No-Arenas: "%color_chat_issue%%plugin_prefix% Oyun örneği yok!"
-    Spychat:
+    Spychat: 
       Toggled: "%plugin_prefix% Ajan sohbeti şu değere ayarlandı %value%"
-  Main:
+  Main: 
     Header: "&6----------------{%plugin_name% commands}----------"
-    Description:
-      - "&aOyun komutları:"
-      - "&b/%plugin_short_command% stats: İstatistiklerini gösterir!"
-      - "&b/%plugin_short_command% leave: Mevcut arenadan çıkar!"
-      - "&b/%plugin_short_command% join <arena>: Belirtilen arenaya girer!"
-      - "&b/%plugin_short_command% top <statistic>: En iyi 10 oyuncuyu gösterir!"
-      - "&b/%plugin_short_command% randomjoin <solo/team>: Rastgele bir arenaya girer!"
+    Description: 
+      0: "&aOyun komutları:"
+      1: "&b/%plugin_short_command% stats: İstatistiklerini gösterir!"
+      2: "&b/%plugin_short_command% leave: Mevcut arenadan çıkar!"
+      3: "&b/%plugin_short_command% join <arena>: Belirtilen arenaya girer!"
+      4: "&b/%plugin_short_command% top <statistic>: En iyi 10 oyuncuyu gösterir!"
+      5: "&b/%plugin_short_command% randomjoin <solo/team>: Rastgele bir arenaya girer!"
     Admin-Bonus-Description: "&b/%plugin_short_command%: Tüm admin komutlarını gösterir"
     Footer: "&6-------------------------------------------------"
-# In-Game scoreboard messages
-# 
-# Please do not use more chars than the scoreboard can handle!
-# Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
-# Placeholders:
-# https://wiki.plugily.xyz/REPLACEWITHPROJECTNAME/placeholders/language
-Scoreboard:
+Scoreboard: 
   Title: "&a&l%plugin_name%"
   Theme-Unknown: "&c???"
-  Content:
-    Waiting:
-      - "■ Mod | %arena_type%"
-      - " "
-      - "■ Oyuncular | %arena_players_size%"
-      - " "
-      - "■ Minimum Oyuncular | %arena_min_players%"
-      - " "
-      - "   www.plugily.xyz"
-    Starting:
-      - "■ Mod | %arena_type%"
-      - " "
-      - "■ Başlamasına | %arena_time%"
-      - " "
-      - "■ Oyuncular | %arena_players_size%"
-      - " "
-      - "■ Minimum Oyuncular | %arena_min_players%"
-      - " "
-      - "   www.plugily.xyz"
-    # Contents of scoreboard while ingame
-    In-Game:
-      Classic:
-        - "■ Tema | %arena_theme%"
-        - "&f"
-        - "■ Mod | %arena_type%"
-        - "&f"
-        - "■ Kalan Süre | %arena_time%"
-        - " "
-        - "■ Oyuncular | %arena_players_size%"
-        - "&f"
-        - "■ Arena | %arena_name%"
-        - " "
-        - "   www.plugily.xyz"
-      Teams:
-        - "■ Tema | %arena_theme%"
-        - "&f"
-        - "■ Mod | %arena_type%"
-        - "&f"
-        - "■ Kalan Süre| %arena_time%"
-        - " "
-        - "■ Takım Arkadaşı | %arena_teammates%"
-        - "&f"
-        - "■ Arena | %arena_name%"
-        - " "
-        - "   www.plugily.xyz"
-        - "   www.plugily.xyz"
-      Guess-The-Build:
-        - "■ Mod | %arena_type%"
-        - "&f"
-        - "■ Builder | %arena_builder%"
-        - " "
-        - "■ Liderler |"
-        - "%arena_place_member_1% | %arena_place_points_1%"
-        - "%arena_place_member_2% | %arena_place_points_2%"
-        - "%arena_place_member_3% | %arena_place_points_3%"
-        - " "
-        - "■ Kalan Süre | %arena_time%"
-        - " "
-        - "■ Tema | %arena_theme%"
-        - " "
-        - "   www.plugily.xyz"
-      Guess-The-Build-Waiting:
-        - "■ Mod | %arena_type%"
-        - "&f"
-        - "■ Liderler |"
-        - "%arena_place_member_1% | %arena_place_points_1%"
-        - "%arena_place_member_2% | %arena_place_points_2%"
-        - "%arena_place_member_3% | %arena_place_points_3%"
-        - " "
-        - "■ Başlamasına | %arena_time%"
-        - " "
-        - "   www.plugily.xyz"
-    # Contents of scoreboard while state is ending
-    Ending:
-      Classic:
-        - "■ Mod | %arena_type%"
-        - "&f"
-        - "&cOYUN SONA ERDİ"
-        - " "
-        - "&f"
-        - "&f"
-        - " "
-        - "   www.plugily.xyz"
-      Guess-The-Build:
-        - "■ Mod | %arena_type%"
-        - "&f"
-        - "■ 1. %arena_place_member_1% | %arena_place_points_1%"
-        - "■ 2. %arena_place_member_2% | %arena_place_points_2%"
-        - "■ 3. %arena_place_member_3% | %arena_place_points_3%"
-        - "■ 4. %arena_place_member_4% | %arena_place_points_4%"
-        - "■ 5. %arena_place_member_5% | %arena_place_points_5%"
-        - "■ 6. %arena_place_member_6% | %arena_place_points_6%"
-        - "■ 7. %arena_place_member_7% | %arena_place_points_7%"
-        - "■ 8. %arena_place_member_8% | %arena_place_points_8%"
-        - "■ 9. %arena_place_member_9% | %arena_place_points_9%"
-        - "■ 10. %arena_place_member_10% | %arena_place_points_10%"
-        - "&f"
-        - "   www.plugily.xyz"
-    # Contents of scoreboard while state is restarting
-    Restarting:
-      - "■ Mod | %arena_type%"
-      - "&f"
-      - "&cYENİDEN BAŞLIYOR"
-      - " "
-      - "&f"
-      - "&f"
-      - " "
-      - "   www.plugily.xyz"
-# Bossbar messages
-# 
-# Bossbar needs to be enabled on config.yml
-Bossbar:
+  Content: 
+    Waiting: 
+      0: ■ Mod | %arena_type%
+      1: " "
+      2: ■ Oyuncular | %arena_players_size%
+      3: " "
+      4: ■ Minimum Oyuncular | %arena_min_players%
+      5: " "
+      6: "   www.plugily.xyz"
+    Starting: 
+      0: ■ Mod | %arena_type%
+      1: " "
+      2: ■ Başlamasına | %arena_time%
+      3: " "
+      4: ■ Oyuncular | %arena_players_size%
+      5: " "
+      6: ■ Minimum Oyuncular | %arena_min_players%
+      7: " "
+      8: "   www.plugily.xyz"
+    In-Game: 
+      Classic: 
+        0: ■ Tema | %arena_theme%
+        1: "&f"
+        2: ■ Mod | %arena_type%
+        3: "&f"
+        4: ■ Kalan Süre | %arena_time%
+        5: " "
+        6: ■ Oyuncular | %arena_players_size%
+        7: "&f"
+        8: ■ Arena | %arena_name%
+        9: " "
+        10: "   www.plugily.xyz"
+      Teams: 
+        0: ■ Tema | %arena_theme%
+        1: "&f"
+        2: ■ Mod | %arena_type%
+        3: "&f"
+        4: ■ Kalan Süre| %arena_time%
+        5: " "
+        6: ■ Takım Arkadaşı | %arena_teammates%
+        7: "&f"
+        8: ■ Arena | %arena_name%
+        9: " "
+        10: "   www.plugily.xyz"
+        11: "   www.plugily.xyz"
+      Guess-The-Build: 
+        0: ■ Mod | %arena_type%
+        1: "&f"
+        2: ■ Builder | %arena_builder%
+        3: " "
+        4: ■ Liderler |
+        5: "%arena_place_member_1% | %arena_place_points_1%"
+        6: "%arena_place_member_2% | %arena_place_points_2%"
+        7: "%arena_place_member_3% | %arena_place_points_3%"
+        8: " "
+        9: ■ Kalan Süre | %arena_time%
+        10: " "
+        11: ■ Tema | %arena_theme%
+        12: " "
+        13: "   www.plugily.xyz"
+      Guess-The-Build-Waiting: 
+        0: ■ Mod | %arena_type%
+        1: "&f"
+        2: ■ Liderler |
+        3: "%arena_place_member_1% | %arena_place_points_1%"
+        4: "%arena_place_member_2% | %arena_place_points_2%"
+        5: "%arena_place_member_3% | %arena_place_points_3%"
+        6: " "
+        7: ■ Başlamasına | %arena_time%
+        8: " "
+        9: "   www.plugily.xyz"
+    Ending: 
+      Classic: 
+        0: ■ Mod | %arena_type%
+        1: "&f"
+        2: "&cOYUN SONA ERDİ"
+        3: " "
+        4: "&f"
+        5: "&f"
+        6: " "
+        7: "   www.plugily.xyz"
+      Guess-The-Build: 
+        0: ■ Mod | %arena_type%
+        1: "&f"
+        2: ■ 1. %arena_place_member_1% | %arena_place_points_1%
+        3: ■ 2. %arena_place_member_2% | %arena_place_points_2%
+        4: ■ 3. %arena_place_member_3% | %arena_place_points_3%
+        5: ■ 4. %arena_place_member_4% | %arena_place_points_4%
+        6: ■ 5. %arena_place_member_5% | %arena_place_points_5%
+        7: ■ 6. %arena_place_member_6% | %arena_place_points_6%
+        8: ■ 7. %arena_place_member_7% | %arena_place_points_7%
+        9: ■ 8. %arena_place_member_8% | %arena_place_points_8%
+        10: ■ 9. %arena_place_member_9% | %arena_place_points_9%
+        11: ■ 10. %arena_place_member_10% | %arena_place_points_10%
+        12: "&f"
+        13: "   www.plugily.xyz"
+    Restarting: 
+      0: ■ Mod | %arena_type%
+      1: "&f"
+      2: "&cYENİDEN BAŞLIYOR"
+      3: " "
+      4: "&f"
+      5: "&f"
+      6: " "
+      7: "   www.plugily.xyz"
+Bossbar: 
   Title: "%plugin_name% - www.plugily.xyz"
-  Content:
-    Waiting:
-      - "Oyuncular bekleniyor..."
-    Starting:
-      - "Başlamasına: %arena_time%"
-    In-Game:
-      - "PLUGILY.XYZ üzerinde %plugin_name_uppercase% oynanıyor "
-      - "Plugin yapımcısını ziyaret et PLUGILY.XYZ"
-      - "Kalan Süre - %arena_time%"
-    Guess-The-Build:
-      - "%arena_guess_word%"
-    Guess-The-Build-Waiting:
-      - "Sıradaki kelime seçilirken bekle!"
-    Voting:
-      - "Kalan oy süresi - %arena_time%"
-    Ending:
-      - "Oyun sona erdi! PLUGILY.XYZ üzerinde oynuyordunuz"
-    Restarting:
-      - "Arena yeniden başlıyor. Yakında ışınlanacaksın!"
-# In-Game Messages
-In-Game:
+  Content: 
+    Waiting: 
+      0: Oyuncular bekleniyor...
+    Starting: 
+      0: 'Başlamasına: %arena_time%'
+    In-Game: 
+      0: "PLUGILY.XYZ üzerinde %plugin_name_uppercase% oynanıyor "
+      1: Plugin yapımcısını ziyaret et PLUGILY.XYZ
+      2: Kalan Süre - %arena_time%
+    Guess-The-Build: 
+      0: "%arena_guess_word%"
+    Guess-The-Build-Waiting: 
+      0: Sıradaki kelime seçilirken bekle!
+    Voting: 
+      0: Kalan oy süresi - %arena_time%
+    Ending: 
+      0: Oyun sona erdi! PLUGILY.XYZ üzerinde oynuyordunuz
+    Restarting: 
+      0: Arena yeniden başlıyor. Yakında ışınlanacaksın!
+In-Game: 
   # Used in most game messages.
-  Plugin-Prefix: "(%plugin_name%)"
+  Plugin-Prefix: (%plugin_name%)
   Game-Chat-Format: "[%user_statistic_level%][%kit%] %player% | %message%"
   You-Leveled-Up: "%plugin_prefix% Seviye atladın! Artık %number% seviyesin!"
   Commands-Blocked: "%color_chat_issue%%plugin_prefix% Komut kullanmak için önce oyundan ayrılmalısın. Çalışacak tek komut /%plugin_short_command% leave!"
-  Join:
+  Join: 
     Already-Playing: "%color_chat_issue%%plugin_prefix% Zaten bir oyun için sıradasın! Oyundan ayrılmak için /%plugin_short_command% leave."
     No-Permission: "%color_chat_issue%%plugin_prefix% Bu arenaya katılmak için %value% iznine sahip değilsin!"
     Full-Game: "%color_chat_issue%%plugin_prefix% Dolu oyunlara katılma iznine sahip değilsin!"
@@ -218,36 +192,36 @@ In-Game:
     Cancelled-Via-API: "%color_chat_issue%%plugin_prefix% Bu oyuna katılamazsın!"
     As-Party-Member: "%color_chat_issue%%plugin_prefix% Parti lideri katıldığı için %arena_name% arenasına katıldın!"
     Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% BaseArena henüz konfigüre edilmedi! Yetkililere ulaş!"
-    Title: "20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%"
-  Death:
+    Title: 20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%
+  Death: 
     Tag: "&8Ölü"
     Screen: "%color_chat_issue%Öldün!"
-  Spectator:
+  Spectator: 
     Blocked: "%color_chat_issue%%plugin_prefix% Bu arenada izleyicilere izin verilmiyor"
     You-Are-Spectator: "%plugin_prefix% Artık izleyicisin! Uçabilirsin!"
     Spectator-Menu-Name: "%color_chat_issue%Canlı oyuncu listesi"
     Target-Player-Health: "%color_chat_issue%Can: %number%"
     Spectator-Warning: "%plugin_prefix% Sen bir izleyicisin!"
     Teleport: "%plugin_prefix% %player% Oyuncusuna ışınlandın"
-    Menu:
-      Settings:
-        Status:
-          Enabled: "Aktif"
-          Disabled: "Deaktif"
-        Changed-Speed: "Hızın %number% olarak değişti"
+    Menu: 
+      Settings: 
+        Status: 
+          Enabled: Aktif
+          Disabled: Deaktif
+        Changed-Speed: Hızın %number% olarak değişti
         Auto-Teleport: "%value% oto ışınlanma"
-        Target-Player:
+        Target-Player: 
           Action-Bar: "%number% blok uzakta | Hedef %player%"
         Night-Vision: "%value% gece görüşü"
-        First-Person-Mode:
+        First-Person-Mode: 
           Action-Bar: "&eAyrılmak için &ceğil! | Hedef %player%"
           Title: "&eAyrılmak için &ceğil!"
         Visibility: "%value% diğer izleyici oyuncular"
-  Messages:
+  Messages: 
     Join: "%plugin_prefix% %player% oyuna katıldı (%arena_players_size%/%arena_max_players%)!"
     Leave: "%plugin_prefix% %player% oyundan ayrıldı (%arena_players_size%/%arena_max_players%)!"
     Death: "%plugin_prefix% %player% öldü!"
-    Lobby:
+    Lobby: 
       Start-In: "%plugin_prefix% Oyunun başlamasına %arena_time% saniye kaldı!"
       Waiting-For-Players: "%plugin_prefix% Oyuncular bekleniyor... Başlamak için en az %arena_min_players% oyuncu gerekli."
       Enough-Players-To-Start: "%plugin_prefix% Artık yeterli oyuncu var. Oyun yakında başlıyor!"
@@ -257,277 +231,265 @@ In-Game:
       Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% %player% adlı oyuncu premium oyunculara yer açılması için oyundan çıkarıldı!"
       You-Were-Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% Premium oyunculara yer açılması için oyundan çıkarıldın!"
       Not-Enough-Space-For-Party: "%color_chat_issue%%plugin_prefix% Partideki kişi sayısı arenadaki boş alandan fazla %arena_name%"
-    Game-End:
-      Summary:
-        - "&a&m--------------------------------------------------"
-        - "%plugin_name%"
-        - " "
-        - "%arena_summary%"
-        - "%arena_summary_player%"
-        - "%arena_summary_place_own%"
-        - " "
-        - "%arena_summary_place_list%"
-        - " "
-        - " "
-        - "&a&m--------------------------------------------------"
-      Placeholders:
+    Game-End: 
+      Summary: 
+        0: "&a&m--------------------------------------------------"
+        1: "%plugin_name%"
+        2: " "
+        3: "%arena_summary%"
+        4: "%arena_summary_player%"
+        5: "%arena_summary_place_own%"
+        6: " "
+        7: "%arena_summary_place_list%"
+        8: " "
+        9: " "
+        10: "&a&m--------------------------------------------------"
+      Placeholders: 
         Win: "&aOyunu Kazandın"
         Lose: "%color_chat_issue%Oyunu Kaybettin"
         Players: "&cArtık yeterli oyuncu yok. BaseArena zorla durduruldu!"
         Place: "%number% Yer - %value%"
         Own: "&a%number% oldun"
         Winner: "&a%arena_place_member_1% arası kazandı!"
-    Admin:
+    Admin: 
       Set-Starting-In-To-0: "%plugin_prefix% Bir admin bekleme süresini 0 yaptı. Oyun başlıyor!"
       Changed-Theme: "%plugin_prefix% Admin temayı %THEME% olarak değiştirdi"
-    Plot:
+    Plot: 
       Added-Particle: "%plugin_prefix% Parçacık başarıyla eklendi!"
       Nobody: "%color_chat_issue%Nobody"
-      Time-Left:
-        Title: "5,20,5;;%color_chat_issue%%arena_time% saniye kaldı"
+      Time-Left: 
+        Title: 5,20,5;;%color_chat_issue%%arena_time% saniye kaldı
         Chat: "%plugin_prefix% %arena_time% inşa için kalan zaman!"
-      Limit:
+      Limit: 
         Entities: "%color_chat_issue%%plugin_prefix% Daha fazla varlık oluşturamazsın!"
         Particles: "%color_chat_issue%%plugin_prefix% Daha fazla parçacık oluşturamazsın!"
-      Permission:
+      Permission: 
         Particle: "%color_chat_issue%%plugin_prefix% Bu parçacık için gerekli izne sahip değilsin!"
         Biome: "%color_chat_issue%%plugin_prefix% Bu biome için gerekli izne sahip değilsin!"
         Outside: "%color_chat_issue%%plugin_prefix% Kendi arsanın dışına uçamazsın!"
         Floor-Item: "%color_chat_issue%%plugin_prefix% Elindeki item zemin için uygun değil!"
         Head: "%color_chat_issue%%plugin_prefix% Bu kafa için gerekli izne sahip değilsin!"
-      Selector:
-        Full: "Takım dolu"
-        Empty: "Bu takıma katılabilirsin"
-        Inside: "Takımın"
-        Name: "Arsa - %plot%"
-        Menu-Name: "Arsa Menü"
-        Plot-Choose: "Şu an bulunduğun arsa %plot%"
-        Member: "Zaten üyesin!"
-      Voting:
+      Selector: 
+        Full: Takım dolu
+        Empty: Bu takıma katılabilirsin
+        Inside: Takımın
+        Name: Arsa - %plot%
+        Menu-Name: Arsa Menü
+        Plot-Choose: Şu an bulunduğun arsa %plot%
+        Member: Zaten üyesin!
+      Voting: 
         Name: "%color_chat_issue%Oylanıyor"
-        Plot-Owner:
+        Plot-Owner: 
           Chat: "%plugin_prefix% Arsa sahibi: %value%"
-          Title: "5,20,5;;Arsa sahibi: %value%"
+          Title: '5,20,5;;Arsa sahibi: %value%'
           Next: "%plugin_prefix% %value% arsası için oylanıyor!"
           Was: "%plugin_prefix% Arsa sahibi %value% idi!"
           Own: "%color_chat_issue%%plugin_prefix% Kendi arsana oy veremezsin!"
         Success: "%plugin_prefix% Başarıyla oy verildi!"
-        Winner: "5,20,5;%plugin_prefix% KAZANAN: %value%"
-      Guess-The-Build:
-        Builder: "Builder: %BUILDER%"
-        Round: "Raund: %number%/%arena_max_players%"
-        Theme:
+        Winner: '5,20,5;%plugin_prefix% KAZANAN: %value%'
+      Guess-The-Build: 
+        Builder: 'Builder: %BUILDER%'
+        Round: 'Raund: %number%/%arena_max_players%'
+        Theme: 
           Chars: "%plugin_prefix% Tema %NUM% karakter uzunluğunda"
           Name: "%plugin_prefix% Tema %arena_theme%"
           Was: "%plugin_prefix% Tema: %arena_theme% idi!"
-          Title: "20,30,20;Tema;%arena_theme% idi!"
+          Title: 20,30,20;Tema;%arena_theme% idi!
           Guessed: "%plugin_prefix% Tüm oyuncular temayı tahmin etti!"
           Being-Selected: "%plugin_prefix% Tema seçiliyor..."
-          Guess:
-            Title: "5,20,5;Start Tahmin ediliyor!"
+          Guess: 
+            Title: 5,20,5;Start Tahmin ediliyor!
             Points: "%plugin_prefix% +%pts% puan!"
             Guessed: "%plugin_prefix% %player% temayı doğru tahmin etti!"
             Cant-Talk: "%color_chat_issue%%plugin_prefix% Zaten tahmin ettiysen konuşamazsın!"
             Builder: "%color_chat_issue%%plugin_prefix% İnşa ederken konuşamazsın!"
-      NPC:
+      NPC: 
         Name: "&aZemin değiştirme NPCsi"
         Created: "%plugin_prefix% zemin NPCsi başarıyla oluşturuldu!"
         Install-Citizens: "%color_chat_issue%%plugin_prefix% NPC oluşturmak için önce Citizens kurmalısın!"
-# Menu messages
-Menu:
+Menu: 
   Permission: "%color_chat_issue%%plugin_prefix% Bu menüyü kullanma iznine sahip değilsin!"
   Location: "Lokasyon: "
-  Option:
+  Option: 
     Inventory: "&bAyar menüsü"
-    Content:
-      Particle:
+    Content: 
+      Particle: 
         Inventory: "&bParçacık menüsü"
-        Item:
+        Item: 
           Name: "&bParçacık seç"
-          Lore: "Parçacığı almak için tıkla"
-          Remove:
+          Lore: Parçacığı almak için tıkla
+          Remove: 
             Name: "%color_chat_issue%Parçacığı kaldır"
-            Lore: "Menüyü açmak için sağ tıkla"
+            Lore: Menüyü açmak için sağ tıkla
         Removed: "%color_chat_issue%%plugin_prefix% Parçacık başarıyla kaldırıldı!"
         Added: "%color_chat_issue%%plugin_prefix% Parçacık başarıyla eklendi!"
-      Heads:
+      Heads: 
         Inventory: "&bOyuncu kafaları menüsü"
-        Item:
+        Item: 
           Name: "&bOyuncu kafalarını al"
-          Lore: "Kafa almak için tıkla"
-      Floor:
-        Item:
+          Lore: Kafa almak için tıkla
+      Floor: 
+        Item: 
           Name: "&bZemin materyalini değiştir"
-          Lore: "Zemini değiştirmek için bloğu buraya sürükle"
+          Lore: Zemini değiştirmek için bloğu buraya sürükle
         Changed: "%plugin_prefix% Zemin materyali değişti!"
-      Time:
+      Time: 
         Inventory: "&bZamanı ayarla"
-        Item:
+        Item: 
           Name: "&bArsa zamanını değiştir"
-          Lore: "Menüyü açmak için sağ tıkla"
-        Type:
+          Lore: Menüyü açmak için sağ tıkla
+        Type: 
           World: "&eDünya zamanı"
-          Day: "Sabah (1000 ticks)"
-          Noon: "Öğlen (6000 ticks)"
-          Sunset: "Gün batımı (12000 ticks)"
-          Night: "Gece (13000 ticks)"
-          MidNight: "Gece yarısı (18000 ticks)"
-          Sunrise: "Gün doğumu (23000 ticks)"
+          Day: Sabah (1000 ticks)
+          Noon: Öğlen (6000 ticks)
+          Sunset: Gün batımı (12000 ticks)
+          Night: Gece (13000 ticks)
+          MidNight: Gece yarısı (18000 ticks)
+          Sunrise: Gün doğumu (23000 ticks)
         Changed: "%plugin_prefix% Zaman %value% olarak ayarlandı"
-      Biome:
+      Biome: 
         Inventory: "&bBiyomu ayarla"
-        Item:
+        Item: 
           Name: "&bArsa biyomunu değiştir"
-          Lore: "Menüyü açmak için sağ tıkla"
+          Lore: Menüyü açmak için sağ tıkla
         Changed: "%plugin_prefix% Biyom değiştirildi"
-      Weather:
+      Weather: 
         Inventory: "&bHavayı ayarla"
-        Item:
+        Item: 
           Name: "&bArsa havasını değiştir"
-          Lore: "Menüyü açmak için sağ tıkla"
-        Type:
-          Downfall: "Yağış"
-          Clear: "Temiz"
+          Lore: Menüyü açmak için sağ tıkla
+        Type: 
+          Downfall: Yağış
+          Clear: Temiz
         Changed: "%plugin_prefix% Hava değiştirildi"
-      Banner:
-        Inventory:
+      Banner: 
+        Inventory: 
           Color: "&bRenk seç"
           Layer: "&bKatman ekle"
           Layer-Color: "&bKatman rengi ekle"
-        Item:
+        Item: 
           Name: "&bAfiş oluşturucu"
-          Lore: "Menüyü açmak için sağ tıkla"
-          Create:
+          Lore: Menüyü açmak için sağ tıkla
+          Create: 
             Name: "&bFinal afişi oluştur"
-            Lore: "Bu afişi oluşturmak için sağ tıkla"
-      Reset:
-        Item:
+            Lore: Bu afişi oluşturmak için sağ tıkla
+      Reset: 
+        Item: 
           Name: "&cArsayı sıfırla"
           Lore: "&7Arsayı komple sıfırla, &c&lgeri alınamaz!"
         Chat: "%color_chat_issue%%plugin_prefix% Arsa tamamen sıfırlandı!"
-  Theme:
-    Inventory: "Temayı seç?"
-    Item:
+  Theme: 
+    Inventory: Temayı seç?
+    Item: 
       Name: "%arena_theme%"
       # use ; to move to next line
-      Lore: "Tema için oyla %theme%;;Kalan süre: %time-left%;Mevcut oylar: %percent%%!;;Canlı oy yüzdeleri;sağ tarafta;çizgi formunda gözükür.;;Şu temaya oy vermek için tıkla %theme%!"
-    Vote:
+      Lore: 'Tema için oyla %theme%;;Kalan süre: %time-left%;Mevcut oylar: %percent%%!;;Canlı oy yüzdeleri;sağ tarafta;çizgi formunda gözükür.;;Şu temaya oy vermek için tıkla %theme%!'
+    Vote: 
       Success: "%plugin_prefix% %theme% temasına oy verdin!"
       Already: "%color_chat_issue%%plugin_prefix% Bu temaya zaten oy verdin!"
-      Super:
-        Item:
+      Super: 
+        Item: 
           Name: "&bSüper oy"
           Lore: "%owned% Süper oya sahipsin;;Süper oy vermek için tıkla %theme%!"
         Used: "%plugin_prefix% %player% Oyuncusu %theme% teması için süper oy kullandı! Başlıyor..."
-    Guess-The-Build:
-      Inventory: "İnşa etmek için bir tema seç!"
-      Item:
+    Guess-The-Build: 
+      Inventory: İnşa etmek için bir tema seç!
+      Item: 
         Name: "%theme%"
         Lore: "%difficulty%;;+%points% puan eğer oyuncu doğru tahmin ederse;;Seçmek için tıkla!"
-      Difficulties:
+      Difficulties: 
         Easy: "&aKOLAY"
         Medium: "&eORTA"
         Hard: "&cZOR"
-  Buttons:
-    Back:
-      Item:
+  Buttons: 
+    Back: 
+      Item: 
         Name: "%color_chat_issue%Geri Git"
-        Lore: "Geri gitmek için tıkla."
-# Sign messages
-Signs:
+        Lore: Geri gitmek için tıkla.
+Signs: 
   Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Lütfen arena ismini ikinci satıra yaz!"
   Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% Bu isimle BaseArena mevcut değil!"
   Created: "%plugin_prefix% Tabela başarıyla oluşturuldu!"
   Removed: "%plugin_prefix% Tabela başarıyla kaldırıldı!"
-  Lines:
-    - "%plugin_prefix%"
-    - "%arena_state_placeholder%"
-    - "%arena_name%"
-    - "[%arena_players_size%/%arena_max_players%]"
-# BaseArena Selector messages
-Arena-Selector:
+  Lines: 
+    0: "%plugin_prefix%"
+    1: "%arena_state_placeholder%"
+    2: "%arena_name%"
+    3: "[%arena_players_size%/%arena_max_players%]"
+Arena-Selector: 
   Inventory-Title: "%plugin_short_command% ▸ BaseArena seçici"
-  Item:
+  Item: 
     Name: "%arena_name%"
-    Lore:
-      - "%plugin_name% - %arena_name%"
-      - " "
-      - " "
-      - "  Online: %arena_players_size%/%arena_max_players%"
-      - "  Durum: %arena_state_placeholder%"
-      - " "
-      - " "
-      - "&aBu arenaya katılmak için tıkla"
-# Validator messages
-Validator:
-  Invalid-Arena-Configuration: "BaseArena %arena_name% yanlış yapılandırılmış! Eksik düğüm: %value%"
-  Instance-Started: "BaseArena %arena_name% örneği başarıyla başlatıldı!"
-  No-Instances-Created: "Konfigürasyonda oluşturulmuş arena örneği yok!"
-# Placeholder messages inside plugin
-Placeholders:
-  Game-States:
+    Lore: 
+      0: "%plugin_name% - %arena_name%"
+      1: " "
+      2: " "
+      3: "  Online: %arena_players_size%/%arena_max_players%"
+      4: "  Durum: %arena_state_placeholder%"
+      5: " "
+      6: " "
+      7: "&aBu arenaya katılmak için tıkla"
+Validator: 
+  Invalid-Arena-Configuration: 'BaseArena %arena_name% yanlış yapılandırılmış! Eksik düğüm: %value%'
+  Instance-Started: BaseArena %arena_name% örneği başarıyla başlatıldı!
+  No-Instances-Created: Konfigürasyonda oluşturulmuş arena örneği yok!
+Placeholders: 
+  Game-States: 
     Waiting: "&lOyuncular bekleniyor..."
     Starting: "&e&lBaşlıyor"
     Full-Game: "&4&lDOLU"
     In-Game: "&lOyunda"
     Ending: "&lBitiyor"
     Restarting: "&c&lYeniden başlıyor"
-  Motd:
+  Motd: 
     Waiting: "&lBu oyuna katılabilirsin..."
     Starting: "&e&lBaşlıyor"
     Full-Game: "&4&lDOLU | Başka sunucu kullan"
     In-Game: "&lOyunda | İzlemek için tıkla"
     Ending: "&lBitiyor | Sunucu kapanıyor"
     Restarting: "&c&lYeniden başlıyor"
-# Kit messages
-Kit:
+Kit: 
   Not-Unlocked: "%color_chat_issue%%plugin_prefix% %value% yi henüz açmadın!"
   Choose: "%plugin_prefix% Seçtiğin kit: %value%!"
   Cooldown: "%color_chat_issue%%plugin_prefix% Kit yeteneği bekleme süresinde (%number%)!"
-  Menu:
-    Title: "Kit Menü"
-    Lore:
+  Menu: 
+    Title: Kit Menü
+    Lore: 
       Unlocked: "&aAÇILDI!"
       Locked: "&cKİLİTLİ!"
-      Unlock-At-Level: "Şu levelde açılır %number%"
+      Unlock-At-Level: Şu levelde açılır %number%
       Unlock-In-Store: "&bBunu mağazadan açabilirsin!"
-# Leaderboard messages
-# 
-# Hologram function need to be enabled on config.yml
-Leaderboard:
-  Type:
-    Hologram:
+Leaderboard: 
+  Type: 
+    Hologram: 
       Header: "&6&lEn iyi %number% %value%"
       Format: "&e%number%. %player% (%value%)"
       Empty-Format: "&e%number%. Boş (0)"
-    Chat:
+    Chat: 
       Header: "&8+-------+ &b&lİSTATİSTİKLERİN &8+-------+"
       Header-Other: "&8+---------+ &b%player% &bİSTATİSTİKLERİ &8+---------+"
       Footer: "&8+-----------------------------+"
       Format: "%value% ▸ &a%number%"
-      Top:
+      Top: 
         Type-Name: "%color_chat_issue%Görüntülemek için istatistik ismini gir!"
         Header: "&8&m+----------------+ [&6 En iyi 10 &8&m] +----------------+"
         Format: "&e#%number% %player% - %value% %user_statistic%"
-  Statistics:
-    Wins: "Kazanmalar ▸ %number%"
-    Loses: "Kaybetmeler ▸ %number%"
-    Games-Played: "Oynanan oyunlar ▸ %number%"
-    Level: "Seviye ▸ %number%"
-    Exp: "Deneyim ▸ %number%"
-    Next-Level-Exp: "Sonraki seviyeye kalan deneyim ▸ %number%"
-    Highest-Win: "En yüksek kazanma (puan) ▸ %number%"
-    Highest-Points: "En yüksek puan ▸ %number%"
-    Total-Points-Earned: "Toplam kazanılan puan ▸ %number%"
-    Blocks-Placed: "Yerleştirilen blok ▸ %number%"
-    Blocks-Broken: "Kırılan blok ▸ %number%"
-    Particles-Placed: "Yerleştirilen parçacık ▸ %number%"
-    Super-Votes: "Süper oylar ▸ %number%"
+  Statistics: 
+    Wins: Kazanmalar ▸ %number%
+    Loses: Kaybetmeler ▸ %number%
+    Games-Played: Oynanan oyunlar ▸ %number%
+    Level: Seviye ▸ %number%
+    Exp: Deneyim ▸ %number%
+    Next-Level-Exp: Sonraki seviyeye kalan deneyim ▸ %number%
+    Highest-Win: En yüksek kazanma (puan) ▸ %number%
+    Highest-Points: En yüksek puan ▸ %number%
+    Total-Points-Earned: Toplam kazanılan puan ▸ %number%
+    Blocks-Placed: Yerleştirilen blok ▸ %number%
+    Blocks-Broken: Kırılan blok ▸ %number%
+    Particles-Placed: Yerleştirilen parçacık ▸ %number%
+    Super-Votes: Süper oylar ▸ %number%
   Invalid-Name: "%color_chat_issue%İstatistik ismi geçersiz! Şunu yaz: %value%"
   Unknown-Player: "%color_chat_issue%Bilinmeyen oyuncu"
-# Don't edit it. But who's stopping you? It's your server!
-# Really, don't edit ;p
-# You edited it, huh? Next time hurt yourself!
-Do-Not-Edit:
+Do-Not-Edit: 
   File-Version: 1
   Core-Version: 1
