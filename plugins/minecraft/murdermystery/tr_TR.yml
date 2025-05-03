@@ -1,16 +1,29 @@
-Color: 
-  Placeholder: 
+# You can translate MurderMystery messages here.
+# Color codes (&) supported.
+# 
+# Use \n to make new line
+# Some messages like item
+# descriptions don't support new lines
+# they are wrapped every 40 characters automatically
+# 
+# Some messages support their own placeholders
+# like %player%, %kit% etc.
+# 
+# Color scheme
+Color:
+  Placeholder:
     Value: "&4"
     Number: "&4"
     Player: "&b"
     Other: "&4"
-  Chat: 
+  Chat:
     Issue: "&c"
     Messages: "&7"
-    Special-Char: 
+    Special-Char:
       Contains: "[,],(,),{,},■,/,|,▸"
       Before: "&8"
-Commands: 
+# Command messages
+Commands:
   Did-You-Mean: "%plugin_prefix% Bunu mu demek istediniz /%value%?"
   Command-Executed: "%plugin_prefix% Komut başarıyla yürütüldü!"
   Teleported-To-Lobby: "%plugin_prefix% Lobiye ışınlandınız!"
@@ -26,123 +39,136 @@ Commands:
   Player-Not-Found: "%color_chat_issue%%plugin_prefix% Belirtilen oyuncu %player% oyunda değil!"
   Invalid-Location-Teleport: "%color_chat_issue%%plugin_prefix% Işınlanılacak lokasyon hatalı!"
   Wrong-Usage: "%color_chat_issue%%plugin_prefix% Hatalı kullanım. Doğrusu %value%"
-  Admin: 
+  Admin:
     Adjust-Statistic: "%plugin_prefix% İstatistik %value%, %player% oyuncusu için artık %number%!"
     Reload-Success: "%plugin_prefix% Arenalar yenilendi!"
-    List: 
+    List:
       Header: "%plugin_name% arenalar: İsim Durum Oyuncular"
       Format: "%arena_name% %arena_state_placeholder% %arena_players_size%/%arena_max_players%"
       No-Arenas: "%color_chat_issue%%plugin_prefix% Oyun bulunamadı!"
-    Spychat: 
+    Spychat:
       Toggled: "%plugin_prefix% Oyun içi konuşmaları görme %value%"
-  Main: 
+  Main:
     Header: "&6----------------{%plugin_name% komutları}----------"
-    Description: 
-      0: "&aOyun komutları:"
-      1: "&b/%plugin_short_command% stats: İstatistiklerinizi gösterir!"
-      2: "&b/%plugin_short_command% leave: Bulunduğunuz arenadan ayrılırsınız!"
-      3: "&b/%plugin_short_command% join <arena>: Belirtilen arenaya katılırsınız!"
-      4: "&b/%plugin_short_command% top <statistic>: En iyi 10 oyucuyu gösterir!"
-      5: "&b/%plugin_short_command% randomjoin: Rastgele arenaya katılırsınız!"
+    Description:
+      - "&aOyun komutları:"
+      - "&b/%plugin_short_command% stats: İstatistiklerinizi gösterir!"
+      - "&b/%plugin_short_command% leave: Bulunduğunuz arenadan ayrılırsınız!"
+      - "&b/%plugin_short_command% join <arena>: Belirtilen arenaya katılırsınız!"
+      - "&b/%plugin_short_command% top <statistic>: En iyi 10 oyucuyu gösterir!"
+      - "&b/%plugin_short_command% randomjoin: Rastgele arenaya katılırsınız!"
     Admin-Bonus-Description: "&b/%plugin_short_command%: Bütün yönetici komutlarını gösterir"
     Footer: "&6-------------------------------------------------"
-Scoreboard: 
+# In-Game scoreboard messages
+# 
+# Please do not use more chars than the scoreboard can handle!
+# Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
+# Placeholders:
+# https://wiki.plugily.xyz/REPLACEWITHPROJECTNAME/placeholders/language
+Scoreboard:
   Title: "&a&l%plugin_name%"
-  Roles: 
+  Roles:
     Detective: "&bDedektif"
     Murderer: "&cKatil"
     Innocent: "&eMasum"
-    Dead: Ölü
-  Detective: 
-    Alive: Dedektif &aCanlı
-    Bow: 
+    Dead: "Ölü"
+  Detective:
+    Alive: "Dedektif &aCanlı"
+    Bow:
       Dropped: "%color_chat_issue%Yay Düştü"
-      Picked: Yay Düşmedi
-  Content: 
-    Waiting: 
-      0: " "
-      1: ■ Oyuncular | %arena_players_size%
-      2: " "
-      3: ■ Minimum Oyuncular | %arena_min_players%
-      4: " "
-      5: "   www.plugily.xyz"
-    Starting: 
-      0: " "
-      1: ■ Başlıyor | %arena_time%
-      2: " "
-      3: ■ Oyuncular | %arena_players_size%
-      4: " "
-      5: ■ Minimum Oyuncular | %arena_min_players%
-      6: " "
-      7: "   www.plugily.xyz"
-    In-Game: 
-      0: " "
-      1: ■ Rol | %arena_player_role%
-      2: "&f"
-      3: ■ Masumlar | %arena_innocent_size%
-      4: "&f"
-      5: ■ Zaman | %arena_time%
-      6: " "
-      7: ■ %arena_detective_status%
-      8: " "
-      9: ■ Skor | %user_statistic_local_score%
-      10: " "
-      11: "   www.plugily.xyz"
-    In-Game-Murderer: 
-      0: " "
-      1: ■ Rol | %arena_player_role%
-      2: "&f"
-      3: ■ Masumlar | %arena_innocent_size%
-      4: "&f"
-      5: ■ Zaman | %arena_time%
-      6: " "
-      7: ■ %arena_detective_status%
-      8: " "
-      9: ■ Öldürmeler | %user_statistic_local_kills%
-      10: " "
-      11: ■ Skor | %user_statistic_local_score%
-      12: " "
-      13: "   www.plugily.xyz"
-    Ending: 
-      0: "&f"
-      1: "&f"
-      2: "&cOYUN BİTTİ"
-      3: " "
-      4: "&f"
-      5: "&f"
-      6: " "
-      7: "   www.plugily.xyz"
-    Restarting: 
-      0: "&f"
-      1: "&f"
-      2: "&cYENİDEN BAŞLIYOR"
-      3: " "
-      4: "&f"
-      5: "&f"
-      6: " "
-      7: "   www.plugily.xyz"
-Bossbar: 
+      Picked: "Yay Düşmedi"
+  Content:
+    Waiting:
+      - " "
+      - "■ Oyuncular | %arena_players_size%"
+      - " "
+      - "■ Minimum Oyuncular | %arena_min_players%"
+      - " "
+      - "   www.plugily.xyz"
+    Starting:
+      - " "
+      - "■ Başlıyor | %arena_time%"
+      - " "
+      - "■ Oyuncular | %arena_players_size%"
+      - " "
+      - "■ Minimum Oyuncular | %arena_min_players%"
+      - " "
+      - "   www.plugily.xyz"
+    # Contents of scoreboard while ingame
+    In-Game:
+      - " "
+      - "■ Rol | %arena_player_role%"
+      - "&f"
+      - "■ Masumlar | %arena_innocent_size%"
+      - "&f"
+      - "■ Zaman | %arena_time%"
+      - " "
+      - "■ %arena_detective_status%"
+      - " "
+      - "■ Skor | %user_statistic_local_score%"
+      - " "
+      - "   www.plugily.xyz"
+    In-Game-Murderer:
+      - " "
+      - "■ Rol | %arena_player_role%"
+      - "&f"
+      - "■ Masumlar | %arena_innocent_size%"
+      - "&f"
+      - "■ Zaman | %arena_time%"
+      - " "
+      - "■ %arena_detective_status%"
+      - " "
+      - "■ Öldürmeler | %user_statistic_local_kills%"
+      - " "
+      - "■ Skor | %user_statistic_local_score%"
+      - " "
+      - "   www.plugily.xyz"
+    # Contents of scoreboard while state is ending
+    Ending:
+      - "&f"
+      - "&f"
+      - "&cOYUN BİTTİ"
+      - " "
+      - "&f"
+      - "&f"
+      - " "
+      - "   www.plugily.xyz"
+    # Contents of scoreboard while state is restarting
+    Restarting:
+      - "&f"
+      - "&f"
+      - "&cYENİDEN BAŞLIYOR"
+      - " "
+      - "&f"
+      - "&f"
+      - " "
+      - "   www.plugily.xyz"
+# Bossbar messages
+# 
+# Bossbar needs to be enabled on config.yml
+Bossbar:
   Title: "%plugin_name% - www.plugily.xyz"
-  Content: 
-    Waiting: 
-      0: Oyuncular bekleniyor...
-    Starting: 
-      0: 'Başlamasına: %arena_time%'
-    In-Game: 
-      0: PLUGILY.XYZ üzerinde %plugin_name_uppercase% oynanıyor
-      1: PLUGILY.XYZ üzerinden eklenti yapımcısını ziyaret et
-      2: Rolün %arena_player_role%
-    Ending: 
-      0: Oyun sona erdi! PLUGILY.XYZ üzerinde oynadınız
-    Restarting: 
-      0: Arena yeniden başlatılıyor. Yakında ışınlanacaksın!
-In-Game: 
+  Content:
+    Waiting:
+      - "Oyuncular bekleniyor..."
+    Starting:
+      - "Başlamasına: %arena_time%"
+    In-Game:
+      - "PLUGILY.XYZ üzerinde %plugin_name_uppercase% oynanıyor"
+      - "PLUGILY.XYZ üzerinden eklenti yapımcısını ziyaret et"
+      - "Rolün %arena_player_role%"
+    Ending:
+      - "Oyun sona erdi! PLUGILY.XYZ üzerinde oynadınız"
+    Restarting:
+      - "Arena yeniden başlatılıyor. Yakında ışınlanacaksın!"
+# In-Game Messages
+In-Game:
   # Used in most game messages.
-  Plugin-Prefix: (%plugin_name%)
+  Plugin-Prefix: "(%plugin_name%)"
   Game-Chat-Format: "[%user_statistic_level%][%kit%] %player% | %message%"
   You-Leveled-Up: "%plugin_prefix% Seviye atladın! Artık %number% seviyesin!"
   Commands-Blocked: "%color_chat_issue%%plugin_prefix% Komutları uygulamak için öncelikle oyundan ayrılmalısın. Çalışacak tek komut /%plugin_short_command% leave!"
-  Join: 
+  Join:
     Already-Playing: "%color_chat_issue%%plugin_prefix% Zaten bir oyun için sıradasın! Oyundan ayrılmak için /%plugin_short_command% leave."
     No-Permission: "%color_chat_issue%%plugin_prefix% %value% iznine sahip olmadan bu arenaya giremezsin!"
     Full-Game: "%color_chat_issue%%plugin_prefix% Dolu oyunlara girmek için yetkin yok!"
@@ -151,36 +177,36 @@ In-Game:
     Cancelled-Via-API: "%color_chat_issue%%plugin_prefix% Bu oyuna katılamazsın!"
     As-Party-Member: "%color_chat_issue%%plugin_prefix% Parti lideri katıldığı için %arena_name% arenasına katıldın!"
     Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% Arena yapılandırılmadı! Yetkililere ulaş!"
-    Title: 20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%
-  Death: 
+    Title: "20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%"
+  Death:
     Tag: "&8Ölü"
     Screen: "%color_chat_issue%Öldün!"
-  Spectator: 
+  Spectator:
     Blocked: "%color_chat_issue%%plugin_prefix% İzleyiciler bu arena için kapatılmış"
     You-Are-Spectator: "%plugin_prefix% Artık izleyicisin! Uçabilirsin!"
     Spectator-Menu-Name: "%color_chat_issue%Canlı oyuncular listesi"
     Target-Player-Health: "%color_chat_issue%Sağlık: %number% | Rol: %arena_player_role%"
     Spectator-Warning: "%plugin_prefix% Sen bir izleyicisin!"
     Teleport: "%plugin_prefix% %player% Oyuncusuna ışınlanıldı"
-    Menu: 
-      Settings: 
-        Status: 
-          Enabled: Aktif
-          Disabled: Deaktif
-        Changed-Speed: Hız %number% olarak ayarlandı
+    Menu:
+      Settings:
+        Status:
+          Enabled: "Aktif"
+          Disabled: "Deaktif"
+        Changed-Speed: "Hız %number% olarak ayarlandı"
         Auto-Teleport: "%value% otomatik ışınlanma"
-        Target-Player: 
+        Target-Player:
           Action-Bar: "%number% blok uzakta | Hedef %player%"
         Night-Vision: "%value% gece görüşü"
-        First-Person-Mode: 
+        First-Person-Mode:
           Action-Bar: "&cAyrılmak için &eEğil! | Hedef %player%"
           Title: "&cAyrılmak için &eEğil!"
         Visibility: "%value% diğer izleyiciler"
-  Messages: 
+  Messages:
     Join: "%plugin_prefix% %player% oyuna katıldı (%arena_players_size%/%arena_max_players%)!"
     Leave: "%plugin_prefix% %player% oyundan ayrıldı (%arena_players_size%/%arena_max_players%)!"
     Death: "%plugin_prefix% %player% öldü!"
-    Lobby: 
+    Lobby:
       Start-In: "%plugin_prefix% Oyun %arena_time% saniye içinde başlıyor!"
       Waiting-For-Players: "%plugin_prefix% Oyuncular bekleniyor... Başlamak için en az %arena_min_players% oyuncuya ihtiyacımız var."
       Enough-Players-To-Start: "%plugin_prefix% Artık yeterli oyuncuya sahibiz. Oyun başlıyor!"
@@ -190,190 +216,200 @@ In-Game:
       Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% %player% adlı oyuncu premium oyunculara yer açmak için oyundan çıkarıldı!"
       You-Were-Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% Premium bir oyuncuya yer açmılması için oyundan çıkarıldın!"
       Not-Enough-Space-For-Party: "%color_chat_issue%%plugin_prefix% Partinizin boyutu %arena_name% arenasındaki boş yerden daha büyük"
-    Game-End: 
-      Summary: 
-        0: "&a&m--------------------------------------------------"
-        1: "%plugin_name%"
-        2: " "
-        3: "%arena_summary%"
-        4: "%arena_summary_player%"
-        5: " "
-        6: "&7Dedektif: %arena_detective_list%"
-        7: "&7Katil: %arena_murderer_list% (%arena_murderer_kills%)"
-        8: "&7Kahraman: %arena_hero%"
-        9: " "
-        10: "&a&m--------------------------------------------------"
-      Placeholders: 
+    Game-End:
+      Summary:
+        - "&a&m--------------------------------------------------"
+        - "%plugin_name%"
+        - " "
+        - "%arena_summary%"
+        - "%arena_summary_player%"
+        - " "
+        - "&7Dedektif: %arena_detective_list%"
+        - "&7Katil: %arena_murderer_list% (%arena_murderer_kills%)"
+        - "&7Kahraman: %arena_hero%"
+        - " "
+        - "&a&m--------------------------------------------------"
+      Placeholders:
         Win: "&aOyunu kazandın"
         Lose: "%color_chat_issue%Oyunu kaybettin"
         Players: "&cArtık yeterli oyuncuya sahip değiliz. Arena zorla durduruldu!"
-        Murderer: 
-          Stopped: Katil durduruldu!
-          Killed: 
-            You: Katil seni katletti!
-            All: Katil herkesi katletti.
-        Innocent: 
-          Killed: 
-            You: Bir oyuncu tarafından yay kullanılarak öldürüldün!
-            Wrongly: Masum bir oyuncuyu öldürdün!
-        Nobody: Hiç kimse
-    Admin: 
+        Murderer:
+          Stopped: "Katil durduruldu!"
+          Killed:
+            You: "Katil seni katletti!"
+            All: "Katil herkesi katletti."
+        Innocent:
+          Killed:
+            You: "Bir oyuncu tarafından yay kullanılarak öldürüldün!"
+            Wrongly: "Masum bir oyuncuyu öldürdün!"
+        Nobody: "Hiç kimse"
+    Admin:
       Set-Starting-In-To-0: "%plugin_prefix% Bir admin bekleme süresini 0 olarak ayarladı. Oyun başlıyor!"
-    Arena: 
-      Chances: 
+    Arena:
+      Chances:
         Action-Bar: "&cKatil şansı: %arena_murderer_chance% &a- &bDedektif şansı: %arena_detective_chance%"
       Cooldown: "&8&l[%value%&8&l] &6%number% saniye"
-      Locator: 
-        Bow: Yay lokasyon saptayıcısı
-        Innocent: Masum lokasyon saptayıcısı
-        Watch-Out: 5,20,5;Watch out!;Katil artık masumları daha kolay bulabilir
-      Pass: 
-        Name: Rol Bileti Menüsü
-        Role: 
-          Murderer: 
-            Name: Katil ol
-            Lore: 
-              0: 1 Katil bileti harcar
-              1: Sen %amount% adete sahipsin
-          Detective: 
-            Name: Dedektif ol
-            Lore: 
-              0: 1 Dedektif bileti harcar
-              1: Sen %amount% adete sahipsin
+      Locator:
+        Bow: "Yay lokasyon saptayıcısı"
+        Innocent: "Masum lokasyon saptayıcısı"
+        Watch-Out: "5,20,5;Watch out!;Katil artık masumları daha kolay bulabilir"
+      Pass:
+        Name: "Rol Bileti Menüsü"
+        Role:
+          Murderer:
+            Name: "Katil ol"
+            Lore:
+              - "1 Katil bileti harcar"
+              - "Sen %amount% adete sahipsin"
+          Detective:
+            Name: "Dedektif ol"
+            Lore:
+              - "1 Dedektif bileti harcar"
+              - "Sen %amount% adete sahipsin"
         Fail: "%value% rolü için yeterli bilete sahip değilsin"
-        Success: Gelecek raund %value% olacaksın!
-        Change: Şu an %number% %value% bilete sahipsin!
-      Playing: 
-        Time-Left: 5,20,5;%arena_time% saniye kaldı!;%arena_time%s sonra katil kaybedecek
-        Role: 
-          Change: 5,20,5;Önceki %arena_player_role% ayrıldı!
-          Murderer: 5,20,5;ROL | KATİL; Tüm oyuncuları öldür!
-          Detective: 5,20,5;ROL | DEDEKTİF;Katili bul ve öldür!
-          Innocent: 5,20,5;ROL | MASUM;Mümkün olduğunca uzun hayatta kal!
-        Score: 
-          Bonus: +%score% skor (%action%)
-          Gold: Altın topladın!
-          Action: 
-            Kill: 
-              Player: oyuncuları öldürdüğün için
-              Murderer: katil öldürdüğün için
-              Innocent: masum öldürdüğün için
-            Pickup: 
-              Gold: altın topladığın için
-            Surviving: 
-              Time: 30 saniye hayatta kaldığın için
-              End: sona kadar hayatta kaldığın için
-            Win: oyunu kazandığın için
+        Success: "Gelecek raund %value% olacaksın!"
+        Change: "Şu an %number% %value% bilete sahipsin!"
+      Playing:
+        Time-Left: "5,20,5;%arena_time% saniye kaldı!;%arena_time%s sonra katil kaybedecek"
+        Role:
+          Change: "5,20,5;Önceki %arena_player_role% ayrıldı!"
+          Murderer: "5,20,5;ROL | KATİL; Tüm oyuncuları öldür!"
+          Detective: "5,20,5;ROL | DEDEKTİF;Katili bul ve öldür!"
+          Innocent: "5,20,5;ROL | MASUM;Mümkün olduğunca uzun hayatta kal!"
+        Score:
+          Bonus: "+%score% skor (%action%)"
+          Gold: "Altın topladın!"
+          Action:
+            Kill:
+              Player: "oyuncuları öldürdüğün için"
+              Murderer: "katil öldürdüğün için"
+              Innocent: "masum öldürdüğün için"
+            Pickup:
+              Gold: "altın topladığın için"
+            Surviving:
+              Time: "30 saniye hayatta kaldığın için"
+              End: "sona kadar hayatta kaldığın için"
+            Win: "oyunu kazandığın için"
             Detective: "%number% masum hayatta kaldığı için"
-        Sword: 
-          Soon: Katil kılıcına %time% saniye sonra kavuşacak!
-        Special-Blocks: 
-          Cauldron: 
-            Potion: Lütfen mevcut iksirini iç!
-            Hologram: Gizemli iksir - &e1 Altın
-          Not-Enough-Gold: Bunun için %amount% altına ihtiyacın var!
-          Pray: 
-            Hologram: Hediye vermek için tıkla;Dua etmek için şalteri çek
-            Chat: Geliştirici için dua ettin! Umarım bunu tekrar duyabiliriz!
+        Sword:
+          Soon: "Katil kılıcına %time% saniye sonra kavuşacak!"
+        Special-Blocks:
+          Cauldron:
+            Potion: "Lütfen mevcut iksirini iç!"
+            Hologram: "Gizemli iksir - &e1 Altın"
+          Not-Enough-Gold: "Bunun için %amount% altına ihtiyacın var!"
+          Pray:
+            Hologram: "Hediye vermek için tıkla;Dua etmek için şalteri çek"
+            Chat: "Geliştirici için dua ettin! Umarım bunu tekrar duyabiliriz!"
             Pay: "%color_chat_issue%Dua etmek için öde!"
-            Praise: 
-              Heard: 
-                0: " "
-                1: "&7Geliştirici onun için dua ettiğini duydu."
-                2: "%feeling%"
-                3: "%praise%"
-              Feeling: 
+            Praise:
+              Heard:
+                - " "
+                - "&7Geliştirici onun için dua ettiğini duydu."
+                - "%feeling%"
+                - "%praise%"
+              Feeling:
                 Blessed: "&aKutsanmış hissediyorsun."
                 Cursed: "&cLanetlenmiş hissediyorsun."
-              Gifts: 
+              Gifts:
                 Detective-Revelation: "&aBiliyorsun ki &bŞu anki &adetektif %detective%"
                 Gold-Rush: "&aEskilerin gücüne sahip oldun. Topladığın her altın için, 3 altın elde edeceksin."
                 Single-Compensation: "&aGeliştirici seninle gurur duyuyor! Seni 5 altın ile ödüllendirdi!"
                 Bow: "&aTatmin olan geliştiriciden bir yay kazandın!"
-              Curses: 
+              Curses:
                 Slowness: "%color_chat_issue%Bacakların artık eskisinden çok daha ağır geliyor."
                 Blindness: "%color_chat_issue%Artık gözlerin o kadar iyi göremiyor."
                 Gold: "%color_chat_issue%Geliştirici seni altın yasağıyla lanetledi! Artık altın toplayamayacaksın!"
                 Death: "%color_chat_issue%Ölümün ezici gücünü hissediyorsun. Bir dakika içinde öleceğini biliyorsun!"
-        Bow: 
-          Dropped: 5,20,5;Yay düşürüldü!;Katili öldürme şansını yakalamak için yayı bul.
-          Pickup: Bir oyuncu yayı aldı!
-          Shot: 
+        Bow:
+          Dropped: "5,20,5;Yay düşürüldü!;Katili öldürme şansını yakalamak için yayı bul."
+          Pickup: "Bir oyuncu yayı aldı!"
+          Shot:
             Gold: "&a+1 Yay ateşlendi!"
-            Title: 5,20,5;;10 Altın topladığın için 1 ok kazandın!
-Signs: 
+            Title: "5,20,5;;10 Altın topladığın için 1 ok kazandın!"
+# Sign messages
+Signs:
   Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Lütfen arena ismini ikinci satırda belirt!"
   Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% Bu isimle bir arena yok!"
   Created: "%plugin_prefix% Tabela başarıyla oluşturuldu!"
   Removed: "%plugin_prefix% Tabela başarıyla kaldırıldı!"
-  Lines: 
-    0: "%plugin_prefix%"
-    1: "%arena_state_placeholder%"
-    2: "%arena_name%"
-    3: "[%arena_players_size%/%arena_max_players%]"
-Arena-Selector: 
+  Lines:
+    - "%plugin_prefix%"
+    - "%arena_state_placeholder%"
+    - "%arena_name%"
+    - "[%arena_players_size%/%arena_max_players%]"
+# Arena Selector messages
+Arena-Selector:
   Inventory-Title: "%plugin_short_command% ▸ Arena seçici"
-  Item: 
+  Item:
     Name: "%arena_name%"
-    Lore: 
-      0: "%plugin_name% - %arena_name%"
-      1: " "
-      2: " "
-      3: "  Aktif: %arena_players_size%/%arena_max_players%"
-      4: "  Durum: %arena_state_placeholder%"
-      5: " "
-      6: " "
-      7: "&aBu arenaya katılmak için tıkla"
-Validator: 
+    Lore:
+      - "%plugin_name% - %arena_name%"
+      - " "
+      - " "
+      - "  Aktif: %arena_players_size%/%arena_max_players%"
+      - "  Durum: %arena_state_placeholder%"
+      - " "
+      - " "
+      - "&aBu arenaya katılmak için tıkla"
+# Validator messages
+Validator:
   Invalid-Arena-Configuration: "%arena_name% Arenası yanlış yapılandırılmış! Eksik düğüm: %value%"
-  Instance-Started: Arena %arena_name% örneği başarıyla başlatıldı!
-  No-Instances-Created: Konfigürasyon dosyasında herhangi bir arena örneği bulunamadı!
-Placeholders: 
-  Game-States: 
+  Instance-Started: "Arena %arena_name% örneği başarıyla başlatıldı!"
+  No-Instances-Created: "Konfigürasyon dosyasında herhangi bir arena örneği bulunamadı!"
+# Placeholder messages inside plugin
+Placeholders:
+  Game-States:
     Waiting: "&lOyuncular bekleniyor..."
     Starting: "&e&lBaşlıyor"
     Full-Game: "&4&lDOLU"
     In-Game: "&lOynanıyor"
     Ending: "&lBitiyor"
     Restarting: "&c&lYeniden Başlıyor"
-  Motd: 
+  Motd:
     Waiting: "&lBu oyuna katılabilirsin..."
     Starting: "&e&lBaşlıyor"
     Full-Game: "&4&lDOLU | Oyun başlıyor"
     In-Game: "&lOynanıyor | İzlemek için tıkla"
     Ending: "&lBitiyor | Sunucu kapanıyor"
     Restarting: "&c&lYeniden başlıyor"
-Leaderboard: 
-  Type: 
-    Hologram: 
+# Leaderboard messages
+# 
+# Hologram function need to be enabled on config.yml
+Leaderboard:
+  Type:
+    Hologram:
       Header: "&6&l%value% içinde en iyi %number%"
       Format: "&e%number%. %player% (%value%)"
       Empty-Format: "&e%number%. Boş (0)"
-    Chat: 
+    Chat:
       Header: "&8+-------+ &a&lİstatistiklerin &8+-------+"
       Header-Other: "&8+---------+ &b%player% &aOyuncusunun İstatistikleri &8+---------+"
       Footer: "&8+-----------------------------+"
       Format: "%value% ▸ &a%number%"
-      Top: 
+      Top:
         Type-Name: "%color_chat_issue%Görüntülemek için istatistik adını yazın!"
         Header: "&8&m+----------------+ [&6 En iyi 10 &8&m] +----------------+"
         Format: "&e#%number% %player% - %value% %user_statistic%"
-  Statistics: 
-    Wins: Kazanmalar ▸ %number%
-    Loses: Kaybetmeler ▸ %number%
-    Games-Played: Oynanan Oyunlar ▸ %number%
-    Level: Seviye ▸ %number%
-    Exp: Deneyim ▸ %number%
-    Next-Level-Exp: Seviye atlamak için gereken deneyim ▸ %number%
-    Kills: Öldürmeler ▸ %number%
-    Deaths: Ölümler ▸ %number%
-    Highest-Score: En yüksek puan ▸ %number%
-    Murderer-Pass: Katil biletleri ▸ %number%
-    Detective-Pass: Dedektif biletleri ▸ %number%
-    Murderer-Contribution: Katil katkısı ▸ %number%
-    Detective-Contribution: Dedektif katkısı ▸ %number%
+  Statistics:
+    Wins: "Kazanmalar ▸ %number%"
+    Loses: "Kaybetmeler ▸ %number%"
+    Games-Played: "Oynanan Oyunlar ▸ %number%"
+    Level: "Seviye ▸ %number%"
+    Exp: "Deneyim ▸ %number%"
+    Next-Level-Exp: "Seviye atlamak için gereken deneyim ▸ %number%"
+    Kills: "Öldürmeler ▸ %number%"
+    Deaths: "Ölümler ▸ %number%"
+    Highest-Score: "En yüksek puan ▸ %number%"
+    Murderer-Pass: "Katil biletleri ▸ %number%"
+    Detective-Pass: "Dedektif biletleri ▸ %number%"
+    Murderer-Contribution: "Katil katkısı ▸ %number%"
+    Detective-Contribution: "Dedektif katkısı ▸ %number%"
   Invalid-Name: "%color_chat_issue%İstatistik ismi geçersiz! Lütfen: %value% yaz"
   Unknown-Player: "%color_chat_issue%Bilinmeyen Oyuncu"
-Do-Not-Edit: 
+# Don't edit it. But who's stopping you? It's your server!
+# Really, don't edit ;p
+# You edited it, huh? Next time hurt yourself!
+Do-Not-Edit:
   File-Version: 1
   Core-Version: 1
