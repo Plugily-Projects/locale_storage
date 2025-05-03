@@ -1,3 +1,14 @@
+###############################[IMPORTANT]###############################
+# 
+# Leave this file as it is! It is kinda an internal backup file!
+# 
+### !!!Do not change anything here!!!
+# 
+### THIS FILE AUTOMATICALLY REGENERATES ON SERVER RESTART
+# 
+# Needed when the external api isn't working
+# 
+###############################[IMPORTANT]###############################
 # You can translate TheBridge messages here.
 # Color codes (&) supported.
 # 
@@ -308,41 +319,6 @@ Kit:
       Locked: "&cKİLİTLİ!"
       Unlock-At-Level: "Açılacağı seviye %number%"
       Unlock-In-Store: "&bBunu mağazadan açabilirsin!"
-  Content: 
-    Bridge: 
-      Name: "&2Köprü"
-      Description: "&7Bildiğin gibi basit bir köprü kiti!"
-    Knight: 
-      Name: "&2Şövalye"
-      Description: "&7Bu tek şövalye kiti! Birçok insan bunun en kötü kit olduğunu düşünüyor! Kabul etmeliyim ki tamamen yanılıyorlar!"
-    Light-Tank: 
-      Name: "&2Hafif Tank"
-      Description: "&7Sen genç bir tanksın!"
-    Archer: 
-      Name: "&6Okçu"
-      Description: "&7Ekstra sayıda ok, deri zırh ve tahta kılıç ile başla. Okçular köylüler tarafından sevilir, bilsen iyi olur!"
-    Hardcore: 
-      Name: "&6Hardcore"
-      Description: "&7Neden hardcore olduğunu kendin göreceksin"
-    Healer: 
-      Name: "&6Doktor"
-      Description: "&7Doktor olmak ve sevilmek aynı şeyler. Takım arkadaşlarını iyileştirebilirsin."
-    Medium-Tank: 
-      Name: "&6Orta Tank"
-      Description: "&7Ekstra 6 kalp ile başla! Korkma! Kaybetmek için bolca kalbin var!"
-    Terminator: 
-      Name: "&6Terminatör"
-      Description: "&7Güçlerinle diğer oyuncuları kolayca öldür!"
-    Heavy-Tank: 
-      Name: "&bAğır Tank"
-      Description: "&7İki katı kalp ve demir zırh ile başla! Evet doğru duydun, ayakta kalan son oyuncu sen olacaksın!"
-    Wild-Naked: 
-      Name: "&bVahşi Çıplak"
-      Description: "&7Sen en büyük ustasın! Daha iyi demir bir kılıçla başlarsın!"
-      Cannot-Wear-Armor: "&cVahşi Çıplak kitini kullanırken zırh giyemezsin!"
-    Premium-Hardcore: 
-      Name: "&bPremium Hardcore Ustası"
-      Description: "&7OP kılıcınla çoğu oyuncuya tek at! Ama dikkatli ol. Bu kit sadece prolar için! Pro değilsen kullanayım deme!"
   No-Armor: "%color_chat_issue%%plugin_prefix% You can't wear armor with your kit!"
 # Bases
 Bases:
