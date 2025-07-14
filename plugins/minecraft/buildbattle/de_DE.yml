@@ -352,6 +352,8 @@ Menu:
         Item:
           Name: "&bBekomme Spielerköpfe"
           Lore: "Klicke um Köpfe zu bekommen"
+        Database:
+          Lore: "Get Head %value%"
       Floor:
         Item:
           Name: "&bWechlse Boden Material"
