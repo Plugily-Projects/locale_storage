@@ -1,1 +1,532 @@
-
+# Leave this file as it is!
+# 
+### !!!Do not change anything here!!!
+# 
+### THIS FILE AUTOMATICALLY REGENERATES ON SERVER RESTART
+# 
+# Needed as it can be possible that the api is not working
+# 
+# Color scheme
+Color:
+  Placeholder:
+    Value: "&b"
+    Number: "&b"
+    Player: "&a"
+    Other: "&b"
+  Chat:
+    Issue: "&c"
+    Messages: "&7"
+    Special-Char:
+      Contains: "[,],(,),{,},■,/,|,▸"
+      Before: "&8"
+# Command messages
+Commands:
+  Did-You-Mean: "%plugin_prefix% Erre gondoltál: /%value%?"
+  Command-Executed: "%plugin_prefix% Parancs sikeresen végrehajtva!"
+  Teleported-To-Lobby: "%plugin_prefix% Teleportálva a lobbyba!"
+  Removed-Game-Instance: "%color_chat_issue%%plugin_prefix% Játékpéldány sikeresen eltávolítva!"
+  No-Arena-Like-That: "%color_chat_issue%%plugin_prefix% Nincs ilyen azonosítóval rendelkező aréna!"
+  Look-At-Sign: "%color_chat_issue%%plugin_prefix% Egy táblára kell nézned a parancs végrehajtásához!"
+  Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Kérlek, írd be az aréna azonosítóját!"
+  Hold-Any-Item: "%color_chat_issue%%plugin_prefix% Bármelyik tárgyat birtokolnod kell!"
+  No-Free-Arenas: "%color_chat_issue%%plugin_prefix% Nincsenek szabad arénák!"
+  Only-By-Player: "%color_chat_issue%%plugin_prefix% Ezt a parancsot csak játékosként hajthatod végre!"
+  Not-Playing: "%color_chat_issue%%plugin_prefix% A parancs végrehajtásához játszanod kell!"
+  No-Permission: "%color_chat_issue%%plugin_prefix% Nincs jogosultságod ennek a parancsnak a használatára!"
+  Player-Not-Found: "%color_chat_issue%%plugin_prefix% A célzott játékos (%player%) nem létezik!"
+  Invalid-Location-Teleport: "%color_chat_issue%%plugin_prefix% A teleportálás helyszíne érvénytelen!"
+  Wrong-Usage: "%color_chat_issue%%plugin_prefix% Helytelen használat. Javítsa ki a következőt: %value%"
+  Theme-Blacklisted: "%color_chat_issue%%plugin_prefix% Ez a téma nem használható a játékban!"
+  Admin:
+    Adjust-Statistic: "%plugin_prefix% A %player% játékosának %value% statisztikája mostantól %number%!"
+    Reload-Success: "%plugin_prefix% Arénák újratöltve!"
+    Added-Plot: "%plugin_prefix% Hozzáadott cselekmény a(z) %arena_name% arénához"
+    List:
+      Header: "%plugin_name% arénák: Név Állapot Játékosok"
+      Format: "%arena_name% %arena_state_placeholder% %arena_players_size%/%arena_max_players%"
+      No-Arenas: "%color_chat_issue%%plugin_prefix% Nincsenek játékpéldányok!"
+    Spychat:
+      Toggled: "%plugin_prefix% Játékkém csevegés átállítva erre: %value%"
+  Main:
+    Header: "&6----------------{%plugin_name% parancsok}-----------"
+    Description:
+      - "&aJáték parancsok:"
+      - "&b/%plugin_short_command% stats: Megjeleníti a statisztikáidat!"
+      - "&b/%plugin_short_command% leave: Kilépés az aktuális arénából!"
+      - "&b/%plugin_short_command% join <aréna>: Csatlakozik a megadott arénához!"
+      - "&b/%plugin_short_command% top <statisztika>: Megjeleníti a top 10 játékost!"
+      - "&b/%plugin_short_command% randomjoin <solo/team>: Csatlakozz egy véletlenszerű arénához!"
+    Admin-Bonus-Description: "&b/%plugin_short_command%: Megjeleníti az összes adminisztrációs parancsot"
+    Footer: "&6-------------------------------------------------"
+# In-Game scoreboard messages
+# 
+# Please do not use more chars than the scoreboard can handle!
+# Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
+# Placeholders:
+# https://wiki.plugily.xyz/REPLACEWITHPROJECTNAME/placeholders/language
+Scoreboard:
+  Title: "&a&l%plugin_name%"
+  Theme-Unknown: "&c???"
+  Content:
+    Waiting:
+      - "■ Mód| %arena_type%"
+      - " "
+      - "■ Játékosok | %arena_players_size%"
+      - " "
+      - "■ Minimális játékosszám | %arena_min_players%"
+      - " "
+      - "   www.plugily.xyz"
+    Starting:
+      - "■ Mód | %arena_type%"
+      - " "
+      - "■ Elindul | %arena_time%"
+      - " "
+      - "■ Játékosok | %arena_players_size%"
+      - " "
+      - "■ Minimális játékosszám | %arena_min_players%"
+      - " "
+      - "   www.plugily.xyz"
+    # Contents of scoreboard while ingame
+    In-Game:
+      Classic:
+        - "■ Téma | %arena_theme%"
+        - "&f"
+        - "■ Mód | %arena_type%"
+        - "&f"
+        - "■ Hátralévő idő | %arena_time%"
+        - " "
+        - "■ Játékosok | %arena_players_size%"
+        - "&f"
+        - "■ Aréna | %arena_name%"
+        - " "
+        - "   www.plugily.xyz"
+      Teams:
+        - "■ Téma | %arena_theme%"
+        - "&f"
+        - "■ Mód | %arena_type%"
+        - "&f"
+        - "■ Hátralévő idő | %arena_time%"
+        - " "
+        - "■ Csapattárs | "
+        - "%arena_teammates%"
+        - "&f"
+        - "■ Aréna | %arena_name%"
+        - "   www.plugily.xyz"
+        - "   www.plugily.xyz"
+      Guess-The-Build:
+        - "■ Mód | %arena_type%"
+        - "&f"
+        - "■ Építő | %arena_builder%"
+        - " "
+        - "■ Vezetők |"
+        - "%arena_place_member_1% | %arena_place_points_1%"
+        - "%arena_place_member_2% | %arena_place_points_2%"
+        - "%arena_place_member_3% | %arena_place_points_3%"
+        - " "
+        - "■ Hátralévő idő | %arena_time%"
+        - " "
+        - "■ Téma | %arena_theme%"
+        - " "
+        - "   www.plugily.xyz"
+      Guess-The-Build-Waiting:
+        - "■ Mód | %arena_type%"
+        - "&f"
+        - "■ Vezetők |"
+        - "%arena_place_member_1% | %arena_place_points_1%"
+        - "%arena_place_member_2% | %arena_place_points_2%"
+        - "%arena_place_member_3% | %arena_place_points_3%"
+        - " "
+        - "■ Elindul | %arena_time%"
+        - " "
+        - "   www.plugily.xyz"
+    # Contents of scoreboard while state is ending
+    Ending:
+      Classic:
+        - "■ Mód | %arena_type%"
+        - "&f"
+        - "&cVÉGE A JÁTÉKNAK"
+        - " "
+        - "&f"
+        - "&f"
+        - " "
+        - "   www.plugily.xyz"
+      Guess-The-Build:
+        - "■ Mód | %arena_type%"
+        - "&f"
+        - "■ 1. %arena_place_member_1% | %arena_place_points_1%"
+        - "■ 2. %arena_place_member_2% | %arena_place_points_2%"
+        - "■ 3. %arena_place_member_3% | %arena_place_points_3%"
+        - "■ 4. %arena_place_member_4% | %arena_place_points_4%"
+        - "■ 5. %arena_place_member_5% | %arena_place_points_5%"
+        - "■ 6. %arena_place_member_6% | %arena_place_points_6%"
+        - "■ 7. %arena_place_member_7% | %arena_place_points_7%"
+        - "■ 8. %arena_place_member_8% | %arena_place_points_8%"
+        - "■ 9. %arena_place_member_9% | %arena_place_points_9%"
+        - "■ 10. %arena_place_member_10% | %arena_place_points_10%"
+        - "&f"
+        - "   www.plugily.xyz"
+    # Contents of scoreboard while state is restarting
+    Restarting:
+      - "■ Mód | %arena_type%"
+      - "&f"
+      - "&cJÁTÉK ÚJRAINDÍTÁSA"
+      - " "
+      - "&f"
+      - "&f"
+      - " "
+      - "   www.plugily.xyz"
+# Bossbar messages
+# 
+# Bossbar needs to be enabled on config.yml
+Bossbar:
+  Title: "%plugin_name% - www.plugily.xyz"
+  Content:
+    Waiting:
+      - "További játékosokra várunk..."
+    Starting:
+      - "Elindul: %arena_time%"
+    In-Game:
+      - "A %plugin_name_uppercase% lejátszása a PLUGILY.XYZ oldalon"
+      - "Nézd meg a bővítmény készítőjét a PLUGILY.XYZ oldalon"
+      - "Hátralévő idő - %arena_time%"
+    Guess-The-Build:
+      - "%arena_guess_word%"
+    Guess-The-Build-Waiting:
+      - "Várj, amíg a következő szót kiválasztják!"
+    Voting:
+      - "Szavazási hátralévő idő - %arena_time%"
+    Ending:
+      - "A játék véget ért! A PLUGILY.XYZ oldalon játszottál."
+    Restarting:
+      - "Újraindítjuk az arénát. Hamarosan áthelyezlek!"
+# In-Game Messages
+In-Game:
+  # Used in most game messages.
+  Plugin-Prefix: "(%plugin_name%)"
+  Game-Chat-Format: "[%user_statistic_level%] %player% | %message%"
+  You-Leveled-Up: "%plugin_prefix% Szintet léptél! Most a %number% szinten vagy!"
+  Commands-Blocked: "%color_chat_issue%%plugin_prefix% Parancsok végrehajtásához először ki kell lépned a játékból. Az egyetlen működő parancs a /%plugin_short_command% kilépés!"
+  Join:
+    Already-Playing: "%color_chat_issue%%plugin_prefix% Már vársz egy játékra! A következő paranccsal hagyhatod el a játékot: /%plugin_short_command% kilépés."
+    No-Permission: "%color_chat_issue%%plugin_prefix% Nincs %value% jogosultságod csatlakozni ehhez az arénához!"
+    Full-Game: "%color_chat_issue%%plugin_prefix% Nincs jogosultságod teljes értékű játékokhoz csatlakozni!"
+    No-Slots-For-Premium: "%color_chat_issue%%plugin_prefix% Ez a játék már tele van prémium játékosokkal! Sajnálom"
+    # Join cancelled via external plugin that uses the API of our plugin.
+    Cancelled-Via-API: "%color_chat_issue%%plugin_prefix% Nem csatlakozhatsz ehhez a játékhoz!"
+    As-Party-Member: "%color_chat_issue%%plugin_prefix% Csatlakoztál a(z) %arena_name% csapathoz, mert a csapat vezetője is csatlakozott!"
+    Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% Az Aréna még nincs konfigurálva! Lépj kapcsolatba a szervered személyzetével!"
+    Title: "20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%"
+  Death:
+    Tag: "&8Halott"
+    Screen: "%color_chat_issue%Meghaltál!"
+  Spectator:
+    Blocked: "%color_chat_issue%%plugin_prefix% A nézők letiltva vannak ebben az arénában."
+    You-Are-Spectator: "%plugin_prefix% Most már néző vagy! Most már repülhetsz!"
+    Spectator-Menu-Name: "%color_chat_issue%Élő játékosok listája"
+    Target-Player-Health: "%color_chat_issue%Egészség: %number%"
+    Spectator-Warning: "%plugin_prefix% Te egy néző vagy!"
+    Teleport: "%plugin_prefix% Teleportálva ide: %player%"
+    Menu:
+      Settings:
+        Status:
+          Enabled: "Engedélyezve"
+          Disabled: "Letiltva"
+        Changed-Speed: "Sebesség módosítva erre: %number%"
+        Auto-Teleport: "%value% automatikus teleportálás"
+        Target-Player:
+          Action-Bar: "%number% blokkok távol | Célpont: %player%"
+        Night-Vision: "%value% éjjellátás"
+        First-Person-Mode:
+          Action-Bar: "&eLOPAKODÁS &ctávozni! | Célpont %player%"
+          Title: "&eLOPAKODÁS, &cthogy távozni!"
+        Visibility: "%value% további nézőszámú játékosok"
+  Messages:
+    Join: "%plugin_prefix% %player% csatlakozott a játékhoz (%arena_players_size%/%arena_max_players%)!"
+    Leave: "%plugin_prefix% %player% kilépett a játékból (%arena_players_size%/%arena_max_players%)!"
+    Death: "%plugin_prefix% %player% meghalt!"
+    Lobby:
+      Start-In: "%plugin_prefix% A játék %arena_time% másodperc múlva kezdődik!"
+      Waiting-For-Players: "%plugin_prefix% Játékosokra várunk... Legalább %arena_min_players% játékosra van szükségünk az induláshoz."
+      Enough-Players-To-Start: "%plugin_prefix% Most már elég játékosunk van. A játék hamarosan kezdődik!"
+      Reduced-Time: "%plugin_prefix% Az idő %number% másodpercre csökkent"
+      Max-Players: "%plugin_prefix% Elértük a maximális játékosszámot ebben a körben. Rövidítsük le az időt!"
+      Game-Started: "%plugin_prefix% Elkezdődött a játék! Építs a tőled telhető legjobban!"
+      Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% %player% játékost eltávolítottuk a játékból, hogy helyet csináljunk a prémium játékosoknak!"
+      You-Were-Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% Kirúgtak a játékból, hogy helyet csináljanak egy prémium játékosnak!"
+      Not-Enough-Space-For-Party: "%color_chat_issue%%plugin_prefix% A csapatod nagyobb, mint a szabad helyek száma az %arena_name% arénában."
+    Game-End:
+      Summary:
+        - "&a&m--------------------------------------------------"
+        - "%plugin_name%"
+        - " "
+        - "%arena_summary%"
+        - "%arena_summary_player%"
+        - "%arena_summary_place_own%"
+        - " "
+        - "%arena_summary_place_list%"
+        - " "
+        - " "
+        - "&a&m--------------------------------------------------"
+      Placeholders:
+        Win: "&aMegnyerted a játékot"
+        Lose: "%color_chat_issue%Elvesztetted a játékot"
+        Players: "&cNincs már elég játékos. A BaseArena-t erőszakkal leállították!"
+        Place: "#%number% Hely - %value%"
+        Own: "&a#%number% lettél"
+        Winner: "&aA telek %arena_place_member_1% (%arena_place_points_1%) &anyert!"
+    Admin:
+      Set-Starting-In-To-0: "%plugin_prefix% Egy admin 0-ra állította a várakozási időt. A játék most kezdődik!"
+      Changed-Theme: "%plugin_prefix% Az adminisztrátor a témát erre módosította: %THEME%"
+    Plot: 
+      Added-Particle: "%plugin_prefix% Részecske sikeresen hozzáadva!"
+      Nobody: "%color_chat_issue%Senki"
+      Time-Left:
+        Title: "5,20,5;;%color_chat_issue%%arena_time% másodperc van hátra"
+        Chat: "%plugin_prefix% %arena_time% van hátra az építkezésig!"
+      Limit:
+        Entities: "%color_chat_issue%%plugin_prefix% Nem hozhatsz létre több entitást!"
+        Particles: "%color_chat_issue%%plugin_prefix% Nem hozhatsz létre több részecskét!"
+      Permission:
+        Particle: "%color_chat_issue%%plugin_prefix% Nincs jogosultságod ehhez a részecskéhez!"
+        Biome: "%color_chat_issue%%plugin_prefix% Nincs jogosultságod ehhez az életközösséghez!"
+        Outside: "%color_chat_issue%%plugin_prefix% Nem repülhetsz a telekeden kívülre!"
+        Floor-Item: "%color_chat_issue%%plugin_prefix% A kezedben lévő tárgyat nem szabad padlónak beállítani!"
+        Head: "%color_chat_issue%%plugin_prefix% Nincs jogosultságod ehhez a fejléchez!"
+      Selector:
+        Full: "A csapat megtelt"
+        Empty: "Csatlakozhatsz ehhez a csapathoz"
+        Inside: "A csapatod"
+        Name: "Telek - %number%"
+        Menu-Name: "Telek Menü"
+        Plot-Choose: "%plugin_prefix% Most a(z) %number% telekeden vagy"
+        Member: "%color_chat_issue%%plugin_prefix% Már tagja vagy!"
+      Voting:
+        Name: "%color_chat_issue%Szavazás"
+        Plot-Owner:
+          Chat: "%plugin_prefix% Telektulajdonos: %value%"
+          Title: "5,20,5;;Telektulajdonos: %value%"
+          Next: "%plugin_prefix% Most szavazok %value% telekre"
+          Was: "%plugin_prefix% A telek tulajdonosa %value% volt!"
+          Own: "%color_chat_issue%%plugin_prefix% Nem szavazhatsz a telekedre"
+        Success: "%plugin_prefix% Sikeresen megszavaztad a(z) %value% elemet!"
+        Winner: "5,20,5;%plugin_prefix% NYERTES: %value%"
+      Guess-The-Build:
+        Builder: "Építő: %arena_builder%"
+        Round: "Kör: %number%/%arena_gtb_rounds%"
+        Theme:
+          Chars: "%plugin_prefix% A téma %number% karakter hosszú"
+          Name: "%plugin_prefix% A téma a következő: %arena_theme%"
+          Was: "%plugin_prefix% A téma a következő volt: %value%!"
+          Title: "20,30,20;A téma a következő volt:;%value%!"
+          Guessed: "%plugin_prefix% Minden játékos kitalálta a témát!"
+          Being-Selected: "%plugin_prefix% Téma kiválasztása folyamatban..."
+          Guess:
+            Title: "5,20,5;Kezdj el tippelni!"
+            Points: "%plugin_prefix% +%number% pont!"
+            Guessed: "%plugin_prefix% %player% helyesen tippelted ki a témát!"
+            Cant-Talk: "%color_chat_issue%%plugin_prefix% Nem beszélhetsz, ha már sejted!"
+            Builder: "%color_chat_issue%%plugin_prefix% Építés közben nem lehet beszélni!"
+      NPC:
+        Name: "&aPadló változtató NPC"
+        Created: "%plugin_prefix% Padló NPC sikeresen létrehozva!"
+        Install-Citizens: "%color_chat_issue%%plugin_prefix% Kérjük, először telepítse a Citizens bővítményt az NPC-k létrehozásához!"
+# Menu messages
+Menu:
+  Permission: "%color_chat_issue%%plugin_prefix% Nincs jogosultságod ennek a menünek a használatára!"
+  Location: "Location: "
+  Option:
+    Inventory: "&bBeállítások menü"
+    Content:
+      Particle:
+        Inventory: "&bRészecskék menü"
+        Item:
+          Name: "&bRészletek kiválasztása"
+          Lore: "Kattintson a részecskék megtekintéséhez"
+          Remove:
+            Name: "%color_chat_issue%Részecskék eltávolítása"
+            Lore: "Jobb klikk a menü megnyitásához"
+        Removed: "%color_chat_issue%%plugin_prefix% A részecske sikeresen eltávolítva!"
+        Added: "%plugin_prefix% Részecske sikeresen hozzáadva!"
+      Heads:
+        Inventory: "&bJátékos fejek menü"
+        Item:
+          Name: "&bSzerezd meg a játékosok fejét"
+          Lore: "Kattints a fejek megtekintéséhez"
+        Database:
+          Lore: "Get Head %value%"
+      Floor:
+        Item:
+          Name: "Padló anyagának módosítása"
+          Lore: "Húzd ide a blokkot az emelet módosításához"
+        Changed: "%plugin_prefix% A padló anyaga megváltozott!"
+      Time:
+        Inventory: "&bIdő beállítása"
+        Item:
+          Name: "&bVáltoztasd meg a nyomtatási időt"
+          Lore: "Kattintson a jobb gombbal a menü megnyitásához"
+        Type:
+          World: "&eVilágidő"
+          Day: "Nap (1000 ticks)"
+          Noon: "Dél (6000 ticks)"
+          Sunset: "Naplemente (12000 ticks)"
+          Night: "Éjszaka (13000 ticks)"
+          MidNight: "Éjfél (18000 ticks)"
+          Sunrise: "Napkelte (23000 ticks)"
+        Changed: "%plugin_prefix% Az idő %value%-ra módosult"
+      Biome:
+        Inventory: "&bÉletrajz beállítása"
+        Item:
+          Name: "A terület életrajzának módosítása"
+          Lore: "Jobb klikk a menü megnyitásához"
+        Changed: "%plugin_prefix% Életrajz módosult"
+      Weather:
+        Inventory: "&bBeállított időjárás"
+        Item:
+          Name: "&bVáltoztasd meg az időjárást a területen"
+          Lore: "Kattintson a jobb gombbal a menü megnyitásához"
+        Type:
+          Downfall: "Bukás"
+          Clear: "Világos"
+        Changed: "%plugin_prefix% Az időjárás értéke %value% lett."
+      Banner:
+        Inventory:
+          Color: "&bVálasszon színt"
+          Layer: "Réteg hozzáadása"
+          Layer-Color: "Rétegszín hozzáadása"
+        Item:
+          Name: "&bReklámbanner készítő"
+          Lore: "Jobb klikk a menü megnyitásához"
+          Create:
+            Name: "Végső banner létrehozása"
+            Lore: "Jobb klikk a banner létrehozásához"
+      Reset:
+        Item:
+          Name: "&cTelek visszaállítása"
+          Lore: "&7A telek teljes visszaállítása, &c&lnem vonható vissza!"
+        Chat: "%color_chat_issue%%plugin_prefix% A telek teljesen visszaállítva!"
+  Theme:
+    Inventory: "Válassz témát?"
+    Item:
+      Name: "%value% - %number%%"
+      # use ; to move to next line
+      Lore: "Szavazz a(z) %value% témára;;Hátralévő idő: %arena_time%;Jelenlegi szavazatok: %number%%!;;Az élő szavazatok százalékos aránya;a jobb oldalon látható;sáv formájában.;;Kattints a szavazáshoz %value%!"
+    Vote:
+      Success: "%plugin_prefix% Sikeresen szavaztál %value%-ra!"
+      Already: "%color_chat_issue%%plugin_prefix% Már szavaztál erre a témára!"
+      Super:
+        Item:
+          Name: "Szuperszavazat"
+          Lore: "%user_statistic_super_votes% szuper szavazatod van;;Kattints a %value% szuper szavazatért!"
+        Used: "%plugin_prefix% A %player% játékos szuper szavazatot adott a(z) %value% témára! Most kezdődik..."
+    Guess-The-Build:
+      Inventory: "Válassz egy témát az elkészítéshez!"
+      Item:
+        Name: "%value%"
+        Lore: "%value%;;+%number% pontot kapsz, ha a játékos helyesen tippel;;Kattints a kiválasztáshoz!"
+      Difficulties:
+        Easy: "&aKÖNNYŰ"
+        Medium: "&eKÖZEPES"
+        Hard: "&cNEHÉZ"
+  Buttons:
+    Back:
+      Item:
+        Name: "%color_chat_issue%Vissza"
+        Lore: "Kattintson a visszalépéshez"
+# Sign messages
+Signs:
+  Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Kérlek, írd be az aréna nevét a második sorba!"
+  Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% Nem létezik ilyen nevű BaseArena!"
+  Created: "%plugin_prefix% Aláírás sikeresen létrehozva!"
+  Removed: "%plugin_prefix% Aláírás sikeresen eltávolítva!"
+  Lines:
+    - "%plugin_prefix%"
+    - "%arena_state_placeholder%"
+    - "%arena_name%"
+    - "[%arena_players_size%/%arena_max_players%]"
+# BaseArena Selector messages
+Arena-Selector:
+  Inventory-Title: "%plugin_short_command% ▸ BaseArena szelektor"
+  Item:
+    Name: "%arena_name%"
+    Lore:
+      - "%plugin_name% - %arena_name%"
+      - " "
+      - " "
+      - "  Online: %arena_players_size%/%arena_max_players%"
+      - "  Állam: %arena_state_placeholder%"
+      - " "
+      - " "
+      - "&aKattintson, hogy csatlakozzon ehhez az arénához"
+# Validator messages
+Validator:
+  Invalid-Arena-Configuration: "A(z) %arena_name% BaseArena konfigurációja érvénytelen! Hiányzó csomópont: %value%"
+  Instance-Started: "A BaseArena %arena_name% példány sikeresen elindult!"
+  No-Instances-Created: "Nincsenek létrehozott aréna példányok a konfigurációban!"
+# Placeholder messages inside plugin
+Placeholders:
+  Game-States:
+    Waiting: "&lJátékosokra várok..."
+    Starting: "&e&lElindul"
+    Full-Game: "&4&lFULL"
+    In-Game: "&lJátékban"
+    Ending: "&lVége"
+    Restarting: "&c&lÚjraindítás"
+  Motd:
+    Waiting: "&lCsatlakozhatsz ehhez a játékhoz..."
+    Starting: "&e&lElindul"
+    Full-Game: "&4&lFULL | Használjon másik szervert"
+    In-Game: "&lJátékban | Kattints a megtekintéshez"
+    Ending: "&lVége | A szerver bezár"
+    Restarting: "&c&lÚjraindítás"
+# Kit messages
+Kit:
+  Not-Unlocked: "%color_chat_issue%%plugin_prefix% Még nem oldottad fel a(z) %value% zárolását!"
+  Choose: "%plugin_prefix% A következőt választotta: %value%!"
+  Cooldown: "%color_chat_issue%%plugin_prefix% A készlet képessége még mindig hűlési időben van (%number%)!"
+  Menu:
+    Title: "Készletmenü"
+    Lore:
+      Unlocked: "&aFELOLDVA!"
+      Locked: "&cLEZÁRVA"
+      Unlock-At-Level: "%number% szinten feloldható"
+      Unlock-In-Store: "Oldd fel ezt az áruházban!"
+# Leaderboard messages
+# 
+# Hologram function need to be enabled on config.yml
+Leaderboard:
+  Type:
+    Hologram:
+      Header: "&6&lA legnépszerűbb %number% a %value% tartományban"
+      Format: "&e%number%. %player% (%value%)"
+      Empty-Format: "&e%number%. Üres (0)"
+    Chat:
+      Header: "&8+-------+ &b&lA STATISZTIKÁID &8+-------+"
+      Header-Other: "&8+---------+ &b%player% &bSTATISZTIKÁI &8+---------+"
+      Footer: "&8+-----------------------------+"
+      Format: "%value% ▸ &a%number%"
+      Top:
+        Type-Name: "%color_chat_issue%Kérjük, írja be a statisztika nevét a megtekintéshez!"
+        Header: "&8&m+----------------+ [&6 Top 10 &8&m] +----------------+"
+        Format: "&e#%number% %player% - %value% %user_statistic%"
+  Statistics:
+    Wins: "Győzelmek ▸ %number%"
+    Loses: "Veszteségek ▸ %number%"
+    Games-Played: "Játszott játékok ▸ %number%"
+    Level: "Szint ▸ %number%"
+    Exp: "Tapasztalat ▸ %number%"
+    Next-Level-Exp: "Tapasztalat a szintlépéshez ▸ %number%"
+    Highest-Win: "Legnagyobb győzelem (pontok) ▸ %number%"
+    Highest-Points: "Legmagasabb pontok ▸ %number%"
+    Total-Points-Earned: "Összes megszerzett pont ▸ %number%"
+    Blocks-Placed: "Elhelyezett blokkok ▸ %number%"
+    Blocks-Broken: "Törött blokkok ▸ %number%"
+    Particles-Placed: "Elhelyezett részecskék ▸ %number%"
+    Super-Votes: "Szuper szavazatok ▸ %number%"
+  Invalid-Name: "%color_chat_issue%A statisztika neve érvénytelen! Típus: %value%"
+  Unknown-Player: "%color_chat_issue%Ismeretlen játékos"
+# Don't edit it. But who's stopping you? It's your server!
+# Really, don't edit ;p
+# You edited it, huh? Next time hurt yourself!
+Do-Not-Edit:
+  File-Version: 1
+  Core-Version: 1
