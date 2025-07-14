@@ -1,5 +1,5 @@
 locales:
-  valid-version: 5.0.0
+  valid-version: 5.1.0
   register:
     'zh_CN':
       name: "Chinese (Simplified)"
@@ -22,9 +22,15 @@ locales:
     'de_DE':
       name: "German"
       original_name: "Deutsch"
+    'hu_HU':
+      name: "Hungarian"
+      original_name: "Magyar"
     'it_IT':
       name: "Italian"
       original_name: "Italiano"
+    'ja_JA':
+      name: "Japanese"
+      original_name: "晶"
     'fa_FA':
       name: "Persian"
       original_name: "Persian"
@@ -43,3 +49,6 @@ locales:
     'tr_TR':
       name: "Turkish"
       original_name: "Türk"
+    'uk_UA':
+      name: "Ukraine"
+      original_name: "Ukrainian"
