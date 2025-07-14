@@ -352,6 +352,8 @@ Menu:
         Item:
           Name: "&bZískat hlavy hráčů"
           Lore: "Klikni pro získání hlav"
+        Database:
+          Lore: "Get Head %value%"
       Floor:
         Item:
           Name: "&bZměnit podlahu"
