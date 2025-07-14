@@ -352,6 +352,8 @@ Menu:
         Item:
           Name: "&b获取玩家头颅"
           Lore: "点击获取头颅"
+        Database:
+          Lore: "Get Head %value%"
       Floor:
         Item:
           Name: "&b更改地板材质"
