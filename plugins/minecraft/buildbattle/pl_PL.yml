@@ -276,7 +276,7 @@ In-Game:
         Winner: "&aPlot with %arena_place_member_1% (%arena_place_points_1%) won!"
     Admin:
       Set-Starting-In-To-0: "%plugin_prefix% An admin set waiting time to 0. The game starts now!"
-      Changed-Theme: "%plugin_prefix% Admin has changed theme to %THEME%"
+      Changed-Theme: "%plugin_prefix% Admin has changed theme to %value%"
     Plot: 
       Added-Particle: "%plugin_prefix% Particle successfully added!"
       Nobody: "%color_chat_issue%Nobody"
@@ -352,6 +352,8 @@ Menu:
         Item:
           Name: "&bGet player heads"
           Lore: "Click to get heads"
+        Database:
+          Lore: "Get Head %value%"
       Floor:
         Item:
           Name: "&bChange floor material"
@@ -368,7 +370,7 @@ Menu:
           Noon: "Noon (6000 ticks)"
           Sunset: "Sunset (12000 ticks)"
           Night: "Night (13000 ticks)"
-          MidNight: "MidNight (18000 ticks)"
+          MidNight: "Midnight (18000 ticks)"
           Sunrise: "Sunrise (23000 ticks)"
         Changed: "%plugin_prefix% Time has been changed to %value%"
       Biome:
@@ -526,5 +528,5 @@ Leaderboard:
 # Really, don't edit ;p
 # You edited it, huh? Next time hurt yourself!
 Do-Not-Edit:
-  File-Version: 1
-  Core-Version: 1
+  File-Version: 2
+  Core-Version: 2
