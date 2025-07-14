@@ -273,8 +273,6 @@ In-Game:
         Players: "&cИгроков больше нет. BaseArena была принудительно остановлена!"
         Place: "#%number% Место - %value%"
         Own: "&aВы заняли #%number%"
-        # &aПостройка %arena_place_member_1% победила!
-        # Как-то так наверно? (Somehow so probably?)
         Winner: "&aУчастник %arena_place_member_1% (%arena_place_points_1%) победил!"
     Admin:
       Set-Starting-In-To-0: "%plugin_prefix% Администратор установил время ожидания на 0. Игра начинается сейчас!"
@@ -354,6 +352,8 @@ Menu:
         Item:
           Name: "&bПолучить головы игроков"
           Lore: "Нажмите для получения голов"
+        Database:
+          Lore: "Get Head %value%"
       Floor:
         Item:
           Name: "&bИзменить материал пола"
