@@ -352,6 +352,8 @@ Menu:
         Item:
           Name: "&bObter cabeças de jogador"
           Lore: "Clique para obter cabeças"
+        Database:
+          Lore: "Get Head %value%"
       Floor:
         Item:
           Name: "&bAlterar o material do piso"
