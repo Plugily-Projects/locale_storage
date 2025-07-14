@@ -352,6 +352,8 @@ Menu:
         Item:
           Name: "&bOyuncu kafalarını al"
           Lore: "Kafa almak için tıkla"
+        Database:
+          Lore: "Get Head %value%"
       Floor:
         Item:
           Name: "&bZemin materyalini değiştir"
