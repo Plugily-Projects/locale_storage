@@ -352,6 +352,8 @@ Menu:
         Item:
           Name: "&bGet player heads"
           Lore: "Click to get heads"
+        Database:
+          Lore: "Get Head %value%"
       Floor:
         Item:
           Name: "&bChange floor material"
