@@ -1,1 +1,532 @@
-
+# Leave this file as it is!
+# 
+### !!!Do not change anything here!!!
+# 
+### THIS FILE AUTOMATICALLY REGENERATES ON SERVER RESTART
+# 
+# Needed as it can be possible that the api is not working
+# 
+# Color scheme
+Color:
+  Placeholder:
+    Value: "&b"
+    Number: "&b"
+    Player: "&a"
+    Other: "&b"
+  Chat:
+    Issue: "&c"
+    Messages: "&7"
+    Special-Char:
+      Contains: "[,],(,),{,},■,/,|,▸"
+      Before: "&8"
+# Command messages
+Commands:
+  Did-You-Mean: "%plugin_prefix% もしかして  /%value% ?"
+  Command-Executed: "%plugin_prefix% コマンドを正しく実行できました！"
+  Teleported-To-Lobby: "%plugin_prefix% ロビーにテレポートします!"
+  Removed-Game-Instance: "%color_chat_issue%%plugin_prefix% ゲームインスタンスの削除に成功しました！"
+  No-Arena-Like-That: "%color_chat_issue%%plugin_prefix% そのようなIDのアリーナはありません！"
+  Look-At-Sign: "%color_chat_issue%%plugin_prefix% 看板に視点を合わせた状態でないとこのコマンドは実行できません！"
+  Type-Arena-Name: "%color_chat_issue%%plugin_prefix% アリーナIDを入力してください"
+  Hold-Any-Item: "%color_chat_issue%%plugin_prefix% アイテムを必ず持ってください！"
+  No-Free-Arenas: "%color_chat_issue%%plugin_prefix% 現在空いているアリーナは一つもありません！"
+  Only-By-Player: "%color_chat_issue%%plugin_prefix% このコマンドは、プレイヤーとしてのみ実行可能です"
+  Not-Playing: "%color_chat_issue%%plugin_prefix% このコマンドを実行するには、プレイ中である必要があります"
+  No-Permission: "%color_chat_issue%%plugin_prefix% このコマンドを使用する権限がありません!"
+  Player-Not-Found: "%color_chat_issue%%plugin_prefix%  %player% のようなプレイヤーはいません！"
+  Invalid-Location-Teleport: "%color_chat_issue%%plugin_prefix%  テレポート先の場所が無効です!"
+  Wrong-Usage: "%color_chat_issue%%plugin_prefix% 使い方が違います。正しくは: %value%"
+  Theme-Blacklisted: "%color_chat_issue%%plugin_prefix% このテーマはゲームで使用できません！"
+  Admin:
+    Adjust-Statistic: "%plugin_prefix% %player% の %value% が %number% になりました!"
+    Reload-Success: "%plugin_prefix% アリーナをリロードしました!"
+    Added-Plot: "%plugin_prefix%  %arena_name% アリーナにプロットが追加されました。"
+    List:
+      Header: "%plugin_name% arenas: 名前 状態 プレーヤー"
+      Format: "%arena_name% %arena_state_placeholder% %arena_players_size%/%arena_max_players%"
+      No-Arenas: "%color_chat_issue%%plugin_prefix% ゲームインスタンスがありません!"
+    Spychat:
+      Toggled: "%plugin_prefix% ゲームスパイチャットは %value% に切り替わりました。"
+  Main:
+    Header: "&6----------------{%plugin_name% コマンド}----------"
+    Description:
+      - "&a ゲームコマンド:"
+      - "&b/%plugin_short_command% 統計情報を表示する"
+      - "&b/%plugin_short_command% leave: 現在のアリーナを終了する"
+      - "&b/%plugin_short_command% join <arena>...指定されたアリーナに参加する"
+      - "&b/%plugin_short_command% top <statistic>: トップ10のプレイヤーを見る"
+      - "&b/%plugin_short_command% randomjoin <solo/team>: ランダムなアリーナに参加する"
+    Admin-Bonus-Description: "&b/%plugin_short_command% です：すべての管理者コマンドを表示する。"
+    Footer: "&6-------------------------------------------------"
+# In-Game scoreboard messages
+# 
+# Please do not use more chars than the scoreboard can handle!
+# Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
+# Placeholders:
+# https://wiki.plugily.xyz/REPLACEWITHPROJECTNAME/placeholders/language
+Scoreboard:
+  Title: "&a&l%plugin_name%"
+  Theme-Unknown: "&c???"
+  Content:
+    Waiting:
+      - "■ モード｜%arena_mode%"
+      - " "
+      - "■ プレーヤー数｜%arena_players_size%"
+      - " "
+      - "■ 最小プレイヤー数｜%arena_min_players%"
+      - " "
+      - "www.plugily.xyz"
+    Starting:
+      - "■ モード｜%arena_mode%"
+      - " "
+      - "■ 開始まで｜%arena_time%"
+      - " "
+      - "■ プレーヤー数｜%arena_players_size%"
+      - " "
+      - "■ 最小プレイヤー数｜%arena_min_players%"
+      - " "
+      - "www.plugily.xyz"
+    # Contents of scoreboard while ingame
+    In-Game:
+      Classic:
+        - "■ テーマ｜%arena_theme%"
+        - "&f"
+        - "■ モード｜%arena_type%"
+        - "&f"
+        - "■ 残り時間｜%arena_time%"
+        - " "
+        - "■ プレーヤー数｜%arena_players_size%"
+        - "&f"
+        - "■ アリーナ｜%arena_name%"
+        - " "
+        - "www.plugily.xyz"
+      Teams:
+        - "■ テーマ｜%arena_theme%"
+        - "&f"
+        - "■ モード｜%arena_type%"
+        - "&f"
+        - "■ 残り時間｜%arena_time%"
+        - " "
+        - "■ チームメイト｜%arena_teammates%"
+        - "%arena_teammates%"
+        - "&f"
+        - "■ アリーナ | %arena_name%"
+        - "   www.plugily.xyz"
+        - "   www.plugily.xyz"
+      Guess-The-Build:
+        - "■ モード｜%arena_type%"
+        - "&f"
+        - "■ アリーナ制作者 | %arena_builder%"
+        - " "
+        - "■ リーダー |"
+        - "%arena_place_member_1% | %arena_place_points_1%"
+        - "%arena_place_member_2% | %arena_place_points_2%"
+        - "%arena_place_member_3% | %arena_place_points_3%"
+        - " "
+        - "■ 残り時間| %arena_time%"
+        - " "
+        - "■ テーマ| %arena_theme%"
+        - " "
+        - "␣ ␣ ␣ www.plugily.xyz"
+      Guess-The-Build-Waiting:
+        - "■ モード | %arena_type%"
+        - "&f"
+        - "■ 建築士 |"
+        - "%arena_place_member_1% | %arena_place_points_1%"
+        - "%arena_place_member_2% | %arena_place_points_2%"
+        - "%arena_place_member_3% | %arena_place_points_3%"
+        - " "
+        - "■ 開始まで | %arena_time%"
+        - " "
+        - "   www.plugily.xyz"
+    # Contents of scoreboard while state is ending
+    Ending:
+      Classic:
+        - "■ モード | %arena_type%"
+        - "&f"
+        - "&cゲーム終了"
+        - " "
+        - "&f"
+        - "&f"
+        - " "
+        - "   www.plugily.xyz"
+      Guess-The-Build:
+        - "■ モード | %arena_type%"
+        - "&f"
+        - "■ 1. %arena_place_member_1% | %arena_place_points_1%"
+        - "■ 2. %arena_place_member_2% | %arena_place_points_2%"
+        - "■ 3. %arena_place_member_3% | %arena_place_points_3%"
+        - "■ 4. %arena_place_member_4% | %arena_place_points_4%"
+        - "■ 5. %arena_place_member_5% | %arena_place_points_5%"
+        - "■ 6. %arena_place_member_6% | %arena_place_points_6%"
+        - "■ 7. %arena_place_member_7% | %arena_place_points_7%"
+        - "■ 8. %arena_place_member_8% | %arena_place_points_8%"
+        - "■ 9. %arena_place_member_9% | %arena_place_points_9%"
+        - "■ 10. %arena_place_member_10% | %arena_place_points_10%"
+        - "&f"
+        - "   www.plugily.xyz"
+    # Contents of scoreboard while state is restarting
+    Restarting:
+      - "■ モード | %arena_type%"
+      - "&f"
+      - "&cゲームを再開します"
+      - " "
+      - "&f"
+      - "&f"
+      - " "
+      - "   www.plugily.xyz"
+# Bossbar messages
+# 
+# Bossbar needs to be enabled on config.yml
+Bossbar:
+  Title: "%plugin_name% - www.plugily.xyz"
+  Content:
+    Waiting:
+      - "プレイヤーを待っています..."
+    Starting:
+      - "開始まで: %arena_time%"
+    In-Game:
+      - "PLUGILY.XYZで%plugin_name_uppercase%をプレイ中"
+      - "PLUGILY.XYZでプラグイン作成者を確認してください"
+      - "残り時間 - %arena_time%"
+    Guess-The-Build:
+      - "%arena_guess_word%"
+    Guess-The-Build-Waiting:
+      - "次の単語が選択されるまでお待ちください！"
+    Voting:
+      - "投票残り時間 - %arena_time%"
+    Ending:
+      - "ゲームが終了しました！PLUGILY.XYZでプレイしていました"
+    Restarting:
+      - "アリーナを再開します。すぐに移動されます！"
+# In-Game Messages
+In-Game:
+  # Used in most game messages.
+  Plugin-Prefix: "(%plugin_name%)"
+  Game-Chat-Format: "[%user_statistic_level%] %player% | %message%"
+  You-Leveled-Up: "%plugin_prefix% レベルアップしました！レベル%number%になりました！"
+  Commands-Blocked: "%color_chat_issue%%plugin_prefix% コマンドを実行するには、最初にゲームを終了する必要があります。動作するコマンドは/%plugin_short_command% leaveのみです！"
+  Join:
+    Already-Playing: "%color_chat_issue%%plugin_prefix% すでにゲームのキューに登録されています！/%plugin_short_command% leaveでゲームを終了できます。"
+    No-Permission: "%color_chat_issue%%plugin_prefix% このアリーナに参加するには%value%の権限がありません！"
+    Full-Game: "%color_chat_issue%%plugin_prefix% 満員ゲームに参加する権限がありません！"
+    No-Slots-For-Premium: "%color_chat_issue%%plugin_prefix% このゲームはすでにプレミアムプレイヤーで満員です！申し訳ありません"
+    # Join cancelled via external plugin that uses the API of our plugin.
+    Cancelled-Via-API: "%color_chat_issue%%plugin_prefix% このゲームに参加できません！"
+    As-Party-Member: "%color_chat_issue%%plugin_prefix% パーティーリーダーが参加したため、%arena_name%に参加しました！"
+    Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% BaseArenaはまだ設定されていません！サーバーのスタッフに連絡してください！"
+    Title: "20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%"
+  Death:
+    Tag: "&8死亡"
+    Screen: "%color_chat_issue%死亡しました！"
+  Spectator:
+    Blocked: "%color_chat_issue%%plugin_prefix% このアリーナでは観戦者が無効になっています"
+    You-Are-Spectator: "%plugin_prefix% 観戦者になりました！飛行できます！"
+    Spectator-Menu-Name: "%color_chat_issue%生存者リスト"
+    Target-Player-Health: "%color_chat_issue%体力: %number%"
+    Spectator-Warning: "%plugin_prefix% 観戦者です！"
+    Teleport: "%plugin_prefix% %player%にテレポートしました"
+    Menu:
+      Settings:
+        Status:
+          Enabled: "有効"
+          Disabled: "無効"
+        Changed-Speed: "速度を%number%に変更しました"
+        Auto-Teleport: "%value% オートテレポート"
+        Target-Player:
+          Action-Bar: "%number%ブロック離れた場所 | ターゲット %player%"
+        Night-Vision: "%value% ナイトビジョン"
+        First-Person-Mode:
+          Action-Bar: "&e忍び足 &cで離脱！| ターゲット %player%"
+          Title: "&e忍び足 &cで離脱！"
+        Visibility: "%value% その他の観戦者プレイヤー"
+  Messages:
+    Join: "%plugin_prefix% %player%がゲームに参加しました (%arena_players_size%/%arena_max_players%)！"
+    Leave: "%plugin_prefix% %player%がゲームを終了しました (%arena_players_size%/%arena_max_players%)！"
+    Death: "%plugin_prefix% %player%が死亡しました！"
+    Lobby:
+      Start-In: "%plugin_prefix% ゲームは%arena_time%秒後に開始します！"
+      Waiting-For-Players: "%plugin_prefix% 参加者を待っています…開始するには最低%arena_min_players%人のプレイヤーが必要です。"
+      Enough-Players-To-Start: "%plugin_prefix% 参加者数が揃いました。ゲームはすぐに始まります！"
+      Reduced-Time: "%plugin_prefix% 残り時間が%number%秒に短縮されました"
+      Max-Players: "%plugin_prefix% このラウンドの最大参加者数に達しました。時間を短縮しましょう！"
+      Game-Started: "%plugin_prefix% ゲームが始まりました！最高の作品を作りましょう！"
+      Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% プレミアムプレイヤーのために%player%がゲームから削除されました！"
+      You-Were-Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% プレミアムプレイヤーのためにゲームから除外されました！"
+      Not-Enough-Space-For-Party: "%color_chat_issue%%plugin_prefix% あなたのパティーは、アリーナ%arena_name%の空き数よりも大きいです"
+    Game-End:
+      Summary:
+        - "&a&m--------------------------------------------------"
+        - "%plugin_name%"
+        - " "
+        - "%arena_summary%"
+        - "%arena_summary_player%"
+        - "%arena_summary_place_own%"
+        - " "
+        - "%arena_summary_place_list%"
+        - " "
+        - " "
+        - "&a&m--------------------------------------------------"
+      Placeholders:
+        Win: "&aゲームに勝利しました"
+        Lose: "%color_chat_issue%ゲームに敗北しました"
+        Players: "&cプレイヤー数が不足しました。BaseArenaは強制終了されました！"
+        Place: "#%number% 位 - %value%"
+        Own: "&a%number%位になりました"
+        Winner: "%arena_place_member_1% (%arena_place_points_1%)の勝利！"
+    Admin:
+      Set-Starting-In-To-0: "%plugin_prefix% 管理者が待機時間を0に設定しました。ゲームはすぐに始まります！"
+      Changed-Theme: "%plugin_prefix% 管理者がテーマを%THEME%に変更しました"
+    Plot: 
+      Added-Particle: "%plugin_prefix% パーティクルが正常に追加されました！"
+      Nobody: "%color_chat_issue%誰もいません"
+      Time-Left:
+        Title: "5,20,5;;%color_chat_issue%%arena_time%秒後"
+        Chat: "%plugin_prefix% あと%arena_time%秒で建築終了です！"
+      Limit:
+        Entities: "%color_chat_issue%%plugin_prefix% それ以上エンティティをスポーンできません！"
+        Particles: "%color_chat_issue%%plugin_prefix% それ以上パーティクルをスポーンできません！"
+      Permission:
+        Particle: "%color_chat_issue%%plugin_prefix% このパーティクルの権限がありません！"
+        Biome: "%color_chat_issue%%plugin_prefix% このバイオームの権限がありません！"
+        Outside: "%color_chat_issue%%plugin_prefix% 自分以外の区画に飛ぶことはできません！"
+        Floor-Item: "%color_chat_issue%%plugin_prefix% 手持ちのアイテムは床として設定できません！"
+        Head: "%color_chat_issue%%plugin_prefix% あなたにはこのヘッドの権限がありません！"
+      Selector:
+        Full: "チームがいっぱいです"
+        Empty: "このチームに参加できます"
+        Inside: "あなたのチーム"
+        Name: "区画 - %number%"
+        Menu-Name: "区画メニュー"
+        Plot-Choose: "%plugin_prefix% あなたは今%number%区画にいます"
+        Member: "%color_chat_issue%%plugin_prefix% すでにメンバーです！"
+      Voting:
+        Name: "%color_chat_issue%投票"
+        Plot-Owner:
+          Chat: "%plugin_prefix% 区画所有者：%value%"
+          Title: "5,20,5;;区画所有者：%value%"
+          Next: "%plugin_prefix% %value%さんの区画に投票中です！"
+          Was: "%plugin_prefix% 区画所有者は%value%でした！"
+          Own: "%color_chat_issue%%plugin_prefix% 自分の区画には投票できません！"
+        Success: "%plugin_prefix% %value%に投票しました！"
+        Winner: "5,20,5;%plugin_prefix% 勝者：%value%"
+      Guess-The-Build:
+        Builder: "建築者：%arena_builder%"
+        Round: "ラウンド：%number%/%arena_gtb_rounds%"
+        Theme:
+          Chars: "%plugin_prefix% テーマは%number%文字です"
+          Name: "%plugin_prefix% テーマは%arena_theme%です"
+          Was: "%plugin_prefix% テーマは：%value%でした！"
+          Title: "20,30,20;テーマは；%value%でした！"
+          Guessed: "%plugin_prefix% 全員がテーマを当てました！"
+          Being-Selected: "%plugin_prefix% テーマを選択中です..."
+          Guess:
+            Title: "5,20,5;予想開始！"
+            Points: "%plugin_prefix% +%number% ポイント！"
+            Guessed: "%plugin_prefix% %player% が正しくテーマを当てました！"
+            Cant-Talk: "%color_chat_issue%%plugin_prefix% すでに予想しているので話せません！"
+            Builder: "%color_chat_issue%%plugin_prefix% 建設中は話せません！"
+      NPC:
+        Name: "&a階層NPCを変更"
+        Created: "%plugin_prefix% 階層NPCを正常に作成しました！"
+        Install-Citizens: "%color_chat_issue%%plugin_prefix% NPCを作成するには、まずCitizensプラグインをインストールしてください！"
+# Menu messages
+Menu:
+  Permission: "%color_chat_issue%%plugin_prefix% このメニューを使用する権限がありません！"
+  Location: "場所："
+  Option:
+    Inventory: "&bオプションメニュー"
+    Content:
+      Particle:
+        Inventory: "&bパーティクルメニュー"
+        Item:
+          Name: "&bパーティクルを選択"
+          Lore: "クリックしてパーティクルを取得"
+          Remove:
+            Name: "%color_chat_issue%パーティクルを削除"
+            Lore: "右クリックでメニューを開く"
+        Removed: "%color_chat_issue%%plugin_prefix% パーティクルを正常に削除しました！"
+        Added: "%plugin_prefix% パーティクルが正常に追加されました！"
+      Heads:
+        Inventory: "&bプレイヤーの頭メニュー"
+        Item:
+          Name: "&bプレイヤーの頭を取得"
+          Lore: "クリックして頭を取得"
+        Database:
+          Lore: "Get Head %value%"
+      Floor:
+        Item:
+          Name: "&a床材を変更"
+          Lore: "床を変更するブロックをここにドラッグ"
+        Changed: "%plugin_prefix% 床材を変更しました！"
+      Time:
+        Inventory: "&b時間を設定"
+        Item:
+          Name: "&bプロットの時間を変更"
+          Lore: "右クリックでメニューを開く"
+        Type:
+          World: "&eワールド時間"
+          Day: "昼 (1000ティック)"
+          Noon: "正午 (6000ティック)"
+          Sunset: "日没 (12000ティック)"
+          Night: "夜 (13000ティック)"
+          MidNight: "深夜 (18000ティック)"
+          Sunrise: "日の出 (23000ティック)"
+        Changed: "%plugin_prefix% 時間が %value% に変更されました"
+      Biome:
+        Inventory: "&bバイオームを設定"
+        Item:
+          Name: "&bプロットのバイオームを変更"
+          Lore: "右クリックでメニューを開く"
+        Changed: "%plugin_prefix% バイオームが変更されました"
+      Weather:
+        Inventory: "&b天気を設定"
+        Item:
+          Name: "&bプロットの天気を変更"
+          Lore: "右クリックでメニューを開く"
+        Type:
+          Downfall: "降水"
+          Clear: "晴れ"
+        Changed: "%plugin_prefix% 天気が %value% に変更されました"
+      Banner:
+        Inventory:
+          Color: "&b色を選択"
+          Layer: "&bレイヤーを追加"
+          Layer-Color: "&bレイヤーの色を追加"
+        Item:
+          Name: "&bバナー作成"
+          Lore: "右クリックでメニューを開く"
+          Create:
+            Name: "&b最終バナーを作成"
+            Lore: "右クリックでこのバナーを作成"
+      Reset:
+        Item:
+          Name: "&cプロットをリセット"
+          Lore: "&7プロットを完全にリセットします、&c&l元に戻せません！"
+        Chat: "%color_chat_issue%%plugin_prefix% プロットを完全にリセットしました！"
+  Theme:
+    Inventory: "テーマを選択しますか？"
+    Item:
+      Name: "%value% - %number%%"
+      # use ; to move to next line
+      Lore: "テーマ %value% に投票！;残り時間：%arena_time%;現在の投票数：%number%%!;;ライブ投票の割合は;右側の棒グラフに表示されます。;;%value% に投票するにはクリック！"
+    Vote:
+      Success: "%plugin_prefix% %value% に正常に投票しました！"
+      Already: "%color_chat_issue%%plugin_prefix% このテーマにはすでに投票済みです！"
+      Super:
+        Item:
+          Name: "&bスーパー投票"
+          Lore: "スーパー投票が %user_statistic_super_votes% 回あります;;%value% にスーパー投票するにはクリック！"
+        Used: "%plugin_prefix% プレイヤー %player% がテーマ %value% にスーパー投票を使用しました！開始します..."
+    Guess-The-Build:
+      Inventory: "建築するテーマを選択してください！"
+      Item:
+        Name: "%value%"
+        Lore: "%value%;;プレイヤーが正しく当てると +%number% ポイント;;選択するにはクリック！"
+      Difficulties:
+        Easy: "&a簡単"
+        Medium: "&e普通"
+        Hard: "&c難しい"
+  Buttons:
+    Back:
+      Item:
+        Name: "%color_chat_issue%戻る"
+        Lore: "戻るにはクリックしてください"
+# Sign messages
+Signs:
+  Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% 2行目にアリーナ名を入力してください！"
+  Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% その名前のBaseArenaは存在しません！"
+  Created: "%plugin_prefix% 看板が正常に作成されました！"
+  Removed: "%plugin_prefix% 看板が正常に削除されました！"
+  Lines:
+    - "%plugin_prefix%"
+    - "%arena_state_placeholder%"
+    - "%arena_name%"
+    - "[%arena_players_size%/%arena_max_players%]"
+# BaseArena Selector messages
+Arena-Selector:
+  Inventory-Title: "%plugin_short_command% ▸ BaseArena セレクター"
+  Item:
+    Name: "%arena_name%"
+    Lore:
+      - "%plugin_name% - %arena_name%"
+      - " "
+      - " "
+      - "  オンライン: %arena_players_size%/%arena_max_players%"
+      - "  状態: %arena_state_placeholder%"
+      - " "
+      - " "
+      - "&aこのアリーナに参加するにはクリックしてください"
+# Validator messages
+Validator:
+  Invalid-Arena-Configuration: "BaseArena %arena_name% の設定が無効です！ノードがありません: %value%"
+  Instance-Started: "BaseArena %arena_name% インスタンスが正常に開始されました！"
+  No-Instances-Created: "設定に作成されたアリーナインスタンスがありません！"
+# Placeholder messages inside plugin
+Placeholders:
+  Game-States:
+    Waiting: "&lプレイヤーを待っています..."
+    Starting: "&e&l開始"
+    Full-Game: "&4&l満員"
+    In-Game: "&lゲーム中"
+    Ending: "&l終了"
+    Restarting: "&c&l再開"
+  Motd:
+    Waiting: "&lこのゲームに参加できます..."
+    Starting: "&e&l開始"
+    Full-Game: "&4&l満員 | 別のサーバーを使用してください"
+    In-Game: "&lゲーム中 | 観戦するにはクリックしてください"
+    Ending: "&l終了 | サーバーが閉じられています"
+    Restarting: "&c&l再開"
+# Kit messages
+Kit:
+  Not-Unlocked: "%color_chat_issue%%plugin_prefix% まだ %value% をアンロックしていません！"
+  Choose: "%plugin_prefix% 次を選択しました: %value%！"
+  Cooldown: "%color_chat_issue%%plugin_prefix% キットアビリティはまだクールダウン中です (%number%)！"
+  Menu:
+    Title: "キットメニュー"
+    Lore:
+      Unlocked: "&aアンロック済み！"
+      Locked: "&cロック済み！"
+      Unlock-At-Level: "%number% レベルでアンロックされます"
+      Unlock-In-Store: "&bストアでこれをアンロック！"
+# Leaderboard messages
+# 
+# Hologram function need to be enabled on config.yml
+Leaderboard:
+  Type:
+    Hologram:
+      Header: "&6&l%value% でトップ %number%"
+      Format: "&e%number%. %player% (%value%)"
+      Empty-Format: "&e%number%. 空き (0)"
+    Chat:
+      Header: "&8+-------+ &b&lあなたの統計 &8+-------+ "
+      Header-Other: "&8+---------+ &b%player% の統計 &b &8+---------+"
+      Footer: "&8+-----------------------------+"
+      Format: "%value% ▸ &a%number%"
+      Top:
+        Type-Name: "%color_chat_issue%表示する統計名を入力してください！"
+        Header: "&8&m+----------------+ [&6 トップ10 &8&m] +----------------+"
+        Format: "&e#%number% %player% - %value% %user_statistic%"
+  Statistics:
+    Wins: "勝利 ▸ %number%"
+    Loses: "敗北 ▸ %number%"
+    Games-Played: "プレイしたゲーム ▸ %number%"
+    Level: "レベル ▸ %number%"
+    Exp: "経験値 ▸ %number%"
+    Next-Level-Exp: "レベルアップまでの経験値 ▸ %number%"
+    Highest-Win: "最高勝利 (ポイント) ▸ %number%"
+    Highest-Points: "最高ポイント ▸ %number%"
+    Total-Points-Earned: "獲得した合計ポイント ▸ %number%"
+    Blocks-Placed: "設置したブロック ▸ %number%"
+    Blocks-Broken: "破壊したブロック ▸ %number%"
+    Particles-Placed: "設置したパーティクル ▸ %number%"
+    Super-Votes: "スーパー投票 ▸ %number%"
+  Invalid-Name: "%color_chat_issue%統計の名前が無効です！タイプ: %value%"
+  Unknown-Player: "%color_chat_issue%不明なプレイヤー"
+# Don't edit it. But who's stopping you? It's your server!
+# Really, don't edit ;p
+# You edited it, huh? Next time hurt yourself!
+Do-Not-Edit:
+  File-Version: 1
+  Core-Version: 1
