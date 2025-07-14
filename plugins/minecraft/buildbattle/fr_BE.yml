@@ -42,7 +42,6 @@ Commands:
     Reload-Success: "%plugin_prefix% Arènes rechargé !"
     Added-Plot: "%plugin_prefix% Ajout du plot pour l'arène %arena_name%"
     List:
-      # à changer par quelque chose de plus français
       Header: "%plugin_name% arènes : nommez les joueurs de l'état"
       Format: "%arena_name% %arena_state_placeholder% %arena_players_size%/%arena_max_players%"
       No-Arenas: "%color_chat_issue%%plugin_prefix% Il n'y a pas d'instances de jeu !"
@@ -353,6 +352,8 @@ Menu:
         Item:
           Name: "&bObtenir des têtes de joueur"
           Lore: "Cliquez pour obtenir des têtes"
+        Database:
+          Lore: "Get Head %value%"
       Floor:
         Item:
           Name: "&bChanger le matériau du sol"
@@ -384,7 +385,6 @@ Menu:
           Name: "&bModifier la météo du terrain"
           Lore: "Clic droit pour ouvrir le menu"
         Type:
-          # not sure about that
           Downfall: "Chute"
           Clear: "Clair"
         Changed: "%plugin_prefix% La météo a été modifiée"
