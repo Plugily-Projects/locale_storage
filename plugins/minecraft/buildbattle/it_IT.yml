@@ -352,6 +352,8 @@ Menu:
         Item:
           Name: "&bOttieni la testa"
           Lore: "Fare clic per ottenere teste"
+        Database:
+          Lore: "Get Head %value%"
       Floor:
         Item:
           Name: "&bCambia il materiale del pavimento"
