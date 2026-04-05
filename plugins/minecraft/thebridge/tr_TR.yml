@@ -259,7 +259,7 @@ In-Game:
         Reset: "Raund sıfırlanırken haraket etme devre dışı"
         Run: "&7Biraz puan kazan"
         Title: "5,20,5;Raund sıfırlama - Haraket edemezsin;%number%"
-        Start: "%plugin_prefix% Prepare to jump into the opponents portal"
+        Start: "%plugin_prefix% Rakip portalına atlamaya hazır olun"
       Damage: "%player%  &c♥ %value%"
 # Sign messages
 Signs:
@@ -319,7 +319,7 @@ Kit:
       Locked: "&cKİLİTLİ!"
       Unlock-At-Level: "Açılacağı seviye %number%"
       Unlock-In-Store: "&bBunu mağazadan açabilirsin!"
-  No-Armor: "%color_chat_issue%%plugin_prefix% You can't wear armor with your kit!"
+  No-Armor: "%color_chat_issue%%plugin_prefix% Zırhınızı kitinizle giyemezsiniz!"
 # Bases
 Bases:
   Team:

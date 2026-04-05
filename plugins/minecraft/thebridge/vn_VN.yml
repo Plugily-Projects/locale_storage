@@ -259,7 +259,7 @@ In-Game:
         Reset: "%plugin_prefix% Chuyển động bị vô hiệu hóa khi đặt lại vòng"
         Run: "%plugin_prefix% &aGO! &7Hãy nhảy vào cổng!!"
         Title: "5,20,5;Bạn không thể di chuyển - Bắt đầu trong...;%number%"
-        Start: "%plugin_prefix% Prepare to jump into the opponents portal"
+        Start: "%plugin_prefix% Chuẩn bị nhảy vào cổng của đối thủ"
       Damage: "%player%  &c♥ %value%"
 # Sign messages
 Signs:
@@ -319,7 +319,7 @@ Kit:
       Locked: "&cKHÓA!"
       Unlock-At-Level: "Mở khóa ở cấp %number%"
       Unlock-In-Store: "&bMở khóa cái này trong cửa hàng!"
-  No-Armor: "%color_chat_issue%%plugin_prefix% You can't wear armor with your kit!"
+  No-Armor: "%color_chat_issue%%plugin_prefix% Bạn không thể mang giáp khi dùng kit này!"
 # Bases
 Bases:
   Team:

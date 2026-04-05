@@ -313,12 +313,12 @@ Kit:
   Choose: "%plugin_prefix% You have chosen: %value%!"
   Cooldown: "%color_chat_issue%%plugin_prefix% Kit ability still on cooldown (%number%)!"
   Menu:
-    Title: "Kit Menu"
+    Title: "Меню набора"
     Lore:
       Unlocked: "&aUNLOCKED!"
       Locked: "&cLOCKED!"
-      Unlock-At-Level: "Unlocks at level %number%"
-      Unlock-In-Store: "&bUnlock this in the store!"
+      Unlock-At-Level: "Разблокируется на уровне %number%"
+      Unlock-In-Store: "&bРазблокируйте это в магазине!"
   No-Armor: "%color_chat_issue%%plugin_prefix% You can't wear armor with your kit!"
 # Bases
 Bases:
@@ -327,7 +327,7 @@ Bases:
     Empty: "&aНажмите, чтобы присоединится"
     Inside: "&aВаша команда"
     Name: "&aКоманда &8- %base%"
-    Menu: "Base Menu"
+    Menu: "Базовое меню"
     Choose: "%plugin_prefix% You are now on base %base%"
     Member: "&7Вы уже являетесь его участником!"
   Colors:
@@ -373,7 +373,7 @@ Leaderboard:
     Wins: "Wins ▸ %number%"
     Loses: "Loses ▸ %number%"
     Games-Played: "Games Played ▸ %number%"
-    Level: "Level ▸ %number%"
+    Level: "Уровень ▸ %number%"
     Exp: "Experience ▸ %number%"
     Next-Level-Exp: "Exp to Level Up ▸ %number%"
     Score: "Score ▸ %number%"

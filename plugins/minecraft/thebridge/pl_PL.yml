@@ -326,7 +326,6 @@ Bases:
     Full: "Drużyna jest pełna"
     Empty: "Możesz dołączyć do tej drużyny"
     Inside: "Twoja drużyna"
-    # In what context is "Base" used? As in "base that you have to protect" or "Base - basic. Example: Your base salary is xxxx and with..." It matters
     Name: "Drużyna - %base%"
     Menu: "Wybór drużyny"
     Choose: "Jesteś teraz w drużynie %base%"

@@ -259,7 +259,7 @@ In-Game:
         Reset: "Pohyb je do obnovení kola zakázán"
         Run: "&7Získej nějaké body"
         Title: "5,20,5;Reset kola - Nemůžeš se hýbat;%number%"
-        Start: "%plugin_prefix% Prepare to jump into the opponents portal"
+        Start: "%plugin_prefix% Připravte se skočit do portálu protivníka"
       Damage: "%player%  &c♥ %value%"
 # Sign messages
 Signs:
@@ -319,7 +319,7 @@ Kit:
       Locked: "&cZAMČENO!"
       Unlock-At-Level: "Odemkne se na úrovni %number%"
       Unlock-In-Store: "&bOdemkni v obchodě!"
-  No-Armor: "%color_chat_issue%%plugin_prefix% You can't wear armor with your kit!"
+  No-Armor: "%color_chat_issue%%plugin_prefix% Nemůžete nosit brnění se svým kitem!"
 # Bases
 Bases:
   Team:
@@ -386,4 +386,4 @@ Leaderboard:
 # You edited it, huh? Next time hurt yourself!
 Do-Not-Edit:
   File-Version: 1
-  Core-Version: 1
+  Core-Version: 2

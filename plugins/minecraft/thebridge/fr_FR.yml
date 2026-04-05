@@ -178,7 +178,6 @@ In-Game:
     No-Slots-For-Premium: "%color_chat_issue%%plugin_prefix% This game is already full of premium players! Sorry"
     # Join cancelled via external plugin that uses the API of our plugin.
     Cancelled-Via-API: "%color_chat_issue%%plugin_prefix% You can't join this game!"
-    # je ne sais plus si c'est rejoins ou rejoint
     As-Party-Member: "%color_chat_issue%%plugin_prefix% You joined %arena_name% because the party leader joined it!"
     Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% Arena is not configured yet! Contact your server's staff!"
     Title: "20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%"
@@ -207,9 +206,7 @@ In-Game:
           Title: "&eSNEAK &cto leave!"
         Visibility: "%value% other spectator players"
   Messages:
-    # soit partie soit jeu
     Join: "%plugin_prefix% %player% joined the game (%arena_players_size%/%arena_max_players%)!"
-    # soit partie soit jeu
     Leave: "%plugin_prefix% %player% left the game (%arena_players_size%/%arena_max_players%)!"
     Death: "%plugin_prefix% %player% died!"
     Lobby:
@@ -257,7 +254,6 @@ In-Game:
         Scored:
           Title: "5,20,5;%arena_base_color_formatted% %player%;jumped into %value%"
         Hologram: "%arena_base_color_formatted%;Jump into this portal!"
-        # je n'ai pas vraiment compris j'ai utiliser deepl pour savoir
         Out: "%color_chat_issue%%plugin_prefix% This base is already out!"
       Blocked:
         Reset: "%plugin_prefix% Movement is disabled while round reset"

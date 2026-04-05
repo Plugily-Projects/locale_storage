@@ -35,42 +35,42 @@ Color:
       Before: "&8"
 # Command messages
 Commands:
-  Did-You-Mean: "%plugin_prefix% Quisiste decir /%value%?"
-  Command-Executed: "%plugin_prefix% Comando ejecutado satisfactoriamente!"
-  Teleported-To-Lobby: "%plugin_prefix% Enviado al lobby!"
-  Removed-Game-Instance: "%color_chat_issue%%plugin_prefix% Instancia de juego removida correctamente!"
-  No-Arena-Like-That: "%color_chat_issue%%plugin_prefix% No existe una Arena con el ID mencionado!"
-  Look-At-Sign: "%color_chat_issue%%plugin_prefix% Necesitas ver el letrero/cartel para realizar este comando!"
-  Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Por favor escribe el ID de la arena!"
-  Hold-Any-Item: "%color_chat_issue%%plugin_prefix% Debes sostener algún objeto/item!"
-  No-Free-Arenas: "%color_chat_issue%%plugin_prefix% No se encuentran arenas disponibles/libres!"
-  Only-By-Player: "%color_chat_issue%%plugin_prefix% Este comando solo puede ser ejecutado por un jugador!"
-  Not-Playing: "%color_chat_issue%%plugin_prefix% Debes estar en juego para ejecutar este comando!"
-  No-Permission: "%color_chat_issue%%plugin_prefix% No tienes permiso para ejecutar este comando!"
-  Player-Not-Found: "%color_chat_issue%%plugin_prefix% El jugador mencionado: %player%, no existe o no ha sido encontrado !"
-  Invalid-Location-Teleport: "%color_chat_issue%%plugin_prefix% La ubicación mencionada es invalida!"
-  Wrong-Usage: "%color_chat_issue%%plugin_prefix% Uso incorrecto. Uso posible %value%"
+  Did-You-Mean: "%plugin_prefix% querias decir /%value%?"
+  Command-Executed: "%plugin_prefix% Comando ejecutado exitosamente!"
+  Teleported-To-Lobby: "%plugin_prefix% Teletransportado a la lobby!"
+  Removed-Game-Instance: "%color_chat_issue%%plugin_prefix% Instancia removida exitosamente!"
+  No-Arena-Like-That: "%color_chat_issue%%plugin_prefix% No Hay arenas con ese  ID!"
+  Look-At-Sign: "%color_chat_issue%%plugin_prefix% Tienes que mirar un cartel!"
+  Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Por favor escriba el ID!"
+  Hold-Any-Item: "%color_chat_issue%%plugin_prefix% Tienes que sostener un item!"
+  No-Free-Arenas: "%color_chat_issue%%plugin_prefix% No hay arenas libres!"
+  Only-By-Player: "%color_chat_issue%%plugin_prefix% You can execute this command only as player!"
+  Not-Playing: "%color_chat_issue%%plugin_prefix% Debes estar jugando para ejecutar este comando!"
+  No-Permission: "%color_chat_issue%%plugin_prefix% No tienes permisos para usar este comando!"
+  Player-Not-Found: "%color_chat_issue%%plugin_prefix% Jugador  %player% no existe !"
+  Invalid-Location-Teleport: "%color_chat_issue%%plugin_prefix% Ubicación inválida!"
+  Wrong-Usage: "%color_chat_issue%%plugin_prefix% mal uso . haz  %value%"
   Admin:
-    Adjust-Statistic: "%plugin_prefix% La estadística %value% de %player% es ahora de %number%!"
-    Reload-Success: "%plugin_prefix% Las Arenas han sido recargadas!"
+    Adjust-Statistic: "%plugin_prefix% Stats %value% de %player% ahora es %number%!"
+    Reload-Success: "%plugin_prefix% Arenas Recargadas!"
     List:
-      Header: "%plugin_name% Arenas: Nombre Estado Jugadores"
+      Header: "%plugin_name% arenas: nombre estado jugadores"
       Format: "%arena_name% %arena_state_placeholder% %arena_players_size%/%arena_max_players%"
-      No-Arenas: "%color_chat_issue%%plugin_prefix% No hay Arenas!"
+      No-Arenas: "%color_chat_issue%%plugin_prefix% no hay instancias de juego!"
     Spychat:
-      Toggled: "%plugin_prefix% El valor de la función Spychat se a establecido en  %value%"
+      Toggled: "%plugin_prefix% Soy chat de juego cambiado a %value%"
   Main:
     Header: "&6----------------{%plugin_name% comandos}----------"
     Description:
       - "&aComandos de juego:"
-      - "&b/%plugin_short_command% stats: Muestra tus estadisticas!"
-      - "&b/%plugin_short_command% leave: Abandonas la arena actual!"
-      - "&b/%plugin_short_command% join <arena>: Te unes a una arena especifica!"
-      - "&b/%plugin_short_command% top <statistic>: Muestra el Top 10 de jugadores!"
-      - "&b/%plugin_short_command% selectkit: Seleccionas un nuevo kit!"
-      - "&b/%plugin_short_command% selectbase: Seleccionas tu base en el juego!"
-      - "&b/%plugin_short_command% randomjoin: Te unes a una Arena aleatoria!"
-    Admin-Bonus-Description: "&b/%plugin_short_command%: Muestra todos los comandos de Administrador"
+      - "&b/%plugin_short_command% stats: Muestra tus stats!"
+      - "&b/%plugin_short_command% leave: Salir de la arena actual !"
+      - "&b/%plugin_short_command% join <arena>: Únete a una arena específica !"
+      - "&b/%plugin_short_command% top <statistic>: muestra a los top 10!"
+      - "&b/%plugin_short_command% selectkit: Selecciona tu kit!"
+      - "&b/%plugin_short_command% selectbase: Seleciona tu base dentro del juego!"
+      - "&b/%plugin_short_command% randomjoin: Únete a una arena random!"
+    Admin-Bonus-Description: "&b/%plugin_short_command%: Muestra los comandos de administrador"
     Footer: "&6-------------------------------------------------"
 # In-Game scoreboard messages
 # 
@@ -84,7 +84,7 @@ Scoreboard:
     # Alternative format with numbers instead of symbols would be %scoreboard_base_color_formatted% (%scoreboard_base_players_size%) &e%scoreboard_base_yourself% %scoreboard_base_points%
     Format: "%scoreboard_base_color_formatted% (%scoreboard_base_players_size%) &e%scoreboard_base_yourself% %scoreboard_base_points_formatted%"
     Not-Inside: "--"
-    Inside: "(Tú)"
+    Inside: "(tu)"
   Mode:
     POINTS:
       Got: "&a●"
@@ -97,18 +97,18 @@ Scoreboard:
       - " "
       - "■ Jugadores | %arena_players_size%"
       - " "
-      - "■ Mínimo de jugadores | %arena_min_players%"
+      - "■ Jugadores minimos | %arena_min_players%"
       - " "
-      - "   www.plugily.xyz"
+      - "   &k www.plugily.xyz"
     Starting:
       - " "
-      - "■ Iniciando en | %arena_time%"
+      - "■ Comenzando en| %arena_time%"
       - " "
       - "■ Jugadores | %arena_players_size%"
       - " "
-      - "■ Mínimo de jugadores | %arena_min_players%"
+      - "■ Jugadores minimos | %arena_min_players%"
       - " "
-      - "   www.plugily.xyz"
+      - "   &k www.plugily.xyz"
     # Contents of scoreboard while ingame
     In-Game:
       - "&f"
@@ -116,25 +116,25 @@ Scoreboard:
       - "■ Bases | "
       - "■ %scoreboard_bases_list%"
       - " "
-      - "■ Asesinatos | &e%user_statistic_local_kills%"
+      - "■ Kills | &e%user_statistic_local_kills%"
       - "■ Muertes | &e%user_statistic_local_deaths%"
       - "■ Puntaje | &e%user_statistic_local_scored_points%"
       - " "
       - "■ Modo | &e%arena_option_mode%"
-      - "■ Reinicio de Arena (bloques) en %arena_option_reset_blocks_in% rondas"
+      - "■ Reinicio de bloques en  %arena_option_reset_blocks_in% rounds"
       - "&f"
       - " "
-      - "   www.plugily.xyz"
+      - "   &k www.plugily.xyz"
     # Contents of scoreboard while state is ending
     Ending:
       - "&f"
       - "&f"
-      - "&cJUEGO TERMINADO"
+      - "&cJUEGO FINALIZADO"
       - " "
       - "&f"
       - "&f"
       - " "
-      - "   www.plugily.xyz"
+      - "   &k www.plugily.xyz"
     # Contents of scoreboard while state is restarting
     Restarting:
       - "&f"
@@ -144,81 +144,81 @@ Scoreboard:
       - "&f"
       - "&f"
       - " "
-      - "   www.plugily.xyz"
+      - "   &k www.plugily.xyz"
 # Bossbar messages
 # 
 # Bossbar needs to be enabled on config.yml
 Bossbar:
-  Title: "%plugin_name% - www.plugily.xyz"
+  Title: "%plugin_name% - &k www.plugily.xyz"
   Content:
     Waiting:
-      - "Esperando por mas Jugadores..."
+      - "Esperando por más jugadores..."
     Starting:
-      - "Iniciando en: %arena_time%"
+      - "Comenzando en: %arena_time%"
     In-Game:
-      - "Jugando %plugin_name_uppercase% en PLUGILY.XYZ"
-      - "Check the plugin creator out on PLUGILY.XYZ"
-      - "Puntos actuales de la base %base_color_formatted%"
+      - "Jugando %plugin_name_uppercase% en vanguard"
+      - "creador del plugin PLUGILY.XYZ"
+      - "Puntaje obtenido %user_statistic_local_scored_points%"
       - "Tu base %arena_base_color_formatted%"
     Ending:
-      - "El juego a terminado! estas jugando en PLUGILY.XYZ"
+      - " Juego finalizado!"
     Restarting:
-      - "Reiniciando la arena. Seras movido pronto!"
+      - "Reiniciando arena. Seras transportado pronto!"
 # In-Game Messages
 In-Game:
   # Used in most game messages.
   Plugin-Prefix: "(%plugin_name%)"
   Game-Chat-Format: "[%user_statistic_level%][%kit%] %player% | %message%"
-  You-Leveled-Up: "%plugin_prefix% Has subido de nivel! ahora eres nivel %number%!"
-  Commands-Blocked: "%color_chat_issue%%plugin_prefix% Debes abandonar el juego primero antes de ejecutar el comando. El único comando funcional es /%plugin_short_command% leave!"
+  You-Leveled-Up: "%plugin_prefix% Subiste de nivel, ahora eres nivel  %number%!"
+  Commands-Blocked: "%color_chat_issue%%plugin_prefix% Primero tienes que salirte del juego para usar comandos. El unico comando disponible es /%plugin_short_command% leave!"
   Join:
-    Already-Playing: "%color_chat_issue%%plugin_prefix% Tu estas en la fila de espera del juego! Puedes abandonar el juego con /%plugin_short_command% leave."
-    No-Permission: "%color_chat_issue%%plugin_prefix% Tu no tienes %value% permiso para unirte a esta arena!"
-    Full-Game: "%color_chat_issue%%plugin_prefix% Tu no tienes permiso de unirte a juegos llenos!"
-    No-Slots-For-Premium: "%color_chat_issue%%plugin_prefix% Este juego es lleno de jugadores premium! sorry"
+    Already-Playing: "%color_chat_issue%%plugin_prefix% Ya estas en cola para jugar ! Puedes salirte con /%plugin_short_command% leave."
+    No-Permission: "%color_chat_issue%%plugin_prefix% No tienes %value% permiso para unirte a esta arena!"
+    Full-Game: "%color_chat_issue%%plugin_prefix% You don't have the permission to join full games!"
+    No-Slots-For-Premium: "%color_chat_issue%%plugin_prefix% This game is already full of premium players! Sorry"
     # Join cancelled via external plugin that uses the API of our plugin.
-    Cancelled-Via-API: "%color_chat_issue%%plugin_prefix% Tu no te puedes unir a este juego!"
-    As-Party-Member: "%color_chat_issue%%plugin_prefix% You joined %arena_name% because the party leader joined it!"
-    Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% Esta arena no esta configurada aun! Contacta a un staff!"
+    Cancelled-Via-API: "%color_chat_issue%%plugin_prefix% No puedes unirte a este juego!"
+    As-Party-Member: "%color_chat_issue%%plugin_prefix% te uniste a la %arena_name% porque el lider se unio!"
+    Arena-Not-Configured: "%color_chat_issue%%plugin_prefix% Arena is not configured yet! Contact your server's staff!"
     Title: "20,30,20;%arena_name%;%arena_players_size%/%arena_max_players%"
   Death:
     Tag: "&8Muerto"
-    Screen: "%color_chat_issue%Estas Muerto!"
+    Screen: "%color_chat_issue%Moriste!"
   Spectator:
-    Blocked: "%color_chat_issue%%plugin_prefix% Los espectadores estan deshabilitados para esta arena."
-    You-Are-Spectator: "%plugin_prefix% Ahora eres espectador! Puedes volaaar!"
-    Spectator-Menu-Name: "%color_chat_issue%Lista de jugadores vivos"
-    Target-Player-Health: "%color_chat_issue%Salud: %number%"
-    Spectator-Warning: "%plugin_prefix% Ahora eres espectador!"
-    Teleport: "%plugin_prefix% Enviado con %player%"
+    Blocked: "%color_chat_issue%%plugin_prefix% Spectators are disabled for this arena"
+    You-Are-Spectator: "%plugin_prefix% Eres espectador! Puedes volar!"
+    Spectator-Menu-Name: "%color_chat_issue%Alive players list"
+    Target-Player-Health: "%color_chat_issue%Health: %number%"
+    Spectator-Warning: "%plugin_prefix% Eres espectador!"
+    Teleport: "%plugin_prefix% Teletransportado a %player%"
     Menu:
       Settings:
         Status:
-          Enabled: "Activo"
-          Disabled: "Desactivado"
-        Changed-Speed: "La velocidad se ha establecido en %number%"
-        Auto-Teleport: "%value% Auto Envio(teleport)"
+          Enabled: "Enabled"
+          Disabled: "Disabled"
+        Changed-Speed: "Changed Speed to %number%"
+        Auto-Teleport: "%value% auto teleport"
         Target-Player:
-          Action-Bar: "A %number% blocks de distancia | Objetivo %player%"
-        Night-Vision: "%value% vision nocturna"
+          Action-Bar: "%number% blocks away | Target %player%"
+        Night-Vision: "%value% night vision"
         First-Person-Mode:
-          Action-Bar: "&eAgachate &cpara salir! | Objetivo %player%"
-          Title: "&eAgachate &cpara salir!"
-        Visibility: "%value% otros espectadores"
+          Action-Bar: "&eSNEAK &cto leave! | Target %player%"
+          Title: "&eSNEAK &cto leave!"
+        Visibility: "%value% other spectator players"
   Messages:
-    Join: "%plugin_prefix% %player% se integro al juego (%arena_players_size%/%arena_max_players%)!"
-    Leave: "%plugin_prefix% %player% abandono el juego (%arena_players_size%/%arena_max_players%)!"
-    Death: "%plugin_prefix% %player% murio!"
+    Join: "%plugin_prefix% %player% joined the game (%arena_players_size%/%arena_max_players%)!"
+    Leave: "%plugin_prefix% %player% left the game (%arena_players_size%/%arena_max_players%)!"
+    Death: "%plugin_prefix% %player% Murio!"
     Lobby:
-      Start-In: "%plugin_prefix% El juego inicia en %arena_time% segundos!"
-      Waiting-For-Players: "%plugin_prefix% Esperando por jugadores... Se necesitan al menos %arena_min_players% jugadores para iniciar."
-      Enough-Players-To-Start: "%plugin_prefix% Ya tenemos suficientes jugadores. El juego comenzara pronto!"
-      Reduced-Time: "%plugin_prefix% El tiempo se ha reducido a %number% segundos"
-      Max-Players: "%plugin_prefix% Llegamos al máximo de jugadores para esta ronda. ¡Acortemos el tiempo!"
-      Game-Started: "%plugin_prefix% El juego a comenzado!"
-      Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% %player%  fue eliminado del juego para crear un lugar para los jugadores premium!"
-      You-Were-Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% %player%  fue expulsado del juego para crear un lugar para los jugadores premium!"
-      Not-Enough-Space-For-Party: "%color_chat_issue%%plugin_prefix% Tu grupo es más grande que los lugares libres en la arena %arena_name%"
+      Start-In: "%plugin_prefix% The game starts in %arena_time% seconds!"
+      Waiting-For-Players: "%plugin_prefix% Esperando jugadores ... Necesitamos almenos %arena_min_players% players to start."
+      Enough-Players-To-Start: "%plugin_prefix% Hay suficientes jugadores. El juego comenzara en breve!"
+      Reduced-Time: "%plugin_prefix% The time got reduced to %number% seconds"
+      Max-Players: "%plugin_prefix% We reached max players for this round. Let's shorten the time!"
+      Game-Started: "%plugin_prefix% The game has started!"
+      Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% %player% got removed from the game to make a place for premium players!"
+      You-Were-Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% You got kicked out of the game to make a place for a premium player!"
+      Not-Enough-Space-For-Party: "%color_chat_issue%%plugin_prefix% Your party is bigger than free places on the arena %arena_name%"
     Game-End:
       Summary:
         - "&a&m--------------------------------------------------"
@@ -228,45 +228,45 @@ In-Game:
         - "%arena_summary_player%"
         - " "
         - " "
-        - "Miembros de la base"
+        - "Base members"
         - "%arena_summary_winner_base_players% (%arena_summary_base_scored%)"
         - " "
         - "&a&m--------------------------------------------------"
       Placeholders:
-        Win: "&aGanaste del juego!"
-        Lose: "%color_chat_issue%Perdiste el juego"
-        Players: "&cYa no hay suficientes jugadores.¡Arena detuvo la fuerza!"
+        Win: "&aYou won the game"
+        Lose: "%color_chat_issue%You lost the game"
+        Players: "&cThere are not enough players anymore. Arena got force stopped!"
         Base:
-          HEARTS: "%arena_summary_winner_base% sobrevivio satisfactoriamente!"
-          POINTS: "%arena_summary_winner_base% obtuvo la mayor cantidad de puntos!"
+          HEARTS: "%arena_summary_winner_base% survived successfully!"
+          POINTS: "%arena_summary_winner_base% got the most points!"
     Admin:
-      Set-Starting-In-To-0: "%plugin_prefix% Un admin cambio el tiempo a 0. El juego iniciara ahora!"
+      Set-Starting-In-To-0: "%plugin_prefix% An admin set waiting time to 0. The game starts now!"
     Arena:
-      Cooldown: "[%value%&8&l] &6%number% segundos"
-      Death: "%plugin_prefix% %player% muerto por %value%!"
+      Cooldown: "[%value%&8&l] &6%number% seconds"
+      Death: "%plugin_prefix% %player% died by %value%!"
       Death-Own: "&b%player% &7Muerto!"
-      Killed: "%plugin_prefix% &aTu asesinaste a %player%"
-      Build-Break: "%color_chat_issue%%plugin_prefix% No puedes contruir ni romper aqui!"
-      Time-Left: "5,20,5;%color_chat_issue% El tiempo se agota;%arena_time% segundos restantes"
+      Killed: "%plugin_prefix% &aYou killed %player%"
+      Build-Break: "%color_chat_issue%%plugin_prefix% You can not build and break here"
+      Time-Left: "5,20,5;%color_chat_issue%Time is running out;%arena_time% seconds left"
       Portal:
-        Own: "%color_chat_issue%%plugin_prefix% Ese es tu propio portal"
-        Opponent: "%plugin_prefix% %arena_base_color_formatted% %player% salto dentro %value%!"
+        Own: "%color_chat_issue%%plugin_prefix% That is your own portal"
+        Opponent: "%plugin_prefix% %arena_base_color_formatted% %player% jumped into %value%!"
         Scored:
-          Title: "5,20,5;%arena_base_color_formatted% %player%;Salto dentro %value%"
-        Hologram: "%arena_base_color_formatted%, Salta dentro de este portal!"
-        Out: "%color_chat_issue%%plugin_prefix% ¡Esta base ya está disponible!"
+          Title: "5,20,5;%arena_base_color_formatted% %player%;jumped into %value%"
+        Hologram: "%arena_base_color_formatted%;Jump into this portal!"
+        Out: "%color_chat_issue%%plugin_prefix% This base is already out!"
       Blocked:
-        Reset: "%plugin_prefix% El movimiento está deshabilitado mientras se reinicia la ronda."
-        Run: "%plugin_prefix% &aGO! &7L¡¡Saltemos a los portales!!"
-        Title: "5,20,5;No te muevas - Iniciamos en...;%number%"
-        Start: "%plugin_prefix% Prepare to jump into the opponents portal"
+        Reset: "%plugin_prefix% Movement is disabled while round reset"
+        Run: "%plugin_prefix% &aGO! &7Lets jump into the portals!!"
+        Title: "5,20,5;Start in...;%number%"
+        Start: "%plugin_prefix% Preparate para saltar en el portal rival"
       Damage: "%player%  &c♥ %value%"
 # Sign messages
 Signs:
-  Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Por favor escribe el nombre de la arena en la segunda linea!"
-  Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% La Arena con ese nombre no existe!"
-  Created: "%plugin_prefix% Se ha creado el Cartel/Letrero de forma satisfactoria!"
-  Removed: "%plugin_prefix% Se ha removido el Cartel/Letrero de forma satisfactoria!"
+  Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Please type arena name in second line!"
+  Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% Arena with that name doesn't exists!"
+  Created: "%plugin_prefix% Sign created successfully!"
+  Removed: "%plugin_prefix% Sign successfully removed!"
   Lines:
     - "%plugin_prefix%"
     - "%arena_state_placeholder%"
@@ -274,7 +274,7 @@ Signs:
     - "[%arena_players_size%/%arena_max_players%]"
 # Arena Selector messages
 Arena-Selector:
-  Inventory-Title: "%plugin_short_command% ▸ Selecciona la Arena..."
+  Inventory-Title: "%plugin_short_command% ▸ Arena selector"
   Item:
     Name: "%arena_name%"
     Lore:
@@ -282,54 +282,54 @@ Arena-Selector:
       - " "
       - " "
       - "  Online: %arena_players_size%/%arena_max_players%"
-      - "  Estado: %arena_state_placeholder%"
+      - "  State: %arena_state_placeholder%"
       - " "
       - " "
-      - "&aHaz click para unirte!"
+      - "&aClick to join this arena"
 # Validator messages
 Validator:
-  Invalid-Arena-Configuration: "Arena %arena_name% tiene una configuracion incorrecta! Node Perdido: %value%"
-  Instance-Started: "Arena %arena_name% inicializada correctamente!"
-  No-Instances-Created: "No se han creado Arenas en la configuración!"
+  Invalid-Arena-Configuration: "Arena %arena_name% has invalid configuration! Missing node: %value%"
+  Instance-Started: "Arena %arena_name% instance successfully started!"
+  No-Instances-Created: "There are no arena instances created in configuration!"
 # Placeholder messages inside plugin
 Placeholders:
   Game-States:
-    Waiting: "&lEsperando por jugadores..."
-    Starting: "&e&"
-    Full-Game: "&4&lLLENO"
-    In-Game: "&lEn Juego"
-    Ending: "&lFinalizando"
-    Restarting: "&c&lReiniciando"
+    Waiting: "&lWaiting for players..."
+    Starting: "&e&lStarting"
+    Full-Game: "&4&lFULL"
+    In-Game: "&lIn-game"
+    Ending: "&lEnding"
+    Restarting: "&c&lRestarting"
   Motd:
-    Waiting: "&lTu te puedes unir a este juego..."
-    Starting: "&e&lIniciando"
-    Full-Game: "&4&lLleno | Use otro Servidor"
-    In-Game: "&lEn Juego | Click para espectar la partida"
-    Ending: "&lFinalizando | El servidor se cierra"
+    Waiting: "&lPuedes unirte a este juego..."
+    Starting: "&e&lComenzando"
+    Full-Game: "&4&lLLENO | Usa otro servidor"
+    In-Game: "&lEn-juego | Click para espectear"
+    Ending: "&lFinalizando | cerrando server"
     Restarting: "&c&lReiniciando"
 # Kit messages
 Kit:
-  Not-Unlocked: "%color_chat_issue%%plugin_prefix% Tu no has desbloqueado %value% aun!"
-  Choose: "%plugin_prefix% has elegido: %value%!"
-  Cooldown: "%color_chat_issue%%plugin_prefix% La habilidad del kit esta en reposo (%number%)!"
+  Not-Unlocked: "%color_chat_issue%%plugin_prefix% l%value% sin desbloquear aun"
+  Choose: "%plugin_prefix% elegiste: %value%!"
+  Cooldown: "%color_chat_issue%%plugin_prefix% Kit ability still on cooldown (%number%)!"
   Menu:
-    Title: "Menu de Kits"
+    Title: "Kit Menu"
     Lore:
-      Unlocked: "&aDESBLOQUEADO"
-      Locked: "&cBLOQUEADO"
-      Unlock-At-Level: "Desbloqueas al nivel %number%"
-      Unlock-In-Store: "&bDesbloquea esto en la tienda!"
-  No-Armor: "%color_chat_issue%%plugin_prefix% You can't wear armor with your kit!"
+      Unlocked: "&aDesbloqueado!"
+      Locked: "&cLOCKED!"
+      Unlock-At-Level: "Unlocks at level %number%"
+      Unlock-In-Store: "&bUnlock this in the store!"
+  No-Armor: "%color_chat_issue%%plugin_prefix% No puedes usar armadura con tu kit!"
 # Bases
 Bases:
   Team:
-    Full: "Este equipo esta lleno!"
-    Empty: "Tu te puedes unir a este equipo"
-    Inside: "Tu equipo"
+    Full: "Team is full"
+    Empty: "You can join this team"
+    Inside: "Your team"
     Name: "Base - %base%"
-    Menu: "Menu de la Base"
-    Choose: "Tu ahora esta con la base %base%"
-    Member: "Tu ya eres miembro!"
+    Menu: "Base Menu"
+    Choose: "%plugin_prefix% You are now on base %base%"
+    Member: "%color_chat_issue%%plugin_prefix% Ya eres miembro!"
   Colors:
     BLACK: "&0BLACK"
     DARK_BLUE: "&1DARK_BLUE"
@@ -357,33 +357,33 @@ Bases:
 Leaderboard:
   Type:
     Hologram:
-      Header: "&6&lTop %number% en %value%"
+      Header: "&6&lTop %number% in %value%"
       Format: "&e%number%. %player% (%value%)"
-      Empty-Format: "&e%number%. vacio(0)"
+      Empty-Format: "&e%number%. Empty (0)"
     Chat:
-      Header: "&8+-------+ &a&lTus Datos &8+-------+"
-      Header-Other: "&8+---------+ &aDatos de &b%player% &8+---------+"
+      Header: "&8+-------+ &a&lTUS STATS &8+-------+"
+      Header-Other: "&8+---------+ &aSTATS DE &b%player% &8+---------+"
       Footer: "&8+-----------------------------+"
       Format: "%value% ▸ &a%number%"
       Top:
-        Type-Name: "%color_chat_issue% Por favor escribe el nombre de la estadística para verlo!"
+        Type-Name: "%color_chat_issue%Por favor escribe el nombre de la estadistica para ver!"
         Header: "&8&m+----------------+ [&6 Top 10 &8&m] +----------------+"
         Format: "&e#%number% %player% - %value% %user_statistic%"
   Statistics:
-    Wins: "Victorias  ▸ %number%"
-    Loses: "Derrotas  ▸ %number%"
-    Games-Played: "Juegos jugados  ▸ %number%"
-    Level: "Nivel  ▸ %number%"
-    Exp: "Experiencia  ▸ %number%"
-    Next-Level-Exp: "Exp faltante(levelup)  ▸ %number%"
-    Score: "Puntaje  ▸ %number%"
-    Kills: "Asesinatos  ▸ %number%"
+    Wins: "Ganadas ▸ %number%"
+    Loses: "Perdidas ▸ %number%"
+    Games-Played: "Juegos jugados▸ %number%"
+    Level: "Nivel ▸ %number%"
+    Exp: "Experiencia ▸ %number%"
+    Next-Level-Exp: "Exp para subir de nivel▸ %number%"
+    Score: "Puntaje ▸ %number%"
+    Kills: "Kills ▸ %number%"
     Deaths: "Muertes  ▸ %number%"
-  Invalid-Name: "%color_chat_issue% El nombre de esta estadistica es incorrecto! Usa: %value%"
-  Unknown-Player: "%color_chat_issue%Jugador desconocido"
+  Invalid-Name: "%color_chat_issue%Name of statistic is invalid! Type: %value%"
+  Unknown-Player: "%color_chat_issue%Unknown Player"
 # Don't edit it. But who's stopping you? It's your server!
 # Really, don't edit ;p
 # You edited it, huh? Next time hurt yourself!
 Do-Not-Edit:
   File-Version: 1
-  Core-Version: 1
+  Core-Version: 2
