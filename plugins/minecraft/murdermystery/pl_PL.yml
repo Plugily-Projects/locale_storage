@@ -43,15 +43,15 @@ Commands:
     Adjust-Statistic: "%plugin_prefix% Statystyka %value% gracza %player% została ustawiona na %number%!"
     Reload-Success: "%plugin_prefix% Areny przeładowane!"
     List:
-      Header: "%plugin_name% Areny: Nazwa Stan Gracze"
+      Header: "%plugin_name% Areny:"
       Format: "%arena_name% %arena_state_placeholder% %arena_players_size%/%arena_max_players%"
-      No-Arenas: "%color_chat_issue%%plugin_prefix% Brak instacji gry!"
+      No-Arenas: "%color_chat_issue%%plugin_prefix% Brak instancji gry!"
     Spychat:
       Toggled: "%plugin_prefix% Podgląd czatu gry został ustawiony na %value%"
   Main:
     Header: "&6----------------{%plugin_name% Komendy gry}----------"
     Description:
-      - "&aGame commands:"
+      - "&aKomendy:"
       - "&b/%plugin_short_command% stats: Pokazuje twoje statystyki!"
       - "&b/%plugin_short_command% leave: Opuszcza arene na której się znajdujesz!"
       - "&b/%plugin_short_command% join <arena>: Dołącza do wybranej areny!"

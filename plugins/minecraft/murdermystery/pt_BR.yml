@@ -99,28 +99,28 @@ Scoreboard:
       - " "
       - "■ Cargo | %arena_player_role%"
       - "&f"
-      - "Inocentes | %arena_innocents%"
+      - "Inocentes | %arena_innocent_size%"
       - "&f"
       - "■ Tempo | %arena_time%"
       - " "
       - "■ %arena_detective_status%"
       - " "
-      - "■ Pontuação | %USERSTATISTC SCORE%"
+      - "■ Pontuação | %user_statistic_local_score%"
       - " "
       - "   www.plugily.xyz"
     In-Game-Murderer:
       - " "
       - "■ Cargo | %arena_player_role%"
       - "&f"
-      - "■ Inocentes | %arena_innocents%"
+      - "■ Inocentes | %arena_innocent_size%"
       - "&f"
       - "■ Tempo | %arena_time%"
       - " "
       - "%arena_detective_status%"
       - " "
-      - "■ Mortes | %USER STATISTIC LOCAL KILLS%"
+      - "■ Mortes | %user_statistic_local_kills%"
       - " "
-      - "■ Pontuação | %USERSTATISTC SCORE%"
+      - "■ Pontuação | %user_statistic_local_score%"
       - " "
       - "   www.plugily.xyz"
     # Contents of scoreboard while state is ending
@@ -165,7 +165,7 @@ Bossbar:
 In-Game:
   # Used in most game messages.
   Plugin-Prefix: "(%plugin_name%)"
-  Game-Chat-Format: "[%user_statistic_level%][%kit%] %player% | %message%"
+  Game-Chat-Format: "[%user_statistic_level%] %player% | %message%"
   You-Leveled-Up: "%plugin_prefix% Você subiu de nível! Você agora é nível %number%!"
   Commands-Blocked: "%color_chat_issue%%plugin_prefix% Você tem que sair do jogo primeiro para executar comandos. O único comando que funciona é /%plugin_short_command% leave!"
   Join:
@@ -185,7 +185,7 @@ In-Game:
     Blocked: "%color_chat_issue%%plugin_prefix% Os espectadores estão desabilitados para esta arena"
     You-Are-Spectator: "%plugin_prefix% Você agora é um espectador! Você pode voar agora!"
     Spectator-Menu-Name: "%color_chat_issue%Lista de jogadores vivos"
-    Target-Player-Health: "%color_chat_issue%Saúde: %number% | Cargo: %arena_role%"
+    Target-Player-Health: "%color_chat_issue%Saúde: %number% | Cargo: %arena_player_role%"
     Spectator-Warning: "%plugin_prefix% Você é um espectador!"
     Teleport: "%plugin_prefix% Teleportado para %player%"
     Menu:
@@ -224,8 +224,8 @@ In-Game:
         - "%arena_summary%"
         - "%arena_summary_player%"
         - " "
-        - "&7Detetive: %detective%"
-        - "&7Assassino: %murderer% (%murderer_kills%)"
+        - "&7Detetive: %arena_detective_list%"
+        - "&7Assassino: %arena_murderer_list% (%arena_murderer_kills%)"
         - "&7Herói: %hero%"
         - " "
         - "&a&m--------------------------------------------------"
@@ -247,8 +247,8 @@ In-Game:
       Set-Starting-In-To-0: "%plugin_prefix% Um administrador definiu o tempo de espera para 0. O jogo começa agora!"
     Arena:
       Chances:
-        Action-Bar: "&cChance de Assassino: %murderer_chance% &a- &bChance de Detetive: %detective_chance%"
-      Cooldown: "&8&l[%progress%&8&l] &6%time% segundos"
+        Action-Bar: "&cChance de Assassino: %arena_murderer_chance% &a- &bChance de Detetive: %arena_detective_chance%"
+      Cooldown: "&8&l[%value%&8&l] &6%number% segundos"
       Locator:
         Bow: "Localizador de Arco"
         Innocent: "Localizador de Inocente"
@@ -260,7 +260,7 @@ In-Game:
             Name: "Seja assassino"
             Lore:
               - "Custa 1 passe de assassino"
-              - "Você tem %amount%"
+              - "Você tem %number%"
           Detective:
             Name: "Seja detetive"
             Lore:
@@ -292,12 +292,12 @@ In-Game:
             Win: "por vencer o jogo"
             Detective: "por %number% inocentes sobreviverem"
         Sword:
-          Soon: "O Assassino pega sua espada em %time% segundos!"
+          Soon: "O Assassino pega sua espada em %number% segundos!"
         Special-Blocks:
           Cauldron:
             Potion: "Por favor, beba sua poção atual!"
             Hologram: "Poção Misteriosa - &e1 Ouro"
-          Not-Enough-Gold: "Você precisa de %amount% ouro para isso!"
+          Not-Enough-Gold: "Você precisa de %number% ouro para isso!"
           Pray:
             Hologram: "Clique para presentear;Puxe a alavanca para orar"
             Chat: "Você orou para o desenvolvedor! Espero que ele ouça isso!"
