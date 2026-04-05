@@ -1,34 +1,4 @@
-#    You can translate Village Defense messages here.
-#             Color codes (&) supported.
-#
-#             Use \n to make new line
-#             Some messages like item
-#        descriptions don't support new lines
-# they are wrapped every 40 characters automatically
-#
-#     Some messages support their own placeholders
-#            like %player%, %kit% etc.
-
-#
-# Color scheme
-#
-Color:
-  Placeholder:
-    Value: "&a"
-    Number: "&a"
-    Player: "&b"
-    Other: "&a"
-  Chat:
-    Issue: "&c"
-    Messages: "&7"
-    Special-Char:
-      Contains: "[,],(,),{,},■,/,|,▸"
-      Before: "&8"
-
-
-#
 # Command messages
-#
 Commands:
   Did-You-Mean: "%plugin_prefix% Did you mean /%value%?"
   Command-Executed: "%plugin_prefix% Command successfully executed!"
@@ -48,7 +18,7 @@ Commands:
   Admin:
     Added-Orbs: "Added orbs to the player!"
     Received-Orbs: "You received %number% orbs!"
-    Adjust-Statistic: "%plugin_prefix% Statistic %value% of %player% is now %number%!"
+    Added-Level: "&7Added level to the player!"
     Reload-Success: "%plugin_prefix% Arenas reloaded!"
     List:
       Header: "%plugin_name% arenas: Name State Players"
@@ -56,6 +26,7 @@ Commands:
       No-Arenas: "%color_chat_issue%%plugin_prefix% There are no game instances!"
     Spychat:
       Toggled: "%plugin_prefix% Game spy chat toggled to %value%"
+    Adjust-Statistic: "%plugin_prefix% Statistic %value% of %player% is now %number%!"
   Main:
     Header: "&6----------------{%plugin_name% commands}----------"
     Description:
@@ -67,11 +38,8 @@ Commands:
       - "&b/%plugin_short_command% randomjoin: Join random arena!"
     Admin-Bonus-Description: "&b/%plugin_short_command%: Shows all the admin commands"
     Footer: "&6-------------------------------------------------"
-
-
-#
 # In-Game scoreboard messages
-#
+# 
 # Please do not use more chars than the scoreboard can handle!
 # Scoreboard supports up to 122 chars for 1.14+ and 48 chars for 1.13- (COLOR CODES INCLUDED.)
 # Placeholders:
@@ -80,67 +48,65 @@ Scoreboard:
   Title: "&a&l%plugin_name%"
   Content:
     Waiting:
-      - ""
+      - "&fPlayers: &e%arena_players_size%"
       - "■ Players | %arena_players_size%"
-      - ""
+      - "&fMinimum Players: &e%arena_min_players%"
       - "■ Minimum Players | %arena_min_players%"
-      - ""
+      - "&ewww.plugily.xyz"
       - "   www.plugily.xyz"
     Starting:
-      - ""
+      - "&fStarting In: &e%arena_time%"
       - "■ Starting | %arena_time%"
-      - ""
+      - "&fPlayers: &e%arena_players_size%"
       - "■ Players | %arena_players_size%"
-      - ""
+      - "&fMinimum Players: &e%arena_min_players%"
       - "■ Minimum Players | %arena_min_players%"
-      - ""
+      - "&ewww.plugily.xyz"
       - "   www.plugily.xyz"
     # Contents of scoreboard while ingame
     In-Game:
-      - ""
+      - "&fVillagers Left: &e%arena_villager_size%"
       - "■ Villagers | %arena_villager_size%"
       - "■ Players | %arena_players_left_size%"
       - "■ Zombies | %arena_zombie_size_left%"
-      - ""
+      - "&fRotten Flesh: &e%arena_rotten_flesh_amount%"
       - "■ Rotten Flesh | %arena_rotten_flesh_amount%"
       - "■ Orbs | %user_statistic_orbs%"
-      - ""
+      - "&ewww.plugily.xyz"
       - "   www.plugily.xyz"
     In-Game-Waiting:
-      - ""
+      - "&fVillagers Left: &e%arena_villager_size%"
       - "■ Villagers | %arena_villager_size%"
       - "■ Players | %arena_players_left_size%"
-      - ""
+      - " "
       - "■ Next Wave | %arena_time%"
-      - ""
+      - " "
       - "■ Rotten Flesh | %arena_rotten_flesh_amount%"
       - "■ Orbs | %user_statistic_orbs%"
-      - ""
+      - " "
       - "   www.plugily.xyz"
     # Contents of scoreboard while state is ending
     Ending:
       - "&f"
       - "&f"
       - "■ &cGAME ENDED"
-      - ""
+      - " "
       - "&f"
       - "&f"
-      - ""
+      - " "
       - "   www.plugily.xyz"
     # Contents of scoreboard while state is restarting
     Restarting:
       - "&f"
       - "&f"
       - "■ &cRESTARTING GAME"
-      - ""
+      - " "
       - "&f"
       - "&f"
-      - ""
+      - " "
       - "   www.plugily.xyz"
-
-#
 # Bossbar messages
-#
+# 
 # Bossbar needs to be enabled on config.yml
 Bossbar:
   Title: "&a&l%plugin_name% &6- www.plugily.xyz"
@@ -157,12 +123,9 @@ Bossbar:
       - "Game has ended! You were playing on PLUGILY.XYZ"
     Restarting:
       - "Restarting the arena. You will be moved soon!"
-
-#
 # In-Game Messages
-#
 In-Game:
-  #Used in most game messages.
+  # Used in most game messages.
   Plugin-Prefix: "(%plugin_name%)"
   Game-Chat-Format: "[%user_statistic_level%][%kit%] %player% | %message%"
   You-Leveled-Up: "%plugin_prefix% You leveled up! You're now level %number%!"
@@ -181,7 +144,6 @@ In-Game:
     Tag: "&8Dead"
     Screen: "%color_chat_issue%You died!"
   Spectator:
-    Blocked: "%color_chat_issue%%plugin_prefix% Spectators are disabled for this arena"
     You-Are-Spectator: "%plugin_prefix% You're now a spectator! You can fly now!"
     Spectator-Menu-Name: "%color_chat_issue%Alive players list"
     Target-Player-Health: "%color_chat_issue%Health: %number%"
@@ -201,6 +163,7 @@ In-Game:
           Action-Bar: "&eSNEAK &cto leave! | Target %player%"
           Title: "&eSNEAK &cto leave!"
         Visibility: "%value% other spectator players"
+    Blocked: "%color_chat_issue%%plugin_prefix% Spectators are disabled for this arena"
   Messages:
     Join: "%plugin_prefix% %player% joined the game (%arena_players_size%/%arena_max_players%)!"
     Leave: "%plugin_prefix% %player% left the game (%arena_players_size%/%arena_max_players%)!"
@@ -209,33 +172,33 @@ In-Game:
       Start-In: "%plugin_prefix% The game starts in %arena_time% seconds!"
       Waiting-For-Players: "%plugin_prefix% Waiting for players... We need at least %arena_min_players% players to start."
       Enough-Players-To-Start: "%plugin_prefix% We now have enough players. The game is starting soon!"
-      Reduced-Time: "%plugin_prefix% The time got reduced to %number% seconds"
-      Max-Players: "%plugin_prefix% We reached max players for this round. Let's shorten the time!"
       Game-Started: "%plugin_prefix% The game has started!"
       Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% %player% got removed from the game to make a place for premium players!"
       You-Were-Kicked-For-Premium-Slot: "%color_chat_issue%%plugin_prefix% You got kicked out of the game to make a place for a premium player!"
       Not-Enough-Space-For-Party: "%color_chat_issue%%plugin_prefix% Your party is bigger than free places on the arena %arena_name%"
+      Max-Players: "%plugin_prefix% We reached max players for this round. Let's shorten the time!"
+      Reduced-Time: "%plugin_prefix% The time got reduced to %number% seconds"
     Game-End:
       Summary:
         - "&a&m--------------------------------------------------"
         - "%plugin_name%"
-        - ""
+        - " "
         - "%arena_summary%"
         - "%arena_summary_player%"
-        - ""
+        - " "
         - "&e&lReached wave | %arena_option_wave% (best %user_statistic_highest_wave%)"
         - "&6&lTotal zombies killed | %arena_option_total_killed_zombies%"
         - "&c&lTotal coins spent | %arena_option_total_orbs_spent%"
-        - ""
+        - " "
         - "&a&m--------------------------------------------------"
       Placeholders:
         Win: "&aYou won the game"
         Lose: "%color_chat_issue%You lost the game"
-        Players: "%color_chat_issue%%plugin_prefix% There are not enough players anymore. Arena got force stopped!"
         Died:
           Players: "%color_chat_issue%All players died!"
           Villagers: "%color_chat_issue%All villagers died!"
         Survived: "&aYou survived all the waves"
+        Players: "%color_chat_issue%%plugin_prefix% There are not enough players anymore. Arena got force stopped!"
     Admin:
       Set-Starting-In-To-0: "%plugin_prefix% An admin set waiting time to 0. The game starts now!"
       Removed:
@@ -259,13 +222,12 @@ In-Game:
         Respawned: "%plugin_prefix% You're not a spectator anymore! You're back in the game!"
         Next-In: "%plugin_prefix% Next wave starts in %number% seconds!"
         Started: "%plugin_prefix% Wave %number% started!"
-        Title:
+        Title: 
           Start: "20,30,20;Wave %number%;"
           End: "20,30,20;Wave %number% ended;"
       Orbs:
         Pickup: "+ %number% orbs"
       Entities:
-        Cant-Ride-Other: "%color_chat_issue%%plugin_prefix% You can't ride pet you don't own!"
         Wolf:
           Spawn: "%plugin_prefix% Wolf spawned in the village!"
           Name: "%player%'s Wolf  &8(&7LVL %number%&8)"
@@ -273,6 +235,8 @@ In-Game:
         Golem:
           Spawn: "%plugin_prefix% Golem spawned in the village!"
           Name: "%player%'s Golem  &8(&7LVL %number%&8)"
+          Cant-Ride-Other: "%color_chat_issue%%plugin_prefix% You can't ride the golem of somebody else!"
+        Cant-Ride-Other: "%color_chat_issue%%plugin_prefix% You can't ride pet you don't own!"
       Shop:
         GUI: "&lShop"
         Golem-Item-Name: "Spawn Golem"
@@ -281,10 +245,7 @@ In-Game:
         Not-Enough-Currency: "%color_chat_issue%%plugin_prefix% You need more orbs to buy this item!"
         Currency: "orbs"
         Not-Defined: "%color_chat_issue%%plugin_prefix% Shop wasn't set up! Contact staff!"
-
-#
 # Sign messages
-#
 Signs:
   Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Please type arena name in second line!"
   Arena-Doesnt-Exists: "%color_chat_issue%%plugin_prefix% Arena with that name doesn't exists!"
@@ -295,11 +256,7 @@ Signs:
     - "%arena_state_placeholder%"
     - "%arena_name%"
     - "[%arena_players_size%/%arena_max_players%]"
-
-
-#
 # Arena Selector messages
-#
 Arena-Selector:
   Inventory-Title: "%plugin_short_command% ▸ Arena selector"
   Item:
@@ -313,19 +270,12 @@ Arena-Selector:
       - " "
       - " "
       - "&aClick to join this arena"
-
-#
 # Validator messages
-#
 Validator:
   Invalid-Arena-Configuration: "Arena %arena_name% has invalid configuration! Missing node: %value%"
   Instance-Started: "Arena %arena_name% instance successfully started!"
   No-Instances-Created: "There are no arena instances created in configuration!"
-
-
-#
 # Placeholder messages inside plugin
-#
 Placeholders:
   Game-States:
     Waiting: "&lWaiting for players..."
@@ -341,16 +291,12 @@ Placeholders:
     In-Game: "&lIn-game | Click to spectate"
     Ending: "&lEnding | Server is closing"
     Restarting: "&c&lRestarting"
-
-
-#
 # Kit messages
-#
 Kit:
   Not-Unlocked: "%color_chat_issue%%plugin_prefix% You haven't unlocked %value% yet!"
   Choose: "%plugin_prefix% You have chosen: %value%!"
+  Open-Menu: Open Kit Menu
   Cooldown: "%color_chat_issue%%plugin_prefix% Kit ability still on cooldown (%number%)!"
-  No-Armor: "%color_chat_issue%%plugin_prefix% You can't wear armor with your kit!"
   Menu:
     Title: "Kit Menu"
     Lore:
@@ -362,36 +308,32 @@ Kit:
     Cleaner:
       Cleaned:
         Map: "%plugin_prefix% &b%player% has cleaned the map a bit!"
-        Nothing: "%plugin_prefix% &aThe map is already empty!" #WARNING: used for admin clean commands too!!!
-    Zombie-Teleporter:
-      Game-Item:
-        GUI: "Zombie Teleporter"
+        # WARNING: used for admin clean commands too!!!
+        Nothing: "%plugin_prefix% &aThe map is already empty!"
     Teleport:
       Zombie: "%plugin_prefix% &aTeleported weakened zombie to you!"
     Worker:
       Game-Item:
         Chat: "%plugin_prefix% &aDoor placed!"
     Teleporter:
-      GUI: "Teleporter Menu"
       Teleport:
         Villager: "%plugin_prefix% &aTeleported to the villager!"
         Player: "%plugin_prefix% &aTeleported to %player%"
+      GUI: "Teleporter Menu"
     Blocker:
       Place:
         Success: "%plugin_prefix% &aBarrier placed!"
         Fail: "%plugin_prefix% &cUnable to place barrier here"
-
-
-#
+    Wild-Naked: 
+      Cannot-Wear-Armor: "&cYou can't wear armor with the Wild Naked kit!"
+  No-Armor: "%color_chat_issue%%plugin_prefix% You can't wear armor with your kit!"
 # Upgrade-Menu messages
-#
+# 
 # Upgrade-Menu function need to be enabled on config.yml
 Upgrade-Menu:
   Title: "&6&lUPGRADE ENTITY"
   Upgraded-Entity: "%plugin_prefix% &3Upgraded entity to tier &8%tier%&3!"
-  Cannot:
-    Afford: "%plugin_prefix% &3You don't have enough orbs to apply that upgrade!"
-    Upgrade-Other: "%color_chat_issue%%plugin_prefix% You can't upgrade pet you don't own!"
+  Cannot-Afford: "%plugin_prefix% &3You don't have enough orbs to apply that upgrade!"
   Max-Tier: "%plugin_prefix% &3Entity is at max tier of this upgrade!"
   Stats-Item:
     Name: "&6&lCURRENT STATS"
@@ -399,32 +341,24 @@ Upgrade-Menu:
   Upgrades:
     Health:
       Name: "&c&lUPGRADE: &aHealth"
-      Description: "&3Upgrade max health to tier &8%tier% ▲&3!;&3From &8%from% &3to
-        &8%to%;&3Cost of upgrade: &8%cost%;;&3Click to purchase"
+      Description: "&3Upgrade max health to tier &8%tier% ▲&3!;&3From &8%from% &3to &8%to%;&3Cost of upgrade: &8%cost%;;&3Click to purchase"
     Damage:
       Name: "&c&lUPGRADE: &7Damage"
-      Description: "&3Upgrade entity damage to tier &8%tier% ▲&3!;&3From &8%from% &3to
-        &8%to%;&3Cost of upgrade: &8%cost%;;&8Click to purchase"
+      Description: "&3Upgrade entity damage to tier &8%tier% ▲&3!;&3From &8%from% &3to &8%to%;&3Cost of upgrade: &8%cost%;;&8Click to purchase"
     Speed:
       Name: "&c&lUPGRADE: &6Speed"
-      Description: "&3Upgrade movement speed to tier &8%tier% ▲&3!;&3From &8%from% &3to
-        &8%to%;&3Cost of upgrade: &8%cost%;;&8Click to purchase"
+      Description: "&3Upgrade movement speed to tier &8%tier% ▲&3!;&3From &8%from% &3to &8%to%;&3Cost of upgrade: &8%cost%;;&8Click to purchase"
     Swarm-Awareness:
       Name: "&3&lSWARM AWARENESS"
-      Description: "&3Upgrade swarm awareness to tier &8%tier% ▲&3!;&3From &8%from%
-        &8damage multiplier per wolf in radius;&8of 3 blocks &3to %to%;&3The more
-        wolves near attacking wolf;&3the more damage wolf deal;&3Cost of upgrade: &8%cost%;;&8Click
-        to purchase"
+      Description: "&3Upgrade swarm awareness to tier &8%tier% ▲&3!;&3From &8%from% &8damage multiplier per wolf in radius;&8of 3 blocks &3to %to%;&3The more wolves near attacking wolf;&3the more damage wolf deal;&3Cost of upgrade: &8%cost%;;&8Click to purchase"
     Final-Defense:
       Name: "&3&lFINAL DEFENSE"
-      Description: "&3Upgrade final defense to tier &8%tier% ▲&3!;&3From &8%from% explosion
-        radius &3to &8%to%;&3Golem will explode after death killing nearby;&3zombies
-        and stun all alive ones;&3Cost of upgrade: &8%cost%;;&8Click to purchase"
-
-
-#
+      Description: "&3Upgrade final defense to tier &8%tier% ▲&3!;&3From &8%from% explosion radius &3to &8%to%;&3Golem will explode after death killing nearby;&3zombies and stun all alive ones;&3Cost of upgrade: &8%cost%;;&8Click to purchase"
+  Cannot:
+    Afford: "%plugin_prefix% &3You don't have enough orbs to apply that upgrade!"
+    Upgrade-Other: "%color_chat_issue%%plugin_prefix% You can't upgrade pet you don't own!"
 # Leaderboard messages
-#
+# 
 # Hologram function need to be enabled on config.yml
 Leaderboard:
   Type:
@@ -442,8 +376,6 @@ Leaderboard:
         Header: "&8&m+----------------+ [&6 Top 10 &8&m] +----------------+"
         Format: "&e#%number% %player% - %value% %user_statistic%"
   Statistics:
-    Wins: "Wins ▸ %number%"
-    Loses: "Loses ▸ %number%"
     Games-Played: "Games Played ▸ %number%"
     Level: "Level ▸ %number%"
     Exp: "Experience ▸ %number%"
@@ -452,5 +384,34 @@ Leaderboard:
     Kills: "Zombie Kills ▸ %number%"
     Deaths: "Deaths ▸ %number%"
     Next-Level-Exp: "Exp to Level Up ▸ %number%"
+    Wins: "Wins ▸ %number%"
+    Loses: "Loses ▸ %number%"
   Invalid-Name: "%color_chat_issue%Name of statistic is invalid! Type: %value%"
   Unknown-Player: "%color_chat_issue%Unknown Player"
+Do-Not-Edit: 
+  File-Version: 1
+  Core-Version: 1
+# You can translate Village Defense messages here.
+# Color codes (&) supported.
+# 
+# Use \n to make new line
+# Some messages like item
+# descriptions don't support new lines
+# they are wrapped every 40 characters automatically
+# 
+# Some messages support their own placeholders
+# like %player%, %kit% etc.
+# 
+# Color scheme
+Color:
+  Placeholder:
+    Value: "&a"
+    Number: "&a"
+    Player: "&b"
+    Other: "&a"
+  Chat:
+    Issue: "&c"
+    Messages: "&7"
+    Special-Char:
+      Contains: "[,],(,),{,},■,/,|,▸"
+      Before: "&8"
