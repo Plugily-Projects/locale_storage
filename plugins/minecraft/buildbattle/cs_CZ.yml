@@ -273,7 +273,7 @@ In-Game:
         Players: "&cJiž nemáme dostatečný počet hráčů. Aréna byla zastavena!"
         Place: "%number% místo - %value%"
         Own: "&aJsi na %number% místě"
-        Winner: "&aStavba hráče %arena_place_member_1% vyhrála!"
+        Winner: "&aStavba hráče %arena_place_member_1% (%arena_place_points_1%) vyhrála!"
     Admin:
       Set-Starting-In-To-0: "%plugin_prefix% Admin přeskočil čekání. Hra začíná teď!"
       Changed-Theme: "%plugin_prefix% Admin změnil téma na %THEME%"
@@ -346,14 +346,14 @@ Menu:
             Name: "%color_chat_issue%Odstranit particles"
             Lore: "Klikni pravým pro otevření menu"
         Removed: "%color_chat_issue%%plugin_prefix% Particly byli odstraněny!"
-        Added: "%color_chat_issue%%plugin_prefix% Particle byl přidán!"
+        Added: "%plugin_prefix% Particle byl přidán!"
       Heads:
         Inventory: "&bHlavy hráčů"
         Item:
           Name: "&bZískat hlavy hráčů"
           Lore: "Klikni pro získání hlav"
         Database:
-          Lore: "Get Head %value%"
+          Lore: "Získej Head %value%"
       Floor:
         Item:
           Name: "&bZměnit podlahu"
@@ -431,7 +431,7 @@ Menu:
     Back:
       Item:
         Name: "%color_chat_issue%Zpět"
-        Lore: "Jdi zpět kliknutím."
+        Lore: "Pro vrácení klikněte."
 # Sign messages
 Signs:
   Please-Type-Arena-Name: "%color_chat_issue%%plugin_prefix% Prosím, napšite jméno arény na druhý řádek!"
@@ -528,5 +528,5 @@ Leaderboard:
 # Really, don't edit ;p
 # You edited it, huh? Next time hurt yourself!
 Do-Not-Edit:
-  File-Version: 1
-  Core-Version: 1
+  File-Version: 2
+  Core-Version: 2

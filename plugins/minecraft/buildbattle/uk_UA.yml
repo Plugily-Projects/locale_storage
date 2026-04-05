@@ -353,7 +353,7 @@ Menu:
           Name: "&bПолучити голову гравця"
           Lore: "Натисніть для отримання голів"
         Database:
-          Lore: "Get Head %value%"
+          Lore: "Отримати голову %value%"
       Floor:
         Item:
           Name: "&bЗмінити матеріал полу"
